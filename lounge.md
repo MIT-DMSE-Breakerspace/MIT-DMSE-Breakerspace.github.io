@@ -11,7 +11,7 @@ Outfitted with a beautiful La Marzocco Linea PB espresso machine, a Nuovo Simone
 
 ### How to make an espresso
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5IZvKWzsl3I?si=g9ejfAcK7ElfVtX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="500" height="281" src="https://www.youtube.com/embed/5IZvKWzsl3I?si=g9ejfAcK7ElfVtX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Please watch this quick video to learn the easiest version of our espresso workflow. If you're interested in getting more in depth, ask!
 
