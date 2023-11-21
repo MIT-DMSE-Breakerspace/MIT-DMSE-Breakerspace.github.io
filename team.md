@@ -25,15 +25,15 @@ Contact:
 
 Hola! I'm a sophomore in Course 3 _✨ material gworl ✨_
 
-**Provide training in the following**:
+__Provide training in the following__:
  - Everything
 
-**Semester Working Hours**:
+__Semester Working Hours__:
  - Mondays & Wednesday: 5:30-7:00pm
  - Tuesday & Thursdays: 2:00-3:00pm
  - Fridays: 2:00-5:00pm
  - Saturday: 5:00-7:00pm
 
-**Methods of Contact**:
+__Methods of Contact__:
  - Email: cadaanma@mit.edu
  - DMSE Breakerspace slack: Carlos A.M.
