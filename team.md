@@ -21,4 +21,19 @@ Contact:
  - Email: rsansone@mit.edu
  - DMSE Breakerspace Slack: username Robert Sansone
 
-### Carlos
+### Carlos Anciano Martinez - UG Lab Assistant
+
+Hola! I'm a sophomore in Course 3 _✨ material gworl ✨_
+
+__Provide training in the following__:
+ - Everything
+
+__Semester Working Hours__:
+ - Mondays & Wednesday: 5:30-7:00pm
+ - Tuesday & Thursdays: 2:00-3:00pm
+ - Fridays: 2:00-5:00pm
+ - Saturday: 5:00-7:00pm
+
+__Methods of Contact__:
+ - Email: cadaanma@mit.edu
+ - DMSE Breakerspace slack: Carlos A.M.
