@@ -10,7 +10,7 @@ Legendary among diffractophiles, Captain XRD has been imperiling foes of XRD wit
 
 ### Robert Sansone - Lab Assistant
 
-Provides trainings/assitance for:
+Provides trainings/assistance for:
  - Optical Microscope
 
 Regular working hours:
