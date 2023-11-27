@@ -47,7 +47,7 @@ __Provide training in the following__:
  - SEM
  - XRD
 
-__Semester Working Hours__:
+__Regular Hours__:
  - Mondays: 10:00am-12:00pm
  - Thursdays: 10:00am-1:00pm
 
