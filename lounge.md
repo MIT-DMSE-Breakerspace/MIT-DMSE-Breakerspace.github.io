@@ -11,7 +11,7 @@ Outfitted with a beautiful La Marzocco Linea PB espresso machine, a Nuovo Simone
 
 ### How to make an espresso
 
-![Our La Marzocco Linea PB espresso machine](./assets/img/espresso_machine.JPG)
+[![Our La Marzocco Linea PB espresso machine](./assets/img/espresso_machine.JPG)](https://www.youtube.com/watch?v=5IZvKWzsl3I)
 
 Please watch this [quick video](https://www.youtube.com/watch?v=5IZvKWzsl3I) to learn the easiest version of our espresso workflow. If you're interested in getting more in depth, ask!
 
