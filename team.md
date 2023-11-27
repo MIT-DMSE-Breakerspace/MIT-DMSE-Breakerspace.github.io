@@ -8,7 +8,8 @@ layout: default
 
 Legendary among diffractophiles, Captain XRD has been imperiling foes of XRD with Pop Rocks for nearly as long as he can remember.
 
-<hr>
+___
+
 
 ### Robert Sansone - Lab Assistant
 
@@ -23,7 +24,8 @@ Contact:
  - Email: rsansone@mit.edu
  - DMSE Breakerspace Slack: username Robert Sansone
 
-<hr>
+___
+
 
 ### Carlos Anciano Martinez - UG Lab Assistant
 
@@ -42,7 +44,8 @@ __Methods of Contact__:
  - Email: cadaanma@mit.edu
  - DMSE Breakerspace slack: Carlos A.M.
 
-<hr>
+___
+
 
 ### Syd Robinson - Lab Assistant
 
@@ -60,4 +63,4 @@ __Regular Hours__:
 __Contact Info__:
  - Email: syro@mit.edu
 
-<hr>
+___
