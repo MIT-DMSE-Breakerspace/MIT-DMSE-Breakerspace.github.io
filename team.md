@@ -37,3 +37,19 @@ __Semester Working Hours__:
 __Methods of Contact__:
  - Email: cadaanma@mit.edu
  - DMSE Breakerspace slack: Carlos A.M.
+
+### Syd Robinson - Lab Assistant
+
+I'm a course 3-C junior!
+
+__Provide training in the following__:
+ - Optical microscope
+ - SEM
+ - XRD
+
+__Semester Working Hours__:
+ - Mondays: 10:00am-12:00pm
+ - Thursdays: 10:00am-1:00pm
+
+__Contact Info__:
+ - Email: syro@mit.edu
