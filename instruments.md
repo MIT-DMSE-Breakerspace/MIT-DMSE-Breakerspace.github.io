@@ -36,4 +36,11 @@ Analyze properties such as phase composition, crystal structure, and orientation
 
 ___
 
-### 
+### Horiba Duetta Fluorescence and Absorbance Spectrometer
+
+![Horiba Duetta Fluorescence and Absorbance Spectrometer](./assets/img/uv-vis.JPG)
+
+Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure absorbance, or as an instrument that measures true molecular fingerprints, which require the acquisition of fluorescence and absorbance, correcting for IFE in real time.  
+
+___
+
