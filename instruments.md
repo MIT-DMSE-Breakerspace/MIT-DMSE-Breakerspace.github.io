@@ -28,4 +28,12 @@ See images in full color at high magnifications, capture 3D data, and stitch tog
 
 ___
 
+### Panalytical Aeris Research XRD (X-ray diffractometer)
 
+![Panalytical Aeris Research X-ray diffractometer](./assets/img/xrd.JPG)
+
+Analyze properties such as phase composition, crystal structure, and orientation of solid samples.  
+
+___
+
+### 
