@@ -6,16 +6,20 @@ layout: default
 
 Outfitted with a beautiful La Marzocco Linea PB espresso machine, a Nuovo Simonelli Mythos grinder, and PuqPress automatic tamper, the Breakerspace Lounge is the source of the best espresso on campus.
 
+**Request lounge access:** The Breakerspace Lounge, is open to all MIT undergraduates from 8 AM to midnight, daily. In order to gain tap access to the lab, please fill out [this form](https://forms.gle/1pd59bjGXiPnehDL9). Tap access is usually granted within two business days. 
+
 ![Breakerspace Lounge](./assets/img/lounge.JPG)
 
 
+#### Espresso
 
-#### How to make an espresso
+Once you are granted access, you will be able to make espresso during open hours. Remember to bring  your own mug!
 
-[![Our La Marzocco Linea PB espresso machine](./assets/img/espresso_machine.JPG)](https://www.youtube.com/watch?v=5IZvKWzsl3I)
+![Our La Marzocco Linea PB espresso machine](./assets/img/espresso_machine.JPG)
 
-Please watch this [quick video](https://www.youtube.com/watch?v=5IZvKWzsl3I) to learn the easiest version of our espresso workflow. If you're interested in getting more in depth, ask!
+#### Roasting
 
-#### Request lounge access
+Inquire about joining the coffee roasting club to learn experiment with how roasting impacts coffee characteristics and roast coffee using our Aillio Bullet R1 V2 roaster.
 
-The Breakerspace Lounge, is open to all MIT undergraduates from 8 AM to midnight, daily. In order to gain tap access to the lab, please fill out [this form](https://forms.gle/1pd59bjGXiPnehDL9). Tap access is usually granted within two business days. 
+![Aillio Bullet R1 V2 roaster](./assets/img/roaster.JPG)
+
