@@ -68,3 +68,9 @@ Perform IZOD testing at up to 50 joules on our impact testing system.
 
 ___
 
+### Horiba XploRA Confocal Raman Microscope
+
+![Horiba XploRA Confocal Raman Microscope](./assets/img/raman.JPG)
+
+Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
+,
