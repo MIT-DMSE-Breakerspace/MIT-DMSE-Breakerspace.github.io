@@ -18,7 +18,7 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 <iframe src="https://calendar.google.com/calendar/embed?height=375&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&showNav=0&showTz=0&src=Y182NzI0ZDczZThhMWM2MDQ0MTY0NTUxMWUxMGVhMzM3OTYxMWNlMThjYjQ2ZDczOWE1ZjExNGIwYTZiMGIyNjY1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="500" height="375" frameborder="0" scrolling="no"></iframe>
 
 <br>
-## [Lounge Oasis](./lounge.html)
+## [Breakerspace Lounge](./lounge.html)
 
 Talk about your findings in a vibrant, welcoming atmosphere. Relax in lounge chairs or pull up a chair at a communal table. Have an espresso or americano from our state-of-the-art coffee equipment—or experiment with different roasting or brewing techniques. [Request lounge access here](https://docs.google.com/forms/d/e/1FAIpQLSdcX0J_sUQmiO0j15IHSrni4rX7LMLaILCjoXQOn4QriWAoHA/viewform?usp=sf_link).
 
