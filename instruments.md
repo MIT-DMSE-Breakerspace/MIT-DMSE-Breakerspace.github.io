@@ -44,3 +44,19 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 
 ___
 
+### Nicolet iS5 FTIR Spectrometer
+
+![Nicolet iS5 FTIR Spectrometer](./assets/img/ftir.JPG)
+
+Fourier-transform infrared spectroscopy (FTIR) provides an infrared spectrum of absorption or emission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials.
+
+___
+
+### Instron 68TM-50 Universal Testing System
+
+![Instron 68TM-50 Universal Testing System](./assets/img/utm.JPG)
+
+Our test frame is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and felxure testing.
+
+___
+
