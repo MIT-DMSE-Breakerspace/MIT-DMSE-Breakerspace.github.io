@@ -10,6 +10,8 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 ## Training and access:
 
+**Hours:** The lounge is open 8 AM to midnight, seven days/week once you request access and agree to lounge policies. The lab is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
+
 **Open to All Undergraduates:** Regardless of your major or interests, Breakerspace welcomes all MIT undergraduates. Whether you’re a biologist, philosopher, or an economics major, satisfy your curiosity about the materials that make up the world—or just come in, make an espresso, and relax.
 
 
