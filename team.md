@@ -12,7 +12,7 @@ ___
 
 ### Robert Sansone
 
-Provides trainings/assistance for:
+__Provides training for the following__:
  - Optical Microscope
 
 ___
@@ -22,7 +22,7 @@ ___
 
 Hola! I'm a sophomore in Course 3 _✨ material gworl ✨_
 
-__Provide training in the following__:
+__Provides training for the following__:
  - Everything
 
 ___
@@ -32,7 +32,7 @@ ___
 
 I'm a course 3-C junior!
 
-__Provide training in the following__:
+__Provides training for the following__:
  - Optical microscope
  - SEM
  - XRD
