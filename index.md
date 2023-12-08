@@ -17,7 +17,7 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 **Get Trained in Minutes:** User-friendly equipment ensures a low barrier to entry, making it easy for you to experiment and learn. [Sign up for training](https://docs.google.com/forms/d/e/1FAIpQLSfGpHiCqJ7jDvFa4AS-0jc4W5ePdHFoJUQFwze9eZ7DeGY2iQ/viewform?usp=sf_link). Plan to spend about 30 minutes in the lab for an initial overview, plus training on one instrument. Once you have access, talk to one of our lab assistants to arrange a time to train on additional instruments, as needed.
 
-<iframe src="https://calendar.google.com/calendar/embed?height=375&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&showNav=0&showTz=0&src=Y182NzI0ZDczZThhMWM2MDQ0MTY0NTUxMWUxMGVhMzM3OTYxMWNlMThjYjQ2ZDczOWE1ZjExNGIwYTZiMGIyNjY1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=375&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&showNav=0&showTz=0&src=Y182NzI0ZDczZThhMWM2MDQ0MTY0NTUxMWUxMGVhMzM3OTYxMWNlMThjYjQ2ZDczOWE1ZjExNGIwYTZiMGIyNjY1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="500" height="375" frameborder="0" scrolling="no"></iframe>
 
 <br>
 ## [Breakerspace Lounge](./lounge.html)
