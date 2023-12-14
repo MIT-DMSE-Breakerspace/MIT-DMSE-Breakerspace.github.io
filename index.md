@@ -19,7 +19,7 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 **Get Trained in Minutes:** User-friendly equipment ensures a low barrier to entry, making it easy for you to experiment and learn. Our group training sessions have concluded for the Fall 2023 semester. [Submit your contact information here](https://docs.google.com/forms/d/e/1FAIpQLSfGpHiCqJ7jDvFa4AS-0jc4W5ePdHFoJUQFwze9eZ7DeGY2iQ/viewform?usp=sf_link) and we will notify you once new training signups open in January 2024. 
 
-<iframe src="https://calendar.google.com/calendar/embed?height=375&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&showNav=0&showTz=0&src=Y182NzI0ZDczZThhMWM2MDQ0MTY0NTUxMWUxMGVhMzM3OTYxMWNlMThjYjQ2ZDczOWE1ZjExNGIwYTZiMGIyNjY1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="500" height="375" frameborder="0" scrolling="no"></iframe>
+**Calendar:** Watch here for a new calendar to debut in January 2024 that will offer the ability to directly register for training sessions.
 
 <br>
 ## [Breakerspace Lounge](./lounge.html)
