@@ -10,12 +10,14 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 ## Training and access:
 
+**MIT Winter Break Closing:** The Breakerspace lab and lounge will be closed from December 23, 2023 through January 1, 2023. 
+
 **Hours:** The lounge is open 8 AM to midnight, seven days/week once you request access and agree to lounge policies. The lab is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
 
 **Open to All Undergraduates:** Regardless of your major or interests, Breakerspace welcomes all MIT undergraduates. Whether you’re a biologist, philosopher, or an economics major, satisfy your curiosity about the materials that make up the world—or just come in, make an espresso, and relax.
 
 
-**Get Trained in Minutes:** User-friendly equipment ensures a low barrier to entry, making it easy for you to experiment and learn. [Sign up for training](https://docs.google.com/forms/d/e/1FAIpQLSfGpHiCqJ7jDvFa4AS-0jc4W5ePdHFoJUQFwze9eZ7DeGY2iQ/viewform?usp=sf_link). Plan to spend about 30 minutes in the lab for an initial overview, plus training on one instrument. Once you have access, talk to one of our lab assistants to arrange a time to train on additional instruments, as needed.
+**Get Trained in Minutes:** User-friendly equipment ensures a low barrier to entry, making it easy for you to experiment and learn. Our group training sessions have concluded for the Fall 2023 semester. [Submit your contact information here](https://docs.google.com/forms/d/e/1FAIpQLSfGpHiCqJ7jDvFa4AS-0jc4W5ePdHFoJUQFwze9eZ7DeGY2iQ/viewform?usp=sf_link) and we will notify you once new training signups open in January 2024. 
 
 <iframe src="https://calendar.google.com/calendar/embed?height=375&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK&showNav=0&showTz=0&src=Y182NzI0ZDczZThhMWM2MDQ0MTY0NTUxMWUxMGVhMzM3OTYxMWNlMThjYjQ2ZDczOWE1ZjExNGIwYTZiMGIyNjY1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5" style="border:solid 1px #777" width="500" height="375" frameborder="0" scrolling="no"></iframe>
 
