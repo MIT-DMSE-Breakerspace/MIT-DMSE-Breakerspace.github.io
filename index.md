@@ -21,6 +21,8 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 **Calendar:** Watch here for a new calendar to debut in January 2024 that will offer the ability to directly register for training sessions.
 
+<div id="api_fortnight_cid19408_iid6443"></div><script src="https://breakerspace.libcal.com/api_events.php?m=fortnight&cid=19408&audience=&c=&d=&simple=ul_date&context=object&format=js"> </script>
+
 <br>
 ## [Breakerspace Lounge](./lounge.html)
 
