@@ -14,7 +14,7 @@ The workstations in the Breakerspace are on the [MIT WIN domain](https://ist.mit
 
 When you log in to one of our workstations, you will see a shared network drive mapped in 'My Computer' called 'Breakerspace Files', usually mapped to drive letter (I:).
 
-![screenshot of Breakerspace files drive](./assets/img/breakerspace-files.JPG)
+[![screenshot of Breakerspace files drive](./assets/img/breakerspace-files.JPG)](./assets/img/breakerspace-files.JPG)
 
 This shared drive is hosted on a file server in the Breakerspace, and is also the Dropbox Team folder for the 'DMSE Breakerspace' Dropbox Team. Please note that files saved here will be accessible to other users logged in to any Breakerspace workstation, and will also be accessible to anyone who is a member of the 'DMSE Breakerspace' Dropbox Team. 
 
