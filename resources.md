@@ -28,11 +28,11 @@ Please feel free to use this resource, with the understanding that it is not pri
 
 We recommend you either keep files in:
 
-	Breakerspace Files (I:)\_USERS\your-folder-name 
+	Breakerspace Files(I:)\_USERS\your-folder-name 
 
 or
 
-	Breakerspace Files (I:)\instrument\projects\your-folder-name
+	Breakerspace Files(I:)\instrument\projects\your-folder-name
 
 If the shared folder becomes untidy or confusing, we reserve the right to reorganize files as needed to help improve usability.
 
