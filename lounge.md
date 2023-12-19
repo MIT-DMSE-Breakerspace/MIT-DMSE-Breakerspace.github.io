@@ -11,15 +11,11 @@ Outfitted with a beautiful La Marzocco Linea PB espresso machine, a Nuovo Simone
 ![Breakerspace Lounge](./assets/img/lounge.JPG)
 
 
-#### Espresso
-
-Once you are granted access, you will be able to make espresso during open hours. Remember to bring  your own mug!
+**Espresso:** Once you are granted access, you will be able to make espresso during open hours. Remember to bring  your own mug!
 
 ![Our La Marzocco Linea PB espresso machine](./assets/img/espresso_machine.JPG)
 
-#### Roasting
-
-Inquire about joining the coffee roasting club to learn experiment with how roasting impacts coffee characteristics and roast coffee using our Aillio Bullet R1 V2 roaster.
+**Roasting:** Inquire about joining the coffee roasting club to learn experiment with how roasting impacts coffee characteristics and roast coffee using our Aillio Bullet R1 V2 roaster.
 
 ![Aillio Bullet R1 V2 roaster](./assets/img/roaster.JPG)
 
