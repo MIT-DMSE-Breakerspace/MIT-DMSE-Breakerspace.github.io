@@ -2,7 +2,9 @@
 layout: default
 ---
 
-## Instruments
+## Breakerspace Lab
+
+The Breakerspace Lab is a growing suite of materials characterization instruments, located in 8-102A, accessed through the Breakerspace Lounge. In addition to the instruments, we have cameras, microphones, tripods, lighting, and other equipment that can be used to document projects.
 
 ### Thermofisher Phenom XL SEM
 
