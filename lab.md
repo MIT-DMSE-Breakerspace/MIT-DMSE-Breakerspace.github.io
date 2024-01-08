@@ -6,6 +6,10 @@ layout: default
 
 The Breakerspace Lab is a growing suite of materials characterization instruments, located in 8-102A (accessed through the Breakerspace Lounge). In addition to the instruments, we have cameras, microphones, tripods, lighting, and other equipment that can be used to document projects.
 
+**Hours:** 
+
+The Breakerspace Lab is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
+
 ### Thermofisher Phenom XL SEM
 
 ![Thermofisher Phenom XL SEM](./assets/img/sem.JPG)
