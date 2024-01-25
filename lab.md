@@ -60,7 +60,7 @@ ___
 
 ![Instron 68TM-50 Universal Testing System](./assets/img/utm.JPG)
 
-Our test frame is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and felxure testing.
+Our test frame is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and flexure testing.
 
 ___
 
@@ -77,4 +77,4 @@ ___
 ![Horiba XploRA Confocal Raman Microscope](./assets/img/raman.JPG)
 
 Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
-,
+
