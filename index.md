@@ -14,14 +14,11 @@ The DMSE Breakerspace welcomes MIT undergraduates to explore the world of materi
 
 The [Breakerspace Lounge](./lounge.html) is open 8 AM to midnight, seven days/week once you request access and agree to lounge policies. 
 
-The [Breakerspace Lab](./lab.html) is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
+The [Breakerspace Lab](./lab.html) is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users. Not all hours are staffed, so if you would like to come in during staffed hours when support will be available, please check the calendar below when planning your time in the lab.
 
 **Open to All Undergraduates:** Regardless of your major or interests, Breakerspace welcomes all MIT undergraduates. Whether you’re a biologist, philosopher, or an economics major, satisfy your curiosity about the materials that make up the world—or just come in, make an espresso, and relax.
 
-
-**Get Trained in Minutes:** User-friendly equipment ensures a low barrier to entry, making it easy for you to experiment and learn. Our group training sessions have concluded for the Fall 2023 semester. [Submit your contact information here](https://docs.google.com/forms/d/e/1FAIpQLSfGpHiCqJ7jDvFa4AS-0jc4W5ePdHFoJUQFwze9eZ7DeGY2iQ/viewform?usp=sf_link) and we will notify you once new training signups open in January 2024. 
-
-**Calendar:** Watch here for a new calendar to debut in January 2024 that will offer the ability to directly register for training sessions.
+**Calendar:** We are using LibCal to help manage registration for instrument training sessions. Please watch the embedded calendar below or visit [breakerspace.libcal.com](https://breakerspace.libcal.com/) to register for training sessions.
 
 <iframe src="https://breakerspace.libcal.com/widget/events/calendar/monthly?&c=19408&monthly=1&inc=0&target=_blank&no_filters=0" style="border: 0" width="100%" height=550 frameborder="0" scrolling="auto"></iframe>
 

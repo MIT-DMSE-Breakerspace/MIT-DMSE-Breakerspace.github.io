@@ -78,3 +78,17 @@ ___
 
 Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
 
+___
+
+### Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
+
+More info and instrument availability coming in March 2024
+
+___
+
+### Innovatest Nemesis 5100G2 Hardness Tester
+
+More info and instrument availability coming in spring 2024
+
+
+
