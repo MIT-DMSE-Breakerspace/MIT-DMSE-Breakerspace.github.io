@@ -10,7 +10,7 @@ The Breakerspace Lab is a growing suite of materials characterization instrument
 
 <iframe
     src="https://breakerspace.libcal.com/spaces?lid=19797&gid=41631"
-    width="100%" height="700px"
+    width="100%" height="100%"
     title="LibCal Booking Widget"
     style="padding:0; margin:0; border:0; overflow-x: hidden; overflow-y: scroll;"
 >
