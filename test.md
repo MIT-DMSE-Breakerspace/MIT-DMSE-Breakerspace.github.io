@@ -9,12 +9,12 @@ The Breakerspace Lab is a growing suite of materials characterization instrument
 **Hours:** The Breakerspace Lab is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
 
 <iframe
-    src="https://breakerspace.libcal.com/widget/equipment?gid=41631"
+    src="https://breakerspace.libcal.com/spaces?lid=19797&gid=41631"
     width="100%" height="700px"
     title="LibCal Booking Widget"
     style="padding:0; margin:0; border:0; overflow-x: hidden; overflow-y: scroll;"
 >
-        <a href="https://breakerspace.libcal.com/widget/equipment?gid=41631">LibCal Booking Widget</a>
+        <a href="https://breakerspace.libcal.com/spaces?lid=19797&gid=41631">LibCal Booking Widget</a>
 </iframe>
 
 ### Thermofisher Phenom XL SEM
