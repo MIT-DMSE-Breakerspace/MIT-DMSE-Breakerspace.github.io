@@ -12,8 +12,9 @@ ___
 
 ### Robert Sansone
 
-__Provides training for the following__:
- - Optical Microscope
+__Provides training for the following Instruments__:
+ - Optical microscope
+ - Scanning electron microscope (SEM)
 
 ___
 
