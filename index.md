@@ -20,7 +20,7 @@ The [Breakerspace Lab](./lab.html) is open 10 AM to 10 PM weekdays, and 12 PM to
 
 **Calendar:** We are using LibCal to help manage registration for instrument training sessions. Please watch the embedded calendar below or visit [breakerspace.libcal.com](https://breakerspace.libcal.com/) to register for training sessions.
 
-<iframe src="https://breakerspace.libcal.com/widget/events/calendar/monthly?&c=19408&monthly=0&inc=0&target=_blank&no_filters=0" style="border: 0" width="100%" height=550 frameborder="0" scrolling="auto"></iframe>
+<iframe src="https://breakerspace.libcal.com/widget/events/calendar/monthly?&c=19408&monthly=0&inc=0&target=_blank&no_filters=0" style="border: 0" width="100%" height=800 frameborder="0" scrolling="auto"></iframe>
 
 <br>
 ## [Breakerspace Lounge](./lounge.html)
