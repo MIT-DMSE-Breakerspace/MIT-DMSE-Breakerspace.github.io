@@ -2,8 +2,6 @@
 layout: default
 ---
 
-![The DMSE Breakerspace](./assets/img/banner.png)
-
 The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of materials through hands-on experiences with powerful desktop materials characterization instruments. More than just a laboratory, it’s a dynamic hub for multidisciplinary learning, encouraging students to pursue their own questions. The Breakerspace also features a lounge for relaxing, socializing, and enjoying espresso — an inclusive space for academic exploration and leisure. 
 
 ### Training, access, and hours:
