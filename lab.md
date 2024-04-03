@@ -93,7 +93,7 @@ This hardness tester has a 9-position turret to automatically swith between inde
 
 ___
 
-### Microtrac Sync particle size analyser
+### Microtrac Sync Particle Size Analyser
 
 This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction.
 
