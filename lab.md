@@ -22,8 +22,7 @@ ___
 
 ![Thermofisher Phenom XL SEM](./assets/img/sem2.JPG)
 
-The Phenom Pure can load a single sample, and BSD and SED detectors but no EDS, and is also popular. We have a temperature-controlled sample holder on order which should arrive during the Spring 2024 semester.  
-
+The Phenom Pure can load a single sample, and BSD and SED detectors but no EDS. We have a temperature-controlled sample stage with a range of -25° C to 50° C, and a low-vacuum, charge dissipating stage.
 ___
 
 ### Olympus DSX-1000 Digital Optical Microscope
@@ -84,13 +83,13 @@ ___
 
 ### Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
 
-More info and instrument availability coming in March 2024
+Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-10 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control.
 
 ___
 
 ### Innovatest Nemesis 5100G2 Hardness Tester
 
-More info and instrument availability coming in spring 2024
+This hardness tester has a 9-position turret to automatically swith between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales.
 
 
 
