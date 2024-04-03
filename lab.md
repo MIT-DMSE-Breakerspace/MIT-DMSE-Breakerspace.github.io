@@ -83,7 +83,7 @@ ___
 
 ### Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
 
-Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-10 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control.
+Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-16 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control.
 
 ___
 
