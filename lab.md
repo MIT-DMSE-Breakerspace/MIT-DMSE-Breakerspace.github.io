@@ -83,17 +83,23 @@ ___
 
 ### Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
 
+![Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill](./assets/img/ion-mill.JPG)
+
 Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-16 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control.
 
 ___
 
 ### Innovatest Nemesis 5100G2 Hardness Tester
 
+![Innovatest Nemesis 5100G2 Hardness Tester](./assets/img/hardness-tester.JPG)
+
 This hardness tester has a 9-position turret to automatically swith between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales.
 
 ___
 
 ### Microtrac Sync Particle Size Analyser
+
+![Microtrac Sync Particle Size Analyser](./assets/img/particle-sizer.JPG)
 
 This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction.
 
