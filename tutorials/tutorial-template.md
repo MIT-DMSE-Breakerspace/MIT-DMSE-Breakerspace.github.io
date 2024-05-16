@@ -5,7 +5,7 @@ layout: default
 
 ## Sections:
 
-* Overview
+* [Overview](#overview)
 * Instrument startup
 * Instrument shut down
 * Compatible materials
@@ -16,7 +16,7 @@ layout: default
 * Instrument feature....
 * Tutorial
 
-### Overview:
+### <a name="overview"></a> Overview:
 
 Here is a basic overview of what this instrument is used for.
 
