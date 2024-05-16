@@ -48,7 +48,7 @@ Common sample preparation technique for liquids.
 
 Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
 
-### <a name="feature2"></a> Instrument feature
+### <a name="feature1"></a> Instrument feature
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
 
