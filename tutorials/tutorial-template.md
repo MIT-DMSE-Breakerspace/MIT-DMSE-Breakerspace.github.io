@@ -6,7 +6,7 @@ layout: default
 ## Sections:
 
 * [Overview](#overview)
-* [Instrument startup](#Instrument-startup)
+* [Instrument startup](#startup)
 * Instrument shut down
 * Compatible materials
 * Sample preparation
@@ -20,7 +20,7 @@ layout: default
 
 Here is a basic overview of what this instrument is used for.
 
-### Instrument startup:
+### <a name="startup"></a> Instrument startup:
 
 Procedure to start up the instrument
 
