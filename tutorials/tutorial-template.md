@@ -5,7 +5,7 @@ layout: default
 
 ## Sections
 
-* [Overview] [overview]
+* Overview
 * Instrument startup
 * Instrument shut down
 * Permissible materials
@@ -14,7 +14,7 @@ layout: default
 * Instrument feature 2
 * Instrument feature....
 
-### [overview]: Overview
+### Overview
 
 Here is a basic overview of what this instrument is used for.
 
