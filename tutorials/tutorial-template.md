@@ -6,7 +6,7 @@ layout: default
 ## Sections:
 
 * [Overview](#overview)
-* Instrument startup
+* [Instrument startup](#Instrument-startup)
 * Instrument shut down
 * Compatible materials
 * Sample preparation
