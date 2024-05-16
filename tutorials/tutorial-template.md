@@ -14,7 +14,9 @@ layout: default
 * Instrument feature 2
 * Instrument feature....
 
-[overview]: ### Overview
+### [overview]: Overview
+
+Here is a basic overview of what this instrument is used for.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
