@@ -10,6 +10,7 @@ layout: default
 * Instrument shut down
 * Compatible materials
 * Sample preparation
+* Sample loading
 * Instrument feature 1
 * Instrument feature 2
 * Instrument feature....
@@ -41,4 +42,14 @@ Common sample preparation technique for powders.
 
 Common sample preperation technique for liquids.
 
-###
+### Sample loading
+
+Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
+
+### Instrument feature
+
+A key feature of this instrument is eg. focus stacking to create 3d image with height data
+
+### Tutorial
+
+Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
