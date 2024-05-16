@@ -48,6 +48,10 @@ Common sample preparation technique for liquids.
 
 Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
 
+Double image one line test:
+
+![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG) ![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG)
+
 ### <a name="feature1"></a> Instrument feature
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
