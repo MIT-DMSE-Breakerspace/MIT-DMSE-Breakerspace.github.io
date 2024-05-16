@@ -42,6 +42,8 @@ Common sample preparation technique for powders.
 
 Common sample preperation technique for liquids.
 
+![AI generated scientist preparing sample](./assets.img./ai-scientist.JPG)
+
 ### Sample loading
 
 Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
