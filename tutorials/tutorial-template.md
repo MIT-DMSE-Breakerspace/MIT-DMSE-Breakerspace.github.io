@@ -5,7 +5,7 @@ layout: default
 
 ## Sections:
 
-* [Overview](#overview)
+* [Overview and manuals](#overview)
 * [Instrument startup](#startup)
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
@@ -19,6 +19,8 @@ layout: default
 ### <a name="overview"></a> Overview:
 
 Here is a basic overview of what this instrument is used for.
+
+Here are links to the manufacturer's manuals and other training materials.
 
 ### <a name="startup"></a> Instrument startup:
 
