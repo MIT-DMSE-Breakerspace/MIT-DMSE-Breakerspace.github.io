@@ -64,7 +64,7 @@ Take the tutorial sample in drawer and load it in to the instrument. Find featur
 
 Video embedded with video tag:
 
-<video width="800" height="450" controls>
+<video width="750" height="422" controls>
   <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
 Your browser does not support the video tag.
 </video>
