@@ -44,7 +44,7 @@ Common sample preparation technique for powders.
 
 Common sample preparation technique for liquids.
 
-![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG | width=50)
+![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG)
 
 ### <a name="loading"></a> Sample loading
 
