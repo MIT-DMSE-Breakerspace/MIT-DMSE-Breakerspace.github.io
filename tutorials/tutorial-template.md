@@ -68,3 +68,10 @@ Video embedded with video tag:
   <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+Unsized video to test on mobile:
+
+<video controls>
+  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
