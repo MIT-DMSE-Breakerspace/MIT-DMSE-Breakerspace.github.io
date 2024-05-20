@@ -54,8 +54,17 @@ Prepared samples, properly mounted in sample holder, are loaded using the follow
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
 
+Video called using image code:
+
 ![video test](../assets/video/raman-display-flip.MOV)
 
 ### <a name="tutorial"></a> Tutorial
 
 Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
+
+Video embedded with video tag:
+
+<video width="800" height="450" controls>
+  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
