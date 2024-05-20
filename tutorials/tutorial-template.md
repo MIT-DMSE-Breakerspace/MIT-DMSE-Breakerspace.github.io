@@ -62,7 +62,7 @@ Video called using image code:
 
 Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
 
-Video embedded with video tag:
+Video embedded with video tag, width set to 100%:
 
 <video width="100%" controls>
   <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
