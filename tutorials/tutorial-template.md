@@ -54,7 +54,7 @@ Prepared samples, properly mounted in sample holder, are loaded using the follow
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
 
-Video called using image code:
+GIF embedded using image tag:
 
 ![GIF test](../assets/video/raman-display-flip.GIF)
 
