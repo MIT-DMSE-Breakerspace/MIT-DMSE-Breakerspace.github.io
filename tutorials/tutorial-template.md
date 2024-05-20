@@ -54,6 +54,8 @@ Prepared samples, properly mounted in sample holder, are loaded using the follow
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
 
+![video test](../assets/video/raman-display-flip.MOV)
+
 ### <a name="tutorial"></a> Tutorial
 
 Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
