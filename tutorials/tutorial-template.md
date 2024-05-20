@@ -56,7 +56,7 @@ A key feature of this instrument is eg. focus stacking to create 3d image with h
 
 Video called using image code:
 
-![video test](../assets/video/raman-display-flip.MOV)
+![GIF test](../assets/video/raman-display-flip.GIF)
 
 ### <a name="tutorial"></a> Tutorial
 
