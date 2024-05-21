@@ -50,9 +50,9 @@ Full width image embedded using markdown:
 
 25% width images using html image tags:
 
-<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:25%; display:block; margin-left:0; margin-right:auto;"> 
-<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:25%; display:block; margin-left:auto; margin-right:auto;">
-<img src="../assets/img/sem2.JPG" alt="SEM" style="width:25%; display:block; margin-left:auto; margin-right:0;">  
+<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:25%; display:inline-block; margin-left:0; margin-right:auto;"> 
+<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:25%; display:inline-block; margin-left:auto; margin-right:auto;">
+<img src="../assets/img/sem2.JPG" alt="SEM" style="width:25%; display:inline-block; margin-left:auto; margin-right:0;">  
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
 
