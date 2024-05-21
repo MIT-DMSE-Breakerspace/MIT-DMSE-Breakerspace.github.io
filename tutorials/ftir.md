@@ -33,11 +33,13 @@ The power indicator is a blue light on the left side if the instrument. If not l
 <img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power indicator" style="width:33%;"> 
 <img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR power switch" style="width:33%;"> 
 
-With the instrument switched on, log in (if not already logged in), and run the OMNIC software. 
+With the instrument switched on, log in (if not already logged in), and run the OMNIC software. Note that there is also a software package called OMNIC Specta, which can be used for additional analysis and search tools, but plain OMNIC is the software needed to run the spectrometer.
+
+<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="FTIR power switch" style="width:33%;"> 
 
 ### <a name="shutdown"></a> Instrument shut down
 
-Procedure to shut down the instrument
+The manufacturer recommends leaving the instrument powered on, so all you need to do to shut down is be sure to save your data, close the software, and log off the computer.
 
 ### <a name="materials"></a> Compatible materials
 
