@@ -58,6 +58,7 @@ Full width image embedded using markdown:
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text. 
 
+
 ### <a name="loading"></a> Sample loading
 
 Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
