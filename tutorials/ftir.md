@@ -43,9 +43,7 @@ The manufacturer recommends leaving the instrument powered on, so all you need t
 
 ### <a name="materials"></a> Compatible materials
 
-These are the categories of materials that can safely be characterized on this instrument.
-
-These categories of materials should not be used.
+The ATR accessory allows for easy sampling of solid, semi-solid, powder, paste, and liquid materials. The only requirement is that the materials, and any solvents needed to clean them off the instrument, are non-hazardous and safe to transport to and handle in the lab. If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please do not hesitate to ask ahead of bringing it to the lab.
 
 ### <a name="sample-prep"></a> Sample preparation
 
