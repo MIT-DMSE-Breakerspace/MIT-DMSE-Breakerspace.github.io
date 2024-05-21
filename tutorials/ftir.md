@@ -33,9 +33,11 @@ The power indicator is a blue light on the left side if the instrument. If not l
 <img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power indicator" style="width:33%;"> 
 <img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR power switch" style="width:33%;"> 
 
-With the instrument switched on, log in (if not already logged in), and run the OMNIC software. Note that there is also a software package called OMNIC Specta, which can be used for additional analysis and search tools, but plain OMNIC is the software needed to run the spectrometer.
+With the instrument switched on, log in (if not already logged in), and run the OMNIC software. Note that there is also a software package called OMNIC Specta, which can be used for additional analysis and search tools, but plain OMNIC is the software needed to run the spectrometer. Once OMNIC has started, look for a green check mark next to system status in the upper right corner. Clicking this will optionally open the _System Status Overview_ window.
 
-<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="FTIR power switch" style="width:33%;"> 
+<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;"> 
+<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;"> 
+
 
 ### <a name="shutdown"></a> Instrument shut down
 
@@ -46,6 +48,8 @@ The manufacturer recommends leaving the instrument powered on, so all you need t
 The ATR accessory allows for easy sampling of solid, semi-solid, powder, paste, and liquid materials. The only requirement is that the materials, and any solvents needed to clean them off the instrument, are non-hazardous and safe to transport to and handle in the lab. If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please do not hesitate to ask ahead of bringing it to the lab.
 
 ### <a name="sample-prep"></a> Sample preparation
+
+The most important thing for collecting samples 
 
 Common sample preparation techniques for solids.
 
