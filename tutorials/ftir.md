@@ -35,8 +35,8 @@ The power indicator is a blue light on the left side if the instrument. If not l
 
 With the instrument switched on, log in (if not already logged in), and run the OMNIC software. Note that there is also a software package called OMNIC Specta, which can be used for additional analysis and search tools, but plain OMNIC is the software needed to run the spectrometer. Once OMNIC has started, look for a green check mark next to system status in the upper right corner. Clicking this will optionally open the _System Status Overview_ window.
 
-[!<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;">](../assets/img/tutorials/ftir/ftir-desktop.JPG){:target="_blank"}
-[!<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;">](../assets/img/tutorials/ftir/omnic-status.PNG){:target="_blank"}
+[<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;">](../assets/img/tutorials/ftir/ftir-desktop.JPG){:target="_blank"}
+[<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;">](../assets/img/tutorials/ftir/omnic-status.PNG){:target="_blank"}
 
 
 ### <a name="shutdown"></a> Instrument shut down

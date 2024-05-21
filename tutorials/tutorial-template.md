@@ -44,9 +44,9 @@ Common sample preparation technique for powders.
 
 Common sample preparation technique for liquids.
 
-Full width image embedded using markdown:
+Full width image embedded using markdown, :
 
-![AI generated scientist preparing sample](../assets/img/tutorials/template/ai-scientist.JPG)
+[![AI generated scientist preparing sample](../assets/img/tutorials/template/ai-scientist.JPG)](../assets/img/tutorials/template/ai-scientist.JPG){:target="_blank"}
 
 33% width images using html image tags:
 
