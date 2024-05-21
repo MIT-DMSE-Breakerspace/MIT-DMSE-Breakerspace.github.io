@@ -5,7 +5,7 @@ layout: default
 
 ## Sections:
 
-<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;">
+<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:50%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview and manuals](#overview)
 * [Instrument startup](#startup)
 * [Instrument shut down](#shutdown)
@@ -16,6 +16,7 @@ layout: default
 * [Instrument feature 2](#feature2)
 * [Instrument feature....](#feature...)
 * [Tutorial](#tutorial)
+<div style="clear:both;"></div>
 
 ### <a name="overview"></a> Overview:
 
