@@ -54,9 +54,11 @@ Full width image embedded using markdown:
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:25%; display:block; margin-left:auto; margin-right:auto;"> 
 
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:25%; display:block; margin-right:0px;">
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" width="25%" align="right">
 
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text. 
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text. 
+
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text. 
 
 
 
