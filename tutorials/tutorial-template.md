@@ -52,7 +52,7 @@ Full width image embedded using markdown:
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:0px;"> 
 
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:auto; margin-right:auto;"> 
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; display:block; margin-left:auto; margin-right:auto;"> 
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-right:0px;">
 
