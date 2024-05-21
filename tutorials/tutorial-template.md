@@ -50,7 +50,9 @@ Full width image embedded using markdown:
 
 30% width images using html image tags:
 
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:0px;"> <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:auto; margin-right:auto;"> <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-right:0px;">
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:0px;"> 
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-left:auto; margin-right:auto;"> 
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; margin-right:0px;">
 
 ### <a name="loading"></a> Sample loading
 
