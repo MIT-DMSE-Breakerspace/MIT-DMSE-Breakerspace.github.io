@@ -53,7 +53,7 @@ ___
 
 ![Nicolet iS5 FTIR Spectrometer](./assets/img/ftir.JPG)
 
-Fourier-transform infrared spectroscopy (FTIR) provides an infrared spectrum of absorption or emission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials.
+Fourier-transform infrared spectroscopy (FTIR) provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials.
 
 ___
 
