@@ -48,14 +48,14 @@ Full width image embedded using markdown:
 
 ![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG)
 
-25% width images using html image tags:
+33% width images using html image tags:
 
 <img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%;"> 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%;">
 <img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%;">  
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<img src="" style="content:""; clear:both";>
+<div style="clear:both";>
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
 
