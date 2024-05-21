@@ -48,12 +48,10 @@ Full width image embedded using markdown:
 
 ![AI generated scientist preparing sample](../assets/img/ai-scientist.JPG)
 
-33% width images using html image tags:
+25% width images using html image tags:
 
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:25%; margin-left:0px;"> 
-
-<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:25%; display:block; margin-left:auto; margin-right:auto;"> 
-
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" width="25%" align="left"> 
+<img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" width="25%" align="center">
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" width="25%" align="right">
 
 <img src="../assets/img/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text. 
