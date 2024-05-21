@@ -38,7 +38,6 @@ With the instrument switched on, log in (if not already logged in), and run the 
 [!<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;">](../assets/img/tutorials/ftir/ftir-desktop.JPG){:target="_blank"}
 [!<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;">](../assets/img/tutorials/ftir/omnic-status.PNG){:target="_blank"}
 
-[![screenshot of Breakerspace files drive](./assets/img/breakerspace-files.JPG)](./assets/img/breakerspace-files.JPG){:target="_blank"}
 
 ### <a name="shutdown"></a> Instrument shut down
 
