@@ -28,7 +28,12 @@ The full set of anufacturer's manuals and other training materials can be access
 
 ### <a name="startup"></a> Instrument startup:
 
-Procedure to start up the instrument
+The power indicator is a blue light on the left side if the instrument. If not lit, switch on the instrument with the switch on the left-rear of the instrument.
+
+<img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power indicator" style="width:33%;"> 
+<img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR power switch" style="width:33%;"> 
+
+With the instrument switched on, log in (if not already logged in), and run the OMNIC software. 
 
 ### <a name="shutdown"></a> Instrument shut down
 
