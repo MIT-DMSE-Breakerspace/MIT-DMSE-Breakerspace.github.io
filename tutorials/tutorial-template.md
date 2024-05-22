@@ -47,18 +47,18 @@ Common sample preparation technique for liquids.
 Full width image embedded using markdown, with caption, link to open image full screen:
 
 <figure>
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
+<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
+<figcaption> An AI generated image. </figcaption>
 </figure>
 
 
 32% width images using html image tags:
 
 <figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
+<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
+<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
+<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
+<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
 
