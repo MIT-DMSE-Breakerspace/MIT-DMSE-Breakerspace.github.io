@@ -50,12 +50,12 @@ Full width image embedded using markdown, :
 
 33% width images using html image tags:
 
-<figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:25%;"> 
+<figure style="width:25%; margin:0">
+	<img src="../assets/img/raman.JPG" alt="Raman microscope"> 
 	<figcaption> Raman microscope. </figcaption>
 </figure>
-<figure>
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:25%;">
+<figure style="width:25%; margin:0">
+	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer">
 	<figcaption> FTIR spectrometer. </figcaption>
 </figure>
 
