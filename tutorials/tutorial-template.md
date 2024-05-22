@@ -46,7 +46,7 @@ Common sample preparation technique for liquids.
 
 Full width image embedded using markdown, with caption, link to open image full screen:
 
-<figure style="padding:0">
+<figure>
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
 	<figcaption> An AI generated image. </figcaption>
 </figure>
