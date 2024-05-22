@@ -52,12 +52,12 @@ Full width image embedded using markdown, with caption, link to open image full 
 </figure>
 
 
-33% width images using html image tags:
+32% width images using html image tags:
 
 <figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0">  
+	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
+	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
+	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
 	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
