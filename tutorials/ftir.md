@@ -20,7 +20,9 @@ layout: default
 
 ### <a name="overview"></a> Overview:
 
-The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. The user guide for the spectrometer hardware can be accessed [here](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0).
+The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
+
+The user guide for the spectrometer hardware can be accessed [here](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0).
 
 The software used to operate the iS5 is called OMNIC. This [_Getting Started_](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0) guide has a useful list of tutorials and instructions on how to access them from within the software.
 
@@ -28,12 +30,22 @@ The full set of anufacturer's manuals and other training materials can be access
 
 ### <a name="startup"></a> Instrument startup:
 
-The power indicator is a blue light on the left side if the instrument. If not lit, switch on the instrument with the switch on the left-rear of the instrument.
+* Power on instrument, if needed, with switch on back left
+* Log on to instrument workstation
+* Start OMNIC software
+* Verify instrument connection via system status
+
+<figure>
+  <a href="../assets/img/tutorials/ftir/ftir-power.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power." style="width:25%;"></a>
+  <a href="../assets/img/tutorials/ftir/ftir-switch.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR switch." style="width:25%;"></a>
+  <a href="../assets/img/tutorials/ftir/ftir-desktop.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC icon." style="width:25%;"></a>
+  <a href="../assets/img/tutorials/ftir/omnic-status.PNG" target="_parent"><img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC status." style="width:25%;"></a>
+  <figcaption> FTIR power indicator light, FTIR power switch, OMNIC Icon, OMNIC instrument status indicator </figcaption>
+</figure>
+
 
 <img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power indicator" style="width:33%;"> 
 <img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR power switch" style="width:33%;"> 
-
-With the instrument switched on, log in (if not already logged in), and run the OMNIC software. Note that there is also a software package called OMNIC Specta, which can be used for additional analysis and search tools, but plain OMNIC is the software needed to run the spectrometer. Once OMNIC has started, look for a green check mark next to system status in the upper right corner. Clicking this will optionally open the _System Status Overview_ window.
 
 [<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;">](../assets/img/tutorials/ftir/ftir-desktop.JPG){:target="_blank"}
 [<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;">](../assets/img/tutorials/ftir/omnic-status.PNG){:target="_blank"}
