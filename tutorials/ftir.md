@@ -43,17 +43,12 @@ The full set of anufacturer's manuals and other training materials can be access
   <figcaption> FTIR power indicator light, FTIR power switch, OMNIC Icon, OMNIC instrument status indicator </figcaption>
 </figure>
 
-
-<img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power indicator" style="width:33%;"> 
-<img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR power switch" style="width:33%;"> 
-
-[<img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC software icon" style="width:33%;">](../assets/img/tutorials/ftir/ftir-desktop.JPG){:target="_blank"}
-[<img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC system status" style="width:33%;">](../assets/img/tutorials/ftir/omnic-status.PNG){:target="_blank"}
-
-
 ### <a name="shutdown"></a> Instrument shut down
 
-The manufacturer recommends leaving the instrument powered on, so all you need to do to shut down is be sure to save your data, close the software, and log off the computer.
+* Save all data (each spectrum must be indvidually selected and saved)
+* Close OMNIC
+* Log off workstation
+* Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
 ### <a name="materials"></a> Compatible materials
 
