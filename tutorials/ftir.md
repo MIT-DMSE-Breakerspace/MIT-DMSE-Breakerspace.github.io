@@ -44,8 +44,14 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 ### <a name="workflow"></a> Typical workflow:
 
+Initially, and periodically as required:
+* Clean ATR window
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
+* Clean ATR window
+
+For each sample:
 * Collect sample
+* Clean ATR window
 * Save sample spectrum
 * Repeat as needed
 
