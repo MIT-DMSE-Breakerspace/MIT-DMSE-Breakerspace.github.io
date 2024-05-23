@@ -74,7 +74,7 @@ _**If you have any questions about whether a material is appropriate to characte
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-Solid samples should be smooth and free of contaminants on the face to be tested. 
+Solid samples should be smooth and free of contaminants on the face to be tested. The self-leveling pressure tip is typically most suitable for a solid sample. Cover the diamond window with the sample, position the pressure tower over the window, and tighten the turn the knob until the clutch slips to provide clamping pressure to the sample. Although many solid samples will not contaminate the window, it is still a good idea 
 
 Common sample preparation technique for powders.
 
