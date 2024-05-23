@@ -12,7 +12,6 @@ layout: default
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
 * [Sample preparation](#sample-prep)
-* [Sample loading](#loading)
 * [Instrument feature 1](#feature1)
 * [Instrument feature 2](#feature2)
 * [Instrument feature....](#feature...)
@@ -70,15 +69,15 @@ For each sample:
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
-### <a name="sample-prep"></a> Sample preparation:
+### <a name="sample-prep"></a> Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-Solid samples should be smooth and free of contaminants on the face to be tested. The self-leveling pressure tip is typically most suitable for a solid sample. Cover the diamond window with the sample, position the pressure tower over the window, and tighten the turn the knob until the clutch slips to provide clamping pressure to the sample. Although many solid samples will not contaminate the window, it is still a good idea 
+Solid samples should be smooth and free of contaminants on the face to be tested. The self-leveling pressure tip is typically most suitable for a solid sample. Cover the diamond window with the sample, position the pressure tower over the window, and tighten the turn the knob until the clutch slips to provide clamping pressure to the sample. Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
-Common sample preparation technique for powders.
+To sample powders and beads/pellets it is recommend that you switch to the concave pressure tip. It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to ensure you are getting a good signal. Once power or pellet samples are in place, position the pressure tower over the window, and tighten the turn the knob until the clutch slips, collect sample, and clean the window with isopropyl alcohol and a Kimwipe.
 
-Common sample preparation technique for liquids.
+Liquid samples can be run by placing a droplet on the window. Non-volatile liquids can be run uncovered, without the use of the pressure tower. For volatile samples, there is a volatiles cover that can be placed over them to prevent evaporation. The cover should be centered over the sample and clamped down using the pressure tower with the self-leveling foot attached. 
 
 Full width image embedded using markdown:
 
@@ -96,11 +95,6 @@ Full width image embedded using markdown:
 
 <img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
 <div style="clear:both;"></div>  
-  
-
-### <a name="loading"></a> Sample loading
-
-Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
 
 ### <a name="feature1"></a> Instrument feature
 
