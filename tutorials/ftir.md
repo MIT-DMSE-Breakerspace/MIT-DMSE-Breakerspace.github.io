@@ -52,8 +52,8 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 * Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
 * Solvents needed to clean a sample off the instrument must also be non-hazardous 
-
-**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**
+_
+_**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
 ### <a name="sample-prep"></a> Sample preparation:
 
