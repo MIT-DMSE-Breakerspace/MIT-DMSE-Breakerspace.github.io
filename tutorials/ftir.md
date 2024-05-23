@@ -11,8 +11,8 @@ layout: default
 * [Workflow](#workflow)
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
-* [Sample preparation](#sample-prep)
 * [Background collection](#background)
+* [Sample preparation and loading](#sample-prep)
 * [Tutorial](#tutorial)
 <div style="clear:both;"></div>
 
@@ -69,6 +69,10 @@ For each sample:
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
+### <a name="background"></a> Background collection
+
+Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water, or whatever whatever water your sample is dissolved in. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate.
+
 ### <a name="sample-prep"></a> Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
@@ -86,13 +90,8 @@ Liquid samples can be run by placing a droplet on the window. Non-volatile liqui
   <figcaption> Loading a solid sample, swapping pressure tips, use of the volatile cover </figcaption>
 </figure>
 
-### <a name="feature1"></a> Instrument feature
+### <a name="background"></a> Background collection
 
-A key feature of this instrument is eg. focus stacking to create 3d image with height data
-
-GIF embedded using image tag:
-
-![GIF test](../assets/video/raman-display-flip.GIF)
 
 ### <a name="tutorial"></a> Tutorial
 
