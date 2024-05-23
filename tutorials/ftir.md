@@ -13,7 +13,8 @@ layout: default
 * [Compatible materials](#materials)
 * [Background collection](#background)
 * [Sample preparation and loading](#sample-prep)
-* [Tutorial](#tutorial)
+* [Data processing and analysis](#analysis)
+* [Exercise](#exercise)
 <div style="clear:both;"></div>
 
 ### <a name="overview"></a> Overview:
@@ -69,7 +70,7 @@ For each sample:
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
-### <a name="background"></a> Background collection
+### <a name="background"></a> Background collection:
 
 Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water, or whatever whatever water your sample is dissolved in. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate.
 
@@ -90,17 +91,11 @@ Liquid samples can be run by placing a droplet on the window. Non-volatile liqui
   <figcaption> Loading a solid sample, swapping pressure tips, use of the volatile cover </figcaption>
 </figure>
 
-### <a name="background"></a> Background collection
+### <a name="analysis"></a> Data processing and analysis:
 
+Data processing is beyond the scope of this tutorial, but we recommend the use of the [Wiley KnowItAll Spectroscopy Software & Libraries available through the MIT Libraries](https://libguides.mit.edu/knowitall).
 
-### <a name="tutorial"></a> Tutorial
+### <a name="exercise"></a> Exercise:
 
-Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
-
-Video embedded with video tag, width set to 100%:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+Test solid polymer samples and determine which is acrylic and which is polypropylene through a library search. Measure samples of caffeinated and decaffeinated ground coffee and determine which is which by comparing the height of the peak at 1650.
 
