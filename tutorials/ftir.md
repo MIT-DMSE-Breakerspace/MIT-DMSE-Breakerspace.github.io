@@ -28,8 +28,8 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 ### <a name="startup"></a> Instrument startup:
 
-* Power on instrument, if needed, with switch on back left
-* Log on to instrument workstation
+* Power on instrument, if needed
+* Log on to instrument workstation using your MIT Kerberos
 * Start OMNIC software
 * Verify instrument connection via system status
 
@@ -38,21 +38,24 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
   <a href="../assets/img/tutorials/ftir/ftir-switch.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR switch." style="width:24%;"></a>
   <a href="../assets/img/tutorials/ftir/ftir-desktop.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC icon." style="width:24%;"></a>
   <a href="../assets/img/tutorials/ftir/omnic-status.PNG" target="_parent"><img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC status." style="width:24%;"></a>
-  <figcaption> FTIR power indicator light, FTIR power switch, OMNIC Icon, OMNIC instrument status indicator </figcaption>
+  <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
 </figure>
 
-### <a name="shutdown"></a> Instrument shut down
+### <a name="shutdown"></a> Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
 * Log off workstation
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
-### <a name="materials"></a> Compatible materials
+### <a name="materials"></a> Compatible materials:
 
-The ATR accessory allows for easy sampling of solid, semi-solid, powder, paste, and liquid materials. The only requirement is that the materials, and any solvents needed to clean them off the instrument, are non-hazardous and safe to transport to and handle in the lab. If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please do not hesitate to ask ahead of bringing it to the lab.
+* Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
+* Solvents needed to clean a sample off the instrument must also be non-hazardous 
 
-### <a name="sample-prep"></a> Sample preparation
+**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**
+
+### <a name="sample-prep"></a> Sample preparation:
 
 The most important thing for collecting samples 
 
