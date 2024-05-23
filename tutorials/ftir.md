@@ -79,23 +79,6 @@ To sample powders and beads/pellets it is recommend that you switch to the conca
 
 Liquid samples can be run by placing a droplet on the window. Non-volatile liquids can be run uncovered, without the use of the pressure tower. For volatile samples, there is a volatiles cover that can be placed over them to prevent evaporation. The cover should be centered over the sample and clamped down using the pressure tower with the self-leveling foot attached. 
 
-Full width image embedded using markdown:
-
-![AI generated scientist preparing sample](../assets/img/tutorials/template/ai-scientist.JPG)
-
-33% width images using html image tags:
-
-<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%;"> 
-<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%;">
-<img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%;">  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-
 ### <a name="feature1"></a> Instrument feature
 
 A key feature of this instrument is eg. focus stacking to create 3d image with height data
