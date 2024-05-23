@@ -8,6 +8,7 @@ layout: default
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview and manuals](#overview)
 * [Instrument startup](#startup)
+* [Workflow](#workflow)
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
 * [Sample preparation](#sample-prep)
@@ -40,6 +41,13 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
   <a href="../assets/img/tutorials/ftir/omnic-status.PNG" target="_parent"><img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC status." style="width:24%;"></a>
   <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
 </figure>
+
+### <a name="workflow"></a> Typical workflow:
+
+* Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
+* Collect sample
+* Save sample spectrum
+* Repeat as needed
 
 ### <a name="shutdown"></a> Instrument shut down:
 
