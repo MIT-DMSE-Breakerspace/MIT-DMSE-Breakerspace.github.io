@@ -12,9 +12,7 @@ layout: default
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
 * [Sample preparation](#sample-prep)
-* [Instrument feature 1](#feature1)
-* [Instrument feature 2](#feature2)
-* [Instrument feature....](#feature...)
+* [Background collection](#background)
 * [Tutorial](#tutorial)
 <div style="clear:both;"></div>
 
@@ -45,6 +43,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 ### <a name="workflow"></a> Typical workflow:
 
 Initially, and periodically as required:
+* Remove protective cover from ATR crystal plate
 * Clean ATR window
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
 * Clean ATR window
@@ -60,6 +59,7 @@ For each sample:
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
 * Log off workstation
+* Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
 ### <a name="materials"></a> Compatible materials:
@@ -78,6 +78,13 @@ Solid samples should be smooth and free of contaminants on the face to be tested
 To sample powders and beads/pellets it is recommend that you switch to the concave pressure tip. It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to ensure you are getting a good signal. Once power or pellet samples are in place, position the pressure tower over the window, and tighten the turn the knob until the clutch slips, collect sample, and clean the window with isopropyl alcohol and a Kimwipe.
 
 Liquid samples can be run by placing a droplet on the window. Non-volatile liquids can be run uncovered, without the use of the pressure tower. For volatile samples, there is a volatiles cover that can be placed over them to prevent evaporation. The cover should be centered over the sample and clamped down using the pressure tower with the self-leveling foot attached. 
+
+<figure>
+  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
+  <figcaption> Loading a solid sample, swapping pressure tips, use of the volatile cover </figcaption>
+</figure>
 
 ### <a name="feature1"></a> Instrument feature
 
