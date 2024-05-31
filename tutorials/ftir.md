@@ -3,10 +3,13 @@ layout: default
 ---
 # Breakerspace FTIR Tutorial
 
+### <a name="overview"></a> Overview:
+
+The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
+
 ## Sections:
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
-* [Overview](#overview)
 * [Workflow steps](#workflow)
   * Instrument startup
   * Preparation for sample collection
@@ -23,10 +26,6 @@ layout: default
 * Common failure modes
 * [Exercise](#exercise)
 <div style="clear:both;"></div>
-
-### <a name="overview"></a> Overview:
-
-The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
 
 ### <a name="workflow"></a> Workflow steps:
 
