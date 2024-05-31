@@ -8,7 +8,7 @@ layout: default
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview](#overview)
 * [Workflow steps](#workflow)
-* [Workflow step instructions]
+* [Workflow step instructions](#instructions)
   * Cleaning ATR crystal
 * [Compatible materials and safety](#materials)
 * [Background collection](#background)
