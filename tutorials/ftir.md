@@ -37,9 +37,8 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
   <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
 </figure>
 
-#### <a name=""></a> Prepare for collection:
+#### <a name=""></a> Prepare for sample collection:
 
-Initially, and periodically as required:
 * Remove protective cover from ATR crystal plate
 * Clean ATR window
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
@@ -47,7 +46,6 @@ Initially, and periodically as required:
 
 #### Sample collection
 
-For each sample:
 * Collect sample
 * Clean ATR window
 * Save sample spectrum
@@ -62,14 +60,14 @@ For each sample:
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
+### Workflow step instructions
+
 #### Cleaning the ATR crystal
 
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
 
 _insert gif of process_
-
-### Workflow step instructions
 
 #### <a name="background"></a> Background collection:
 
