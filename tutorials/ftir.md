@@ -129,7 +129,7 @@ _insert powder samples gif_
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
-##### Swapping pressure tip:
+#### Swapping pressure tip:
 
 <figure>
   <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
