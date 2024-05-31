@@ -7,7 +7,9 @@ layout: default
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview](#overview)
-* [Workflow](#workflow)
+* [Workflow steps](#workflow)
+* [Workflow step instructions]
+  * Cleaning ATR crystal
 * [Compatible materials and safety](#materials)
 * [Background collection](#background)
 * [Sample preparation and loading](#sample-prep)
@@ -60,7 +62,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
-### Workflow step instructions
+### Workflow step instructions:
 
 #### Cleaning the ATR crystal:
 
