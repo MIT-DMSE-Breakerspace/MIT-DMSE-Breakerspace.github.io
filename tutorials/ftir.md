@@ -7,7 +7,6 @@ layout: default
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview and manuals](#overview)
-* [Instrument startup](#startup)
 * [Workflow](#workflow)
 * [Instrument shut down](#shutdown)
 * [Compatible materials](#materials)
@@ -26,7 +25,9 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * [OMNIC software _Getting Started_ guide](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0)
 * [Complete set of manufacturer's manuals](https://www.dropbox.com/scl/fo/n0zv4090ncohz1yd53zyp/AEk8_3vo2JuCcHDSDBEEjck?rlkey=haqbguq12kbmh8fi7jmi8wzvg&dl=0)
 
-### <a name="startup"></a> Instrument startup:
+### <a name="workflow"></a> Daily workflow:
+
+##### Instrument startup
 
 * Power on instrument, if needed
 * Log on to instrument workstation using your MIT Kerberos
@@ -41,7 +42,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
   <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
 </figure>
 
-### <a name="workflow"></a> Typical workflow:
+##### <a name=""></a> Prepare for collection:
 
 Initially, and periodically as required:
 * Remove protective cover from ATR crystal plate
@@ -49,17 +50,20 @@ Initially, and periodically as required:
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
 * Clean ATR window
 
+##### Sample collection
+
 For each sample:
 * Collect sample
 * Clean ATR window
 * Save sample spectrum
 * Repeat as needed
 
-### <a name="shutdown"></a> Instrument shut down:
+##### <a name="shutdown"></a> Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
 * Log off workstation
+* Clean ATR window
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
