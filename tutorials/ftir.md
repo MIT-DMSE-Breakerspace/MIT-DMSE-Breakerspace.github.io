@@ -8,13 +8,19 @@ layout: default
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
 * [Overview](#overview)
 * [Workflow steps](#workflow)
+  * Instrument startup
+  * Preparation for sample collection
+  * Sample collection
+  * Instrument shutdown
 * [Workflow step instructions](#instructions)
   * Cleaning ATR crystal
+  * Background collection
+  * Sample preparation and loading
+  * Swapping pressure tipes
 * [Compatible materials and safety](#materials)
-* [Background collection](#background)
-* [Sample preparation and loading](#sample-prep)
 * [Data processing and analysis](#analysis)
 * [Manuals](#manuals)
+* Common failure modes
 * [Exercise](#exercise)
 <div style="clear:both;"></div>
 
