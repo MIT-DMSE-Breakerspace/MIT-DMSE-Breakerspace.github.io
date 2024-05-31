@@ -22,7 +22,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 ### <a name="workflow"></a> Workflow steps:
 
-#### Instrument startup
+#### Instrument startup:
 
 * Power on instrument, if needed
 * Log on to instrument workstation using your MIT Kerberos
@@ -44,7 +44,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
 * Clean ATR window
 
-#### Sample collection
+#### Sample collection:
 
 * Collect sample
 * Clean ATR window
@@ -62,7 +62,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 ### Workflow step instructions
 
-#### Cleaning the ATR crystal
+#### Cleaning the ATR crystal:
 
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
@@ -82,7 +82,7 @@ _insert image with collect background highlighted_
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-##### Solid samples
+##### Solid samples:
 
 * Select self leveling pressure tip
 * Solid samples should be smooth and free of contaminants on the face to be tested
@@ -98,7 +98,7 @@ Although many solid samples will not contaminate the window, it is still a good 
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
-##### Powder samples
+##### Powder samples:
 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
@@ -109,7 +109,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 _insert powder samples gif_
 
-##### Liquid samples
+##### Liquid samples:
 
 * Place droplet of sample on ATR crystal
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
@@ -121,7 +121,7 @@ _insert powder samples gif_
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
-##### Swapping pressure tip
+##### Swapping pressure tip:
 
 <figure>
   <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
