@@ -27,7 +27,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 ### <a name="workflow"></a> Daily workflow:
 
-##### Instrument startup
+#### Instrument startup
 
 * Power on instrument, if needed
 * Log on to instrument workstation using your MIT Kerberos
@@ -42,7 +42,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
   <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
 </figure>
 
-##### <a name=""></a> Prepare for collection:
+#### <a name=""></a> Prepare for collection:
 
 Initially, and periodically as required:
 * Remove protective cover from ATR crystal plate
@@ -50,7 +50,7 @@ Initially, and periodically as required:
 * Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
 * Clean ATR window
 
-##### Sample collection
+#### Sample collection
 
 For each sample:
 * Collect sample
@@ -58,7 +58,7 @@ For each sample:
 * Save sample spectrum
 * Repeat as needed
 
-##### <a name="shutdown"></a> Instrument shut down:
+#### <a name="shutdown"></a> Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
