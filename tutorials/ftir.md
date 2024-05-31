@@ -20,8 +20,7 @@ layout: default
 
 The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
 
-
-### <a name="workflow"></a> Daily workflow:
+### <a name="workflow"></a> Workflow steps:
 
 #### Instrument startup
 
@@ -70,7 +69,9 @@ For each sample:
 
 _insert gif of process_
 
-### <a name="background"></a> Background collection:
+### Workflow step instructions
+
+#### <a name="background"></a> Background collection:
 
 Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
 
@@ -79,11 +80,11 @@ Before collecting spectra, it is necessary to collect a background reading. The 
 
 _insert image with collect background highlighted_
 
-### <a name="sample-prep"></a> Sample preparation and loading:
+#### <a name="sample-prep"></a> Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-#### Solid samples
+##### Solid samples
 
 * Select self leveling pressure tip
 * Solid samples should be smooth and free of contaminants on the face to be tested
@@ -99,7 +100,7 @@ Although many solid samples will not contaminate the window, it is still a good 
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
-#### Powder samples
+##### Powder samples
 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
@@ -110,7 +111,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 _insert powder samples gif_
 
-#### Liquid samples
+##### Liquid samples
 
 * Place droplet of sample on ATR crystal
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
@@ -122,6 +123,13 @@ _insert powder samples gif_
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
+##### Swapping pressure tip
+
+<figure>
+  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
+  <figcaption> Swapping pressure tips</figcaption>
+</figure>
+
 ### <a name="materials"></a> Compatible materials:
 
 * Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
@@ -129,14 +137,6 @@ _insert powder samples gif_
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
-
-
-<figure>
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
-  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
-  <figcaption> Loading a solid sample, swapping pressure tips, use of the volatile cover </figcaption>
-</figure>
 
 ### <a name="analysis"></a> Data processing and analysis:
 
