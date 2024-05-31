@@ -6,13 +6,13 @@ layout: default
 ## Sections:
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
-* [Overview and manuals](#overview)
+* [Overview](#overview)
 * [Workflow](#workflow)
-* [Instrument shut down](#shutdown)
-* [Compatible materials](#materials)
+* [Compatible materials and safety](#materials)
 * [Background collection](#background)
 * [Sample preparation and loading](#sample-prep)
 * [Data processing and analysis](#analysis)
+* [Manuals](#manuals)
 * [Exercise](#exercise)
 <div style="clear:both;"></div>
 
@@ -20,10 +20,6 @@ layout: default
 
 The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
 
-* [iS5 spectrometer user guide](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0)
-* [iD7 ATR User Guide](https://www.dropbox.com/scl/fi/j24msyzbfpqahhk66z5y8/3021_-iD7_UG.pdf?rlkey=xf1sw5yoydqomsmcs1hxhrf5y&dl=0)
-* [OMNIC software _Getting Started_ guide](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0)
-* [Complete set of manufacturer's manuals](https://www.dropbox.com/scl/fo/n0zv4090ncohz1yd53zyp/AEk8_3vo2JuCcHDSDBEEjck?rlkey=haqbguq12kbmh8fi7jmi8wzvg&dl=0)
 
 ### <a name="workflow"></a> Daily workflow:
 
@@ -58,7 +54,7 @@ For each sample:
 * Save sample spectrum
 * Repeat as needed
 
-#### <a name="shutdown"></a> Instrument shut down:
+#### Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
@@ -67,6 +63,17 @@ For each sample:
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
+### Cleaning the ATR crystal
+
+* apply a few drops of isopropyl alcohol to the crystal
+* wipe with Kimwipe
+
+insert gif of process
+
+### <a name="background"></a> Background collection:
+
+Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water, or whatever whatever water your sample is dissolved in. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. Load the background material onto the ATR crystal, or for air leave it uncovered, and click "collect background"
+
 ### <a name="materials"></a> Compatible materials:
 
 * Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
@@ -74,9 +81,7 @@ For each sample:
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
-### <a name="background"></a> Background collection:
 
-Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water, or whatever whatever water your sample is dissolved in. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate.
 
 ### <a name="sample-prep"></a> Sample preparation and loading:
 
@@ -98,6 +103,13 @@ Liquid samples can be run by placing a droplet on the window. Non-volatile liqui
 ### <a name="analysis"></a> Data processing and analysis:
 
 Data processing is beyond the scope of this tutorial, but we recommend the use of the [Wiley KnowItAll Spectroscopy Software & Libraries available through the MIT Libraries](https://libguides.mit.edu/knowitall).
+
+### <a name="manuals"></a> Manuals:
+
+* [iS5 spectrometer user guide](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0)
+* [iD7 ATR User Guide](https://www.dropbox.com/scl/fi/j24msyzbfpqahhk66z5y8/3021_-iD7_UG.pdf?rlkey=xf1sw5yoydqomsmcs1hxhrf5y&dl=0)
+* [OMNIC software _Getting Started_ guide](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0)
+* [Complete set of manufacturer's manuals](https://www.dropbox.com/scl/fo/n0zv4090ncohz1yd53zyp/AEk8_3vo2JuCcHDSDBEEjck?rlkey=haqbguq12kbmh8fi7jmi8wzvg&dl=0)
 
 ### <a name="exercise"></a> Exercise:
 
