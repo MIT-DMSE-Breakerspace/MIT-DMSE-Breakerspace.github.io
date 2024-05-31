@@ -62,7 +62,7 @@ For each sample:
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
-### Cleaning the ATR crystal
+#### Cleaning the ATR crystal
 
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
