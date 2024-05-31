@@ -83,42 +83,42 @@ _insert image with collect background highlighted_
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-  #### Solid samples
+#### Solid samples
 
-  * Select self leveling pressure tip
-  * Solid samples should be smooth and free of contaminants on the face to be tested
-  * Cover the diamond window with the sample
-  * Position the pressure tower over the window
-  * Tighten the turn the knob until the clutch slips to provide clamping pressure to the sample 
-  * Click "collect sample" in OMNIC , clean, repeat as needed
+* Select self leveling pressure tip
+* Solid samples should be smooth and free of contaminants on the face to be tested
+* Cover the diamond window with the sample
+* Position the pressure tower over the window
+* Tighten the turn the knob until the clutch slips to provide clamping pressure to the sample 
+* Click "collect sample" in OMNIC , clean, repeat as needed
 
-  Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
+Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
-  <figure>
+<figure>
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
-  #### Powder samples
+#### Powder samples
 
-  It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
+It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
-  * Select the concave pressure tip
-  * Position the pressure tower over the window
-  * Tighten the turn the knob until the clutch slips
-  * Click "collect sample" in OMNIC, clean, repeat as needed
+* Select the concave pressure tip
+* Position the pressure tower over the window
+* Tighten the turn the knob until the clutch slips
+* Click "collect sample" in OMNIC, clean, repeat as needed
 
-  _insert powder samples gif_
+_insert powder samples gif_
 
-  #### Liquid samples
+#### Liquid samples
 
-  * Place droplet of sample on ATR crystal
-    * Non-volatile liquids can be run uncovered, without the use of the pressure tower
-    * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover the pressure tower
-  * Click "collect sample" in OMNIC, clean, repeat as needed
+* Place droplet of sample on ATR crystal
+  * Non-volatile liquids can be run uncovered, without the use of the pressure tower
+  * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover the pressure tower
+* Click "collect sample" in OMNIC, clean, repeat as needed
 
-  <figure>
-    <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
+<figure>
+  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
