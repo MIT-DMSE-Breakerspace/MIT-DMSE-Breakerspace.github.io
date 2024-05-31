@@ -68,11 +68,59 @@ For each sample:
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
 
-insert gif of process
+_insert gif of process_
 
 ### <a name="background"></a> Background collection:
 
-Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water, or whatever whatever water your sample is dissolved in. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. Load the background material onto the ATR crystal, or for air leave it uncovered, and click "collect background"
+Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
+
+* Load the background material onto the ATR crystal, or for air leave it uncovered
+* Click "collect background"
+
+_insert image with collect background highlighted_
+
+### <a name="sample-prep"></a> Sample preparation and loading:
+
+To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
+
+  #### Solid samples
+
+  * Select self leveling pressure tip
+  * Solid samples should be smooth and free of contaminants on the face to be tested
+  * Cover the diamond window with the sample
+  * Position the pressure tower over the window
+  * Tighten the turn the knob until the clutch slips to provide clamping pressure to the sample 
+  * Click "collect sample" in OMNIC , clean, repeat as needed
+
+  Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
+
+  <figure>
+  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <figcaption> Loading a solid sample</figcaption>
+</figure>
+
+  #### Powder samples
+
+  It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
+
+  * Select the concave pressure tip
+  * Position the pressure tower over the window
+  * Tighten the turn the knob until the clutch slips
+  * Click "collect sample" in OMNIC, clean, repeat as needed
+
+  _insert powder samples gif_
+
+  #### Liquid samples
+
+  * Place droplet of sample on ATR crystal
+    * Non-volatile liquids can be run uncovered, without the use of the pressure tower
+    * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover the pressure tower
+  * Click "collect sample" in OMNIC, clean, repeat as needed
+
+  <figure>
+    <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
+  <figcaption> Use of the volatile cover </figcaption>
+</figure>
 
 ### <a name="materials"></a> Compatible materials:
 
@@ -82,16 +130,6 @@ Before collecting spectra, it is necessary to collect a background reading. The 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
 
-
-### <a name="sample-prep"></a> Sample preparation and loading:
-
-To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
-
-Solid samples should be smooth and free of contaminants on the face to be tested. The self-leveling pressure tip is typically most suitable for a solid sample. Cover the diamond window with the sample, position the pressure tower over the window, and tighten the turn the knob until the clutch slips to provide clamping pressure to the sample. Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
-
-To sample powders and beads/pellets it is recommend that you switch to the concave pressure tip. It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to ensure you are getting a good signal. Once power or pellet samples are in place, position the pressure tower over the window, and tighten the turn the knob until the clutch slips, collect sample, and clean the window with isopropyl alcohol and a Kimwipe.
-
-Liquid samples can be run by placing a droplet on the window. Non-volatile liquids can be run uncovered, without the use of the pressure tower. For volatile samples, there is a volatiles cover that can be placed over them to prevent evaporation. The cover should be centered over the sample and clamped down using the pressure tower with the self-leveling foot attached. 
 
 <figure>
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
