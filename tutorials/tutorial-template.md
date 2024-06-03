@@ -3,24 +3,38 @@ layout: default
 ---
 # Breakerspace Instrument Tutorial Template
 
-## Sections:
+## Overview
 
-* [Overview and manuals](#overview)
-* [Instrument startup](#startup)
-* [Instrument shut down](#shutdown)
-* [Compatible materials](#materials)
-* [Sample preparation](#sample-prep)
-* [Sample loading](#loading)
-* [Instrument feature 1](#feature1)
-* [Instrument feature 2](#feature2)
-* [Instrument feature....](#feature...)
-* [Tutorial](#tutorial)
+Matches info/image for instrument on lab page
 
-### <a name="overview"></a> Overview:
+### Sections:
 
-Here is a basic overview of what this instrument is used for.
+* Standard (daily) operating protocol
+	* Startup
+		* sequence of powering on, logging in, starting softare, homing/tilt position etc.
+	* Operation
+		* sample loading, data capture and saving, etc.
+	* Shut down
+		* sequence to close/log off/power down as needed
+* Detailed operating instructions
+	* as needed explanations of each step, eg. collecting background, sample loading, etc.
+* Materials
+	* compatible materials
+	* sample prep
+	* safety/handling related info
+* Data processing and analysis
+* Common failure modes
+* Manufacturer manuals
+	* software manual
+	* hardware manual
+* Links
+	* good video tutorials, etc.
+* Exercises
+	* intro for anyone - eg honey bee on optical
+	* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
+	* advanced exercise - deconvolution of compound sample from spectrometer, etc.
 
-Here are links to the manufacturer's manuals and other training materials.
+
 
 ### <a name="startup"></a> Instrument startup:
 
