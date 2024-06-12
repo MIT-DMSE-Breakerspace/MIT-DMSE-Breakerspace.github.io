@@ -39,30 +39,35 @@ Matches info/image for instrument on lab page
 
 When moving the camera around the sample, use the arrow keys for big jumps. Press control and the arrow keys for more precise movement, or click to center the camera on your cursor. To focus click the focus button in the bottom left corner. The brightness and magnification buttons are right above it. Right click the focus and brightness buttons to toggle between manual and auto adjustment. Right click and drag for precise adjustments and use the mouse wheel for large adjustments.
 
+
 <figure>
 	<a href="../assets/img/tutorials/SEM/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/SEM/FocBri.PNG" alt="An image showing how to change the brightness or focus"></a>
 </figure>
 
 #### Acquisition
 
-Press the camera icon on the left side of the screen to take an acquisition of the live feed. This picture will appear the gallery menu in the top right. This is where you will be able to see al the photos you have taken. 
+Press the camera icon on the left side of the screen to take an acquisition of the live feed. This picture will appear in the gallery menu in the top right. This is where you can see all the photos you have taken.
 
-(picture)
+<figure>
+	<a href="../assets/img/tutorials/SEM/AcgGal.PNG" target="_parent"><img src="../assets/img/tutorials/SEM/AcgGal.PNG" alt="An image showing how to take a picture and where to find all the pictures you have taken."></a>
+</figure>
 
 #### EDS
 
-To use the EDS feature click on the squiggly line icon in the top right
+To use the EDS feature click on the squiggly line icon in the top right. Select a shape to measure along or inside in the menu on the left. The map option can be used to see where each element is located within the frame. A Table showing the atomic and weight concentrations of the area designated by the shape you drew will appear.
 
-(picture)
-
-Select a shape to measure along or inside in the menu on the left. The map option can be used to see where each element is located within the frame. A Table will appear showing the atomic and weight concentrations of the area designated by the shape you drew.
-
-(gif)
+<figure>
+	<a href="../assets/img/tutorials/SEM/EDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/EDSFinal.gif.gif" alt="A gif showing how to use the EDS feature."></a>
+</figure>
 
 #### Live EDS
 
 Click on the Live EDS icon in the top left. Click anywhere on the live feed to see the elemental makeup of that section by atomic and weight concentration. Click the square to stop data collection before navigating to a different section.
 
+
+<figure>
+	<a href="../assets/img/tutorials/SEM/LiveEDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDSFinal.gif.gif" alt="A gif showing how to use the Live EDS feature."></a>
+</figure>
 
 * Materials
 	* compatible materials
