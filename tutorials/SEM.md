@@ -39,7 +39,9 @@ Matches info/image for instrument on lab page
 
 When moving the camera around the sample, use the arrow keys for big jumps. Press control and the arrow keys for more precise movement, or click to center the camera on your cursor. To focus click the focus button in the bottom left corner. The brightness and magnification buttons are right above it. Right click the focus and brightness buttons to toggle between manual and auto adjustment. Right click and drag for precise adjustments and use the mouse wheel for large adjustments.
 
-(picture)
+<figure>
+	<a href="../assets/img/tutorials/SEM/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/SEM/FocBri.PNG" alt="An image showing how to change the brightness or focus"></a>
+</figure>
 
 #### Acquisition
 
