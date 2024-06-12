@@ -57,7 +57,7 @@ Press the camera icon on the left side of the screen to take an acquisition of t
 To use the EDS feature click on the squiggly line icon in the top right. Select a shape to measure along or inside in the menu on the left. The map option can be used to see where each element is located within the frame. A Table showing the atomic and weight concentrations of the area designated by the shape you drew will appear.
 
 <figure>
-	<a href="../assets/img/tutorials/SEM/EDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/EDSFinal.gif.gif" alt="A gif showing how to use the EDS feature."></a>
+	<a href="../assets/img/tutorials/SEM/EDS.gif" target="_parent"><img src="../assets/img/tutorials/SEM/EDS.gif" alt="A gif showing how to use the EDS feature."></a>
 </figure>
 
 #### Live EDS
@@ -66,7 +66,7 @@ Click on the Live EDS icon in the top left. Click anywhere on the live feed to s
 
 
 <figure>
-  <a href="../assets/img/tutorials/SEM/LiveEDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDSFinal.gif" alt="Solid sample loading." style="width:75%;"></a>
+  <a href="../assets/img/tutorials/SEM/LiveEDS.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDS.gif" alt="Solid sample loading." style="width:75%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
