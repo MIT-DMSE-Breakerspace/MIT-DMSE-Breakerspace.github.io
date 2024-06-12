@@ -66,7 +66,8 @@ Click on the Live EDS icon in the top left. Click anywhere on the live feed to s
 
 
 <figure>
-	<a href="../assets/img/tutorials/SEM/LiveEDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDSFinal.gif.gif" alt="A gif showing how to use the Live EDS feature."></a>
+  <a href="../assets/img/tutorials/SEM/LiveEDSFinal.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDSFinal.gif" alt="Solid sample loading." style="width:75%;"></a>
+  <figcaption> Loading a solid sample</figcaption>
 </figure>
 
 * Materials
