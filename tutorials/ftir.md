@@ -64,7 +64,7 @@ Repeat steps as needed
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
-### Detailed instructions:
+### <a name="instructions"></a> Detailed instructions:
 
 #### <a name="crystal"></a> Cleaning the ATR crystal:
 
