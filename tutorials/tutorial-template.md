@@ -10,13 +10,13 @@ Matches info/image for instrument on lab page, brief description of what it does
 ### Index: - sections are \<h3>
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
-* Materials
-* Detailed operating instructions
-* Data processing and analysis
-* Common failure modes
-* Manufacturer manuals
-* Links
-* Exercises
+* [Materials and sample prep](#materials)
+* [Detailed operating instructions](#details)
+* [Data processing and analysis](#data)
+* [Common failure modes](#failures)
+* [Manufacturer manuals](#manuals)
+* [Links](#links)
+* [Exercises](#exercises)
 
 ### Standard operating protocol <a name="sop"></a>
 
@@ -38,7 +38,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
 * these steps should need to be performed once at the end of a characterization session
 
-### <a name="materials"></a> Compatible materials:
+### Compatible materials and sample prep: <a name="materials"></a> 
 
 * compatible materials
 * incompatible materials
@@ -50,33 +50,32 @@ Matches info/image for instrument on lab page, brief description of what it does
 	* break into sub-sections as relevant, 
 	* ie. solid vs. powder vs. liquid
 
-
-### Detailed instructions:
+### Detailed operating instructions: <a name="details"></a> 
 
 * include sample loading/unloading
 * as needed explanations of each step, eg. collecting background, sample loading, etc.
 * software features
 
-### Data processing and analysis
+### Data processing and analysis <a name="data"></a>
 
 * what softare we recommend
 * typical steps
 * fill in with more detail as time allows, and/or add standalone data processing tutorials
 
-### Common failure modes
+### Common failure modes<a name="failures"></a>
 
 * these are where people frequently get stuck
 * example may include starting DSX software before microscope powered up
 
-### Manufacturer's manuals
+### Manufacturer's manuals <a name="manuals"></a>
 
 * Links to manual files in dropbox
 
-### Links
+### Links<a name="links"></a>
 
 * list of links, ie. good video tutorials, some student project, anything relevant
 
-### Exercises
+### Exercises<a name="exercises"></a>
 
 * intro for anyone - eg honey bee on optical
 * beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
