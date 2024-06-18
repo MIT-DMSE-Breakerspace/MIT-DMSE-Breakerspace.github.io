@@ -48,6 +48,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * compatible materials
 * incompatible materials
 * safety/handling related info
+* images/videos inline as needed
 
 ##### Sample Prep may be own sub-section
 
@@ -61,6 +62,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * include sample loading/unloading
 * as needed explanations of each step, eg. collecting background, sample loading, etc.
 * software features
+* images/videos inline as needed
 
 <a name="data"></a>
 ### Data processing and analysis 
@@ -68,12 +70,14 @@ Matches info/image for instrument on lab page, brief description of what it does
 * what softare we recommend
 * typical steps
 * fill in with more detail as time allows, and/or add standalone data processing tutorials
+* images/videos inline as needed
 
 <a name="failures"></a>
 ### Common failure modes
 
 * these are where people frequently get stuck
 * example may include starting DSX software before microscope powered up
+* images/videos inline as needed
 
 <a name="manuals"></a>
 ### Manufacturer's manuals 
@@ -92,8 +96,10 @@ Matches info/image for instrument on lab page, brief description of what it does
 * beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
 * advanced exercise - deconvolution of compound sample from spectrometer, etc.
 
+# HTML examples to control layout, etc.
 
-Full width image embedded using markdown, with caption, link to open image full screen:
+
+Full width image , with caption, link to open image full screen:
 
 <figure>
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
@@ -101,42 +107,35 @@ Full width image embedded using markdown, with caption, link to open image full 
 </figure>
 
 
-32% width images using html image tags:
+32% width images using html image tags, one links to full screen:
 
 <figure>
 	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
 	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
+	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0"></a>
 	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
+An image that floats to the right of text:
 
+<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.
 
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
+This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
 <div style="clear:both;"></div>  
-  
+
+Same thing with image that floats to the left of text:  
 
 <img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
 <div style="clear:both;"></div>  
+
+A gif that autoplays, with link that opens it full size:
+
+<figure>
+  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <figcaption> Loading a solid sample</figcaption>
+</figure>
   
-
-### <a name="loading"></a> Sample loading
-
-Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
-
-### <a name="feature1"></a> Instrument feature
-
-A key feature of this instrument is eg. focus stacking to create 3d image with height data
-
-GIF embedded using image tag:
-
-![GIF test](../assets/video/raman-display-flip.GIF)
-
-### <a name="tutorial"></a> Tutorial
-
-Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
-
-Video embedded with video tag, width set to 100%:
+Embedded video with controls:
 
 <video width="100%" controls>
   <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
