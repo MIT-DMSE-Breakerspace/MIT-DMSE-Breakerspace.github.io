@@ -3,7 +3,7 @@ layout: default
 ---
 # Breakerspace Instrument Tutorial Template - \<h1>
 
-## Overview - \<h2>
+## Overview: - \<h2>
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
@@ -19,7 +19,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * [Exercises](#exercises)
 
 <a name="sop"></a>
-### Standard operating protocol 
+### Standard operating protocol:
 
 <a name="startup"></a> 
 ##### Instrument startup: - \<h5> 
@@ -36,7 +36,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 	* this is tabbed in to be a sub-set of the above bullet
 
 <a name="shutdown"></a>
-#####  Instrument shut down 
+#####  Instrument shut down:
 
 * sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session
 * highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
@@ -50,7 +50,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * safety/handling related info
 * images/videos inline as needed
 
-##### Sample Prep may be own sub-section
+##### Sample Prep may be own sub-section:
 
 * sample prep
 	* break into sub-sections as relevant, 
@@ -65,7 +65,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * images/videos inline as needed
 
 <a name="data"></a>
-### Data processing and analysis 
+### Data processing and analysis:
 
 * what softare we recommend
 * typical steps
@@ -73,24 +73,24 @@ Matches info/image for instrument on lab page, brief description of what it does
 * images/videos inline as needed
 
 <a name="failures"></a>
-### Common failure modes
+### Common failure modes:
 
 * these are where people frequently get stuck
 * example may include starting DSX software before microscope powered up
 * images/videos inline as needed
 
 <a name="manuals"></a>
-### Manufacturer's manuals 
+### Manufacturer's manuals:
 
 * Links to manual files in dropbox
 
 <a name="links"></a>
-### Links
+### Links:
 
 * list of links, ie. good video tutorials, some student project, anything relevant
 
 <a name="exercises"></a>
-### Exercises
+### Exercises:
 
 * intro for anyone - eg honey bee on optical
 * beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
@@ -101,18 +101,17 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 Full width image , with caption, link to open image full screen:  
 
-<figure>
+<figure style="margin-left:0; margin-right:0;">
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
 	<figcaption> An AI generated image. </figcaption>
-</figure>
+</figure>  
 
+33% width images using html image tags, one links to full screen:
 
-32% width images using html image tags, one links to full screen:
-
-<figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0"></a>
+<figure style="margin-left:0; margin-right:0;">
+	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
+	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
+	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
 	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
@@ -130,7 +129,7 @@ Same thing with image that floats to the left of text:
 
 A gif sized to 32% width, that autoplays, with link that opens it full size:
 
-<figure>
+<figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
