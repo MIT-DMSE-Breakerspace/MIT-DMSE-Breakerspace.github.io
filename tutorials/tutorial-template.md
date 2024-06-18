@@ -3,7 +3,7 @@ layout: default
 ---
 # Breakerspace Instrument Tutorial Template updated
 
-## Overview
+## Overview - main overhead is <h2>
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
@@ -49,7 +49,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * for instruments like SEM with multiple, independent characterization techniques (eg. EDS, imaging), make technique a top-level bullet and indent for steps
 	* this is tabbed in to be a sub-set of the above bullet
 
-### <a name="shutdown"></a> Instrument shut down
+#### <a name="shutdown"></a> Instrument shut down
 
 * Procedure to shut down the instrument
 * these steps should need to be performed once at the end of a characterization session
