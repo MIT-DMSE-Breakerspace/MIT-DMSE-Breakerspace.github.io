@@ -57,9 +57,15 @@ Repeat steps as needed
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
+* Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
+* Solvents needed to clean a sample off the instrument must also be non-hazardous 
+* Molecules must absorb IR radiation and transition to excited vibrational state
+* Complementary information to Raman spectroscopy, often
 
+_**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
-##### <a name="sample-prep"></a> Sample preparation and loading:
+<a name="sample-prep"></a> 
+##### Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
@@ -74,7 +80,7 @@ To maximize signal strength, it is important that the sample is in good contact 
 
 Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
-<figure>
+<figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
@@ -94,20 +100,24 @@ _insert powder samples gif_
 
 * Place droplet of sample on ATR crystal
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
-  * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover the pressure tower
+  * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover with the pressure tower
 * Click "collect sample" in OMNIC, clean, repeat as needed
+
+_insert liquid samples gif_
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
 
-#### <a name="crystal"></a> Cleaning the ATR crystal:
+<a name="crystal"></a> 
+##### Cleaning the ATR crystal:
 
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
 
 _insert gif of process_
 
-#### <a name="background"></a> Background collection:
+<a name="background"></a> 
+##### Background collection:
 
 Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
 
@@ -116,40 +126,45 @@ Before collecting spectra, it is necessary to collect a background reading. The 
 
 _insert image with collect background highlighted_
 
-
-
-<figure>
+##### Volatiles cover
+<figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
-#### Swapping pressure tip:
+##### Swapping pressure tip:
 
-<figure>
+<figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
   <figcaption> Swapping pressure tips</figcaption>
 </figure>
 
-### <a name="materials"></a> Compatible materials:
-
-* Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
-* Solvents needed to clean a sample off the instrument must also be non-hazardous 
-
-_**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
-
-
-### <a name="analysis"></a> Data processing and analysis:
+<a name="analysis"></a> 
+### Data processing and analysis:
 
 Data processing is beyond the scope of this tutorial, but we recommend the use of the [Wiley KnowItAll Spectroscopy Software & Libraries available through the MIT Libraries](https://libguides.mit.edu/knowitall).
 
-### <a name="manuals"></a> Manuals:
+<a name="failures"></a>
+### Common failure modes:
+
+* Powder sample not ground finely enough, too high noise to signal
+* If instrument is connected into different USB port on workstation it will not connect
+
+<a name="manuals"></a> 
+### Manufacturer's manuals:
 
 * [iS5 spectrometer user guide](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0)
 * [iD7 ATR User Guide](https://www.dropbox.com/scl/fi/j24msyzbfpqahhk66z5y8/3021_-iD7_UG.pdf?rlkey=xf1sw5yoydqomsmcs1hxhrf5y&dl=0)
 * [OMNIC software _Getting Started_ guide](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0)
 * [Complete set of manufacturer's manuals](https://www.dropbox.com/scl/fo/n0zv4090ncohz1yd53zyp/AEk8_3vo2JuCcHDSDBEEjck?rlkey=haqbguq12kbmh8fi7jmi8wzvg&dl=0)
 
-### <a name="exercise"></a> Exercise:
+<a name="links"></a>
+### Links:
+
+* list of links, ie. good video tutorials, some student project, anything relevant
+
+<a name="exercise"></a> 
+### Exercises:
 
 Test solid polymer samples and determine which is acrylic and which is polypropylene through a library search. Measure samples of caffeinated and decaffeinated ground coffee and determine which is which by comparing the height of the peak at 1650.
 
