@@ -110,10 +110,10 @@ Full width image , with caption, link to open image full screen:
 32% width images using html image tags, one links to full screen:
 
 <figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0"></a>
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
+<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
+<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
+<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0"></a>
+<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
 An image that floats to the right of text:
