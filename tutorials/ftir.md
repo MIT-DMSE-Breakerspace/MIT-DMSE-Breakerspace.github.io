@@ -31,7 +31,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * [Start OMNIC software](../assets/img/tutorials/ftir/ftir-desktop.JPG)
 * Verify instrument connection via [system status](../assets/img/tutorials/ftir/omnic-status.PNG)
 * Remove protective cover from ATR crystal plate
-* Clean ATR window
+* [Clean ATR window](#crystal)
 
 <a name="sample"></a> 
 ##### Operation:
