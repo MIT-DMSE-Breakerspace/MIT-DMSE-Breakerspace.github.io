@@ -103,7 +103,7 @@ Full width image , with caption, link to open image full screen:
 
 <figure>
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-<figcaption> An AI generated image. </figcaption>
+	<figcaption> An AI generated image. </figcaption>
 </figure>
 
 
