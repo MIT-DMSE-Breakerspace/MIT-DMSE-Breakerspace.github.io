@@ -19,7 +19,8 @@ Matches info/image for instrument on lab page
     * Click new method
     * Click absorbance and transmission. There are other modes, but users are primarily focused on this mode.
     * Click spectra
-    * Make sure Setup conditions are adequate. Set mode to both
+    * Make sure Setup conditions are adequate.
+    * Set mode to both
     * Fill the cuvet with your sample and close the top
     * Name your sample and choose where you want it to save
     * Click acquire 
@@ -28,12 +29,12 @@ Matches info/image for instrument on lab page
     * Unload sample of water
 * Shut down
     * Push and hold power button until light shuts off. Finite lamp hours,SHUT IT OF
-    * Log out of software and desktop
+    * Log out of desktop
 
 * Detailed operating instructions
 	* as needed explanations of each step, eg. collecting background, sample loading, etc.
 * Materials
-	* compatible materials
+	* 
 	* sample prep
 	* safety/handling related info
 * Data processing and analysis
