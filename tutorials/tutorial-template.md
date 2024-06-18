@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template - tutorial title is \<h1>
+# Breakerspace Instrument Tutorial Template - \<h1>
 
-## Overview - main overhead is \<h2>
+## Overview - \<h2>
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
-### Index: - sections are \<h3>
+### Index: - \<h3>
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
@@ -22,7 +22,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 ### Standard operating protocol 
 
 <a name="startup"></a> 
-##### Instrument startup: - subsections are \<h5> to set them off more 
+##### Instrument startup: - \<h5> 
 
 * sequence of powering on, logging in, starting softare, homing/tilt position etc.
 * these steps should only need to be completed once per session
