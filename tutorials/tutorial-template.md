@@ -101,7 +101,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 Full width image , with caption, link to open image full screen:  
 
-<figure style="margin:0;"">
+<figure {margin:0}>
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
 	<figcaption> An AI generated image. </figcaption>
 </figure>
