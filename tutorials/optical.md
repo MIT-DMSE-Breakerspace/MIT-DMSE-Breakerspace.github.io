@@ -114,9 +114,8 @@ The measurement feature allows the user to determine a variety of information ab
 <a name="failures"></a>
 ### Common failure modes
 
-* these are where people frequently get stuck
-* example may include starting DSX software before microscope powered up
-* images/videos inline as needed
+* If any part of your sample is resting on a part of the stage that cannot move, as you move the stage your sample will rotate on the stage.
+* You will not be able to access the software if it is started before the microscope is turned on
 
 <a name="manuals"></a>
 ### Manufacturer's manuals 
