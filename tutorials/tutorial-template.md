@@ -27,6 +27,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 * sequence of powering on, logging in, starting softare, homing/tilt position etc.
 * these steps should only need to be completed once per session
+* no images on page in this section, just text bullets, [text can link to image if needed](../assets/img/tutorials/ftir-switch.JPG)
 
 #### <a name="operation"></a> Operation: 
 
