@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template updated
+# Breakerspace Instrument Tutorial Template updated - tutorial title is \<h1>
 
-## Overview - main overhead is <h2>
+## Overview - main overhead is \<h2>
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
-### Sections:
+### Index: - sections are \<h3>
 
 * Standard (daily) operating protocol
 	* [Startup](#startup)
