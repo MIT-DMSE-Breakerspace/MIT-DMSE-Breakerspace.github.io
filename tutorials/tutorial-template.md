@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template updated - tutorial title is \<h1>
+# Breakerspace Instrument Tutorial Template - tutorial title is \<h1>
 
 ## Overview - main overhead is \<h2>
 
@@ -9,64 +9,81 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ### Index: - sections are \<h3>
 
-* Standard (daily) operating protocol
+* Standard operating protocol - only this section should have sub-sections
 	* [Startup](#startup)
-		* sequence of powering on, logging in, starting softare, homing/tilt position etc. - whatever might need to be done once at the start of a session
 	* [Operation](#operation)
-		* sample loading, data capture and saving, etc. - whatever might be repeated, characterization sequence
-		* [anchor link where needed](#link-example)
 	* [Shut down](#shutdown)
-		* sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session. highlight important steps in bold (ie. make sure UV-Vis lamp is OFF)
-* Detailed operating instructions
-	* as needed explanations of each step, eg. collecting background, sample loading, etc.
-	* <a name="link-example"></a> anchor link example
 * Materials
-	* compatible materials
-	* sample prep - break into sub-sections as relevant, ie. solid vs. powder vs. liquid
-	* safety/handling related info
+* Detailed operating instructions
 * Data processing and analysis
 * Common failure modes
 * Manufacturer manuals
-	* software manual
-	* hardware manual
 * Links
-	* good video tutorials, etc.
 * Exercises
-	* intro for anyone - eg honey bee on optical
-	* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-	* advanced exercise - deconvolution of compound sample from spectrometer, etc.
 
 ### Standard operating protocol
 
-#### <a name="startup"></a> Instrument startup:
+#### <a name="startup"></a> Instrument startup: - subsections are \<h4>
 
-* Procedure to start up the instrument
+* sequence of powering on, logging in, starting softare, homing/tilt position etc.
 * these steps should only need to be completed once per session
 
 #### <a name="operation"></a> Operation: 
 
-* steps to characterize
+* steps to characterize - sample loading, data capture and saving, etc. - whatever might be repeated, characterization sequence
 * for instruments like SEM with multiple, independent characterization techniques (eg. EDS, imaging), make technique a top-level bullet and indent for steps
 	* this is tabbed in to be a sub-set of the above bullet
 
 #### <a name="shutdown"></a> Instrument shut down
 
-* Procedure to shut down the instrument
+* sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session
+* highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
 * these steps should need to be performed once at the end of a characterization session
 
-### <a name="materials"></a> Compatible materials
+### <a name="materials"></a> Compatible materials:
 
-These are the categories of materials that can safely be characterized on this instrument.
+* compatible materials
+* incompatible materials
+* safety/handling related info
 
-These categories of materials should not be used.
+#### Sample Prep may be own sub-section
 
-### <a name="sample-prep"></a> Sample preparation
+* sample prep
+	* break into sub-sections as relevant, 
+	* ie. solid vs. powder vs. liquid
 
-Common sample preparation techniques for solids.
 
-Common sample preparation technique for powders.
+### Detailed instructions:
 
-Common sample preparation technique for liquids.
+* include sample loading/unloading
+* as needed explanations of each step, eg. collecting background, sample loading, etc.
+* software features
+
+### Data processing and analysis
+
+* what softare we recommend
+* typical steps
+* fill in with more detail as time allows, and/or add standalone data processing tutorials
+
+### Common failure modes
+
+* these are where people frequently get stuck
+* example may include starting DSX software before microscope powered up
+
+### Manufacturer's manuals
+
+* Links to manual files in dropbox
+
+### Links
+
+* list of links, ie. good video tutorials, some student project, anything relevant
+
+### Exercises
+
+* intro for anyone - eg honey bee on optical
+* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
+* advanced exercise - deconvolution of compound sample from spectrometer, etc.
+
 
 Full width image embedded using markdown, with caption, link to open image full screen:
 
