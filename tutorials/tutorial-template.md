@@ -9,7 +9,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ### Index: - sections are \<h3>
 
-* Standard operating protocol - only this section should have sub-sections
+* Standard operating protocol - (startup, operation, shutdown)
 * Materials
 * Detailed operating instructions
 * Data processing and analysis
