@@ -104,12 +104,11 @@ Full width image , with caption, link to open image full screen:
 <figure style="margin:0;">
 	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
 	<figcaption> An AI generated image. </figcaption>
-</figure>
-
+</figure>  
 
 32% width images using html image tags, one links to full screen:
 
-<figure>
+<figure style="margin:0;">
 	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
 	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
 	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0"></a>
@@ -130,7 +129,7 @@ Same thing with image that floats to the left of text:
 
 A gif sized to 32% width, that autoplays, with link that opens it full size:
 
-<figure>
+<figure style="margin:0;">
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
