@@ -5,7 +5,7 @@ layout: default
 
 ## Overview:
 
-<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
+<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;">
 The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
 <div style="clear:both;"></div>
 
