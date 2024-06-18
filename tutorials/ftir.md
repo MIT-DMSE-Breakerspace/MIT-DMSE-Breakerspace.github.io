@@ -3,47 +3,35 @@ layout: default
 ---
 # Breakerspace FTIR Tutorial
 
-### <a name="overview"></a> Overview:
-
-The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
-
-### Table of contents:
+## Overview:
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:40%; float:right; margin-left:10px; margin-bottom:1.4em;">
-* [Standard Operating Protocol (SOP)](#sop)
-  * [Instrument startup](#startup)
-  * [Sample collection](#sample)
-  * [Instrument shutdown](#shutdown)
-* [Detailed instructions](#instructions)
-  * [Cleaning ATR crystal](#crystal)
-  * Background collection
-  * Sample preparation and loading
-  * Swapping pressure tipes
-* [Compatible materials and safety](#materials)
-* [Data processing and analysis](#analysis)
-* [Manuals](#manuals)
-* Common failure modes
-* [Exercise](#exercise)
+The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
 <div style="clear:both;"></div>
 
-### <a name="sop"></a> SOP:
+### Index:
 
-#### <a name="startup"></a> Instrument startup:
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
+* [Materials and sample prep](#materials)
+* [Detailed operating instructions](#details)
+* [Data processing and analysis](#data)
+* [Common failure modes](#failures)
+* [Manufacturer manuals](#manuals)
+* [Links](#links)
+* [Exercises](#exercises)
 
-* Power on instrument, if needed
+<a name="sop"></a>
+### Standard operating protocol:
+
+<a name="startup"></a> 
+##### Instrument startup:
+
+* [Power on instrument](../assets/img/tutorials/ftir/ftir-switch.JPG), [if needed](../assets/img/tutorials/ftir/ftir-power.JPG)
 * Log on to instrument workstation using your MIT Kerberos
-* Start OMNIC software
-* Verify instrument connection via system status
+* [Start OMNIC software](../assets/img/tutorials/ftir/ftir-desktop.JPG)
+* Verify instrument connection via [system status](../assets/img/tutorials/ftir/omnic-status.PNG)
 * Remove protective cover from ATR crystal plate
 * Clean ATR window
-
-<figure>
-  <a href="../assets/img/tutorials/ftir/ftir-power.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-power.JPG" alt="FTIR power." style="width:24%;"></a>
-  <a href="../assets/img/tutorials/ftir/ftir-switch.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-switch.JPG" alt="FTIR switch." style="width:24%;"></a>
-  <a href="../assets/img/tutorials/ftir/ftir-desktop.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/ftir-desktop.JPG" alt="OMNIC icon." style="width:24%;"></a>
-  <a href="../assets/img/tutorials/ftir/omnic-status.PNG" target="_parent"><img src="../assets/img/tutorials/ftir/omnic-status.PNG" alt="OMNIC status." style="width:24%;"></a>
-  <figcaption> Power indicator light, Power switch, OMNIC Icon, Instrument status indicator </figcaption>
-</figure>
 
 #### <a name="sample"></a> Sample collection:
 
