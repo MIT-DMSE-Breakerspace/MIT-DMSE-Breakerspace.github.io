@@ -109,9 +109,9 @@ Full width image , with caption, link to open image full screen:
 33% width images using html image tags, one links to full screen:
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33.3%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33.3%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33.3%; margin:0"></a>
+	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
+	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
+	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
 	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
 </figure>
 
