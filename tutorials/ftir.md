@@ -33,9 +33,10 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Remove protective cover from ATR crystal plate
 * Clean ATR window
 
-#### <a name="sample"></a> Sample collection:
+<a name="sample"></a> 
+##### Operation:
 
-* Collect background (background will need to be refreshed periodically, the interval between background collections is configurable in software options)
+* Collect background (background will need to be refreshed periodically)
 * [Clean ATR window](#crystal)
 * Collect sample
 * [Clean ATR window](#crystal)
@@ -43,7 +44,8 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 
 Repeat steps as needed
 
-#### <a name="shutdown"></a> Instrument shut down:
+<a name="shutdown"></a> 
+##### Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
@@ -52,25 +54,12 @@ Repeat steps as needed
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
-### <a name="instructions"></a> Detailed instructions:
+<a name="materials"></a> 
+### Compatible materials and sample prep: 
 
-#### <a name="crystal"></a> Cleaning the ATR crystal:
 
-* apply a few drops of isopropyl alcohol to the crystal
-* wipe with Kimwipe
 
-_insert gif of process_
-
-#### <a name="background"></a> Background collection:
-
-Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
-
-* Load the background material onto the ATR crystal, or for air leave it uncovered
-* Click "collect background"
-
-_insert image with collect background highlighted_
-
-#### <a name="sample-prep"></a> Sample preparation and loading:
+##### <a name="sample-prep"></a> Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
@@ -107,6 +96,27 @@ _insert powder samples gif_
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
   * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover the pressure tower
 * Click "collect sample" in OMNIC, clean, repeat as needed
+
+<a name="details"></a> 
+### Detailed operating instructions: 
+
+#### <a name="crystal"></a> Cleaning the ATR crystal:
+
+* apply a few drops of isopropyl alcohol to the crystal
+* wipe with Kimwipe
+
+_insert gif of process_
+
+#### <a name="background"></a> Background collection:
+
+Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
+
+* Load the background material onto the ATR crystal, or for air leave it uncovered
+* Click "collect background"
+
+_insert image with collect background highlighted_
+
+
 
 <figure>
   <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
