@@ -74,7 +74,11 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ###### Lighting
 
-Many different lighting modes can be adjusted in the desktop application or on the control panel. Every mode can be seen simultaneously by selecting the best image button. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results
+Many different lighting modes can be adjusted in the desktop application or on the control panel. Every mode can be seen simultaneously by selecting the best image button. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results.
+
+<figure>
+  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Bets image" style="width:32%;"></a>
+</figure>
 
 ###### Acquisition
 
@@ -88,13 +92,25 @@ In this program, 2-D acquisition captures a photo of the sample. A 3-D acquisiti
 
 Quick scan is the quickest and simplest to execute of the three modes, but also the least precise. To execute a quick scan, focus the microscope on the part of the sample farthest away from the lens and click 3-D Acquisition. The lens will zoom out automatically and prepare a 3-D render.
 
+<figure>
+  <a href="../assets/img/tutorials/optical/QuickScan.gif" target="_parent"><img src="../assets/img/tutorials/optical/QuickScan.gif"alt="Quick Scan" style="width:32%;"></a>
+</figure>
+
 ##### Range
 
 This mode allows for more customization of the range of focal lengths that the lens moves through. Choose the range that applies to the sample and focus the lens on the part of the sample farthest away from the lens. Click 3-D Acquisition and the lens will begin to focus on the parts of the sample closer to the lens. When it is finished, check the 3-D render and ensure that all of the sample has been rendered. If a portion of the sample is not rendered, choose a different range and try again or use the Start/End mode.
 
+<figure>
+  <a href="../assets/img/tutorials/optical/Range.gif" target="_parent"><img src="../assets/img/tutorials/optical/Range.gif"alt="Range Scan" style="width:32%;"></a>
+</figure>
+
 ##### Start/End
 
 This is the most precise method of 3-D acquisition, but harder to execute. To start, focus the lens on the part of the sample farthest from the lens and press start. Then, turn the wheel the other way and focus closer than the closest part of the sample, and click end. Finally, click 3-D acquisition and a render will be created.
+
+<figure>
+  <a href="../assets/img/tutorials/optical/StartEnd.gif" target="_parent"><img src="../assets/img/tutorials/optical/StartEnd.gif"alt="Start/End scan" style="width:32%;"></a>
+</figure>
 
 ##### Stitching
 
@@ -102,14 +118,27 @@ The Stitch feature allows for the creation of a 3-D acquisition over a large are
 
 To create the map, select stitching mode and select live panorama. In the box labeled acquisition, click 2-D simple. In the box labeled 2D simple settings, select auto, then change the size of the array to suit the size of your sample. Make sure that “Use it as a map image” is selected, then click 2D simple. The resulting map can then be used to create a high quality panorama.
 
+<figure>
+  <a href="../assets/img/tutorials/optical/LivePanorama.gif" target="_parent"><img src="../assets/img/tutorials/optical/LivePanorama.gif"alt="Live Panorama" style="width:32%;"></a>
+</figure>
+
 Go back to the stitching feature and select high quality panorama. On the menu that appears select “number of pieces” in the top left. Adjust the dimensions to fit your sample and drag the yellow box on the map to the right. Adjust the autofocus (AF) settings as needed, and click 3-D acquisition. A message may appear that says the z-position is out of range. If this happens simply click OK and the program will proceed.
 
-
+<figure>
+  <a href="../assets/img/tutorials/optical/HighQuality.gif" target="_parent"><img src="../assets/img/tutorials/optical/HighQuality.gif"alt="High quality stitching" style="width:32%;"></a>
+</figure>
 
 <a name="data"></a>
 ### Data processing and analysis 
 
 The measurement feature allows the user to determine a variety of information about the sample. This includes the change in elevation, horizontal distance, and angle between two points or along a shape. The Volume of the sample can also be calculated as well as the volumes of divots or troughs along the sample. To perform these measurements, click on the measurement tab next to imaging, and then click the measurement option located directly below the reports tab. To check the distance, change in elevation, or angle between two points select the profile option. To find the volume of a crest or trough select the volume option.
+
+<figure>
+	<img src="../assets/img/tutorials/optical/WireFrame.gif" alt="Wire Frame" style="width:32%; margin:0"> 
+	<img src="../assets/img/tutorials/optical/Volume.gif" alt="Finding the volume" style="width:32%; margin:0">
+</figure>
+
+
 
 <a name="failures"></a>
 ### Common failure modes
