@@ -140,6 +140,13 @@ A full width, high resolution gif:
   <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/high-res-test.GIF" alt="High res gif test."></a>
   <figcaption> A higher resolution gif</figcaption>
 </figure>
+
+An optimized embedded gif that links to a high resolution gif:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/optimized-750px.GIF" alt="High res gif test."></a>
+  <figcaption> A higher resolution gif</figcaption>
+</figure>
   
 Embedded video with controls:
 
