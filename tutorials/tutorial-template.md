@@ -133,6 +133,13 @@ A gif sized to 32% width, that autoplays, with link that opens it full size:
   <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
+
+A full width, high resolution gif:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/high-res-test.GIF" alt="High res gif test."></a>
+  <figcaption> A higher resolution gif</figcaption>
+</figure>
   
 Embedded video with controls:
 
