@@ -19,9 +19,11 @@ Matches info/image for instrument on lab page, brief description of what it does
 * [Exercises](#exercises)
 
 <a name="sop"></a>
+
 ### Standard operating protocol 
 
 <a name="startup"></a> 
+
 ##### Instrument startup: - \<h5> 
 
 
@@ -29,14 +31,16 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Start Software
 * Lower stage
 * Bring machine into tilt position
-* Put sample on tray
-* Use knob to bring sample into focus
-* Use dial on console to focus with more precision
+
 
 
 <a name="operation"></a>
+
 ##### Operation: 
 
+* Put sample on tray
+* Use knob to bring sample into focus
+* Use dial on console to focus with more precision
 * Capture a 2D picture of the sample
 * Make a 3D capture of the sample using start/end mode
 * Use stitching feature to make a map of the sample
@@ -46,6 +50,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 
 <a name="shutdown"></a>
+
 #####  Instrument shut down 
 
 * Bring lens into lens exchange position
@@ -54,6 +59,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 
 <a name="materials"></a> 
+
 ### Compatible materials and sample prep: 
 
 * compatible materials
