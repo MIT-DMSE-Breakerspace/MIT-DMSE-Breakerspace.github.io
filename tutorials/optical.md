@@ -9,7 +9,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ### Index: - \<h3>
 
-* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation),[features](#features), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
 * [Detailed operating instructions](#details)
 * [Data processing and analysis](#data)
@@ -27,10 +27,11 @@ Matches info/image for instrument on lab page, brief description of what it does
 ##### Instrument startup: - \<h5> 
 
 
-* Turn on machine
-* Start Software
-* Lower stage
-* Bring machine into tilt position
+* Turn on the machine
+* Log into the desktop
+* Start the DSX Software
+* Lower the stage
+* Bring the objective into tilt position
 
 
 
@@ -38,9 +39,14 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ##### Operation: 
 
-* Put sample on tray
-* Use knob to bring sample into focus
-* Use dial on console to focus with more precision
+* Put your sample on tray
+* Use the knob to bring sample into focus
+* Use the dial on the console to focus with more precision
+
+<a name="features"></a>
+
+##### Features:
+
 * Capture a 2D picture of the sample
 * Make a 3D capture of the sample using start/end mode
 * Use stitching feature to make a map of the sample
@@ -53,8 +59,8 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 #####  Instrument shut down 
 
-* Bring lens into lens exchange position
-* Turn of machine
+* Bring objective into lens exchange position
+* Turn off machine
 * Log out of software
 
 
@@ -80,7 +86,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ###### Lighting
 
-Many different lighting modes can be adjusted in the desktop application or on the control panel. Every mode can be seen simultaneously by selecting the best image button. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results.
+Many different lighting modes are available and can be selected in the desktop application or on the console. Every mode can be seen simultaneously by selecting the best image button in the software. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results.
 
 <figure>
   <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Bets image" style="width:32%;"></a>
@@ -88,13 +94,18 @@ Many different lighting modes can be adjusted in the desktop application or on t
 
 ###### Acquisition
 
-In this program, 2-D acquisition captures a photo of the sample. A 3-D acquisition will take images across a range of focuses to create a 3-D render of the sample. These 3-D renders can be used to measure the sample. To create a 3-D aquisition navigate to the “Live” section of the program. In the bottom right corner of the screen, there will be a large gray button labeled either 2-D or 3-D Acquisition. Above this button, there will be options for 2-D, Quick Scan, Range, and Start/End.
+In this program, 2-D acquisition captures a photo of the sample. A 3-D acquisition will take images across a range of focuses to create a 3-D render of the sample. These 3-D renders can be used to measure the sample. To create a 3-D aquisition navigate to the “Live” section of the program. In the bottom right corner of the screen, there will be a large gray button labeled either 2-D or 3-D Acquisition. Above this button, there will be options for 2-D, Quick Scan, Range, and Start/End. 
 
 ##### 2-D
 
 2-D acquisition takes a photo of whatever is currently on the live display. This photo cannot be used to create a 3-D render of the sample.
 
-##### Quick Scan
+##### 3-D
+
+Quick Scan, Range, and Start/End are the three modes of 3-D acquisition and all three follow a similar process. For each of them you will set a range and the objective will shift the focus upwards towards the lens according to that range. For each of them you will start by focusing the objective on the part of the sample farthest away from the lens.
+
+
+###### Quick Scan
 
 Quick scan is the quickest and simplest to execute of the three modes, but also the least precise. To execute a quick scan, focus the microscope on the part of the sample farthest away from the lens and click 3-D Acquisition. The lens will zoom out automatically and prepare a 3-D render.
 
@@ -102,17 +113,17 @@ Quick scan is the quickest and simplest to execute of the three modes, but also 
   <a href="../assets/img/tutorials/optical/QuickScan.gif" target="_parent"><img src="../assets/img/tutorials/optical/QuickScan.gif"alt="Quick Scan" style="width:32%;"></a>
 </figure>
 
-##### Range
+###### Range
 
-This mode allows for more customization of the range of focal lengths that the lens moves through. Choose the range that applies to the sample and focus the lens on the part of the sample farthest away from the lens. Click 3-D Acquisition and the lens will begin to focus on the parts of the sample closer to the lens. When it is finished, check the 3-D render and ensure that all of the sample has been rendered. If a portion of the sample is not rendered, choose a different range and try again or use the Start/End mode.
+This mode allows for more customization of the range of focal lengths that the lens moves through. Choose the range that suits the sample and focus the lens on the part of the sample farthest away from the lens. Click 3-D Acquisition and the lens will begin to focus on the parts of the sample closer to the lens. When it is finished, check the 3-D render and ensure that all of the sample is in focus. If a portion of the sample is not in focus, choose a different range and try again or use the Start/End mode.
 
 <figure>
   <a href="../assets/img/tutorials/optical/Range.gif" target="_parent"><img src="../assets/img/tutorials/optical/Range.gif"alt="Range Scan" style="width:32%;"></a>
 </figure>
 
-##### Start/End
+###### Start/End
 
-This is the most precise method of 3-D acquisition, but harder to execute. To start, focus the lens on the part of the sample farthest from the lens and press start. Then, turn the wheel the other way and focus closer than the closest part of the sample, and click end. Finally, click 3-D acquisition and a render will be created.
+This is the most precise method of 3-D acquisition, but harder to execute. To begin, focus the lens on the part of the sample farthest from the lens and press start. Then, turn the wheel on the console the other way and focus closer than the closest part of the sample, and click end. Finally, click 3-D acquisition and a render will be created.
 
 <figure>
   <a href="../assets/img/tutorials/optical/StartEnd.gif" target="_parent"><img src="../assets/img/tutorials/optical/StartEnd.gif"alt="Start/End scan" style="width:32%;"></a>
@@ -128,16 +139,17 @@ To create the map, select stitching mode and select live panorama. In the box la
   <a href="../assets/img/tutorials/optical/LivePanorama.gif" target="_parent"><img src="../assets/img/tutorials/optical/LivePanorama.gif"alt="Live Panorama" style="width:32%;"></a>
 </figure>
 
-Go back to the stitching feature and select high quality panorama. On the menu that appears select “number of pieces” in the top left. Adjust the dimensions to fit your sample and drag the yellow box on the map to the right. Adjust the autofocus (AF) settings as needed, and click 3-D acquisition. A message may appear that says the z-position is out of range. If this happens simply click OK and the program will proceed.
+Go back to the stitching feature and select high quality panorama. In the menu that appears, select “number of pieces” in the top left. Adjust the dimensions to fit your sample and drag the yellow box on the map to the right. Adjust the autofocus (AF) settings as needed, and click 3-D acquisition. A message may appear that says the z-position is out of range. If this happens simply click OK and the program will proceed.
 
 <figure>
   <a href="../assets/img/tutorials/optical/HighQuality.gif" target="_parent"><img src="../assets/img/tutorials/optical/HighQuality.gif"alt="High quality stitching" style="width:32%;"></a>
 </figure>
 
 <a name="data"></a>
+
 ### Data processing and analysis 
 
-The measurement feature allows the user to determine a variety of information about the sample. This includes the change in elevation, horizontal distance, and angle between two points or along a shape. The Volume of the sample can also be calculated as well as the volumes of divots or troughs along the sample. To perform these measurements, click on the measurement tab next to imaging, and then click the measurement option located directly below the reports tab. To check the distance, change in elevation, or angle between two points select the profile option. To find the volume of a crest or trough select the volume option.
+The measurement feature allows the user to determine a variety of information about the sample. This includes the change in elevation, horizontal distance, and angle between two points or along a shape. The volume of the sample can be calculated, along with the volumes of any divots or troughs along the sample. To perform these measurements, click on the measurement tab next to imaging, and then click the measurement option located directly below the reports tab. To check the distance, change in elevation, or angle between two points, select the profile option. To make a wire frame model, click the button with the arrow pointing from 2D to 3D. To find the volume of a crest or trough, select the volume option.
 
 <figure>
 	<img src="../assets/img/tutorials/optical/WireFrame.gif" alt="Wire Frame" style="width:32%; margin:0"> 
@@ -150,7 +162,7 @@ The measurement feature allows the user to determine a variety of information ab
 ### Common failure modes
 
 * If any part of your sample is resting on a part of the stage that cannot move, as you move the stage your sample will rotate on the stage.
-* You will not be able to access the software if it is started before the microscope is turned on
+* You will not be able to access the software if it is started before the microscope is turned on.
 
 <a name="manuals"></a>
 ### Manufacturer's manuals 
