@@ -12,24 +12,25 @@ Matches info/image for instrument on lab page
 * Start Up
     * Flip power switch and press power button. 
     * Power button must be blue to operate
-    * Log in
-    * Open software (Easy Spec)
-    * Click EZ spec
+    * Log on to the desktop
+    * Open the EzSpec software
+    * Click EzSpec button
 * Operation
     * Click new method
     * Click absorbance and transmission. There are other modes, but users are primarily focused on this mode.
     * Click spectra
-    * Make sure Setup conditions are adequate.
+    * Make sure the setup conditions are adequate.
     * Set mode to both
-    * Fill the cuvet with your sample and close the top
+    * Fill the cuvet with your sample
     * Name your sample and choose where you want it to save
     * Click acquire 
-    * Load a sample of deionized water after you run your sample
-    * Toggle between absorption, transmission, and fluorescence spectra in the menus on the right
+    * Load your sample and close the top
+    * Load a sample of deionized water when the software instructs you to load a blank
+    * Toggle between absorption and transmission spectra in the menus on the right
     * Unload sample of water
 * Shut down
-    * Push and hold power button until light shuts off. Finite lamp hours,SHUT IT OF
-    * Log out of desktop
+    * Push and hold power button until light shuts off. Finite lamp hours,__SHUT IT OFF__
+    * Log out of the desktop
 
 * Detailed operating instructions
 	* as needed explanations of each step, eg. collecting background, sample loading, etc.
