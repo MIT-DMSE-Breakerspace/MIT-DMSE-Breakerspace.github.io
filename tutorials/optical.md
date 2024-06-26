@@ -93,8 +93,8 @@ Many different lighting modes are available and can be selected in the desktop a
 </figure>
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/optical/BestImage.gif"target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="High res gif test."></a>
-  <figcaption> A higher resolution gif</figcaption>
+  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="High res gif test."></a>
+  <figcaption> A 750px wide gif that opens at higher resolution</figcaption>
 </figure>
 
 ###### Acquisition

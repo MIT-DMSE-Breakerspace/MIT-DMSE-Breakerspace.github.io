@@ -28,19 +28,19 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ##### Instrument startup: - \<h5> 
 
-* Press power button
-* One of the six loading ports must be empty when the machine is booted on.
-* Turn the key to turn on generator 
+* Press the power button
+* __One of the six loading ports must be empty when the machine is booted on__
+* Turn the key to turn on the generator 
 
 
 <a name="operation"></a>
 
 ##### Operation: 
 
-* Select measurement program
-* Make sure sample is level with the 
-* Name sample
-* Press add to queue
+* Select a measurement program
+* Make sure your sample is level with the edge of the sample holder
+* Name your sample
+* Press "add to queue"
 * Put the length of use, date, and user’s name in log book
 * Copy results in the data management tab
 * Log onto desktop and open the shortcut folder
