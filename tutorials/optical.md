@@ -92,10 +92,10 @@ Many different lighting modes are available and can be selected in the desktop a
   <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Bets image" style="width:32%;"></a>
 </figure>
 
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="High res gif test."></a>
-  <figcaption> A 750px wide gif that opens at higher resolution</figcaption>
-</figure>
+<video width="100%" controls>
+  <source src="../assets/img/tutorials/optical/BestImage.gif" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ###### Acquisition
 
