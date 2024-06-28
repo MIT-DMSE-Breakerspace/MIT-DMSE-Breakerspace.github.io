@@ -13,16 +13,18 @@ Matches info/image for instrument on lab page
 	* Startup
 		* Start the software on the desktop
 		* Put on gloves
-		* Load sample into tray
+		* Load your sample into the tray
 		* Ensure the sample is secure using electronics duster
 		* Level the sample with the top of the plate
 		* Turn the dial six notches below the edge
-		* Load tray into slot
+		* Load the tray into its slot
 		* Close the door
-		* Click blue box to start the camera
+		* Click the box with the blue border in the bottom left to start the camera
 
 	* Operation
 		* Click move to SEM button
+	
+	* Features
 		* Take acquisition
 		* Perform EDS
 
@@ -30,9 +32,9 @@ Matches info/image for instrument on lab page
 	* Shut down
 		* Click unload sample
 		* Put on gloves
-		* Remove sample
-		* Close door
-		* Close software
+		* Remove your sample
+		* Close the door
+		* Close the software
 
 * Detailed operating instructions
 #### Live Feed
@@ -62,7 +64,7 @@ To use the EDS feature click on the squiggly line icon in the top right. Select 
 
 #### Live EDS
 
-Click on the Live EDS icon in the top left. Click anywhere on the live feed to see the elemental makeup of that section by atomic and weight concentration. Click the square to stop data collection before navigating to a different section.
+Click on the Live EDS icon in the top right. Click anywhere on the live feed to see the elemental makeup of that section by atomic and weight concentration. Click the square to stop data collection before navigating to a different section.
 
 
 <figure>
@@ -80,7 +82,7 @@ Click on the Live EDS icon in the top left. Click anywhere on the live feed to s
 * Common failure modes
 	* If you can't get the instrument to transition to SEM imaging, take your sample out and put it back in.
 
-	* Before navigating away from an EDS make sure that it isn’t active or else the instrument might lock itself in place. Go back to the EDS and start and stop it again to fix.
+	* Before navigating away from an EDS make sure that it isn’t active or else the instrument might lock itself in place. To resolve the issue, go back to the EDS, start it again, and turn it off.
 
 	* If you have a brittle sample, you may have to use a low voltage and beam intensity to prevent damage.
 

@@ -28,7 +28,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 
 * Turn on the machine
-* Log into the desktop
+* Log in on the desktop
 * Start the DSX Software
 * Lower the stage
 * Bring the objective into tilt position
@@ -91,6 +91,7 @@ Many different lighting modes are available and can be selected in the desktop a
 <figure>
   <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Bets image" style="width:32%;"></a>
 </figure>
+
 
 ###### Acquisition
 
