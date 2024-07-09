@@ -114,12 +114,16 @@ _insert liquid samples gif_
 * apply a few drops of isopropyl alcohol to the crystal
 * wipe with Kimwipe
 
+__Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
+
 _insert gif of process_
 
 <a name="background"></a> 
 ##### Background collection:
 
 Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
+
+__Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
 
 * Load the background material onto the ATR crystal, or for air leave it uncovered
 * Click "collect background"
@@ -147,8 +151,9 @@ Data processing is beyond the scope of this tutorial, but we recommend the use o
 <a name="failures"></a>
 ### Common failure modes:
 
-* Powder sample not ground finely enough, too high noise to signal
+* ATR Signal to noise is low if sample is not in intimate contact with ATR crystal
 * If instrument is connected into different USB port on workstation it will not connect
+* Negative features in an ATR spectrum indicate the crystal was not clean during background collection
 
 <a name="manuals"></a> 
 ### Manufacturer's manuals:
