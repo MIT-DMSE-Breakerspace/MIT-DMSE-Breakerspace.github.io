@@ -111,8 +111,9 @@ _insert liquid samples gif_
 <a name="crystal"></a> 
 ##### Cleaning the ATR crystal:
 
-* apply a few drops of isopropyl alcohol to the crystal
-* wipe with Kimwipe
+* apply a few drops of isopropyl alcohol to a Kimwipe
+* wipe with wetted portion of the Kimwipe, starting in the center and working outwards
+* using a dry portion of the Kimwipe, or a new Kimewipe, dry the crystal and surrounding area
 
 __Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
 
@@ -121,7 +122,7 @@ _insert gif of process_
 <a name="background"></a> 
 ##### Background collection:
 
-Before collecting spectra, it is necessary to collect a background reading. The OMNIC software will automatically subtract the background from your sample spectrum, so it makes sense to collect a background that is relevant to your particular sample. If you are characterizing a solid or powder, the normal background will be air. If you are measuring an aqueous sample, and want to have water subtracted, you would collect a background of deionized water. If a sample is attached to a substrate such as a glass slide, you would collect the background on a clean section of the substrate. 
+Before collecting spectra, it is necessary to collect a background reading, which the OMNIC software will automatically subtract from your sample spectrum. 
 
 __Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
 
