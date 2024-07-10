@@ -114,19 +114,19 @@ _insert liquid samples gif_
 * wipe with wetted portion of the Kimwipe, starting in the center and working outwards
 * using a dry portion of the Kimwipe, or a new Kimewipe, dry the crystal and surrounding area
 
-##### _Negative features in an ATR spectrum indicate the crystal was not clean during background collection_
-
 _insert gif of process_
 
 <a name="background"></a> 
 ##### Background collection:
 
-Before collecting spectra, it is necessary to collect a background reading, which the OMNIC software will automatically subtract from your sample spectrum. 
+Before collecting spectra, it is necessary to collect a background spectrum. A background spectrum is a single-beam spectrum obtained without a sample in place. The background spectrum is the result of the output of the source; the response of the beamsplitter, optics, sampling accessory or holder, and detector; and any atmospheric absorptions inside the spectrometer. A single-beam sample spectrum can be ratioed against the background spectrum to remove the effects of the background and produce a transmission spectrum.
 
-##### _Negative features in an ATR spectrum indicate the crystal was not clean during background collection_
+* iD7 ATR accessory background collection is run with the cleaned diamond crystal exposed to air (no pressure clamp)
+* iD1 transmission accessory background is run with no sample in the compartment
+* EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder
+* set instrument up per above for your experiment and click "collect background"
 
-* Load the background material onto the ATR crystal, or for air leave it uncovered
-* Click "collect background"
+##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
 
 _insert image with collect background highlighted_
 
