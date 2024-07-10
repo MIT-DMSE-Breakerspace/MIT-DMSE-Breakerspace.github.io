@@ -114,7 +114,7 @@ _insert liquid samples gif_
 * wipe with wetted portion of the Kimwipe, starting in the center and working outwards
 * using a dry portion of the Kimwipe, or a new Kimewipe, dry the crystal and surrounding area
 
-__Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
+##### _Negative features in an ATR spectrum indicate the crystal was not clean during background collection_
 
 _insert gif of process_
 
@@ -123,7 +123,7 @@ _insert gif of process_
 
 Before collecting spectra, it is necessary to collect a background reading, which the OMNIC software will automatically subtract from your sample spectrum. 
 
-###### Negative features in an ATR spectrum indicate the crystal was not clean during background collection
+##### _Negative features in an ATR spectrum indicate the crystal was not clean during background collection_
 
 * Load the background material onto the ATR crystal, or for air leave it uncovered
 * Click "collect background"
