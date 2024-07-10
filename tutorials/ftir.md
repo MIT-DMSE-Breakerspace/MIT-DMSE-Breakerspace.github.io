@@ -31,13 +31,13 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * [Start OMNIC software](../assets/img/tutorials/ftir/ftir-desktop.JPG)
 * Verify instrument connection via [system status](../assets/img/tutorials/ftir/omnic-status.PNG)
 * Remove protective cover from ATR crystal plate
-* [Clean ATR window](#crystal)
+* [Clean ATR crystal](#crystal)
 * Collect background (background will need to be refreshed periodically)
 
 <a name="sample"></a> 
 ##### Operation:
 
-* [Clean ATR window](#crystal)
+* [Clean ATR crystal](#crystal)
 * Collect sample
 * Save sample spectrum  
 
@@ -49,7 +49,7 @@ Repeat steps as needed
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
 * Log off workstation
-* Clean ATR window
+* Clean ATR crystal
 * Put cover on crystal plate and clamp in place using pressure tower
 * Do not switch off (the manufacturer recommends leaving the instrument powered when not in use)
 
