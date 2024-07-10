@@ -32,14 +32,13 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Verify instrument connection via [system status](../assets/img/tutorials/ftir/omnic-status.PNG)
 * Remove protective cover from ATR crystal plate
 * [Clean ATR window](#crystal)
+* Collect background (background will need to be refreshed periodically)
 
 <a name="sample"></a> 
 ##### Operation:
 
-* Collect background (background will need to be refreshed periodically)
 * [Clean ATR window](#crystal)
 * Collect sample
-* [Clean ATR window](#crystal)
 * Save sample spectrum  
 
 Repeat steps as needed
@@ -59,7 +58,7 @@ Repeat steps as needed
 
 * Any non-hazardous solid, semi-solid, powder, paste, and liquid materials
 * Solvents needed to clean a sample off the instrument must also be non-hazardous 
-* Molecules must absorb IR radiation and transition to excited vibrational state
+* Only sensitive to molecules that absorb IR radiation and transition to excited vibrational state
 * Complementary information to Raman spectroscopy, often
 
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
@@ -124,7 +123,7 @@ _insert gif of process_
 
 Before collecting spectra, it is necessary to collect a background reading, which the OMNIC software will automatically subtract from your sample spectrum. 
 
-__Negative features in an ATR spectrum indicate the crystal was not clean during background collection__
+###### Negative features in an ATR spectrum indicate the crystal was not clean during background collection
 
 * Load the background material onto the ATR crystal, or for air leave it uncovered
 * Click "collect background"
