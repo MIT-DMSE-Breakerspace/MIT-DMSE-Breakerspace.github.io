@@ -24,7 +24,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 ### Standard operating protocol:
 
 <a name="startup"></a> 
-##### Instrument startup:
+#### Instrument startup:
 
 * [Power on instrument](../assets/img/tutorials/ftir/ftir-switch.JPG), [if needed](../assets/img/tutorials/ftir/ftir-power.JPG)
 * Log on to instrument workstation using your MIT Kerberos
@@ -35,7 +35,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Collect background (background will need to be refreshed periodically)
 
 <a name="sample"></a> 
-##### Operation:
+#### Operation:
 
 * [Clean ATR crystal](#crystal)
 * Collect sample
@@ -44,7 +44,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 Repeat steps as needed
 
 <a name="shutdown"></a> 
-##### Instrument shut down:
+#### Instrument shut down:
 
 * Save all data (each spectrum must be indvidually selected and saved)
 * Close OMNIC
@@ -64,11 +64,11 @@ Repeat steps as needed
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
 <a name="sample-prep"></a> 
-##### ATR Sample preparation and loading:
+#### ATR Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
-##### Solid samples:
+#### Solid samples:
 
 * Select self leveling [pressure tip](#pressure-tip)
 * Solid samples should be smooth and free of contaminants on the face to be tested
@@ -83,7 +83,7 @@ Although many solid samples will not contaminate the window, it is still a good 
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
-##### Powder samples:
+#### Powder samples:
 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
@@ -93,7 +93,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 _insert powder samples gif_
 
-##### Liquid samples:
+#### Liquid samples:
 
 * Place droplet of sample on ATR crystal
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
@@ -105,7 +105,7 @@ _insert liquid samples gif_
 ### Detailed operating instructions: 
 
 <a name="crystal"></a> 
-##### Cleaning the ATR crystal:
+#### Cleaning the ATR crystal:
 
 * apply a few drops of isopropyl alcohol to a Kimwipe
 * wipe with wetted portion of the Kimwipe, starting in the center and working outwards
@@ -113,8 +113,13 @@ _insert liquid samples gif_
 
 _insert gif of process_
 
+<a name="setup"></a> 
+#### Experiment setup:
+
+
+
 <a name="background"></a> 
-##### Background collection:
+#### Background collection:
 
 Before collecting spectra, it is necessary to collect a background spectrum. 
 
@@ -125,19 +130,25 @@ Before collecting spectra, it is necessary to collect a background spectrum.
 * EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder
 * set instrument up per above for your experiment and click "collect background"
 
-##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
+#### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
 
 _insert image with collect background highlighted_
 
+<a name="sample"></a> 
+#### Sample collection:
+
+
+
+
 <a name="volatile-cover"></a>
-##### Volatiles cover:
+#### Volatiles cover:
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
 <a name="pressure-tip"></a>
-##### Pressure tips:
+#### Pressure tips:
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/pressure-tips.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tips.JPG" alt="concave and self-leveling pressure tips." style="width:32%;"></a>
