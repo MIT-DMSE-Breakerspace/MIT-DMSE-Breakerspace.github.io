@@ -130,7 +130,7 @@ Before collecting spectra, it is necessary to collect a background spectrum.
 * EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder
 * set instrument up per above for your experiment and click "collect background"
 
-#### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
+##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
 
 _insert image with collect background highlighted_
 
