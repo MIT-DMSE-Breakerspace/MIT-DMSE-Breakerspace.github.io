@@ -64,18 +64,17 @@ Repeat steps as needed
 _**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
 
 <a name="sample-prep"></a> 
-##### Sample preparation and loading:
+##### ATR Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
 
 ##### Solid samples:
 
-* Select self leveling pressure tip
+* Select self leveling [pressure tip](#pressure-tip)
 * Solid samples should be smooth and free of contaminants on the face to be tested
 * Cover the diamond window with the sample
 * Position the pressure tower over the window
 * Tighten the turn the knob until the clutch slips to provide clamping pressure to the sample 
-* Click "collect sample" in OMNIC , clean, repeat as needed
 
 Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
@@ -88,10 +87,9 @@ Although many solid samples will not contaminate the window, it is still a good 
 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
-* Select the concave pressure tip
+* Select the concave [pressure tip](#pressure-tip)
 * Position the pressure tower over the window
 * Tighten the turn the knob until the clutch slips
-* Click "collect sample" in OMNIC, clean, repeat as needed
 
 _insert powder samples gif_
 
@@ -99,8 +97,7 @@ _insert powder samples gif_
 
 * Place droplet of sample on ATR crystal
   * Non-volatile liquids can be run uncovered, without the use of the pressure tower
-  * Volatile samples can be covered with the volatiles cover to prevent evaporation. Clamp volatiles cover with the pressure tower
-* Click "collect sample" in OMNIC, clean, repeat as needed
+  * Volatile samples can be covered with the [volatiles cover](#volatiles-cover) to prevent evaporation. Clamp volatiles cover with the pressure tower
 
 _insert liquid samples gif_
 
@@ -132,17 +129,24 @@ Before collecting spectra, it is necessary to collect a background spectrum.
 
 _insert image with collect background highlighted_
 
-##### Volatiles cover
+<a name="volatile-cover"></a>
+##### Volatiles cover:
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
-##### Swapping pressure tip:
+<a name="pressure-tip"></a>
+##### Pressure tips:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/pressure-tips.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tips.JPG" alt="concave and self-leveling pressure tips." style="width:32%;"></a>
+  <figcaption>Concave (left) and self-leveling (right) pressure tips</figcaption>
+</figure>
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
-  <figcaption> Swapping pressure tips</figcaption>
+  <figcaption>Swapping pressure tips</figcaption>
 </figure>
 
 <a name="analysis"></a> 
