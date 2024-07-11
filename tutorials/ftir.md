@@ -32,7 +32,7 @@ The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer
 * Verify instrument connection via [system status](../assets/img/tutorials/ftir/omnic-status.PNG)
 * Remove protective cover from ATR crystal plate
 * [Clean ATR crystal](#crystal)
-* Collect background (background will need to be refreshed periodically)
+* Collect background
 
 <a name="sample"></a> 
 #### Operation:
@@ -67,6 +67,8 @@ Repeat steps as needed
 #### ATR Sample preparation and loading:
 
 To maximize signal strength, it is important that the sample is in good contact with the entire ATR window. 
+
+##### _Be sure to collect a background before loading samples_
 
 #### Solid samples:
 
@@ -143,7 +145,7 @@ _insert image with collect background highlighted_
 <a name="sample"></a> 
 #### Sample collection:
 
-
+Once your background is collected
 
 
 <a name="volatile-cover"></a>
