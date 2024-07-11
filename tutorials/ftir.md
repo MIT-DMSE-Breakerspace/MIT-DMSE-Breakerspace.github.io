@@ -6,7 +6,7 @@ layout: default
 ## Overview:
 
 <img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;">
-The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. 
+The Nicolet iS5 FTIR Spectrometer Fourier-transform infrared (FTIR) spectrometer provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. This tutorial focuses primarily on use of the instrument with an attenuated total reflectance (ATR) accessory, which allows for easy sampling of materials in solid, semi-solid, powder, paste, and liquid forms. The Breakerspace has an [iD7](https://knowledge1.thermofisher.com/Molecular_Spectroscopy/Molecular_Spectroscopy_Media_and_Document_Repository/Nicolet_Summit_and_Nicolet_Summit_PRO_User_Guide/Sampling_Accessories_for_the_Summit_Spectrometer) attenuated total reflectance (ATR) accessory that is left on the instrument by default, and also an [iD1](https://knowledge1.thermofisher.com/Molecular_Spectroscopy/Molecular_Spectroscopy_Media_and_Document_Repository/Nicolet_Summit_and_Nicolet_Summit_PRO_User_Guide/Sampling_Accessories_for_the_Summit_Spectrometer) transmission accessory and a [Pike Technologies EasiDiff](https://www.piketech.com/product/dr-easidiff-tm/) diffuse reflection accessory. 
 <div style="clear:both;"></div>
 
 ### Index:
@@ -74,7 +74,7 @@ To maximize signal strength, it is important that the sample is in good contact 
 
 * Select self leveling [pressure tip](#pressure-tip)
 * Solid samples should be smooth and free of contaminants on the face to be tested
-* Cover the diamond window with the sample
+* Cover the ATR crystal with the sample
 * Position the pressure tower over the window
 * Tighten the turn the knob until the clutch slips to provide clamping pressure to the sample 
 
@@ -90,7 +90,8 @@ Although many solid samples will not contaminate the window, it is still a good 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
 
 * Select the concave [pressure tip](#pressure-tip)
-* Position the pressure tower over the window
+* using a spatula, place a small amount of powder sufficient to cover the ATR crystal 
+* Position the pressure tower over the ATR crystal
 * Tighten the turn the knob until the clutch slips
 
 _insert powder samples gif_
@@ -98,8 +99,8 @@ _insert powder samples gif_
 #### Liquid samples:
 
 * Place droplet of sample on ATR crystal
-  * Non-volatile liquids can be run uncovered, without the use of the pressure tower
-  * Volatile samples can be covered with the [volatiles cover](#volatiles-cover) to prevent evaporation. Clamp volatiles cover with the pressure tower
+* Non-volatile liquids can be run uncovered, without the use of the pressure tower
+* Volatile samples can be covered with the [volatiles cover](#volatiles-cover) to prevent evaporation. Clamp volatiles cover with the pressure tower
 
 _insert liquid samples gif_
 
@@ -137,15 +138,16 @@ Before collecting spectra, it is necessary to collect a background spectrum.
 * iD1 transmission accessory background is run with no sample in the compartment
 * EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder
 * set instrument up per above for your experiment and click "collect background"
+* After background is collected you can choose to add it to the spectra window, or not. In both cases that background scan will automatically be used on subsequent sample collections.
 
-##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection_
+##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection._ 
 
 _insert image with collect background highlighted_
 
 <a name="sample"></a> 
 #### Sample collection:
 
-Once your background is collected
+Once your background is collected you are ready to collect a spectrum for your sample. Load it according to 
 
 
 <a name="volatile-cover"></a>
