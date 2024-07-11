@@ -119,7 +119,7 @@ _insert gif of process_
 <a name="background"></a> 
 ##### Background collection:
 
-Before collecting spectra, it is necessary to collect a background spectrum. A background spectrum is a single-beam spectrum obtained without a sample in place. The background spectrum is the result of the output of the source; the response of the beamsplitter, optics, sampling accessory or holder, and detector; and any atmospheric absorptions inside the spectrometer. A single-beam sample spectrum can be ratioed against the background spectrum to remove the effects of the background and produce a transmission spectrum.
+Before collecting spectra, it is necessary to collect a background spectrum. _A background spectrum is a single-beam spectrum obtained without a sample in place. The background spectrum is the result of the output of the source; the response of the beamsplitter, optics, sampling accessory or holder, and detector; and any atmospheric absorptions inside the spectrometer. A single-beam sample spectrum can be ratioed against the background spectrum to remove the effects of the background and produce a transmission spectrum._ ([Definition from the Thermo Scientific OMNIC Help Topics](../assets/img/tutorials/ftir/background-def.PNG))
 
 * iD7 ATR accessory background collection is run with the cleaned diamond crystal exposed to air (no pressure clamp)
 * iD1 transmission accessory background is run with no sample in the compartment
