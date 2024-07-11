@@ -61,7 +61,7 @@ Repeat steps as needed
 * Only sensitive to molecules that absorb IR radiation and transition to excited vibrational state
 * Complementary information to Raman spectroscopy, often
 
-_**If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.**_
+##### _If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab._
 
 <a name="sample-prep"></a> 
 #### ATR Sample preparation and loading:
@@ -118,7 +118,7 @@ _insert gif of process_
 
 [Experiment setup](../assets/img/tutorials/ftir/experriment-setup.JPG) allows you to change the parameters to fit your requirements. For faster collections, reduce the number of scans and/or scan resolution, and note how the estimated time changes. For samples with short peaks that can be hidden in noise, increase the number of scans to improve the signal to noise ratio.
 
-If the _Preview data collection_ parameter is selected, the instrument will show a live spectrum that refreshes approximately every second during preview mode. Once you are satisfied with your sample setup, run the full scan by by clicking start collection in the upper right. Deselect _Preview data collection_ if you wish to bypass the preview stage and run your full scan immediately.
+If the _Preview data collection_ parameter is selected, the instrument will show a live spectrum that refreshes approximately every second during preview mode. Once you are satisfied with your sample setup, run the full scan by by clicking start collection in the upper right. Deselect _Preview data collection_ if you wish to bypass the preview stage and run your full scan immediately. If preview mode is enabled it will also apply during background collection.
 
 For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG) of the parameters in experiment setup, select help in the lower left.
 
