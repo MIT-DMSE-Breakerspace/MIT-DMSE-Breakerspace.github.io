@@ -202,7 +202,7 @@ Data processing is beyond the scope of this tutorial, but we recommend the use o
 <a name="links"></a>
 ### Links:
 
-* list of links, ie. good video tutorials, some student project, anything relevant
+[Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
 
 <a name="exercise"></a> 
 ### Exercises:
