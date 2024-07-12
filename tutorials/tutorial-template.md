@@ -22,21 +22,21 @@ Matches info/image for instrument on lab page, brief description of what it does
 ### Standard operating protocol:
 
 <a name="startup"></a> 
-##### Instrument startup: - \<h5> 
+#### Instrument startup: - \<h5> 
 
 * sequence of powering on, logging in, starting softare, homing/tilt position etc.
 * these steps should only need to be completed once per session
 * no images on page in this section, just text bullets, [text can link to image if needed](../assets/img/tutorials/template/ftir-switch.JPG)
 
 <a name="operation"></a>
-##### Operation: 
+#### Operation: 
 
 * steps to characterize - sample loading, data capture and saving, etc. - whatever might be repeated, characterization sequence
 * for instruments like SEM with multiple, independent characterization techniques (eg. EDS, imaging), make technique a top-level bullet and indent for steps
 	* this is tabbed in to be a sub-set of the above bullet
 
 <a name="shutdown"></a>
-#####  Instrument shut down:
+####  Instrument shut down:
 
 * sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session
 * highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
@@ -50,7 +50,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * safety/handling related info
 * images/videos inline as needed
 
-##### Sample Prep may be own sub-section:
+#### Sample Prep may be own sub-section:
 
 * sample prep
 	* break into sub-sections as relevant, 

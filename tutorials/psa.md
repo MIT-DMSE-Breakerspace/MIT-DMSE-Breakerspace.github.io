@@ -11,8 +11,8 @@ Matches info/image for instrument on lab page
 
 * Standard (daily) operating protocol
 	* Startup
-		* Turn power switch
-        * Log onto desktop
+		* Turn on the machine
+        * Log in on the desktop
         * Open Mictrotrak flex software
         * Open sync analyzer
 
@@ -21,7 +21,7 @@ Matches info/image for instrument on lab page
         * Load measurement SOP
         * Clean loose particles from sample chamber
         * Load sample
-        *   Run Auto-Sequence
+        * Run Auto-Sequence
 
 	* Shut down
 		* Save your data
