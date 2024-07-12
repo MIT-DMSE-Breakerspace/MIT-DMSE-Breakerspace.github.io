@@ -82,7 +82,7 @@ Although many solid samples will not contaminate the window, it is still a good 
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading." style="width:100%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
+  <figcaption>Loading a solid sample</figcaption>
 </figure>
 
 #### Powder samples:
@@ -96,7 +96,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/powder-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/powder-sample.GIF" alt="Powder sample loading." style="width:100%;"></a>
-  <figcaption> Loading a powder sample</figcaption>
+  <figcaption>Loading a powder sample</figcaption>
 </figure>
 
 #### Liquid samples:
@@ -107,7 +107,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading." style="width:100%;"></a>
-  <figcaption> Loading a non-volatile liquid sample</figcaption>
+  <figcaption>Loading a non-volatile liquid sample</figcaption>
 </figure>
 
 <a name="details"></a> 
@@ -120,7 +120,10 @@ It is especially important that powders contact the surface of the diamond windo
 * wipe with wetted portion of the Kimwipe, starting in the center and working outwards
 * using a dry portion of the Kimwipe, or a new Kimewipe, dry the crystal and surrounding area
 
-_insert gif of process_
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/clean-crystal.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/clean-crystal.GIF" alt="Cleaning the ATR crystal." style="width:100%;"></a>
+  <figcaption>Cleaning the ATR crystal</figcaption>
+</figure>
 
 <a name="setup"></a> 
 #### Experiment setup:
@@ -160,7 +163,7 @@ Once your background is collected you are ready to collect a spectrum for your s
 #### Volatiles cover:
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:100%;"></a>
-  <figcaption> Use of the volatile cover </figcaption>
+  <figcaption>Use of the volatile cover </figcaption>
 </figure>
 
 <a name="pressure-tip"></a>
