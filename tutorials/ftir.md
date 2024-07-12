@@ -81,20 +81,23 @@ To maximize signal strength, it is important that the sample is in good contact 
 Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading." style="width:32%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
 #### Powder samples:
 
-It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. Plan to run powder samples multiple times to verify you are getting a good signal.
+It is especially important that powders contact the surface of the diamond window as completely as possible, so it is helpful that they are ground as finely as possible. It is helpful to load powders in preview mode and verify the pressure tip is pushing the powder into intimate contact with the ATR crystal before collecting a spectrum.
 
-* Select the concave [pressure tip](#pressure-tip)
+* Either the concave or self-leveling [pressure tip](#pressure-tip) can work, try both to see if one is better with your sample
 * using a spatula, place a small amount of powder sufficient to cover the ATR crystal 
 * Position the pressure tower over the ATR crystal
 * Tighten the turn the knob until the clutch slips
 
-_insert powder samples gif_
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/powder-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/powder-sample.GIF" alt="Powder sample loading." style="width:32%;"></a>
+  <figcaption> Loading a powder sample</figcaption>
+</figure>
 
 #### Liquid samples:
 
@@ -102,7 +105,10 @@ _insert powder samples gif_
 * Non-volatile liquids can be run uncovered, without the use of the pressure tower
 * Volatile samples can be covered with the [volatiles cover](#volatiles-cover) to prevent evaporation. Clamp volatiles cover with the pressure tower
 
-_insert liquid samples gif_
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading." style="width:32%;"></a>
+  <figcaption> Loading a non-volatile liquid sample</figcaption>
+</figure>
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
@@ -147,7 +153,7 @@ _insert image with collect background highlighted_
 <a name="sample"></a> 
 #### Sample collection:
 
-Once your background is collected you are ready to collect a spectrum for your sample. Load it according to 
+Once your background is collected you are ready to collect a spectrum for your sample. Load it according to the above instructions, and click collect sample. 
 
 
 <a name="volatile-cover"></a>
