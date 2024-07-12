@@ -140,12 +140,12 @@ For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG)
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/preview.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview.GIF" alt="Background and sample collection with Preview data collection on." style="width:100%;"></a>
-  <figcaption>Background and sample collection with _Preview data collection_ on</figcaption>
+  <figcaption>Background and sample collection with <i>Preview data collection</i> on</figcaption>
 </figure>
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/ftir/preview-omnic.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview-omnic.GIF" alt="Background and sample collection with Preview data collection on in the OMNIC software." style="width:100%;"></a>
-  <figcaption>Background and sample collection with _Preview data collection_ on in the OMNIC software</figcaption>
+  <figcaption>Background and sample collection with <i>Preview data collection</i> on in the OMNIC software</figcaption>
 </figure>
 
 
