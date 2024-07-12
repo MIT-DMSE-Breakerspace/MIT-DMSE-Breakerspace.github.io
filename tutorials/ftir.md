@@ -148,6 +148,13 @@ For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG)
   <figcaption>Background and sample collection with <i>Preview data collection</i> on in the OMNIC software</figcaption>
 </figure>
 
+##### _Preview data collection_ not enabled:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/no-preview.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/no-preview.GIF" alt="Basic sample collection without Preview data enabled." style="width:100%;"></a>
+  <figcaption>Basic sample collection without preview data enabled</figcaption>
+</figure>
+
 
 <a name="background"></a> 
 #### Background collection:
