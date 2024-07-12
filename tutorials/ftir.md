@@ -222,8 +222,8 @@ Data processing is beyond the scope of this tutorial, but we recommend the use o
 <a name="links"></a>
 ### Links:
 
-[Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
-[Pike Technologies tips of the week](https://www.piketech.com/tip-of-the-week/)
+* [Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
+* [Pike Technologies tips of the week](https://www.piketech.com/tip-of-the-week/)
 
 
 <a name="exercise"></a> 
