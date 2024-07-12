@@ -81,7 +81,7 @@ To maximize signal strength, it is important that the sample is in good contact 
 Although many solid samples will not contaminate the window, it is still a good idea to wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading." style="width:100%;"></a>
   <figcaption> Loading a solid sample</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ It is especially important that powders contact the surface of the diamond windo
 * Tighten the turn the knob until the clutch slips
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/powder-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/powder-sample.GIF" alt="Powder sample loading." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/powder-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/powder-sample.GIF" alt="Powder sample loading." style="width:100%;"></a>
   <figcaption> Loading a powder sample</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ It is especially important that powders contact the surface of the diamond windo
 * Volatile samples can be covered with the [volatiles cover](#volatiles-cover) to prevent evaporation. Clamp volatiles cover with the pressure tower
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading." style="width:100%;"></a>
   <figcaption> Loading a non-volatile liquid sample</figcaption>
 </figure>
 
@@ -159,7 +159,7 @@ Once your background is collected you are ready to collect a spectrum for your s
 <a name="volatile-cover"></a>
 #### Volatiles cover:
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Volatile cover use." style="width:100%;"></a>
   <figcaption> Use of the volatile cover </figcaption>
 </figure>
 
@@ -167,12 +167,12 @@ Once your background is collected you are ready to collect a spectrum for your s
 #### Pressure tips:
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/pressure-tips.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tips.JPG" alt="concave and self-leveling pressure tips." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/pressure-tips.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tips.JPG" alt="concave and self-leveling pressure tips." style="width:100%;"></a>
   <figcaption>Concave (left) and self-leveling (right) pressure tips</figcaption>
 </figure>
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:32%;"></a>
+  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping pressure tips." style="width:100%;"></a>
   <figcaption>Swapping pressure tips</figcaption>
 </figure>
 
