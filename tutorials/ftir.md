@@ -128,13 +128,26 @@ It is especially important that powders contact the surface of the diamond windo
 <a name="setup"></a> 
 #### Experiment setup:
 
-Experiment setup allows you to change the parameters to fit your requirements. For faster collections, reduce the number of scans and/or scan resolution, and note how the estimated time changes. For samples with short peaks that can be hidden in noise, increase the number of scans to improve the signal to noise ratio.
+Experiment setup allows you to change the parameters to fit your requirements. For faster collections, reduce the number of scans and/or scan resolution, and note how the estimated time changes. To improve the signal to noise ratio, increase the number of scans.
 
-If the _Preview data collection_ parameter is selected, the instrument will show a live spectrum that refreshes approximately every second during preview mode. Once you are satisfied with your sample setup, run the full scan by by clicking start collection in the upper right. Deselect _Preview data collection_ if you wish to bypass the preview stage and run your full scan immediately. If preview mode is enabled it will also apply during background collection.
+There are two ways to collect a spectrum (either background or sample): with _preview_ on or off. If the _Preview data collection_ parameter is selected, the instrument will show a live spectrum that refreshes approximately every second during preview mode. Once you are satisfied with your sample setup, run the full scan by by clicking start collection in the upper right. Deselect _Preview data collection_ if you wish to bypass the preview stage and run your full scan immediately. This setting will apply to both background and sample collection.
 
 For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG) of the parameters in experiment setup, select help in the lower left.
 
 ![experiment setup](../assets/img/tutorials/ftir/experiment-setup.JPG)
+
+##### _Preview data collection_ enabled:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/preview.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview.GIF" alt="Background and sample collection with Preview data collection on." style="width:100%;"></a>
+  <figcaption>Background and sample collection with _Preview data collection_ on</figcaption>
+</figure>
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/preview-omnic.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview-omnic.GIF" alt="Background and sample collection with Preview data collection on in the OMNIC software." style="width:100%;"></a>
+  <figcaption>Background and sample collection with _Preview data collection_ on in the OMNIC software</figcaption>
+</figure>
+
 
 <a name="background"></a> 
 #### Background collection:
@@ -203,6 +216,8 @@ Data processing is beyond the scope of this tutorial, but we recommend the use o
 ### Links:
 
 [Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
+[Pike Technologies tips of the week](https://www.piketech.com/tip-of-the-week/)
+
 
 <a name="exercise"></a> 
 ### Exercises:
