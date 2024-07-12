@@ -166,18 +166,15 @@ Before collecting spectra, it is necessary to collect a background spectrum.
 * iD7 ATR accessory background collection is run with the cleaned diamond crystal exposed to air (no pressure clamp)
 * iD1 transmission accessory background is run with no sample in the compartment
 * EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder
-* set instrument up per above for your experiment and click "collect background"
+* set instrument up per above for your experiment and click "collect background" and continue through the collection process
 * After background is collected you can choose to add it to the spectra window, or not. In both cases that background scan will automatically be used on subsequent sample collections.
 
 ##### _Negative absorbance in an ATR spectrum indicate the crystal was not clean during background collection._ 
 
-_insert image with collect background highlighted_
-
 <a name="sample"></a> 
 #### Sample collection:
 
-Once your background is collected you are ready to collect a spectrum for your sample. Load it according to the above instructions, and click collect sample. 
-
+Once your background is collected you are ready to collect a spectrum for your sample. Load it according to the above instructions, and click collect sample, following the process based on your experiment setup. 
 
 <a name="volatile-cover"></a>
 #### Volatiles cover:
