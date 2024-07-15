@@ -7,34 +7,53 @@ layout: default
 
 The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Phenom XL](https://www.thermofisher.com/us/en/home/electron-microscopy/products/desktop-scanning-electron-microscopes/phenom-xl.html) and [Phenom Pure](https://www.thermofisher.com/us/en/home/electron-microscopy/products/desktop-scanning-electron-microscopes/phenom-pure.html. [SEMs](https://www.thermofisher.com/blog/materials/what-is-sem-scanning-electron-microscopy-explained/) use a focused beam of electrons to image materials at much higher magnification than can be achieved with an optical microscope, with our instruments able to resolve features as small as 100 nm in optimum conditions. Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-conducting samples, can perform [energy dispersive spectroscopy (EDS)](https://www.thermofisher.com/blog/materials/edx-analysis-with-sem-how-does-it-work/), and also has a [tensile stage](https://assets.thermofisher.com/TFS-Assets/MSD/Flyers/desktop-sem-tensile-sample-holder-FL0116.pdf) for in-situ observation of mechanical experiments. The Phenom Pure can observe a single sample on an 18 mm or smaller stub, under either low or high vacuum, and has a cold-stage for observation of frozen samples. Both instruments have [backscatter (BSD) and secondary electron (SED) detectors](https://www.thermofisher.com/blog/materials/sem-signal-types-electrons-and-the-information-they-provide/).
 
-### Sections:
+### Index:
 
-* Standard (daily) operating protocol
-	* Startup
-		* Start the software on the desktop
-		* Put on gloves
-		* Load your sample into the tray
-		* Ensure the sample is secure using electronics duster
-		* Level the sample with the top of the plate
-		* Turn the dial six notches below the edge
-		* Load the tray into its slot
-		* Close the door
-		* Click the box with the blue border in the bottom left to start the camera
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
+* [Materials and sample prep](#materials)
+* [Detailed operating instructions](#details)
+* [Data processing and analysis](#data)
+* [Common failure modes](#failures)
+* [Manufacturer manuals](#manuals)
+* [Links](#links)
+* [Exercises](#exercises)
 
-	* Operation
-		* Click move to SEM button
-	
-	* Features
-		* Take acquisition
-		* Perform EDS
+<a name="sop"></a>
+### Standard operating protocol:
 
-		
-	* Shut down
-		* Click unload sample
-		* Put on gloves
-		* Remove your sample
-		* Close the door
-		* Close the software
+<a name="startup"></a> 
+#### Instrument startup:
+
+* Log on to instrument workstation using your MIT Kerberos
+* Start the Phenom User Interface software
+* Wake the instrument up if needed
+	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument
+
+<a name="sample"></a> 
+#### Operation:
+
+* Wear nitrile gloves when handling your sample, sample stages, and other sample preparation components
+* Prepare samples externally at the sample prep table
+* Firmly attach samples to stub
+* Remove loose debris with compressed air
+* Load your sample into the sample stage
+	* The sample compartment on the Phenom XL can be accessed by pressing eject button in the software
+	* The Phenom Pure sample compartment is manually opened and closed, but must be unlocked before opening with the eject button in the software
+* Set proper sample height
+	* On the Phenom XL, set the tallest part of your sample level with the opening of the sample stage, then lower by 6 notches on the dial
+	* On the Phenom Pure the tallest part of the sample should be just lower than the top edge of the sample stage
+* Load the sample stage into the instrument
+* Close the door and your sample should be visible in the NavCam
+
+
+<a name="shutdown"></a> 
+#### Instrument shut down:
+
+* Click unload sample
+* Put on gloves
+* Remove your sample
+* Close the door
+* Close the software
 
 * Detailed operating instructions
 #### Live Feed
