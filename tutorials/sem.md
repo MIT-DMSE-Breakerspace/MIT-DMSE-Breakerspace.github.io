@@ -39,8 +39,8 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * Remove loose debris with compressed air
 * __Sample loading:__
 * Load your sample(s) into the sample stage
-	* The sample compartment on the Phenom XL can be accessed by pressing eject button in the software
-	* The Phenom Pure sample compartment is manually opened and closed, but must be unlocked before opening with the eject button in the software
+    * The sample compartment on the Phenom XL can be accessed by pressing eject button in the software
+    * The Phenom Pure sample compartment is manually opened and closed, but must be unlocked before opening with the eject button in the software
 * Set proper sample height
 	* On the Phenom XL, set the tallest part of your tallest sample level with the opening of the sample stage, then lower by 6 notches on the dial
 	* On the Phenom Pure the tallest part of the sample should be just lower than the top edge of the sample stage
@@ -55,7 +55,7 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * Remove sample(s)]
 * Phenom XL
 	* Return sample stage to sample compartment
-	* Close door\
+	* Close door
 * Phenom Pure
 	* Close door
 	* Place sample stage in drawer
