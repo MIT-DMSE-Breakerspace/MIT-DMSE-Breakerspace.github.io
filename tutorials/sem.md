@@ -55,7 +55,7 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * Remove sample(s)]
 * Phenom XL
 	* Return sample stage to sample compartment
-	* Close door
+	* Close door\
 * Phenom Pure
 	* Close door
 	* Place sample stage in drawer
