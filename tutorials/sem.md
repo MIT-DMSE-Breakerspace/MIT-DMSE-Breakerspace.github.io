@@ -32,12 +32,12 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 <a name="sample"></a> 
 #### Operation:
 
-##### Sample prep
+* __Sample Prep:__
 * Wear nitrile gloves when handling your sample, sample stages, and other sample preparation components
 * Prepare samples externally at the sample prep table
 * Firmly attach samples to stub
 * Remove loose debris with compressed air
-##### Sample Loading
+* __Sample loading:__
 * Load your sample(s) into the sample stage
 	* The sample compartment on the Phenom XL can be accessed by pressing eject button in the software
 	* The Phenom Pure sample compartment is manually opened and closed, but must be unlocked before opening with the eject button in the software
@@ -46,10 +46,10 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 	* On the Phenom Pure the tallest part of the sample should be just lower than the top edge of the sample stage
 * Load the sample stage into the instrument
 * Close the door and your sample should be visible in the NavCam
-##### Characterization
+* __Characterization:__
 * Remove your gloves while using the computer
 * Perform characterization relevant to your sample (image capure, measurement, EDS)
-##### Sample Unloading
+* __Sample unloading:__
 * Wear nitrile gloves
 * Open the sample compartment
 * Remove sample(s)]
