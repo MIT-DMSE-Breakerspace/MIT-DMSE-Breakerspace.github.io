@@ -77,9 +77,13 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 
 ##### _If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab._
 
-#### Solid sample prep
+#### Solid sample prep (basic)
 
-* Place a bare sample stub in a sample tray # ADD IMAGE
+* Place a bare sample stub in a sample tray __ADD IMAGES__
+* Attach a double-sided carbon pad to the stuf
+* Attach the sample to the pad
+* For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
+
 
 #### Live Feed
 
