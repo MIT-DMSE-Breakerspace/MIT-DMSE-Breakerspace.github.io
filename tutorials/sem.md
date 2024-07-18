@@ -49,10 +49,11 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * _---Characterization---_
 * Remove your gloves while using the computer
 * Perform characterization relevant to your sample (image capture, measurement, EDS)
+* Make sure any files you need are saved
 * _---Sample unloading---_
 * Wear nitrile gloves
 * Open the sample compartment
-* Remove sample(s)]
+* Remove sample(s)
 * _Phenom XL:_ return sample stage to sample compartment, close door
 * _Phenom Pure:_ close door, place sample stage in drawer
 
@@ -60,13 +61,26 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 <a name="shutdown"></a> 
 #### Instrument shut down:
 
-* Click unload sample
-* Put on gloves
-* Remove your sample
-* Close the door
-* Close the software
+* Close the software - press F11 to switch out of fullscreen view
+* Log off Windows
+* The instrument will put itself in standby
 
-* Detailed operating instructions
+<a name="materials"></a> 
+### Compatible materials and sample prep:
+
+* Samples should be free of volatiles (dry), excepting samples to be frozen on the Phenom Pure cold stage
+* Samples must be free of loose particles ("flush" with compressed air)
+* Samples must be well secured to a sample stub 
+* Non-conductive samples can be viewed in low vacuuum mode, or sputter coated
+* _Phenom XL_ maximum sample size is 100mm x 100mm x 35mm
+* _Phenom Pure_ maximum sample size is a cylinder about 18mm diameter and 12mm tall
+
+##### _If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab._
+
+#### Solid sample prep
+
+* Place a bare sample stub in a sample tray # ADD IMAGE
+
 #### Live Feed
 
 When moving the camera around the sample, use the arrow keys for big jumps. Press control and the arrow keys for more precise movement, or click to center the camera on your cursor. To focus click the focus button in the bottom left corner. The brightness and magnification buttons are right above it. Right click the focus and brightness buttons to toggle between manual and auto adjustment. Right click and drag for precise adjustments and use the mouse wheel for large adjustments.
@@ -130,76 +144,3 @@ Click on the Live EDS icon in the top right. Click anywhere on the live feed to 
 	* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
 	* advanced exercise - deconvolution of compound sample from spectrometer, etc.
 
-
-
-### <a name="startup"></a> Instrument startup:
-
-Procedure to start up the instrument
-
-### <a name="shutdown"></a> Instrument shut down
-
-Procedure to shut down the instrument
-
-### <a name="materials"></a> Compatible materials
-
-These are the categories of materials that can safely be characterized on this instrument.
-
-These categories of materials should not be used.
-
-### <a name="sample-prep"></a> Sample preparation
-
-Common sample preparation techniques for solids.
-
-Common sample preparation technique for powders.
-
-Common sample preparation technique for liquids.
-
-Full width image embedded using markdown, with caption, link to open image full screen:
-
-<figure>
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
-</figure>
-
-
-32% width images using html image tags:
-
-<figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
-</figure>
-
-
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-  
-
-### <a name="loading"></a> Sample loading
-
-Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
-
-### <a name="feature1"></a> Instrument feature
-
-A key feature of this instrument is eg. focus stacking to create 3d image with height data
-
-GIF embedded using image tag:
-
-![GIF test](../assets/video/raman-display-flip.GIF)
-
-### <a name="tutorial"></a> Tutorial
-
-Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
-
-Video embedded with video tag, width set to 100%:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
