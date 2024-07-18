@@ -29,7 +29,7 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * Wake the instrument up if needed
 	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument
 
-<a name="sample"></a> 
+<a name="operation"></a> 
 #### Operation:
 
 * _---Sample Prep---_
@@ -39,11 +39,11 @@ The Breakerspace has two scanning electron microscopes (SEM), a ThermoFisher [Ph
 * Remove loose debris with compressed air
 * _---Sample loading---_
 * Load your sample(s) into the sample stage
-* _Phenom XL_ sample compartment is opened by pressing eject button in the software
-* _Phenom Pure_ sample compartment is manually opened and closed, but must be unlocked with the eject button in the software
+* _Phenom XL:_ sample compartment is opened by pressing eject button in the software
+* _Phenom Pure:_ sample compartment is manually opened and closed, but must be unlocked with the eject button in the software
 * Set proper sample height
-	* On the Phenom XL, set the tallest part of your tallest sample level with the opening of the sample stage, then lower by 6 notches on the dial
-	* On the Phenom Pure the tallest part of the sample should be just lower than the top edge of the sample stage
+* _Phenom XL:_ set the tallest part of your tallest sample level with the opening of the sample stage, then lower by 6 notches on the dial
+* _Phenom Pure:_ the tallest part of the sample should be just lower than the top edge of the sample stage
 * Load the sample stage into the instrument
 * Close the door and your sample should be visible in the NavCam
 * _---Characterization---_
