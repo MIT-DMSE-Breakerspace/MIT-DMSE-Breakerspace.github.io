@@ -31,14 +31,13 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 * Log on to instrument workstation using your MIT Kerberos
 * Start the Phenom User Interface software
 * Wake the instrument up if needed
-	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument
+	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument in [Settings/Phenom/Status](../assets/img/tutorials/SEM/connect.GIF)
 
 <a name="operation"></a> 
 #### Operation:
 
 * Wear nitrile gloves when handling your sample, sample stages, and other sample preparation components
-* [Prepare samples externally at the sample prep table](#prep)
-* [Load your sample(s) into the instrument](#loading)
+* [Prepare samples](#prep) externally at the sample prep table* [Load](#loading) your sample(s) into the instrument
 * Remove your gloves while using the computer
 * Perform [characterization](#characterization) relevant to your sample (image capture, measurement/annotation, EDS)
 * Wear nitrile gloves
@@ -76,7 +75,7 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 * Place a bare sample stub in a sample tray __ADD IMAGES__
 * Attach a double-sided carbon pad to the stuf
 * Attach the sample to the pad
-* For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
+* For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
@@ -98,27 +97,22 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 <a name="loading"></a>
 #### Characterization:
 
-__NavCam:__ When you first load a sample into the SEM you see your sample(s) on the NavCam. This is an optical image of the sample stage that can be used for navigation once you are in SEM observation mode. 
+__Customize:__ When your sample is loading, this is a good time to visit [Settings/Customize](../assets/img/tutorials/SEM/customizer.PNG) and change the _Label_ and _Location_ fields to a name and folder that are relevant to your project
 
-__Live Feed:__ When moving the camera around the sample, use the arrow keys for big jumps. Press control and the arrow keys for more precise movement, or click to center the camera on your cursor. To focus click the focus button in the bottom left corner. The brightness and magnification buttons are right above it. Right click the focus and brightness buttons to toggle between manual and auto adjustment. Right click and drag for precise adjustments and use the mouse wheel for large adjustments.
+__NavCam:__ When you first load a sample into the SEM you see your sample(s) on the [NavCam](../assets/img/tutorials/SEM/navcam.PNG). This is an optical image of the sample stage that can be used for navigation once you are in SEM observation mode. If you will rely on the NavCam image for navigating your sample(s), it is helpful at this stage to make sure the brightness, contrast, and focus are all acceptable in key areas of your sample. If you wish, you can click the camera icon in the NavCam to save the NavCam image to a file.
 
-<figure>
-	<a href="../assets/img/tutorials/SEM/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/SEM/FocBri.PNG" alt="An image showing how to change the brightness or focus"></a>
-</figure>
+__LiveSEM view:__ Once you click "Move to SEM" __add image__ you will be in the LiveSEM view. Here you can adjust brightness, contrast, and focus, as well as changing magnification. The recommended UI setup is to leave the scroll wheel set to change magnfication, hold down the right mouse button and move the mouse cursor horizontally to change focus, and to use auto brightness/contrast. A full set of keyboard and mouse shortcuts can be found in [Settings/Phenom/Help](../assets/img/tutorials/SEM/shortcuts.PNG). Detailed operating instructions and a full UI overview can be found starting on page 20 of either the [_XL_](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0) or [_Pure_](https://www.dropbox.com/scl/fi/7ju8ldfdm0p04m6n81men/Phenom-ProX-G6-User-Manual.pdf?rlkey=l6gg1ld4zpmtxgrsxfgw00jpb&dl=0) manual.
 
-__Acquisition:__ Press the camera icon on the left side of the screen to take an acquisition of the live feed. This picture will appear in the gallery menu in the top right. This is where you can see all the photos you have taken.
 
-<figure>
-	<a href="../assets/img/tutorials/SEM/AcgGal.PNG" target="_parent"><img src="../assets/img/tutorials/SEM/AcgGal.PNG" alt="An image showing how to take a picture and where to find all the pictures you have taken."></a>
-</figure>
+__Gallery:__ 
+
+__Acquisition:__ Press the camera icon on the left side of the screen to acquire an image. Images in the active folder can be viewed and annotated in the gallery.
+
 
 #### EDS
 
 To use the EDS feature click on the squiggly line icon in the top right. Select a shape to measure along or inside in the menu on the left. The map option can be used to see where each element is located within the frame. A Table showing the atomic and weight concentrations of the area designated by the shape you drew will appear.
 
-<figure>
-	<a href="../assets/img/tutorials/SEM/EDS.gif" target="_parent"><img src="../assets/img/tutorials/SEM/EDS.gif" alt="A gif showing how to use the EDS feature."></a>
-</figure>
 
 #### Live EDS
 
@@ -139,13 +133,11 @@ Click on the Live EDS icon in the top right. Click anywhere on the live feed to 
 * _Phenom Pure:_ close door, place sample stage in drawer
 
 
-
-
 <a name="failures"></a>
 ### Common failure modes:
 
-* If you can't get the instrument to transition to SEM imaging, take your sample out and put it back in.
-* Before navigating away from an EDS make sure that it isn’t active or else the instrument might lock itself in place. To resolve the issue, go back to the EDS, start it again, and turn it off.
+* _Phenom XL:_ If the SEM fails to start press the eject button to open and close the door and reinitialize the sample loading process
+* _Phenom XL:_ In either live EDS or EDS, if you do not press the stop button, and attempt to return to observation mode, you will get an error message, and need to return to where you were and press stop **add image/gif**
 * Sensitive sample may experience [degredation]](https://www.thermofisher.com/us/en/home/materials-science/learning-center/applications/sample-degradation-scanning-electron-microscope-sem.html), often in the form of cracks on the surface, or the sample may appear to be melting or boiling. Lowering acceleration voltage, beam intensity, and magnification will all help slow the rate of degredation.
 
 
