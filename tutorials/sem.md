@@ -103,26 +103,15 @@ __NavCam:__ When you first load a sample into the SEM you see your sample(s) on 
 
 __LiveSEM view:__ Once you click "Move to SEM" __add image__ you will be in the LiveSEM view. Here you can adjust brightness, contrast, and focus, as well as changing magnification. The recommended UI setup is to leave the scroll wheel set to change magnfication, hold down the right mouse button and move the mouse cursor horizontally to change focus, and to use auto brightness/contrast. A full set of keyboard and mouse shortcuts can be found in [Settings/Phenom/Help](../assets/img/tutorials/SEM/shortcuts.PNG). Detailed operating instructions and a full UI overview can be found starting on page 20 of either the [_XL_](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0) or [_Pure_](https://www.dropbox.com/scl/fi/7ju8ldfdm0p04m6n81men/Phenom-ProX-G6-User-Manual.pdf?rlkey=l6gg1ld4zpmtxgrsxfgw00jpb&dl=0) manual.
 
+__Gallery:__ The gallery will show you all images in the active folder. In addition to reviewing the images, you can add dimensions and notes. If you annotate the images the annotated versions need to be saved as new files.
 
-__Gallery:__ 
+__Acquisition:__ Press the camera icon on the left side of the screen to acquire an image. Images will be saved in the resolution and with the averaging specified in the Operational Settings/Acquisition menu. Pay attention to acquisition times, and take some test images first. Higher averaging settings swill increase signal to noise, and result in cleaner images, but longer acquisition times. If there are issues related to charging, such as drift, they will be more visible in longer acquisitions, so higher averaging is not always better or needed. 
 
-__Acquisition:__ Press the camera icon on the left side of the screen to acquire an image. Images in the active folder can be viewed and annotated in the gallery.
+__EDS:__ [Energy dispersive spectroscopy (EDS)](https://www.thermofisher.com/blog/materials/edx-analysis-with-sem-how-does-it-work/), available on the _Phenom XL_, allows you to perform elemental analysis and save out full reports, included map images, images and data of captured spectrum, and a CSV files with raw data. Recommended settings for EDS are 15kV acceleration voltage and map beam intensity. Click the square to stop data collection before navigating to a different section.
 
+__Live EDS:__ Live EDS mode, (_Phenom XL only_) lets you perform quick elemental analysis on a spot on your sample, without generating any files or documentation. It is useful for quick spot checks. Recommended settings for EDS are 15kV acceleration voltage and map beam intensity. Click the square to stop data collection before navigating to a different section.
 
-#### EDS
-
-To use the EDS feature click on the squiggly line icon in the top right. Select a shape to measure along or inside in the menu on the left. The map option can be used to see where each element is located within the frame. A Table showing the atomic and weight concentrations of the area designated by the shape you drew will appear.
-
-
-#### Live EDS
-
-Click on the Live EDS icon in the top right. Click anywhere on the live feed to see the elemental makeup of that section by atomic and weight concentration. Click the square to stop data collection before navigating to a different section.
-
-
-<figure>
-  <a href="../assets/img/tutorials/SEM/LiveEDS.gif" target="_parent"><img src="../assets/img/tutorials/SEM/LiveEDS.gif" alt="Solid sample loading." style="width:75%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
-</figure>
+_For a more complete description and instructions on how to use any of these features, please see the_ [_XL_](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0) or [_Pure_](https://www.dropbox.com/scl/fi/7ju8ldfdm0p04m6n81men/Phenom-ProX-G6-User-Manual.pdf?rlkey=l6gg1ld4zpmtxgrsxfgw00jpb&dl=0) _manuals._
 
 <a name="unloading"></a>
 #### Sample unloading:
@@ -140,8 +129,6 @@ Click on the Live EDS icon in the top right. Click anywhere on the live feed to 
 * _Phenom XL:_ In either live EDS or EDS, if you do not press the stop button, and attempt to return to observation mode, you will get an error message, and need to return to where you were and press stop **add image/gif**
 * Sensitive sample may experience [degredation]](https://www.thermofisher.com/us/en/home/materials-science/learning-center/applications/sample-degradation-scanning-electron-microscope-sem.html), often in the form of cracks on the surface, or the sample may appear to be melting or boiling. Lowering acceleration voltage, beam intensity, and magnification will all help slow the rate of degredation.
 
-
-
 <a name="manuals"></a> 
 ### Manufacturer's manuals:
 
@@ -152,7 +139,6 @@ Click on the Live EDS icon in the top right. Click anywhere on the live feed to 
 ### Links:
 
 * good video tutorials, etc.
-
 
 <a name="exercise"></a> 
 ### Exercises:
