@@ -63,6 +63,9 @@ Repeat steps as needed
 
 ##### _If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab._
 
+<a name="details"></a> 
+### Detailed operating instructions: 
+
 <a name="sample-prep"></a> 
 #### ATR Sample preparation and loading:
 
@@ -109,9 +112,6 @@ It is especially important that powders contact the surface of the diamond windo
   <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading." style="width:100%;"></a>
   <figcaption>Loading a non-volatile liquid sample</figcaption>
 </figure>
-
-<a name="details"></a> 
-### Detailed operating instructions: 
 
 <a name="crystal"></a> 
 #### Cleaning the ATR crystal:
