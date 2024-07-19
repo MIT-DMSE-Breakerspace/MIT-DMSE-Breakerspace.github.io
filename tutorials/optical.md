@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template - \<h1>
+# Breakerspace Optical Microscope Tutorial
 
-## Overview - \<h2>
+## Overview:
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
-### Index: - \<h3>
+### Index:
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation),[features](#features), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
@@ -19,53 +19,36 @@ Matches info/image for instrument on lab page, brief description of what it does
 * [Exercises](#exercises)
 
 <a name="sop"></a>
-
-### Standard operating protocol 
+### Standard operating protocol
 
 <a name="startup"></a> 
+#### Instrument startup:
 
-##### Instrument startup: - \<h5> 
-
-
-* Turn on the machine
-* Log in on the desktop
-* Start the DSX Software
-* Lower the stage
-* Bring the objective into tilt position
-
-
+* Switch the microscope on __link to image of power switch on rear__
+* Log on to instrument workstation using your MIT Kerberos
+* Start the DSX Software __link to screenshot showing software, maybe__
+* Use the manual focusing knob to lower the microscope stage __link to image__
+* Load/change [objectives](#objectives) if needed
+* Put the microscope head into the tilt position (lower it) using the button on the console or the software button
 
 <a name="operation"></a>
-
 ##### Operation: 
 
-* Put your sample on tray
-* Use the knob to bring sample into focus
-* Use the dial on the console to focus with more precision
-
-<a name="features"></a>
-
-##### Features:
-
-* Capture a 2D picture of the sample
-* Make a 3D capture of the sample using start/end mode
-* Use stitching feature to make a map of the sample
-* Use the map to create a 2D of 3D capture of a large area of the sample based on the map image
-* Use measurement tab to measure the distance, angle, or difference in height between two points on sample
-* Use measurement tab to find the volume of the sample.
-
+* Put your sample on stage
+* Use the manual focusing knob to bring sample into focus
+* Chracterize! For a list of features see the [detailed operating instructions](#details)
+* Verify files are saved where you intend
+* Repeat as needed
 
 <a name="shutdown"></a>
+#####  Instrument shut down: 
 
-#####  Instrument shut down 
-
-* Bring objective into lens exchange position
-* Turn off machine
-* Log out of software
+* Close the DSX software - when you exit the software the microscope head should raise into a retracted position
+* Switch the microscope off
+* Log out of Windows
 
 
 <a name="materials"></a> 
-
 ### Compatible materials and sample prep: 
 
 * compatible materials
@@ -80,9 +63,24 @@ Matches info/image for instrument on lab page, brief description of what it does
 	* ie. solid vs. powder vs. liquid
 
 <a name="details"></a> 
+### Detailed operating instructions
 
+<a name="features"></a>
+##### Features:
 
-#### Detailed operating instructions
+* Capture a 2D picture of the sample
+* Make a 3D capture of the sample using start/end mode
+* Use stitching feature to make a map of the sample
+* Use the map to create a 2D of 3D capture of a large area of the sample based on the map image
+* Use measurement tab to measure the distance, angle, or difference in height between two points on sample
+* Use measurement tab to find the volume of the sample.
+
+<a name="objectives"></a>
+#### Objectives:
+
+* Long working distance: 5x (cannot be used in polarized observation mode), 10x, 20x, 40x 
+* Extra long working distance: 1x, 5x, 10x __double check these!!__
+
 
 ###### Lighting
 
