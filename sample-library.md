@@ -9,7 +9,7 @@ These samples are available in the Breakerspace sample cabinet. Some are also us
 
 ### Coffee residue on glass slide
 
-Location: cabinet 1 bin 1
+Location: cabinet 1 bin 1  
 Sample preparation: place droplet of brewed coffee on glass slide, allow to evaporate  
 Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)
 
@@ -23,5 +23,5 @@ Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)
 
 ### Example Sample
 
-Location: In cabinet # bin #
-Sample prep: what was done or what needs to be done to use the sample on an instrument - be clear!
+Location: In cabinet # bin #  
+Sample prep: what was done or what needs to be done to use the sample on an instrument - be clear!  
