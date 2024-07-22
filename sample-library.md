@@ -4,7 +4,9 @@ layout: default
 # Breakerspace Sample Library
 
 These samples are available in the Breakerspace sample cabinet. Some are also used our instrument training exercises. You are welcome to use these samples in the lab, just please be sure to return them to the cabinet, and if a sample that gets consumed is running low, please let use know: [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
+
 ---
+
 ### Coffee residue on glass slide
 
 Location: cabinet 1 bin 1
