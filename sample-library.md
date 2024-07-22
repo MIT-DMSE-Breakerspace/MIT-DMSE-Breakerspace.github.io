@@ -4,10 +4,10 @@ layout: default
 # Breakerspace Sample Library
 
 These samples are available in the Breakerspace sample cabinet. Some are also used our instrument training exercises. You are welcome to use these samples in the lab, just please be sure to return them to the cabinet, and if a sample that gets consumed is running low, please let use know: [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
-
+---
 ### Coffee residue on glass slide
 
-Location: bin 1 cabinet 1
+Location: cabinet 1 bin 1
 Sample preparation: place droplet of brewed coffee on glass slide, allow to evaporate  
 Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)
 
@@ -21,5 +21,5 @@ Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)
 
 ### Example Sample
 
-Location:
-Sample prep
+Location: In cabinet # bin #
+Sample prep: what was done or what needs to be done to use the sample on an instrument - be clear!
