@@ -3,13 +3,13 @@ layout: default
 ---
 # Index of tutorials while in development:
 
-[FTIR](./ftir.html)
-[instron-tester](./instron-tester.html)
-[optical](./optical.html)
-[particle size analyzer](./psa.html)
-[SEM](./sem.html)
-[uv-vis](./uv-vis.html)
-[XRD](./xrd.html)
+[FTIR](./ftir.html)  
+[instron-tester](./instron-tester.html)  
+[optical](./optical.html)  
+[particle size analyzer](./psa.html)  
+[SEM](./sem.html)  
+[uv-vis](./uv-vis.html)  
+[XRD](./xrd.html)  
 
 [sample library](../sample-library.html)
 
