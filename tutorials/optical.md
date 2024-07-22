@@ -36,7 +36,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 * Put your sample on stage
 * Use the manual focusing knob to bring sample into focus
-* Chracterize! For a list of features see the [detailed operating instructions](#details)
+* Characterize! For a list of features see the [detailed operating instructions](#details)
 * Verify files are saved where you intend
 * Repeat as needed
 
@@ -46,15 +46,14 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Close the DSX software - when you exit the software the microscope head should raise into a retracted position
 * Switch the microscope off
 * Log out of Windows
+* Place the dust cover over the microscope
 
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
-* compatible materials
-* incompatible materials
-* safety/handling related info
-* images/videos inline as needed
+* Materials should be non-hazardous and safe to handle in the Breakerspace
+* Any liquids 
 
 ##### Sample Prep may be own sub-section
 
