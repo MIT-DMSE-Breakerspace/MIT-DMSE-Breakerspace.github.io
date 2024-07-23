@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template - \<h1>
+# Breakerspace Instrument Tutorial Template
 
-## Overview: - \<h2>
+## Overview:
 
 Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
 
-### Index: - \<h3>
+### Index:
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
@@ -26,7 +26,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 <a name="startup"></a> 
 
-##### Instrument startup: - \<h5> 
+##### Instrument startup: 
 
 * Press the power button
 * __One of the six loading ports must be empty when the machine is booted on__
