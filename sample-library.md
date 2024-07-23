@@ -11,16 +11,29 @@ These samples are available in the Breakerspace sample cabinet. Some are also us
 
 Location: cabinet 1 bin 1  
 Sample preparation: place droplet of brewed coffee on glass slide, allow to evaporate  
-Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)
+Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)  
 
 <figure style="margin-left:0; margin-right:0;">
 	<img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:33%; margin:0"> 
 	<img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<figcaption> FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
+	<figcaption> 33% images: FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
 </figure>
 
 ---
 
+### Coffee residue on glass slide
+
+Location: cabinet 1 bin 1  
+Sample preparation: place droplet of brewed coffee on glass slide, allow to evaporate  
+Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)  
+
+<figure style="margin-left:0; margin-right:0;">
+	<img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:25%; margin:0"> 
+	<img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="FTIR spectrometer" style="width:25%; margin:0">
+	<figcaption> 25% images: FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
+</figure>
+
+---
 ### Example Sample
 
 Location: In cabinet # bin #  
