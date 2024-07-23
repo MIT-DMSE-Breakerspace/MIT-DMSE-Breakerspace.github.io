@@ -53,6 +53,9 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
+The Aeris has a Cu _Kα_ with penetration on the order of 100 µm. For powder samples, grain size should be on the order of 5-10 µm to ensure sufficient grains of various compounds contribute to the reflection of the beam. 
+
+
 * compatible materials
 * incompatible materials
 * safety/handling related info
@@ -92,6 +95,7 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 * [Aeris user guide](https://www.dropbox.com/s/sw476m00qq3c7jr/aeris_user_guide.pdf?dl=0)
 * [Highscore Plus quickstart guide](https://www.dropbox.com/scl/fi/0vaijznxsfaa05xfqwxd2/highscore_plus_quickstart_guide.pdf?rlkey=kx900yxwi5dtxug5ng1do8tyv&dl=0)
 * [Sample holders and sample prep guide](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0)
+* [XRD for the analyst](https://www.dropbox.com/scl/fi/0e8vioulematgbd1yluzb/x-ray_powder_diffraction.pdf?rlkey=eae3hs1ispi1fi7vruh8oq9az&dl=0)
 
 <a name="links"></a>
 ### Links:
