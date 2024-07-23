@@ -14,8 +14,8 @@ Sample preparation: place droplet of brewed coffee on glass slide, allow to evap
 Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)  
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:33%; margin:0"> 
-	<img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
+	<a href="../assets/img/sample-library/coffee-slide-ftir.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:33%; margin:0"></a> 
+	<a href="../assets/img/sample-library/coffee-slide-ai.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="Coffee FTIR spectrum" style="width:33%; margin:0"></a>
 	<figcaption> 33% images: FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
 </figure>
 
@@ -28,9 +28,23 @@ Sample preparation: place droplet of brewed coffee on glass slide, allow to evap
 Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)  
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:25%; margin:0"> 
-	<img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="FTIR spectrometer" style="width:25%; margin:0">
+	<a href="../assets/img/sample-library/coffee-slide-ftir.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:25%; margin:0"></a> 
+	<a href="../assets/img/sample-library/coffee-slide-ai.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="Coffee FTIR spectrum" style="width:25%; margin:0"></a>
 	<figcaption> 25% images: FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
+</figure>
+
+---
+
+### Coffee residue on glass slide
+
+Location: cabinet 1 bin 1  
+Sample preparation: place droplet of brewed coffee on glass slide, allow to evaporate  
+Spectrum file: [coffee-slide.SPA](../assets/img/sample-library/coffee-slide.SPA)  
+
+<figure style="margin-left:0; margin-right:0;">
+	<a href="../assets/img/sample-library/coffee-slide-ftir.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ftir.JPG" alt="Coffee FTIR spectrum" style="width:20%; margin:0"></a> 
+	<a href="../assets/img/sample-library/coffee-slide-ai.JPG" target="_parent"><img src="../assets/img/sample-library/coffee-slide-ai.JPG" alt="Coffee FTIR spectrum" style="width:20%; margin:0"></a>
+	<figcaption> 20% images: FTIR spectrum, Prepared sample on slide (AI generated). </figcaption>
 </figure>
 
 ---
