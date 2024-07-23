@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template
+# Breakerspace XRD Tutorial
 
 ## Overview:
 
-Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
+Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/products/product-range/aeris-range) ([X-ray diffractometer](https://www.malvernpanalytical.com/en/products/technology/xray-analysis/x-ray-diffraction)) to analyze properties such as phase composition, crystal structure, and orientation of solid samples, with precise results in less than five minutes.
 
 ### Index:
 
@@ -19,49 +19,38 @@ Matches info/image for instrument on lab page, brief description of what it does
 * [Exercises](#exercises)
 
 <a name="sop"></a>
-
 ### Standard operating protocol: 
 
-
-
 <a name="startup"></a> 
+#### Instrument startup: 
 
-##### Instrument startup: 
-
-* Press the power button
-* __One of the six loading ports must be empty when the machine is booted on__
-* Turn the key to turn on the generator 
+* Make sure at least [one position in the sample changer is free](../assets/img/tutorials/xrd/sample-changer.JPG) (no sample holder in place)
+* Turn the mains power switch at the rear of the instrument
+* Make sure that the cover is closed
+* [Press the power button to switch on the instrument](../assets/img/tutorials/xrd/power-button.JPG)
+* Turn the [HT keyswitch](../assets/img/tutorials/xrd/keyswitch.JPG) to switch on the HT generator
 
 
 <a name="operation"></a>
+#### Operation: 
 
-##### Operation: 
-
-* Select a measurement program
-* Make sure your sample is level with the edge of the sample holder
-* Name your sample
-* Press "add to queue"
-* Put the length of use, date, and user’s name in log book
-* Copy results in the data management tab
-* Log onto desktop and open the shortcut folder
-* Open the analysis software
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:33%; margin:0"> 
-	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:33%; margin:0">
-</figure>
+* Prepare your sample externally at the sample prep table
+* Put the sample holder in a loading position on the sample changer
+* Select a measurement program from the drop-down list
+* Put in a descriptive sample name
+* Start the measurement
+* Export results to networked workstation or USB drive
+* Fill out your information in the X-ray safety log book
+* Repeat as needed - additional samples can be loaded and added to the queue while current sample is being measured
 
 <a name="shutdown"></a>
+####  Instrument shut down:
 
-#####  Instrument shut down:
-
-* Clean sample holder
-* Put glass covering back down
-* Turn key
-* Press power button
+* Press the Power button to switch off the instrument
+* Turn the HT Keyswitch counter-clockwise to switch off the HT generator
+* If the instrument will be switched off for a long period of time, you can also switch off the mains power supply
 
 <a name="materials"></a> 
-
 ### Compatible materials and sample prep: 
 
 * compatible materials
@@ -69,14 +58,13 @@ Matches info/image for instrument on lab page, brief description of what it does
 * safety/handling related info
 * images/videos inline as needed
 
-##### Sample Prep may be own sub-section:
+#### Sample Prep may be own sub-section:
 
 * sample prep
 	* break into sub-sections as relevant, 
 	* ie. solid vs. powder vs. liquid
 
 <a name="details"></a> 
-
 ### Detailed operating instructions: 
 
 * include sample loading/unloading
@@ -85,7 +73,6 @@ Matches info/image for instrument on lab page, brief description of what it does
 * images/videos inline as needed
 
 <a name="data"></a>
-
 ### Data processing and analysis:
 
 * what softare we recommend
@@ -96,19 +83,21 @@ Matches info/image for instrument on lab page, brief description of what it does
 <a name="failures"></a>
 ### Common failure modes:
 
-* these are where people frequently get stuck
-* example may include starting DSX software before microscope powered up
-* images/videos inline as needed
+* Booting the instrument with all sample changer positions occupied will result in a somewhat [opaquely worded error](../assets/img/tutorials/xrd/sample-changer-full.JPG)
 
 <a name="manuals"></a>
 ### Manufacturer's manuals:
 
-* Links to manual files in dropbox
+* [Aeris quick start guide](https://www.dropbox.com/scl/fi/gqd44xvmv9q5660bk5gs4/aeris_quickstart_guide.pdf?rlkey=zj5qv5ajbxf80865fnh939r5g&dl=0)
+* [Aeris user guide](https://www.dropbox.com/s/sw476m00qq3c7jr/aeris_user_guide.pdf?dl=0)
+* [Highscore Plus quickstart guide](https://www.dropbox.com/scl/fi/0vaijznxsfaa05xfqwxd2/highscore_plus_quickstart_guide.pdf?rlkey=kx900yxwi5dtxug5ng1do8tyv&dl=0)
+* [Sample holders and sample prep guide](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0)
 
 <a name="links"></a>
 ### Links:
 
-* list of links, ie. good video tutorials, some student project, anything relevant
+* [Panalytical XRD YouTube playlist](https://www.youtube.com/watch?v=YujXF6NKORM&list=PL2wIBTZfZRjdxVJYhan7PHbz_hyStiGgH)
+* [Panalytical Aeris videos](https://www.youtube.com/@MalvernPanalytical/search?query=aeris)
 
 <a name="exercises"></a>
 ### Exercises:
@@ -117,47 +106,9 @@ Matches info/image for instrument on lab page, brief description of what it does
 * beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
 * advanced exercise - deconvolution of compound sample from spectrometer, etc.
 
-# HTML examples to control layout, etc.
 
-
-Full width image , with caption, link to open image full screen:  
 
 <figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
-</figure>  
-
-33% width images using html image tags, one links to full screen:
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
+	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:33%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:33%; margin:0">
 </figure>
-
-An image that floats to the right of text:
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
-
-This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
-<div style="clear:both;"></div>  
-
-Same thing with image that floats to the left of text:  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-
-A gif sized to 32% width, that autoplays, with link that opens it full size:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
-</figure>
-  
-Embedded video with controls:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
