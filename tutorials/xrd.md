@@ -109,7 +109,6 @@ The incident beam path includes a fixed divergence slit, beta-filter, soller sli
 
 Our instrument has a PIXcel<sup>3D</sup>, which can provide scanning or static area detection in 2D mode, and scannning or static line detection in 1D mode. 
 
-
 <a name="data"></a>
 ### Data processing and analysis:
 
