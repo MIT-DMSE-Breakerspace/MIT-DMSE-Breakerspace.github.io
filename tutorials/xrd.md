@@ -53,7 +53,7 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
-The Aeris has a Cu _Kα_ with penetration on the order of 100 µm. For powder samples, grain size should be on the order of 5-10 µm to ensure sufficient grains of various compounds contribute to the reflection of the beam. This source will cause fluorescence in samples with iron and manganese, and may not provide suitable results for samples with those elements.
+The Aeris has a Cu _Kα_ x-ray generator with penetration on the order of 100 µm. For powder samples, grain size should be on the order of 5-10 µm to ensure sufficient grains of various compounds contribute to the reflection of the beam. This source will cause fluorescence in samples with iron and manganese, and may not provide suitable results for samples with those elements.
 
 Panalytical provides an excellent sample preparation guide, available in paper form in the lab and [here in pdf form](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0), please refer to it for instructions on use of the different types of sample holders and associated sample prep techniques.
 
