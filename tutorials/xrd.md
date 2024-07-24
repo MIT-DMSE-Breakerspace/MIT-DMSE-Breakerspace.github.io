@@ -55,7 +55,7 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 
 The Aeris has a Cu _Kα_ with penetration on the order of 100 µm. For powder samples, grain size should be on the order of 5-10 µm to ensure sufficient grains of various compounds contribute to the reflection of the beam. This source will cause fluorescence in samples with iron and manganese, and may not provide suitable results for samples with those elements.
 
-Panalytical provides an excellent sample preparation guide, available in paper form in the lab and [here in pdf form](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0), please refer to it for instructions on use of the sample holders and sample prep techniques
+Panalytical provides an excellent sample preparation guide, available in paper form in the lab and [here in pdf form](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0), please refer to it for instructions on use of the different types of sample holders and associated sample prep techniques.
 
 Page 1.4 lists all the various types of sample holders that can be obtained. Of those, we have:
 
@@ -63,22 +63,58 @@ Page 1.4 lists all the various types of sample holders that can be obtained. Of 
 * PW1812/00 for odd shapes (fixed with plasticine or wax)
 * PW1813/26 for metal plates, membrane filters, pressed pellets, etc.
 
+XRD sample holders are stored in a drawer at the sample prep table. The adjacent cabinet has small supplies you may need, such as spatulas. Perform all sample loading steps at the table and transfer sample holders to the instrument on the tray once complete.
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
 
-* include sample loading/unloading
-* as needed explanations of each step, eg. collecting background, sample loading, etc.
-* software features
-* images/videos inline as needed
+#### Sample Loading:
+
+* Remove plastic sample changer cover
+* Place a prepared sample in any of the six positions on the sample changer
+* Replace plastic sample changer cover
+
+__GIF of sample loading__
+
+#### Running a measurement program:
+
+__GIF of selecting and running a program__
+
+#### Exporting data:
+
+__GIF of data export__
+
+Data can be saved on a [USB drive](../assets/img/tutorials/xrd/usb.JPG), or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The user name is XRD __double check!__ and the password is xrd-password. Data can be found in the folder C:\ __fill in folder path__
+
+__Screenshot of folder showing path__
+
+#### New measurement programs:
+
+New measurement programs can be created using the software _XRDMP Creator_ on the workstation that supports the XRD, though programs stored on the instrument should cover most basic analysis needs. Documentation on the use of _XRDMP Creator_ is available in the _XRDMP Creator Help_ menu. If you need to create new programs and need assistance, please contact Breakerspace staff.
+
+#### Advanced mode:
+
+Advanced mode is used to change optical components, manage data (including importing programs, and deleting programs and results), and other advanced configuration tools. Lab users typically will not need to access advanced mode, and instruction of its use is beyond the scope of this tutorial.
+
+#### Hardware configuration:
+
+The incident beam path includes a fixed divergence slit, beta-filter, soller slits, and a beam mask. The diffracted beam path includes large soller slits and a large beta-filter. The typical configuration is:
+
+* Divergence slit - 
+* Beta-filter - 
+* Soller slits - 
+* Beam Mask - 
+* Large soller slits - 
+* Large beta-filter - 
+
+Our instrument has a PIXcel<sup>3D</sup>, which can provide scanning or static area detection in 2D mode, and scannning or static line detection in 1D mode. 
+
 
 <a name="data"></a>
 ### Data processing and analysis:
 
-* what softare we recommend
-* typical steps
-* fill in with more detail as time allows, and/or add standalone data processing tutorials
-* images/videos inline as needed
+* Data from the Aeris can be processed using [HighScore Plus 5.0](https://www.malvernpanalytical.com/en/products/category/software/x-ray-diffraction-software/highscore-with-plus-option) or newer
+* To get started, please see the [HighScore Plus Quickstart Guide](https://www.dropbox.com/scl/fi/0vaijznxsfaa05xfqwxd2/highscore_plus_quickstart_guide.pdf?rlkey=kx900yxwi5dtxug5ng1do8tyv&dl=0)
 
 <a name="failures"></a>
 ### Common failure modes:
