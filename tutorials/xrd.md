@@ -74,19 +74,19 @@ XRD sample holders are stored in a drawer at the sample prep table. The adjacent
 * Place a prepared sample in any of the six positions on the sample changer
 * Replace plastic sample changer cover
 
-__GIF of sample loading__
+__*GIF of sample loading*__
 
 #### Running a measurement program:
 
-__GIF of selecting and running a program__
+__*GIF of selecting and running a program*__
 
 #### Exporting data:
 
-__GIF of data export__
+__*GIF of data export*__
 
-Data can be saved on a [USB drive](../assets/img/tutorials/xrd/usb.JPG), or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The user name is XRD __double check!__ and the password is xrd-password. Data can be found in the folder C:\ __fill in folder path__
+Data can be saved on a [USB drive](../assets/img/tutorials/xrd/usb.JPG), or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The user name is XRD __double check!__ and the password is xrd-password. Data can be found in the folder C:\ __*fill in folder path*__
 
-__Screenshot of folder showing path__
+__*Screenshot of folder showing path*__
 
 #### New measurement programs:
 
@@ -107,7 +107,7 @@ The incident beam path includes a fixed divergence slit, beta-filter, soller sli
 * Large soller slits - 
 * Large beta-filter - 
 
-Our instrument has a PIXcel<sup>3D</sup>, which can provide scanning or static area detection in 2D mode, and scannning or static line detection in 1D mode. 
+Our instrument has a [PIXcel<sup>3D</sup>](https://www.malvernpanalytical.com/en/products/category/x-ray-components/detectors/pixcel3d), which can provide scanning or static area detection in 2D mode, and scannning or static line detection in 1D mode. 
 
 <a name="data"></a>
 ### Data processing and analysis:

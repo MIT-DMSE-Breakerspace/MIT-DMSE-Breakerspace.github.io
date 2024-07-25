@@ -31,7 +31,7 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 * Log on to instrument workstation using your MIT Kerberos
 * Start the Phenom User Interface software
 * Wake the instrument up if needed
-	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument in [Settings/Phenom/Status](../assets/img/tutorials/SEM/connect.GIF)
+	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument in [Settings/Phenom/Status](../assets/img/tutorials/SEM/connect.PNG)
 
 <a name="operation"></a> 
 #### Operation:
@@ -73,7 +73,7 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 #### Solid sample prep (basic)
 
 * Place a bare sample stub in a sample tray __ADD IMAGES__
-* Attach a double-sided carbon pad to the stuf
+* Attach a double-sided carbon pad to the stub
 * Attach the sample to the pad
 * For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
 
