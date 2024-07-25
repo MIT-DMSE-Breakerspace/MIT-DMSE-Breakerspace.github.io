@@ -19,7 +19,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * [Exercises](#exercises)
 
 <a name="sop"></a>
-### Standard operating protocol
+### Standard operating protocol:
 
 <a name="startup"></a> 
 #### Instrument startup:
@@ -32,7 +32,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Put the microscope head into the tilt position (lower it) using the button on the console or the software button
 
 <a name="operation"></a>
-##### Operation: 
+#### Operation: 
 
 * Put your sample on stage
 * Use the manual focusing knob to bring sample into focus
@@ -44,7 +44,7 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Repeat as needed
 
 <a name="shutdown"></a>
-#####  Instrument shut down: 
+#### Instrument shut down: 
 
 * Close the DSX software - when you exit the software the microscope head should raise into a retracted position
 * Switch the microscope off
@@ -58,12 +58,12 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Any liquids should be contained so they do not spill on the stage
 * Loading capacity of the stage is 5 kg
 
-#### Sample Prep
+#### Sample Prep:
 
 The instrument has no particular sample prep requirements. As long as a sample is non-hazardous and safe to handle, weighs less than 5 kg, is not so tall as to prevent achieving focus, and can be place under observation without contaminating the microscope (ie spilling), it is possible to observe on the microscope. However, additional care in sample preparation may improve imaging results, depending on sample type and characterization goals. 
 
 <a name="details"></a> 
-### Detailed operating instructions
+### Detailed operating instructions:
 
 <a name="features"></a>
 #### Features:
@@ -84,7 +84,7 @@ The instrument has no particular sample prep requirements. As long as a sample i
 
 There is an internal optical zoom system that boosts magnification from 14-140x, so total magnification will be (external objective) * (internal zoom factor), for a range of about 14x to 5600x depending on configuration used.
 
-#### Observation modes
+#### Observation modes:
 
 Many different observation modes are available and can be selected in the desktop application or on the console:
 
