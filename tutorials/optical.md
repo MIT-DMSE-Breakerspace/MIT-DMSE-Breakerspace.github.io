@@ -36,6 +36,9 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 * Put your sample on stage
 * Use the manual focusing knob to bring sample into focus
+* Move stage back/forth and left/right to position desired sample area under observation
+* Fine-tune focus by moving the zoom head with the console buttons/wheel or softare buttons
+* Select observation mode by clicking the best image button, select all modes, select desired image, and click apply
 * Characterize! For a list of features see the [detailed operating instructions](#details)
 * Verify files are saved where you intend
 * Repeat as needed
@@ -48,40 +51,40 @@ Matches info/image for instrument on lab page, brief description of what it does
 * Log out of Windows
 * Place the dust cover over the microscope
 
-
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
 * Materials should be non-hazardous and safe to handle in the Breakerspace
-* Any liquids 
+* Any liquids should be contained so they do not spill on the stage
+* Loading capacity of the stage is 5 kg
 
-##### Sample Prep may be own sub-section
+#### Sample Prep
 
-* sample prep
-	* break into sub-sections as relevant, 
-	* ie. solid vs. powder vs. liquid
+The instrument has no particular sample prep requirements. As long as a sample is non-hazardous and safe to handle, weighs less than 5 kg, is not so tall as to prevent achieving focus, and can be place under observation without contaminating the microscope (ie spilling), it is possible to observe on the microscope. However, additional care in sample preparation may improve imaging results, depending on sample type and characterization goals. 
 
 <a name="details"></a> 
 ### Detailed operating instructions
 
 <a name="features"></a>
-##### Features:
+#### Features:
 
-* Capture a 2D picture of the sample
-* Make a 3D capture of the sample using start/end mode
-* Use stitching feature to make a map of the sample
-* Use the map to create a 2D of 3D capture of a large area of the sample based on the map image
-* Use measurement tab to measure the distance, angle, or difference in height between two points on sample
-* Use measurement tab to find the volume of the sample.
+* Quick preview of and switching between six observation modes (brightfield, oblique, darkfield, brightfield/darkfield mix, simple polarization, and differential interference contrast)
+* Capture 2D and 3D images
+* Automated capture and stitching of images in 2D or 3D mode to show larger regions
+* Tilt the microscope head to observe your sample from different angles
+* Rotatable stage
+* Many post-processing and analysis tools to annotate images with dimensions, calculate surface roughness, export 3d mesh data, etc.
 
 <a name="objectives"></a>
 #### Objectives:
 
 * Long working distance: 5x (cannot be used in polarized observation mode), 10x, 20x, 40x 
 * Extra long working distance: 1x, 5x, 10x __double check these!!__
+* Instructions to replace objective unit are on page 11 of the [Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0)
 
+There is an internal optical lens system that boost magnification from 14-140x, so total magnification will be (external objective) * (internal magnfication), for a range of about 14x to 5600x depending on configuration used.
 
-###### Lighting
+#### Lighting
 
 Many different lighting modes are available and can be selected in the desktop application or on the console. Every mode can be seen simultaneously by selecting the best image button in the software. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results.
 
@@ -90,7 +93,7 @@ Many different lighting modes are available and can be selected in the desktop a
 </figure>
 
 
-###### Acquisition
+#### Acquisition
 
 In this program, 2-D acquisition captures a photo of the sample. A 3-D acquisition will take images across a range of focuses to create a 3-D render of the sample. These 3-D renders can be used to measure the sample. To create a 3-D aquisition navigate to the “Live” section of the program. In the bottom right corner of the screen, there will be a large gray button labeled either 2-D or 3-D Acquisition. Above this button, there will be options for 2-D, Quick Scan, Range, and Start/End. 
 
