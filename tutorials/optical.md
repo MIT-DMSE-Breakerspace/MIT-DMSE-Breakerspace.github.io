@@ -82,14 +82,23 @@ The instrument has no particular sample prep requirements. As long as a sample i
 * Extra long working distance: 1x, 5x, 10x __double check these!!__
 * Instructions to replace objective unit are on page 11 of the [Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0)
 
-There is an internal optical lens system that boost magnification from 14-140x, so total magnification will be (external objective) * (internal magnfication), for a range of about 14x to 5600x depending on configuration used.
+There is an internal optical zoom system that boosts magnification from 14-140x, so total magnification will be (external objective) * (internal zoom factor), for a range of about 14x to 5600x depending on configuration used.
 
-#### Lighting
+#### Observation modes
 
-Many different lighting modes are available and can be selected in the desktop application or on the console. Every mode can be seen simultaneously by selecting the best image button in the software. Some lenses are not suited for the PO or polarity mode. DF or dark field typically produces the highest quality results.
+Many different observation modes are available and can be selected in the desktop application or on the console:
+
+* Brightfield (BF) - recommended for observing flat samples
+* Oblique - similar to the BF observation, recommended for emphasizing the scratches or unevenness
+* Darkfield (DF) - recommended for finding edges, dust, or scratches, or for observing color that is difficult to observe in BF observation
+* Brightfield/darkfield mix - combines easy visibility in BF observation and high detectability in DF observation, recommended for searching scratches or defects that are difficult to find
+* Simple polarization - recommended for finding the best image of the sample, e.g., crystals of rocks or minerals, etc.
+* Differential interference contrast (DIC) - recommended for observing fine unevenness (wave) that cannot be found with other observation methods
+
+The _Best Image_ feature gives a quick preview of how the sample looks in each observation mode, and allows quick selection of the preferred mode. The [DSX1000 Digitical Microscope Operation Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0) offers detailed instructions on use of the _Best Image_ feature on page 52, and detailed explanations of each observation mode on page 63.
 
 <figure>
-  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Bets image" style="width:32%;"></a>
+  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best image" style="width:32%;"></a>
 </figure>
 
 
