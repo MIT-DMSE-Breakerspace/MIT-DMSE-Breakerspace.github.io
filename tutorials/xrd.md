@@ -74,7 +74,7 @@ XRD sample holders are stored in a drawer at the sample prep table. The adjacent
 * Place a prepared sample in any of the six positions on the sample changer
 * Replace plastic sample changer cover
 
-__*GIF of sample loading*__
+__ *GIF of sample loading* __
 
 #### Running a measurement program:
 
