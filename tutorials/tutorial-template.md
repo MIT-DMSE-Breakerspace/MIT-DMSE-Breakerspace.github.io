@@ -114,8 +114,8 @@ Matches info/image for instrument on lab page, brief description of what it does
 Full width image , with caption, link to open image full screen:  
 
 <figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
+	<a href="../assets/img/tutorials/template/ftir-switch.JPG" target="_parent"><img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="The FTIR power switch."></a>
+	<figcaption> The FTIR power switch. </figcaption>
 </figure>  
 
 33% width images using html image tags, one links to full screen:
@@ -129,14 +129,14 @@ Full width image , with caption, link to open image full screen:
 
 An image that floats to the right of text:
 
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
+<img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="FTIR Switch" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
 
 This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
 <div style="clear:both;"></div>  
 
 Same thing with image that floats to the left of text:  
 
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
+<img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="FTIR Switch" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
 <div style="clear:both;"></div>  
 
 A gif sized to 32% width, that autoplays, with link that opens it full size:
