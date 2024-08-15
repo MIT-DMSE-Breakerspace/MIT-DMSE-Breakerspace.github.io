@@ -7,6 +7,7 @@ layout: default
 
 <img src="../assets/img/optical.JPG" alt="Optical microscope" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;">
 The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you to see images in full color at high magnifications, capture 3D data, and stitch together large images with eight observation modes.
+<div style="clear:both;"></div>
 
 ### Index:
 
