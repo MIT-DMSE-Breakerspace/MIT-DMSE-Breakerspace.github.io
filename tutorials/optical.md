@@ -26,10 +26,10 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 <a name="startup"></a> 
 #### Instrument startup:
 
-* Switch the microscope on __link to image of power switch on rear__
+* [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [on](../assets/img/tutorials/optical/status.JPG)
 * Log on to instrument workstation using your MIT Kerberos
-* Start the DSX Software __link to screenshot showing software, maybe__
-* Use the manual focusing knob to lower the microscope stage __link to image__
+* Start the [DSX Software](../assets/img/tutorials/optical/dekstop.PNG)
+* Use the manual focusing knob to l[ower the microscope stage](../assets/img/tutorials/optical/lower.GIF)
 * Load/change [objectives](#objectives) if needed
 * Put the microscope head into the tilt position (lower it) using the button on the console or the software button
 
