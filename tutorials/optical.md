@@ -6,7 +6,7 @@ layout: default
 ## Overview:
 
 <img src="../assets/img/optical.JPG" alt="Optical microscope" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;">
-The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you to see images in full color at high magnifications, capture 3D data, and stitch together large images with eight observation modes.
+The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you to see images in full color at high magnifications, capture 3D data, and stitch together large images with six observation modes.
 <div style="clear:both;"></div>
 
 ### Index:
@@ -28,18 +28,20 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 
 * [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [on](../assets/img/tutorials/optical/status.JPG)
 * Log on to instrument workstation using your MIT Kerberos
-* Start the [DSX Software](../assets/img/tutorials/optical/desktop.PNG)
+* Clear the [stage](../assets/img/tutorials/optical/stage.JPG) of any samples or other materials
+* Start the [DSX Software](../assets/img/tutorials/optical/desktop.PNG) and [log on as Guest](../assets/img/tutorials/optical/guest.JPG) (no password)
+* [Acknowledge it is safe for the stage and head to move](../assets/img/tutorials/optical/acknowledge.JPG)
 * Use the manual focusing knob to [lower the microscope stage](../assets/img/tutorials/optical/lower.GIF)
 * Load/change [objectives](#objectives) if needed
-* Put the microscope head into the tilt position (lower it) using the button on the console or the software button
+* Lower the microscope head into the _tilt position_ using [the button on the console](../assets/img/tutorials/optical/tilt-console.JPG) or the [software button](../assets/img/tutorials/optical/tilt-software.JPG))
 
 <a name="operation"></a>
 #### Operation: 
 
-* Put your sample on stage
-* Use the manual focusing knob to bring sample into focus
-* Move stage back/forth and left/right to position desired sample area under observation
-* Fine-tune focus by moving the zoom head with the console buttons/wheel or softare buttons
+* [Put your sample on stage](#sample-prep)
+* Use the [manual focusing knob](../assets/img/tutorials/optical/focus.GIF) to bring sample into focus
+* With the [joystick move stage](../assets/img/tutorials/optical/joystick.GIF) back/forth and left/right to position desired sample area under observation
+* Fine-tune focus by moving the zoom head with the console buttons/[wheel](../assets/img/tutorials/optical/focus-wheel.GIF) or software buttons
 * Select observation mode by clicking the best image button, select all modes, select desired image, and click apply
 * Characterize! For a list of features see the [detailed operating instructions](#details)
 * Verify files are saved where you intend
@@ -60,6 +62,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 * Any liquids should be contained so they do not spill on the stage
 * Loading capacity of the stage is 5 kg
 
+<a name="sample-prep"></a> 
 #### Sample Prep:
 
 The instrument has no particular sample prep requirements. As long as a sample is non-hazardous and safe to handle, weighs less than 5 kg, is not so tall as to prevent achieving focus, and can be place under observation without contaminating the microscope (ie spilling), it is possible to observe on the microscope. However, additional care in sample preparation may improve imaging results, depending on sample type and characterization goals. 

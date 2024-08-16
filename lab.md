@@ -29,7 +29,7 @@ ___
 
 ![Olympus DSX-1000 Digital Optical Microscope](./assets/img/optical.JPG)
 
-See images in full color at high magnifications, capture 3D data, and stitch together large images with this easy-to-use digital microscope offering eight observation modes.  
+See images in full color at high magnifications, capture 3D data, and stitch together large images with this easy-to-use digital microscope offering six observation modes.  
 
 ___
 
