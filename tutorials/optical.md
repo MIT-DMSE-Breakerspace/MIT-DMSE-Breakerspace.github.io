@@ -54,19 +54,19 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 * Click [yes](../assets/img/tutorials/optical/exit.GIF) to exit the microscope system and retract the head
 * [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [off](../assets/img/tutorials/optical/status-off.JPG)
 * Log out of Windows
-* Place the [dust cover](../assets/img/tutorials/optical/cover.JPG) over the microscope
+* Place the [dust cover](../assets/img/tutorials/optical/cover.JPG) on the microscope
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
 * Materials should be non-hazardous and safe to handle in the Breakerspace
-* Any liquids should be contained so they do not spill on the stage
+* Any liquids should be contained so they do not spill on the [stage](../assets/img/tutorials/optical/stage.JPG)
 * Loading capacity of the stage is 5 kg
 
 <a name="sample-prep"></a> 
 #### Sample Prep:
 
-The instrument has no particular sample prep requirements. As long as a sample is non-hazardous and safe to handle, weighs less than 5 kg, is not so tall as to prevent achieving focus, and can be place under observation without contaminating the microscope (ie spilling), it is possible to observe on the microscope. However, additional care in sample preparation may improve imaging results, depending on sample type and characterization goals. 
+The instrument has no particular sample prep requirements. As long as a sample is non-hazardous and safe to handle, weighs less than 5 kg, is not so tall as to prevent achieving focus, and can be place under observation without contaminating the microscope (ie spilling), it is possible to observe on the microscope. However, additional care in sample preparation (ie. careful slicing with a sharp blade) may improve imaging results, depending on sample material and characterization goals. 
 
 <a name="details"></a> 
 ### Detailed operating instructions:
@@ -103,10 +103,10 @@ Many different observation modes are available and can be selected in the deskto
 
 The _Best Image_ feature gives a quick preview of how the sample looks in each observation mode, and allows quick selection of the preferred mode. The [DSX1000 Digital Microscope Operation Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0) offers detailed instructions on use of the _Best Image_ feature on page 52, and detailed explanations of each observation mode starting on page 63.
 
-<figure>
-  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best image" style="width:32%;"></a>
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best image feature operation." style="width:32%;"></a>
+  <figcaption>Using the Best Image feature to choose an observation mode</figcaption>
 </figure>
-
 
 #### Acquisition
 
