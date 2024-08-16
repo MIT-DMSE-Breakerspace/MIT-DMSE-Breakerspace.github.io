@@ -52,7 +52,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 
 * Close the DSX software
 * Click [yes](../assets/img/tutorials/optical/exit.GIF) to exit the microscope system and retract the head
-* [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [off](../assets/img/tutorials/optical/status-off.JPG)
+* Once the software fully closes, [switch](../assets/img/tutorials/optical/switch.JPG) the microscope [off](../assets/img/tutorials/optical/status-off.JPG)
 * Log out of Windows
 * Place the [dust cover](../assets/img/tutorials/optical/cover.JPG) on the microscope
 
@@ -84,8 +84,8 @@ The instrument has no particular sample prep requirements. As long as a sample i
 <a name="objectives"></a>
 #### Objectives:
 
-* Long working distance: 5x (cannot be used in polarized observation mode), 10x, 20x, 40x 
-* Extra long working distance: 1x, 5x, 10x __double check these!!__
+* Long working distance: 3x (cannot be used in polarized observation mode), 10x, 20x, 40x 
+* Extra long working distance: 1x, 3x, 10x
 * Instructions to replace objective unit are on page 11 of the [Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0)
 
 There is an internal optical zoom system that boosts magnification from 14-140x, so total magnification will be (external objective) * (internal zoom factor), for a range of about 14x to 5600x depending on configuration used.
@@ -108,60 +108,27 @@ The _Best Image_ feature gives a quick preview of how the sample looks in each o
   <figcaption>Using the <i>Best Image</i> feature to choose an observation mode</figcaption>
 </figure>
 
-#### Acquisition
+#### Acquisition:
 
-In this program, 2-D acquisition captures a photo of the sample. A 3-D acquisition will take images across a range of focuses to create a 3-D render of the sample. These 3-D renders can be used to measure the sample. To create a 3-D aquisition navigate to the “Live” section of the program. In the bottom right corner of the screen, there will be a large gray button labeled either 2-D or 3-D Acquisition. Above this button, there will be options for 2-D, Quick Scan, Range, and Start/End. 
+The microscope is able to acquire and save images in 2D or 3D, and can capture and automatically stitch images together to create higher resolution images or cover a larger area on the sample than can be observed at one time.
 
-##### 2-D
+#### 2D:
 
-2-D acquisition takes a photo of whatever is currently on the live display. This photo cannot be used to create a 3-D render of the sample.
+A 2D acquisition will save an image of whatever is displayed in the live view. A detailed walkthrough of the 2D acquitision process can be found starting on [page 106 of the manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0).
 
-##### 3-D
+#### 3D:
 
-Quick Scan, Range, and Start/End are the three modes of 3-D acquisition and all three follow a similar process. For each of them you will set a range and the objective will shift the focus upwards towards the lens according to that range. For each of them you will start by focusing the objective on the part of the sample farthest away from the lens.
+a 3D acquisition will capture a series of images, changing the focal plane slightly between each. It will composite the sharpest pixels from each source image into a final 3D image where the entire area under observation appears in focus. It will also capture height data, which can be exported as a [.stl file](https://en.wikipedia.org/wiki/STL_(file_format).
 
+There are various methods available to set the start and stop heights, and step size, of 3D image captures. A detailed description of various options begines on [page 112 of the manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0).
 
-###### Quick Scan
+#### Stitching:
 
-Quick scan is the quickest and simplest to execute of the three modes, but also the least precise. To execute a quick scan, focus the microscope on the part of the sample farthest away from the lens and click 3-D Acquisition. The lens will zoom out automatically and prepare a 3-D render.
+Stitching allows you to capture images in 2D or 3D with a wide field of view/high resolution by capturing multiple frames while the stage travels. Further information about the stitching process can be found on [page 132 of the manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0).
 
-<figure>
-  <a href="../assets/img/tutorials/optical/QuickScan.gif" target="_parent"><img src="../assets/img/tutorials/optical/QuickScan.gif"alt="Quick Scan" style="width:32%;"></a>
-</figure>
+#### Other acquisition methods:
 
-###### Range
-
-This mode allows for more customization of the range of focal lengths that the lens moves through. Choose the range that suits the sample and focus the lens on the part of the sample farthest away from the lens. Click 3-D Acquisition and the lens will begin to focus on the parts of the sample closer to the lens. When it is finished, check the 3-D render and ensure that all of the sample is in focus. If a portion of the sample is not in focus, choose a different range and try again or use the Start/End mode.
-
-<figure>
-  <a href="../assets/img/tutorials/optical/Range.gif" target="_parent"><img src="../assets/img/tutorials/optical/Range.gif"alt="Range Scan" style="width:32%;"></a>
-</figure>
-
-###### Start/End
-
-This is the most precise method of 3-D acquisition, but harder to execute. To begin, focus the lens on the part of the sample farthest from the lens and press start. Then, turn the wheel on the console the other way and focus closer than the closest part of the sample, and click end. Finally, click 3-D acquisition and a render will be created.
-
-<figure>
-  <a href="../assets/img/tutorials/optical/StartEnd.gif" target="_parent"><img src="../assets/img/tutorials/optical/StartEnd.gif"alt="Start/End scan" style="width:32%;"></a>
-</figure>
-
-##### Stitching
-
-The Stitch feature allows for the creation of a 3-D acquisition over a large area. This is done by creating a low quality map of the area you would like to render, and then selecting the area on the map you would like to make a higher quality acquisition. The microscope will take multiple 3-D acquisitions of the sample and then combine them into one larger model of the sample.
-
-To create the map, select stitching mode and select live panorama. In the box labeled acquisition, click 2-D simple. In the box labeled 2D simple settings, select auto, then change the size of the array to suit the size of your sample. Make sure that “Use it as a map image” is selected, then click 2D simple. The resulting map can then be used to create a high quality panorama.
-
-<figure>
-  <a href="../assets/img/tutorials/optical/LivePanorama.gif" target="_parent"><img src="../assets/img/tutorials/optical/LivePanorama.gif"alt="Live Panorama" style="width:32%;"></a>
-</figure>
-
-Go back to the stitching feature and select high quality panorama. In the menu that appears, select “number of pieces” in the top left. Adjust the dimensions to fit your sample and drag the yellow box on the map to the right. Adjust the autofocus (AF) settings as needed, and click 3-D acquisition. A message may appear that says the z-position is out of range. If this happens simply click OK and the program will proceed.
-
-<figure>
-  <a href="../assets/img/tutorials/optical/HighQuality.gif" target="_parent"><img src="../assets/img/tutorials/optical/HighQuality.gif"alt="High quality stitching" style="width:32%;"></a>
-</figure>
-
-<a name="data"></a>
+The DSX application is also capable of capturing timelapses, movies, and acquiring images along a path. The full set of options are all detailed in chapter 9 of the application manual, beginning on page 106.
 
 ### Data processing and analysis 
 
@@ -173,17 +140,19 @@ The measurement feature allows the user to determine a variety of information ab
 </figure>
 
 
-
 <a name="failures"></a>
 ### Common failure modes
 
+* If the software is started before the microscope is switched on, you will see an [error message](../assets/img/tutorials/optical/control-error.PNG) and the connection will [fail](../assets/img/tutorials/optical/unable-start.PNG)
 * If any part of your sample is resting on a part of the stage that cannot move, as you move the stage your sample will rotate on the stage.
-* You will not be able to access the software if it is started before the microscope is turned on.
 
 <a name="manuals"></a>
 ### Manufacturer's manuals 
 
-* Links to manual files in dropbox
+* [DSX Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0)
+* [DSX Application Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0)
+* [Hardware manual](https://www.dropbox.com/scl/fi/xg225i22sji3ap6mbdxxb/DSX1000_HardwareManual_EN_AX9336_07.pdf?rlkey=t9ndinow4wd8wwt9l1mlmtzzl&dl=0)
+* All docuemntation can be found [here](https://www.dropbox.com/scl/fo/lpmj7kw7kjfzrwzpy3s31/AHTufXDD4RDfEImJssdaxjc?rlkey=t1rl3ywuxnde1129767txmfgw&dl=0)
 
 <a name="links"></a>
 ### Links
