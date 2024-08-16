@@ -26,14 +26,14 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 <a name="startup"></a> 
 #### Instrument startup:
 
-* [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [on](../assets/img/tutorials/optical/status.JPG)
+* [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [on](../assets/img/tutorials/optical/status-on.JPG)
 * Log on to instrument workstation using your MIT Kerberos
 * Clear the [stage](../assets/img/tutorials/optical/stage.JPG) of any samples or other materials
 * Start the [DSX Software](../assets/img/tutorials/optical/desktop.PNG) and [log on as Guest](../assets/img/tutorials/optical/guest.PNG) (no password)
 * [Acknowledge it is safe for the stage and head to move](../assets/img/tutorials/optical/acknowledge.PNG)
 * Use the manual focusing knob to [lower the microscope stage](../assets/img/tutorials/optical/lower.GIF)
 * Load/change [objectives](#objectives) if needed
-* Lower the microscope head into the _tilt position_ using [the button on the console](../assets/img/tutorials/optical/tilt-console.JPG) or the [software button](../assets/img/tutorials/optical/tilt-software.JPG))
+* Lower the microscope head into the _tilt position_ using [the button on the console](../assets/img/tutorials/optical/tilt-console.JPG) or the [software button](../assets/img/tutorials/optical/tilt-software.JPG)
 
 <a name="operation"></a>
 #### Operation: 
@@ -42,7 +42,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 * Use the [manual focusing knob](../assets/img/tutorials/optical/focus.GIF) to bring sample into focus
 * With the [joystick move stage](../assets/img/tutorials/optical/joystick.GIF) back/forth and left/right to position desired sample area under observation
 * Fine-tune focus by moving the zoom head with the console buttons/[wheel](../assets/img/tutorials/optical/focus-wheel.GIF) or software buttons
-* Select observation mode by clicking the best image button, select all modes, select desired image, and click apply (see [manual page 63](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0))
+* Select observation mode by clicking the best image button, select all modes, select desired image, and click apply ([see manual page 63](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0))
 * Characterize! For a list of features see the [detailed operating instructions](#details)
 * Verify files are saved where you intend
 * Repeat as needed
@@ -50,10 +50,11 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 <a name="shutdown"></a>
 #### Instrument shut down: 
 
-* Close the DSX software - when you exit the software the microscope head should raise into a retracted position
-* Switch the microscope off
+* Close the DSX software
+* Click [yes](../assets/img/tutorials/optical/exit.GIF) to exit the microscope system and retract the head
+* [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [off](../assets/img/tutorials/optical/status-off.JPG)
 * Log out of Windows
-* Place the dust cover over the microscope
+* Place the [dust cover](../assets/img/tutorials/optical/cover.JPG) over the microscope
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
