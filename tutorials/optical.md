@@ -105,7 +105,7 @@ The _Best Image_ feature gives a quick preview of how the sample looks in each o
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best image feature operation." style="width:32%;"></a>
-  <figcaption>Using the Best Image feature to choose an observation mode</figcaption>
+  <figcaption>Using the <i>Best Image</i> feature to choose an observation mode</figcaption>
 </figure>
 
 #### Acquisition
