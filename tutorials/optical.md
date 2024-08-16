@@ -42,7 +42,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 * Use the [manual focusing knob](../assets/img/tutorials/optical/focus.GIF) to bring sample into focus
 * With the [joystick move stage](../assets/img/tutorials/optical/joystick.GIF) back/forth and left/right to position desired sample area under observation
 * Fine-tune focus by moving the zoom head with the console buttons/[wheel](../assets/img/tutorials/optical/focus-wheel.GIF) or software buttons
-* Select observation mode by clicking the best image button, select all modes, select desired image, and click apply
+* Select observation mode by clicking the best image button, select all modes, select desired image, and click apply (see [manual page 63](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0))
 * Characterize! For a list of features see the [detailed operating instructions](#details)
 * Verify files are saved where you intend
 * Repeat as needed
@@ -100,7 +100,7 @@ Many different observation modes are available and can be selected in the deskto
 * Simple polarization - recommended for finding the best image of the sample, e.g., crystals of rocks or minerals, etc.
 * Differential interference contrast (DIC) - recommended for observing fine unevenness (wave) that cannot be found with other observation methods
 
-The _Best Image_ feature gives a quick preview of how the sample looks in each observation mode, and allows quick selection of the preferred mode. The [DSX1000 Digitical Microscope Operation Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0) offers detailed instructions on use of the _Best Image_ feature on page 52, and detailed explanations of each observation mode starting on page 63.
+The _Best Image_ feature gives a quick preview of how the sample looks in each observation mode, and allows quick selection of the preferred mode. The [DSX1000 Digital Microscope Operation Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0) offers detailed instructions on use of the _Best Image_ feature on page 52, and detailed explanations of each observation mode starting on page 63.
 
 <figure>
   <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best image" style="width:32%;"></a>
