@@ -51,7 +51,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 #### Instrument shut down: 
 
 * Close the DSX software
-* Click [yes](../assets/img/tutorials/optical/exit.GIF) to exit the microscope system and retract the head
+* Click [yes](../assets/img/tutorials/optical/exit.PNG) to exit the microscope system and retract the head
 * Once the software fully closes, [switch](../assets/img/tutorials/optical/switch.JPG) the microscope [off](../assets/img/tutorials/optical/status-off.JPG)
 * Log out of Windows
 * Place the [dust cover](../assets/img/tutorials/optical/cover.JPG) on the microscope
