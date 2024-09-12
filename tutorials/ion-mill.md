@@ -36,9 +36,27 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 <a name="operation"></a>
 #### Operation: 
 
-* steps to characterize - sample loading, data capture and saving, etc. - whatever might be repeated, characterization sequence
-* for instruments like SEM with multiple, independent characterization techniques (eg. EDS, imaging), make technique a top-level bullet and indent for steps
-	* this is tabbed in to be a sub-set of the above bullet
+##### Operation in semi-automatic operation mode:
+
+* Prepare sample for [polishing](#polishing) or [slope cutting](#slope-cutting)
+* Load sample
+* Sample motion to be set
+* Milling angle to be set
+* Accelerating voltage to be set
+* Milling time to be set
+* Pressure must be <5x10<sup>-6</sup> mbar to turnon an ion source
+* Turn the ion source on and the sample will be prepared
+* Upon completion, [unload sample](#unload). Note that cooled samples should be allowed to return to ambient temperature before unloading
+
+##### Operation in automatic operation mode:
+
+* Prepare sample for [polishing](#polishing) or [slope cutting](#slope-cutting)
+* Load sample
+* Switch to the automated thinning mode in Settings\Thinning
+* Open a recipe from the library, or create one
+* Pressure must be <5x10<sup>-6</sup> mbar before a recipe is run
+* Click "Run all steps" and the sample will be prepared according to the set steps
+* Upon completion, [unload sample](#unload). Note that cooled samples should be allowed to return to ambient temperature before unloading
 
 <a name="shutdown"></a>
 ####  Instrument shut down:
