@@ -11,7 +11,7 @@ The Olympus DSX1000 Digital Microscope is a powerful instrument that allows you 
 
 ### Index:
 
-* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation),[features](#features), [shutdown](#shutdown))
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
 * [Detailed operating instructions](#details)
 * [Data processing and analysis](#data)
@@ -130,6 +130,7 @@ Stitching allows you to capture images in 2D or 3D with a wide field of view/hig
 
 The DSX application is also capable of capturing timelapses, movies, and acquiring images along a path. The full set of options are all detailed in chapter 9 of the application manual, beginning on page 106.
 
+<a name="data"></a>
 ### Data processing and analysis 
 
 The measurement feature allows the user to determine a variety of information about the sample. This includes the change in elevation, horizontal distance, and angle between two points or along a shape. The volume of the sample can be calculated, along with the volumes of any divots or troughs along the sample. To perform these measurements, click on the measurement tab next to imaging, and then click the measurement option located directly below the reports tab. To check the distance, change in elevation, or angle between two points, select the profile option. To make a wire frame model, click the button with the arrow pointing from 2D to 3D. To find the volume of a crest or trough, select the volume option.
