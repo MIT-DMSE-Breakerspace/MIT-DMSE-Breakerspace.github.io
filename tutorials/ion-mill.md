@@ -62,6 +62,13 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 * Ensure that all high-voltages are turned off
 * Turn the sample movement off
 * Tilt the sample back to 0&deg; milling angle
+* Open the shutter plate
+* Turn the camera and illumination(s) off
+* Ensure that the needle valve is closed
+* Turn the TMP's standby ON
+* Close the argon cylinder
+* Turn off the monitor
+
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
