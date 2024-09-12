@@ -61,7 +61,7 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 
 * Ensure that all high-voltages are turned off
 * Turn the sample movement off
-* Tilt the sample back to 0&deg milling angle
+* Tilt the sample back to 0&deg; milling angle
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
