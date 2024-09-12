@@ -37,19 +37,17 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 #### Operation: 
 
 ##### Operation in semi-automatic operation mode:
-
 * Prepare sample for [polishing](#polishing) or [slope cutting](#slope-cutting)
 * Load sample
 * Sample motion to be set
 * Milling angle to be set
 * Accelerating voltage to be set
 * Milling time to be set
-* Pressure must be <5x10<sup>-6</sup> mbar to turnon an ion source
+* Pressure must be <5x10<sup>-6</sup> mbar before turning on the ion source
 * Turn the ion source on and the sample will be prepared
 * Upon completion, [unload sample](#unload). Note that cooled samples should be allowed to return to ambient temperature before unloading
 
 ##### Operation in automatic operation mode:
-
 * Prepare sample for [polishing](#polishing) or [slope cutting](#slope-cutting)
 * Load sample
 * Switch to the automated thinning mode in Settings\Thinning
@@ -61,9 +59,9 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 <a name="shutdown"></a>
 ####  Instrument shut down:
 
-* sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session
-* highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
-* these steps should need to be performed once at the end of a characterization session
+* Ensure that all high-voltages are turned off
+* Turn the sample movement off
+* Tilt the sample back to 0&deg milling angle
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
