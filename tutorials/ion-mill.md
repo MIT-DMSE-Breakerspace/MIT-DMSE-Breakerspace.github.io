@@ -1,23 +1,11 @@
 ---
 layout: default
 ---
-# Index of tutorials while in development:
-
-[FTIR](./ftir.html)  
-[instron-tester](./instron-tester.html)  
-[optical](./optical.html)  
-[particle size analyzer](./psa.html)  
-[SEM](./sem.html)  
-[uv-vis](./uv-vis.html)  
-[XRD](./xrd.html)  
-
-[sample library](../sample-library.html)
-
-# Breakerspace Instrument Tutorial Template
+# Breakerspace SEMPrep Ion Mill Tutorial
 
 ## Overview:
 
-Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
+Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-16 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control.
 
 ### Index:
 
@@ -36,9 +24,14 @@ Matches info/image for instrument on lab page, brief description of what it does
 <a name="startup"></a> 
 #### Instrument startup:
 
-* sequence of powering on, logging in, starting softare, homing/tilt position etc.
-* these steps should only need to be completed once per session
-* no images on page in this section, just text bullets, [text can link to image if needed](../assets/img/tutorials/template/ftir-switch.JPG)
+* Turn the display on
+* Turn the TMP's standby OFF
+* In case the TMP's current consumption at 1500 Hz is higher than the usual, or >1 A, open the forevacuum pump's bypass valve for approximately 10 minutes
+* Open the argon cylinder (in closet to left of instrument)
+* Press _Purge (5s)_ four times, waiting five seconds between each click
+* Needle valve _Semi-automatic_ control should be selected
+* Open the needle valve for the ion gun you will use to allow it to reach the preset pressure, then let it close automatically
+* Open the other ion source's needle valve if it will be used during today's operation
 
 <a name="operation"></a>
 #### Operation: 
