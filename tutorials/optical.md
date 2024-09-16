@@ -158,12 +158,10 @@ The measurement feature allows the user to determine a variety of information ab
 <a name="links"></a>
 ### Links
 
-* list of links, ie. good video tutorials, some student project, anything relevant
+* [Manufacturer's overview](https://www.olympus-ims.com/en/microscope/dsx/?nis=8)
 
 <a name="exercises"></a>
 ### Exercises
 
-* intro for anyone - eg honey bee on optical
-* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-* advanced exercise - deconvolution of compound sample from spectrometer, etc.
+* coming soon
 

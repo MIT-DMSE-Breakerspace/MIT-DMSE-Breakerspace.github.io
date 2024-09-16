@@ -150,4 +150,4 @@ _For a more complete description and instructions on how to use any of these fea
 <a name="exercise"></a> 
 ### Exercises:
 
-* 
+* coming soon

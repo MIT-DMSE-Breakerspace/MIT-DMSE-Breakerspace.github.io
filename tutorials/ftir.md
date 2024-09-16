@@ -226,5 +226,4 @@ Data processing is beyond the scope of this tutorial, but we recommend the use o
 <a name="exercise"></a> 
 ### Exercises:
 
-Test solid polymer samples and determine which is acrylic and which is polypropylene through a library search. Measure samples of caffeinated and decaffeinated ground coffee and determine which is which by comparing the height of the peak at 1650.
-
+* coming soon

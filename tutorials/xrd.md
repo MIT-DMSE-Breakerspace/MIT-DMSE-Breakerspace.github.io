@@ -138,9 +138,7 @@ Our instrument has a [PIXcel<sup>3D</sup>](https://www.malvernpanalytical.com/en
 <a name="exercises"></a>
 ### Exercises:
 
-* intro for anyone - eg honey bee on optical
-* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-* advanced exercise - deconvolution of compound sample from spectrometer, etc.
+* coming soon
 
 
 
