@@ -54,6 +54,7 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 <a name="materials"></a> 
 ### Compatible materials and sample prep:
 
+* Samples should be non-hazardous and safe to handle in the Breakerspace
 * Samples should be free of volatiles (dry), excepting samples to be frozen on the Phenom Pure cold stage
 * Samples must be free of loose particles ("flush" with compressed air)
 * Samples must be well secured to a sample stub 

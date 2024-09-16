@@ -72,10 +72,12 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
 
-* compatible materials
-* incompatible materials
-* safety/handling related info
-* images/videos inline as needed
+* Samples should be non-hazardous and safe to handle in the Breakerspace
+* Samples should be free of volatiles (dry)
+* Samples must be free of loose particles (“flush” with compressed air)
+* Samples that are carefully polished or prepared before being ion milled will need less time to polish and yield better results
+
+___If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.___
 
 #### Sample Prep may be own sub-section:
 
@@ -94,7 +96,7 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 <a name="data"></a>
 ### Data processing and analysis:
 
-* not relevant to ion milling
+We recommend imaging your sample(s) in the SEM before ion milling. Before and after comparisons are interesting to have, and can also help troubleshoot the process in case the results are not as expected (surface not polished, surface damaged, etc.).
 
 <a name="failures"></a>
 ### Common failure modes:
@@ -104,7 +106,8 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 <a name="manuals"></a>
 ### Manufacturer's manuals:
 
-* Links to manual files in dropbox
+* [SEMPrep2 ion mill manual](https://www.dropbox.com/scl/fi/50x7hl7x68mmfu5ypkt5g/SC-2100_manual_v2.6-2105.pdf?rlkey=d1ivx4xdfuvc14v36bllvusoh&dl=0)
+* [Sample alignment microscope manual](https://www.dropbox.com/scl/fi/4bxxm6zr7q0elwqqvx5a0/Sample-Alignment-Tool-manual.pdf?rlkey=ltp97kascl3a2wrx785xmj749&dl=0)
 
 <a name="links"></a>
 ### Links:
