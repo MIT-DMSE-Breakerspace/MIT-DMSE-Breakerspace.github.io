@@ -79,11 +79,13 @@ Our ion mill enables damage free sample prep for SEM imaging. It is equipped wit
 
 ___If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.___
 
-#### Sample Prep may be own sub-section:
+#### Types of milling:
 
-* sample prep
-	* break into sub-sections as relevant, 
-	* ie. solid vs. powder vs. liquid
+**Polishing:** polishing is primarily done on metallographic samples that have been sectioned, mounted in a resin puck, ground, and mechanically polished to a reflective finish. Polishing can also be performed on other flat samples, though degree of success will depend on the initial preparation of the sample surface. During a polishing operation the sample is continuously rotated and the ion beam contacts the surface at a low angle (3&deg; to 10&deg;), for gentle sputtering of material from a larger spot, approximately the size of a pencil eraser. Starting at 10 kV and 4&deg;, results can be obtained on a well-prepared sample in as little as 10-30 minutes.
+
+**Slope cutting:** 
+
+
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
