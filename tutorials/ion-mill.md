@@ -81,19 +81,18 @@ ___If you have any questions about whether a material is appropriate to characte
 
 #### Types of milling:
 
-**Polishing:** polishing is primarily done on metallographic samples that have been sectioned, mounted in a resin puck, ground, and mechanically polished to a reflective finish. Polishing can also be performed on other flat samples, though degree of success will depend on the initial preparation of the sample surface. During a polishing operation the sample is continuously rotated and the ion beam contacts the surface at a low angle (3&deg; to 10&deg;), for gentle sputtering of material from a larger spot, approximately the size of a pencil eraser. Starting at 10 kV and 4&deg;, results can be obtained on a well-prepared sample in as little as 10-30 minutes.
+**Polishing:** Polishing is primarily done on metallographic samples that have been sectioned, mounted in a resin puck, ground, and mechanically polished to a reflective finish. Polishing can also be performed on other flat samples, though degree of success will depend on the initial preparation of the sample surface. During a polishing operation the sample is continuously rotated and the ion beam contacts the surface at a low angle (3&deg; to 10&deg;), for gentle sputtering of material from a larger spot, approximately the size of a pencil eraser. Starting at 10 kV and 4&deg;, results can be obtained on a well-prepared sample in as little as 10-30 minutes.
 
-**Slope cutting:** 
+**Slope cutting:** Slope cutting is done at a higher angle, using a slope cutting holder. We have 30&deg; and 90&deg; slope cutting holders. In slope cutting, the sample is mounted to a carrier plate, and partially shielded by a titanium mask. 
 
+**30&deg; slope cutting:** Samples may be up to 5mm thick, 16mm wide, and 13mm long. In this operation a notch will be cut into the face of the sample, at the position of the mask. Longer processing times will result in larger/deeper notches. The back of the sample needs to be a flat surface that can be adhered to the carrier plate. Best results are achieved when the distance from the mask edge to the sample surface is uniform, which can be accomplished if the surface to be notched is parallel to the mounting surface. The notch will be centered on the sample, and will not cover the full width of larger samples.
 
+**90&deg; slope cuttting:** Samples may be up to 6mm thick, 16mm wide, and 20mm long. In this operation, a surface will be cut that is perpendicular to the surface adhered to the carrier plate. During 90&deg; slope cutting, redeposition of material sputtered off the leading edge of the sample can be an issue. This can best be avoided by preparing samples with a clean, well-mechanically polished surface to be slope cut that is perpendicular to the mounting face, and will protrude a minimal and uniform amount above the mask. 
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
 
-* include sample loading/unloading
-* as needed explanations of each step, eg. collecting background, sample loading, etc.
-* software features
-* images/videos inline as needed
+* 
 
 <a name="data"></a>
 ### Data processing and analysis:
