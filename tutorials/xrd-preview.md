@@ -22,8 +22,6 @@ Matches info/image for instrument on lab page, brief description of what it does
 
 ### Standard operating protocol: 
 
-
-
 <a name="startup"></a> 
 
 ##### Instrument startup: - \<h5> 
@@ -162,6 +160,7 @@ Embedded video with controls:
 Your browser does not support the video tag.
 </video>
 
+
 ### Using High Score Plus:
 
 ##### Determine background
@@ -178,6 +177,21 @@ Your browser does not support the video tag.
 Insert peaks by 
   * Option 1: Treatment > Insert Peak (Ctrl+R). Click on the tip of each peak you want to add. 
   * Option 2: In Peak Lists > Right Click > Add Peak…  and manually enter the data. 
+
+## Determine a mystery compound:
+* After determining the background and peaks,Right Click > Search Match > (Optional) change the search settings > Search > Ok.
+* Options for improving your outcomes: 
+  * Under the Restrictions tab > Restrictions set > Select Restriction set, you can pick your type of material from a drop down menu. For example, if you material is organic, select “Organic”
+  * Under the Restrictions tab > Edit… will give you a pop up for many ways to restrict your search. For example, under Chemistry, one can input the elements that are or are not present in the sample. Ther
+  * Clicking Execute Fitting > <Profile Fit> Default often improves the confidence and precision of the results. 
+* Interpreting the Matches: 
+Score shows the confidence of the program in the pattern match between your samples and the candidate. To check if the program was correct, click on the candidate you are interested in. Thin blue lines will show up on the graph. Check that each blue line matches up with the height and location of a peak of your sample. 
+Once you are confident with your match, left click and pull it to the Pattern List panel. This “accepts” it. On the graph, if any peak is not matched by the accepted candidate’s pattern, it will retain a blue downward facing arrow on it. The candidates list reorganizes to find a compound that fits the unfitted peak. 
+Continue this process until all peaks have been matched and all compounds in your sample have been found.
+This is an excellent source of tutorial videos: https://www.youtube.com/@IAMMDiffractionFacility
+
+
+
 
 
 
