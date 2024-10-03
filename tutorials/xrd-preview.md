@@ -161,3 +161,24 @@ Embedded video with controls:
   <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+### Using High Score Plus:
+
+##### Determine background
+* Treatment > Determine Background
+* Automatic usually does the job.
+* Granularity changes the distance between points of inflection on the background curve. A value around 20 is typically good. 
+* Bending factor determines how bendy the background is (as the name suggests). 
+* Click Accept.
+
+## Determine peaks
+* Treatment > Search Peaks
+* Play with the significance until the peaks reflect what you think are peaks. 
+* Under Peak List, go through the peaks detected to make sure the software didn’t make any mistakes. Delete peaks by Right Click > Delete Peak. 
+Insert peaks by 
+  * Option 1: Treatment > Insert Peak (Ctrl+R). Click on the tip of each peak you want to add. 
+  * Option 2: In Peak Lists > Right Click > Add Peak…  and manually enter the data. 
+
+
+
+
