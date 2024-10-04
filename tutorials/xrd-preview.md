@@ -3,11 +3,11 @@ layout: default
 ---
 # Breakerspace Instrument Tutorial Template - \<h1>
 
-## Overview: - \<h2>
+## Overview:
 
 Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/products/product-range/aeris-range) ([X-ray diffractometer](https://www.malvernpanalytical.com/en/products/technology/xray-analysis/x-ray-diffraction)) to analyze properties such as phase composition, crystal structure, and orientation of solid samples, with precise results in less than five minutes.
 
-### Index: - \<h3>
+### Index: 
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
 * [Materials and sample prep](#materials)
@@ -25,7 +25,7 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 
 <a name="startup"></a> 
 
-##### Instrument startup: - \<h5> 
+##### Instrument startup:  
 
 * Make sure at least one position in the sample changer is free (no sample holder in place)
 * Turn the [mains power switch](https://www.dropbox.com/scl/fi/vctgbxyvs19bsgrfbkvcy/XRD_switch_in_backjpg.jpg?rlkey=nzwduvun4gjqs6jat1lpt5uyz&st=sy65cfay&dl=0) at the rear of the instrument
@@ -104,14 +104,14 @@ Advanced mode is used to change optical components, manage data (including impor
 <a name="highscore"></a>
 #### Using High Score Plus:
 
-##### Determine background
+##### Determine background:
 * Treatment > Determine Background
 * Automatic usually does the job.
 * Granularity changes the distance between points of inflection on the background curve. 
 * Bending factor determines how bendy the background is (as the name suggests). 
 * Click Accept.
 
-## Determine peaks
+## Determine peaks:
 * Treatment > Search Peaks
 * Play with the significance until the peaks reflect what you think are peaks. 
 * Under Peak List, go through the peaks detected to make sure the software didn’t make any mistakes. Delete peaks by Right Click > Delete Peak. 
