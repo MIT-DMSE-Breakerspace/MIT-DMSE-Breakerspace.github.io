@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Welcome to the fall 2024 DMSE Breakerspace microscrope image contest page! 
+![Fall 2024 Microscope Image Contest](./assets/img/image-contest/image-contest.png) 
 
 * ___$500___ first prizes in four categories!!!!
 * Additional runner-up prizes
