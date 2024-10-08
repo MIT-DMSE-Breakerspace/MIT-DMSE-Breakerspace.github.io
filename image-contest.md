@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Fall 2024 Microscope Image Contest](./assets/img/image-contest/image-contest.png) 
+![Fall 2024 Microscope Image Contest](./assets/img/image-contest/image-contest.PNG) 
 
 * ___$500___ first prizes in four categories!!!!
 * Additional runner-up prizes
