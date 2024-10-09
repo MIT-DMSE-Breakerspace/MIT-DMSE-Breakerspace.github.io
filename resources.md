@@ -16,7 +16,7 @@ When you log in to one of our workstations, you will see a shared network drive 
 
 [![screenshot of Breakerspace files drive](./assets/img/breakerspace-files.JPG)](./assets/img/breakerspace-files.JPG){:target="_blank"}
 
-This shared drive is hosted on a file server in the Breakerspace, and is also the Dropbox Team folder for the 'DMSE Breakerspace' Dropbox Team. Please note that files saved here will be accessible to other users logged in to any Breakerspace workstation, and will also be accessible to anyone who is a member of the 'DMSE Breakerspace' Dropbox Team. 
+This shared drive is hosted on a file server in the Breakerspace, and is also the Dropbox Team folder for the 'DMSE Breakerspace' Dropbox Team. Please note that files saved here will be accessible to other users logged in to any Breakerspace workstation, and will also be accessible to anyone who is a member of the 'DMSE Breakerspace' Dropbox Team. ___Periodically, the file server reboots and Dropbox will not sync until the admins log in to the file server and the Dropbox app runs. If you have saved files to the 'Breakerspace Files' shared network drive and they do not sync to the 'DMSE Breakerspace' Team Folder in Dropbox, please  contact us: [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).___
 
 If you have an MIT Dropbox for Business account registered to your MIT email address, you should receive an email inviting you to join the DMSE Breakerspace Team once you complete your initial training. If you have not created a Dropbox for Business account, you will need to do so before you can be invited to the team.
 

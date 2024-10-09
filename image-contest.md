@@ -4,6 +4,8 @@ layout: default
 
 ![Fall 2024 Microscope Image Contest](./assets/img/image-contest/image-contest.PNG) 
 
+### Prizes!
+
 * ___$500___ first prizes in four categories!!!!
 * Additional runner-up prizes
 
@@ -39,3 +41,37 @@ A panel of judges will evaluate entries based on the following criteria:
 Submissions are due by Friday, November 8. Winners will be announced on Friday, November 22.
 
 Curious? Ready to explore the microscopic world? Let’s get started!
+
+![Example 1](./assets/img/image-contest/1.jpg)
+![Example 2](./assets/img/image-contest/2.jpg)
+![Example 3](./assets/img/image-contest/3.jpg)
+![Example 4](./assets/img/image-contest/4.jpg)
+![Example 5](./assets/img/image-contest/5.jpg)
+![Example 6](./assets/img/image-contest/6.jpg)
+![Example 7](./assets/img/image-contest/7.jpg)
+![Example 8](./assets/img/image-contest/8.jpg)
+![Example 9](./assets/img/image-contest/9.jpg)
+![Example 10](./assets/img/image-contest/10.jpg)
+![Example 11](./assets/img/image-contest/11.jpg)
+![Example 12](./assets/img/image-contest/12.jpg)
+![Example 13](./assets/img/image-contest/13.jpg)
+![Example 14](./assets/img/image-contest/14.jpg)
+![Example 15](./assets/img/image-contest/15.jpg)
+![Example 16](./assets/img/image-contest/16.jpg)
+![Example 17](./assets/img/image-contest/17.jpg)
+![Example 18](./assets/img/image-contest/18.jpg)
+![Example 19](./assets/img/image-contest/19.jpg)
+![Example 20](./assets/img/image-contest/20.jpg)
+![Example 21](./assets/img/image-contest/21.jpg)
+![Example 22](./assets/img/image-contest/22.jpg)
+![Example 23](./assets/img/image-contest/23.jpg)
+![Example 24](./assets/img/image-contest/24.jpg)
+![Example 25](./assets/img/image-contest/25.jpg)
+![Example 26](./assets/img/image-contest/26.jpg)
+![Example 27](./assets/img/image-contest/27.jpg)
+![Example 28](./assets/img/image-contest/28.jpg)
+![Example 29](./assets/img/image-contest/29.jpg)
+![Example 30](./assets/img/image-contest/30.jpg)
+![Example 31](./assets/img/image-contest/31.jpg)
+![Example 32](./assets/img/image-contest/32.jpg)
+![Example 33](./assets/img/image-contest/33.jpg)
