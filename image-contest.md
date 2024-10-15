@@ -9,6 +9,12 @@ layout: default
 * ___$500___ first prizes in four categories!!!!
 * Additional runner-up prizes, including prizes for new lab users
 
+### How to enter:
+
+1.	Sign up for a Breakerspace lab microscope training (If you’ve already trained, you’re one step ahead!): [breakerspace.mit.edu](https://breakerspace.mit.edu/)
+2.	Capture your optical or scanning electron microscope images in the Breakerspace
+3.	[Submit your entry here](https://forms.gle/26D7oqJJvAK5cKBG7) by Friday, November 15
+
 ### Categories:
 
 * __Most Instructive:__ Images that illustrate concepts important to your discipline and teach someone else about something you’re passionate about
@@ -35,12 +41,6 @@ Two prizes will be given out in this category, one for the optical microscope an
 #### Honorable mention and runner-up prizes:
 
 Some prizes will be reserved for new Breakerspace lab users who sign up for training and submit and image during the contest period. Additional prizes will be awarded for honorable mentions in each category as well as any potential ties. 
-
-### How to enter:
-
-1.	Sign up for a Breakerspace lab microscope training (If you’ve already trained, you’re one step ahead!): [breakerspace.mit.edu](https://breakerspace.mit.edu/)
-2.	Capture your optical or scanning electron microscope images in the Breakerspace
-3.	[Submit your entry here](https://forms.gle/26D7oqJJvAK5cKBG7) by Friday, November 15
 
 ### Judging criteria:
 
