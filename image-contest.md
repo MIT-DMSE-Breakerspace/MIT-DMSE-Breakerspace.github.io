@@ -32,7 +32,7 @@ This category is created to allow you to share all the effort that went into pro
 
 Two prizes will be given out in this category, one for the optical microscope and one for the SEM. All images will be considered for this category, with the panel of judges voting on their favorites and the highest vote-getter from each instrument earning the prize.
 
-#### Honrable mention and runner-up prizes:
+#### Honorable mention and runner-up prizes:
 
 Some prizes will be reserved for new Breakerspace lab users who sign up for training and submit and image during the contest period. Additional prizes will be awarded for honorable mentions in each category as well as any potential ties. 
 
