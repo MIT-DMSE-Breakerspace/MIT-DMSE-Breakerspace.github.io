@@ -4,6 +4,8 @@ layout: default
 
 <meta http-equiv="refresh" content="1800">
 
+[![Fall 2024 Microscope Image Contest](./assets/img/image-contest/image-contest.PNG)](https://breakerspace.mit.edu/image-contest.html)
+
 ## Announcing the Fall 2024 microscope image contest!
 
 Full details here: [breakerspace.mit.edu/image-contest.html](https://breakerspace.mit.edu/image-contest.html)
