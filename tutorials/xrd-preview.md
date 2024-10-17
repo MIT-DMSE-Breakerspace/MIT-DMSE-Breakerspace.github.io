@@ -117,7 +117,7 @@ Advanced mode is used to change optical components, manage data (including impor
 * Bending factor determines how bendy the background is (as the name suggests). 
 * Click Accept.
 
-## Determine peaks:
+##### Determine peaks:
 * Treatment > Search Peaks
 * Play with the significance until the peaks reflect what you think are peaks. 
 * Under Peak List, go through the peaks detected to make sure the software didn’t make any mistakes. Delete peaks by Right Click > Delete Peak. 
@@ -125,7 +125,7 @@ Insert peaks by
   * Option 1: Treatment > Insert Peak (Ctrl+R). Click on the tip of each peak you want to add. 
   * Option 2: In Peak Lists > Right Click > Add Peak…  and manually enter the data. 
 
-## Determine a mystery compound:
+##### Determine a mystery compound:
 * After determining the background and peaks,Right Click > Search Match > (Optional) change the search settings > Search > Ok.
 * Options for improving your outcomes: 
   * Under the Restrictions tab > Restrictions set > Select Restriction set, you can pick your type of material from a drop down menu. For example, if you material is organic, select “Organic”
