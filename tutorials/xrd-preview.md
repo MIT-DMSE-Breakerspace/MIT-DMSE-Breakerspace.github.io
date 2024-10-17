@@ -75,7 +75,6 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 * Place a prepared sample in any of the six positions on the sample changer
 * Replace plastic sample changer cover
 
-
 <figure style="margin-left:0; margin-right:0;">
 	<img src="../assets/img/tutorials/xrd/removing plastic cover 2.gif" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
 	<img src="../assets/img/tutorials/xrd/add sample.gif" alt="Placing prepared sample in" style="width:33%; margin:0">
@@ -164,58 +163,3 @@ Insert peaks by
 * Intermediate: Distinguish amorphous and crystalline polymers
 * Intermediate: Distinguish mineral forms of calcium carbonate, i.e. calcite and aragonite
 * Advanced: Identify mystery powder and label each peak with the crystal plane it results from
-
-
-# HTML examples to control layout, etc.
-
-
-Full width image , with caption, link to open image full screen:  
-
-<figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
-</figure>  
-
-33% width images using html image tags, one links to full screen:
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
-</figure>
-
-An image that floats to the right of text:
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
-
-This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
-<div style="clear:both;"></div>  
-
-Same thing with image that floats to the left of text:  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-
-A gif sized to 32% width, that autoplays, with link that opens it full size:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
-</figure>
-  
-Embedded video with controls:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-
-
-
-
-
-
-
-
