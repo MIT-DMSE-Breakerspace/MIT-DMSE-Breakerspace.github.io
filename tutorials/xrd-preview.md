@@ -46,11 +46,6 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 *Fill out your information in the X-ray safety log book
 *Repeat as needed - additional samples can be loaded and added to the queue while current sample is being measured
 
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:33%; margin:0"> 
-	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:33%; margin:0">
-</figure>
-
 <a name="shutdown"></a>
 
 #####  Instrument shut down:
@@ -80,18 +75,10 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 * Place a prepared sample in any of the six positions on the sample changer
 * Replace plastic sample changer cover
 
-A gif sized to 32% width, that autoplays, with link that opens it full size:
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Removing plastic sample case cover </figcaption>
-</figure>
-
-A gif sized to 32% width, that autoplays, with link that opens it full size:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Placing prepared sample in</figcaption>
+	<img src="../assets/img/tutorials/xrd/removing plastic cover 2.gif" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/add sample.gif" alt="Placing prepared sample in" style="width:33%; margin:0">
 </figure>
 
 ##### Running a measurement program:
@@ -99,6 +86,11 @@ A gif sized to 32% width, that autoplays, with link that opens it full size:
 * Enter sample ID
 * Edit file name as necessary
 * Click Add to Queue
+
+<figure style="margin-left:0; margin-right:0;">
+	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:33%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:33%; margin:0">
+</figure>
 
 ##### Exporting data:
 Data can be saved on a USB drive, or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The username is xrd and the password is xrd-password. Data can be found in the folder C:\XRD\XRD data
