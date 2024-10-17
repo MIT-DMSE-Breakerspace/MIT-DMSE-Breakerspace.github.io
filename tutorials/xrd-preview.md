@@ -76,9 +76,23 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 ### Detailed operating instructions: 
 
 ##### Sample loading:
-* Remove plastic sample changer cover
+* Remove plastic sample case cover
 * Place a prepared sample in any of the six positions on the sample changer
 * Replace plastic sample changer cover
+
+A gif sized to 32% width, that autoplays, with link that opens it full size:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <figcaption> Removing plastic sample case cover </figcaption>
+</figure>
+
+A gif sized to 32% width, that autoplays, with link that opens it full size:
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
+  <figcaption> Placing prepared sample in</figcaption>
+</figure>
 
 ##### Running a measurement program:
 * Choose measurement program
@@ -132,7 +146,7 @@ Insert peaks by
 
 <a name="failures"></a>
 ### Common failure modes:
-* Booting the instrument with all sample changer positions occupied will result in an [error](https://www.dropbox.com/scl/fi/4a0rnd149la2lyrvo0rll/XRD_please_remove_sample.jpg?rlkey=u5x63mlic9llbitkgpigh0xcw&st=126n38zb&dl=0).Remove one of the sample holders, so that there is a free spot.
+* Booting the instrument with all sample changer positions occupied will result in an [error](https://www.dropbox.com/scl/fi/4a0rnd149la2lyrvo0rll/XRD_please_remove_sample.jpg?rlkey=u5x63mlic9llbitkgpigh0xcw&st=126n38zb&dl=0). Remove one of the sample holders, so that there is a free spot.
 
 <a name="manuals"></a>
 ### Manufacturer's manuals:
