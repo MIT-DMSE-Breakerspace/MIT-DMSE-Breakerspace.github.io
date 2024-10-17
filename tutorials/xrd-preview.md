@@ -76,8 +76,8 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 * Replace plastic sample changer cover
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/removing plastic cover 2.gif" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
-	<img src="../assets/img/tutorials/xrd/add sample.gif" alt="Placing prepared sample in" style="width:33%; margin:0">
+	<img src="../assets/img/tutorials/xrd/removing plastic cover 2.gif" alt="Removing plastic sample case cover" style="width:50%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/add sample.gif" alt="Placing prepared sample in" style="width:50%; margin:0">
 </figure>
 
 ##### Running a measurement program:
@@ -87,15 +87,15 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 * Click Add to Queue
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:33%; margin:0"> 
-	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:33%; margin:0">
+	<img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the queue" style="width:50%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying results to desktop folder" style="width:50%; margin:0">
 </figure>
 
 ##### Exporting data:
 Data can be saved on a USB drive, or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The username is xrd and the password is xrd-password. Data can be found in the folder C:\XRD\XRD data
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="Removing plastic sample case cover" style="width:50%; margin:0"> 
 </figure>
 
 ##### New measurement programs:
