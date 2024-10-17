@@ -95,7 +95,7 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 Data can be saved on a USB drive, or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The username is xrd and the password is xrd-password. Data can be found in the folder C:\XRD\XRD data
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/xrd/xrd data in folder.gif" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
+	<img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="Removing plastic sample case cover" style="width:33%; margin:0"> 
 </figure>
 
 ##### New measurement programs:
