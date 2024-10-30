@@ -65,14 +65,6 @@ Our test frame is equipped with 50 kN and 5 kN load cells, with fixtures for ten
 
 ___
 
-### Instron Model 9050 Pendulum Impact System
-
-![Instron Model 9050 Pendulum Impact System](./assets/img/pendulum.JPG)
-
-Perform IZOD testing at up to 50 joules on our impact testing system.
-
-___
-
 ### Horiba XploRA Confocal Raman Microscope
 
 ![Horiba XploRA Confocal Raman Microscope](./assets/img/raman.JPG)
