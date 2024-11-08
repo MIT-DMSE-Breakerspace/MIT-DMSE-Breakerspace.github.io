@@ -59,7 +59,7 @@ Repeat steps as needed.
 * All materials analyzed in the Breakerspace must be non-hazardous and safe to handle
 * The instrument can be used to measure liquids, solids, powders, and gases
 * Generally good for studying organics, polymers, acids/bases, metal oxides, and semiconductors
-* Not useful for metals, ionic salts such as NaCl, or overly fluoresching materials
+* Not useful for metals, ionic salts such as NaCl, or overly fluorescing materials
 
 ##### _If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab._
 
@@ -88,7 +88,8 @@ A typically workflow might be to load the sample, focus, and use the RTD feature
 
 * The cameras sometimes do not connect to the software, restarting the computer is the suggested fix
 * No spectrum because laser is not on, check laser is actually on using internal camera
-* Spectro shift position is out of display range
+* No spectrum because spectro shift position is out of display range - reposition spectro
+* No identifiable peaks, spectrum appears as a large hump - this is fluorescing, try longer wavelength laser, material may not be suitable for Raman spectroscopy
 
 <a name="manuals"></a>
 ### Manufacturer's manuals:
@@ -104,7 +105,7 @@ A typically workflow might be to load the sample, focus, and use the RTD feature
 ### Exercises:
 
 * Intro: run autocalibration routine and collect spectrum for polystyrene sample
-* Intermediate: perform spatial mapping and compound indentification on ![aspirin/paracetamol/caffeine tablet](https://en.wikipedia.org/wiki/Aspirin/paracetamol/caffeine)
+* Intermediate: perform spatial mapping and compound indentification on [aspirin/paracetamol/caffeine tablet](https://en.wikipedia.org/wiki/Aspirin/paracetamol/caffeine)
 * Use confocality to collect spectra at different depths within a layered material such as a potato chip bag
 
 
