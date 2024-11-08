@@ -103,66 +103,9 @@ A typically workflow might be to load the sample, focus, and use the RTD feature
 <a name="exercises"></a>
 ### Exercises:
 
-* intro for anyone - eg honey bee on optical
-* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-* advanced exercise - deconvolution of compound sample from spectrometer, etc.
-
-# HTML examples to control layout, etc.
+* Intro: run autocalibration routine and collect spectrum for polystyrene sample
+* Intermediate: perform spatial mapping and compound indentification on ![aspirin/paracetamol/caffeine tablet](https://en.wikipedia.org/wiki/Aspirin/paracetamol/caffeine)
+* Use confocality to collect spectra at different depths within a layered material such as a potato chip bag
 
 
-Full width image , with caption, link to open image full screen:  
-
-<figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/template/ftir-switch.JPG" target="_parent"><img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="The FTIR power switch."></a>
-	<figcaption> The FTIR power switch. </figcaption>
-</figure>  
-
-33% width images using html image tags, one links to full screen:
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
-</figure>
-
-An image that floats to the right of text:
-
-<img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="FTIR Switch" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
-
-This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
-<div style="clear:both;"></div>  
-
-Same thing with image that floats to the left of text:  
-
-<img src="../assets/img/tutorials/template/ftir-switch.JPG" alt="FTIR Switch" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-
-A gif sized to 32% width, that autoplays, with link that opens it full size:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
-</figure>
-
-A full width, high resolution gif:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/high-res-test.GIF" alt="High res gif test."></a>
-  <figcaption> A higher resolution gif</figcaption>
-</figure>
-
-An optimized embedded gif that links to a high resolution gif:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/optimized-750px.GIF" alt="High res gif test."></a>
-  <figcaption> A 750px wide gif that opens at higher resolution</figcaption>
-</figure>
-  
-Embedded video with controls:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
 
