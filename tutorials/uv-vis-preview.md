@@ -5,6 +5,10 @@ layout: default
 
 ## Overview
 
+<figure>
+	<img src="../assets/img/uv-vis.JPG" alt="UV-Vis" style="width:32%; margin:0">  
+</figure>
+
 Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure absorbance, or as an instrument that measures true molecular fingerprints, which require the acquisition of fluorescence and absorbance, correcting for IFE in real time.
 
 ### Standard Operating Protocol:
@@ -18,7 +22,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Click EzSpec button
 
 #### Operation
-##### Opening a method 
+#### Opening a method 
 * Click new method
 * Click Absorbance and Transmission. There are other modes, but users are primarily focused on this mode.
 * Click Spectra
@@ -26,27 +30,25 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Set mode to both
 
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Both.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Both.png" alt="Select both"></a>
+	<a href="../assets/img/tutorials/uv-vis/Both.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Both.png" alt="Select both" style="width:32%; margin:0" ></a>
 	<figcaption>  </figcaption>
 </figure>
 
-##### Adding your sample
 * Fill the cuvet with your sample
 * Name your sample and choose where you want it to save
 * For best results, wait for the lamps to warm up
 * Click Acquire 
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Acquire.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Acquire.png" alt="Select both"></a>
+	<a href="../assets/img/tutorials/uv-vis/Acquire.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Acquire.png" alt="Click Acquire" style="width:32%; margin:0"></a>
 	<figcaption>  </figcaption>
 </figure>
 
-##### Loading your Sample
 * Load your sample by pressing down on the machine’s lid. Close the top.
 * Load a sample of deionized water when the software instructs you to load a blank.
 * Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescace. 
 
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Select both"></a>
+	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:32%; margin:0"></a>
 	<figcaption>  </figcaption>
 </figure>
 
@@ -87,10 +89,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 32% width images using html image tags:
 
 <figure>
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:32%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:32%; margin:0">
-	<img src="../assets/img/sem2.JPG" alt="SEM" style="width:32%; margin:0">  
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
+	<img src="../assets/img/uv-vis.JPG" alt="SEM" style="width:32%; margin:0">  
 </figure>
 
 
