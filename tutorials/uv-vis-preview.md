@@ -11,9 +11,19 @@ layout: default
 
 Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure absorbance, or as an instrument that measures true molecular fingerprints, which require the acquisition of fluorescence and absorbance, correcting for IFE in real time.
 
+### Index: 
+
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
+* [Data processing and analysis](#data)
+* [Materials and sample prep](#materials)
+* [Common failure modes](#failures)
+* [Manufacturer manuals](#manuals)
+* [Exercises](#exercises)
+
+<a name="sop"></a>
 ### Standard Operating Protocol:
 
-
+<a name="startup"></a>
 ### Start Up
 * Flip power switch and press power button. 
 * Power button must be blue to operate
@@ -21,6 +31,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Open the EzSpec software
 * Click EzSpec button
 
+<a name="operation"></a>
 ### Operation
 * Click new method
 * Click Absorbance and Transmission. There are other modes, but users are primarily focused on this mode.
@@ -45,8 +56,9 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Load your sample by pressing down on the machine’s lid. Close the top.
 * Load a sample of deionized water when the software instructs you to load a blank.
 
+<a name="data"></a>
 ### Data Analysis
-* Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescace.
+* Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescence.
 
 <figure>
 	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:32%; margin:0"></a>
@@ -56,28 +68,28 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Under the Process tab, you have the option of processing your data in many ways, including smoothing, finding peaks, fitting a curve, and more.
 * Under Export tab, you can save your data as a text, as an EzSpec file, or generate a report.
 * Unload your sample
-    
+
+<a name="shutdown"></a>
 ### Shut down
 * Push and hold power button until light shuts off. Shutting the machine down is important so that the lamp does not burn out.
 * Log out of the desktop
 
+<a name="materials"></a>
 ### Materials
 * Cuvettes are in bottom drawer under sample prep bench, labeled “Spare Cuvettes”
 * Deionized water for dilution or blank samples is typically available in a squeeze bottom near the sink or the sample prep bench
-
-### Safety and good practices
 * When filling the cuvette, do not get the outside of the cuvette dirty (by spilling contents on it or by touching it with your fingers). This results in worse data quality and possibly dirtying the machine
 
+<a name="failures"></a>
 ### Common failure modes
 * If your sample is too concentrated, some peaks will be cut off. 
-  
+
+<a name="manuals"></a>
 ### Manufacturer manuals
 * software manual
 * hardware manual
-   
-### Links
-* good video tutorials, etc.
-   
+
+<a name="exercises"></a>
 ### Exercises
 * Intro: look at water with food coloring and identify on the spectrum the bumps or dips due to the color.
 * Intro: Compare concentrations of a series of a samples
