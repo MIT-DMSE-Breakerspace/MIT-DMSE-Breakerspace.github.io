@@ -31,6 +31,10 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Open the EzSpec software
 * Click EzSpec button
 
+<figure style="margin-left:0; margin-right:0;">
+	<img src="../assets/img/tutorials/uv-vis/duetta power front button.jpg" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
+</figure>
+
 <a name="operation"></a>
 ### Operation
 * Click new method
@@ -40,37 +44,43 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Set mode to both
 
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Both.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Both.png" alt="Select both" style="width:32%; margin:0" ></a>
+	<a href="../assets/img/tutorials/uv-vis/Both.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Both.png" alt="Select both" style="width:50%; margin:0" ></a>
 	<figcaption>  </figcaption>
 </figure>
 
 * Fill the cuvet with your sample
 * Name your sample and choose where you want it to save
 * For best results, wait for the lamps to warm up
-* Click Acquire 
+* Click Acquire
+  
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Acquire.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Acquire.png" alt="Click Acquire" style="width:32%; margin:0"></a>
+	<a href="../assets/img/tutorials/uv-vis/Acquire.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Acquire.png" alt="Click Acquire" style="width:50%; margin:0"></a>
 	<figcaption>  </figcaption>
 </figure>
 
 * Load your sample by pressing down on the machine’s lid. Close the top.
 * Load a sample of deionized water when the software instructs you to load a blank.
 
+<figure style="margin-left:0; margin-right:0;">
+	<img src="../assets/img/tutorials/uv-vis/3BD05745-C475-4D29-B776-9D011D0BAC51.gif" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
+	<img src="../assets/img/tutorials/uv-vis/72CA3ED5-10E5-418B-9B9A-E49A14816CE5.gif" alt="Adding in cuvette" style="width:50%; margin:0">
+</figure>
+
 <a name="data"></a>
-### Data Analysis
+## Data Analysis
 * Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescence.
 
 <figure>
-	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:32%; margin:0"></a>
+	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:50%; margin:0"></a>
 	<figcaption>  </figcaption>
 </figure>
 
 * Under the Process tab, you have the option of processing your data in many ways, including smoothing, finding peaks, fitting a curve, and more.
 * Under Export tab, you can save your data as a text, as an EzSpec file, or generate a report.
-* Unload your sample
 
 <a name="shutdown"></a>
 ### Shut down
+* Unload your sample
 * Push and hold power button until light shuts off. Shutting the machine down is important so that the lamp does not burn out.
 * Log out of the desktop
 
@@ -95,44 +105,3 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Intro: Compare concentrations of a series of a samples
 * Beginner: Identify the relative size of nanoparticles samples 
 * Advanced: Deconvolution of compound sample
-
-
-
-32% width images using html image tags:
-
-<figure>
-	<img src="../assets/img/uv-vis.JPG" alt="SEM" style="width:32%; margin:0">  
-</figure>
-
-
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-  
-
-### <a name="loading"></a> Sample loading
-
-Prepared samples, properly mounted in sample holder, are loaded using the following procedure...
-
-### <a name="feature1"></a> Instrument feature
-
-A key feature of this instrument is eg. focus stacking to create 3d image with height data
-
-GIF embedded using image tag:
-
-![GIF test](../assets/video/raman-display-flip.GIF)
-
-### <a name="tutorial"></a> Tutorial
-
-Take the tutorial sample in drawer and load it in to the instrument. Find feature X and measure the dimensions. Perform operation Y and catalog results. What can be concluded from this data?
-
-Video embedded with video tag, width set to 100%:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
