@@ -14,15 +14,14 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 ### Standard Operating Protocol:
 
 
-#### Start Up
+### Start Up
 * Flip power switch and press power button. 
 * Power button must be blue to operate
 * Log on to the desktop with your kerberos
 * Open the EzSpec software
 * Click EzSpec button
 
-#### Operation
-#### Opening a method 
+### Operation
 * Click new method
 * Click Absorbance and Transmission. There are other modes, but users are primarily focused on this mode.
 * Click Spectra
@@ -45,19 +44,20 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 
 * Load your sample by pressing down on the machine’s lid. Close the top.
 * Load a sample of deionized water when the software instructs you to load a blank.
-* Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescace. 
+
+### Data Analysis
+* Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescace.
 
 <figure>
 	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:32%; margin:0"></a>
 	<figcaption>  </figcaption>
 </figure>
 
-##### Data Analysis
 * Under the Process tab, you have the option of processing your data in many ways, including smoothing, finding peaks, fitting a curve, and more.
 * Under Export tab, you can save your data as a text, as an EzSpec file, or generate a report.
 * Unload your sample
     
-#### Shut down
+### Shut down
 * Push and hold power button until light shuts off. Shutting the machine down is important so that the lamp does not burn out.
 * Log out of the desktop
 
