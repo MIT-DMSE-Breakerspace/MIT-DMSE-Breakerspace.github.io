@@ -24,7 +24,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 ### Standard Operating Protocol:
 
 <a name="startup"></a>
-### Start Up
+#### Start Up
 * Flip power switch and press power button. 
 * Power button must be blue to operate
 * Log on to the desktop with your kerberos
@@ -36,7 +36,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 </figure>
 
 <a name="operation"></a>
-### Operation
+#### Operation
 * Click new method
 * Click Absorbance and Transmission. There are other modes, but users are primarily focused on this mode.
 * Click Spectra
@@ -62,12 +62,12 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Load a sample of deionized water when the software instructs you to load a blank.
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/uv-vis/3BD05745-C475-4D29-B776-9D011D0BAC51.gif" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
-	<img src="../assets/img/tutorials/uv-vis/72CA3ED5-10E5-418B-9B9A-E49A14816CE5.gif" alt="Adding in cuvette" style="width:50%; margin:0">
+	<img src="../assets/img/tutorials/uv-vis/open uv-vis lid.gif" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
+	<img src="../assets/img/tutorials/uv-vis/add in cuvette.gif" alt="Adding in cuvette" style="width:50%; margin:0">
 </figure>
 
 <a name="data"></a>
-## Data Analysis
+#### Data Analysis
 * Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescence.
 
 <figure>
@@ -79,9 +79,9 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Under Export tab, you can save your data as a text, as an EzSpec file, or generate a report.
 
 <a name="shutdown"></a>
-### Shut down
+#### Shut down
 * Unload your sample
-* Push and hold power button until light shuts off. Shutting the machine down is important so that the lamp does not burn out.
+* __Push and hold power button until light shuts off.__ Shutting the machine down is important so that the lamp does not burn out.
 * Log out of the desktop
 
 <a name="materials"></a>
@@ -96,9 +96,8 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 
 <a name="manuals"></a>
 ### Manufacturer manuals
-* software manual
-* hardware manual
-
+* [Operation manual](https://www.dropbox.com/scl/fi/9bzwitjz004xd8pl5bpyl/Duetta-with-EZ-Spec-Operation-Manual-5700004252-Rev-1.4.3.pdf?rlkey=8ekvwddzdt0pk931zwpxov43l&st=yisoc2r2&dl=0)
+  
 <a name="exercises"></a>
 ### Exercises
 * Intro: look at water with food coloring and identify on the spectrum the bumps or dips due to the color.
