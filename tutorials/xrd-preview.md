@@ -31,23 +31,23 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 ##### Instrument startup:  
 
 * Make sure at least one position in the sample changer is free (no sample holder in place)
-* Turn the [mains power switch](https://www.dropbox.com/scl/fi/vctgbxyvs19bsgrfbkvcy/XRD_switch_in_backjpg.jpg?rlkey=nzwduvun4gjqs6jat1lpt5uyz&st=sy65cfay&dl=0) at the rear of the instrument
+* Turn the [mains power switch](..assets/img/tutorials/xrd/mains-switch.jpg) at the rear of the instrument
 * Make sure that the cover is closed
-* Press the [power button](https://www.dropbox.com/scl/fi/haoxjgz4wk2wl1s1b1w8g/XRD_on_button.jpg?rlkey=mpn0crnqmr7zlzqwnx409kan6&st=wkepb8tj&dl=0) to switch on the instrument
-* Turn the [HT keyswitch](https://www.dropbox.com/scl/fi/ijiw5irtju1ovb29b48gy/XRD-key.jpg?rlkey=a1gt2ai0tsvdept65xb215ta6&st=efpwhzx7&dl=0) to switch on the HT generator
+* Press the [power button](..assets/img/tutorials/xrd/power-button.jpg) to switch on the instrument
+* Turn the [HT keyswitch](..assets/img/tutorials/xrd/ht-key.jpg) to switch on the HT generator
 
 <a name="operation"></a>
 
 ##### Operation: 
 
-*Prepare your sample externally at the sample prep table
-*Put the sample holder in a loading position on the sample changer
-*Select a measurement program from the drop-down list
-*Put in a descriptive sample name
-*Start the measurement
-*Export results to networked workstation or USB drive
-*Fill out your information in the X-ray safety log book
-*Repeat as needed - additional samples can be loaded and added to the queue while current sample is being measured
+* Prepare your sample externally at the sample prep table
+* Put the sample holder in a loading position on the sample changer
+* Select a measurement program from the drop-down list
+* Put in a descriptive sample name
+* Start the measurement
+* Export results to networked workstation or USB drive
+* Fill out your information in the X-ray safety log book
+* Repeat as needed - additional samples can be loaded and added to the queue while current sample is being measured
 
 <a name="shutdown"></a>
 
