@@ -25,83 +25,43 @@ The Innovatest Nemesis 5100G2 Hardness Tester has a 9-position turret to automat
 
 <a name="startup"></a>
 #### Start Up
-* Flip power switch and press power button. 
-* Power button must be blue to operate
-* Log on to the desktop with your kerberos
-* Open the EzSpec software
-* Click EzSpec button
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/uv-vis/duetta power front button.jpg" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
-</figure>
+* Turn machine on red power switch in the back 
+* Log in to the Impressions software. The username is “mit hardness” and leave the password field empty (no password)
 
 <a name="operation"></a>
 #### Operation
-* Click new method
-* Click Absorbance and Transmission. There are other modes, but users are primarily focused on this mode.
-* Click Spectra
-* Make sure the setup conditions are adequate.
-* Set mode to both
-
-<figure>
-	<a href="../assets/img/tutorials/uv-vis/Both.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Both.png" alt="Select both" style="width:50%; margin:0" ></a>
-	<figcaption>  </figcaption>
-</figure>
-
-* Fill the cuvet with your sample
-* Name your sample and choose where you want it to save
-* For best results, wait for the lamps to warm up
-* Click Acquire
-  
-<figure>
-	<a href="../assets/img/tutorials/uv-vis/Acquire.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Acquire.png" alt="Click Acquire" style="width:50%; margin:0"></a>
-	<figcaption>  </figcaption>
-</figure>
-
-* Load your sample by pressing down on the machine’s lid. Close the top.
-* Load a sample of deionized water when the software instructs you to load a blank.
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/uv-vis/open uv-vis lid.gif" alt="Opening UV-Vis Lid" style="width:50%; margin:0"> 
-	<img src="../assets/img/tutorials/uv-vis/add in cuvette.gif" alt="Adding in cuvette" style="width:50%; margin:0">
-</figure>
-
-<a name="data"></a>
-#### Data Analysis
-* Under Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescence.
-
-<figure>
-	<a href="../assets/img/tutorials/uv-vis/Absorbance.png" target="_parent"><img src="../assets/img/tutorials/uv-vis/Absorbance.png" alt="Absorbance and Transmission" style="width:50%; margin:0"></a>
-	<figcaption>  </figcaption>
-</figure>
-
-* Under the Process tab, you have the option of processing your data in many ways, including smoothing, finding peaks, fitting a curve, and more.
-* Under Export tab, you can save your data as a text, as an EzSpec file, or generate a report.
+* Position your sample on the sample stage
+* Find a clean spot on your sample using the camera. Use the joystick or the software to move the sample stage. 
+* Get into focus with 2.5x, then change 10x and refocus. 
+* Click In Focus button
+* Choose your hardness test using the top left blue box.
+* Click Start and the testing procedure will proceed automatically
+* To make a pattern, click “Pattern” and choose your settings. Make sure to return to single point when you’re done using the pattern!
 
 <a name="shutdown"></a>
 #### Shut down
-* Unload your sample
-* __Push and hold power button until light shuts off.__ Shutting the machine down is important so that the lamp does not burn out.
-* Log out of the desktop
+* Remove your sample from the machine and turn off the workstation.
+* Toggle the power switch in back of the machine to off
 
 <a name="materials"></a>
 ### Materials
-* Cuvettes are in bottom drawer under sample prep bench, labeled “Spare Cuvettes”
+* Prepare a flat and ideally polished sample. 
 * Deionized water for dilution or blank samples is typically available in a squeeze bottom near the sink or the sample prep bench
-* When filling the cuvette, do not get the outside of the cuvette dirty (by spilling contents on it or by touching it with your fingers). This results in worse data quality and possibly dirtying the machine
+* Polishing equipment can be found next to the sink. Unpolished samples won’t damage the machine, but will give worse results. 
 
 <a name="failures"></a>
 ### Common failure modes
-* If your sample is too concentrated, some peaks will be cut off. 
+* Patterns are retained across users, so make sure you are back in single point mode before turning off the machine and before measuring your sample.
+* For the Rockwell hardness test, make sure your tip matches your surface. A too soft tip for your surface may result in damage to the machine. For example, HRA uses a harder tip than HRB.
+* While hardness values calculated through Vickers tests with different loads are equal (i.e. Vickers 1 kgf gives the same value as Vickers 5 kgf), this is not true for Rockwell tests. You need a conversion table to compare HRA and HRB values.
+
 
 <a name="manuals"></a>
 ### Manufacturer manuals
-* [Operation manual](https://www.dropbox.com/scl/fi/9bzwitjz004xd8pl5bpyl/Duetta-with-EZ-Spec-Operation-Manual-5700004252-Rev-1.4.3.pdf?rlkey=8ekvwddzdt0pk931zwpxov43l&st=yisoc2r2&dl=0)
+* [Machine brochure](https://www.dropbox.com/scl/fi/px92wph6tuclbmpjo4k5z/INNOVATEST_NEMESIS-9100-brochure.pdf?rlkey=kjzo23aznoolzjrfedtwmikkk&st=73l53vy4&dl=0)
   
 <a name="exercises"></a>
 ### Exercises
-* Intro: look at water with food coloring and identify on the spectrum the bumps or dips due to the color.
-* Intro: Compare concentrations of a series of a samples
-* Beginner: Identify the relative size of nanoparticles samples 
-* Advanced: Deconvolution of compound sample
+* Intro: Determine the hardness of a piece of metal with a Vickers test
+* Beginner: Use the pattern function to determine the hardness of multiple spots in one run
 
