@@ -99,7 +99,7 @@ Data can be saved on a USB drive, or exported to a shared network drive on the X
 
 <figure style="margin-left:0; margin-right:0;">
 	<a href="../assets/img/tutorials/xrd/xrd data in folder.png" target="_parent"><img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="export directory image" style="width:50%; margin:0"> 
-  <figcaption> Recommended export location in Windows explorer</figcaption>
+  <figcaption> Recommended export location in Windows explorer </figcaption>
 </figure>
 
 ##### New measurement programs:
