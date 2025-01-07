@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template updated
+# Microtrac Sync Particle Size Analyser Tutorial
 
 ## Overview
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace XRD tutorial
+# Panalytical Aeris Research XRD Tutorial
 ## Overview:
 
 <figure>

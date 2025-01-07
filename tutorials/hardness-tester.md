@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Hardness Tester Tutorial 
+# Innovatest Nemesis 5100G2 Hardness Tester Tutorial 
 
 ## Overview
 

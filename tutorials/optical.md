@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Optical Microscope Tutorial
+# Olympus DSX-1000 Digital Optical Microscope Tutorial
 
 ## Overview:
 

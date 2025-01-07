@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace SEMPrep Ion Mill Tutorial
+# Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill Tutorial
 
 ## Overview:
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace UV-Vis Tutorial
+# Horiba Duetta Fluorescence and Absorbance Spectrometer Tutorial
 
 ## Overview
 

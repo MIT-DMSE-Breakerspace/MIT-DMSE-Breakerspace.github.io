@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace FTIR Tutorial
+# Nicolet iS5 Fourier-Transform Infrared (FTIR) Spectrometer Tutorial
 
 ## Overview:
 

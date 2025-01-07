@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Horiba XploRA Confocal Raman Microscope Tutorial 
+# Horiba XploRA Confocal Raman Microscope Tutorial 
 
 ## Overview:
 
