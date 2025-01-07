@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template updated
+# Breakerspace Hardness Tester Tutorial 
 
 ## Overview
 
