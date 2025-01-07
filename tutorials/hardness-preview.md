@@ -45,7 +45,6 @@ The Innovatest Nemesis 5100G2 Hardness Tester has a 9-position turret to automat
 <a name="materials"></a>
 ### Materials
 * Prepare a flat and ideally polished sample. 
-* Deionized water for dilution or blank samples is typically available in a squeeze bottom near the sink or the sample prep bench
 * Polishing equipment can be found next to the sink. Unpolished samples won’t damage the machine, but will give worse results. 
 
 <a name="failures"></a>
