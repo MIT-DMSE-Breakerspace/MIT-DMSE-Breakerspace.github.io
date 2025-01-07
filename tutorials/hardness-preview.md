@@ -14,7 +14,6 @@ The Innovatest Nemesis 5100G2 Hardness Tester has a 9-position turret to automat
 ### Index: 
 
 * [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
-* [Data processing and analysis](#data)
 * [Materials and sample prep](#materials)
 * [Common failure modes](#failures)
 * [Manufacturer manuals](#manuals)
