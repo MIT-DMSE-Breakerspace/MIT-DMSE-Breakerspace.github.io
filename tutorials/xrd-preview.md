@@ -98,8 +98,10 @@ XRD sample holders, mounting clay, and other small materials are stored in the b
 Data can be saved on a USB drive, or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login. The username is xrd and the password is xrd-password. Data can be found in the folder C:\XRD\XRD data
 
 <figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/xrd/xrd data in folder.png" target="_parent"><img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="export directory image" style="width:50%; margin:0"> 
-  <figcaption> Recommended export location in Windows explorer</figcaption>
+    <a href="../assets/img/tutorials/xrd/xrd data in folder.png" target="_parent">
+        <img src="../assets/img/tutorials/xrd/xrd data in folder.png" alt="export directory image" style="width:50%; margin:0" />
+        <figcaption>Recommended export location in Windows explorer</figcaption>
+    </a>
 </figure>
 
 ##### New measurement programs:
@@ -136,7 +138,7 @@ Insert peaks by
 * After determining the background and peaks,Right Click > Search Match > (Optional) change the search settings > Search > Ok.
 * Options for improving your outcomes: 
   * Under the Restrictions tab > Restrictions set > Select Restriction set, you can pick your type of material from a drop down menu. For example, if you material is organic, select “Organic”
-  * Under the Restrictions tab > Edit… will give you a pop up for many ways to restrict your search. For example, under Chemistry, one can input the elements that are or are not present in the sample. Ther
+  * Under the Restrictions tab > Edit… will give you a pop up for many ways to restrict your search. For example, under Chemistry, one can input the elements that are or are not present in the sample. 
   * Clicking Execute Fitting > <Profile Fit> Default often improves the confidence and precision of the results. 
 * Interpreting the Matches: 
   * Score shows the confidence of the program in the pattern match between your samples and the candidate. To check if the program was correct, click on the candidate you are interested in. Thin blue lines will show up on the graph. Check that each blue line matches up with the height and location of a peak of your sample. 
