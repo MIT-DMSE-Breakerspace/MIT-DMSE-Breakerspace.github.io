@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-# Breakerspace Instrument Tutorial Template - \<h1>
-
+# Breakerspace XRD tutorial
 ## Overview:
+
+<figure>
+	<img src="../assets/img/xrd.JPG" alt="XRD" style="width:32%; margin:0">  
+</figure>
 
 Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/products/product-range/aeris-range) ([X-ray diffractometer](https://www.malvernpanalytical.com/en/products/technology/xray-analysis/x-ray-diffraction)) to analyze properties such as phase composition, crystal structure, and orientation of solid samples, with precise results in less than five minutes.
 
