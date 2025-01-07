@@ -31,10 +31,10 @@ Use our [Panalytical Aeris Research XRD](https://www.malvernpanalytical.com/en/p
 ##### Instrument startup:  
 
 * Make sure at least one position in the sample changer is free (no sample holder in place)
-* Turn the [mains power switch](../assets/img/tutorials/xrd/mains-switch.JPG) at the rear of the instrument
+* Turn the [mains power switch](../assets/img/tutorials/xrd/mains-switch.jpg) at the rear of the instrument
 * Make sure that the cover is closed
-* Press the [power button](../assets/img/tutorials/xrd/power-button.JPG) to switch on the instrument
-* Turn the [HT keyswitch](../assets/img/tutorials/xrd/ht-key.JPG) to switch on the HT generator
+* Press the [power button](../assets/img/tutorials/xrd/power-button.jpg) to switch on the instrument
+* Turn the [HT keyswitch](../assets/img/tutorials/xrd/keyswitch.jpg) to switch on the HT generator
 
 <a name="operation"></a>
 
