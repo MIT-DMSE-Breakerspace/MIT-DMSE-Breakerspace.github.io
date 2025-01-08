@@ -14,7 +14,9 @@ The Breakerspace Lab is a growing suite of materials characterization instrument
 
 ![Thermofisher Phenom XL SEM](./assets/img/sem.JPG)
 
-The Phenom XL SEM (scanning electron microscope) has a large sample area, BSD and SED detectors, EDS, and is hugely popular. [Thermofisher Phenom Scanning Electron Microscopes (SEM) Tutorial/SOP](./tutorials/sem.html)    
+The Phenom XL SEM (scanning electron microscope) has a large sample area, BSD and SED detectors, EDS, and is hugely popular. 
+
+[Thermofisher Phenom Scanning Electron Microscopes (SEM) Tutorial/SOP](./tutorials/sem.html)    
 
 ___
 
@@ -22,14 +24,18 @@ ___
 
 ![Thermofisher Phenom XL SEM](./assets/img/sem2.JPG)
 
-The Phenom Pure can load a single sample, and BSD and SED detectors but no EDS. We have a temperature-controlled sample stage with a range of -25° C to 50° C, and a low-vacuum, charge dissipating stage. [Thermofisher Phenom Scanning Electron Microscopes (SEM) Tutorial/SOP](./tutorials/sem.html)  
+The Phenom Pure can load a single sample, and BSD and SED detectors but no EDS. We have a temperature-controlled sample stage with a range of -25° C to 50° C, and a low-vacuum, charge dissipating stage. 
+
+[Thermofisher Phenom Scanning Electron Microscopes (SEM) Tutorial/SOP](./tutorials/sem.html)  
 ___
 
 ### Olympus DSX-1000 Digital Optical Microscope
 
 ![Olympus DSX-1000 Digital Optical Microscope](./assets/img/optical.JPG)
 
-See images in full color at high magnifications, capture 3D data, and stitch together large images with this easy-to-use digital microscope offering six observation modes. [Olympus DSX-1000 Digital Optical Microscope Tutorial/SOP](./tutorials/optical.html)  
+See images in full color at high magnifications, capture 3D data, and stitch together large images with this easy-to-use digital microscope offering six observation modes. 
+
+[Olympus DSX-1000 Digital Optical Microscope Tutorial/SOP](./tutorials/optical.html)  
 
 ___
 
@@ -37,7 +43,9 @@ ___
 
 ![Panalytical Aeris Research X-ray diffractometer](./assets/img/xrd.JPG)
 
-Use the XRD (X-ray diffractometer) to analyze properties such as phase composition, crystal structure, and orientation of solid samples. [Panalytical Aeris Research XRD Tutorial/SOP](./tutorials/xrd.html)   
+Use the XRD (X-ray diffractometer) to analyze properties such as phase composition, crystal structure, and orientation of solid samples. 
+
+[Panalytical Aeris Research XRD Tutorial/SOP](./tutorials/xrd.html)   
 
 ___
 
@@ -45,7 +53,9 @@ ___
 
 ![Horiba Duetta Fluorescence and Absorbance Spectrometer](./assets/img/uv-vis.JPG)
 
-Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure absorbance, or as an instrument that measures true molecular fingerprints, which require the acquisition of fluorescence and absorbance, correcting for IFE in real time. [Horiba Duetta Fluorescence and Absorbance Spectrometer Tutorial/SOP](./tutorials/uv-vis.html)  
+Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure absorbance, or as an instrument that measures true molecular fingerprints, which require the acquisition of fluorescence and absorbance, correcting for IFE in real time. 
+
+[Horiba Duetta Fluorescence and Absorbance Spectrometer Tutorial/SOP](./tutorials/uv-vis.html)  
 
 ___
 
@@ -53,7 +63,9 @@ ___
 
 ![Nicolet iS5 FTIR Spectrometer](./assets/img/ftir.JPG)
 
-Fourier-transform infrared spectroscopy (FTIR) provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. [Nicolet iS5 Fourier-Transform Infrared (FTIR) Spectrometer Tutorial/SOP](./tutorials/ftir.html)  
+Fourier-transform infrared spectroscopy (FTIR) provides an infrared spectrum of absorption or transmission of a solid, liquid, or gas, for identification, primarily, of organic or polymeric materials. 
+
+[Nicolet iS5 Fourier-Transform Infrared (FTIR) Spectrometer Tutorial/SOP](./tutorials/ftir.html)  
 
 ___
 
@@ -69,7 +81,9 @@ ___
 
 ![Horiba XploRA Confocal Raman Microscope](./assets/img/raman.JPG)
 
-Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. [Horiba XploRA Confocal Raman Microscope Tutorial/SOP](./tutorials/raman.html)  
+Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
+
+[Horiba XploRA Confocal Raman Microscope Tutorial/SOP](./tutorials/raman.html)  
 
 ___
 
@@ -77,7 +91,9 @@ ___
 
 ![Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill](./assets/img/ion-mill.JPG)
 
-Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-16 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control. [Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill Tutorial/SOP](./tutorials/ion-mill.html)  
+Our ion mill enables damage free sample prep for SEM imaging. It is equipped with two ion guns: a high-energy gun with a 2-16 keV range, and a low-energy gun with a 0.1-2 keV range. We have sample holders for polishing, and for 30° and 90° slope cutting, with a handy microscope to help with sample alignment. Our LN2 cooling option allows milling of heat-sensitive samples with good temperature control. 
+
+[Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill Tutorial/SOP](./tutorials/ion-mill.html)  
 
 ___
 
@@ -85,7 +101,9 @@ ___
 
 ![Innovatest Nemesis 5100G2 Hardness Tester](./assets/img/hardness-tester.JPG)
 
-This hardness tester has a 9-position turret to automatically swith between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales. [Innovatest Nemesis 5100G2 Hardness Tester Tutorial/SOP](./tutorials/hardness-tester.html)  
+This hardness tester has a 9-position turret to automatically swith between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales. 
+
+[Innovatest Nemesis 5100G2 Hardness Tester Tutorial/SOP](./tutorials/hardness-tester.html)  
 
 ___
 
@@ -93,5 +111,7 @@ ___
 
 ![Microtrac Sync Particle Size Analyser](./assets/img/particle-sizer.JPG)
 
-This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction. [Microtrac Sync Particle Size Analyser Tutorial/SOP](./tutorials/psa.html)  
+This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction. 
+
+[Microtrac Sync Particle Size Analyser Tutorial/SOP](./tutorials/psa.html)  
 
