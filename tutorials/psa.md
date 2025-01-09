@@ -9,24 +9,32 @@ Matches info/image for instrument on lab page
 
 ### Sections:
 
-* Standard (daily) operating protocol
-	* Startup
-		* Turn on the machine
-        * Log in on the desktop
-        * Open Mictrotrak flex software
-        * Open sync analyzer
+<a name="sop"></a>
+### Standard operating protocol:
 
-	* Operation
-		* Check/change database
-        * Load measurement SOP
-        * Clean loose particles from sample chamber
-        * Load sample
-        * Run Auto-Sequence
+<a name="startup"></a> 
+#### Instrument startup:
 
-	* Shut down
-		* Save your data
-        * Close software
-        * Turn machine off
+* [Power on the instrument](../assets/img/tutorials/psa/power-switch.JPG) [if needed](../assets/img/tutorials/psa/status-light.JPG)
+* Log on to instrument workstation using your MIT Kerberos
+* Open Mictrotrac FLEX software
+* From the [_Open Analyzer_ menu select _Sync Analyzer_](../assets/img/tutorials/psa/connect.png)
+
+<a name="operation"></a> 
+#### Operation:
+
+* Check/change database
+* Load measurement SOP
+* Clean loose particles from sample chamber
+* Load sample
+* Run Auto-Sequence
+
+<a name="shutdown"></a> 
+#### Instrument shut down:
+
+* Save your data
+* Close software
+* Turn machine off
 
 * Detailed operating instructions
 

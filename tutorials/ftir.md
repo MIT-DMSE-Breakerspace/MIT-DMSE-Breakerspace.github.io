@@ -34,7 +34,7 @@ The Nicolet iS5 Fourier-transform infrared (FTIR) spectrometer provides an infra
 * [Clean ATR crystal](#crystal)
 * Collect background
 
-<a name="sample"></a> 
+<a name="operation"></a> 
 #### Operation:
 
 * [Clean ATR crystal](#crystal)
