@@ -25,19 +25,20 @@ Matches info/image for instrument on lab page
 #### Operation:
 
 * [Check the active database](../assets/img/tutorials/psa/database.png), [change/create new](../assets/img/tutorials/psa/database-change.png) if needed
-* Load measurement SOP
-* Clean loose particles from sample chamber
-* Load sample
+* [Load measurement SOP](../assets/img/tutorials/psa/load-sop.png), if no SOP exists ask lab staff for assistance
+* Clean loose particles from sample chamber 
+* Load sample, 1/4 tsp for small sample tray
 * Run Auto-Sequence
 
 <a name="shutdown"></a> 
 #### Instrument shut down:
 
-* Save your data
-* Close software
-* Turn machine off
+* Export data as needed
+* Close the FLEX software
+* Log off Windows workstation
+* Instrument may be left powered on
 
-* Detailed operating instructions
+#### Detailed operating instructions:
 
 After opening the Microtrak Flex software, click Sync Analyzer in the open analyzer tab on the left side of the screen.
 
