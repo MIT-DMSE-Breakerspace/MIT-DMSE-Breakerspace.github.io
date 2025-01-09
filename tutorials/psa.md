@@ -5,9 +5,18 @@ layout: default
 
 ## Overview
 
-Matches info/image for instrument on lab page
+This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction.
 
-### Sections:
+### Index:
+
+* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
+* [Materials and sample prep](#materials)
+* [Detailed operating instructions](#details)
+* [Data processing and analysis](#data)
+* [Common failure modes](#failures)
+* [Manufacturer manuals](#manuals)
+* [Links](#links)
+* [Exercises](#exercises)
 
 <a name="sop"></a>
 ### Standard operating protocol:
