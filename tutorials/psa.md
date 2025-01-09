@@ -19,11 +19,12 @@ Matches info/image for instrument on lab page
 * Log on to instrument workstation using your MIT Kerberos
 * Open Mictrotrac FLEX software
 * From the [_Open Analyzer_ menu select _Sync Analyzer_](../assets/img/tutorials/psa/connect.png)
+* Wait while the instrument initializes
 
 <a name="operation"></a> 
 #### Operation:
 
-* Check/change database
+* [Check the active database](../assets/img/tutorials/psa/database.png), [change/create new](../assets/img/tutorials/psa/database-change.png) if needed
 * Load measurement SOP
 * Clean loose particles from sample chamber
 * Load sample
