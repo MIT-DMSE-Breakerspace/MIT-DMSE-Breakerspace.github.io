@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Microtrac Sync Particle Size Analyser Tutorial
+# Microtrac Sync Particle Size Analyzer Tutorial
 
 ## Overview
 

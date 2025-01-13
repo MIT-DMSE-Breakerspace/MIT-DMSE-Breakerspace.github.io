@@ -7,7 +7,7 @@ layout: default
 [Innovatest Nemesis 5100G2 Hardness Tester](./tutorials/hardness-tester.html)  
 [Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill](./tutorials/ion-mill.html)  
 [Olympus DSX-1000 Digital Optical Microscope](./tutorials/optical.html)  
-[Microtrac Sync Particle Size Analyser](./tutorials/psa.html)  
+[Microtrac Sync Particle Size Analyzer](./tutorials/psa.html)  
 [Horiba XploRA Confocal Raman Microscope](./tutorials/raman.html)  
 [Thermofisher Phenom Scanning Electron Microscopes (SEM)](./tutorials/sem.html)  
 [Horiba Duetta Fluorescence and Absorbance Spectrometer](./tutorials/uv-vis.html)  
