@@ -52,7 +52,9 @@ This instrument gives particle size distribution data for dry powder samples wit
 
 The sequence of steps to run a measurement is very straightforward: start the software, connect to the instrument, let it initialize, verify you are saving into the correct database, load a measurement SOP, clean the sample tray if needed and load a sample, run the auto-sequence, save your data, and close the software. Since the organization of the software can be confusing, this screen capture video focuses on the sequence of steps needed to initial a measurement. Don't forget, of course, to load your sample!
 
-<iframe width="750" height="562" src="https://www.youtube.com/embed/TvgfB1BDVO4?si=zmK_IY1oiU3FRg6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="container-video">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/TvgfB1BDVO4?si=zmK_IY1oiU3FRg6B"></iframe>
+</div>
 
  If the tray is contaminated with particles from a previous sample, remove them before starting the sequence. The tray can be removed to be cleaned separately, and debris tends to get trapped between the tray and the slab that it sits on. Once the tray is clean use the ¼ tsp measure next to the machine to load your sample into the slot. Keep your sample behind the the marker at the front, so that a background test can be run before the sample is processed. Next, click Auto-Sequence in the top left. You will be prompted to title your sample and add a note. When the test is finished, name your file and save it. 
 
