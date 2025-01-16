@@ -17,14 +17,6 @@ The same press can be used with a small sample, XRD sample holder, and modeling 
 
 This video demonstrates the basic operation, although this can be done successfully with much smaller quantities of modeling clay:
 
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/5lcjE6liYlo?si=y_Z3JduEtpEkA-Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<div style="padding-top:56.25%; position:relative; overflow:hidden; width: 100%">
-  <iframe width="100%" height="100%" position="absolute" top="0" bottom="0" left="0" right="0"
-    src="https://www.youtube.com/embed/5lcjE6liYlo?si=y_Z3JduEtpEkA-Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> style="position:absolute; top:0; left: 0">
-  </iframe>
-</div>
-
 <div class="container-video">
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/5lcjE6liYlo?si=y_Z3JduEtpEkA-Q4"></iframe>
 </div>
