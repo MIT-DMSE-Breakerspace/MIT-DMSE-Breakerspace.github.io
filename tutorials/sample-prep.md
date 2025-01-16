@@ -25,4 +25,8 @@ This video demonstrates the basic operation, although this can be done successfu
   </iframe>
 </div>
 
+<div class="container-video">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/5lcjE6liYlo?si=y_Z3JduEtpEkA-Q4"></iframe>
+</div>
+
 ### Other tips
