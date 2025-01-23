@@ -5,7 +5,7 @@ layout: default
 
 ## Overview
 
-This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction.
+This instrument gives particle size distribution data for dry powder samples with particles between 0.24 and 2,000 microns using laser diffraction.
 
 ### Index:
 
@@ -48,13 +48,37 @@ This instrument gives particle size distribution data for dry powder samples wit
 * Log off Windows workstation
 * Instrument may be left powered on
 
-#### Detailed operating instructions:
+<a name="materials"></a> 
+### Compatible materials and sample prep: 
 
-The sequence of steps to run a measurement is very straightforward: start the software, connect to the instrument, let it initialize, verify you are saving into the correct database, load a measurement SOP, clean the sample tray if needed and load a sample, run the auto-sequence, save your data, and close the software. Since the organization of the software can be confusing, this screen capture video focuses on the sequence of steps needed to initial a measurement. Don't forget, of course, to load your sample!
+* Any non-hazardous, dry powders with particles between 0.24 and 2,000 microns
+
+<a name="details"></a>
+### Detailed operating instructions:
+
+#### Cleaning the sample area:
+
+Loose particles in the sample area from previous samples can be pulled in to the instrument and skew your result. If there are particles to clean, lightly wet a Kimwipe with isopropanol and use it to wipe up loose particles. If needed, the sample tray and sample tray carrier can be removed for more careful cleaning. This video shows the cleaning process:
+
+<div class="container-video">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CEDb8fk9C0I?si=O2J6BDKxPWnC9m0C"></iframe>
+</div>
+
+#### Loading a sample:
+
+
+
+
+
+
+
+
+The sequence of steps to run a measurement is very straightforward: start the software, connect to the instrument, let it initialize, verify you are saving into the correct database, load a measurement SOP, clean the sample tray if needed and load a sample, run the auto-sequence, save your data, and close the software. 
+
+Since the organization of the software can be confusing, this screen capture video shows the full sequence of steps needed to start the softare, initialize the instrument, and collect and export data. Don't forget, of course, to load your sample!
 
 <div class="container-video43">
   <iframe class="responsive-iframe" src="https://www.youtube.com/embed/TvgfB1BDVO4?si=zmK_IY1oiU3FRg6B"></iframe>
 </div>
 
- If the tray is contaminated with particles from a previous sample, remove them before starting the sequence. The tray can be removed to be cleaned separately, and debris tends to get trapped between the tray and the slab that it sits on. Once the tray is clean use the ¼ tsp measure next to the machine to load your sample into the slot. Keep your sample behind the the marker at the front, so that a background test can be run before the sample is processed. Next, click Auto-Sequence in the top left. You will be prompted to title your sample and add a note. When the test is finished, name your file and save it. 
-
+ 

@@ -111,7 +111,7 @@ ___
 
 ![Microtrac Sync Particle Size Analyzer](./assets/img/particle-sizer.JPG)
 
-This instrument gives particle size distribution data for dry powder samples with particles between 0.01 and 4,000 microns using laser diffraction. 
+This instrument gives particle size distribution data for dry powder samples with particles between 0.24 and 2,000 microns using laser diffraction. 
 
 [Microtrac Sync Particle Size Analyzer Tutorial/SOP](./tutorials/psa.html)  
 
