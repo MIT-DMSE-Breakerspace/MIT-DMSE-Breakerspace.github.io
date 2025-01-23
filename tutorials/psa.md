@@ -77,7 +77,7 @@ Loose particles in the sample area from previous samples can be pulled in to the
 This video shows a typical sample loading process:
 
 <div class="container-video">
-  <iframe class="responsive-iframe" src="https://youtu.be/IbPc-y7S9tU"></iframe>
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/IbPc-y7S9tU?si=WVRutCo-v9ow8Bwf"></iframe>
 </div>
 
 #### Full sequence of software operation:
@@ -95,7 +95,7 @@ After your sample is loaded and the sample tray door is closed, and you run the 
 This video shows the full sample collection process:
 
 <div class="container-video">
-  <iframe class="responsive-iframe" src="https://youtu.be/Mt9QangPK5A"></iframe>
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Mt9QangPK5A?si=Q_4IEbZVe66QyiD5"></iframe>
 </div>
 
 <a name="data"></a>
