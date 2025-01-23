@@ -111,7 +111,9 @@ Data is automatically saved in the database that is active at the time the auto-
 <a name="manuals"></a>
 ### Manufacturer's manuals:
 
-* Links to manual files in dropbox
+* [FLEX Software user manual](https://www.dropbox.com/scl/fi/3ddebzi863eyws7p2mng7/FLEXUserManual.pdf?rlkey=v3t5hi943n80f5qel6b9jsava&dl=0)
+* [Sync Analyzer operating manual](https://www.dropbox.com/scl/fi/7bdbl13wf2qp0opfyu7kf/SyncOps.pdf?rlkey=cngpmueowutw93dp6owwodvwf&dl=0)
+* [Folder with all Microtrac manuals](https://www.dropbox.com/scl/fo/7zzq8zavh4sdgp6ocsvxp/AOtHdsXKGdp0zR7qAeWuJnA?rlkey=fx9idwfle5tvuod39w0djj7ew&dl=0)
 
 <a name="links"></a>
 ### Links:
