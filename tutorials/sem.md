@@ -128,7 +128,7 @@ _For a more complete description and instructions on how to use any of these fea
 
 * _Phenom XL:_ If the SEM fails to start press the eject button to open and close the door and reinitialize the sample loading process
 * _Phenom XL:_ In either live EDS or EDS, if you do not press the stop button, and attempt to return to observation mode, you will get an error message, and need to return to where you were and press stop **add image/gif**
-* Sensitive samples may experience [degredation]](https://www.thermofisher.com/us/en/home/materials-science/learning-center/applications/sample-degradation-scanning-electron-microscope-sem.html), often in the form of cracks on the surface, or the sample may appear to be melting or boiling. Lowering acceleration voltage, beam intensity, and magnification will all help slow the rate of degredation.
+* Sensitive samples may experience [degredation](https://www.thermofisher.com/us/en/home/materials-science/learning-center/applications/sample-degradation-scanning-electron-microscope-sem.html), often in the form of cracks on the surface, or the sample may appear to be melting or boiling. Lowering acceleration voltage, beam intensity, and magnification will all help slow the rate of degredation.
 * EDS low or no counts: check working distance is between 4 mm and 7 mm, and if not, adjust stage height to correct working distance into this range. Also verify acceleration voltage is 15kV and beam intensity is set to map
 
 <a name="manuals"></a> 
