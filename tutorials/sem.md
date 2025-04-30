@@ -31,7 +31,7 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 * Log on to instrument workstation using your MIT Kerberos
 * Start the Phenom User Interface software
 * Wake the instrument up if needed
-	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument in [Settings/Phenom/Status](../assets/img/tutorials/SEM/connect.PNG)
+	* The first time you log on, and occasionally thereafter, you may need to connect to the instrument in [Settings/Phenom/Status](../assets/img/tutorials/sem/connect.PNG)
 
 <a name="operation"></a> 
 #### Operation:
