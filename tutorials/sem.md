@@ -67,16 +67,29 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 <a name="prep"></a>
 #### Sample prep basics:
 
-* Prepare samples externally at the sample prep table
+* Prepare samples externally on the sample prep table
 * Firmly attach samples to stub
 * Remove loose debris with compressed air
 
-#### Solid sample prep (basic)
+#### Solid sample prep (basic):
 
-* Place a bare sample stub in a sample tray __ADD IMAGES__
+* Place a bare sample stub in a sample prep tray __ADD IMAGES__
 * Attach a double-sided carbon pad to the stub
 * Attach the sample to the pad
+* Blow sample with canned air to make sure it is well attached and there are no loose particles
 * For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
+
+#### Powder sample prep (basic):
+
+* Place a bare sample stub in a sample prep tray
+* Attach a double-sided carbon pad to the stub
+* Use a spatula or similar to pick up a small amount of sample and transfer it to the carbon pad with a gentle flick - the goal is to spread grains as evenly as possible, and keep make sure there is no more than a single layer on the pad
+* Blow sample with canned air to make sure everything is well attached and there are no loose particles
+
+#### Sample conductivity and sputter coating:
+
+Samples that are not electrically conductive will "charge" if observed under high vacuum mode. With no path to ground, electrons will build up on the sample surface, and the negative charge will repel electrons from the beam back up to the detector, making the image glow white (high amounts of signal) - this is called charging. 
+
 
 <a name="details"></a> 
 ### Detailed operating instructions: 
