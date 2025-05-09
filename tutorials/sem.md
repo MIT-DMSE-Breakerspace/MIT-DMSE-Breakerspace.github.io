@@ -88,7 +88,11 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 
 #### Sample conductivity and sputter coating:
 
-Samples that are not electrically conductive will "charge" if observed under high vacuum mode. With no path to ground, electrons will build up on the sample surface, and the negative charge will repel electrons from the beam back up to the detector, making the image glow white (high amounts of signal) - this is called charging. 
+Samples that are not electrically conductive will "charge" if observed under high vacuum mode. With no path to ground, electrons will build up on the sample surface, and the negative charge will repel electrons from the beam back up to the detector, making the image slowly glow white - this is called charging. Mild charging may also cause the image to distort or creep, as the accumulated electrons on the sample steer the electron beam. 
+
+There are two strategies to mitigate charging effects:
+
+1. Operate the microscope in "low" vacuum mode. In this mode, some ionized gas molecules remain in the chamber and are able to lift charge away from the surface. Pros to using low vacuum mode are no additional sample prep, which makes it a non-destructive method to image non-conductive samples. Cons are lower resolution/lower magnification than can be achieved with conductive samples, and the SED is not available.  
 
 
 <a name="details"></a> 
