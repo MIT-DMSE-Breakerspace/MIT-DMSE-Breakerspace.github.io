@@ -3,7 +3,7 @@ layout: default
 ---
 # Breakerspace Instrument Tutorial Template
 
-## Overview
+## Overview Test
 
 Matches info/image for instrument on lab page
 
@@ -85,8 +85,6 @@ Click on the Live EDS icon in the top right. Click anywhere on the live feed to 
 	* Before navigating away from an EDS make sure that it isn’t active or else the instrument might lock itself in place. To resolve the issue, go back to the EDS, start it again, and turn it off.
 
 	* If you have a brittle sample, you may have to use a low voltage and beam intensity to prevent damage.
-
-
 
 
 
