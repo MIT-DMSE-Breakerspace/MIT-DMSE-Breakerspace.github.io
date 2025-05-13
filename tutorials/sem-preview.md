@@ -90,7 +90,7 @@ If your sample is wet, you need to dehydrate it or freeze it. This is because, w
 * Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider
 * Once finished, remove the sample holder from the SEM. Then, click off on the [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg). Once the stage has returned to room temperature, turn off the main unit with the [on-off switch](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg).
 <figure>
-  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%"; margin:0"> 
+  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%; margin:0"> 
 </figure>
 
 #### Non-conductive sample prep:
