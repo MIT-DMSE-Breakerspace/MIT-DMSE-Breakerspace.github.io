@@ -67,24 +67,11 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 <a name="prep"></a>
 #### Sample prep basics:
 
-* Prepare samples externally on the sample prep table
-* Firmly attach samples to stub
-* Remove loose debris with compressed air
-
-#### Solid sample prep (basic):
-
-* Place a bare sample stub in a sample prep tray
+* On the sample prep table, place  a bare sample stub in a sample prep tray
 * Attach a double-sided carbon pad to the stub
-* Attach the sample to the pad
-* Blow sample with compressed air to make sure it is well attached and there are no loose particles
+* Attach the sample to the pad. If powder, spread as evenly as possible and make sure there is only one layer of powder.
+* Blow sample with compressed air to remove loose particles. This is important as to keep the detectors clean.
 * For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
-
-#### Powder sample prep (basic):
-
-* Place a bare sample stub in a sample prep tray
-* Attach a double-sided carbon pad to the stub
-* Use a spatula or similar to pick up a small amount of sample and transfer it to the carbon pad with a gentle flick - the goal is to spread grains as evenly as possible, and keep make sure there is no more than a single layer on the pad
-* Blow sample with canned air to make sure everything is well attached and there are no loose particles
 
 #### Wet sample prep:
 If your sample is wet, you need to dehydrate it or freeze it. This is because, when under a vaccum, liquid water in your sample will gas off and cause damage. 
@@ -106,14 +93,11 @@ If your sample is wet, you need to dehydrate it or freeze it. This is because, w
   <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%; margin:0"> 
 </figure>
 
-
-
-
-#### Sample conductivity and sputter coating:
+#### Non-conductive sample prep:
 
 Samples that are not electrically conductive will "charge" if observed under high vacuum mode. With no path to ground, electrons will build up on the sample surface, and the negative charge will repel electrons from the beam back up to the detector, making the image slowly glow white - this is called charging. Mild charging may also cause the image to distort or creep, as the accumulated electrons on the sample steer the electron beam. 
 
-There are two strategies to mitigate charging effects:
+There are three main strategies to mitigate charging effects:
 
 1. Operate the microscope in "low" vacuum mode. In this mode, some ionized gas molecules remain in the chamber and are able to lift charge away from the surface. Pros to using low vacuum mode are no additional sample prep, which makes it a non-destructive method to image non-conductive samples. Cons are lower resolution/lower magnification than can be achieved with conductive samples, and the SED is not available.
 2. Sputter coat your sample with gold in the [sputter coater](../assets/img/tutorials/sem/sputter_coater.jpeg) in [coating mode](assets/img/tutorials/sem/sputter_coater_gold_setting.jpeg).
@@ -194,4 +178,5 @@ _For a more complete description and instructions on how to use any of these fea
 ### Exercises:
 
 * Cut a slice of a roasted coffee bean. Gold sputter it, then image it to determine the average cavity size.
-* 
+* Image a small piece of hair. Observe the scales on the surface. What does the end of a hair look like cut versus ripped apart?
+* Prepare a sample of salt and sugar. See if you can distinguish the two based on their crystal structure. Use EDS on the Phenom XL to see if you are right.
