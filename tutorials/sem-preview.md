@@ -100,7 +100,7 @@ Samples that are not electrically conductive will "charge" if observed under hig
 There are three main strategies to mitigate charging effects:
 
 1. Operate the microscope in "low" vacuum mode. In this mode, some ionized gas molecules remain in the chamber and are able to lift charge away from the surface. Pros to using low vacuum mode are no additional sample prep, which makes it a non-destructive method to image non-conductive samples. Cons are lower resolution/lower magnification than can be achieved with conductive samples, and the SED is not available.
-2. Sputter coat your sample with gold in the [sputter coater](../assets/img/tutorials/sem/sputter_coater.jpeg) in [coating mode](assets/img/tutorials/sem/sputter_coater_gold_setting.jpeg).
+2. Sputter coat your sample with gold in the [sputter coater](../assets/img/tutorials/sem/sputter_coater.jpeg) in [coating mode](../assets/img/tutorials/sem/sputter_coater_gold_setting.jpeg).
 3. Hold your sample down with a lot of copper tape.
 
 
