@@ -90,7 +90,7 @@ If your sample is wet, you need to dehydrate it or freeze it. This is because, w
 * Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider
 * Once finished, remove the sample holder from the SEM. Then, click off on the [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg). Once the stage has returned to room temperature, turn off the main unit with the [on-off switch](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg).
 <figure>
-  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%; margin:0"> 
+  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%"; margin:0"> 
 </figure>
 
 #### Non-conductive sample prep:
@@ -153,7 +153,7 @@ _For a more complete description and instructions on how to use any of these fea
 ### Common failure modes:
 
 * _Phenom XL:_ If the SEM fails to start press the eject button to open and close the door and reinitialize the sample loading process
-* _Phenom XL:_ In either live EDS or EDS, if you do not press the stop button, and attempt to return to observation mode, you will get an error message, and need to return to where you were and press stop **add image/gif**
+* _Phenom XL:_ In either live EDS or EDS, if you do not press the stop button, and attempt to return to observation mode, you will get an error message, and need to return to where you were and press stop
 * Sensitive samples may experience [degredation](https://www.thermofisher.com/us/en/home/materials-science/learning-center/applications/sample-degradation-scanning-electron-microscope-sem.html), often in the form of cracks on the surface, or the sample may appear to be melting or boiling. Lowering acceleration voltage, beam intensity, and magnification will all help slow the rate of degredation.
 * EDS low or no counts: check working distance is between 4 mm and 7 mm, and if not, adjust stage height to correct working distance into this range. Also verify acceleration voltage is 15kV and beam intensity is set to map
 
