@@ -90,18 +90,18 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 If your sample is wet and you do not want to dehydrate it, the Breakerspace's cold stage can bring it below freezing. Then, when under a vaccum, water in your sample will not gas off and cause damage. 
 
 ##### How to use the sample stage
-* Check if the [water box](../assets/img/tutorials/SEM/cold_stage_refilling_water.jpeg) needs refilling. The cover can be screwed off with a 2 mm Allen wrench. 
-* Attach your sample to a metal stud with [cryo-embedding compound](../assets/img/tutorials/SEM/cold_stage_cryo_embedding_fluid.jpeg)
-* Insert metal stud into cold stage. Use a 1.5 mm allen wrench to [adjust the height](../assets/img/tutorials/SEM/cold_stage_adjusting_sample_height.jpeg) until the top of your sample is just below the edge of the sample holder. 
-* Insert the [connector block](assets/img/tutorials/SEM/cold_stage_gif_putting_in_connector.gif) into SEM.
-* Turn on cold stage, by [switching on the main unit](../assets/img/tutorials/SEM/cold_stage_on_switch.jpeg) and then clicking auto on the  controller.
+* Check if the [water box](../assets/img/tutorials/sem/cold_stage_refilling_water.jpeg) needs refilling. The cover can be screwed off with a 2 mm Allen wrench. 
+* Attach your sample to a metal stud with [cryo-embedding compound](../assets/img/tutorials/sem/cold_stage_cryo_embedding_fluid.jpeg)
+* Insert metal stud into cold stage. Use a 1.5 mm allen wrench to [adjust the height](../assets/img/tutorials/sem/cold_stage_adjusting_sample_height.jpeg) until the top of your sample is just below the edge of the sample holder. 
+* Insert the [connector block](assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif) into SEM.
+* Turn on cold stage, by [switching on the main unit](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg) and then clicking auto on the  controller.
 * Wait until the stage reaches the goal temperature (usually -20C). The glue will turn opaque once frozen. If your sample is thick, wait a little longer until the top of your sample is frozen. However, if you wait too long, your sample may become covered in ice crystals from condensation.
 <figure>
-	<img src="../assets/img/tutorials/SEM/cold_stage_achieving_minus20C.jpeg" alt="Sample stage reaches -20 Celcius" style="width:32%; margin:0"> 
+	<img src="../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg" alt="Sample stage reaches -20 Celcius" style="width:32%; margin:0"> 
 </figure>
 *Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider.
 <figure>
-	<img src="../assets/img/tutorials/SEM/cold_stage_gif_putting_in_sample.gi" alt="Putting cold stage into SEM" style="width:32%; margin:0"> 
+	<img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gi" alt="Putting cold stage into SEM" style="width:32%; margin:0"> 
 </figure>
 *Once finished, remove the sample holder from the SEM. Then, click off on the controller. Once the stage has returned to room temperature, turn off the main unit with the on-off switch.
 
