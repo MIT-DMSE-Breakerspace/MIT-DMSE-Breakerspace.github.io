@@ -73,10 +73,10 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 
 #### Solid sample prep (basic):
 
-* Place a bare sample stub in a sample prep tray __ADD IMAGES__
+* Place a bare sample stub in a sample prep tray
 * Attach a double-sided carbon pad to the stub
 * Attach the sample to the pad
-* Blow sample with canned air to make sure it is well attached and there are no loose particles
+* Blow sample with compressed air to make sure it is well attached and there are no loose particles
 * For an expanded discussion of sample prep techniques, see page 15 of [the manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
 
 #### Powder sample prep (basic):
@@ -86,20 +86,24 @@ Our Phenom XL has a large 100x100 mm sample stage, a low vacuum mode for non-con
 * Use a spatula or similar to pick up a small amount of sample and transfer it to the carbon pad with a gentle flick - the goal is to spread grains as evenly as possible, and keep make sure there is no more than a single layer on the pad
 * Blow sample with canned air to make sure everything is well attached and there are no loose particles
 
-#### Wet sample prep
-If your sample is wet and you do not want to dehydrate it, the Breakerspace's cold stage can bring it below freezing. Then, when under a vaccum, water in your sample will not gas off and cause damage. 
+#### Wet sample prep:
+If your sample is wet, you need to dehydrate it or freeze it. This is because, when under a vaccum, liquid water in your sample will gas off and cause damage. 
 
-##### How to use the cold stage
+##### How to dehydrate your sample:
+* Place your sample in the [sputter coater](../assets/img/tutorials/sem/sputter_coater.jpeg).
+* Click mode until you reach the [drying mode](../assets/img/tutorials/sem/sutter_coater_drying_setting.jpeg). Set drying time and start. 
+
+##### How to freeze your sample using the cold stage:
 * Check if the [water box](../assets/img/tutorials/sem/cold_stage_refilling_water.jpeg) needs refilling. The cover can be screwed off with a 2 mm Allen wrench. 
 * Attach your sample to a metal stud with [cryo-embedding compound](../assets/img/tutorials/sem/cold_stage_cryo_embedding_fluid.jpeg)
 * Insert metal stud into cold stage. Use a 1.5 mm allen wrench to [adjust the height](../assets/img/tutorials/sem/cold_stage_adjusting_sample_height.jpeg) until the top of your sample is just below the edge of the sample holder. 
 * Insert the [connector block](../assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif) into SEM.
 * Turn on cold stage, by [switching on the main unit](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg) and then clicking auto on the  [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg).
-* Wait until the stage reaches the goal temperature (usually -20C). The glue will turn opaque once frozen. If your sample is thick, wait a little longer until the top of your sample is frozen. However, if you wait too long, your sample may become covered in ice crystals from condensation.
+* Wait until the stage reaches the goal temperature (usually -20C). The glue will turn [opaque](../assets/img/tutorials/sem/cold_stage_frozen_sample.jpeg) once frozen. If your sample is thick, wait a little longer until the top of your sample is frozen. However, if you wait too long, your sample may become covered in ice crystals from condensation.
 * Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider
 * Once finished, remove the sample holder from the SEM. Then, click off on the controller. Once the stage has returned to room temperature, turn off the main unit with the on-off switch.
 <figure>
-  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting cold stage into SEM" style="width:32%; margin:0"> 
+  <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%; margin:0"> 
 </figure>
 
 
@@ -111,7 +115,9 @@ Samples that are not electrically conductive will "charge" if observed under hig
 
 There are two strategies to mitigate charging effects:
 
-1. Operate the microscope in "low" vacuum mode. In this mode, some ionized gas molecules remain in the chamber and are able to lift charge away from the surface. Pros to using low vacuum mode are no additional sample prep, which makes it a non-destructive method to image non-conductive samples. Cons are lower resolution/lower magnification than can be achieved with conductive samples, and the SED is not available.  
+1. Operate the microscope in "low" vacuum mode. In this mode, some ionized gas molecules remain in the chamber and are able to lift charge away from the surface. Pros to using low vacuum mode are no additional sample prep, which makes it a non-destructive method to image non-conductive samples. Cons are lower resolution/lower magnification than can be achieved with conductive samples, and the SED is not available.
+2. Sputter coat your sample with gold in the [sputter coater](../assets/img/tutorials/sem/sputter_coater.jpeg) in [coating mode](assets/img/tutorials/sem/sputter_coater_gold_setting.jpeg).
+3. Hold your sample down with a lot of copper tape.
 
 
 <a name="details"></a> 
@@ -131,7 +137,7 @@ There are two strategies to mitigate charging effects:
 * Load the sample stage into the instrument
 * Close the door and your sample should be visible in the NavCam
 
-<a name="loading"></a>
+<a name="data"></a> 
 #### Characterization:
 
 __Customize:__ When your sample is loading, this is a good time to visit [Settings/Customize](../assets/img/tutorials/SEM/customizer.PNG) and change the _Label_ and _Location_ fields to a name and folder that are relevant to your project
@@ -187,4 +193,5 @@ _For a more complete description and instructions on how to use any of these fea
 <a name="exercise"></a> 
 ### Exercises:
 
-* coming soon
+* Cut a slice of a roasted coffee bean. Gold sputter it, then image it to determine the average cavity size.
+* 
