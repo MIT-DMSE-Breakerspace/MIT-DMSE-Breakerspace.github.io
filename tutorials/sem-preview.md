@@ -88,7 +88,7 @@ If your sample is wet, you need to dehydrate it or freeze it. This is because, w
 * Turn on cold stage, by [switching on the main unit](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg) and then clicking auto on the  [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg).
 * Wait until the stage reaches the goal temperature (usually -20C). The glue will turn [opaque](../assets/img/tutorials/sem/cold_stage_frozen_sample.jpeg) once frozen. If your sample is thick, wait a little longer until the top of your sample is frozen. However, if you wait too long, your sample may become covered in ice crystals from condensation.
 * Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider
-* Once finished, remove the sample holder from the SEM. Then, click off on the controller. Once the stage has returned to room temperature, turn off the main unit with the on-off switch.
+* Once finished, remove the sample holder from the SEM. Then, click off on the [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg). Once the stage has returned to room temperature, turn off the main unit with the [on-off switch](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg).
 <figure>
   <img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting sample holder into SEM" style="width:50%; margin:0"> 
 </figure>
