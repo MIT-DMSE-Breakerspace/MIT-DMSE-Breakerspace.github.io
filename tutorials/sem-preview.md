@@ -99,11 +99,11 @@ If your sample is wet and you do not want to dehydrate it, the Breakerspace's co
 <figure>
 	<img src="../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg" alt="Sample stage reaches -20 Celcius" style="width:32%; margin:0"> 
 </figure>
-*Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider.
+* Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider.
 <figure>
 	<img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Putting cold stage into SEM" style="width:32%; margin:0"> 
 </figure>
-*Once finished, remove the sample holder from the SEM. Then, click off on the controller. Once the stage has returned to room temperature, turn off the main unit with the on-off switch.
+* Once finished, remove the sample holder from the SEM. Then, click off on the controller. Once the stage has returned to room temperature, turn off the main unit with the on-off switch.
 
 
 #### Sample conductivity and sputter coating:
