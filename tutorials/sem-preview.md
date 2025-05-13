@@ -93,7 +93,7 @@ If your sample is wet and you do not want to dehydrate it, the Breakerspace's co
 * Check if the [water box](../assets/img/tutorials/sem/cold_stage_refilling_water.jpeg) needs refilling. The cover can be screwed off with a 2 mm Allen wrench. 
 * Attach your sample to a metal stud with [cryo-embedding compound](../assets/img/tutorials/sem/cold_stage_cryo_embedding_fluid.jpeg)
 * Insert metal stud into cold stage. Use a 1.5 mm allen wrench to [adjust the height](../assets/img/tutorials/sem/cold_stage_adjusting_sample_height.jpeg) until the top of your sample is just below the edge of the sample holder. 
-* Insert the [connector block](assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif) into SEM.
+* Insert the [connector block](../assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif) into SEM.
 * Turn on cold stage, by [switching on the main unit](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg) and then clicking auto on the  [controller](../assets/img/tutorials/sem/cold_stage_achieving_minus20C.jpeg).
 * Wait until the stage reaches the goal temperature (usually -20C). The glue will turn opaque once frozen. If your sample is thick, wait a little longer until the top of your sample is frozen. However, if you wait too long, your sample may become covered in ice crystals from condensation.
 * Lift sample holder from the stand and insert into the SEM. Tuck the black wire connecting to the sample holder under the edge of the SEM divider
