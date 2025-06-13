@@ -37,7 +37,7 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 * Click Home button[ADD IMAGE], then click Test. From here, you can run a crude "QuickTest" or choose from any method.
 * Set travel limits[ADD IMAGE] to prevent the head from bumping into anything.
 * Once on the testing page, press unlock then go on the hand controller to start testing.
-* The test will end once sample snaps. To stop the test before that, you can press stop on the hand controller[ADD IMAGE] or the red emergency stop button[ADD IMAGE] 
+* The test will end once sample snaps. To stop the test before that, you can press stop on the hand controller[ADD IMAGE] or the red emergency stop button[ADD IMAGE]
 
 <a name="shutdown"></a>
 ####  Instrument shut down:
@@ -62,42 +62,44 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 
 * To start all set ups, you need to choose your load cell, 50 kN or 5 kN for smaller, weaker samples.
 	* The 50 kN cell always stays attached to the machine.
- 	* To install the 5 kN cell, pull it up 
-
-#### Tensile Ttsting
-
-
-
-#### Compressive testing
-
-
-
-#### Flexure testing
-
-* include sample loading/unloading
-* as needed explanations of each step, eg. collecting background, sample loading, etc.
-* software features
-* images/videos inline as needed
+ 	* To install the 5 kN cell, insert the thin end of the 5 kN cell into the bottom of the 50 kN cell. Insert a clevis pin through the two, then attach a safety clip. See here[ADD IMAGE] for an example.
+  	* Rotate the metal ring[ADD IMAGE] right until tight.
+  	* If using the 5 kN cell, it is crucial to plug the 5 kN load cell connector[ADD IMAGE] into the side of the machine[ADD IMAGE].
+* All parts will be attached in a simular fashion. Align the internal holes and insert a clevis pin. Then add a safety clip and rotate the metal ring to secure.
+	* Use a spanner wrench[ADD IMAGE] to tighten the metal rings if necessary. 
+* Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
+	* Tensile testing with 5 kN head
+ 	* Tensile testing with 50 kN head
+	* Compressive testing with 5 kN head
+ 	* Flexure testing
+ 
+#### Video extensometer
+* Click the on button[ADD IMAGE]
+* In 
 
 <a name="data"></a>
 ### Data processing and analysis:
 
-* what softare we recommend
-* typical steps
-* fill in with more detail as time allows, and/or add standalone data processing tutorials
-* images/videos inline as needed
+* By default the software will output a force versus displacement graph.
+* When creating a method you can ask the software to automatically calculate a lot of properties for you[ADD IMAGE].
 
 <a name="failures"></a>
 ### Common failure modes:
 
-* these are where people frequently get stuck
-* example may include starting DSX software before microscope powered up
-* images/videos inline as needed
+* Unless the red light of the video extensometer appears, the video extensometer is not on. Try pressing the on button again.  
+* Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the side clips[ADD IMAGE] when inserting it. 
+* On the hand controller, if the buttons are not responding to you, try pressing unlock. [ADD IMAGE]. This will get the machine out of disabled mode and into set up mode, where you can move the head.
+
 
 <a name="manuals"></a>
 ### Manufacturer's manuals:
 
-* Links to manual files in dropbox
+* Video extensometer operator guide
+* 6800 Dual Column Table Model operator guide
+* Miniature grips for low force testing operators guide
+* Screw action grips reference manual
+* 5 kN flexure fixture reference manual
+* 5 kN, 10 kN, and 50 kN wedge grips reference manual
 
 <a name="links"></a>
 ### Links:
