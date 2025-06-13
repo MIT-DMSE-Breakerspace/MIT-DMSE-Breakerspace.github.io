@@ -32,12 +32,12 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 #### Operation: 
 
 * Set up your mechanical test set up. See the [detailed operation instruction](#details) for how to set up different types of samples.
-* Ensure the correct load cell connector[ADD IMAGE] is inserted. 
+* Ensure the correct load cell connector (5 kN or 50 kN) is inserted. 
 * Click Method[ADD IMAGE]. Here you can create your own method by choosing a template or look at preexisting methods.
 * Click Home button[ADD IMAGE], then click Test. From here, you can run a crude "QuickTest" or choose from any method.
 * Set travel limits[ADD IMAGE] to prevent the head from bumping into anything.
 * Once on the testing page, press unlock then go on the hand controller to start testing.
-* The test will end once sample snaps. To stop the test before that, you can press stop on the hand controller[ADD IMAGE] or the red emergency stop button[ADD IMAGE]
+* The test will end once sample snaps. To stop the test before that, you can press stop on the [hand controller](.../assets/img/tutorials/instron/ANNOTATED hand controller in set up.JPG) or the red emergency stop button[ADD IMAGE]
 
 <a name="shutdown"></a>
 ####  Instrument shut down:
@@ -62,22 +62,22 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 
 * To start all set ups, you need to choose your load cell, 50 kN or 5 kN for smaller, weaker samples.
 	* The 50 kN cell always stays attached to the machine.
- 	* To install the 5 kN cell, insert the thin end of the 5 kN cell into the bottom of the 50 kN cell. Insert a clevis pin through the two, then attach a safety clip. See here[ADD IMAGE] for an example.
-  	* Rotate the metal ring[ADD IMAGE] right until tight.
-  	* If using the 5 kN cell, it is crucial to plug the 5 kN load cell connector[ADD IMAGE] into the side of the machine[ADD IMAGE].
+ 	* To install the 5 kN cell, insert the thin end of the 5 kN cell into the bottom of the 50 kN cell. Insert a clevis pin through the two, then attach a safety clip.
+  	* Rotate the metal ring to the right until tight. 
+  	* If using the 5 kN cell, it is crucial to plug the 5 kN load cell connector in the [right place](.../assets/img/tutorials/instron/ANNOTATED connection port instron.JPG).
 * All parts will be attached in a simular fashion. Align the internal holes and insert a clevis pin. Then add a safety clip and rotate the metal ring to secure.
-	* Use a spanner wrench[ADD IMAGE] to tighten the metal rings if necessary. 
+	* Use a [spanner wrench](.../assets/img/tutorials/instron/spanner wrench.jpeg) to tighten the metal rings if necessary. 
 * Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
-	* Tensile testing with 5 kN head
- 	* Tensile testing with 50 kN head
-  		*These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.  
-	* Compressive testing with 5 kN head
-
- 	* Flexure testing
+	* [Tensile testing with 5 kN head](.../assets/img/tutorials/instron/ANNOTATED instron sop 5 kN tensile set up.JPG)
+ 	* [Tensile testing with 50 kN head](.../assets/img/tutorials/instron/ANNOTATED instron sop 50 kN wrench set up.JPG)
+  		*These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.
+    		*[Anatomy of the 50 kN wedge grip](.../assets/img/tutorials/instron/ANNOTATED 50 kN wrench grip.JPG)
+	* [Compressive testing with 50 kN head](.../assets/img/tutorials/instron/ANNOTATED instron sop compression set up.JPG)
+ 	* [Flexure testing with 5 kN head](.../assets/img/tutorials/instron/ANNOTATED instron sop flexure set up.JPG)
  
 #### Video extensometer
 * Click the on button[ADD IMAGE]
-* In 
+
 
 <a name="data"></a>
 ### Data processing and analysis:
@@ -90,7 +90,7 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 
 * Unless the red light of the video extensometer appears, the video extensometer is not on. Try pressing the on button again.  
 * Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the side clips[ADD IMAGE] when inserting it. 
-* On the hand controller, if the buttons are not responding to you, try pressing unlock. [ADD IMAGE]. This will get the machine out of disabled mode and into set up mode, where you can move the head.
+* On the hand controller, if the buttons are not responding to you, try pressing [unlock](.../assets/img/tutorials/instron/ANNOTATED hand controller when disabled.JPG). This will get the machine out of disabled mode and into set up mode, where you can move the head.
 * If your force-displacement curve looks wrong, makes sure that all attachments are on tightly.
 * If your sample keeps breaking right at the grip face, you may need to loosen the grips a little bit, or try a different grip type.
 
