@@ -70,7 +70,9 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 * Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
 	* Tensile testing with 5 kN head
  	* Tensile testing with 50 kN head
+  		*These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.  
 	* Compressive testing with 5 kN head
+
  	* Flexure testing
  
 #### Video extensometer
@@ -89,6 +91,8 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 * Unless the red light of the video extensometer appears, the video extensometer is not on. Try pressing the on button again.  
 * Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the side clips[ADD IMAGE] when inserting it. 
 * On the hand controller, if the buttons are not responding to you, try pressing unlock. [ADD IMAGE]. This will get the machine out of disabled mode and into set up mode, where you can move the head.
+* If your force-displacement curve looks wrong, makes sure that all attachments are on tightly.
+* If your sample keeps breaking right at the grip face, you may need to loosen the grips a little bit, or try a different grip type.
 
 
 <a name="manuals"></a>
