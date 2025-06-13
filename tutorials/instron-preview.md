@@ -94,21 +94,20 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 <a name="manuals"></a>
 ### Manufacturer's manuals:
 
-* Video extensometer operator guide
-* 6800 Dual Column Table Model operator guide
-* Miniature grips for low force testing operators guide
-* Screw action grips reference manual
-* 5 kN flexure fixture reference manual
-* 5 kN, 10 kN, and 50 kN wedge grips reference manual
+* [Video extensometer operator guide](https://www.dropbox.com/scl/fi/rgb05cbfo30mf80uwskek/video-extensometer-ave2-2663-901-and-sve2-2663-902-operator-guide.pdf?rlkey=qfhgbcfwtsl57fdbellgg206w&st=h7hcnio8&dl=0)
+* [6800 Dual Column Table Model operator guide](https://www.dropbox.com/scl/fi/jppq0ifw1ricmdghsguca/6800-Dual-Column-Table-Model-Operator-Guide.pdf?rlkey=n7sm0h9v6vqqvu9ppnk0oessj&st=7ztz947o&dl=0)
+* [Miniature grips for low force testing operators guide](https://www.dropbox.com/scl/fi/zprr8ua5ma26lzqb31czo/2711-006-miniature-grips-for-low-force-testing-operators-guide.pdf?rlkey=a26sizgotrx3beaa1iujvgp0r&st=njxjs6bs&dl=0)
+* [Screw action grips reference manual](https://www.dropbox.com/scl/fi/nf5pnttlapjawi8cm94ms/2710-11x-screw-action-grips-reference-manual.pdf?rlkey=7q1aeazj97xoshgy7n29297ed&st=ozgbhy08&dl=0)
+* [5 kN flexure fixture reference manual](https://www.dropbox.com/scl/fi/59aeqcu8o9b7isv7gu93a/5kn-flexure-fixture-reference-manual.pdf?rlkey=f4wtjfybmg86kruq1hcp32nms&st=1u3dpdjr&dl=0)
+* [5 kN, 10 kN, and 50 kN wedge grips reference manual](https://www.dropbox.com/scl/fi/3iaxhdxfo8pwxtj8t7m2i/5kn-10knand50kn-wedge-grips-reference-manual.pdf?rlkey=rjm1t839hzfv8yzly7mihjh2n&st=m76u4b4n&dl=0)
 
 <a name="links"></a>
 ### Links:
 
-* list of links, ie. good video tutorials, some student project, anything relevant
+* [Instron FAQ](https://www.instron.com/en/service-and-support/technical-support/faqs)
 
 <a name="exercises"></a>
 ### Exercises:
 
-* intro for anyone - eg honey bee on optical
-* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-* advanced exercise - deconvolution of compound sample from spectrometer, etc.
+* Beginner: Set up a 50 kN tensile testing set up, load a sample, and run it. You should see the sample's force-displacement curve appear.
+* Advanced: Use the video extensometer to have the machine measure strain. 
