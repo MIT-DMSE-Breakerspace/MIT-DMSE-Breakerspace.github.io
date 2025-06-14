@@ -31,7 +31,7 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 <a name="operation"></a>
 #### Operation: 
 
-* Set up your mechanical test set up. See the [detailed operation instruction](#details) for how to set up different types of samples.
+* Set up your mechanical test set up. See the [detailed operation instructions](#details) for how to set up different types of samples.
 * Ensure the correct load cell connector (5 kN or 50 kN) is inserted. 
 * Click Method[ADD IMAGE]. Here you can create your own method by choosing a template or look at preexisting methods.
 * Click Home button[ADD IMAGE], then click Test. From here, you can run a crude "QuickTest" or choose from any method.
