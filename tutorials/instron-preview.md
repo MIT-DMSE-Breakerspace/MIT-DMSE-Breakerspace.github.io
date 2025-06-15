@@ -112,7 +112,6 @@ Follow these diagrams to learn generic set-ups for tensile, compressive, and fle
 
 <a name="links"></a>
 ### Links:
-
 * [Instron FAQ](https://www.instron.com/en/service-and-support/technical-support/faqs)
 
 <a name="exercises"></a>
