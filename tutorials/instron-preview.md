@@ -70,8 +70,8 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 * Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
 	* [Tensile testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
  	* [Tensile testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
-  		*These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.
-    		*[Anatomy of the 50 kN wedge grip](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
+		*These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.
+		*[Anatomy of the 50 kN wedge grip](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
 	* [Compressive testing with 50 kN head](..assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
  	* [Flexure testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
  
