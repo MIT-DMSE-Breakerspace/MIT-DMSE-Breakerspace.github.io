@@ -66,7 +66,8 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
   	* Rotate the metal ring to the right until tight. 
   	* If using the 5 kN cell, it is crucial to plug the 5 kN load cell connector in the [right place](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG).
 * All parts will be attached in a simular fashion. Align the internal holes and insert a clevis pin. Then add a safety clip and rotate the metal ring to secure.
-	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner wrench.jpeg) to tighten the metal rings if necessary. 
+	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if necessary.
+
 Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
 * [Tensile testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
 * [Tensile testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
