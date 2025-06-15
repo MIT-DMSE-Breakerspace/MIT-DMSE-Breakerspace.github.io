@@ -33,20 +33,19 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 
 * Set up your mechanical test set up. See the [detailed operation instructions](#details) for how to set up different types of samples.
 * Ensure the correct load cell connector (5 kN or 50 kN) is inserted. 
-* Click Method[ADD IMAGE]. Here you can create your own method by choosing a template or look at preexisting methods.
-* Click Home button[ADD IMAGE], then click Test. From here, you can run a crude "QuickTest" or choose from any method.
-* Set travel limits[ADD IMAGE] to prevent the head from bumping into anything.
+* On the [home screen](../assets/img/tutorials/instron/test_method_admin.PNG), click Method. Here you can create your own method by choosing a template or look at preexisting methods.
+* Return to the home screen by clicking the house in the top left. Then, click Test. From here, you can run a crude "QuickTest" or choose from any method.
+* When prompted, set travel limits to prevent the head from bumping into anything.
 * Once on the testing page, press unlock then go on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) to start testing.
-* The test will end once sample snaps. To stop the test before that, you can press stop on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or the red emergency stop button[ADD IMAGE]
-
+* The test will end once sample snaps. To stop the test before that, you can press stop on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG). 
 <a name="shutdown"></a>
 ####  Instrument shut down:
 
-* Save your data using the save button[ADD IMAGE].
+* Save your data.
 * Disassemble your testing set up. Return all parts to the boxes they came from.
 * Wipe up any debris.
 * Close the Bluehill Universal software and log off the computer.
-* Ensure the Instron is in disabled mode[ADD IMAGE]
+* Ensure the Instron is in disabled mode.
 
 <a name="materials"></a> 
 ### Compatible materials and sample prep: 
@@ -71,29 +70,33 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
 * [Tensile testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
 * [Tensile testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
-	* These tensile diagrams show the use of wedge grips. The Breakerspace also has screw action grips[ADD IMAGE], which has a max load of 5 kN and works better for delicate or irregular samples.
+	* These tensile diagrams show the use of wedge grips. The Breakerspace also has [screw action grips](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG), which has a max load of 5 kN and works better for delicate or irregular samples.
 	* [Anatomy of the 50 kN wedge grip](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
 * [Compressive testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
 
 * [Flexure testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
  
 #### Video extensometer
-* Click the on button[ADD IMAGE]
-
+* Click the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button.
+* Draw dots on your sample a set amount apart using a [guide and paint markers](../assets/img/tutorials/instron/ANNOTATED_drawing_dots.JPG)
+* Load your sample.
+* Look at [this diagram](../assets/img/tutorials/instron/ANNOTATED_extensometer_software.png). Click 1, then 2. Then in field 3, click and hold an area that includes your drawn dots. The dots should be detected automatically. Click close and proceed with your test. 
 
 <a name="data"></a>
 ### Data processing and analysis:
 
 * By default the software will output a force versus displacement graph.
-* When creating a method you can ask the software to automatically calculate a lot of properties for you[ADD IMAGE].
+* When creating a method you can input your sample dimensions and ask the software to automatically calculate a lot of properties for you.
 
 <a name="failures"></a>
 ### Common failure modes:
 
-* Unless the red light of the video extensometer appears, the video extensometer is not on. Try pressing the on button again.  
-* Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the side clips[ADD IMAGE] when inserting it. 
-* On the hand controller, if the buttons are not responding to you, try pressing [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG). This will get the machine out of disabled mode and into set up mode, where you can move the head.
-* If your force-displacement curve looks wrong, makes sure that all attachments are on tightly.
+* Unless the red light of the video extensometer appears, the video extensometer is not on. Try pressing the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button again.  
+* Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) when inserting it. 
+* If the program won't let you start a test, or if the buttons on the hand controller won't respond to you:
+	* If the light next to disabled on the [indicator panel](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG) is blinking, hold down the red emergency button and turn clockwise about 15 degrees or until it pops up.
+ 	* If disabled is lit up, but not blinking, try pressing [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller. This will get the machine out of disabled mode and into set up mode.
+* If your force-displacement curve looks wrong, make sure that all attachments are on tightly. To check, try giving your set-up a gentle shake. It should not move at all.
 * If your sample keeps breaking right at the grip face, you may need to loosen the grips a little bit, or try a different grip type.
 
 
