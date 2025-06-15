@@ -24,8 +24,8 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 <a name="startup"></a> 
 #### Instrument startup:
 
-* Log on to the instrument workstation using your MIT kerberos
-* Open the Bluehill Universal software
+* Log on to the instrument workstation using your MIT Kerberos.
+* Open the Bluehill Universal software.
 * If the event log opens up, you can click close. 
 
 <a name="operation"></a>
@@ -68,17 +68,16 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if necessary.
 
 Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
-* [Tensile testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
-* [Tensile testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
+* Tensile testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
+* Tensile testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
 	* These tensile diagrams show the use of wedge grips. The Breakerspace also has [screw action grips](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG), which has a max load of 5 kN and works better for delicate or irregular samples.
-	* [Anatomy of the 50 kN wedge grip](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
-* [Compressive testing with 50 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
-
-* [Flexure testing with 5 kN head](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
+	* Anatomy of the 50 kN wedge grip [diagram](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
+* Compressive testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
+* Flexure testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
  
 #### Video extensometer
 * Click the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button.
-* Draw dots on your sample a set amount apart using a [guide and paint markers](../assets/img/tutorials/instron/ANNOTATED_drawing_dots.JPG)
+* Draw dots on your sample a set amount apart using a [guide and paint markers](../assets/img/tutorials/instron/ANNOTATED_drawing_dots.JPG).
 * Load your sample.
 * Look at [this diagram](../assets/img/tutorials/instron/ANNOTATED_extensometer_software.png). Click 1, then 2. Then in field 3, click and hold an area that includes your drawn dots. The dots should be detected automatically. Click close and proceed with your test. 
 
