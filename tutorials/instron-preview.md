@@ -33,11 +33,12 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 
 * Set up your mechanical test set up. See the [detailed operation instructions](#details) for how to set up different types of samples.
 * Ensure the correct load cell connector (5 kN or 50 kN) is inserted. 
-* On the [home screen](../assets/img/tutorials/instron/test_method_admin.PNG), click Method. Here you can create your own method by choosing a template or look at preexisting methods.
-* Return to the home screen by clicking the house in the top left. Then, click Test. From here, you can run a crude "QuickTest" or choose from any method.
+* On the [home screen](../assets/img/tutorials/instron/test_method_admin.PNG), click Method. Here you can create your own method by choosing a template or look at pre-existing methods.
+* Return to the [home screen](../assets/img/tutorials/instron/test_method_admin.PNG) by clicking the house in the top left. Then, click Test. From here, you can run a crude "QuickTest" or choose from any method.
 * When prompted, set travel limits to prevent the head from bumping into anything.
 * Once on the testing page, press unlock then go on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) to start testing.
-* The test will end once sample snaps. To stop the test before that, you can press stop on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG). 
+* The test will end once sample snaps. To stop the test before that, you can press stop on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG).
+
 <a name="shutdown"></a>
 ####  Instrument shut down:
 
