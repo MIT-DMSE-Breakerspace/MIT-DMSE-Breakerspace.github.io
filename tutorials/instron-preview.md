@@ -60,19 +60,18 @@ The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixt
 <a name="details"></a> 
 ### Detailed operating instructions: 
 The Instron can do tensile, compressive, and flexure testing. Each test needs different grips. 
-
 * To start all set ups, you need to choose your load cell, 50 kN or 5 kN for smaller, weaker samples.
 	* The 50 kN cell always stays attached to the machine.
- 	* To install the 5 kN cell, insert the thin end of the 5 kN cell into the bottom of the 50 kN cell. Insert a clevis pin through the two, then attach a safety clip.
+	* To install the 5 kN cell, insert the thin end of the 5 kN cell into the bottom of the 50 kN cell. Insert a clevis pin through the two, then attach a safety clip.
   	* Rotate the metal ring to the right until tight. 
   	* If using the 5 kN cell, it is crucial to plug the 5 kN load cell connector in the [right place](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG).
 * All parts will be attached in a simular fashion. Align the internal holes and insert a clevis pin. Then add a safety clip and rotate the metal ring to secure.
 	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if necessary.
 
-Follow these diagrams to learn generic set-ups for tensile, compressive, and flexure testing. If you mix and match parts, make sure they can all handle the force you'll apply to them.
+#### Set-up diagrams for tensile, compressive, and flexure testing
 * Tensile testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
+	* [Screw action grips](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG) (max load: 5 kN) may work better for delicate or irregular samples. 
 * Tensile testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
-	* These tensile diagrams show the use of wedge grips. The Breakerspace also has [screw action grips](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG), which has a max load of 5 kN and works better for delicate or irregular samples.
 	* Anatomy of the 50 kN wedge grip [diagram](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
 * Compressive testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
 * Flexure testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
@@ -96,7 +95,7 @@ Follow these diagrams to learn generic set-ups for tensile, compressive, and fle
 * Plugging in the load cell connector is difficult and may take multiple tries. One common mistake is forgetting to to push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) when inserting it. 
 * If the program won't let you start a test, or if the buttons on the hand controller won't respond to you:
 	* If the light next to disabled on the [indicator panel](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG) is blinking, hold down the red emergency button and turn clockwise about 15 degrees or until it pops up.
- 	* If disabled is lit up, but not blinking, try pressing [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller. This will get the machine out of disabled mode and into set up mode.
+	* If disabled is lit up, but not blinking, try pressing [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller. This will get the machine out of disabled mode and into set up mode.
 * If your force-displacement curve looks wrong, make sure that all attachments are on tightly. To check, try giving your set-up a gentle shake. It should not move at all.
 * If your sample keeps breaking right at the grip face, you may need to loosen the grips a little bit, or try a different grip type.
 
