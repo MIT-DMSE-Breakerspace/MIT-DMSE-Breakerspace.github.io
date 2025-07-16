@@ -75,6 +75,8 @@ ___
 
 Our test frame is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and flexure testing.
 
+[Instron 68TM-50 Universal Testing System](./tutorials/instron.html)
+
 ___
 
 ### Horiba XploRA Confocal Raman Microscope
