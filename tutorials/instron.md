@@ -69,7 +69,7 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if necessary.
 
 #### Set-up diagrams for tensile, compressive, and flexure testing
-* Tensile testing with mini wedge grips (max load: 1 kN) [diagram](../assets/img/tutorials/instron/FIXED_1_kN_set_up.JPG)
+* Tensile testing with mini wedge grips (max load: 1 kN) [diagram](../assets/img/tutorials/instron/FIXED_1kN_set_up.JPG)
 * Tensile testing with screw action grips (max load: 5 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG)
 * Tensile testing with wedge grips (max:load 50 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
 	* Anatomy of the 50 kN wedge grip [diagram](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
