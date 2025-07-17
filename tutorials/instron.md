@@ -69,9 +69,9 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 	* Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if necessary.
 
 #### Set-up diagrams for tensile, compressive, and flexure testing
-* Tensile testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG)
-	* [Screw action grips](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG) (max load: 5 kN) may work better for delicate or irregular samples. 
-* Tensile testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
+* Tensile testing with mini wedge grips (max load: 1 kN) [diagram](../assets/img/tutorials/instron/FIXED_1_kN_set_up.JPG)
+* Tensile testing with screw action grips (max load: 5 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG) (max load: 5 kN) may work better for delicate or irregular samples. 
+* Tensile testing with wedge grips (max:load 50 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
 	* Anatomy of the 50 kN wedge grip [diagram](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
 * Compressive testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
 * Flexure testing with 5 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG)
@@ -118,4 +118,4 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 ### Exercises:
 
 * Beginner: Set up a 50 kN tensile testing set up, load a sample, and run it. You should see the sample's force-displacement curve appear.
-* Advanced: Use the video extensometer to have the machine measure strain. 
+* Advanced: Use the video extensometer to measure strain. 
