@@ -5,7 +5,7 @@ layout: default
 
 ## Overview:
 
-The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and flexure testing. 
+The Breakerspace's Instron is equipped with 50 kN and 5 kN load cells, with fixtures for tensile, compression, and flexure testing.  
 
 ### Index:
 
