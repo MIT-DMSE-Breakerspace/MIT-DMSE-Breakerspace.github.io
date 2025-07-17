@@ -70,7 +70,7 @@ The Instron can do tensile, compressive, and flexure testing. Each test needs di
 
 #### Set-up diagrams for tensile, compressive, and flexure testing
 * Tensile testing with mini wedge grips (max load: 1 kN) [diagram](../assets/img/tutorials/instron/FIXED_1_kN_set_up.JPG)
-* Tensile testing with screw action grips (max load: 5 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG) (max load: 5 kN) may work better for delicate or irregular samples. 
+* Tensile testing with screw action grips (max load: 5 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG)
 * Tensile testing with wedge grips (max:load 50 kN) [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG)
 	* Anatomy of the 50 kN wedge grip [diagram](../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG)
 * Compressive testing with 50 kN head [diagram](../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG)
