@@ -145,6 +145,7 @@ The measurement feature allows the user to determine a variety of information ab
 ### Common failure modes
 
 * If the software is started before the microscope is switched on, you will see an [error message](../assets/img/tutorials/optical/control-error.PNG) and the connection will [fail](../assets/img/tutorials/optical/unable-start.PNG)
+* Sometimes the software will give an error that it cannot conect to camera - in this case reboot the workstation
 * If any part of your sample is resting on a part of the stage that cannot move, as you move the stage your sample will rotate on the stage.
 * If you cannot achieve focus, the microscope is like in the lens exchange position, and needs to be put into the tilt position. Please follow steps in the startup section of the [Standard operating protocol](#sop) to correct this
 
