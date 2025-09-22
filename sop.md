@@ -21,5 +21,5 @@ layout: default
 [Sample prep tips and tricks](./tutorials/sample-prep.html) 
   
 
-As of 1/13/2025 these are very much a work in progress, and will be updated continuously. Please contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) if you see any mistakes or have questions or suggestions.
+As of 9/22/2025 these are very much a work in progress, and will be updated continuously. Please contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) if you see any mistakes or have questions or suggestions.
 
