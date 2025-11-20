@@ -6,7 +6,7 @@ layout: default
 
 The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of materials through hands-on experiences with powerful desktop materials characterization instruments. More than just a laboratory, it’s a dynamic hub for multidisciplinary learning, encouraging students to pursue their own questions. The Breakerspace also features a lounge for relaxing, socializing, and enjoying espresso — an inclusive space for academic exploration and leisure. 
 
-### Training, access, and hours:
+### Training, access, and hours: 
 
 The Breakerspace lab and lounge are both open 8 AM to midnight, seven days/week. New lab users should [register for a training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0) on our calendar to gain access to the lab. If you would like lounge access, please [request it here](https://docs.google.com/forms/d/e/1FAIpQLSdcX0J_sUQmiO0j15IHSrni4rX7LMLaILCjoXQOn4QriWAoHA/viewform?usp=sf_link).
 
