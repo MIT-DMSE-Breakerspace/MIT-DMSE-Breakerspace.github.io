@@ -4,6 +4,8 @@ layout: default
 
 <meta http-equiv="refresh" content="1800">
 
+## [2026 Breakerspace Microscope Image Contest!](https://breakerspace.mit.edu/image-contest.html)
+
 The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of materials through hands-on experiences with powerful desktop materials characterization instruments. More than just a laboratory, it’s a dynamic hub for multidisciplinary learning, encouraging students to pursue their own questions. The Breakerspace also features a lounge for relaxing, socializing, and enjoying espresso — an inclusive space for academic exploration and leisure. 
 
 ### Training, access, and hours: 
