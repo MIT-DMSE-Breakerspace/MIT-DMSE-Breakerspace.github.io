@@ -2,9 +2,9 @@
 layout: default
 ---
 
-![Breakerspace Microscope Images Contest 2026](./assets/img/image-contest/image-contest-2026.png) 
+![Breakerspace Microscope Image Contest 2026](./assets/img/image-contest/image-contest-2026.png) 
 
-## Breakerspace Microscope Images Contest 2026!
+## Breakerspace Microscope Image Contest 2026!
 
 Microscope imagery is central to the Breakerspace’s educational mission. This IAP, we invite undergraduates across MIT to tap into their curiosity, create stunning images using Breakerspace equipment, and compete for prizes.
 
