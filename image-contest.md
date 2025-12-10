@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Breakerspace Microscope Images Contest 2026](./assets/img/image-contest/image-contest.PNG) 
+![Breakerspace Microscope Images Contest 2026](./assets/img/image-contest/image-contest-2026.png) 
 
 ## Breakerspace Microscope Images Contest 2026!
 
