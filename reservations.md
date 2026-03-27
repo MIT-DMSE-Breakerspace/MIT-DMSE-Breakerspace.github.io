@@ -16,7 +16,9 @@ The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of ma
     title="LibCal Booking Widget"
     style="padding:0; margin:0; border:0; overflow-x: hidden; overflow-y: scroll;"
 >
-        <a href="https://breakerspace.libcal.com/widget/equipment?gid=41631">LibCal Booking Widget</a>
+        <a href="https://breakerspace.libcal.com/widget/equipment?m=s&lid=19797&bs-x=1326374776&search=&gid=41631&capacity=-1&zone=12889">LibCal Booking Widget</a>
+
+        
 </iframe>
 
 
