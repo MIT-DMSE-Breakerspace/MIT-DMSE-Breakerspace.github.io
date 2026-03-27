@@ -19,6 +19,7 @@ The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of ma
         <a href="https://breakerspace.libcal.com/widget/equipment?gid=41631">LibCal Booking Widget</a>
 </iframe>
 
+
 ### Training, access, and hours: 
 
 New *lab* users should [register for a training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0) on our calendar to gain access to the lab. If we don't have a training available that works for you, please email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and we will happily set something up.
