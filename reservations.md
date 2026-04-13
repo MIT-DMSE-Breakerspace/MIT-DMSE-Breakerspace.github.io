@@ -13,7 +13,7 @@ The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of ma
 ### Instrument reservations:
 
 
-<iframe src="https://breakerspace.libcal.com/space/168610?embedded=1" 
+<iframe src="https://breakerspace.libcal.com/space/168610?embedded=1&noheader=1&nofooter=1" 
         width="100%" 
         height="800" 
         frameborder="0">
