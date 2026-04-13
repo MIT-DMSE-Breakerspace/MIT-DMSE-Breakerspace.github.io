@@ -12,22 +12,11 @@ The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of ma
 
 ### Instrument reservations:
 
-Button:
 
-<div id="lc_c1dadf54c14e"></div>
-
-
-Form:  
-
-<iframe
-    src="https://breakerspace.libcal.com/spaces?gid=174790"
-    width="100%" height="700px"
-    title="LibCal Booking Widget"
-    style="padding:0; margin:0; border:0; overflow-x: hidden; overflow-y: scroll;"
->
-        <a href="https://breakerspace.libcal.com/spaces?gid=174790">LibCal Booking Widget</a>
-
-        
+<iframe src="https://breakerspace.libcal.com/space/168610?embedded=1" 
+        width="100%" 
+        height="800" 
+        frameborder="0">
 </iframe>
 
 
