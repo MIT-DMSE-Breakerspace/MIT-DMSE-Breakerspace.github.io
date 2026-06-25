@@ -8,7 +8,7 @@ layout: default
 
 The Breakerspace Lab is a growing suite of materials characterization instruments, located in 8-102A (accessed through the Breakerspace Lounge). In addition to the instruments, we have cameras, microphones, tripods, lighting, and other equipment that can be used to document projects.
 
-**Hours:** The Breakerspace Lab is open 10 AM to 10 PM weekdays, and 12 PM to 5 PM weekends for trained users.
+**Hours:** The Breakerspace Lab is open 8 AM to midnight 7 days per week for trained users.
 
 ### Thermofisher Phenom XL SEM
 
@@ -83,7 +83,7 @@ ___
 
 ![Horiba XploRA Confocal Raman Microscope](./assets/img/raman.JPG)
 
-Collect Raman spectra to idenfity compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
+Collect Raman spectra to identify compounds and observe other characteristics of a range of materials on our instrument, which is configured with 532nm, 638nm and 785nm lasers, and 600, 1200, 1800, and 2400 gr/mm gratings. 
 
 [Horiba XploRA Confocal Raman Microscope Tutorial/SOP](./tutorials/raman.html)  
 
@@ -103,7 +103,7 @@ ___
 
 ![Innovatest Nemesis 5100G2 Hardness Tester](./assets/img/hardness-tester.JPG)
 
-This hardness tester has a 9-position turret to automatically swith between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales. 
+This hardness tester has a 9-position turret to automatically switch between indenters and objectives, and uses a load cell to measure applied load. It also has an XY stage, and can be programmed to run test patterns. The Breakerspace system is equipped with indenters for Vickers, Rockwell, and Brinell, and can run a range of scales. 
 
 [Innovatest Nemesis 5100G2 Hardness Tester Tutorial/SOP](./tutorials/hardness-tester.html)  
 
