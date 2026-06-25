@@ -28,7 +28,6 @@ The Breakerspace system has a high-energy ion source for faster milling, a focus
 <a name="startup"></a>
 #### Instrument Startup
 
-* Log on to the instrument workstation using your MIT Kerberos.
 * Turn the instrument display on.
 * Confirm that high voltages are off and the chamber is in a safe state.
 * Turn the turbomolecular pump standby mode off.
