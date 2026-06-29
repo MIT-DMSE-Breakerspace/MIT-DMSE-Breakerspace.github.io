@@ -5,6 +5,8 @@ layout: default
 
 ### Instruments:
 
+[Agilent 5100 AFM/SPM Microscope](./tutorials/afm.html)
+[Agilent Cary 60 UV-Vis Spectrophotometer](./tutorials/cary-60.html)
 [Horiba Duetta Fluorescence and Absorbance Spectrometer](./tutorials/uv-vis.html)  
 [Horiba XploRA Confocal Raman Microscope](./tutorials/raman.html)  
 [Innovatest Nemesis 5100G2 Hardness Tester](./tutorials/hardness-tester.html)  
@@ -16,10 +18,11 @@ layout: default
 [Thermo Scientific Nicolet iS5 Fourier-Transform Infrared (FTIR) Spectrometer](./tutorials/ftir.html)  
 [Thermofisher Phenom Scanning Electron Microscopes (SEM)](./tutorials/sem.html)  
 
+
 ### Sample Prep:
 
 [Sample prep tips and tricks](./tutorials/sample-prep.html) 
   
 
-As of 9/22/2025 these are very much a work in progress, and will be updated continuously. Please contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) if you see any mistakes or have questions or suggestions.
+As of 6/29/2026 these are very much a work in progress, and will be updated continuously. Please contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) if you see any mistakes or have questions or suggestions.
 
