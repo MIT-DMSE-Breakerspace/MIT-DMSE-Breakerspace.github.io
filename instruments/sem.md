@@ -26,7 +26,8 @@ This page is the shared SEM hub. Use it to choose an instrument, review common S
 | Need | Use this link |
 | --- | --- |
 | New lab user or untrained SEM user | [Register for a Breakerspace lab training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0) |
-| Reserve instrument time | [Open Breakerspace LibCal instrument reservations](https://breakerspace.libcal.com/space/168610) |
+| Reserve the Phenom XL SEM | [Open Phenom XL SEM reservations](https://breakerspace.libcal.com/seat/174786) |
+| Reserve the Phenom Pure SEM | [Open Phenom Pure SEM reservations](https://breakerspace.libcal.com/seat/174787) |
 | Operate the Phenom XL | [Open the Phenom XL operating page](./phenom-xl.html) |
 | Operate the Phenom Pure | [Open the Phenom Pure operating page](./phenom-pure.html) |
 | Need manufacturer documentation | [Manufacturer manuals](#manuals) |
@@ -64,11 +65,11 @@ Use this quick chooser if you are not sure which SEM to reserve. The recommendat
     if (needsCold && (needsEds || needsLarge)) {
       html = '<strong>Ask staff before reserving.</strong> Cold-stage needs point toward the Phenom Pure, but EDS or large-sample needs point toward the Phenom XL. You may need to adjust sample prep or split the work into two sessions.';
     } else if (needsCold) {
-      html = '<strong>Recommended: Phenom Pure.</strong> The Pure has the temperature-controlled cold stage for frozen, wet, or heat-sensitive samples. <a href="./phenom-pure.html">Open the Phenom Pure operating page</a>.';
+      html = '<strong>Recommended: Phenom Pure.</strong> The Pure has the temperature-controlled cold stage for frozen, wet, or heat-sensitive samples. <a href="./phenom-pure.html">Open the Phenom Pure operating page</a> or <a href="https://breakerspace.libcal.com/seat/174787">reserve the Phenom Pure SEM</a>.';
     } else if (needsEds || needsLarge) {
-      html = '<strong>Recommended: Phenom XL.</strong> The XL has EDS and the larger sample stage. <a href="./phenom-xl.html">Open the Phenom XL operating page</a>.';
+      html = '<strong>Recommended: Phenom XL.</strong> The XL has EDS and the larger sample stage. <a href="./phenom-xl.html">Open the Phenom XL operating page</a> or <a href="https://breakerspace.libcal.com/seat/174786">reserve the Phenom XL SEM</a>.';
     } else if (routine) {
-      html = '<strong>Either SEM may work.</strong> Choose based on availability and the holder that matches your sample. For the simplest page at the instrument, open either the <a href="./phenom-xl.html">Phenom XL operating page</a> or <a href="./phenom-pure.html">Phenom Pure operating page</a>.';
+      html = '<strong>Either SEM may work.</strong> Choose based on availability and the holder that matches your sample. Open the <a href="./phenom-xl.html">Phenom XL operating page</a> or <a href="./phenom-pure.html">Phenom Pure operating page</a>, or reserve the <a href="https://breakerspace.libcal.com/seat/174786">Phenom XL SEM</a> or <a href="https://breakerspace.libcal.com/seat/174787">Phenom Pure SEM</a>.';
     } else {
       html = '<strong>Start with the comparison table below.</strong> If you are still unsure, ask Breakerspace staff before preparing or loading the sample.';
     }

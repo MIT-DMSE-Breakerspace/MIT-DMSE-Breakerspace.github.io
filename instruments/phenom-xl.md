@@ -19,7 +19,7 @@ This page is the operating page for the Phenom XL only. For the Phenom Pure, use
 | Need | Use this link |
 | --- | --- |
 | New lab user or untrained SEM user | [Register for a Breakerspace lab training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0) |
-| Reserve instrument time | [Open Breakerspace LibCal instrument reservations](https://breakerspace.libcal.com/space/168610) |
+| Reserve instrument time | [Open Phenom XL SEM reservations](https://breakerspace.libcal.com/seat/174786) |
 | Compare XL and Pure | [Open the shared SEM hub](./sem.html) |
 | Need manufacturer documentation | [Phenom XL manuals](#manuals) |
 | Need practice tasks | [Exercises](#exercises) |
