@@ -4,3 +4,16 @@ description: The MIT DMSE Breakerspace is a materials exploration lab open to al
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+collections:
+  samples:
+    output: true
+    permalink: /sample-library/:name/
+exclude:
+  - README.md
+  - assets/survey
+  - assets/img/image-contest
+  - handouts
+  - image-contest.md
+  - image-contest-archive.md
+  - showcases/README.md
+  - showcases/_template.md

@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/feranick/ScienceScripts",
+  "source_commit": "4992fc9ae7bbb1ca0ea43f3442abbedb60b32370",
+  "source_commit_date": "2026-07-22",
+  "imported_at": "2026-07-23",
+  "license": "GPL-3.0",
+  "prototype_status": "review-only",
+  "tools": [
+    {
+      "slug": "xrd",
+      "source_path": "src/XRD/plotter/xrd_plotter.html",
+      "source_version": "v2026.06.26.2",
+      "local_path": "xrd/index.html"
+    },
+    {
+      "slug": "raman",
+      "source_path": "src/Raman/raman_plotter.html",
+      "source_version": "raman-v2026.07.22.1",
+      "local_path": "raman/index.html"
+    }
+  ]
+}

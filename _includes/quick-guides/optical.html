@@ -1,0 +1,159 @@
+<section class="instrument-quick-guide" id="quick-guide" aria-labelledby="optical-quick-guide-title">
+  <div class="quick-guide-screen-bar">
+    <div>
+      <strong>Two-page Quick Guide</strong>
+      <span>For trained users. Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
+    </div>
+    <div class="quick-guide-screen-actions">
+      <a href="{{ page.url | relative_url }}">Full instrument page</a>
+      <button type="button" onclick="window.print()">Print front and back</button>
+    </div>
+  </div>
+
+  <section class="quick-guide-sheet quick-guide-front" aria-labelledby="optical-quick-guide-title">
+    <header class="quick-guide-header">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · Trained-user reference</p>
+        <h2 id="optical-quick-guide-title">DSX-1000 Optical Microscope</h2>
+        <p class="quick-guide-subtitle">Choose an observation mode, capture a useful image, and leave the motorized system clear and ready.</p>
+      </div>
+      <img src="{{ '/assets/img/optical.JPG' | relative_url }}" alt="Olympus DSX-1000 digital optical microscope.">
+    </header>
+
+    <aside class="quick-guide-notice">
+      This guide supports completed hands-on training; it does not replace training. Stop and ask staff whenever a sample may collide, spill, shed, or move unexpectedly.
+    </aside>
+
+    <div class="quick-guide-grid quick-guide-grid-wide-left">
+      <section>
+        <h3>What this instrument shows</h3>
+        <p>The DSX-1000 uses visible light, interchangeable objectives, controlled illumination, and a digital camera to inspect surface color, shape, texture, defects, and relief. It can capture 2D images, focus-stacked 3D data, and stitched maps.</p>
+
+        <figure class="quick-guide-figure quick-guide-image-trio">
+          <img src="{{ '/assets/img/instruments/optical/bee-optical-color.jpg' | relative_url }}" alt="Color optical image of a bee surface.">
+          <img src="{{ '/assets/img/instruments/optical/bee-height-map.jpg' | relative_url }}" alt="Height map of the same bee surface.">
+          <img src="{{ '/assets/img/instruments/optical/scored-glass-fracture.jpg' | relative_url }}" alt="Optical image of a scored-glass fracture surface.">
+          <figcaption>Color, surface height, and fracture detail are different views of a sample—not interchangeable measurements.</figcaption>
+        </figure>
+
+        <h3>Choose a useful mode</h3>
+        <table class="quick-guide-table">
+          <thead><tr><th>Goal</th><th>Start with</th></tr></thead>
+          <tbody>
+            <tr><td>General inspection of a flat sample</td><td>Brightfield</td></tr>
+            <tr><td>Scratches, relief, or unevenness</td><td>Oblique or DIC</td></tr>
+            <tr><td>Edges, dust, particles, or defects</td><td>Darkfield or BF/DF mix</td></tr>
+            <tr><td>Crystals, fibers, minerals, or orientation contrast</td><td>Simple polarization</td></tr>
+            <tr><td>Large area or surface height</td><td>2D stitching or 3D acquisition</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Before loading a sample</h3>
+        <ul class="quick-guide-checks">
+          <li>Use only non-hazardous samples that are stable and safe to handle.</li>
+          <li>Keep the sample under the 5 kg stage limit.</li>
+          <li>Confirm enough clearance for the objective, head, stage, tilt, and any planned stitching or 3D motion.</li>
+          <li>Contain liquids so they cannot spill. Ask first about sharp, fragile, wet, loose, powdery, odorous, unknown, or unusually heavy samples.</li>
+        </ul>
+
+        <h3>Interpret results carefully</h3>
+        <ul>
+          <li>Record the objective, zoom, observation mode, scale, and sample orientation.</li>
+          <li>Save the raw image or dataset before exporting reports or derived files.</li>
+          <li>A 3D result depends on focus, reflectivity, lighting, and software assumptions.</li>
+          <li>An optical image usually does not identify chemistry; use FTIR, Raman, or SEM-EDS when composition is the question.</li>
+        </ul>
+
+        <aside class="quick-guide-stop">
+          <h3>Stop and ask staff</h3>
+          <p>Do not acknowledge motion or continue if the stage is obstructed, the sample could strike the objective or head, the sample is unstable, or the software reports a motion/control error.</p>
+        </aside>
+      </section>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Full operating guide: breakerspace.mit.edu/instruments/optical.html</span>
+      <span>Reviewed 2026-07-22 · Side 1 of 2</span>
+    </footer>
+  </section>
+
+  <section class="quick-guide-sheet quick-guide-back" aria-labelledby="optical-workflow-title">
+    <header class="quick-guide-header quick-guide-header-compact">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · DSX-1000 Optical Microscope</p>
+        <h2 id="optical-workflow-title">Routine trained-user workflow</h2>
+      </div>
+    </header>
+
+    <div class="quick-guide-flow">
+      <section>
+        <h3><span>1</span> Start safely</h3>
+        <ol>
+          <li>Wear nitrile gloves while handling samples, stage plates, objectives, or preparation tools.</li>
+          <li>Switch on the microscope and log on to Windows with your MIT Kerberos.</li>
+          <li>Clear the stage and the full motion path.</li>
+          <li>Start DSX and log on as <strong>Guest</strong> with no password.</li>
+          <li>Confirm it is safe for the stage and head to move; then lower the stage with the manual focusing knob.</li>
+          <li>Load or change the objective if needed and lower the head into its tilt position.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>2</span> Load and focus</h3>
+        <ol>
+          <li>Place the stable sample on the stage with clearance for every planned movement.</li>
+          <li>Remove gloves before touching the keyboard, mouse, or workstation.</li>
+          <li>Bring the sample into rough focus with the manual focusing knob.</li>
+          <li>Use the joystick to position the region of interest.</li>
+          <li>Fine-focus with the console controls, focus wheel, or software buttons.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>3</span> Observe and acquire</h3>
+        <ol>
+          <li>Use <strong>Best Image</strong> to compare modes, or select the mode manually.</li>
+          <li>Choose 2D, 3D, stitched, movie, time-lapse, or path acquisition for the question you are answering.</li>
+          <li>Before automated motion, recheck sample stability and clearance.</li>
+          <li>Capture the result and verify that it is saved in the intended location.</li>
+          <li>Record enough settings to reproduce or interpret the image.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>4</span> Unload and shut down</h3>
+        <ol>
+          <li>Save and copy all data you need.</li>
+          <li>Wear gloves again and remove the sample from the stage.</li>
+          <li>Close DSX and confirm exit so the microscope retracts the head.</li>
+          <li>Wait for the software to close fully, then switch off the microscope.</li>
+          <li>Log out of Windows, replace the dust cover, and leave the stage and workstation clean.</li>
+        </ol>
+      </section>
+    </div>
+
+    <div class="quick-guide-bottom-grid">
+      <aside class="quick-guide-stop">
+        <h3>Common reasons to stop</h3>
+        <ul>
+          <li>Possible collision or insufficient travel clearance</li>
+          <li>Unstable sample, uncontained liquid, or loose material</li>
+          <li>Unexpected motor, focus, tilt, stage, or control behavior</li>
+          <li>Unsure objective configuration or sample compatibility</li>
+        </ul>
+      </aside>
+      <aside class="quick-guide-help">
+        <h3>Need help?</h3>
+        <p>Stop in a safe state. Ask a lab assistant, use <strong>#breakerspace-help</strong>, or email <strong>dmse-breakerspace@mit.edu</strong>.</p>
+        <p><strong>Before leaving:</strong> sample out, data saved, head retracted, microscope off, Windows logged out, dust cover on.</p>
+      </aside>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Canonical content and detailed troubleshooting: breakerspace.mit.edu/instruments/optical.html</span>
+      <span>Reviewed 2026-07-22 · Side 2 of 2</span>
+    </footer>
+  </section>
+</section>

@@ -1,0 +1,312 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "digest"
+require "fileutils"
+require "json"
+require "open3"
+require "pathname"
+require "tmpdir"
+require "yaml"
+
+class ImportError < StandardError; end
+
+ROOT = File.expand_path(ENV.fetch("SAMPLE_LIBRARY_SITE_ROOT", File.expand_path("..", __dir__)))
+IMAGE_EXTENSIONS = %w[.bmp .gif .jpeg .jpg .png .tif .tiff .webp].freeze
+ROOT_KEYS = %w[schemaVersion exportId generatedAt samples].freeze
+SAMPLE_KEYS = %w[publicId updatedAt fields availability specimens assets].freeze
+FIELD_KEYS = %w[name description materialClass composition physicalForm provenance preparationNotes handlingNotes storageRequirements].freeze
+SPECIMEN_KEYS = %w[labelId status location].freeze
+ASSET_KEYS = %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes].freeze
+
+def fail_import(message)
+  raise ImportError, message
+end
+
+def check_keys(object, allowed, context)
+  fail_import("#{context} must be an object") unless object.is_a?(Hash)
+
+  unknown = object.keys - allowed
+  fail_import("#{context} contains unexpected keys: #{unknown.join(', ')}") unless unknown.empty?
+end
+
+def required_string(object, key, context)
+  value = object[key]
+  fail_import("#{context}.#{key} must be a non-empty string") unless value.is_a?(String) && !value.strip.empty?
+
+  value.strip
+end
+
+def optional_string(object, key, context)
+  value = object[key]
+  return nil if value.nil?
+
+  fail_import("#{context}.#{key} must be a string") unless value.is_a?(String)
+  value.strip.empty? ? nil : value.strip
+end
+
+def safe_package_path(root, relative_path)
+  fail_import("Asset path must be relative") if Pathname.new(relative_path).absolute?
+
+  destination = File.expand_path(relative_path, root)
+  prefix = File.expand_path(root) + File::SEPARATOR
+  fail_import("Asset path escapes the export package") unless destination.start_with?(prefix)
+
+  destination
+end
+
+def image_asset?(content_type, path)
+  content_type.start_with?("image/") || IMAGE_EXTENSIONS.include?(File.extname(path).downcase)
+end
+
+def run_command(*command)
+  output, status = Open3.capture2e(*command)
+  fail_import("Command failed: #{command.join(' ')}\n#{output}") unless status.success?
+  output
+end
+
+def convert_to_jpeg(source, destination)
+  sips = "/usr/bin/sips"
+  fail_import("The macOS sips image converter was not found") unless File.executable?(sips)
+
+  FileUtils.mkdir_p(File.dirname(destination))
+  run_command(
+    sips,
+    "-s", "format", "jpeg",
+    "-s", "formatOptions", "82",
+    "-Z", "1800",
+    source,
+    "--out", destination
+  )
+  dimensions = run_command(sips, "-g", "pixelWidth", "-g", "pixelHeight", destination)
+  width = dimensions[/pixelWidth:\s+(\d+)/, 1]
+  height = dimensions[/pixelHeight:\s+(\d+)/, 1]
+  fail_import("Could not read converted image dimensions") unless width && height
+
+  [width.to_i, height.to_i]
+end
+
+def humanize(value)
+  value.split("-").map(&:capitalize).join(" ")
+end
+
+def write_sample_document(directory, manifest, sample, assets)
+  fields = sample.fetch("fields")
+  name = required_string(fields, "name", "sample fields")
+  description = required_string(fields, "description", "sample fields")
+  public_id = required_string(sample, "publicId", "sample")
+  slug = public_id.downcase
+  fail_import("Invalid public sample ID: #{public_id}") unless slug.match?(/\A[a-z0-9][a-z0-9-]*\z/)
+
+  front_matter = {
+    "layout" => "sample",
+    "title" => name,
+    "sample_id" => public_id,
+    "permalink" => "/sample-library/#{slug}/",
+    "description" => description,
+    "material_class" => optional_string(fields, "materialClass", "sample fields"),
+    "composition" => optional_string(fields, "composition", "sample fields"),
+    "physical_form" => optional_string(fields, "physicalForm", "sample fields"),
+    "provenance" => optional_string(fields, "provenance", "sample fields"),
+    "preparation_notes" => optional_string(fields, "preparationNotes", "sample fields"),
+    "handling_notes" => optional_string(fields, "handlingNotes", "sample fields"),
+    "storage_requirements" => optional_string(fields, "storageRequirements", "sample fields"),
+    "availability" => required_string(sample, "availability", "sample"),
+    "specimens" => sample.fetch("specimens").map do |specimen|
+      {
+        "label_id" => required_string(specimen, "labelId", "specimen"),
+        "status" => required_string(specimen, "status", "specimen"),
+        "location" => required_string(specimen, "location", "specimen")
+      }
+    end,
+    "assets" => assets,
+    "source_updated_at" => required_string(sample, "updatedAt", "sample"),
+    "publication_export_id" => manifest.fetch("exportId"),
+    "publication_generated_at" => manifest.fetch("generatedAt")
+  }.compact
+
+  yaml = YAML.dump(front_matter).lines.drop(1).join
+  File.write(File.join(directory, "#{slug}.md"), "---\n#{yaml}---\n")
+end
+
+def validate_manifest(manifest)
+  check_keys(manifest, ROOT_KEYS, "manifest")
+  fail_import("Unsupported export schema") unless manifest["schemaVersion"] == 1
+  required_string(manifest, "exportId", "manifest")
+  required_string(manifest, "generatedAt", "manifest")
+  fail_import("manifest.samples must be an array") unless manifest["samples"].is_a?(Array)
+  fail_import("The export contains no samples") if manifest["samples"].empty?
+
+  manifest["samples"].each_with_index do |sample, sample_index|
+    context = "sample #{sample_index + 1}"
+    check_keys(sample, SAMPLE_KEYS, context)
+    required_string(sample, "publicId", context)
+    required_string(sample, "updatedAt", context)
+    required_string(sample, "availability", context)
+    check_keys(sample["fields"], FIELD_KEYS, "#{context}.fields")
+    required_string(sample["fields"], "name", "#{context}.fields")
+    required_string(sample["fields"], "description", "#{context}.fields")
+    fail_import("#{context}.specimens must be an array") unless sample["specimens"].is_a?(Array)
+    fail_import("#{context}.assets must be an array") unless sample["assets"].is_a?(Array)
+    sample["specimens"].each { |item| check_keys(item, SPECIMEN_KEYS, "#{context}.specimen") }
+    sample["assets"].each { |item| check_keys(item, ASSET_KEYS, "#{context}.asset") }
+  end
+end
+
+def validate_archive_entries(package)
+  listing = run_command("unzip", "-Z1", package)
+  listing.lines.each do |line|
+    entry = line.strip
+    next if entry.empty?
+
+    path = Pathname.new(entry)
+    clean = path.cleanpath.to_s
+    fail_import("Unsafe path in export package: #{entry}") if path.absolute? || clean == ".." || clean.start_with?("../")
+  end
+end
+
+def replace_targets(targets, backup_root)
+  targets.each do |staged, destination, marker_required|
+    next unless marker_required && File.exist?(destination)
+
+    marker = File.join(destination, ".generated-by-sample-library-import")
+    fail_import("Refusing to replace unmanaged directory: #{destination}") unless File.file?(marker)
+  end
+
+  backups = []
+  installed = []
+  begin
+    targets.each_with_index do |(staged, destination, _marker_required), index|
+      FileUtils.mkdir_p(File.dirname(destination))
+      if File.exist?(destination)
+        backup = File.join(backup_root, "target-#{index}")
+        FileUtils.mv(destination, backup)
+        backups << [backup, destination]
+      end
+      FileUtils.mv(staged, destination)
+      installed << destination
+    end
+  rescue StandardError
+    installed.reverse_each { |destination| FileUtils.rm_rf(destination) }
+    backups.reverse_each { |backup, destination| FileUtils.mv(backup, destination) if File.exist?(backup) }
+    raise
+  end
+end
+
+package = ARGV.first
+abort("Usage: script/import-sample-library PATH_TO_EXPORT.zip_OR_EXTRACTED_FOLDER") unless package
+package = File.expand_path(package)
+abort("Export package not found: #{package}") unless File.file?(package) || File.directory?(package)
+
+stage_root = Dir.mktmpdir(".sample-library-import-", File.dirname(ROOT))
+extract_root = File.directory?(package) ? package : File.join(stage_root, "extracted")
+generated_samples = File.join(stage_root, "samples")
+generated_assets = File.join(stage_root, "assets")
+generated_data = File.join(stage_root, "sample-library-publication.yml")
+backup_root = File.join(stage_root, "backups")
+
+begin
+  if File.file?(package)
+    validate_archive_entries(package)
+    FileUtils.mkdir_p(extract_root)
+    run_command("unzip", "-qq", package, "-d", extract_root)
+  end
+
+  manifest_path = File.join(extract_root, "manifest.json")
+  fail_import("The export package has no manifest.json") unless File.file?(manifest_path)
+  manifest = JSON.parse(File.read(manifest_path))
+  validate_manifest(manifest)
+
+  FileUtils.mkdir_p(generated_samples)
+  FileUtils.mkdir_p(generated_assets)
+  File.write(File.join(generated_samples, ".generated-by-sample-library-import"), "#{manifest.fetch('exportId')}\n")
+  File.write(File.join(generated_assets, ".generated-by-sample-library-import"), "#{manifest.fetch('exportId')}\n")
+
+  manifest.fetch("samples").each do |sample|
+    public_id = sample.fetch("publicId")
+    slug = public_id.downcase
+    sample_asset_directory = File.join(generated_assets, slug)
+    FileUtils.mkdir_p(sample_asset_directory)
+
+    public_assets = sample.fetch("assets").map do |asset|
+      context = "asset #{asset['assetId']}"
+      asset_id = required_string(asset, "assetId", context)
+      package_path = required_string(asset, "packagePath", context)
+      source = safe_package_path(extract_root, package_path)
+      fail_import("Missing exported asset: #{package_path}") unless File.file?(source)
+
+      expected_hash = required_string(asset, "sha256", context).downcase
+      actual_hash = Digest::SHA256.file(source).hexdigest
+      fail_import("Checksum mismatch for #{package_path}") unless actual_hash == expected_hash
+      fail_import("File size mismatch for #{package_path}") unless File.size(source) == asset.fetch("sizeBytes")
+
+      content_type = required_string(asset, "contentType", context)
+      kind = required_string(asset, "kind", context)
+      caption = required_string(asset, "caption", context)
+      instrument = optional_string(asset, "instrument", context)
+
+      if image_asset?(content_type, source)
+        filename = "#{asset_id}.jpg"
+        destination = File.join(sample_asset_directory, filename)
+        width, height = convert_to_jpeg(source, destination)
+        {
+          "asset_id" => asset_id,
+          "url" => "/assets/sample-library/#{slug}/#{filename}",
+          "kind" => kind,
+          "kind_label" => humanize(kind),
+          "caption" => caption,
+          "instrument" => instrument,
+          "is_image" => true,
+          "content_type" => "image/jpeg",
+          "width" => width,
+          "height" => height
+        }.compact
+      else
+        extension = File.extname(package_path).downcase
+        fail_import("Unsafe asset extension: #{extension}") unless extension.match?(/\A\.[a-z0-9]{1,10}\z/)
+        filename = "#{asset_id}#{extension}"
+        FileUtils.cp(source, File.join(sample_asset_directory, filename))
+        {
+          "asset_id" => asset_id,
+          "url" => "/assets/sample-library/#{slug}/#{filename}",
+          "kind" => kind,
+          "kind_label" => humanize(kind),
+          "caption" => caption,
+          "instrument" => instrument,
+          "is_image" => false,
+          "content_type" => content_type
+        }.compact
+      end
+    end
+
+    write_sample_document(generated_samples, manifest, sample, public_assets)
+  end
+
+  File.write(
+    generated_data,
+    YAML.dump(
+      "schema_version" => manifest.fetch("schemaVersion"),
+      "export_id" => manifest.fetch("exportId"),
+      "generated_at" => manifest.fetch("generatedAt"),
+      "sample_count" => manifest.fetch("samples").size
+    )
+  )
+
+  FileUtils.mkdir_p(backup_root)
+  replace_targets(
+    [
+      [generated_samples, File.join(ROOT, "_samples"), true],
+      [generated_assets, File.join(ROOT, "assets", "sample-library"), true],
+      [generated_data, File.join(ROOT, "_data", "sample-library-publication.yml"), false]
+    ],
+    backup_root
+  )
+
+  puts "Imported #{manifest.fetch('samples').size} samples from #{manifest.fetch('exportId')}."
+  puts "Run bundle exec jekyll build and review the generated sample pages before committing."
+rescue ImportError, JSON::ParserError, KeyError => e
+  warn "Sample-library import failed: #{e.message}"
+  exit 1
+ensure
+  FileUtils.rm_rf(stage_root)
+end

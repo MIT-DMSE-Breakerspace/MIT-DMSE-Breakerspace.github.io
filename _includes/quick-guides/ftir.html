@@ -1,0 +1,158 @@
+<section class="instrument-quick-guide" id="quick-guide" aria-labelledby="ftir-quick-guide-title">
+  <div class="quick-guide-screen-bar">
+    <div>
+      <strong>Two-page Quick Guide</strong>
+      <span>For trained users. Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
+    </div>
+    <div class="quick-guide-screen-actions">
+      <a href="{{ page.url | relative_url }}">Full instrument page</a>
+      <button type="button" onclick="window.print()">Print front and back</button>
+    </div>
+  </div>
+
+  <section class="quick-guide-sheet quick-guide-front" aria-labelledby="ftir-quick-guide-title">
+    <header class="quick-guide-header">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · Trained-user reference</p>
+        <h2 id="ftir-quick-guide-title">Nicolet iS5 FTIR Spectrometer</h2>
+        <p class="quick-guide-subtitle">Collect a clean ATR spectrum, preserve the data, and leave the crystal ready for the next user.</p>
+      </div>
+      <img src="{{ '/assets/img/ftir.JPG' | relative_url }}" alt="Thermo Scientific Nicolet iS5 FTIR spectrometer.">
+    </header>
+
+    <aside class="quick-guide-notice">
+      This guide supports completed hands-on training; it does not replace training. Routine independent use is ATR with approved, non-hazardous samples.
+    </aside>
+
+    <div class="quick-guide-grid quick-guide-grid-wide-left">
+      <section>
+        <h3>What FTIR shows</h3>
+        <p>FTIR records how a sample absorbs infrared light as its molecular bonds vibrate. The spectrum is a pattern of bands that can support material identification or comparison. With ATR, the signal comes mainly from the material touching the diamond crystal, so clean surfaces and good contact matter.</p>
+
+        <figure class="quick-guide-figure">
+          <img src="{{ '/assets/img/instruments/ftir/fake-spiderweb-ftir-spectrum.png' | relative_url }}" alt="FTIR absorbance spectrum with several labeled bands consistent with a polyester material.">
+          <figcaption>Use several major bands and a reasonable reference—not one peak alone—to support an identification.</figcaption>
+        </figure>
+
+        <h3>Choose the routine ATR approach</h3>
+        <table class="quick-guide-table">
+          <thead><tr><th>Sample</th><th>Starting approach</th></tr></thead>
+          <tbody>
+            <tr><td>Flat solid</td><td>Clean face; self-leveling tip; firm contact</td></tr>
+            <tr><td>Powder</td><td>Small, finely ground amount; concave or self-leveling tip</td></tr>
+            <tr><td>Non-volatile liquid</td><td>Small droplet; no pressure tip</td></tr>
+            <tr><td>Volatile liquid</td><td>Volatiles cover; ask if odor or exposure is uncertain</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Compatible samples</h3>
+        <ul class="quick-guide-checks">
+          <li>Use only non-hazardous materials and approved cleaning solvents.</li>
+          <li>Use powders sparingly and clean the entire crystal plate afterward.</li>
+          <li>Samples must not spill, crumble into the instrument, stain the plate, persistently smell, or damage the diamond.</li>
+          <li>Ask first about sharp, sticky, abrasive, very hard, reactive, odorous, unknown, staining, or difficult-to-clean materials.</li>
+        </ul>
+
+        <h3>Read the spectrum carefully</h3>
+        <ul>
+          <li>Compare the full pattern with a known reference, database match, control, or related sample.</li>
+          <li>Weak signal often means poor ATR contact.</li>
+          <li>Negative bands can indicate a dirty crystal during background collection.</li>
+          <li>Water vapor, carbon dioxide, solvent, and residue can add features.</li>
+          <li>Complex mixtures such as coffee give combined fingerprints, not a direct concentration of each ingredient.</li>
+        </ul>
+
+        <aside class="quick-guide-stop">
+          <h3>Stop and ask staff</h3>
+          <p>Do not proceed with an uncertain sample, damaged or contaminated crystal, unfamiliar accessory, persistent connection error, or spectrum that remains abnormal after cleaning and recollecting the background.</p>
+        </aside>
+      </section>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Full operating guide: breakerspace.mit.edu/instruments/ftir.html</span>
+      <span>Reviewed 2026-07-22 · Side 1 of 2</span>
+    </footer>
+  </section>
+
+  <section class="quick-guide-sheet quick-guide-back" aria-labelledby="ftir-workflow-title">
+    <header class="quick-guide-header quick-guide-header-compact">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · Nicolet iS5 FTIR Spectrometer</p>
+        <h2 id="ftir-workflow-title">Routine ATR trained-user workflow</h2>
+      </div>
+    </header>
+
+    <div class="quick-guide-flow">
+      <section>
+        <h3><span>1</span> Start and collect a background</h3>
+        <ol>
+          <li>Leave the FTIR powered on unless staff have instructed otherwise.</li>
+          <li>Log on to Windows with your MIT Kerberos and open OMNIC.</li>
+          <li>Confirm that the instrument is connected in system status.</li>
+          <li>Wear nitrile gloves. Remove the ATR cover and inspect the crystal and plate.</li>
+          <li>Clean the crystal with isopropyl alcohol and a Kimwipe; allow it to dry.</li>
+          <li>Remove gloves before using the workstation and collect a background with nothing on the crystal.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>2</span> Load the sample</h3>
+        <ol>
+          <li>Wear gloves before handling the sample, pressure tower, tip, or crystal area.</li>
+          <li>Place the sample directly over the diamond using the appropriate approach from Side 1.</li>
+          <li>For solids or powders, center the pressure tower and tighten until the clutch slips.</li>
+          <li>For a liquid, use a small droplet; use the volatiles cover when appropriate.</li>
+          <li>Remove gloves before returning to the computer.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>3</span> Collect and save</h3>
+        <ol>
+          <li>Preview the spectrum and check signal strength, baseline, and obvious contamination.</li>
+          <li>If needed, wear gloves and improve sample contact or clean and recollect the background.</li>
+          <li>Collect the sample spectrum with a descriptive name.</li>
+          <li>Select and save every spectrum you need individually. Preserve the native spectrum file before exporting plots or reports.</li>
+          <li>Repeat the clean/background/load/collect/save cycle when contamination or comparison quality requires it.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>4</span> Clean and close</h3>
+        <ol>
+          <li>Save and copy all data you need.</li>
+          <li>Wear gloves, unload the sample, and remove all visible residue.</li>
+          <li>Clean the crystal and surrounding plate with isopropyl alcohol and a Kimwipe.</li>
+          <li>Replace the crystal cover and clamp it in place with the pressure tower.</li>
+          <li>Remove gloves, close OMNIC, and log out of Windows.</li>
+          <li>Leave the FTIR powered on and remove samples, wipes, and waste from the area.</li>
+        </ol>
+      </section>
+    </div>
+
+    <div class="quick-guide-bottom-grid">
+      <aside class="quick-guide-stop">
+        <h3>Common reasons to stop</h3>
+        <ul>
+          <li>Sample compatibility or cleaning method is uncertain</li>
+          <li>Crystal is scratched, chipped, stained, or will not come clean</li>
+          <li>Pressure tip or accessory choice is unclear</li>
+          <li>Instrument will not connect or the background remains abnormal</li>
+        </ul>
+      </aside>
+      <aside class="quick-guide-help">
+        <h3>Need help?</h3>
+        <p>Leave the sample unloaded and the crystal clean. Ask a lab assistant, use <strong>#breakerspace-help</strong>, or email <strong>dmse-breakerspace@mit.edu</strong>.</p>
+        <p><strong>Before leaving:</strong> spectra saved, sample removed, crystal clean and covered, OMNIC closed, Windows logged out, FTIR left on.</p>
+      </aside>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Canonical content and detailed troubleshooting: breakerspace.mit.edu/instruments/ftir.html</span>
+      <span>Reviewed 2026-07-22 · Side 2 of 2</span>
+    </footer>
+  </section>
+</section>

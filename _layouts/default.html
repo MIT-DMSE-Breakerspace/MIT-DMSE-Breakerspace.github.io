@@ -12,38 +12,43 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body>
+  <body{% if page.print_quick_guide or page.data_tool_workspace %} class="{% if page.print_quick_guide %}has-print-quick-guide{% endif %}{% if page.print_quick_guide and page.data_tool_workspace %} {% endif %}{% if page.data_tool_workspace %}data-tool-workspace{% endif %}"{% endif %}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
       <header>
 
-        <a href="https://mit-dmse-breakerspace.github.io">
-        <img src="/assets/img/logo_text.svg" alt="Breakerspace logo" />
+        <a href="{{ "/" | relative_url }}">
+        <img src="{{ "/assets/img/logo_text.svg" | relative_url }}" alt="DMSE Breakerspace home" />
         </a>
         <br>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
        
-        <a href="https://breakerspace.mit.edu/index.html">Home</a><br>
-        <a href="https://breakerspace.mit.edu/lab.html">Lab</a><br>
-        <a href="https://breakerspace.mit.edu/lounge.html">Lounge</a><br>
-        <a href="https://breakerspace.mit.edu/resources.html">Resources</a><br>
-        <a href="https://breakerspace.mit.edu/team.html">Team</a><br>
+        <nav class="site-nav" aria-label="Primary">
+          {% for item in site.data.navigation %}
+          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endfor %}
+        </nav>
         <br>
 
       </header>
-      <section>
+      <div class="content-shell">
+      <main id="main-content" tabindex="-1">
 
       {{ content }}
 
-      </section>
+      </main>
+      </div>
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>The Breakerspace is brought to you by the <a href="https://dmse.mit.edu">MIT Department of Materials Science & Engineering</a><br>
-        <a href="https://accessibility.mit.edu">accessibility.mit.edu</a></small>
+        <a href="https://accessibility.mit.edu">Accessibility at MIT</a></small>
         </p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/accessibility.js" | relative_url }}"></script>
+    {% if page.print_quick_guide %}<script src="{{ "/assets/js/quick-guide.js" | relative_url }}"></script>{% endif %}
   </body>
 </html>
