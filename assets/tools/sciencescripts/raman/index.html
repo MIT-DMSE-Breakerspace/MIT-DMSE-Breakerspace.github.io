@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Raman Spectra Visualizer & Peak Fitting Tool</title>
+    <script>
+        // Robust Plotly loader: tries multiple CDNs in order via onerror.
+        (function () {
+            const sources = [
+                "https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.24.1/plotly.min.js",
+                "https://unpkg.com/plotly.js-dist@2.24.1/plotly.min.js",
+                "https://cdn.jsdelivr.net/npm/plotly.js-dist@2.24.1/plotly.min.js"
+            ];
+            window.__plotlyReady = new Promise(function (resolve, reject) {
+                let idx = 0;
+                function tryNext() {
+                    if (typeof Plotly !== 'undefined') { resolve(); return; }
+                    if (idx >= sources.length) { reject(new Error("Plotly failed to load from all CDNs")); return; }
+                    const s = document.createElement('script');
+                    s.src = sources[idx++];
+                    s.onload = function () { resolve(); };
+                    s.onerror = function () { tryNext(); };
+                    document.head.appendChild(s);
+                }
+                tryNext();
+            });
+        })();
+
+        // h5wasm (HDF5 reader) is an ES module loaded lazily the first time an
+        // .h5 file is opened. Cached on window.__h5wasmReady.
+        window.loadH5Wasm = function () {
+            if (!window.__h5wasmReady) {
+                window.__h5wasmReady = import("https://cdn.jsdelivr.net/npm/h5wasm@0.7.8/dist/esm/hdf5_hl.js")
+                    .then(function (mod) {
+                        const h5 = mod.default || mod;
+                        // h5wasm.ready resolves to the Emscripten Module, which
+                        // carries the FS (filesystem) object. The File class lives
+                        // on the module namespace itself.
+                        return Promise.resolve(h5.ready).then(function (Module) {
+                            const FS = (Module && Module.FS) || h5.FS;
+                            return { h5: h5, FS: FS };
+                        });
+                    });
+            }
+            return window.__h5wasmReady;
+        };
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0; padding: 0; display: flex; background-color: #f8f9fa; min-height: 100vh;
+        }
+        #sidebar {
+            width: 320px; background-color: #ffffff; border-right: 1px solid #e9ecef;
+            padding: 22px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;
+            overflow-y: auto;
+        }
+        h2 { margin-top: 0; font-size: 1.15rem; color: #212529; border-bottom: 2px solid #0d6efd; padding-bottom: 8px; margin-bottom: 2px; }
+        .info-text { font-size: 0.85rem; color: #6c757d; line-height: 1.4; margin-bottom: 2px; }
+        .btn-upload {
+            border: 2px dashed #b8c2cc; color: #495057; background-color: #f1f3f5; padding: 15px;
+            border-radius: 8px; font-size: 0.9rem; font-weight: bold; width: 100%; box-sizing: border-box;
+            cursor: pointer; text-align: center; transition: all 0.2s ease; display: block;
+        }
+        .btn-upload:hover { background-color: #e8ecef; border-color: #0d6efd; }
+        button:focus-visible, input:focus-visible, select:focus-visible, #raman-files:focus-visible + label[for="raman-files"] {
+            outline: 3px solid #0b6bcb; outline-offset: 3px;
+        }
+        .skip-link {
+            position: fixed; z-index: 2000; top: 8px; left: 8px; padding: 9px 12px;
+            background: #ffffff; color: #0b4f91; border: 2px solid #0b4f91; border-radius: 4px;
+            font-weight: 700; transform: translateY(-160%);
+        }
+        .skip-link:focus { transform: translateY(0); }
+        .visually-hidden {
+            position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+        }
+        #raman-files { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+        .btn-bg-sub { background-color: #0dcaf0; color: #212529; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-bg-sub:hover { background-color: #0bacd0; }
+        .btn-ref-sub { background-color: #02b2af; color: #17242a; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-ref-sub:hover { background-color: #01928f; }
+        .btn-smooth { background-color: #198754; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-smooth:hover { background-color: #146c43; }
+        .btn-shift { background-color: #ffc107; color: #212529; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-shift:hover { background-color: #e0a800; }
+
+        .btn-normalize { background-color: #0d6efd; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-normalize:hover { background-color: #0b5ed7; }
+        .btn-normalize.active { background-color: #ffd43b; color: #212529; }
+
+        .btn-fit-toggle { background-color: #6f42c1; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-fit-toggle.active { background-color: #ffd43b; color: #212529; }
+        .adjust-on { background-color: #ffd43b !important; color: #212529 !important; }
+        .btn-run-fit { background-color: #fd7e14; color: #17242a; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-run-fit:hover { background-color: #e06d0f; }
+
+        .btn-crop { background-color: #eef1f6; color: #333333; border: 1px solid #ced4da; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-crop:hover { background-color: #dfe4ec; }
+        .btn-export { background-color: #198754; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; }
+        .btn-export:hover { background-color: #157347; }
+        .btn-clear { background-color: #dc3545; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; }
+        .btn-clear:hover { background-color: #bb2d3b; }
+
+        .btn-undo { background-color: #6c757d; color: white; border: none; padding: 11px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+        .btn-undo:hover { background-color: #5c636a; }
+        .btn-undo:disabled { background-color: #e9ecef; color: #adb5bd; cursor: not-allowed; border: 1px solid #dee2e6; }
+
+        .checkbox-container { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #212529; user-select: none; margin: 2px 0; }
+        .checkbox-container input { cursor: pointer; width: 15px; height: 15px; }
+        .status-badge { background-color: #cff4fc; color: #055160; border: 1px solid #b6effb; padding: 8px; border-radius: 6px; font-size: 0.8rem; font-weight: 500; text-align: center; }
+        .version-tag { font-size: 0.75rem; color: #5f6b75; text-align: center; margin-top: auto; padding-top: 8px; font-family: monospace; }
+
+        #main-content { flex-grow: 1; padding: 22px; box-sizing: border-box; display: flex; flex-direction: column; }
+        #chart-container { width: 100%; flex-grow: 1; background: white; border: 1px solid #dee2e6; border-radius: 8px 8px 0 0; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        #cursor-bar { background-color: #e9ecef; color: #212529; padding: 10px 15px; border-radius: 0; font-family: "Consolas", monospace; font-size: 0.9rem; font-weight: bold; border: 1px solid #dee2e6; border-top: none; }
+
+        #results-dashboard { display: none; background-color: #ffffff; border: 1px solid #dee2e6; border-top: none; border-radius: 0 0 8px 8px; padding: 15px; box-sizing: border-box; max-height: 180px; overflow-y: auto; }
+        .results-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left; }
+        .results-table th { background-color: #f1f3f5; padding: 6px; border-bottom: 2px solid #dee2e6; font-weight: bold; }
+        .results-table td { padding: 6px; border-bottom: 1px solid #eee; font-family: "Consolas", monospace; }
+        .peak-entry { border: 1px solid #e2d8f3; border-radius: 6px; padding: 9px; background: #faf8fd; }
+        .peak-entry label { display: block; margin-bottom: 5px; color: #495057; font-size: 0.82rem; font-weight: bold; }
+        .peak-entry-row { display: flex; gap: 5px; }
+        .peak-entry input { min-width: 0; flex: 1; padding: 8px; border: 1px solid #9aa4ad; border-radius: 5px; }
+        .peak-entry button { width: auto; padding: 8px 10px; }
+        .layer-delete {
+            min-width: 28px; min-height: 28px; margin-left: 8px; padding: 2px; border: 0;
+            border-radius: 4px; background: transparent; cursor: pointer; font-size: 0.82rem;
+        }
+        .layer-delete:hover { background: #f8d7da; }
+        .modal-panel { max-width: calc(100vw - 32px); box-sizing: border-box; }
+        @media (max-width: 700px) {
+            body { display: block; }
+            #sidebar { width: 100%; border-right: 0; border-bottom: 1px solid #e9ecef; }
+            #main-content { min-height: 70vh; padding: 12px; }
+            #chart-container { min-height: 28rem; }
+            .modal-panel { width: calc(100% - 24px) !important; }
+            #results-dashboard { overflow-x: auto; }
+            .results-table { min-width: 620px; }
+        }
+    </style>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to plot and results</a>
+
+    <div id="sidebar" role="region" aria-labelledby="app-heading">
+        <h2 id="app-heading">🔬 Raman Spectra Analyzer</h2>
+        <p class="info-text">Load spectra (HORIBA LabSpec .h5 or two-column text), isolate regions of interest, and fit bands.</p>
+
+        <input type="file" id="raman-files" accept=".h5,.hdf5,.xml,.txt,.csv,.dat,.asc" multiple onchange="handleFileSelections(event)">
+        <label class="btn-upload" for="raman-files">📁 Click to Select File(s)</label>
+
+        <hr style="border: 0; border-top: 1px solid #e9ecef; margin: 3px 0;">
+
+        <button class="btn-crop" onclick="cropToView()">✂️ Crop to View</button>
+        <button class="btn-bg-sub" onclick="subtractBackgroundFromPlotted()">✨ Subtract Baseline</button>
+        <button class="btn-ref-sub" onclick="openSubtractionModal()">🧪 Subtract Reference Scan</button>
+
+        <div style="display: flex; align-items: center; width: 100%; gap: 4px;">
+            <button class="btn-smooth" style="flex-grow: 1;" onclick="smoothNoise()">🍃 Smooth Noise</button>
+            <label for="smooth-window-input" style="font-size: 0.85rem; color: #495057; padding-left: 2px;">Win:</label>
+            <input type="number" id="smooth-window-input" value="11" step="2" min="3" style="width: 45px; padding: 8px 4px; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+        </div>
+
+        <div style="display: flex; align-items: center; width: 100%; gap: 4px;">
+            <button class="btn-shift" style="flex-grow: 1;" onclick="applyShift()">📐 Shift Raman shift</button>
+            <label for="shift-window-input" style="font-size: 0.85rem; color: #495057; padding-left: 2px;">Δ:</label>
+            <input type="number" id="shift-window-input" value="0.0" step="0.5" style="width: 45px; padding: 8px 4px; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+            <span style="font-size: 0.85rem; color: #495057;">cm⁻¹</span>
+        </div>
+
+        <div style="display: flex; align-items: center; width: 100%; gap: 4px;">
+            <button id="btn-normalize-toggle" class="btn-normalize" style="flex-grow: 1;" onclick="toggleNormalizationMode()">⚖️ Normalize to Peak</button>
+            <label for="norm-span-input" style="font-size: 0.9rem; color: #495057; padding-left: 2px;">±</label>
+            <input type="number" id="norm-span-input" value="10" step="1" min="0.1" style="width: 45px; padding: 8px 4px; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+            <span style="font-size: 0.85rem; color: #495057;">cm⁻¹</span>
+        </div>
+
+        <div style="border: 1px solid #e9ecef; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+            <label for="adjust-target" style="font-weight: bold; font-size: 0.88rem; color:#495057;">🎚️ Interactive Adjust (mouse wheel)</label>
+            <select id="adjust-target" style="width: 100%; padding: 6px; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.82rem;"></select>
+            <div style="display: flex; gap: 4px;">
+                <button id="btn-adjust-offset" class="btn-crop" style="flex: 1;" onclick="setAdjustMode('offset')">➕ Offset</button>
+                <button id="btn-adjust-scale" class="btn-crop" style="flex: 1;" onclick="setAdjustMode('scale')">✖ Scale</button>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4px; font-size: 0.8rem; color: #495057;">
+                <label for="offset-step">Δ+</label>
+                <input type="number" id="offset-step" value="100" step="10" style="width: 62px; padding: 6px; border: 1px solid #ced4da; border-radius: 6px;">
+                <label for="scale-step" style="margin-left: 6px;">×%</label>
+                <input type="number" id="scale-step" value="5" step="1" min="0.1" style="width: 52px; padding: 6px; border: 1px solid #ced4da; border-radius: 6px;">
+            </div>
+            <div style="display: flex; gap: 4px;">
+                <button class="btn-crop" style="flex: 1; font-size: 1.05rem;" onclick="adjustStep(-1)">➖ Down</button>
+                <button class="btn-crop" style="flex: 1; font-size: 1.05rem;" onclick="adjustStep(1)">Up ➕</button>
+            </div>
+            <div style="font-size: 0.78rem; color: #6c757d;">Pick a target and mode, then use ➖ / ➕ (or two-finger scroll over the plot).</div>
+        </div>
+
+        <button id="btn-fit-toggle" class="btn-fit-toggle" onclick="toggleFittingMode()">🎯 Peak Selection: OFF</button>
+        <div class="peak-entry">
+            <label for="peak-center-input">Band center (cm⁻¹) for keyboard entry</label>
+            <div class="peak-entry-row">
+                <input type="number" id="peak-center-input" step="0.1" inputmode="decimal">
+                <button type="button" class="btn-fit-toggle" onclick="addPeakGuessFromInput()">Add band</button>
+            </div>
+            <p class="info-text" style="margin: 5px 0 0;">Alternative to right-clicking a band on the plot.</p>
+        </div>
+        <button id="btn-run-fit" class="btn-run-fit" onclick="executePeakOptimization()" style="display: none;">⚡ Fit</button>
+        <button class="btn-export" onclick="exportPlottedToCSV()">📥 Export Plotted to CSV</button>
+        <button class="btn-clear" onclick="clearCanvas()">🗑️ Clear Canvas</button>
+        <button id="btn-undo" class="btn-undo" onclick="undoLastAction()" disabled>↩️ Undo Last Action</button>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="toggle-tooltip" checked onchange="handleTooltipToggle()">
+            <label for="toggle-tooltip">Enable Live Tooltip</label>
+        </div>
+
+        <div class="status-badge" id="status-display" role="status" aria-live="polite">Active spectra loaded: 0</div>
+
+        <div style="border: 1px solid #e9ecef; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+            <strong style="font-weight: bold; font-size: 0.88rem; color:#495057;">🌐 RRUFF Reference Database</strong>
+            <p class="info-text" style="margin: 0;">Overlay open Raman reference spectra of minerals from RRUFF.</p>
+            <div style="display: flex; gap: 4px; align-items: center;">
+                <label class="visually-hidden" for="rruff-query">Mineral name or RRUFF ID</label>
+                <input type="text" id="rruff-query" placeholder="mineral or RRUFF ID (e.g. Quartz)" style="flex-grow: 1; padding: 8px; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.82rem;">
+                <button class="btn-crop" style="width: auto; padding: 8px 10px;" onclick="rruffSearch()" aria-label="Search RRUFF">🔍</button>
+            </div>
+            <label class="visually-hidden" for="rruff-results">RRUFF search results</label>
+            <select id="rruff-results" size="4" style="width: 100%; border: 1px solid #ced4da; border-radius: 6px; font-size: 0.8rem; padding: 4px;"></select>
+            <button class="btn-ref-sub" onclick="rruffOverlaySelected()">➕ Overlay Selected Reference</button>
+            <div id="rruff-status" role="status" aria-live="polite" style="font-size: 0.78rem; color: #6c757d;">Tip: many browsers block direct RRUFF downloads (CORS). If search fails, download .txt spectra from rruff.info and open them with 📁.</div>
+        </div>
+
+        <div class="checkbox-container" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 5px; width: 100%;">
+            <span id="layers-heading" style="font-weight: bold; font-size: 0.88rem; color:#495057;">📋 Plotted Spectra Layers:</span>
+            <div id="fit-targets-panel" role="group" aria-labelledby="layers-heading" style="width: 100%; max-height: 140px; overflow-y: auto; border: 1px solid #ced4da; border-radius: 6px; background-color: #fff; padding: 8px; box-sizing: border-box;">
+                <div style="color: #888888; font-size: 0.85rem; font-style: italic;">No Spectra Loaded</div>
+            </div>
+        </div>
+
+        <div class="version-tag" id="app-version-container"></div>
+    </div>
+
+    <div id="subtraction-modal" role="dialog" aria-modal="true" aria-labelledby="subtraction-heading" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center;">
+        <div class="modal-panel" style="background: white; padding: 22px; border-radius: 8px; width: 420px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; flex-direction: column; gap: 12px;">
+            <h3 id="subtraction-heading" style="margin: 0; color: #087d7b; font-size: 1.1rem;">🧪 Reference Spectrum Subtraction</h3>
+            <p class="info-text">Select a reference/substrate spectrum to subtract from your target scans.</p>
+
+            <label for="modal-blank-select" style="font-weight: bold; font-size: 0.85rem; color: #495057;">Select Reference Scan:</label>
+            <select id="modal-blank-select" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ced4da; font-size: 0.85rem; background-color: #fff; cursor: pointer;"></select>
+
+            <span id="modal-targets-heading" style="font-weight: bold; font-size: 0.85rem; color: #495057;">Select Target Scan(s) to Clean:</span>
+            <div id="modal-targets-container" role="group" aria-labelledby="modal-targets-heading" style="max-height: 120px; overflow-y: auto; border: 1px solid #ced4da; border-radius: 6px; padding: 8px; box-sizing: border-box; background: #f8f9fa;"></div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 5px;">
+                <button class="btn-crop" style="width: auto; padding: 8px 14px; margin: 0; font-size: 0.85rem;" onclick="closeSubtractionModal()">Cancel</button>
+                <button class="btn-run-fit" style="width: auto; padding: 8px 14px; margin: 0; display: block; background-color: #02b2af;" onclick="runReferenceSubtraction()">Subtract Reference</button>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" tabindex="-1">
+        <div id="chart-container" role="region" aria-label="Interactive Raman plot. Use Plotly controls to zoom and inspect the spectra."></div>
+        <div id="cursor-bar">Cursor Position: Raman shift = --</div>
+
+        <div id="results-dashboard">
+            <h4 style="margin: 0 0 10px 0; color:#198754;">📊 Peak Fit Results</h4>
+            <table class="results-table" id="results-matrix-sheet">
+                <caption class="visually-hidden">Fitted Raman band centers, amplitudes, and widths</caption>
+                <thead>
+                    <tr>
+                        <th>Dataset / Spectrum</th>
+                        <th>Peak ID</th>
+                        <th>Center (cm⁻¹)</th>
+                        <th>Amplitude (counts)</th>
+                        <th>FWHM (cm⁻¹)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        const VERSION_TAG = "raman-v2026.07.22.1";
+
+        let persistentDatasets = {};
+        let fittingModeActive = false;
+        let normalizationModeActive = false;
+        let peakGuessesX = [];
+        let currentMouseHoverX = null;
+        let historyStack = [];
+        let adjustMode = null;       // null | 'offset' | 'scale'
+        let adjustArmed = false;     // one history snapshot per wheel session
+        let traceIndexByKey = {};    // dataset key -> Plotly trace index
+        let modalReturnFocus = null;
+
+        window.onload = function() {
+            document.getElementById('app-version-container').innerText = VERSION_TAG;
+
+            const startChart = function () {
+                renderPlaceholderCanvas();
+                const chartDiv = document.getElementById('chart-container');
+                chartDiv.addEventListener('contextmenu', function(e) {
+                    if (fittingModeActive && currentMouseHoverX !== null) {
+                        e.preventDefault();
+                        saveToHistory();
+                        peakGuessesX.push(currentMouseHoverX);
+                        updateChartCanvas();
+                    }
+                });
+                // LabSpec-style wheel adjust: add a constant (offset) or multiply (scale)
+                // the selected spectrum. Two-finger trackpad scroll also fires 'wheel'.
+                // Capture phase + preventDefault so Plotly doesn't swallow the gesture.
+                chartDiv.addEventListener('wheel', function(e) {
+                    if (!adjustMode) return;
+                    const sel = document.getElementById('adjust-target');
+                    if (!sel || !sel.value || !persistentDatasets[sel.value]) return;
+                    e.preventDefault();
+                    e.stopPropagation();
+                    applyAdjust(e.deltaY < 0 ? 1 : -1);
+                }, { passive: false, capture: true });
+            };
+
+            const readyPromise = window.__plotlyReady || Promise.resolve();
+            readyPromise.then(startChart).catch(function () {
+                document.getElementById('chart-container').innerHTML =
+                    '<div style="padding:40px; text-align:center; color:#dc3545; font-size:0.95rem;">' +
+                    'Could not load the Plotly charting library (network blocked?).<br>' +
+                    'Check your internet connection or network/firewall settings and reload.</div>';
+            });
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && document.getElementById('subtraction-modal').style.display === 'flex') {
+                    closeSubtractionModal();
+                }
+            });
+        };
+
+        function addPeakGuessFromInput() {
+            if (!fittingModeActive) {
+                alert("Turn on peak selection before adding a band center.");
+                document.getElementById('btn-fit-toggle').focus();
+                return;
+            }
+            const input = document.getElementById('peak-center-input');
+            const value = Number(input.value);
+            if (!Number.isFinite(value)) {
+                alert("Enter a numeric Raman shift.");
+                input.focus();
+                return;
+            }
+            saveToHistory();
+            peakGuessesX.push(value);
+            input.value = "";
+            updateChartCanvas();
+            input.focus();
+        }
+
+        function saveToHistory() {
+            if (historyStack.length >= 25) {
+                historyStack.shift();
+            }
+            const datasetsCacheCopy = {};
+            for (const key in persistentDatasets) {
+                datasetsCacheCopy[key] = {
+                    angles: [...persistentDatasets[key].angles],
+                    intensities: [...persistentDatasets[key].intensities],
+                    label: persistentDatasets[key].label
+                };
+            }
+            const resultsTableCacheCopy = [];
+            document.querySelectorAll("#results-matrix-sheet tbody tr").forEach(tr => {
+                const tds = tr.querySelectorAll("td");
+                if (tds.length === 5) {
+                    resultsTableCacheCopy.push([tds[0].innerText, tds[1].innerText, tds[2].innerText, tds[3].innerText, tds[4].innerText]);
+                }
+            });
+            historyStack.push({
+                persistentDatasets: datasetsCacheCopy,
+                peakGuessesX: [...peakGuessesX],
+                tableData: resultsTableCacheCopy,
+                dashboardDisplay: document.getElementById('results-dashboard').style.display
+            });
+            document.getElementById('btn-undo').disabled = false;
+        }
+
+        function undoLastAction() {
+            if (historyStack.length === 0) return;
+            const snapshot = historyStack.pop();
+            persistentDatasets = snapshot.persistentDatasets;
+            peakGuessesX = snapshot.peakGuessesX;
+
+            const tableBody = document.querySelector("#results-matrix-sheet tbody");
+            tableBody.innerHTML = "";
+            snapshot.tableData.forEach(rowData => {
+                const tr = document.createElement('tr');
+                rowData.forEach(textCell => {
+                    const td = document.createElement('td'); td.innerText = textCell; tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            });
+            document.getElementById('results-dashboard').style.display = snapshot.dashboardDisplay;
+            if (historyStack.length === 0) document.getElementById('btn-undo').disabled = true;
+
+            refreshCheckboxTargetsPanel();
+            updateChartCanvas();
+        }
+
+        function interpolateArray(targetX, blankX, blankY) {
+            let resultY = [];
+            for (let i = 0; i < targetX.length; i++) {
+                let tx = targetX[i];
+                if (tx <= blankX[0]) {
+                    resultY.push(blankY[0]);
+                } else if (tx >= blankX[blankX.length - 1]) {
+                    resultY.push(blankY[blankY.length - 1]);
+                } else {
+                    let idx = 0;
+                    while (idx < blankX.length - 1 && blankX[idx + 1] < tx) { idx++; }
+                    let x0 = blankX[idx], x1 = blankX[idx + 1];
+                    let y0 = blankY[idx], y1 = blankY[idx + 1];
+                    resultY.push(y0 + (tx - x0) * (y1 - y0) / (x1 - x0));
+                }
+            }
+            return resultY;
+        }
+
+        function openSubtractionModal() {
+            const datasetKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_"));
+            if (datasetKeys.length < 2) {
+                alert("You must have at least two spectra loaded to execute subtraction.");
+                return;
+            }
+            const selectEl = document.getElementById('modal-blank-select');
+            selectEl.innerHTML = "";
+            datasetKeys.forEach(key => {
+                const opt = document.createElement('option'); opt.value = key; opt.innerText = persistentDatasets[key].label; selectEl.appendChild(opt);
+            });
+
+            const containerEl = document.getElementById('modal-targets-container');
+            containerEl.innerHTML = "";
+            datasetKeys.forEach((key, idx) => {
+                const div = document.createElement('div'); div.className = 'checkbox-container'; div.style.margin = '4px 0';
+                const cb = document.createElement('input'); cb.type = 'checkbox'; cb.className = 'modal-target-cb'; cb.id = `modal-target-${key}`; cb.value = key; cb.checked = idx > 0;
+                const lbl = document.createElement('label'); lbl.htmlFor = cb.id; lbl.innerText = persistentDatasets[key].label; lbl.style.fontSize = '0.85rem'; lbl.style.cursor = 'pointer';
+                div.appendChild(cb); div.appendChild(lbl); containerEl.appendChild(div);
+            });
+            modalReturnFocus = document.activeElement;
+            document.getElementById('subtraction-modal').style.display = 'flex';
+            selectEl.focus();
+        }
+
+        function closeSubtractionModal() {
+            document.getElementById('subtraction-modal').style.display = 'none';
+            if (modalReturnFocus) modalReturnFocus.focus();
+        }
+
+        function runReferenceSubtraction() {
+            const blankKey = document.getElementById('modal-blank-select').value;
+            const checkedBoxes = document.querySelectorAll('.modal-target-cb:checked');
+            if (checkedBoxes.length === 0) { alert("Please pick at least one target spectrum to clean."); return; }
+            saveToHistory(); clearFittedModelsCache();
+
+            const blankX = persistentDatasets[blankKey].angles; const blankY = persistentDatasets[blankKey].intensities;
+            checkedBoxes.forEach(cb => {
+                const targetKey = cb.value; if (targetKey === blankKey) return;
+                const targetX = persistentDatasets[targetKey].angles; const targetY = persistentDatasets[targetKey].intensities;
+                const interpolatedBlankY = interpolateArray(targetX, blankX, blankY);
+                for (let i = 0; i < targetY.length; i++) { persistentDatasets[targetKey].intensities[i] = targetY[i] - interpolatedBlankY[i]; }
+            });
+            closeSubtractionModal(); refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+
+        function smoothNoise() {
+            let winSize = parseInt(document.getElementById('smooth-window-input').value);
+            if (isNaN(winSize) || winSize < 3) { winSize = 11; document.getElementById('smooth-window-input').value = "11"; }
+            if (winSize % 2 === 0) winSize++;
+
+            const datasetKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_") && !k.startsWith("__ref_"));
+            if (datasetKeys.length === 0) return;
+
+            saveToHistory(); clearFittedModelsCache();
+
+            datasetKeys.forEach(key => {
+                const intensities = persistentDatasets[key].intensities; if (intensities.length <= winSize) return;
+                const smoothed = new Array(intensities.length); const half = Math.floor(winSize / 2);
+                let kernel = []; let sigma = half / 2.2; let sum = 0;
+                for (let i = -half; i <= half; i++) {
+                    let g = Math.exp(-(i * i) / (2 * sigma * sigma)); kernel.push(g); sum += g;
+                }
+                kernel = kernel.map(v => v / sum);
+                for (let i = 0; i < intensities.length; i++) {
+                    let kSum = 0;
+                    for (let w = -half; w <= half; w++) {
+                        let idx = i + w; if (idx < 0) idx = 0; if (idx >= intensities.length) idx = intensities.length - 1;
+                        kSum += intensities[idx] * kernel[w + half];
+                    }
+                    smoothed[i] = kSum;
+                }
+                persistentDatasets[key].intensities = smoothed;
+            });
+            refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+
+        function applyShift() {
+            let shiftVal = parseFloat(document.getElementById('shift-window-input').value);
+            if (isNaN(shiftVal) || shiftVal === 0.0) return;
+
+            const datasetKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_") && !k.startsWith("__ref_"));
+            if (datasetKeys.length === 0) return;
+
+            saveToHistory(); clearFittedModelsCache();
+
+            datasetKeys.forEach(key => {
+                for (let i = 0; i < persistentDatasets[key].angles.length; i++) {
+                    persistentDatasets[key].angles[i] += shiftVal;
+                }
+            });
+            refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+
+        function refreshCheckboxTargetsPanel() {
+            const panel = document.getElementById('fit-targets-panel'); const datasetKeys = Object.keys(persistentDatasets);
+            const historicalCheckedStates = {}; panel.querySelectorAll('input[type="checkbox"]').forEach(cb => { historicalCheckedStates[cb.value] = cb.checked; });
+
+            panel.innerHTML = "";
+            if (datasetKeys.length === 0) { panel.innerHTML = '<div style="color: #888888; font-size: 0.85rem; font-style: italic;">No Spectra Loaded</div>'; return; }
+
+            datasetKeys.forEach(key => {
+                const wrapper = document.createElement('div'); wrapper.style.display = 'flex'; wrapper.style.alignItems = 'center'; wrapper.style.justifyContent = 'space-between'; wrapper.style.width = '100%'; wrapper.style.margin = '4px 0';
+                const leftDiv = document.createElement('div'); leftDiv.className = 'checkbox-container'; leftDiv.style.margin = '0';
+
+                const isFitOrRef = key.startsWith("__fit_") || key.startsWith("__ref_");
+                if (!isFitOrRef) {
+                    const cb = document.createElement('input'); cb.type = 'checkbox'; cb.id = `fit-check-${key}`; cb.value = key;
+                    cb.checked = historicalCheckedStates[key] !== undefined ? historicalCheckedStates[key] : true;
+                    cb.onchange = updateChartCanvas;  // toggle spectrum visibility
+                    const label = document.createElement('label'); label.htmlFor = cb.id; label.innerText = persistentDatasets[key].label; label.style.fontSize = '0.85rem'; label.style.cursor = 'pointer';
+                    leftDiv.appendChild(cb); leftDiv.appendChild(label);
+                } else {
+                    const spanLabel = document.createElement('span'); spanLabel.innerText = persistentDatasets[key].label; spanLabel.style.fontSize = '0.85rem'; spanLabel.style.fontStyle = 'italic'; spanLabel.style.color = '#555555';
+                    leftDiv.appendChild(spanLabel);
+                }
+                const deleteButton = document.createElement('button'); deleteButton.type = 'button'; deleteButton.className = 'layer-delete'; deleteButton.innerText = "❌"; deleteButton.title = "Remove this layer"; deleteButton.setAttribute('aria-label', `Remove ${persistentDatasets[key].label}`);
+                deleteButton.onclick = function() { removeSpecificDataset(key); };
+                wrapper.appendChild(leftDiv); wrapper.appendChild(deleteButton); panel.appendChild(wrapper);
+            });
+            refreshAdjustTargets();
+        }
+
+        function refreshAdjustTargets() {
+            const sel = document.getElementById('adjust-target');
+            if (!sel) return;
+            const prev = sel.value;
+            const keys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_"));
+            sel.innerHTML = "";
+            keys.forEach(k => {
+                const o = document.createElement('option');
+                o.value = k; o.innerText = persistentDatasets[k].label;
+                sel.appendChild(o);
+            });
+            if (keys.indexOf(prev) !== -1) sel.value = prev;
+        }
+
+        function setAdjustMode(mode) {
+            if (Object.keys(persistentDatasets).length === 0) { alert("Load spectra first."); return; }
+            adjustMode = (adjustMode === mode) ? null : mode;
+            adjustArmed = false;
+            if (adjustMode) {
+                if (fittingModeActive) toggleFittingMode();
+                if (normalizationModeActive) toggleNormalizationMode();
+            }
+            document.getElementById('btn-adjust-offset').classList.toggle('adjust-on', adjustMode === 'offset');
+            document.getElementById('btn-adjust-scale').classList.toggle('adjust-on', adjustMode === 'scale');
+        }
+
+        // Discrete step from the on-screen buttons (no wheel needed, e.g. on a MacBook).
+        function adjustStep(dir) {
+            const sel = document.getElementById('adjust-target');
+            if (!sel || !sel.value || !persistentDatasets[sel.value]) { alert("Select a target spectrum first."); return; }
+            if (!adjustMode) setAdjustMode('offset');  // default so the buttons work without arming
+            applyAdjust(dir);
+        }
+
+        // Shared offset/scale application used by both the wheel and the +/- buttons.
+        function applyAdjust(dir) {
+            const sel = document.getElementById('adjust-target');
+            const key = sel && sel.value;
+            if (!key || !persistentDatasets[key]) return;
+            if (!adjustArmed) { saveToHistory(); adjustArmed = true; }
+            const ds = persistentDatasets[key];
+            if (adjustMode === 'scale') {
+                let pct = parseFloat(document.getElementById('scale-step').value);
+                if (isNaN(pct)) pct = 5;
+                const f = Math.pow(1 + pct / 100, dir);
+                ds.intensities = ds.intensities.map(v => v * f);
+            } else {
+                let step = parseFloat(document.getElementById('offset-step').value);
+                if (isNaN(step)) step = 100;
+                ds.intensities = ds.intensities.map(v => v + step * dir);
+            }
+            const idx = traceIndexByKey[key];
+            if (idx !== undefined) { Plotly.restyle('chart-container', { y: [ds.intensities] }, [idx]); }
+            else { updateChartCanvas(); }
+        }
+
+        function removeSpecificDataset(key) {
+            saveToHistory(); if (persistentDatasets[key]) { delete persistentDatasets[key]; }
+            Object.keys(persistentDatasets).forEach(k => { if (k.endsWith('_' + key)) { delete persistentDatasets[k]; } });
+            if (Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_")).length === 0) {
+                document.querySelector("#results-matrix-sheet tbody").innerHTML = ""; document.getElementById('results-dashboard').style.display = "none"; peakGuessesX = [];
+            }
+            refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+
+        function toggleNormalizationMode() {
+            if (Object.keys(persistentDatasets).length === 0) { alert("Load spectra first."); return; }
+            normalizationModeActive = !normalizationModeActive; const btn = document.getElementById('btn-normalize-toggle');
+            if (normalizationModeActive) {
+                if (fittingModeActive) toggleFittingMode(); btn.innerText = "⚖️ Mode: SELECT PEAK"; btn.classList.add('active');
+            } else {
+                btn.innerText = "⚖️ Normalize to Peak"; btn.classList.remove('active');
+            }
+        }
+
+        function toggleFittingMode() {
+            if (Object.keys(persistentDatasets).length === 0) { alert("Load spectra first."); return; }
+            fittingModeActive = !fittingModeActive; const btn = document.getElementById('btn-fit-toggle'); const runBtn = document.getElementById('btn-run-fit');
+            if (fittingModeActive) {
+                if (normalizationModeActive) toggleNormalizationMode(); btn.innerText = "🎯 Peak Selection: ACTIVE"; btn.classList.add('active'); runBtn.style.display = "block";
+            } else {
+                btn.innerText = "🎯 Peak Selection: OFF"; btn.classList.remove('active'); runBtn.style.display = "none";
+            }
+        }
+
+        function subtractBackgroundFromPlotted() {
+            const dataKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_")); if (dataKeys.length === 0) { alert("No active spectra loaded to baseline-correct."); return; }
+            saveToHistory(); clearFittedModelsCache();
+            dataKeys.forEach(key => {
+                const dataset = persistentDatasets[key]; const intensities = dataset.intensities; if (intensities.length < 3) return;
+                const bg = snipBackground(intensities, 40);
+                for (let i = 0; i < intensities.length; i++) dataset.intensities[i] = intensities[i] - bg[i];
+            });
+            updateChartCanvas();
+        }
+
+        function executePeakOptimization() {
+            if (peakGuessesX.length === 0) { alert("Right-click on the plot to specify initial band centers."); return; }
+            const panel = document.getElementById('fit-targets-panel'); let keysToFit = []; panel.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => { keysToFit.push(cb.value); });
+            if (keysToFit.length === 0) { alert("Please select at least one target spectrum checkbox in the panel list."); return; }
+
+            saveToHistory(); Object.keys(persistentDatasets).forEach(k => { if(k.startsWith("__fit_")) delete persistentDatasets[k]; });
+            const tableBody = document.querySelector("#results-matrix-sheet tbody"); tableBody.innerHTML = "";
+
+            keysToFit.forEach(key => {
+                const rawX = persistentDatasets[key].angles; const rawY = persistentDatasets[key].intensities; const labelBase = persistentDatasets[key].label;
+                let xFit = [...rawX], yFit = [...rawY];
+                if (xFit.length > 1200) {
+                    let samplingInterval = Math.ceil(xFit.length / 1200); xFit = xFit.filter((_, i) => i % samplingInterval === 0); yFit = yFit.filter((_, i) => i % samplingInterval === 0);
+                }
+                let initialGuess = [];
+                peakGuessesX.forEach(g_x => {
+                    let closestIdx = 0, minDiff = Infinity;
+                    for (let i = 0; i < xFit.length; i++) {
+                        let diff = Math.abs(xFit[i] - g_x); if (diff < minDiff) { minDiff = diff; closestIdx = i; }
+                    }
+                    // Raman bands are typically several cm-1 wide
+                    initialGuess.push(yFit[closestIdx], g_x, 10.0);
+                });
+                function sumOfSquaredErrors(params) {
+                    let sse = 0;
+                    for (let i = 0; i < xFit.length; i++) {
+                        let x = xFit[i]; let modelY = 0;
+                        for (let p = 0; p < params.length; p += 3) {
+                            let amp = params[p]; let cent = params[p+1]; let wid = params[p+2]; if (amp < 0 || wid < 0.3) return Infinity;
+                            modelY += amp * Math.exp(-Math.pow((x - cent) / wid, 2));
+                        }
+                        sse += Math.pow(yFit[i] - modelY, 2);
+                    }
+                    return sse;
+                }
+                const pOpt = nelderMeadOptimization(sumOfSquaredErrors, initialGuess);
+                let yFitTotal = new Array(rawX.length).fill(0); let peakCounter = 1;
+                for (let p = 0; p < pOpt.length; p += 3) {
+                    let amp = pOpt[p], cent = pOpt[p+1], wid = pOpt[p+2]; let yPeak = [];
+                    for (let i = 0; i < rawX.length; i++) {
+                        let val = amp * Math.exp(-Math.pow((rawX[i] - cent) / wid, 2)); yPeak.push(val); yFitTotal[i] += val;
+                    }
+                    persistentDatasets[`__fit_peak_${peakCounter}_${key}`] = { angles: rawX, intensities: yPeak, label: `${labelBase} Pk ${peakCounter} Fit` };
+                    let fwhm = 2.0 * Math.sqrt(Math.LN2) * wid;
+                    let tr = document.createElement('tr');
+                    [labelBase, `Peak ${peakCounter}`, cent.toFixed(2), amp.toFixed(1), fwhm.toFixed(2)].forEach(function (value) {
+                        const td = document.createElement('td'); td.textContent = value; tr.appendChild(td);
+                    });
+                    tableBody.appendChild(tr); peakCounter++;
+                }
+                persistentDatasets[`__fit_composite_${key}`] = { angles: rawX, intensities: yFitTotal, label: `${labelBase} Total Fit` };
+            });
+            document.getElementById('results-dashboard').style.display = "block"; refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+
+        function handleFileSelections(event) {
+            const files = event.target.files; if (!files.length) return;
+            let itemsProcessed = 0;
+            const finalize = function () {
+                itemsProcessed++;
+                if (itemsProcessed === files.length) { refreshCheckboxTargetsPanel(); updateChartCanvas(); event.target.value = ''; }
+            };
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const extension = file.name.split('.').pop().toLowerCase();
+
+                if (extension === 'h5' || extension === 'hdf5') {
+                    // Binary HDF5 -> read as ArrayBuffer and parse with h5wasm
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        parseH5(e.target.result, file.name)
+                            .then(function (specList) {
+                                if (specList && specList.length) {
+                                    saveToHistory();
+                                    specList.forEach(function (spec, si) {
+                                        const key = `${file.name}::${si}`;
+                                        if (!persistentDatasets[key]) persistentDatasets[key] = spec;
+                                    });
+                                }
+                            })
+                            .catch(function (err) { alert(`Could not read ${file.name}\nReason: ${err.message}`); })
+                            .finally(finalize);
+                    };
+                    reader.onerror = function () { alert(`Failed to read file: ${file.name}`); finalize(); };
+                    reader.readAsArrayBuffer(file);
+                } else {
+                    // Text-based formats (.xml LabSpec export, or two-column / RRUFF text)
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        try {
+                            if (extension === 'xml') {
+                                const specList = parseLSXXML(e.target.result, file.name);
+                                if (specList && specList.length) {
+                                    saveToHistory();
+                                    specList.forEach(function (spec, si) {
+                                        const key = specList.length === 1 ? file.name : `${file.name}::${si}`;
+                                        if (!persistentDatasets[key]) persistentDatasets[key] = spec;
+                                    });
+                                }
+                            } else {
+                                if (persistentDatasets[file.name]) { finalize(); return; }
+                                const parsed = parseTwoColumn(e.target.result, file.name);
+                                if (parsed) { saveToHistory(); persistentDatasets[file.name] = parsed; }
+                            }
+                        } catch (err) { alert(`Parsing error: ${file.name}\nReason: ${err.message}`); }
+                        finalize();
+                    };
+                    reader.onerror = function () { alert(`Failed to read file: ${file.name}`); finalize(); };
+                    reader.readAsText(file);
+                }
+            }
+        }
+
+        // ---- HORIBA LabSpec 6 .h5 parser (via h5wasm) ----
+        // Each spectrum is a 1-D dataset under /Datas with DataType='Spectrum';
+        // the x-axis (Raman shift, cm-1) is stored in its 'Axis1' attribute.
+        async function parseH5(arrayBuffer, filename) {
+            const lib = await window.loadH5Wasm();
+            const h5 = lib.h5, FS = lib.FS;
+            const fsName = `upload_${Date.now()}_${Math.random().toString(36).slice(2)}.h5`;
+            FS.writeFile(fsName, new Uint8Array(arrayBuffer));
+            const spectra = [];
+            let f;
+            try {
+                f = new h5.File(fsName, "r");
+                const datas = f.get("Datas");
+                if (!datas) throw new Error("Not a LabSpec .h5 file ('Datas' group missing).");
+                let names = datas.keys().filter(k => k.startsWith("Data") && !k.startsWith("DataInfo"));
+                names.sort((a, b) => {
+                    const na = parseInt(a.replace(/\D/g, ""), 10) || 0;
+                    const nb = parseInt(b.replace(/\D/g, ""), 10) || 0;
+                    return na - nb;
+                });
+                const usedLabels = {};
+                names.forEach(name => {
+                    const ds = f.get("Datas/" + name);
+                    if (!ds || !ds.attrs) return;
+                    const dtype = attrToString(ds.attrs["DataType"]);
+                    const shape = ds.shape || [];
+                    // Only 1-D spectra; skip the optical image (Video, 3-D)
+                    if (dtype !== "Spectrum" || shape.length !== 1) return;
+                    if (!ds.attrs["Axis1"]) return;
+                    const x = Array.from(attrToArray(ds.attrs["Axis1"]));
+                    const y = Array.from(ds.value);
+                    if (x.length !== y.length) return;
+                    let title = attrToString(ds.attrs["Title"]) || name;
+                    if (usedLabels[title]) { usedLabels[title]++; title = `${title} (${usedLabels[title]})`; }
+                    else { usedLabels[title] = 1; }
+                    spectra.push({ angles: x, intensities: y, label: title });
+                });
+            } finally {
+                try { if (f) f.close(); } catch (e) {}
+                try { FS.unlink(fsName); } catch (e) {}
+            }
+            if (spectra.length === 0) throw new Error("No 1-D Raman spectra found inside this .h5 file.");
+            return spectra;
+        }
+
+        // h5wasm returns attributes either as raw values or {value, shape, ...}
+        function attrRaw(a) { return (a && a.value !== undefined) ? a.value : a; }
+        function attrToString(a) {
+            let v = attrRaw(a);
+            if (v == null) return "";
+            if (Array.isArray(v)) v = v[0];
+            if (v instanceof Uint8Array) return new TextDecoder("latin1").decode(v).replace(/\0+$/, "").trim();
+            return String(v).replace(/\0+$/, "").trim();
+        }
+        function attrToArray(a) {
+            const v = attrRaw(a);
+            if (v == null) return [];
+            if (ArrayBuffer.isView(v)) return v;      // typed array
+            if (Array.isArray(v)) return v;
+            return [v];
+        }
+
+        // Two-column text, RRUFF-aware. RRUFF files carry '##' metadata lines
+        // such as ##NAMES=Quartz and ##RRUFFID=R040031.
+        function parseTwoColumn(text, filename) {
+            const lines = text.split(/\r?\n/);
+            let sampleId = filename.split('.').slice(0, -1).join('.') || filename;
+            let rruffName = null, rruffId = null;
+            const angles = []; const intensities = [];
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim(); if (!line) continue;
+                if (line.startsWith('#')) {
+                    const m = line.match(/^#+\s*([A-Za-z ]+)\s*=\s*(.*)$/);
+                    if (m) {
+                        const key = m[1].trim().toUpperCase(); const val = m[2].trim();
+                        if (key === 'NAMES' && val) rruffName = val;
+                        else if (key === 'RRUFFID' && val) rruffId = val;
+                    }
+                    continue;
+                }
+                let parts;
+                if (line.includes(',')) parts = line.split(',');
+                else if (line.includes('\t')) parts = line.split('\t');
+                else if (line.includes(';')) parts = line.split(';');
+                else parts = line.split(/\s+/);
+                if (parts.length < 2) continue;
+                const xv = parseFloat(parts[0]); const yv = parseFloat(parts[1]);
+                if (!isNaN(xv) && !isNaN(yv)) { angles.push(xv); intensities.push(yv); }
+            }
+            if (angles.length === 0) throw new Error("Could not parse two numeric columns (Raman shift, Intensity).");
+            const label = rruffName ? (`RRUFF: ${rruffName}` + (rruffId ? ` (${rruffId})` : "")) : sampleId;
+            return { angles, intensities, label };
+        }
+
+        // HORIBA LabSpec 6 "LSX" XML export.
+        //   X axis (Raman shift) = first Format="6" numeric array inside <LSX_Tree>.
+        //   Y intensity          = each <LSX_Row> inside <LSX_Matrix>.
+        function parseLSXXML(xmlText, filename) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(xmlText, "text/xml");
+            if (doc.getElementsByTagName("parsererror").length) throw new Error("Malformed XML.");
+
+            let title = filename.split('.').slice(0, -1).join('.') || filename;
+            const allLSX = doc.getElementsByTagName("LSX");
+            // Title: first Format="8" string that isn't a file path.
+            for (let i = 0; i < allLSX.length; i++) {
+                if (allLSX[i].getAttribute("Format") === "8" && allLSX[i].textContent) {
+                    const v = allLSX[i].textContent.trim();
+                    if (!v.includes(":\\") && !v.includes("/")) { title = v; break; }
+                }
+            }
+            // X axis: first Format="6" numeric array (found in the metadata tree).
+            let xAxis = null;
+            for (let i = 0; i < allLSX.length; i++) {
+                if (allLSX[i].getAttribute("Format") === "6" && allLSX[i].textContent && allLSX[i].textContent.trim()) {
+                    xAxis = allLSX[i].textContent.trim().split(/\s+/).map(Number);
+                    break;
+                }
+            }
+            // Y rows from <LSX_Matrix>/<LSX_Row>.
+            const rows = [];
+            const matrices = doc.getElementsByTagName("LSX_Matrix");
+            for (let m = 0; m < matrices.length; m++) {
+                const rowEls = matrices[m].getElementsByTagName("LSX_Row");
+                for (let r = 0; r < rowEls.length; r++) {
+                    const txt = rowEls[r].textContent;
+                    if (txt && txt.trim()) rows.push(txt.trim().split(/\s+/).map(Number));
+                }
+            }
+            if (rows.length === 0) throw new Error("No spectral data (LSX_Matrix rows) found in this XML.");
+
+            const out = [];
+            rows.forEach((y, i) => {
+                let x = xAxis;
+                if (!x || x.length !== y.length) { x = []; for (let k = 0; k < y.length; k++) x.push(k); }
+                const label = rows.length === 1 ? title : `${title} [${i}]`;
+                out.push({ angles: x, intensities: y, label });
+            });
+            return out;
+        }
+
+        // ---- RRUFF reference search (browser best-effort) ----
+        // Browsers usually block cross-origin requests to rruff.info (no CORS
+        // headers), so this attempts a direct fetch and, on failure, guides the
+        // user to download the .txt spectrum and open it with the file picker.
+        let rruffHits = [];
+        async function rruffSearch() {
+            const q = document.getElementById('rruff-query').value.trim();
+            const statusEl = document.getElementById('rruff-status');
+            const resultsEl = document.getElementById('rruff-results');
+            resultsEl.innerHTML = ""; rruffHits = [];
+            if (!q) { statusEl.innerText = "Enter a mineral name or RRUFF ID first."; return; }
+            statusEl.innerText = "Searching rruff.info ...";
+            try {
+                // RRUFF exposes a simple text search of sample records.
+                const url = `https://rruff.info/mineral_list/list.php?p=${encodeURIComponent(q)}`;
+                const resp = await fetch(url, { mode: 'cors' });
+                if (!resp.ok) throw new Error("HTTP " + resp.status);
+                const html = await resp.text();
+                // Extract RRUFF IDs (Rxxxxxx) and nearby names from the returned HTML.
+                const ids = Array.from(new Set((html.match(/R\d{6}/g) || [])));
+                if (ids.length === 0) { statusEl.innerText = "No matches found."; return; }
+                ids.slice(0, 50).forEach(id => {
+                    rruffHits.push({ name: q, id: id });
+                    const opt = document.createElement('option');
+                    opt.value = id; opt.innerText = `${q} · ${id}`;
+                    resultsEl.appendChild(opt);
+                });
+                statusEl.innerText = `${ids.length} candidate ID(s). Select one and overlay.`;
+            } catch (err) {
+                statusEl.innerHTML = "Direct RRUFF access was blocked by the browser (CORS). " +
+                    'Search <a href="https://rruff.info/" target="_blank" rel="noopener">rruff.info</a>, ' +
+                    "download the Raman .txt (Processed), then open it with 📁 — it will be labeled automatically.";
+            }
+        }
+
+        async function rruffOverlaySelected() {
+            const resultsEl = document.getElementById('rruff-results');
+            const statusEl = document.getElementById('rruff-status');
+            const id = resultsEl.value;
+            if (!id) { statusEl.innerText = "Select a search result first."; return; }
+            statusEl.innerText = `Fetching ${id} ...`;
+            try {
+                // Attempt to pull the processed Raman text for this RRUFF ID.
+                const url = `https://rruff.info/tmp/${id}.txt`;
+                const resp = await fetch(url, { mode: 'cors' });
+                if (!resp.ok) throw new Error("HTTP " + resp.status);
+                const text = await resp.text();
+                const parsed = parseTwoColumn(text, id);
+                saveToHistory();
+                // Scale to current data max for comparison.
+                scaleRefToData(parsed);
+                const key = `__ref_${id}`;
+                persistentDatasets[key] = parsed;
+                refreshCheckboxTargetsPanel(); updateChartCanvas();
+                statusEl.innerText = `Overlaid RRUFF ${id}.`;
+            } catch (err) {
+                statusEl.innerHTML = "Could not fetch the spectrum directly (CORS/network). " +
+                    'Open <a href="https://rruff.info/' + id + '" target="_blank" rel="noopener">rruff.info/' + id + '</a>, ' +
+                    "download the Raman .txt, then open it with 📁.";
+            }
+        }
+
+        function scaleRefToData(ref) {
+            const dataKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_") && !k.startsWith("__ref_"));
+            if (!dataKeys.length) return;
+            let dataMax = -Infinity;
+            dataKeys.forEach(k => { persistentDatasets[k].intensities.forEach(v => { if (v > dataMax) dataMax = v; }); });
+            let refMax = -Infinity; ref.intensities.forEach(v => { if (v > refMax) refMax = v; });
+            if (refMax > 0 && dataMax > 0 && isFinite(dataMax)) {
+                ref.intensities = ref.intensities.map(v => (v / refMax) * dataMax);
+            }
+        }
+
+        function nelderMeadOptimization(fn, x0, options) {
+            options = options || {};
+            const maxIter = options.maxIter || 2000;
+            const tol = options.tol || 1e-8;
+            const n = x0.length;
+            if (n === 0) return x0.slice();
+
+            const alpha = 1.0, gamma = 2.0, rho = 0.5, sigma = 0.5;
+
+            let simplex = [];
+            simplex.push({ x: x0.slice(), f: fn(x0) });
+            for (let i = 0; i < n; i++) {
+                const point = x0.slice();
+                const step = (point[i] !== 0) ? 0.05 * point[i] : 0.00025;
+                point[i] += step;
+                simplex.push({ x: point, f: fn(point) });
+            }
+
+            for (let iter = 0; iter < maxIter; iter++) {
+                simplex.sort((a, b) => a.f - b.f);
+                const fBest = simplex[0].f;
+                const fWorst = simplex[n].f;
+                if (Math.abs(fWorst - fBest) < tol) break;
+
+                const centroid = new Array(n).fill(0);
+                for (let i = 0; i < n; i++) {
+                    for (let j = 0; j < n; j++) centroid[j] += simplex[i].x[j];
+                }
+                for (let j = 0; j < n; j++) centroid[j] /= n;
+
+                const worst = simplex[n];
+                const xr = new Array(n);
+                for (let j = 0; j < n; j++) xr[j] = centroid[j] + alpha * (centroid[j] - worst.x[j]);
+                const fr = fn(xr);
+
+                if (fr < simplex[0].f) {
+                    const xe = new Array(n);
+                    for (let j = 0; j < n; j++) xe[j] = centroid[j] + gamma * (xr[j] - centroid[j]);
+                    const fe = fn(xe);
+                    simplex[n] = (fe < fr) ? { x: xe, f: fe } : { x: xr, f: fr };
+                } else if (fr < simplex[n - 1].f) {
+                    simplex[n] = { x: xr, f: fr };
+                } else {
+                    const xc = new Array(n);
+                    for (let j = 0; j < n; j++) xc[j] = centroid[j] + rho * (worst.x[j] - centroid[j]);
+                    const fc = fn(xc);
+                    if (fc < worst.f) {
+                        simplex[n] = { x: xc, f: fc };
+                    } else {
+                        const best = simplex[0].x;
+                        for (let i = 1; i <= n; i++) {
+                            const xs = new Array(n);
+                            for (let j = 0; j < n; j++) xs[j] = best[j] + sigma * (simplex[i].x[j] - best[j]);
+                            simplex[i] = { x: xs, f: fn(xs) };
+                        }
+                    }
+                }
+            }
+
+            simplex.sort((a, b) => a.f - b.f);
+            return simplex[0].x;
+        }
+
+        function snipBackground(y, iterations = 40) {
+            let bg = [...y]; let n = bg.length;
+            let maxIter = Math.min(iterations, Math.floor(n / 2) - 1);
+            if (maxIter < 1) return new Array(n).fill(0);
+            for (let p = 1; p <= maxIter; p++) {
+                let temp = [...bg];
+                for (let i = p; i < n - p; i++) {
+                    let val = (temp[i - p] + temp[i + p]) / 2.0; if (val < bg[i]) bg[i] = val;
+                }
+            }
+            return bg;
+        }
+
+        function updateChartCanvas() {
+            const datasetKeys = Object.keys(persistentDatasets); const dataKeysWithoutFits = datasetKeys.filter(k => !k.startsWith("__fit_"));
+            document.getElementById('status-display').textContent = `Active spectra loaded: ${dataKeysWithoutFits.length}`;
+            if (datasetKeys.length === 0) { renderPlaceholderCanvas(); return; }
+            const tooltipEnabled = document.getElementById('toggle-tooltip').checked; const traces = [];
+            traceIndexByKey = {};
+            datasetKeys.forEach(key => {
+                const data = persistentDatasets[key]; const isFitCurve = key.startsWith("__fit_");
+                // Honor the layer checkbox: unchecked raw spectra are hidden.
+                if (!isFitCurve && !key.startsWith("__ref_")) {
+                    const cbEl = document.getElementById('fit-check-' + key);
+                    if (cbEl && !cbEl.checked) return;
+                }
+                let lineConfig = { width: 1.5 };
+                if (key.startsWith("__fit_composite")) lineConfig = { width: 2.0, dash: 'solid' };
+                else if (isFitCurve) lineConfig = { width: 1.2, dash: 'dot' };
+                traceIndexByKey[key] = traces.length;
+                traces.push({
+                    x: data.angles, y: data.intensities, type: 'scatter', mode: 'lines', name: data.label, line: lineConfig,
+                    hoverinfo: tooltipEnabled ? 'all' : 'none', hovertemplate: tooltipEnabled ? '%{y:.1f} counts<extra></extra>' : null
+                });
+            });
+            const verticalShapes = peakGuessesX.map(x_g => ({
+                type: 'line', xref: 'x', yref: 'paper', x0: x_g, y0: 0, x1: x_g, y1: 1, line: { color: '#d63384', width: 1.5, dash: 'dashdot' }
+            }));
+            const layout = {
+                title: { text: 'Raman Spectra', font: { size: 15, family: 'Arial, sans-serif', weight: 'bold' } },
+                xaxis: {
+                    title: 'Raman shift (cm⁻¹)', showgrid: true, gridcolor: '#e9ecef', ticks: 'outside', showspikes: true, spikemode: 'across', spikethickness: 1.0,
+                    spikedash: tooltipEnabled ? 'solid' : 'dash', spikecolor: tooltipEnabled ? '#495057' : '#dc3545'
+                },
+                yaxis: { title: 'Intensity (counts)', showgrid: true, gridcolor: '#e9ecef', ticks: 'outside' },
+                hovermode: tooltipEnabled ? 'x unified' : 'x', template: 'plotly_white', legend: { orientation: 'h', yanchor: 'bottom', y: 1.02, xanchor: 'right', x: 1 },
+                margin: { l: 60, r: 30, t: 80, b: 50 }, shapes: verticalShapes
+            };
+            Plotly.newPlot('chart-container', traces, layout, { responsive: true, displaylogo: false });
+
+            const chartDiv = document.getElementById('chart-container');
+            chartDiv.on('plotly_hover', function(data) {
+                if (data && data.points && data.points.length > 0) {
+                    currentMouseHoverX = data.points[0].x; document.getElementById('cursor-bar').textContent = `Cursor Position: Raman shift = ${currentMouseHoverX.toFixed(2)} cm⁻¹`;
+                }
+            });
+            chartDiv.on('plotly_unhover', function() { currentMouseHoverX = null; document.getElementById('cursor-bar').textContent = `Cursor Position: Raman shift = --`; });
+            chartDiv.on('plotly_click', function(plotlyData) {
+                if (normalizationModeActive && plotlyData && plotlyData.points && plotlyData.points.length > 0) {
+                    const xClick = plotlyData.points[0].x;
+                    let windowSize = parseFloat(document.getElementById('norm-span-input').value);
+                    if (isNaN(windowSize) || windowSize <= 0) { windowSize = 10; document.getElementById('norm-span-input').value = "10"; }
+
+                    const datasetKeys = Object.keys(persistentDatasets).filter(k => !k.startsWith("__fit_"));
+                    let willNormalize = false;
+                    datasetKeys.forEach(key => {
+                        const dataset = persistentDatasets[key]; let globalMax = -Infinity; let localPeakMax = -Infinity;
+                        for (let i = 0; i < dataset.angles.length; i++) {
+                            if (dataset.intensities[i] > globalMax) globalMax = dataset.intensities[i];
+                            if (dataset.angles[i] >= xClick - windowSize && dataset.angles[i] <= xClick + windowSize) {
+                                if (dataset.intensities[i] > localPeakMax) localPeakMax = dataset.intensities[i];
+                            }
+                        }
+                        if (localPeakMax > 0 && localPeakMax !== -Infinity && localPeakMax >= (0.05 * globalMax)) willNormalize = true;
+                    });
+                    if (willNormalize) saveToHistory();
+
+                    let normalizedAny = false;
+                    datasetKeys.forEach(key => {
+                        const dataset = persistentDatasets[key]; let globalMax = -Infinity; let localPeakMax = -Infinity;
+                        for (let i = 0; i < dataset.angles.length; i++) {
+                            if (dataset.intensities[i] > globalMax) globalMax = dataset.intensities[i];
+                            if (dataset.angles[i] >= xClick - windowSize && dataset.angles[i] <= xClick + windowSize) {
+                                if (dataset.intensities[i] > localPeakMax) localPeakMax = dataset.intensities[i];
+                            }
+                        }
+                        if (localPeakMax > 0 && localPeakMax !== -Infinity && localPeakMax >= (0.05 * globalMax)) {
+                            for (let i = 0; i < dataset.intensities.length; i++) dataset.intensities[i] = dataset.intensities[i] / localPeakMax;
+                            normalizedAny = true;
+                        }
+                    });
+                    if (normalizedAny) { clearFittedModelsCache(); updateChartCanvas(); }
+                    normalizationModeActive = false; const btn = document.getElementById('btn-normalize-toggle');
+                    btn.innerText = "⚖️ Normalize to Peak"; btn.classList.remove('active');
+                }
+            });
+        }
+
+        function renderPlaceholderCanvas() {
+            const layout = {
+                xaxis: { title: 'Raman shift (cm⁻¹)', range: [0, 3500], gridcolor: '#f1f3f5' }, yaxis: { title: 'Intensity (counts)', range: [0, 3000], gridcolor: '#f1f3f5' },
+                template: 'plotly_white', margin: { l: 60, r: 30, t: 40, b: 50 },
+                annotations: [{ text: "No spectra loaded. Use the control panel to browse files.", xref: "paper", yref: "paper", x: 0.5, y: 0.5, showarrow: false, font: { size: 14, color: "#6c757d", italic: true } }]
+            };
+            Plotly.newPlot('chart-container', [], layout, { responsive: true, displaylogo: false });
+        }
+
+        function cropToView() {
+            const datasetKeys = Object.keys(persistentDatasets); if (datasetKeys.length === 0) return;
+            const chartDiv = document.getElementById('chart-container'); let range = chartDiv.layout.xaxis.range;
+            if (!range && chartDiv._fullLayout && chartDiv._fullLayout.xaxis) range = chartDiv._fullLayout.xaxis.range; if (!range || range.length < 2) return;
+            const xmin = range[0]; const xmax = range[1];
+
+            saveToHistory(); clearFittedModelsCache();
+            datasetKeys.forEach(key => {
+                if (key.startsWith("__fit_")) { delete persistentDatasets[key]; return; }
+                const dataset = persistentDatasets[key]; const newAngles = []; const newIntensities = [];
+                for (let i = 0; i < dataset.angles.length; i++) {
+                    const currentAngle = dataset.angles[i]; if (currentAngle >= xmin && currentAngle <= xmax) { newAngles.push(currentAngle); newIntensities.push(dataset.intensities[i]); }
+                }
+                dataset.angles = newAngles; dataset.intensities = newIntensities;
+            });
+            refreshCheckboxTargetsPanel(); updateChartCanvas(); Plotly.relayout('chart-container', { 'xaxis.autorange': true, 'yaxis.autorange': true });
+        }
+
+        function handleTooltipToggle() {
+            const tooltipEnabled = document.getElementById('toggle-tooltip').checked;
+            if (Object.keys(persistentDatasets).length > 0) {
+                Plotly.relayout('chart-container', { hovermode: tooltipEnabled ? 'x unified' : 'x', 'xaxis.spikedash': tooltipEnabled ? 'solid' : 'dash', 'xaxis.spikecolor': tooltipEnabled ? '#495057' : '#dc3545' });
+                Plotly.restyle('chart-container', { hoverinfo: tooltipEnabled ? 'all' : 'none', hovertemplate: tooltipEnabled ? '%{y:.1f} counts<extra></extra>' : null });
+            }
+        }
+
+        function exportPlottedToCSV() {
+            const datasetKeys = Object.keys(persistentDatasets); if (datasetKeys.length === 0) return;
+            datasetKeys.forEach(key => {
+                const dataset = persistentDatasets[key]; if (dataset.angles.length === 0) return;
+                let csvString = "Raman shift (cm-1),Intensity (counts)\n"; for (let i = 0; i < dataset.angles.length; i++) csvString += `${Number(dataset.angles[i]).toFixed(6)},${Number(dataset.intensities[i]).toFixed(4)}\n`;
+                const csvBlob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' }); const virtualUrl = URL.createObjectURL(csvBlob);
+                const downloadAnchor = document.createElement("a");
+                const safeLabel = (dataset.label || key).replace(/[^A-Za-z0-9._-]+/g, "_");
+                const cleanBaseName = key.startsWith("__fit_") ? `fit_${safeLabel}` : `raman_${safeLabel}`;
+                downloadAnchor.setAttribute("href", virtualUrl); downloadAnchor.setAttribute("download", `${cleanBaseName}.csv`);
+                downloadAnchor.style.visibility = 'hidden'; document.body.appendChild(downloadAnchor); downloadAnchor.click(); document.body.removeChild(downloadAnchor); URL.revokeObjectURL(virtualUrl);
+            });
+        }
+
+        function clearFittedModelsCache() {
+            peakGuessesX = []; Object.keys(persistentDatasets).forEach(k => { if(k.startsWith("__fit_")) delete persistentDatasets[k]; });
+            document.querySelector("#results-matrix-sheet tbody").innerHTML = ""; document.getElementById('results-dashboard').style.display = "none";
+        }
+
+        function clearCanvas() {
+            if (Object.keys(persistentDatasets).length > 0) saveToHistory();
+            persistentDatasets = {}; clearFittedModelsCache(); fittingModeActive = false; normalizationModeActive = false;
+            adjustMode = null; adjustArmed = false;
+            document.getElementById('btn-adjust-offset').classList.remove('adjust-on'); document.getElementById('btn-adjust-scale').classList.remove('adjust-on');
+            document.getElementById('btn-fit-toggle').innerText = "🎯 Peak Selection: OFF"; document.getElementById('btn-fit-toggle').classList.remove('active');
+            document.getElementById('btn-normalize-toggle').innerText = "⚖️ Normalize to Peak"; document.getElementById('btn-normalize-toggle').classList.remove('active');
+            document.getElementById('btn-run-fit').style.display = "none"; document.getElementById('cursor-bar').textContent = `Cursor Position: Raman shift = --`;
+            refreshCheckboxTargetsPanel(); updateChartCanvas();
+        }
+    </script>
+</body>
+</html>

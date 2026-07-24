@@ -1,157 +1,60 @@
 ---
 layout: default
+title: Legacy Instrument Tutorial Template
+published: false
 ---
-# Breakerspace Instrument Tutorial Template - \<h1>
 
-## Overview: - \<h2>
+# Legacy Instrument Tutorial Compatibility Guide
 
-Matches info/image for instrument on lab page, brief description of what it does/how it works/what materials it's used for
+This unpublished file documents how to maintain a legacy page in `tutorials/` while its consolidated replacement is being developed. It is not the template for new instrument pages.
 
-### Index: - \<h3>
+New and migrated instrument content belongs under `instruments/` and should follow [`instruments/readme.md`](../instruments/readme.md). The canonical user-facing catalog is [`instruments/index.md`](../instruments/index.md).
 
-* [Standard operating protocol](#sop) - ([startup](#startup), [operation](#operation), [shutdown](#shutdown))
-* [Materials and sample prep](#materials)
-* [Detailed operating instructions](#details)
-* [Data processing and analysis](#data)
-* [Common failure modes](#failures)
-* [Manufacturer manuals](#manuals)
-* [Links](#links)
-* [Exercises](#exercises)
+## Current Transition Model
 
-<a name="sop"></a>
-### Standard operating protocol:
+* Keep an existing tutorial URL available until its consolidated instrument page is complete and inbound links have been reviewed.
+* Do not create a new legacy tutorial when an integrated instrument page can serve as the canonical destination.
+* Do not maintain conflicting operating instructions in both locations. Once the integrated page is promoted, the legacy URL should point users to it or contain only deliberately maintained compatibility content.
+* Keep incomplete or unresolved policy out of public instructions. Track cross-site decisions in [`_staff/site-todo.md`](../_staff/site-todo.md).
 
-<a name="startup"></a> 
-#### Instrument startup: - \<h5> 
+## Minimum Legacy Tutorial Structure
 
-* sequence of powering on, logging in, starting softare, homing/tilt position etc.
-* these steps should only need to be completed once per session
-* no images on page in this section, just text bullets, [text can link to image if needed](../assets/img/tutorials/template/ftir-switch.JPG)
+When a legacy tutorial still carries the active workflow, preserve stable anchors and include enough information for safe use:
 
-<a name="operation"></a>
-#### Operation: 
+1. Overview and intended use.
+2. Standard operating protocol with startup, operation, and shutdown.
+3. Compatible materials, sample limits, preparation, and instrument-specific PPE.
+4. Detailed operating instructions.
+5. Data saving, export, and basic interpretation.
+6. Common failure modes and stop conditions.
+7. Manufacturer manuals and supporting links.
+8. Exercises and active instrument-specific improvement notes.
 
-* steps to characterize - sample loading, data capture and saving, etc. - whatever might be repeated, characterization sequence
-* for instruments like SEM with multiple, independent characterization techniques (eg. EDS, imaging), make technique a top-level bullet and indent for steps
-	* this is tabbed in to be a sub-set of the above bullet
+Lab-wide training, reservations, safety, access, files, and contact guidance should link to the current top-level pages rather than being copied into the tutorial.
 
-<a name="shutdown"></a>
-####  Instrument shut down:
+## Migration Checklist
 
-* sequence to close/log off/power down as needed - whatever is done once at the conclusion of a session
-* highlight important steps in bold (ie. __make sure UV-Vis lamp is OFF__)
-* these steps should need to be performed once at the end of a characterization session
+When moving a tutorial into `instruments/`:
 
-<a name="materials"></a> 
-### Compatible materials and sample prep: 
+* [ ] Preserve and improve the substantive operating guidance rather than wrapping old text in a new page.
+* [ ] Add concise, fully linked Quick Actions for training, direct reservations, trained operation, detailed learning, manuals, and exercises; group instrument-page actions under **Get started** and **Learn and reference**.
+* [ ] Add accessible educational context explaining what the instrument shows, common uses, result interpretation, and limits.
+* [ ] Keep the trained-user reference concise and place the detailed training guide below it.
+* [ ] Review compatible samples, unusual-sample routing, PPE, cleanup, and stop conditions against current lab-wide policy.
+* [ ] Add data-saving, export, and file-location guidance.
+* [ ] Add troubleshooting that distinguishes documented recovery from stop-and-contact-staff conditions.
+* [ ] Connect the Level 1 exercise to a sample-library item or prepared kit when that system is ready.
+* [ ] Identify useful example results that can also support future educational Materials Showcases.
+* [ ] Update `instruments/index.md` only after the consolidated page is ready to replace the legacy destination.
+* [ ] Check all local links, image paths, heading fragments, alternative text, and image dimensions.
+* [ ] Decide whether the old tutorial should redirect, point to the new page, or retain limited compatibility content.
 
-* compatible materials
-* incompatible materials
-* safety/handling related info
-* images/videos inline as needed
+## Media Guidance
 
-#### Sample Prep may be own sub-section:
+Use the established `.page-figure`, `.media-pair`, and related responsive styles instead of embedding new one-off width and float rules. Provide descriptive alternative text, useful captions, intrinsic width and height, and lazy loading for non-critical images.
 
-* sample prep
-	* break into sub-sections as relevant, 
-	* ie. solid vs. powder vs. liquid
+Prefer controlled video for instructional motion. Existing GIFs may remain during migration, but new autoplaying animation should not be the only way to understand an essential step. Add missing source video, captions, transcripts, and reduced-motion improvements to the appropriate to-do list.
 
-<a name="details"></a> 
-### Detailed operating instructions: 
+## Supporting Systems
 
-* include sample loading/unloading
-* as needed explanations of each step, eg. collecting background, sample loading, etc.
-* software features
-* images/videos inline as needed
-
-<a name="data"></a>
-### Data processing and analysis:
-
-* what softare we recommend
-* typical steps
-* fill in with more detail as time allows, and/or add standalone data processing tutorials
-* images/videos inline as needed
-
-<a name="failures"></a>
-### Common failure modes:
-
-* these are where people frequently get stuck
-* example may include starting DSX software before microscope powered up
-* images/videos inline as needed
-
-<a name="manuals"></a>
-### Manufacturer's manuals:
-
-* Links to manual files in dropbox
-
-<a name="links"></a>
-### Links:
-
-* list of links, ie. good video tutorials, some student project, anything relevant
-
-<a name="exercises"></a>
-### Exercises:
-
-* intro for anyone - eg honey bee on optical
-* beginner exercise for course 3 subjects - identify and measure types of grain in metal sample, 
-* advanced exercise - deconvolution of compound sample from spectrometer, etc.
-
-# HTML examples to control layout, etc.
-
-
-Full width image , with caption, link to open image full screen:  
-
-<figure style="margin-left:0; margin-right:0;">
-	<a href="../assets/img/tutorials/template/ai-scientist.JPG" target="_parent"><img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="An AI generated image."></a>
-	<figcaption> An AI generated image. </figcaption>
-</figure>  
-
-33% width images using html image tags, one links to full screen:
-
-<figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/raman.JPG" alt="Raman microscope" style="width:33%; margin:0"> 
-	<img src="../assets/img/ftir.JPG" alt="FTIR spectrometer" style="width:33%; margin:0">
-	<a href="../assets/img/sem2.JPG" target="_parent"><img src="../assets/img/sem2.JPG" alt="SEM" style="width:33%; margin:0"></a>
-	<figcaption> Raman microscope, FTIR spectrometer, and scanning electron microscope. </figcaption>
-</figure>
-
-An image that floats to the right of text:
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:right; margin-left:10px; margin-bottom:1.4em;"> FLOAT RIGHT - Floating image with text. 
-
-This tag is necessary to clear the float, or else all text below will keep floating next to image: \<div style="clear:both;"></div>
-<div style="clear:both;"></div>  
-
-Same thing with image that floats to the left of text:  
-
-<img src="../assets/img/tutorials/template/ai-scientist.JPG" alt="AI generated scientist" style="width:33%; float:left; margin-right:10px; margin-bottom:1.4em;"> FLOAT LEFT - Floating image with text. Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.Floating image with text.  
-<div style="clear:both;"></div>  
-
-A gif sized to 32% width, that autoplays, with link that opens it full size:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/sample-load.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/sample-load.GIF" alt="Solid sample loading." style="width:32%;"></a>
-  <figcaption> Loading a solid sample</figcaption>
-</figure>
-
-A full width, high resolution gif:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/high-res-test.GIF" alt="High res gif test."></a>
-  <figcaption> A higher resolution gif</figcaption>
-</figure>
-
-An optimized embedded gif that links to a high resolution gif:
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/template/high-res-test.GIF" target="_parent"><img src="../assets/img/tutorials/template/optimized-750px.GIF" alt="High res gif test."></a>
-  <figcaption> A 750px wide gif that opens at higher resolution</figcaption>
-</figure>
-  
-Embedded video with controls:
-
-<video width="100%" controls>
-  <source src="../assets/video/raman-display-flip.MOV" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
+The planned [sample library](../sample-library.html) will connect standard samples, cabinet locations, expected results, exercises, and replenishment. The planned Materials Showcase will build educational themes from approved samples, observations, instrument results, projects, courses, and events. Neither should duplicate the instrument's operating instructions.

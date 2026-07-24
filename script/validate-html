@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require "w3c_validators"
+require "pathname"
 
 def validator(file)
   extension = File.extname(file)
@@ -25,4 +26,8 @@ def validate(file)
 end
 
 validate "index.html"
+validate "sample-library.html"
+Dir.glob(File.expand_path("../_site/sample-library/*/index.html", __dir__))
+  .sort
+  .each { |path| validate Pathname.new(path).relative_path_from(Pathname.new(File.expand_path("../_site", __dir__))).to_s }
 validate File.join "assets", "css", "style.css"

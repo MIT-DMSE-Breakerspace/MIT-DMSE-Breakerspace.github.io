@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<nav class="sample-breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ '/sample-library.html' | relative_url }}">Sample Library</a>
+  <span aria-hidden="true">/</span>
+  <span aria-current="page">{{ page.sample_id }}</span>
+</nav>
+
+<header class="sample-page-header">
+  <div>
+    <p class="sample-page-id">{{ page.sample_id }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="sample-page-description">{{ page.description }}</p>
+  </div>
+  <span class="sample-availability sample-availability-{{ page.availability }}">
+    {% case page.availability %}
+    {% when "available" %}Available
+    {% when "limited" %}Limited
+    {% when "documentation-only" %}Documentation only
+    {% else %}Unavailable
+    {% endcase %}
+  </span>
+</header>
+
+{% if page.material_class or page.composition or page.physical_form or page.provenance %}
+<section class="sample-page-section" aria-labelledby="material-details-heading">
+  <h2 id="material-details-heading">Material Details</h2>
+  <dl class="sample-detail-list">
+    {% if page.material_class %}<div><dt>Material class</dt><dd>{{ page.material_class }}</dd></div>{% endif %}
+    {% if page.composition %}<div><dt>Composition</dt><dd>{{ page.composition }}</dd></div>{% endif %}
+    {% if page.physical_form %}<div><dt>Physical form</dt><dd>{{ page.physical_form }}</dd></div>{% endif %}
+    {% if page.provenance %}<div><dt>Source or provenance</dt><dd>{{ page.provenance | newline_to_br }}</dd></div>{% endif %}
+  </dl>
+</section>
+{% endif %}
+
+{% if page.preparation_notes or page.handling_notes or page.storage_requirements %}
+<section class="sample-page-section" aria-labelledby="use-heading">
+  <h2 id="use-heading">Preparation And Use</h2>
+  <dl class="sample-detail-list">
+    {% if page.preparation_notes %}<div><dt>Preparation</dt><dd>{{ page.preparation_notes | newline_to_br }}</dd></div>{% endif %}
+    {% if page.handling_notes %}<div><dt>Handling and safety</dt><dd>{{ page.handling_notes | newline_to_br }}</dd></div>{% endif %}
+    {% if page.storage_requirements %}<div><dt>Storage requirements</dt><dd>{{ page.storage_requirements | newline_to_br }}</dd></div>{% endif %}
+  </dl>
+</section>
+{% endif %}
+
+{% if page.specimens.size > 0 %}
+<section class="sample-page-section" aria-labelledby="location-heading">
+  <h2 id="location-heading">Find The Sample</h2>
+  <div class="sample-specimen-list">
+  {% for specimen in page.specimens %}
+    <div>
+      <strong>{{ specimen.label_id }}</strong>
+      <span>{{ specimen.location }}</span>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign image_assets = page.assets | where: "is_image", true %}
+{% assign file_assets = page.assets | where: "is_image", false %}
+{% if image_assets.size > 0 or file_assets.size > 0 %}
+<section class="sample-page-section" aria-labelledby="characterization-heading">
+  <h2 id="characterization-heading">Images And Characterization</h2>
+  {% if image_assets.size > 0 %}
+  <div class="sample-asset-grid">
+  {% for asset in image_assets %}
+    <figure>
+      <a href="{{ asset.url | relative_url }}">
+        <img src="{{ asset.url | relative_url }}" alt="{{ asset.caption | escape }}" width="{{ asset.width }}" height="{{ asset.height }}" loading="lazy">
+      </a>
+      <figcaption>
+        {{ asset.caption }}
+        {% if asset.instrument %}<span>Instrument: {{ asset.instrument }}</span>{% endif %}
+      </figcaption>
+    </figure>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if file_assets.size > 0 %}
+  <ul class="sample-file-list">
+  {% for asset in file_assets %}
+    <li>
+      <div>
+        <strong>{{ asset.caption }}</strong>
+        {% if asset.instrument %}<span>Instrument: {{ asset.instrument }}</span>{% endif %}
+      </div>
+      <a href="{{ asset.url | relative_url }}" download>Download {{ asset.kind_label }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endif %}
+
+<p class="sample-page-back"><a href="{{ '/sample-library.html' | relative_url }}">Back to all samples</a></p>

@@ -1,0 +1,20 @@
+- label: Start Here
+  url: /
+- label: Reserve Time
+  url: /reservations.html
+- label: Find an Instrument
+  url: /instruments/
+- label: Sample Library
+  url: /sample-library.html
+- label: Get Trained
+  url: /training.html
+- label: Get Help
+  url: /resources.html
+- label: Safety & Lab Use
+  url: /safety.html
+- label: Use the Lounge
+  url: /lounge.html
+- label: Teach With Us
+  url: /teaching.html
+- label: About
+  url: /about.html

@@ -1,12 +1,86 @@
 ---
 layout: default
+title: DMSE Breakerspace
 ---
 
-The DMSE Breakerspace welcomes all MIT undergraduates to explore the world of materials through hands-on experiences with powerful desktop materials characterization instruments. More than just a laboratory, it’s a dynamic hub for multidisciplinary learning, encouraging students to pursue their own questions. The Breakerspace also features a lounge for relaxing, socializing, and enjoying espresso — an inclusive space for academic exploration and leisure. 
+# DMSE Breakerspace
 
-### Training, access, and hours:
+The DMSE Breakerspace is a materials exploration lab and lounge open to MIT undergraduates. Students can get trained to use desktop characterization instruments, investigate their own materials questions, document projects, and use the lounge as a place to gather, work, and recharge.
 
-The Breakerspace lab and lounge are both open 8 AM to midnight, seven days/week. New lab users should [register for a training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0) on our calendar to gain access to the lab. If you would like lounge access, please [request it here](https://docs.google.com/forms/d/e/1FAIpQLSdcX0J_sUQmiO0j15IHSrni4rX7LMLaILCjoXQOn4QriWAoHA/viewform?usp=sf_link).
+## Start Here
 
+Choose the situation that best matches what you are trying to do. You do not need to understand the lab's organization or know a specific instrument before getting started.
 
-<iframe src="https://breakerspace.libcal.com/embed_calendar.php?cal_id=19408&w=750&h=600&dv=agendaWeek&st=0&we=1&hl=prev%2Cnext%20today&hc=title&hr=basicWeek%20agendaDay%2CagendaWeek%2Cmonth&hd=dddd%2C%20MMM%20D%2C%20YYYY&hw=MMMM%20D&hm=MMMM%20YYYY&cd=dddd%20M%2FD&cw=ddd%20M%2FD&cm=ddd&ta=h(%3Amm)a&td=h(%3Amm)a&tm=h(%3Amm)a&fh=08%3A00%3A00&mi=08%3A00%3A00&ma=24%3A00%3A00&ts=00%3A30%3A00&eo=1&el=0&hf=1&sp=1&c1=%23000000&c2=%23000000&c3=%23F3F3F3&c4=%23D0D0D0&c5=%23000000&audience=&cam=&cat=&tar=0&set=1" style="border: 0" width="100%" height="600" frameborder="0" scrolling="auto"></iframe>
+<div class="intent-list">
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I want to learn an instrument</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Learn how training works, choose an instrument, and find an upcoming hands-on session.</p>
+      <a class="intent-link" href="{{ "/training.html" | relative_url }}">Get trained <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I need to find the right instrument</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Browse what each instrument can show you and find the relevant training, operating guidance, and reservation information.</p>
+      <a class="intent-link" href="{{ "/instruments/" | relative_url }}">Explore instruments <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I am ready to use an instrument</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Check availability and reserve time on an instrument for which you have completed training.</p>
+      <a class="intent-link" href="{{ "/reservations.html" | relative_url }}">Reserve instrument time <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I want to use the lab in a subject</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Explore collaboration models ranging from a short visit to instrument training, project support, or a course-integrated activity.</p>
+      <a class="intent-link" href="{{ "/teaching.html" | relative_url }}">Plan a teaching collaboration <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>Something isn't working, or I need advice</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Get help with instrument problems, access and account issues, files and data, unusual samples, and advanced characterization work.</p>
+      <a class="intent-link" href="{{ "/resources.html" | relative_url }}">Get help <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I want to use the lounge</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Learn about current lounge access, hours, food and drink boundaries, shared-space expectations, and amenities.</p>
+      <a class="intent-link" href="{{ "/lounge.html" | relative_url }}">Visit the lounge page <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+</div>
+
+Still not sure where to begin? Ask someone in the lab or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
+
+## Location, Hours, And Arrival {#hours-and-access}
+
+The Breakerspace instrument lab is in **MIT Building 8, Room 8-102A**. Enter through the Breakerspace Lounge from the Building 8 corridor; the instrument lab doors open from inside the lounge.
+
+The Breakerspace lab and lounge are open 8 AM to midnight, seven days/week.
+
+Lounge access and instrument authorization are separate. New lab users should complete the relevant training before reserving or using instruments independently. See [Get Trained]({{ "/training.html" | relative_url }}) for the onboarding pathway and upcoming sessions. If no listed training works for you, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
+
+Before working independently, review [Safety And Lab Use]({{ "/safety.html" | relative_url }}) for lab-wide rules on PPE, samples, guests, cleanup, reservations, and emergency response.
