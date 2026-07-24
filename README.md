@@ -163,11 +163,13 @@ Review the generated index, each detail page, the optimized images, and `git dif
 
 ## Repository Context
 
-Production development and GitHub Pages publishing use the `main` branch and the remote:
+Production development uses the `main` branch and the remote:
 
 ```text
 https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io.git
 ```
+
+GitHub Pages currently publishes the `gh-pages` branch. Treat that branch as a deployment mirror of `main`, not as a separate development branch: make and review changes on `main`, then update `gh-pages` from the approved `main` commit.
 
 The production site immediately before the 2026-07-24 redesign cutover is preserved by the tag and branch named `production-pre-redesign-2026-07-24`. The final preview source is preserved in the archived preview repository under `preview-final-2026-07-24`.
 
