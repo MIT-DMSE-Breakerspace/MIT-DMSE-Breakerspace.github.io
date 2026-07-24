@@ -1,6 +1,6 @@
 # Breakerspace Website To-Do
 
-Last reviewed: 2026-07-23
+Last reviewed: 2026-07-24
 
 This is the canonical unlisted list for cross-site launch work, policy decisions, and ongoing maintenance. It is organized by operational deadline rather than by page.
 
@@ -12,7 +12,7 @@ The redesigned site is already a substantial operational improvement. Production
 | **2. Urgent before the fall term** | The site can launch without it, but higher fall traffic, training volume, and course use will make the gap costly or difficult to manage. |
 | **3. Ongoing fall improvement** | The work adds depth, examples, media, accessibility improvements, or maintainability without being required for safe daily operation. It is suitable for undergraduate lab employees to prepare with staff review. |
 
-Instrument-specific development notes may remain on instrument pages while those pages are in preview. Before production launch, public pages should state current operating information clearly and internal planning work should live here.
+Public instrument pages should state current operating information clearly. Instrument-specific planning belongs in [the staff instrument to-do list](../instruments/staff-todo.md), while cross-site planning belongs here.
 
 ## 1. Must Do Before Launch
 
@@ -30,7 +30,7 @@ Every item in this section is a launch gate. Do not waive a safety, onboarding, 
 
 ### Training, Access, And External Systems
 
-* [ ] Complete the coordinated Qualtrics work in [qualtrics-launch-review.md](../_staff-training/qualtrics-launch-review.md), using [qualtrics-manual-edit-guide.md](../_staff-training/qualtrics-manual-edit-guide.md) for the final page-by-page revision, display logic, validation, notification, response handling, and test paths. The policy decisions were resolved July 23, 2026; Qualtrics editing and testing remain. The current QSF extraction and rationale remain in [qualtrics-survey-audit.md](../_staff-training/qualtrics-survey-audit.md).
+* [ ] Close out the remaining coordinated Qualtrics checks in [qualtrics-launch-review.md](../_staff-training/qualtrics-launch-review.md). The revised flow and validations were implemented and reported working before the production release on July 24, 2026; verify the remaining notification, retention, response-handling, and live test items before closing this task. The implementation guide remains in [qualtrics-manual-edit-guide.md](../_staff-training/qualtrics-manual-edit-guide.md), and the original QSF extraction and rationale remain in [qualtrics-survey-audit.md](../_staff-training/qualtrics-survey-audit.md).
 * [x] Confirm that LibCal training and reservation descriptions, public calendars, participant limits, cancellation links, and instrument names match the redesigned site.
 * [x] Confirm the complete access handoff: trainers add the correct Moira groups and send Slack invitations during training closeout, the lab manager receives the required Qualtrics information and processes tap access, and users can create an MIT Dropbox for Business account and request DMSE Breakerspace Team membership.
 * [x] Run one end-to-end new-user test of the public path: choose an instrument, complete the survey test path, locate or request training, understand the access handoff, find the reservation calendar, locate the operating page, and find help.
@@ -53,7 +53,7 @@ Every item in this section is a launch gate. Do not waive a safety, onboarding, 
 
 * [x] Name a launch owner, choose a release window, and briefly freeze policy and navigation edits while the launch checks are completed.
 * [x] Preserve a deployable snapshot or tag of the current production site and write down the rollback procedure before changing the production domain.
-* [ ] Release the redesigned site and updated Qualtrics survey in the same window. Preserve old URLs through redirects rather than leaving two conflicting sets of instructions.
+* [x] Release the redesigned site and updated Qualtrics survey in the same window. Preserve old URLs through redirects rather than leaving two conflicting sets of instructions.
 * [x] Assign someone to monitor email, #breakerspace-help, access failures, broken links, and instrument-page reports for the first week after launch. Correct operational errors immediately and record lower-priority improvements in Tier 2 or Tier 3.
 
 ## 2. Urgent Before The Fall Academic Term
