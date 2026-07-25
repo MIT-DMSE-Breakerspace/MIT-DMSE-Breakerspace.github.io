@@ -311,7 +311,6 @@ When comparing spectra:
 ### Links {#links}
 
 * [Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
-* [Pike Technologies tips of the week](https://www.piketech.com/tip-of-the-week/)
 
 ### Exercises {#exercises}
 
