@@ -1,15 +1,15 @@
 - label: Start Here
   url: /
-- label: Reserve Time
-  url: /reservations.html
 - label: Find an Instrument
   url: /instruments/
+- label: Get Trained
+  url: /training.html
+- label: Reserve Time
+  url: /reservations.html
 - label: Data Tools
   url: /data-tools/
 - label: Sample Library
   url: /sample-library.html
-- label: Get Trained
-  url: /training.html
 - label: Get Help
   url: /resources.html
 - label: Safety & Lab Use
