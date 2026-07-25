@@ -281,6 +281,8 @@ If preview is enabled, use the live spectrum as a practical check. If the signal
 
 Data processing is beyond the scope of this operating page, but useful next steps include baseline correction, labeling major peaks, exporting spectra, and comparing unknowns with reference spectra.
 
+For a browser-based introduction to viewing and processing FTIR spectra, visit the [Data Exploration Tools]({{ "/data-tools/" | relative_url }}) page.
+
 The Breakerspace recommends the [Wiley KnowItAll Spectroscopy Software & Libraries available through the MIT Libraries](https://libguides.mit.edu/knowitall) for database searching and spectral comparison when users have MIT access.
 
 When comparing spectra:

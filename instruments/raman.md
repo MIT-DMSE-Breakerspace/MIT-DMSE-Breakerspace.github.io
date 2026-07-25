@@ -251,6 +251,8 @@ Typical processing steps include:
 * **Comparison and matching:** compare your peaks against reference spectra, a database, or a known control. As with other fingerprint methods, a good match lines up several peaks, not just one.
 * **Export:** save both the raw spectrum and any processed version, and keep a copy on your own storage.
 
+For a browser-based introduction to viewing and processing Raman spectra, visit the [Data Exploration Tools]({{ "/data-tools/" | relative_url }}) page.
+
 Data processing beyond these basics is best learned at the instrument; please ask lab staff if you have questions about analysis or database searching.
 
 ### Common Failure Modes {#failures}

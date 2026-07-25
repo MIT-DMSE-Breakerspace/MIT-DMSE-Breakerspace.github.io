@@ -4,6 +4,8 @@
   url: /reservations.html
 - label: Find an Instrument
   url: /instruments/
+- label: Data Tools
+  url: /data-tools/
 - label: Sample Library
   url: /sample-library.html
 - label: Get Trained

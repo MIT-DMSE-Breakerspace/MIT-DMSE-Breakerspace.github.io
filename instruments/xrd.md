@@ -203,6 +203,8 @@ Advanced mode is used to change optical components, manage data (including impor
 
 Data from the Aeris can be processed using [HighScore Plus 5.0](https://www.malvernpanalytical.com/en/products/category/software/x-ray-diffraction-software/highscore-with-plus-option) on the XRD workstation.
 
+For a browser-based introduction to viewing and processing diffraction patterns, visit the [Data Exploration Tools]({{ "/data-tools/" | relative_url }}) page.
+
 #### Using HighScore Plus {#highscore}
 
 ##### Determine The Background
