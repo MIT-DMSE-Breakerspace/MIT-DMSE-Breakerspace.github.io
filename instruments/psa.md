@@ -16,11 +16,11 @@ This page is the operating page for the particle size analyzer. It combines the 
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the particle size analyzer? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the particle size analyzer](https://breakerspace.libcal.com/seat/181544)
@@ -28,7 +28,7 @@ This page is the operating page for the particle size analyzer. It combines the 
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Learn what particle sizing can show you](#science)
 * [Analyze and process your data](#data)
@@ -37,9 +37,9 @@ This page is the operating page for the particle size analyzer. It combines the 
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 Most real powders are not a single size. A spoonful of flour, sand, pigment, or powdered drug is a mixture of many particles spanning a range of sizes, and that range often matters more than any single average. Particle size analysis measures that whole distribution.
 
@@ -47,7 +47,7 @@ This instrument uses laser diffraction. When a laser beam hits a particle, the l
 
 The result is a curve showing how much of the sample sits in each size range, rather than one number. You can look at that curve as a distribution by volume, by particle count, or by other bases, depending on what your question is.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A materials scientist can check whether a milled or ground powder reached the target size range, and how wide the spread is.
 * A pharmaceutical or food scientist can relate particle size to dissolution rate, texture, or how a powder flows and packs.
@@ -57,7 +57,7 @@ The result is a curve showing how much of the sample sits in each size range, ra
 * A curious student can measure everyday powders (flour, sugar, cocoa, spices, cosmetics, sand) and connect a number to something they can see and feel, then ask why the size turned out the way it did.
 * A coffee-loving student in [3.000 Coffee Matters](../3000.html) can measure how a grinder's setting changes the size distribution of the grounds, and connect that to extraction: finer grounds have more surface area and extract faster, which is a big part of why grind size changes how a cup tastes.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 Start with the shape and center of the distribution. Common summary values are D10, D50, and D90: the sizes below which 10%, 50%, and 90% of the sample falls. D50 is the median size, and the spread between D10 and D90 tells you how wide the distribution is.
 
@@ -65,7 +65,7 @@ Next, look for more than one peak. A single hump means a fairly uniform powder; 
 
 Finally, remember the measurement basis matters. A volume-based distribution is dominated by the larger particles (a few big particles hold a lot of volume), while a number-based distribution emphasizes the many small ones. The same sample can look quite different depending on which basis you plot, so note which one you are reading.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * It measures size, not chemistry. It cannot tell you what a powder is made of, only how big its particles are.
 * It sees an equivalent size, not shape. Laser diffraction reports the size of a sphere that would scatter light the same way, so a needle or flake is reported as an equivalent diameter rather than described as a needle or flake.
@@ -73,9 +73,9 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 * It works here only with dry, free-flowing powders in the 0.24-2,000 µm range. Wet samples, sticky powders, and particles outside that range are not appropriate for this configuration.
 * It gives a distribution, not a picture. To see actual particle shapes, pair it with microscopy (the optical microscope or SEM).
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * [Power on the instrument](../assets/img/tutorials/psa/power-switch.JPG) [if needed](../assets/img/tutorials/psa/status-light.JPG). The instrument may be left powered on, so it is often already on.
 * Log on to the instrument workstation using your MIT Kerberos.
@@ -83,7 +83,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 * From the [_Open Analyzer_ menu, select _Sync Analyzer_](../assets/img/tutorials/psa/connect.png).
 * Wait while the instrument initializes. Keep the sample compartment door closed during initialization.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * [Check the active database](../assets/img/tutorials/psa/database.png) and [change or create a new one](../assets/img/tutorials/psa/database-change.png) if needed, so your data is saved where you expect.
 * [Load a measurement SOP](../assets/img/tutorials/psa/load-sop.png). If no suitable SOP exists, ask lab staff for assistance.
@@ -93,7 +93,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 * Run the Auto-Sequence, editing the title, sample ID, and notes as appropriate.
 * Repeat as needed.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Export data as needed (data is also saved automatically to the active database).
 * Close the FLEX software.
@@ -101,7 +101,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 * The instrument may be left powered on.
 * Leave the sample area and work surface clean.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 * Any non-hazardous, dry, free-flowing powder with particles between 0.24 and 2,000 micrometers.
 * The powder must be dry. Wet, damp, sticky, oily, or paste-like samples are not appropriate for this dry configuration.
@@ -111,7 +111,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Quick Method Selection {#quick-method}
+## Quick Method Selection {#quick-method}
 
 | Situation | Approach | Starting thought |
 | --- | --- | --- |
@@ -120,19 +120,19 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 | No suitable measurement SOP is loaded | Ask staff to help select or create one | Do not guess at SOP parameters; the SOP controls how the sample is measured. |
 | Results look bimodal or coarser than expected | Re-check loading and cleaning, then re-run | Clumping or contamination from a previous sample is a common cause. |
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are a quick reference for trained users. The sections below are a training guide for new users, with the practical details and videos that are easiest to follow at the instrument.
 
 The workflow is short: start the software, connect to the instrument, let it initialize, confirm the active database, load a measurement SOP, clean and load the sample tray, run the auto-sequence, then save and close. The videos below cover the physical steps (cleaning, loading, collection) on their own, out of sequence; see the [standard operating protocol](#sop) for the full order.
 
-#### Cleaning The Sample Area {#cleaning}
+### Cleaning The Sample Area {#cleaning}
 
 Loose particles left from a previous sample can be drawn into the instrument and skew your result. Wipe them up with a Kimwipe lightly wetted with isopropanol. For a more thorough cleaning, the sample tray and its carrier can be removed.
 
 {% include youtube-facade.html id="psa-cleaning" %}
 
-#### Loading A Sample {#loading}
+### Loading A Sample {#loading}
 
 * The instrument has a shallow and a deep sample tray. Use the shallow tray for normal work; if you think you need the deeper tray, talk with lab staff first.
 * Load the shallow tray with about 1/4 teaspoon of dry powder. The amount is forgiving, so a little more or less is fine. Wipe the measuring spoon with an isopropanol-wetted Kimwipe before and after loading.
@@ -142,13 +142,13 @@ Loose particles left from a previous sample can be drawn into the instrument and
 
 {% include youtube-facade.html id="psa-loading" %}
 
-#### Full Sequence Of Software Operation {#software}
+### Full Sequence Of Software Operation {#software}
 
 The software layout can be confusing, so this screen capture walks through the full sequence: starting the software, initializing the instrument, and collecting and exporting data. Remember to load your sample after selecting the measurement SOP and before starting the auto-sequence.
 
 {% include youtube-facade.html id="psa-software" %}
 
-#### Sample Collection {#collection}
+### Sample Collection {#collection}
 
 After your sample is loaded and the tray door is closed, run the auto-sequence (editing title, sample ID, and notes as appropriate). The sequence then proceeds on its own:
 
@@ -159,7 +159,7 @@ After your sample is loaded and the tray door is closed, run the auto-sequence (
 
 {% include youtube-facade.html id="psa-collection" %}
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 Data is automatically saved in the database that is active when the auto-sequence starts, so it will not be lost short of a workstation hardware failure. You can review and export it at any time. The software also prompts you to save the report generated after the sample is collected.
 
@@ -171,7 +171,7 @@ The distribution in the report can be recalculated to show a distribution based 
 
 The data from this instrument is fairly straightforward, but please ask lab staff if you have questions about data processing and analysis.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -181,17 +181,17 @@ The data from this instrument is fairly straightforward, but please ask lab staf
 | Software will not connect to the analyzer | Instrument not finished initializing, or wrong analyzer selected | Confirm the instrument is powered and initialized, then reselect _Sync Analyzer_ from the _Open Analyzer_ menu. |
 | Data cannot be found later | Saved to the wrong database | Check and set the active database before running the auto-sequence. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [FLEX Software user manual](https://www.dropbox.com/scl/fi/3ddebzi863eyws7p2mng7/FLEXUserManual.pdf?rlkey=v3t5hi943n80f5qel6b9jsava&dl=0)
 * [Sync Analyzer operating manual](https://www.dropbox.com/scl/fi/7bdbl13wf2qp0opfyu7kf/SyncOps.pdf?rlkey=cngpmueowutw93dp6owwodvwf&dl=0)
 * [Folder with all Microtrac manuals](https://www.dropbox.com/scl/fo/7zzq8zavh4sdgp6ocsvxp/AOtHdsXKGdp0zR7qAeWuJnA?rlkey=fx9idwfle5tvuod39w0djj7ew&dl=0)
 
-### Links {#links}
+## Links {#links}
 
 * [Microtrac Sync video library](https://www.microtrac.com/downloads/videos/)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - Measure a known powder:** Run a provided standard powder through the full workflow, save the report, and record the D10, D50, and D90. Note which measurement basis (volume or number) you used.
 * **Level 2 - Loading effect:** Run the same powder loaded carefully and evenly, then loaded compressed or mounded. Compare the distributions and explain how loading changed the apparent size.

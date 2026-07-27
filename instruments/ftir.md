@@ -19,11 +19,11 @@ This page is the operating page for the FTIR. It combines the quick reference fo
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to FTIR? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the FTIR](https://breakerspace.libcal.com/seat/174791)
@@ -32,7 +32,7 @@ This page is the operating page for the FTIR. It combines the quick reference fo
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Choose an FTIR sampling method](#quick-method)
 * [Learn what FTIR can show you](#science)
@@ -41,9 +41,9 @@ This page is the operating page for the FTIR. It combines the quick reference fo
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 FTIR spectroscopy uses infrared light to probe molecular vibrations. Molecules are not still objects: their bonds stretch, bend, twist, and rock. When infrared light has the right energy to drive one of those motions, the sample absorbs some of that light. The FTIR records absorption across many infrared wavelengths and displays the result as a spectrum.
 
@@ -51,7 +51,7 @@ Different chemical bonds absorb infrared light in different regions. For example
 
 The ATR accessory makes the measurement easier by pressing the sample against a diamond crystal. Infrared light reflects inside the crystal, and a very shallow evanescent field interacts with the sample touching the crystal surface. Good contact matters: if the sample does not touch the ATR window well, the spectrum may be weak or misleading.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A chemist might compare an unknown powder with reference spectra to ask whether it is closer to a polymer, sugar, salt, oil, or other material class.
 * A materials scientist might check whether a plastic, coating, adhesive, fiber, film, or residue has the expected chemical signature.
@@ -59,7 +59,7 @@ The ATR accessory makes the measurement easier by pressing the sample against a 
 * A conservator, artist, designer, or archaeologist might identify binders, coatings, paper additives, textile fibers, or surface contamination.
 * A student might use FTIR after microscopy: first see that a residue, film, or fiber is present, then ask what kind of molecular material it may be.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 Start with the main peaks. Ask where strong absorptions appear, whether they are broad or sharp, and whether expected regions are present or missing. A broad feature can suggest O-H or N-H stretching; strong peaks near the carbonyl region can point toward molecules with C=O bonds; clusters of peaks in the fingerprint region can help distinguish similar materials.
 
@@ -76,7 +76,7 @@ For chemically complex bulk mixtures, the interpretation changes. Coffee is a go
 
 For ATR spectra, also look for practical problems. A weak spectrum may mean poor crystal contact. Negative absorbance features can mean the crystal was dirty during background collection. Water vapor, carbon dioxide, contamination, and leftover solvent can all add features that do not belong to the sample.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * FTIR usually identifies molecular features or material classes, not a complete formulation by itself.
 * It cannot turn a complex bulk mixture into a list of every chemical component. When many compounds contribute overlapping peaks, the combined spectrum may be useful for comparison but not for assigning each peak to one ingredient.
@@ -86,9 +86,9 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * A database match is evidence, not proof. Similar materials can have similar spectra, and mixtures can be difficult to interpret.
 * ATR mostly samples the material in contact with the crystal. A coating, residue, or surface layer can dominate the spectrum even if the bulk material underneath is different.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * [Power on the instrument](../assets/img/tutorials/ftir/ftir-switch.JPG), [if needed](../assets/img/tutorials/ftir/ftir-power.JPG).
 * Log on to the instrument workstation using your MIT Kerberos.
@@ -98,7 +98,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * [Clean the ATR crystal](#crystal).
 * Collect a background before loading samples.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Wear nitrile gloves when handling samples, ATR accessories, the pressure tower, pressure tips, Kimwipes, or cleaning solvent.
 * Remove gloves before using the keyboard, mouse, or instrument workstation.
@@ -110,7 +110,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * Wear gloves again before unloading the sample or cleaning the crystal.
 * Repeat background, sample collection, cleaning, and saving as needed.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Save all data you need.
 * Close OMNIC.
@@ -120,7 +120,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * Leave the instrument powered on. The manufacturer recommends leaving the instrument powered when not in use.
 * Leave the work area clean and remove all samples, wipes, and waste.
 
-### Compatible Materials And Quick Sample Prep {#materials}
+## Compatible Materials And Quick Sample Prep {#materials}
 
 * Samples must be non-hazardous and safe to handle in the Breakerspace.
 * Many solids, semi-solids, powders, pastes, and liquids can be measured by ATR.
@@ -132,7 +132,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Quick Method Selection {#quick-method}
+## Quick Method Selection {#quick-method}
 
 | Goal | Typical method | Starting thought |
 | --- | --- | --- |
@@ -143,17 +143,17 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 | Measure a thin film or prepared transmission sample | iD1 transmission accessory | Less common in routine training; confirm the accessory and sample geometry with staff. |
 | Measure diffuse reflectance from a powder or rough solid | EasiDiff diffuse reflectance accessory | Specialist workflow; use a staff-approved method and background. |
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are meant as a quick reference for trained users. The sections below are written as a training guide for new users and include the practical details, images, and troubleshooting cues that are easiest to understand at the instrument.
 
 Most users should start with ATR. ATR is fast, tolerant of many sample forms, and easy to clean when only non-hazardous materials are used. The most common preventable FTIR problems are a dirty ATR crystal during background collection, weak sample contact, unsaved spectra, and residue left on the crystal after use.
 
-#### ATR Sample Preparation And Loading {#sample-prep}
+### ATR Sample Preparation And Loading {#sample-prep}
 
 To maximize signal strength, the sample must make good contact with the ATR window. Collect a background before loading samples.
 
-#### Solid Samples
+### Solid Samples
 
 * Select the self-leveling [pressure tip](#pressure-tip).
 * Use a solid sample with a smooth, clean face where possible.
@@ -168,7 +168,7 @@ Although many solid samples will not contaminate the window, wipe the window wit
   <figcaption>Loading a solid sample on the ATR accessory.</figcaption>
 </figure>
 
-#### Powder Samples
+### Powder Samples
 
 It is especially important that powders contact the surface of the diamond window as completely as possible, so finely ground powders often work better. Preview mode can help verify that the pressure tip is pushing the powder into intimate contact with the ATR crystal before collecting a spectrum.
 
@@ -183,7 +183,7 @@ It is especially important that powders contact the surface of the diamond windo
   <figcaption>Loading a powder sample on the ATR accessory.</figcaption>
 </figure>
 
-#### Liquid Samples
+### Liquid Samples
 
 * Place a small droplet of sample on the ATR crystal.
 * Non-volatile liquids can be run uncovered without the pressure tower.
@@ -195,7 +195,7 @@ It is especially important that powders contact the surface of the diamond windo
   <figcaption>Loading a non-volatile liquid sample on the ATR accessory.</figcaption>
 </figure>
 
-#### Cleaning The ATR Crystal {#crystal}
+### Cleaning The ATR Crystal {#crystal}
 
 * Apply a few drops of isopropyl alcohol to a Kimwipe.
 * Wipe with the wetted portion of the Kimwipe, starting in the center and working outward.
@@ -207,7 +207,7 @@ It is especially important that powders contact the surface of the diamond windo
   <figcaption>Cleaning the ATR crystal.</figcaption>
 </figure>
 
-#### Experiment Setup {#setup}
+### Experiment Setup {#setup}
 
 Experiment setup allows you to change collection parameters to fit the measurement. For faster collections, reduce the number of scans or scan resolution and note how the estimated time changes. To improve the signal-to-noise ratio, increase the number of scans.
 
@@ -217,7 +217,7 @@ For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG)
 
 {% include responsive-image.html id="ftir-experiment-setup" alt="Experiment setup controls in OMNIC." %}
 
-##### Preview Data Collection Enabled
+#### Preview Data Collection Enabled
 
 <figure style="margin-left:0; margin-right:0;">
   {% include instructional-video.html id="ftir-preview" %}
@@ -229,14 +229,14 @@ For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG)
   <figcaption>Background and sample collection with preview data collection on in OMNIC.</figcaption>
 </figure>
 
-##### Preview Data Collection Not Enabled
+#### Preview Data Collection Not Enabled
 
 <figure style="margin-left:0; margin-right:0;">
   {% include instructional-video.html id="ftir-no-preview" %}
   <figcaption>Basic sample collection without preview data enabled.</figcaption>
 </figure>
 
-#### Background Collection {#background}
+### Background Collection {#background}
 
 Before collecting spectra, collect a background spectrum.
 
@@ -250,20 +250,20 @@ Before collecting spectra, collect a background spectrum.
 
 <p class="guidance-note"><em>Negative absorbance in an ATR spectrum can indicate the crystal was not clean during background collection.</em></p>
 
-#### Sample Collection {#sample}
+### Sample Collection {#sample}
 
 Once the background is collected, load the sample according to the instructions above and click **Collect Sample**. Follow the process based on your experiment setup.
 
 If preview is enabled, use the live spectrum as a practical check. If the signal is weak, improve contact between the sample and ATR crystal, adjust the pressure tip, or ask staff whether the sample is appropriate for ATR.
 
-#### Volatiles Cover {#volatiles-cover}
+### Volatiles Cover {#volatiles-cover}
 
 <figure style="margin-left:0; margin-right:0;">
   {% include instructional-video.html id="ftir-volatile-cover" %}
   <figcaption>Use of the volatiles cover.</figcaption>
 </figure>
 
-#### Pressure Tips {#pressure-tip}
+### Pressure Tips {#pressure-tip}
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="{{ '/assets/img/optimized/ftir-pressure-tips-1920.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="ftir-pressure-tips" alt="Concave and self-leveling FTIR pressure tips." %}</a>
@@ -275,7 +275,7 @@ If preview is enabled, use the live spectrum as a practical check. If the signal
   <figcaption>Swapping pressure tips.</figcaption>
 </figure>
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 Data processing is beyond the scope of this operating page, but useful next steps include baseline correction, labeling major peaks, exporting spectra, and comparing unknowns with reference spectra.
 
@@ -290,7 +290,7 @@ When comparing spectra:
 * Keep track of background collection conditions, sample preparation, and cleaning.
 * Save raw spectra before exporting images, reports, or processed versions.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -301,18 +301,18 @@ When comparing spectra:
 | Peaks look like water, carbon dioxide, solvent, or residue | Atmospheric or cleaning contamination, wet sample, or incomplete drying | Let solvent evaporate when safe, clean again, or ask staff about background and sample handling. |
 | Spectrum was collected but cannot be found later | Spectrum was not individually selected and saved | Save each needed spectrum before closing OMNIC. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [iS5 spectrometer user guide](https://www.dropbox.com/scl/fi/rfba0x3swuhi4affsytv6/2638_iS5-UG.pdf?rlkey=mnjpwg72rbau8dsaw8jwg9flk&dl=0)
 * [iD7 ATR user guide](https://www.dropbox.com/scl/fi/j24msyzbfpqahhk66z5y8/3021_-iD7_UG.pdf?rlkey=xf1sw5yoydqomsmcs1hxhrf5y&dl=0)
 * [OMNIC software getting started guide](https://www.dropbox.com/scl/fi/nhx1fk2ov5fpkz4og1guf/2640_OMNIC_GS.pdf?rlkey=93wld38wdscvv94o177jylilu&dl=0)
 * [Complete set of manufacturer manuals](https://www.dropbox.com/scl/fo/n0zv4090ncohz1yd53zyp/AEk8_3vo2JuCcHDSDBEEjck?rlkey=haqbguq12kbmh8fi7jmi8wzvg&dl=0)
 
-### Links {#links}
+## Links {#links}
 
 * [Thermo Scientific FTIR sampling techniques](https://www.youtube.com/playlist?list=PLMiikclf3GL4ZAFqfux1tR1pyYmS4AkjR)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - General training:** Collect ATR spectra from a known plastic, a paper product, and a non-volatile liquid. Save each spectrum and note which handling step affected signal strength most.
 * **Level 1 - Cleaning check:** Collect a background on a clean crystal, collect a sample, clean the crystal, then collect a second background. Compare whether any negative features or residue-related peaks appear.

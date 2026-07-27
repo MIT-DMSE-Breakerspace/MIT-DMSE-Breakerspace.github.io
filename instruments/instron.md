@@ -16,11 +16,11 @@ This page is the operating page for the Instron. It combines the quick reference
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the Instron? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the Instron](https://breakerspace.libcal.com/seat/174792)
@@ -28,7 +28,7 @@ This page is the operating page for the Instron. It combines the quick reference
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Learn what mechanical testing can show you](#science)
 * [Choose a mechanical test type](#test-type)
@@ -38,9 +38,9 @@ This page is the operating page for the Instron. It combines the quick reference
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 Every material pushes back when you deform it, up to a point. A universal testing machine measures exactly how hard it pushes back and how far it moves before it yields or breaks. The machine grips a sample and moves one end at a controlled rate while a load cell records the force. The result is a force-displacement curve: the story of how the material responded from the first gentle load all the way to failure.
 
@@ -48,7 +48,7 @@ With the sample's dimensions, that curve can be converted to a stress-strain cur
 
 The same machine does this in three modes. Tensile testing pulls a sample apart, compression testing squeezes it, and flexure testing bends it across supports. Each answers a different question about how a material behaves under real-world loads.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A materials scientist can measure the strength and stiffness of a new material or compare candidates for a part.
 * A mechanical or civil engineer can verify that a component, weld, joint, or adhesive can carry its intended load with a safety margin.
@@ -57,7 +57,7 @@ The same machine does this in three modes. Tensile testing pulls a sample apart,
 * A student can settle a hands-on question: which 3D-print infill is actually strongest, how much weight fishing line really holds, or how a glue joint compares to the material around it.
 * At a supervised outreach event, the Breakerspace has even crushed carved pumpkins to make force, cracking, and collapse visible (see [staff-guided event example](#pumpkin)).
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 Start with the overall shape of the curve. A steep initial rise means a stiff material; a gentle one means a compliant, stretchy material. The height of the curve shows how much force the sample carried, and where it drops shows where the sample failed.
 
@@ -65,7 +65,7 @@ Look at how the sample fails. A curve that rises then suddenly drops to zero sug
 
 Finally, sanity-check against the setup. A curve with a soft, curved "toe" at the start often means slack or slipping grips rather than real material behavior, and repeated breaks right at the grip face usually point to a gripping problem rather than the true strength (see [common failure modes](#failures)).
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * It measures mechanical response, not chemistry or structure. It tells you how strong or stiff something is, not what it is made of.
 * Results depend heavily on sample geometry and gripping. A poorly prepared or misaligned sample gives a misleading curve, so preparation matters as much as the test.
@@ -73,17 +73,17 @@ Finally, sanity-check against the setup. A curve with a soft, curved "toe" at th
 * It applies controlled, usually slow loading. It does not directly report impact resistance, fatigue over many cycles, or long-term creep unless a test is specifically designed for those.
 * It has force and size limits. Samples must fit the fixtures and stay within the load-cell range; oversized or extremely strong samples may not be testable here.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
 Mechanical testing involves stored energy, heavy fixtures, moving crossheads, and samples that can break suddenly. Keep the enclosure area clear, know where the emergency stop is before you start a test, and never place hands between the grips while the machine is enabled. Some tasks and heavy tooling may call for two people or additional precautions; when in doubt, ask staff and see the [Safety and Lab Use](../safety.html) page.
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Log on to the instrument workstation using your MIT Kerberos.
 * Open the Bluehill Universal software.
 * If the event log opens, you can close it.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Set up your mechanical test (see [detailed operating instructions](#details) for each sample type).
 * Confirm the correct load cell connector (5 kN or 50 kN) is inserted.
@@ -94,7 +94,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 * On the testing page, press **unlock** then **go** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) to start.
 * The test ends when the sample fails. To stop early, press **stop** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG).
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Save your data.
 * Disassemble your test setup and return all parts to the boxes they came from.
@@ -102,7 +102,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 * Close the Bluehill Universal software and log off the computer.
 * Confirm the Instron is in disabled mode.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 * All materials must be non-hazardous and safe to handle in the Breakerspace.
 * Avoid samples that may shatter dangerously, such as glass.
@@ -112,7 +112,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Test Type Selection {#test-type}
+## Test Type Selection {#test-type}
 
 | Test | What it measures | Typical setup |
 | --- | --- | --- |
@@ -123,24 +123,24 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 
 Match the load cell to the sample: use the 5 kN cell for smaller, weaker samples and the 50 kN cell for stronger ones. If you are not sure which test or fixture fits your sample, ask staff.
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are a quick reference for trained users. The sections below are a training guide for new users, with the practical details and diagrams that are easiest to follow at the instrument.
 
 The Instron performs tensile, compression, and flexure tests, and each uses different grips or fixtures. Every setup starts with choosing the load cell.
 
-#### Load Cell
+### Load Cell
 
 * Choose the load cell for your sample: 50 kN for stronger samples, or 5 kN for smaller, weaker ones.
 * The 50 kN cell stays attached to the machine.
 * To install the 5 kN cell, insert its thin end into the bottom of the 50 kN cell, push a clevis pin through both, and attach the safety clip. Rotate the metal ring clockwise until tight.
 * When using the 5 kN cell, plug its connector into the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG). Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) as you insert it; this connector can take several tries.
 
-#### Attaching Fixtures
+### Attaching Fixtures
 
 Most parts attach the same way: align the internal holes, insert a clevis pin, add a safety clip, and rotate the metal ring to secure. Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if needed.
 
-#### Setup Diagrams
+### Setup Diagrams
 
 Each test type uses a different fixture arrangement. The annotated setups below are current reference photos.
 
@@ -169,7 +169,7 @@ Each test type uses a different fixture arrangement. The annotated setups below 
   <figcaption>Flexure testing with the 5 kN head.</figcaption>
 </figure>
 
-#### Video Extensometer
+### Video Extensometer
 
 The video extensometer measures strain optically by tracking marks on the sample.
 
@@ -183,14 +183,14 @@ The video extensometer measures strain optically by tracking marks on the sample
   <figcaption>Video extensometer software: click 1, then 2, then select region 3 around your dots.</figcaption>
 </figure>
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 * By default the software outputs a force-versus-displacement graph.
 * When you create a method, you can enter your sample dimensions and have the software automatically calculate properties such as modulus, strength, and strain, converting force-displacement into stress-strain.
 * Save both the raw test data and any calculated results, and keep a copy on your own storage.
 * Because materials vary, run several samples and compare rather than relying on a single test.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -201,7 +201,7 @@ The video extensometer measures strain optically by tracking marks on the sample
 | Force-displacement curve looks wrong | Loose attachments | Confirm every attachment is tight; gently shake the setup, which should not move at all. |
 | Sample keeps breaking right at the grip face | Grip pressure or grip type | Loosen the grips slightly, or try a different grip type. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [Video extensometer operator guide](https://www.dropbox.com/scl/fi/rgb05cbfo30mf80uwskek/video-extensometer-ave2-2663-901-and-sve2-2663-902-operator-guide.pdf?rlkey=qfhgbcfwtsl57fdbellgg206w&st=h7hcnio8&dl=0)
 * [6800 Dual Column Table Model operator guide](https://www.dropbox.com/scl/fi/jppq0ifw1ricmdghsguca/6800-Dual-Column-Table-Model-Operator-Guide.pdf?rlkey=n7sm0h9v6vqqvu9ppnk0oessj&st=7ztz947o&dl=0)
@@ -210,14 +210,14 @@ The video extensometer measures strain optically by tracking marks on the sample
 * [5 kN flexure fixture reference manual](https://www.dropbox.com/scl/fi/59aeqcu8o9b7isv7gu93a/5kn-flexure-fixture-reference-manual.pdf?rlkey=f4wtjfybmg86kruq1hcp32nms&st=1u3dpdjr&dl=0)
 * [5 kN, 10 kN, and 50 kN wedge grips reference manual](https://www.dropbox.com/scl/fi/3iaxhdxfo8pwxtj8t7m2i/5kn-10knand50kn-wedge-grips-reference-manual.pdf?rlkey=rjm1t839hzfv8yzly7mihjh2n&st=m76u4b4n&dl=0)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - Run a tensile test:** Set up a 50 kN tensile test, load a sample, and run it. Confirm that the sample's force-displacement curve appears, and identify where the sample failed on the curve.
 * **Level 2 - Measure strain with the video extensometer:** Mark a sample, set up the video extensometer, and use it to measure strain during a test.
 * **Level 2 - Compare a design variable:** Test several samples that differ in one way (for example, 3D-print infill percentage or orientation) and compare their curves.
 * **Level 3 - Compute properties from stress-strain:** Enter sample dimensions in the method, run a test, and extract modulus, strength, and strain to failure. Discuss how sample preparation affected the result.
 
-#### Staff-Guided Event Example: Pumpkin Compression {#pumpkin}
+### Staff-Guided Event Example: Pumpkin Compression {#pumpkin}
 
 For the Infinite Halloween trick-or-treating event, the Breakerspace has hosted a staff-planned pumpkin compression activity that turns an everyday object into a visible mechanical-testing example. Participants can compare load, displacement, cracking, and collapse across pumpkins with different shapes and carved features.
 

@@ -14,11 +14,11 @@ This page is the operating page for the Phenom Pure only. For the Phenom XL, use
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to SEM? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the Phenom Pure SEM](https://breakerspace.libcal.com/seat/174787)
@@ -26,7 +26,7 @@ This page is the operating page for the Phenom Pure only. For the Phenom XL, use
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Compare the Phenom Pure and XL](./sem.html)
 * [Learn what makes this Phenom Pure different](#pure-different)
@@ -37,13 +37,13 @@ This page is the operating page for the Phenom Pure only. For the Phenom XL, use
 </section>
 </div>
 
-### What Makes This Phenom Pure Different {#pure-different}
+## What Makes This Phenom Pure Different {#pure-different}
 
 The shared [SEM hub](./sem.html#science) explains what scanning electron microscopy can show in general. This Phenom Pure page focuses on the capabilities that distinguish the Breakerspace Pure configuration from the Phenom XL in this lab.
 
 The Pure is the simpler choice for routine imaging of one small mounted sample when EDS is not needed. It also has the Breakerspace temperature-controlled stage, which makes it the SEM to consider when the sample may need to be cooled or frozen during imaging.
 
-#### Temperature-Controlled Stage
+### Temperature-Controlled Stage
 
 The temperature-controlled stage can cool a small sample while it is inside the SEM. This can help with samples that might dry, deform, soften, move, or change under vacuum or under the electron beam. In practice, cold-stage SEM is often more method-development work than routine dry imaging, but it can make otherwise difficult samples possible to explore.
 
@@ -56,9 +56,9 @@ This capability is useful for questions like:
 
 The cold stage does not make every wet sample safe or easy to image. Freezing can create artifacts, frost can hide the surface, water can sublime away in vacuum, and samples can still charge or move. Use cold-stage workflows with staff guidance until the sample behavior is understood.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Log on to the instrument workstation using your MIT Kerberos.
 * Start the Phenom User Interface software.
@@ -66,7 +66,7 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * If the instrument does not connect automatically, open [Settings / Phenom / Status](../assets/img/tutorials/sem/connect.PNG) and connect to the microscope.
 * If using the cold stage, switch on the chiller unit about 30 minutes before imaging so the cooling water reaches operating temperature.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Wear nitrile gloves when handling samples, stubs, sample holders, stages, and sample-prep tools.
 * [Prepare samples](#prep) externally at the sample prep table.
@@ -78,7 +78,7 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * Use NavCam to navigate, move to SEM view, adjust imaging settings, focus, and acquire images.
 * Wear gloves again, unload samples, and leave the holder clean and stored correctly.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Save and copy any data you need.
 * Close the Phenom software. Press F11 if you need to exit fullscreen view.
@@ -88,7 +88,7 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 
 {% include sem/common-safety.md %}
 
-### Phenom Pure Sample Limits {#pure-limits}
+## Phenom Pure Sample Limits {#pure-limits}
 
 * Mount one sample on an 18 mm or smaller stub.
 * The highest part of the sample must sit below the top edge of the sample holder.
@@ -102,11 +102,11 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 
 The Phenom Pure does not have EDS. Use the [Phenom XL](./phenom-xl.html) if elemental analysis is required.
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 {% include sem/detailed-training-intro.md %}
 
-#### Phenom Pure Sample Loading {#loading}
+### Phenom Pure Sample Loading {#loading}
 
 1. Use the holder or stage appropriate for your intended vacuum mode. Follow the labels on the actual holders and ask staff if the holder choice is unclear.
 2. Mount one sample on an 18 mm or smaller stub.
@@ -117,11 +117,11 @@ The Phenom Pure does not have EDS. Use the [Phenom XL](./phenom-xl.html) if elem
 
 The sample must never sit above the holder edge. An over-height sample can be destroyed during loading and can damage the microscope.
 
-#### Phenom Pure Cold Stage {#cold-stage}
+### Phenom Pure Cold Stage {#cold-stage}
 
 Use the cold stage for wet, vacuum-sensitive, or heat-sensitive samples that need to be frozen or cooled during imaging. Smaller samples usually work better because they freeze faster and are less likely to deform or frost over.
 
-##### Cold Stage Setup
+#### Cold Stage Setup
 
 1. Switch on the chiller unit about 30 minutes before use.
 2. Confirm the chiller has airflow around it and is not against a heat source.
@@ -143,7 +143,7 @@ Use the cold stage for wet, vacuum-sensitive, or heat-sensitive samples that nee
   </figure>
 </div>
 
-##### Freezing Workflow
+#### Freezing Workflow
 
 1. Remove excess liquid from the outside of the sample. Extra water encourages frost.
 2. Keep the feature of interest away from the cryo gel, because the gel can obscure surface features.
@@ -164,7 +164,7 @@ If the image flickers, bright bands streak across the field of view, or the samp
 
 {% include sem/live-sem-workflow.md %}
 
-#### Phenom Pure Sample Unloading {#unloading}
+### Phenom Pure Sample Unloading {#unloading}
 
 1. Stop image acquisition if any collection is running.
 2. Return to the normal SEM interface if needed.
@@ -179,7 +179,7 @@ If the image flickers, bright bands streak across the field of view, or the samp
 
 {% include sem/common-failure-modes.md %}
 
-#### Phenom Pure Specific Failure Modes
+### Phenom Pure Specific Failure Modes
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -187,13 +187,13 @@ If the image flickers, bright bands streak across the field of view, or the samp
 | Cold-stage image flickers or bright bands streak across the image | Wet sample outgassing or not fully frozen | Eject immediately; use a fresh smaller sample, freeze more carefully, remove excess water, or use a lower target temperature. |
 | Sample holder will not load smoothly | Sample may be above the holder edge or holder may not be seated correctly | Stop, unload if safe, and verify the sample is below the top edge of the holder. Ask staff before retrying. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [Phenom Pure user manual](https://www.dropbox.com/scl/fi/7ju8ldfdm0p04m6n81men/Phenom-ProX-G6-User-Manual.pdf?rlkey=l6gg1ld4zpmtxgrsxfgw00jpb&dl=0)
 * [Phenom Pure temperature controlled stage manual](https://www.dropbox.com/scl/fi/nqcrhb3axctk6782k5hqk/User-Manual_Phenom_Temperature-Stage.pdf?rlkey=r01r9dl6k1km22to13s0nir24&dl=0)
 * [Phenom Pure all docs](https://www.dropbox.com/scl/fo/th7xj2e2ul1sed2vobibt/ACVAySN_rjR_JnEXtPfs3_8?rlkey=3j90cjbe0akxyu7o3fanrxvn5&dl=0)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - General Phenom Pure training:** Prepare and image a small piece of hair. Load it on the Pure holder, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
 * **Level 2 - Non-conductive sample comparison:** Image an uncoated non-conductive sample in low vacuum, then sputter coat a similar sample and compare resolution, charging, and surface contrast.

@@ -423,6 +423,18 @@ main table a:focus-visible {
   background: #17242a;
 }
 
+.instructional-video p {
+  margin: 0;
+  padding: 0.75rem;
+  background: #17242a;
+  color: #fff;
+}
+
+.instructional-video p a,
+.instructional-video p a:visited {
+  color: #fff;
+}
+
 .instructional-media-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -468,6 +480,7 @@ main table a:focus-visible {
 }
 
 .quick-guide-launch strong {
+  color: #fff;
   font-size: 1.05rem;
   line-height: 1.15;
 }
@@ -499,7 +512,7 @@ main table a:focus-visible {
   background: #f5f8fa;
 }
 
-.quick-actions-grid h4 {
+.quick-actions-grid h3 {
   margin: 0 0 0.55rem;
   color: #17242a;
   font-size: 1rem;
@@ -523,6 +536,7 @@ main table a:focus-visible {
 
 .quick-actions-grid a,
 .quick-actions-list a {
+  color: var(--color-link);
   font-weight: 600;
 }
 

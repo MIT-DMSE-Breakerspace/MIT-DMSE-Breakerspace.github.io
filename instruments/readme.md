@@ -124,6 +124,8 @@ Use this order unless an instrument family needs a hub/split structure:
 13. Manufacturer manuals and links.
 14. Exercises.
 
+Each operating page should have one H1 for the instrument name. The major sections in the list above should be H2s, and headings within those sections should be H3s. Add deeper levels only when the content genuinely has another nested layer; do not use heading rank only to control visual size.
+
 ## Educational Section Format
 
 The educational section should usually be 500-900 words total, plus images or example data when available. A good default structure is:
@@ -172,7 +174,7 @@ If an include is later used by a page in another folder, check every relative li
 Many instrument pages use explicit heading IDs such as:
 
 ```markdown
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 ```
 
 These IDs make the page index and workstation shortcuts stable even if heading text changes. Do not include the same shared snippet twice on one page, because that can create duplicate IDs.

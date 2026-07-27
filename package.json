@@ -1,0 +1,10 @@
+{
+  "name": "mit-dmse-breakerspace-quality",
+  "private": true,
+  "scripts": {
+    "test:a11y": "script/check-accessibility"
+  },
+  "devDependencies": {
+    "pa11y": "9.1.0"
+  }
+}

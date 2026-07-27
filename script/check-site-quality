@@ -1,0 +1,136 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "nokogiri"
+require "pathname"
+
+ROOT = Pathname.new(__dir__).parent
+SITE = ROOT.join("_site")
+
+INSTRUMENT_PAGES = %w[
+  ftir
+  hardness-tester
+  instron
+  ion-mill
+  optical
+  phenom-pure
+  phenom-xl
+  psa
+  raman
+  sem
+  uv-vis
+  xrd
+].freeze
+
+ASSET_RULES = [
+  ["published asset", "assets/**/*", 25 * 1024 * 1024],
+  ["instructional video", "assets/media/**/*.{mp4,webm}", 10 * 1024 * 1024],
+  ["poster image", "assets/**/*poster*.{jpg,jpeg,png,webp,avif}", 300 * 1024],
+  ["responsive image derivative", "assets/img/optimized/**/*.{jpg,jpeg,png,webp,avif}", 750 * 1024],
+  ["sample-library image", "assets/sample-library/**/*.{jpg,jpeg,png,webp,avif}", 1024 * 1024]
+].freeze
+
+def relative(path)
+  Pathname.new(path).relative_path_from(ROOT).to_s
+end
+
+def heading_level(heading)
+  heading.name.delete_prefix("h").to_i
+end
+
+def formatted_size(bytes)
+  return "#{bytes} B" if bytes < 1024
+  return format("%.1f KiB", bytes / 1024.0) if bytes < 1024 * 1024
+
+  format("%.1f MiB", bytes / (1024.0 * 1024.0))
+end
+
+errors = []
+
+unless SITE.directory?
+  warn "Build output is missing. Run `bundle exec jekyll build` first."
+  exit 1
+end
+
+INSTRUMENT_PAGES.each do |slug|
+  path = SITE.join("instruments", "#{slug}.html")
+  unless path.file?
+    errors << "Missing built instrument page: #{relative(path)}"
+    next
+  end
+
+  document = Nokogiri::HTML(path.read)
+  main = document.at_css("main")
+  unless main
+    errors << "#{relative(path)} has no main landmark"
+    next
+  end
+
+  headings = main.css("h1, h2, h3, h4, h5, h6")
+  h1_count = headings.count { |heading| heading.name == "h1" }
+  errors << "#{relative(path)} must contain exactly one H1; found #{h1_count}" unless h1_count == 1
+
+  headings.each_cons(2) do |previous, current|
+    next unless heading_level(current) > heading_level(previous) + 1
+
+    errors << "#{relative(path)} skips from #{previous.name.upcase} " \
+              "(#{previous.text.strip}) to #{current.name.upcase} (#{current.text.strip})"
+  end
+end
+
+Dir.glob(SITE.join("**", "*.html")).sort.each do |path|
+  document = Nokogiri::HTML(File.read(path))
+
+  document.css("img").each do |image|
+    unless image.key?("alt")
+      errors << "#{relative(path)} has an image without an alt attribute: #{image["src"]}"
+      next
+    end
+
+    next unless image["alt"].empty?
+
+    explicitly_decorative = image["aria-hidden"] == "true" ||
+                            image["role"] == "presentation" ||
+                            image.ancestors.any? { |ancestor| ancestor["aria-hidden"] == "true" }
+    next if explicitly_decorative
+
+    errors << "#{relative(path)} has empty image alt text without an explicit decorative marker: " \
+              "#{image["src"]}"
+  end
+
+  document.css("h1, h2, h3, h4, h5, h6").each do |heading|
+    next unless heading.text.match?(/\b(?:todo|to-do|to do)(?:s| list)?\b/i)
+
+    errors << "#{relative(path)} exposes a public to-do heading: #{heading.text.strip}"
+  end
+
+  visible_text = document
+                 .xpath("//text()[not(ancestor::script) and not(ancestor::style)]")
+                 .map(&:text)
+                 .join(" ")
+  next unless visible_text.match?(/\b(?:TODO|FIXME|TBD)\b/)
+
+  errors << "#{relative(path)} exposes a public TODO, FIXME, or TBD marker"
+end
+
+staff_todo_output = SITE.join("instruments", "staff-todo.html")
+errors << "#{relative(staff_todo_output)} must not be published" if staff_todo_output.exist?
+
+ASSET_RULES.each do |label, pattern, maximum|
+  Dir.glob(ROOT.join(pattern)).sort.each do |path|
+    next unless File.file?(path)
+    next unless File.size(path) > maximum
+
+    errors << "#{relative(path)} is #{formatted_size(File.size(path))}; " \
+              "#{label} limit is #{formatted_size(maximum)}"
+  end
+end
+
+if errors.empty?
+  puts "Site quality checks passed: instrument headings, public content, and asset budgets."
+  exit
+end
+
+warn "Site quality checks failed:"
+errors.each { |error| warn "- #{error}" }
+exit 1

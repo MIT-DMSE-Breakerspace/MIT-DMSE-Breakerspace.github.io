@@ -16,11 +16,11 @@ This page is the operating page for the Raman microscope. It combines the quick 
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the Raman microscope? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the Raman microscope](https://breakerspace.libcal.com/seat/174794)
@@ -28,7 +28,7 @@ This page is the operating page for the Raman microscope. It combines the quick 
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Learn what Raman spectroscopy can show you](#science)
 * [Choose a laser and grating](#laser-grating)
@@ -39,9 +39,9 @@ This page is the operating page for the Raman microscope. It combines the quick 
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 Raman spectroscopy identifies materials by how their molecules vibrate. When you shine a laser on a sample, almost all the light bounces off unchanged, but a tiny fraction exchanges a little energy with the molecule's vibrating bonds and comes back at slightly shifted wavelengths. Measuring those small shifts produces a spectrum with peaks at characteristic positions, a molecular "fingerprint" that often identifies a compound outright.
 
@@ -51,7 +51,7 @@ It is also a *confocal* Raman microscope, but with an important detail: the conf
 
 Raman is often described as complementary to FTIR. Both probe molecular vibrations, but they respond to different kinds of bonds, so a feature that is weak in one is frequently strong in the other. A material that is difficult in the FTIR may be straightforward in the Raman, and vice versa.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A chemist or materials scientist can identify an unknown solid, powder, or liquid by matching its Raman fingerprint to reference spectra.
 * A pharmaceutical scientist can tell apart the active ingredients in a combination tablet, and even map where each is distributed across the surface.
@@ -60,7 +60,7 @@ Raman is often described as complementary to FTIR. Both probe molecular vibratio
 * A semiconductor or 2D-materials researcher can measure strain, layer number, and quality in materials such as silicon, diamond, and graphene.
 * A curious student can compare everyday plastics (is this container PET, HDPE, or polystyrene?), check whether two white powders are actually the same thing, or probe the layers of a snack-bag film.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 Start with the peak positions. Raman peaks are plotted against "Raman shift" in wavenumbers (cm<sup>-1</sup>), and their positions are the primary fingerprint. Matching that pattern of positions against reference spectra is how compounds are identified, and a good match lines up several peaks rather than one.
 
@@ -68,7 +68,7 @@ Watch for a broad, sloping background swamping the peaks. That usually means flu
 
 Finally, judge peak sharpness and signal strength against your settings. Sharp, well-separated peaks may need a finer grating to resolve; a weak signal may need a shorter-wavelength laser or longer collection. The [detailed instructions](#details) explain these trade-offs.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * It does not work well on metals, which do not produce a useful Raman signal, or on simple ionic salts such as NaCl.
 * Strongly fluorescing materials can overwhelm the Raman signal entirely; if a sample still fluoresces with the 785 nm laser, it may simply not be suitable.
@@ -76,16 +76,16 @@ Finally, judge peak sharpness and signal strength against your settings. Sharp, 
 * It samples a tiny spot. That is powerful for targeting a feature, but it means one spectrum may not represent a non-uniform sample; sample several spots.
 * Higher-energy lasers can heat or burn delicate, dark, or temperature-sensitive samples, so the "strongest signal" setting is not always safe to use.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Log on to the instrument workstation using your MIT Kerberos.
 * Open the LabSpec 6 software.
 * Confirm the instrument is powered on. It should always be left powered on.
 * Turn the laser emission remote-control power to on if needed. This enables the lasers but does not fire one.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Prepare your sample on a glass microscope slide (see [compatible materials and sample prep](#materials)).
 * Lower the microscope stage with the coarse focus knob.
@@ -97,7 +97,7 @@ Finally, judge peak sharpness and signal strength against your settings. Sharp, 
 * Collect Raman spectra as appropriate for your sample (see [detailed operating instructions](#details)).
 * Repeat as needed.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Remove your sample from the stage and close the doors.
 * Turn the laser emission remote-control power to off.
@@ -105,7 +105,7 @@ Finally, judge peak sharpness and signal strength against your settings. Sharp, 
 * Close LabSpec 6.
 * Log off the workstation.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 * All materials must be non-hazardous and safe to handle in the Breakerspace.
 * The instrument can measure solids, powders, liquids, and gases.
@@ -114,13 +114,13 @@ Finally, judge peak sharpness and signal strength against your settings. Sharp, 
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-#### Sample Prep
+### Sample Prep
 
 * Place the sample on a glass microscope slide.
 * The objectives have a short working distance, so grind powders finely and keep the surface level and smooth.
 * For a solid without a flat face, mount it to the slide with the sample press and Plastilina mounting clay to create a stable surface to focus on.
 
-### Laser And Grating Selection {#laser-grating}
+## Laser And Grating Selection {#laser-grating}
 
 Choosing the laser and grating is the heart of getting a good Raman spectrum. The tables below summarize the trade-offs explained in the [detailed instructions](#details).
 
@@ -136,17 +136,17 @@ Choosing the laser and grating is the heart of getting a good Raman spectrum. Th
 | 1200 | Medium | Medium | A balance between resolution and signal. |
 | 1800 / 2400 | Higher | Lower | May need the grating repositioned five or more times to capture the full spectrum. |
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are a quick reference for trained users. The sections below are a training guide for new users that explains why the laser and grating choices matter.
 
-#### Choosing A Laser
+### Choosing A Laser
 
 The system includes three lasers: 532 nm, 638 nm, and 785 nm. Shorter wavelengths carry more energy and generally produce a stronger Raman signal, which is usually what you want. But higher energy has two costs. First, it can burn temperature-sensitive samples, especially at 532 nm. Second, materials that fluoresce fluoresce more strongly at shorter wavelengths, and that fluorescence can swamp the detector until the Raman peaks are lost in the background.
 
 A practical approach is to start with the 638 nm laser. Move to 532 nm if you need a stronger signal or better signal-to-noise. If you see fluorescence, switch to 785 nm. If the sample still fluoresces at 785 nm, it may not be a good candidate for Raman spectroscopy.
 
-#### Choosing A Grating {#choosing-a-grating}
+### Choosing A Grating {#choosing-a-grating}
 
 Scattered light must be spread out by a diffraction grating before the detector can measure its intensity at each wavelength. The system has four gratings: 600, 1200, 1800, and 2400 grooves/mm.
 
@@ -154,7 +154,7 @@ A coarser grating (600 gr/mm) spreads the light less, so more signal lands on th
 
 Finer gratings also produce a [wider dispersion](https://www.dropbox.com/scl/fi/0kcumhfxxhycy8b47l32d/Raman-Spectral-Resolution-Tech-Note.pdf?rlkey=321k53nqc9jn6cdqkqhpb0rzd&st=dr66nh85&dl=0) than the CCD detector chip is wide. The instrument handles this by moving the grating to aim different segments of the spectrum onto the detector in turn. With an 1800 or 2400 gr/mm grating you may need five or more grating positions to capture a full spectrum, whereas the 600 gr/mm grating usually captures it in a single position.
 
-#### Standard Workflow
+### Standard Workflow
 
 This is the recommended sequence for a normal session: calibrate the instrument against a silicon standard, then load and measure your own sample. The pattern of "get a camera image, verify the laser, look at a live spectrum, optimize focus for signal" repeats for both the calibration sample and your real sample.
 
@@ -162,7 +162,7 @@ A key habit throughout: **use the "stop all" control to end the current live vie
 
 **A note on objectives.** The system has 5x, 10x, and 100x objectives. Use the **5x for wayfinding only** — it is handy for locating a feature on the sample, but it is not high enough magnification to collect a Raman signal. Collect spectra with the **10x or 100x** objective. Whichever objective you use, select the matching objective in the software (Acquisition > Instrument Setup), because the software needs to know which one is in place.
 
-##### Part 1: Calibrate With The Silicon Standard
+#### Part 1: Calibrate With The Silicon Standard
 
 Calibrating against a silicon sample first confirms the instrument is reading the correct Raman shift before you trust any data from your own sample. Silicon has a strong, well-known peak (near 520 cm<sup>-1</sup>), which makes it the standard reference.
 
@@ -178,7 +178,7 @@ Calibrating against a silicon sample first confirms the instrument is reading th
 
 <p class="guidance-note"><em>Note: system AutoAlignment is handled by Breakerspace staff and is done for each laser before it is used. If your calibration will not pass, or a laser seems misaligned, ask staff rather than adjusting alignment yourself.</em></p>
 
-##### Part 2: Load And Measure Your Sample
+#### Part 2: Load And Measure Your Sample
 
 With calibration confirmed, measure your own sample using the same get-image / verify-laser / live-spectrum / optimize-focus pattern. **Use "stop all" between each step** to end the current live view before starting the next.
 
@@ -190,7 +190,7 @@ With calibration confirmed, measure your own sample using the same get-image / v
 6. **Optimize the focus for signal** with the joystick knob, making small adjustments to maximize the Raman signal, then stop the RTD.
 7. **Set up and run your sample collection.** Configure the collection parameters below for your goal and start the measurement.
 
-##### Collection Parameters
+#### Collection Parameters
 
 RTD is only for checking and optimizing the setup; it does not average spectra. When you are ready to record real data, use the full spectrum acquisition, which averages multiple accumulations over your chosen range. The parameters that matter most:
 
@@ -203,13 +203,13 @@ RTD is only for checking and optimizing the setup; it does not average spectra. 
 
 Start conservative on exposure time and laser power for an unfamiliar or delicate sample, check the result, then increase if you need more signal. If you are unsure what settings suit your sample, ask staff.
 
-#### AutoFocus {#autofocus}
+### AutoFocus {#autofocus}
 
 LabSpec 6 includes an AutoFocus function that steps the focus through a range, watches the signal, and settles at the position that maximizes it. It can help on samples where manual focusing is difficult or unreliable, such as highly polished or featureless surfaces, and it can hold focus across a rough surface during a map.
 
 AutoFocus is slow, however, because it collects signal at many focus positions. **We do not recommend it as a default focusing method.** For a normal measurement, focus manually with the joystick against the live RTD spectrum (see the [standard workflow](#details)). Reach for AutoFocus only when manual focus is not possible or not reliable.
 
-#### Mapping And Area Scanning {#mapping}
+### Mapping And Area Scanning {#mapping}
 
 Instead of a single spectrum from one spot, the XploRA can collect a grid of spectra across an area and build a map showing how the material varies from place to place. This is how you turn Raman into a chemical image: for example, showing where each active ingredient sits across a combination tablet, or where a contaminant is distributed on a surface.
 
@@ -223,7 +223,7 @@ To set up a map:
 
 Because a map can run for a long time, estimate the total time (points times per-point time) before you start. If the sample surface is rough, [AutoFocus](#autofocus) can keep each point in focus during the map, though it adds time.
 
-#### Confocal Z-Depth Profiling {#z-profiling}
+### Confocal Z-Depth Profiling {#z-profiling}
 
 Confocal Z-profiling uses the confocal hole to collect spectra at different depths *within* a transparent or translucent sample, rather than only at the surface. It is what lets Raman act like a non-destructive optical "core sample."
 
@@ -240,7 +240,7 @@ Confocal Z-profiling uses the confocal hole to collect spectra at different dept
 
 <p class="guidance-note"><em>Recommended confocal hole and slit values for routine work and for depth profiling should be confirmed with staff; they depend on the objective and the sample.</em></p>
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 Spectra are collected and saved in LabSpec 6. Remember that each spectrum must be selected and saved individually before you close the software.
 
@@ -255,7 +255,7 @@ For a browser-based introduction to viewing and processing Raman spectra, visit 
 
 Data processing beyond these basics is best learned at the instrument; please ask lab staff if you have questions about analysis or database searching.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -266,7 +266,7 @@ Data processing beyond these basics is best learned at the instrument; please as
 | Weak signal | Poor focus, or laser/grating combination too weak | Refine focus to maximize signal, then consider a shorter-wavelength laser or coarser grating. |
 | Sample looks damaged after measurement | Laser burned a temperature-sensitive sample | Use a longer-wavelength laser and lower power; ask staff about power settings. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [LabSpec 6 general use quick-start guide](../assets/img/tutorials/raman/LabSpec6-General-Use-Quick-Start-Guide.pdf)
 * [LabSpec 6 AutoFocus quick-start guide](../assets/img/tutorials/raman/LabSpec6-AutoFocus-Quick-Start-Guide.pdf)
@@ -274,12 +274,12 @@ Data processing beyond these basics is best learned at the instrument; please as
 * [Raman spectral resolution technical note (grating dispersion)](https://www.dropbox.com/scl/fi/0kcumhfxxhycy8b47l32d/Raman-Spectral-Resolution-Tech-Note.pdf?rlkey=321k53nqc9jn6cdqkqhpb0rzd&st=dr66nh85&dl=0)
 * [Full Horiba XploRA and LabSpec 6 documentation folder:](https://www.dropbox.com/scl/fo/ppao3nkalsx14dyhnlryo/ADc_wEUGXbfb9_MfXPeQ9PM?rlkey=3xm38dmwhua13nhfar3ffepjl&dl=0) additional manuals, reference guides, and Horiba application notes.
 
-### Links {#links}
+## Links {#links}
 
 * [Horiba: what is Raman spectroscopy?](https://www.horiba.com/int/scientific/technologies/raman-imaging-and-spectroscopy/raman-spectroscopy/)
 * [Horiba XploRA PLUS product page](https://www.horiba.com/int/scientific/products/detail/action/show/Product/xplora-plus-1528/)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - Calibration and a known sample:** Run the autocalibration routine and collect a spectrum from the polystyrene standard. Confirm your peaks match the known polystyrene reference.
 * **Level 2 - Laser and grating comparison:** Collect a spectrum from one sample using different laser and grating combinations. Describe how each choice changed signal strength, resolution, and fluorescence.

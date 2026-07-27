@@ -16,11 +16,11 @@ This page is the operating page for the Duetta. It combines the quick reference 
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the Duetta? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the Duetta](https://breakerspace.libcal.com/seat/174790)
@@ -28,7 +28,7 @@ This page is the operating page for the Duetta. It combines the quick reference 
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Choose a UV-Vis or fluorescence measurement](#quick-method)
 * [Learn what UV-Vis and fluorescence can show you](#science)
@@ -37,9 +37,9 @@ This page is the operating page for the Duetta. It combines the quick reference 
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 The Duetta uses light to ask how molecules and particles interact with different colors, including ultraviolet, visible, and near-infrared wavelengths. In an absorbance measurement, the instrument sends light through a cuvette and compares how much light gets through the sample relative to a blank or reference. If the sample absorbs strongly at a wavelength, less light reaches the detector there.
 
@@ -47,7 +47,7 @@ That is why colored liquids have useful spectra. A blue dye looks blue because i
 
 Fluorescence asks a related but different question. Some molecules absorb light and then emit light at a longer wavelength. The Duetta can excite a fluorescent sample with one wavelength and measure the light it emits at other wavelengths. Fluorescence can be extremely sensitive, but it also depends strongly on method settings, concentration, solvent, scattering, and whether the sample reabsorbs its own emitted light.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A chemist might follow the concentration of a colored compound by measuring how strongly it absorbs at a known wavelength.
 * A biologist or bioengineer might measure fluorescent dyes, labels, proteins, nanoparticles, or media components, when the method has been validated for that sample.
@@ -55,7 +55,7 @@ Fluorescence asks a related but different question. Some molecules absorb light 
 * A materials researcher might compare quantum dots, dyes, films dissolved into solution, or nanoparticle suspensions by their absorbance and fluorescence behavior.
 * A student might use the Duetta for a simple first spectroscopy experiment: prepare a dilution series of food coloring, collect spectra, and see how a visible peak changes as concentration changes.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 For absorbance spectra, start with the main peaks and the baseline. Ask where the sample absorbs most strongly, whether the peak shape changes between samples, and whether the signal is within a useful range. A concentration series should usually show stronger absorbance for more concentrated samples, but only until the sample becomes too concentrated for a reliable measurement.
 
@@ -70,7 +70,7 @@ For fluorescence, look at both the intensity and the emission wavelength range. 
 
 Always check for practical artifacts before interpreting small differences. Bubbles, fingerprints, dirty cuvettes, scratches, particles, settling, the wrong blank, or a saturated peak can all produce misleading spectra.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * UV-Vis absorbance usually shows optical behavior, not a complete chemical identity by itself.
 * A peak at a wavelength does not prove that one specific molecule is present unless the sample, blank, and comparison method support that interpretation.
@@ -79,9 +79,9 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Particle suspensions can scatter light, settle, or aggregate, so apparent absorbance may not mean molecular absorption.
 * The Duetta does not replace FTIR, Raman, XRD, SEM-EDS, chromatography, or other methods when the question is molecular identity, crystal structure, elemental composition, or mixture separation.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Confirm the sample compartment is empty and the lid can close normally.
 * Turn on the [rear instrument power switch](../assets/img/tutorials/uv-vis/duetta-back-power-switch.jpg), if needed.
@@ -90,7 +90,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Open EZ Spec software and enter the acquisition interface.
 * Let the lamps warm up before collecting data when quantitative comparison matters.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Wear nitrile gloves when handling cuvettes, sample holders, slides, samples, pipettes, wipes, or liquid-handling supplies.
 * Prepare the sample and blank/reference cuvettes or holders.
@@ -100,7 +100,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Unload all cuvettes, slides, or sample holders from the sample compartment.
 * Save or export the data.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Confirm all needed data are saved or exported.
 * Confirm the sample compartment is empty.
@@ -110,7 +110,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * **Push and hold the front power button until the light shuts off.**
 * Leave the work area clean and remove all samples, labels, wipes, and liquid-handling supplies.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 * Samples must be non-hazardous and safe to handle in the Breakerspace.
 * Routine samples should be liquids that can be contained safely in a clean cuvette.
@@ -124,7 +124,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 
 <p class="guidance-note"><em>If you have any questions about whether a sample is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-#### Cuvettes
+### Cuvettes
 
 * Spare cuvettes are in the bottom drawer under the sample-prep bench, labeled "Spare Cuvettes."
 * Deionized water for dilution or blank samples is typically available near the sink or sample-prep bench.
@@ -137,7 +137,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Use the same cuvette orientation for blank and sample whenever possible.
 * Use matched cuvettes or the same cuvette rinsed between measurements when small differences matter.
 
-#### Transmission Holder And Slides
+### Transmission Holder And Slides
 
 The transmission sample holder can be used for flat samples where light passes through a transparent substrate and sample layer. This is a staff-guided workflow until the holder setup is fully documented.
 
@@ -147,7 +147,7 @@ Use a matching blank/reference whenever possible. For a sunscreen comparison, fo
 
 This holder is useful for questions such as comparing sunscreen formulations, checking whether a thin film blocks particular wavelengths, or measuring transmission through transparent materials. Interpretation depends strongly on sample thickness, uniformity, substrate choice, and blank selection.
 
-#### Concentration And Dilution
+### Concentration And Dilution
 
 Absorbance measurements work best when the sample absorbs some light but does not block nearly all of it. If a peak is cut off, flat at the top, noisy, or far above the useful range, the sample is probably too concentrated at that wavelength.
 
@@ -155,7 +155,7 @@ Start with a dilute sample when the concentration is unknown. If the spectrum is
 
 For fluorescence, high concentration can be especially misleading because molecules can reabsorb emitted light or quench each other. If fluorescence workflows are used, dilution series and inner-filter-effect correction may be needed.
 
-### Quick Method Selection {#quick-method}
+## Quick Method Selection {#quick-method}
 
 | Goal | Starting method | Notes |
 | --- | --- | --- |
@@ -167,13 +167,13 @@ For fluorescence, high concentration can be especially misleading because molecu
 | Use absorbance-corrected fluorescence or molecular fingerprint workflows | Combined absorbance and fluorescence method | Staff-guided; method setup and interpretation are more specialized. |
 | Estimate relative nanoparticle or suspension behavior | Absorbance/scattering comparison | Interpret carefully: turbidity, scattering, and settling can dominate the result. |
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are meant as a quick reference for trained users. The sections below are written as a training guide for new users and include practical details, images, and troubleshooting cues that are easiest to understand at the instrument.
 
 The most common preventable Duetta problems are dirty cuvettes or slides, mismatched blanks, samples that are too concentrated or too thick, bubbles or nonuniform films in the beam path, unclear file names, and data that was collected but not exported before the user left.
 
-#### Instrument Startup Notes
+### Instrument Startup Notes
 
 Before starting, confirm the sample compartment is empty and the lid closes normally. If the instrument is off, use the rear power switch first, then press the front power button. The front power button must be blue before operation.
 
@@ -185,7 +185,7 @@ Log on to the instrument workstation using your MIT Kerberos, open EZ Spec, and 
   <figcaption>Use the rear switch and front power button to start the Duetta. The front power button must be blue before operation.</figcaption>
 </figure>
 
-#### What Absorbance And Transmission Measure
+### What Absorbance And Transmission Measure
 
 Absorbance and transmission describe how much light passes through a sample at each wavelength. Transmission is the fraction of light that gets through. Absorbance is a logarithmic way of reporting how much light was lost relative to the blank.
 
@@ -193,13 +193,13 @@ In a simple dye solution, more dye usually means higher absorbance at the dye's 
 
 Absorbance spectra can be affected by more than molecular absorption. Particles, bubbles, fingerprints, scratches, cuvette mismatch, solvent background, fluorescence, and stray light can all change the spectrum. Always compare the result with what you know about the sample and how it was prepared.
 
-#### What Fluorescence Measures
+### What Fluorescence Measures
 
 Fluorescence occurs when a sample absorbs light and then emits light at a longer wavelength. Fluorescence can be extremely sensitive, which makes it useful for fluorescent dyes, quantum dots, biological labels, and some natural materials.
 
 Fluorescence is also easy to misinterpret if the method is not chosen carefully. Excitation wavelength, emission range, slit settings, concentration, solvent, scattering, photobleaching, and inner-filter effects can all change the result. For now, use fluorescence workflows with staff guidance unless you have already been trained on the specific method.
 
-#### Blank And Reference Selection
+### Blank And Reference Selection
 
 The blank should represent everything in the sample except the absorbing or fluorescent material you want to measure. For a dye dissolved in deionized water, deionized water can be a reasonable blank. For a dye in buffer, solvent mixture, media, or extract, the blank should usually be that same background without the dye.
 
@@ -207,7 +207,7 @@ If the blank does not match the sample background, the spectrum may include solv
 
 When comparing several samples, use the same blank strategy for all of them and record what the blank was.
 
-#### Cuvette Loading Workflow
+### Cuvette Loading Workflow
 
 1. Label samples before going to the instrument if several liquids look similar.
 2. Mix the sample gently if it may have settled, but avoid making bubbles.
@@ -230,7 +230,7 @@ When comparing several samples, use the same blank strategy for all of them and 
   </figure>
 </div>
 
-#### Routine Absorbance Workflow In EZ Spec
+### Routine Absorbance Workflow In EZ Spec
 
 1. Start EZ Spec and click the EZ Spec button.
 2. Click New Method.
@@ -252,7 +252,7 @@ When comparing several samples, use the same blank strategy for all of them and 
   <figcaption>For routine absorbance training, set the mode to Both when absorbance and transmission are both useful, then click Acquire after the method, file name, save location, and sample setup are ready.</figcaption>
 </figure>
 
-#### Transmission Holder Workflow
+### Transmission Holder Workflow
 
 Use the transmission holder when the sample is a flat transparent substrate, film, coating, or slide-mounted layer rather than a liquid in a cuvette. Confirm the holder, substrate, and sample preparation with staff before use.
 
@@ -266,7 +266,7 @@ Use the transmission holder when the sample is a flat transparent substrate, fil
 
 A recent Breakerspace project used this workflow to compare sunscreen formulations. The student applied controlled layers of different sunscreens to quartz slides, then compared absorbance and transmission spectra to ask which formulation blocked light most effectively across the measured wavelength range.
 
-#### Comparing A Series Of Samples
+### Comparing A Series Of Samples
 
 For concentration comparisons, keep everything consistent except the concentration or treatment being tested.
 
@@ -278,13 +278,13 @@ For concentration comparisons, keep everything consistent except the concentrati
 * Watch for saturation at the strongest peaks.
 * Record dilution factors and sample labels outside the software as well as in file names.
 
-#### Working With Suspensions, Particles, Or Turbid Samples
+### Working With Suspensions, Particles, Or Turbid Samples
 
 Suspensions and nanoparticle samples can produce spectra that include both absorption and scattering. Larger particles, aggregates, bubbles, or settling can increase apparent absorbance even when the material is not absorbing strongly at that wavelength.
 
 Before interpreting a suspension spectrum, ask whether the sample is stable during the measurement. If particles settle quickly, repeat measurements may change. If the goal is particle size or aggregation, the Duetta result may be useful as a relative comparison, but it should not be treated as a direct particle-size measurement without a validated method.
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 * Under the Acquire tab, you can toggle between Transmission, Absorbance, and Fluorescence views when those data are available.
 * Use clear file names that include sample identity, concentration or dilution, date, and measurement type when useful.
@@ -294,7 +294,7 @@ Before interpreting a suspension spectrum, ask whether the sample is stable duri
 * Under the Process tab, EZ Spec can process data in several ways, including smoothing, peak finding, curve fitting, and related operations.
 * Do not rely on smoothing or peak finding to fix poor data. If the raw spectrum is saturated, noisy, contaminated, or blanked incorrectly, recollect the measurement.
 
-#### What To Check Before Trusting A Spectrum
+### What To Check Before Trusting A Spectrum
 
 * Are the strongest peaks within a useful absorbance range, or are they clipped/saturated?
 * Does the blank match the solvent or sample background?
@@ -304,7 +304,7 @@ Before interpreting a suspension spectrum, ask whether the sample is stable duri
 * Are particles settling, scattering, or aggregating during measurement?
 * Is the file saved and exported in a format you can use later?
 
-#### Shutdown And Cleanup Notes
+### Shutdown And Cleanup Notes
 
 Before shutting down, confirm that every file you need has been saved or exported. The native EZ Spec file is useful if you may need to reopen the method or processing later, while exported text or CSV-style data are usually easier to plot or analyze elsewhere.
 
@@ -312,7 +312,7 @@ Remove all sample and blank/reference cuvettes, slides, or holders from the inst
 
 Close EZ Spec, log out of the workstation, and push and hold the front power button until the light shuts off. The lamp has a limited service life and does not automatically turn off just because the workstation is disconnected, so shutting the instrument down at the end of a session is important.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Problem | Likely Cause | What To Try |
 | --- | --- | --- |
@@ -327,12 +327,12 @@ Close EZ Spec, log out of the workstation, and push and hold the front power but
 | Sample spills or cuvette leaks | Overfilled, cracked, poorly capped, or mishandled cuvette | Stop, keep liquid out of the instrument, notify staff, and clean only according to the approved material and spill procedure. |
 | Data was collected but cannot be found later | File name, save location, or export step was missed | Save/export before closing EZ Spec; use clear project folders and file names. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [Local copy of Duetta with EZ Spec operation manual](../assets/img/tutorials/uv-vis/Duetta-with-EZ-Spec-Operation-Manual-5700004252-Rev-1.4.3.pdf)
 * [Dropbox copy of Duetta with EZ Spec operation manual](https://www.dropbox.com/scl/fi/9bzwitjz004xd8pl5bpyl/Duetta-with-EZ-Spec-Operation-Manual-5700004252-Rev-1.4.3.pdf?rlkey=8ekvwddzdt0pk931zwpxov43l&st=yisoc2r2&dl=0)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - General training:** Measure absorbance and transmission spectra from water with food coloring. Identify the wavelengths where the colored sample absorbs most strongly and export the data.
 * **Level 1 - Blank comparison:** Measure the same colored water sample using deionized water as the blank, then repeat with an intentionally mismatched blank chosen by staff. Compare how the spectrum changes.

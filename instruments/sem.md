@@ -21,11 +21,11 @@ This page is the shared SEM hub. Use it to choose an instrument, review common S
 * [Phenom XL SEM operating page](./phenom-xl.html)
 * [Phenom Pure SEM operating page](./phenom-pure.html)
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to SEM? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the Phenom XL SEM](https://breakerspace.libcal.com/seat/174786)
@@ -34,7 +34,7 @@ This page is the shared SEM hub. Use it to choose an instrument, review common S
 * [Open the Phenom Pure operating page](./phenom-pure.html)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Use the interactive chooser to select an SEM](#chooser)
 * [Learn what SEM can show you](#science)
@@ -44,9 +44,9 @@ This page is the shared SEM hub. Use it to choose an instrument, review common S
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 A scanning electron microscope uses electrons instead of visible light to make an image. The instrument sends a narrow beam of electrons across the sample surface, point by point, and detectors record signals that come back from each location. Software turns those signals into an image.
 
@@ -54,7 +54,7 @@ Because electrons have much shorter wavelengths than visible light, SEM can reve
 
 SEM images are usually grayscale because they are not ordinary color photographs. Brightness often comes from surface shape, edges, detector angle, and material contrast. On the Phenom XL, EDS adds another kind of information: when the electron beam hits the sample, some atoms emit X-rays with energies that can be used to estimate which elements are present.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A biologist might examine the surface of pollen, insect parts, fibers, shells, or tissue scaffolds to understand shape and texture at a scale smaller than ordinary microscopy.
 * A mechanical engineer might inspect a fracture surface, worn part, coating, or printed component to ask how damage started and whether failure was brittle, ductile, layered, porous, or contaminated.
@@ -62,7 +62,7 @@ SEM images are usually grayscale because they are not ordinary color photographs
 * A chemist or environmental scientist might use SEM and EDS to compare particles, residues, filters, sediments, or corrosion products and ask whether different regions have different elemental signatures.
 * A student exploring an unfamiliar sample might start with the optical microscope, then use SEM when the next question is about smaller surface details, fine particles, or elemental contrast.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 In an SEM image, look first for scale, shape, and texture. Ask whether features are smooth or rough, isolated or connected, rounded or sharp, layered or porous, and whether the same pattern repeats across the sample.
 
@@ -77,7 +77,7 @@ Edges and steep surfaces often look bright because they send more signal toward 
 
 For EDS results, look for patterns rather than just labels. A useful EDS map might show that one element is concentrated in particles, another in the surrounding matrix, or a coating on only one side of a feature. EDS is most powerful when you compare it with the SEM image and with what you know about the sample.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * SEM mainly shows surfaces. It cannot see through an opaque sample unless a cross section is exposed.
 * Most SEM samples must be dry, stable, and compatible with vacuum. Wet, loose, volatile, magnetic, or beam-sensitive samples need special care.
@@ -87,7 +87,7 @@ For EDS results, look for patterns rather than just labels. A useful EDS map mig
 
 SEM users must complete Breakerspace lab training and SEM-specific training before working independently. If your sample is hazardous, wet, very magnetic, loose, reactive, biological, vacuum-sensitive, or otherwise unusual, ask staff before bringing it to the lab.
 
-### Interactive SEM Chooser {#chooser}
+## Interactive SEM Chooser {#chooser}
 
 Use this quick chooser if you are not sure which SEM to reserve. The recommendation is a starting point; ask staff if your sample is unusual or the result seems ambiguous.
 
@@ -130,7 +130,7 @@ Use this quick chooser if you are not sure which SEM to reserve. The recommendat
 })();
 </script>
 
-### Choose An SEM {#choose}
+## Choose An SEM {#choose}
 
 | Use case | Recommended instrument | Notes |
 | --- | --- | --- |
@@ -149,11 +149,11 @@ For EDS samples on the Phenom XL, prefer conductive mounting and avoid coating m
 
 {% include sem/quick-imaging-settings.md %}
 
-### Shared Sample Preparation Details {#prep-details}
+## Shared Sample Preparation Details {#prep-details}
 
 SEM sample preparation has two goals: protect the microscope and make the sample electrically and mechanically stable enough to image. The most common preventable SEM problems are loose debris, incorrect height, poor grounding, wet samples, and over-prepared samples that no longer show the surface you wanted to study.
 
-#### Basic Solid Samples
+### Basic Solid Samples
 
 1. Place a clean bare stub in a sample prep tray.
 2. Attach a double-sided carbon pad or another approved adhesive.
@@ -164,7 +164,7 @@ SEM sample preparation has two goals: protect the microscope and make the sample
 
 Do not prepare samples inside an SEM sample holder. Loose particles can fall into the holder or loading area and later contaminate the detector, chamber, or column.
 
-#### Powder And Particle Samples
+### Powder And Particle Samples
 
 Powders should be sparse, well attached, and mostly one layer thick.
 
@@ -176,7 +176,7 @@ Powders should be sparse, well attached, and mostly one layer thick.
 
 If you care about particle size or shape, thick piles are a problem because particles overlap and hide each other. Use less material than feels natural; SEM needs a visible population of particles, not a mound.
 
-#### Non-Conductive Samples
+### Non-Conductive Samples
 
 Non-conductive samples can charge under the electron beam. Charging often appears as a region that gets brighter over time, streaks, distorted features, drifting image position, or a field of view that washes out to white.
 
@@ -192,7 +192,7 @@ You have three main options:
   <figcaption>Sputter coating can reduce charging and improve high-vacuum imaging of non-conductive samples.</figcaption>
 </figure>
 
-#### Wet, Moist, And Biological Samples
+### Wet, Moist, And Biological Samples
 
 Wet samples are risky in an SEM because water and other volatile liquids outgas under vacuum. Outgassing can cause poor images, vacuum errors, contamination, and microscope damage.
 
@@ -210,7 +210,7 @@ Common strategies:
 
 {% include sem/data-and-analysis.md %}
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [Phenom XL user manual](https://www.dropbox.com/scl/fi/iyd538gtkj79kg0bc8113/2020-MS-Phenom-XL_User-Manual.pdf?rlkey=0yk985nvgz3lckqnrtxwo7afv&dl=0)
 * [Phenom XL tensile stage manual](https://www.dropbox.com/scl/fi/fu39pi9pamr2top97cv6m/Tensile-Stage-Training-Manual.pdf?rlkey=xs9dkadn6k16f9vpo3vc3y2h7&dl=0)
@@ -219,12 +219,12 @@ Common strategies:
 * [Phenom Pure temperature controlled stage manual](https://www.dropbox.com/scl/fi/nqcrhb3axctk6782k5hqk/User-Manual_Phenom_Temperature-Stage.pdf?rlkey=r01r9dl6k1km22to13s0nir24&dl=0)
 * [Phenom Pure all docs](https://www.dropbox.com/scl/fo/th7xj2e2ul1sed2vobibt/ACVAySN_rjR_JnEXtPfs3_8?rlkey=3j90cjbe0akxyu7o3fanrxvn5&dl=0)
 
-### Links {#links}
+## Links {#links}
 
 * [Nanoscience Instruments Phenom Desktop SEM YouTube Playlist](https://www.youtube.com/watch?v=Tuvu79IPFa8&list=PLSK7wbUBb88knCedT9BvlILTanNkLh38q)
 * [Thermo Fisher SEM YouTube playlist](https://www.youtube.com/watch?v=jFO5AnYnn2c&list=PLoxdPzacxPYjwqELAD8XQGsygUYse2gmB)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 These exercises are shared SEM examples. The instrument-specific pages identify which exercise is best for training on each SEM.
 

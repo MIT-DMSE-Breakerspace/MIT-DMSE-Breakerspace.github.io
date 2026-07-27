@@ -16,11 +16,11 @@ This page is the operating page for the hardness tester. It combines the quick r
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the hardness tester? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the hardness tester](https://breakerspace.libcal.com/seat/181543)
@@ -28,7 +28,7 @@ This page is the operating page for the hardness tester. It combines the quick r
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Learn what hardness testing can show you](#science)
 * [Choose a hardness test method](#test-method)
@@ -38,9 +38,9 @@ This page is the operating page for the hardness tester. It combines the quick r
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 Hardness is a measure of how well a material resists being permanently dented. To measure it, the instrument presses a hard, precisely shaped indenter into the surface with a controlled force, holds it briefly, and then withdraws it. The material's hardness is calculated from how big the leftover indent is (for methods that measure the indent optically) or how deep the indenter went (for methods that measure depth). Harder materials leave smaller, shallower indents.
 
@@ -52,7 +52,7 @@ There are several standard methods, and they differ mainly in the indenter shape
 * **Rockwell** presses a diamond cone or a hardened ball and measures the *depth* of penetration directly. It is fast and needs no microscope, but the indenter and scale must be matched to the material.
 * **Brinell** presses a larger ball and measures the indent diameter. The larger indent averages over a bigger area, which suits coarse or non-uniform materials.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A metallurgist can check whether a heat treatment worked, since hardening, tempering, and annealing all change hardness in predictable ways.
 * A manufacturer can verify that incoming stock or a finished part meets a hardness specification.
@@ -60,7 +60,7 @@ There are several standard methods, and they differ mainly in the indenter shape
 * A failure analyst can compare a broken part against spec to see whether the wrong material or treatment was used.
 * A student can compare the hardness of different alloys, or see for themselves how cold-working or heat-treating a metal changes it.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 The main output is a hardness number with its scale, such as `669 HV 40` (a Vickers value at a 40 kgf-equivalent load) or an HRC value for Rockwell. Always record the scale, not just the number, because a bare number is meaningless without it.
 
@@ -68,7 +68,7 @@ For Vickers and Brinell, the instrument also reports the measured indent dimensi
 
 When you run a pattern of several points, look at the spread as well as the average. The instrument reports statistics such as mean, minimum, maximum, and standard deviation. A large spread can be real (a non-uniform material) or a setup problem (uneven surface, poor focus), so interpret it alongside the indent quality.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * Hardness is not the same as strength or toughness. It correlates with them for many metals, but it does not directly measure how much load a part carries or how it fractures. For that, use the [Instron](./instron.html).
 * Hardness numbers are method-specific. Vickers values at different loads are equivalent to each other, but Rockwell scales are not interchangeable with each other or with Vickers without a conversion table, and conversions are approximate.
@@ -76,16 +76,16 @@ When you run a pattern of several points, look at the spread as well as the aver
 * Results depend on a good surface. A rough, tilted, curved, or dirty surface gives unreliable numbers.
 * It does not identify what a material is. It measures a property, not composition.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
 Match the indenter and scale to your sample before testing. Using a scale whose indenter is too soft for a hard surface can damage the indenter or the machine (see [common failure modes](#failures)). If you are not sure which scale is safe for your material, ask staff.
 
-#### Startup {#startup}
+### Startup {#startup}
 
 * Turn on the machine using the red power switch at the back.
 * Start Impressions using the current sign-in instructions provided during training or posted at the instrument.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Place your sample on the stage.
 * Find a clean, flat spot using the camera, moving the stage with the joystick or the software.
@@ -95,14 +95,14 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 * Confirm the pattern is set to **SINGLE POINT**, then click **START**; the test runs automatically.
 * To test several points, use **TEST PATTERN** and choose your settings. Return to **SINGLE POINT** when you are done.
 
-#### Shutdown {#shutdown}
+### Shutdown {#shutdown}
 
 * Confirm you are back in single-point mode (patterns are retained across users).
 * Remove your sample and turn off the workstation.
 * Toggle the power switch at the back of the machine to off.
 * Leave the stage and work area clean.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 * All materials must be non-hazardous and safe to handle in the Breakerspace.
 * Prepare a flat sample, ideally polished. An unpolished sample will not damage the machine but gives worse results, because the indent edges are harder to measure.
@@ -112,7 +112,7 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Test Method Selection {#test-method}
+## Test Method Selection {#test-method}
 
 | Method | Indenter | Read from | Good for |
 | --- | --- | --- | --- |
@@ -125,7 +125,7 @@ Two things to get right before you start:
 * **Match the Rockwell scale to your material.** Different Rockwell scales use different indenters and loads. A scale whose tip is too soft for your surface can damage the tip or the machine. For example, HRA uses a harder tip than HRB.
 * **Know how the numbers compare.** Vickers values taken at different loads are equivalent to one another. Rockwell values are *not* equivalent across scales, and comparing Rockwell to Vickers (or one Rockwell scale to another) requires a conversion table and is only approximate.
 
-#### Available Scales And Loads {#scales}
+### Available Scales And Loads {#scales}
 
 The Breakerspace machine is a Nemesis 5100G2/A, with a **test-force range of about 200 gf to 250 kgf**. The exact scales offered depend on which indenters and objectives are installed, so confirm the on-screen turret map before you rely on a particular scale. Within that force range the machine supports:
 
@@ -135,11 +135,11 @@ The Breakerspace machine is a Nemesis 5100G2/A, with a **test-force range of abo
 
 The dwell time is set in software (default 10 seconds, adjustable up to 999 seconds). For the complete scale and force tables see the Nemesis 5100G2 manual specifications (§10, pp. 37–38).
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are a quick reference for trained users. The section below is a training guide for new users. It is ordered by how often each test is run in the Breakerspace: single-point Vickers is by far the most common, followed by Vickers patterns, then Rockwell, and occasionally Brinell. The step names in **bold** are the on-screen buttons and menus in the Impressions software.
 
-#### The Turret, Objectives, And Indenters {#turret}
+### The Turret, Objectives, And Indenters {#turret}
 
 The tester has a motorized nine-position turret. Eight positions hold the objectives and indenters (up to eight items total), and one fixed position holds the cross-laser locator and the load-cell probe. You never change tools by hand during a test: when you select a scale and press **START**, the turret rotates the correct indenter into place, makes the indent, and then rotates a viewing objective back automatically.
 
@@ -150,7 +150,7 @@ The tester has a motorized nine-position turret. Eight positions hold the object
 
 See the Nemesis 5100G2 manual (turret and stage, §5.1–5.3; safety, §3) and the Impressions 4 manual (turret configuration, §5.4.3) for the underlying detail.
 
-#### Running A Single-Point Vickers Test {#vickers}
+### Running A Single-Point Vickers Test {#vickers}
 
 This is the default test and the one most students run. Vickers presses a diamond pyramid and the software measures the diagonals of the square indent.
 
@@ -166,7 +166,7 @@ This is the default test and the one most students run. Vickers presses a diamon
 
 For the exact measurement-adjustment procedure see the Impressions 4 manual (§5.4.8 and §5.4.17). For teaching, **Student Mode** (a system setting, §5.4.5.6, p. 31) hides the calculated hardness and shows only the diagonals so students compute the value by hand.
 
-#### Running A Vickers Pattern {#patterns}
+### Running A Vickers Pattern {#patterns}
 
 The motorized XY stage can run a grid or line of indents automatically, which is useful for averaging several points or mapping hardness across a weld, coating, or case-hardened surface.
 
@@ -179,7 +179,7 @@ The motorized XY stage can run a grid or line of indents automatically, which is
 
 The full pattern editor is documented in Impressions 4 chapter 6 (pp. 48–68). Pattern statistics (mean, min, max, standard deviation, range) are covered under [data processing](#data).
 
-#### Running A Rockwell Test {#rockwell}
+### Running A Rockwell Test {#rockwell}
 
 Rockwell reads the *depth* of penetration directly, so there is no optical measurement or crossline step. *(Impressions 4 manual, §5.4.8 note, p. 35 — optical measurement does not apply to Rockwell.)*
 
@@ -189,7 +189,7 @@ Rockwell reads the *depth* of penetration directly, so there is no optical measu
 4. Focus and press **IN FOCUS** to set the working height, then press **START**. The result is a Rockwell number derived from depth — there are no diagonals to measure or adjust.
 5. Turning on **AUTO SAVE** is recommended for Rockwell, since there is no measurement step to pause on. The **FORCE DEPTH** diagram (under **TEST SETTINGS → DIAGRAMS**) plots force against depth if you want to see the indentation curve. *(Impressions 4 manual, AUTO SAVE §5.4.3.4, p. 22; FORCE DEPTH diagram §5.4.11.4, p. 39.)*
 
-#### Running A Brinell Test {#brinell}
+### Running A Brinell Test {#brinell}
 
 Brinell presses a larger ball and, like Vickers, measures the indent optically — but the ball and indent are larger.
 
@@ -197,11 +197,11 @@ Brinell presses a larger ball and, like Vickers, measures the indent optically �
 * Use a lower-magnification objective (2.5x or 5x) so the larger indent fits in view. *(Impressions 4 manual, edge detection §5.4.4.5, p. 25.)*
 * Focus, press **IN FOCUS**, then **START**. The software measures the indent diameter and reports the value as `HBW`, adjusting the crosslines the same way as for Vickers if needed. *(Impressions 4 manual, optical measurement §5.4.8, p. 35.)*
 
-#### Worked Example: A Single Vickers Reading {#worked-example}
+### Worked Example: A Single Vickers Reading {#worked-example}
 
 Place a flat, polished steel coupon on the flat anvil and center it. Press **SCALE SELECT** and choose `VICKERS 1 KGF`. Under **TEST SETTINGS → DWELL TIME**, set a 10 second mainload dwell. Focus at 2.5x, switch toward 10x, refocus, and press **IN FOCUS**. Confirm **SINGLE POINT** and press **START**; the indenter loads, holds for 10 seconds, and withdraws. The four crosslines land on the diagonals and the screen reads, for example, `669.4 HV 1`. The diagonal boxes stay black, meaning the two diagonals agree within 5%, so the reading is trustworthy — press **SAVE**. Report it with its scale as `669.4 HV 1`, not as a bare number.
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 The software reports each measurement as a hardness value with its scale (for example, `669.4 HV 40`), along with the test details: method, scale, dwell time, indent dimensions (such as the Vickers diagonals d1 and d2), and stage position.
 
@@ -210,7 +210,7 @@ The software reports each measurement as a hardness value with its scale (for ex
 * Save and review readings from the **RESULTS** tab and batch list. Use **REPORT** to build a report: **SNAPSHOTS** picks images, **PRINT** gives a preview you can export to PDF or XLSX, and **EXPORT** writes the measurements as CSV or Q-DAS to the export path set in system settings. Save a copy to your own storage. *(Impressions 4 manual, results §5.4.9, p. 35; report and export §5.4.21, p. 43; export path §5.4.5.6, pp. 31–32.)*
 * To compare values across methods or Rockwell scales, use a hardness conversion table, and treat the conversion as approximate.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -220,14 +220,14 @@ The software reports each measurement as a hardness value with its scale (for ex
 | Indent looks lopsided or hardness scatters a lot | Surface tilted, rough, unpolished, or unstable | Re-seat the sample flat, polish or find a smoother spot, and refocus. |
 | Indent hard to measure or value looks wrong | Poor focus at 10x | Refocus carefully (2.5x then 10x) and click In Focus before testing. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 The two manuals that matter for operation are the **Impressions 4 software user manual** (the on-screen test workflow, patterns, and reporting) and the **Nemesis 5100G2 hardware user manual** (the turret, stage, scales, forces, and safety). Section references throughout this page point into these two documents.
 
 * [Impressions 4 user manual](../assets/img/tutorials/hardness-tester/Impressions-4-User-Manual.pdf) — software workflow, test patterns (chapter 6), and reporting.
 * [Nemesis 5100G2 user manual](../assets/img/tutorials/hardness-tester/Nemesis-5100G2-User-Manual.pdf) — hardware operation, scale and force tables, and safety.
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - Single Vickers test:** Prepare a flat metal sample, run a Vickers test, and report the hardness value with its scale and the measured indent diagonals.
 * **Level 2 - Hardness pattern:** Use the pattern function to test several points in one run, and report the mean and standard deviation. Remember to return to single-point mode afterward.

@@ -14,11 +14,11 @@ This page is the operating page for the XRD. It combines the quick reference for
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to XRD? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the XRD](https://breakerspace.libcal.com/seat/174789)
@@ -26,7 +26,7 @@ This page is the operating page for the XRD. It combines the quick reference for
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Learn what XRD can show you](#science)
 * [Analyze and process your data](#data)
@@ -35,9 +35,9 @@ This page is the operating page for the XRD. It combines the quick reference for
 </section>
 </div>
 
-### What This Instrument Shows You {#science}
+## What This Instrument Shows You {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 X-ray diffraction (XRD) reveals how atoms are arranged in a crystalline solid. In a crystal, atoms sit in an orderly, repeating pattern, like a three-dimensional wallpaper. When a beam of X-rays strikes that pattern, the regularly spaced planes of atoms scatter the X-rays, and in a few specific directions the scattered waves add up strongly instead of cancelling out. The instrument sweeps a detector through a range of angles and records where those bright reflections appear.
 
@@ -45,7 +45,7 @@ The result is a diffraction pattern: a plot of intensity versus angle (labeled 2
 
 A useful way to think about it: XRD does not photograph atoms directly. Instead it measures the spacings and repeat distances of the atomic lattice and lets you work backward to what material could produce that arrangement.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A chemist or materials scientist can identify an unknown crystalline powder by matching its peak pattern against a database of known phases.
 * A geologist can determine which minerals make up a rock or soil sample, since each mineral has its own diffraction signature.
@@ -53,7 +53,7 @@ A useful way to think about it: XRD does not photograph atoms directly. Instead 
 * A pharmaceutical scientist can distinguish different crystal forms (polymorphs) of the same drug molecule, which can behave very differently in the body.
 * A metallurgist or manufacturer can check for residual stress, preferred grain orientation, or the fraction of crystalline versus amorphous material in a product.
 
-#### What To Look For In The Results
+### What To Look For In The Results
 
 Start with peak positions. The angles at which peaks appear are the primary identifier, because they come directly from the atomic-plane spacings. Matching those positions against a reference is how phases are identified, and a good match lines up several peaks, not just the tallest one.
 
@@ -61,7 +61,7 @@ Next, notice peak sharpness and the baseline. Sharp, narrow peaks on a low, flat
 
 Finally, consider relative peak heights, but treat them cautiously. Peak intensities carry information about which planes scatter most strongly, but they are easily distorted by sample preparation, especially by large grains or by flat, plate-like crystals that line up in one direction (preferred orientation). This is why identification relies on peak positions first and intensities second.
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * It sees only crystalline order. A truly amorphous material gives broad humps and no phase identification, which is a real result rather than a failure.
 * It identifies crystalline phases, not full chemical composition. It tells you a sample looks like a particular compound's structure, not a direct elemental analysis. (For elemental information, techniques such as EDS on the SEM are more appropriate.)
@@ -69,11 +69,11 @@ Finally, consider relative peak heights, but treat them cautiously. Peak intensi
 * It is generally weaker for very light elements, which scatter X-rays only faintly.
 * A database match is strong evidence, not absolute proof. Similar structures can give similar patterns, and mixtures can overlap and complicate interpretation.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
 The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot open unless the cover is closed and the safety interlocks are engaged, so normal use exposes you to no radiation. Never attempt to defeat, bypass, or force an interlock, and never try to open the enclosure while a measurement is running. If an interlock fault, unusual noise, error, or any sign of damage appears, stop, leave the cover closed, and contact Breakerspace staff. Record every session in the X-ray safety log book.
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Make sure at least one position in the sample changer is free (no sample holder in place). Booting with all six positions occupied causes a startup error.
 * Turn on the [mains power switch](../assets/img/tutorials/xrd/mains-switch.jpg) at the rear of the instrument, if needed. This switch is normally left on.
@@ -81,7 +81,7 @@ The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot 
 * Press the [power button](../assets/img/tutorials/xrd/power-button.jpg) to switch on the instrument.
 * Turn the [HT keyswitch](../assets/img/tutorials/xrd/keyswitch.jpg) clockwise to switch on the high-tension (HT) generator.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Prepare your sample at the sample prep table using the correct holder (see [compatible materials and sample prep](#materials)).
 * Remove the plastic sample-changer cover and place the prepared holder in any free loading position.
@@ -94,7 +94,7 @@ The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot 
 * Fill out your information in the X-ray safety log book.
 * Additional samples can be loaded and queued while the current sample is being measured. Repeat as needed.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Confirm all data you need has been exported.
 * Press the power button to switch off the instrument.
@@ -102,7 +102,7 @@ The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot 
 * If the instrument will be off for a long period, you can also switch off the mains power supply.
 * Remove your sample holders, return them to storage, and leave the sample prep area clean.
 
-### Compatible Materials And Sample Prep {#materials}
+## Compatible Materials And Sample Prep {#materials}
 
 The Aeris has a Cu Kα X-ray source (λ = 1.5406 Å) with a penetration depth on the order of 100 µm. This source causes fluorescence in samples containing iron or manganese, which raises the background and may not give usable results for those materials.
 
@@ -134,11 +134,11 @@ Some measurements need special handling and are worth discussing with staff befo
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are a quick reference for trained users. The sections below are a training guide for new users, with the practical details and images that are easiest to follow at the instrument.
 
-#### Sample Loading {#loading}
+### Sample Loading {#loading}
 
 * Remove the plastic sample-changer cover.
 * Place a prepared sample in any of the six positions on the sample changer.
@@ -155,7 +155,7 @@ The sections above are a quick reference for trained users. The sections below a
   </figure>
 </div>
 
-#### Running A Measurement Program {#measurement}
+### Running A Measurement Program {#measurement}
 
 * Select the changer position that matches the physical slot where you loaded the holder. The instrument measures whichever position you select, so a mismatch here means it scans the wrong slot (or an empty one). Note the slot number when you load the holder so you can select it correctly.
 * Choose a measurement program from the drop-down list.
@@ -178,7 +178,7 @@ Plan your reservation around scan time. A quick phase-ID scan can finish in a fe
   </figure>
 </div>
 
-#### Exporting Data {#export}
+### Exporting Data {#export}
 
 Data can be saved to a USB drive or exported to a shared network drive on the XRD workstation to the right of the instrument. Use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument.
 
@@ -191,23 +191,23 @@ The Aeris saves scans in Panalytical's `.xrdml` format, and you can also export 
   <figcaption>Recommended export location in Windows Explorer.</figcaption>
 </figure>
 
-#### New Measurement Programs {#new-programs}
+### New Measurement Programs {#new-programs}
 
 New measurement programs can be created using the XRDMP Creator software on the workstation that supports the XRD, though the programs stored on the instrument should cover most basic analysis needs. Documentation on XRDMP Creator is available in its Help menu. If you need to create new programs and need assistance, please contact Breakerspace staff.
 
-#### Advanced Mode {#advanced}
+### Advanced Mode {#advanced}
 
 Advanced mode is used to change optical components, manage data (including importing programs and deleting programs and results), and access other advanced configuration tools. Lab users typically will not need advanced mode, and instruction in its use is beyond the scope of this page.
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 Data from the Aeris can be processed using [HighScore Plus 5.0](https://www.malvernpanalytical.com/en/products/category/software/x-ray-diffraction-software/highscore-with-plus-option) on the XRD workstation.
 
 For a browser-based introduction to viewing and processing diffraction patterns, visit the [Data Exploration Tools]({{ "/data-tools/" | relative_url }}) page.
 
-#### Using HighScore Plus {#highscore}
+### Using HighScore Plus {#highscore}
 
-##### Determine The Background
+#### Determine The Background
 
 * Treatment > Determine Background.
 * The automatic setting usually does the job.
@@ -215,7 +215,7 @@ For a browser-based introduction to viewing and processing diffraction patterns,
 * Bending factor determines how much the background is allowed to curve.
 * Click Accept. Inspect the result visually, because an improper background can create or hide peaks.
 
-##### Determine Peaks
+#### Determine Peaks
 
 * Treatment > Search Peaks.
 * Adjust the significance (a signal-to-noise threshold near 3 is a reasonable starting point) until the detected peaks reflect what you consider real peaks.
@@ -223,7 +223,7 @@ For a browser-based introduction to viewing and processing diffraction patterns,
   * Option 1: Treatment > Insert Peak (Ctrl+R), then click the tip of each peak you want to add.
   * Option 2: In Peak Lists > Right Click > Add Peak, and enter the values manually.
 
-##### Identify A Mystery Compound
+#### Identify A Mystery Compound
 
 * After determining the background and peaks, Right Click > Search Match > (optionally) change the search settings > Search > OK.
 * Options for improving your outcomes:
@@ -235,7 +235,7 @@ For a browser-based introduction to viewing and processing diffraction patterns,
   * Once you are confident in a match, left-click and drag it to the Pattern List panel to "accept" it. Any peak not matched by an accepted candidate keeps a blue downward-facing arrow, and the candidate list reorganizes to fit the remaining peaks.
   * Continue until all peaks are matched and all phases in your sample have been identified. Accept a phase based on a consistent set of peaks, not a single-peak match.
 
-#### Worked Example: Identifying An Unknown Powder {#worked-example}
+### Worked Example: Identifying An Unknown Powder {#worked-example}
 
 This walkthrough ties the steps above together. Suppose you have an unknown white powder and want to know what crystalline phase or phases it contains.
 
@@ -249,7 +249,7 @@ This walkthrough ties the steps above together. Suppose you have an unknown whit
 
 A confident result usually rests on a consistent set of matched peaks, not a single high-scoring line.
 
-#### Interpreting Results {#interpreting}
+### Interpreting Results {#interpreting}
 
 A good phase-identification result is a labeled pattern where each major peak is accounted for by an identified phase. When you write up or export results, include the major peak positions, the matched phases, and a short note on the instrument settings (radiation, 2θ range, step size, count time). Note any peaks you could not assign, and treat them as possible contamination, minor phases, or holder/substrate peaks rather than forcing a match.
 
@@ -257,7 +257,7 @@ Not getting sharp peaks or a clean database match does not mean you did somethin
 
 Advanced analysis such as quantitative phase fractions, crystallite size from peak broadening (the Scherrer approximation), and full Rietveld refinement is possible but beyond routine use. Rietveld work fits a calculated pattern to your data and is judged by a difference curve and goodness-of-fit metrics such as R<sub>wp</sub> and χ²; open tools such as GSAS-II or FullProf can do it as well as HighScore Plus. If your project needs quantitative results, discuss it with staff.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -269,7 +269,7 @@ Advanced analysis such as quantitative phase fractions, crystallite size from pe
 | Unexpected extra peaks | Contamination, holder peaks, or substrate peaks | Run an empty holder for comparison and re-prepare the sample. |
 | Fewer results than samples loaded | Samples were loaded but not added to the queue | Confirm each sample was added to the measurement queue. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [Aeris quick start guide](https://www.dropbox.com/scl/fi/gqd44xvmv9q5660bk5gs4/aeris_quickstart_guide.pdf?rlkey=zj5qv5ajbxf80865fnh939r5g&dl=0)
 * [Aeris user guide](https://www.dropbox.com/s/sw476m00qq3c7jr/aeris_user_guide.pdf?dl=0)
@@ -277,13 +277,13 @@ Advanced analysis such as quantitative phase fractions, crystallite size from pe
 * [Sample holders and sample prep guide](https://www.dropbox.com/scl/fi/17o43bqhe52u49kkecvrf/xrd-sample-holders-preparation.pdf?rlkey=vxi65kwyeqrcr62jbcxa5rqvq&dl=0)
 * [XRD for the analyst](https://www.dropbox.com/scl/fi/0e8vioulematgbd1yluzb/x-ray_powder_diffraction.pdf?rlkey=eae3hs1ispi1fi7vruh8oq9az&dl=0)
 
-### Links {#links}
+## Links {#links}
 
 * [Tutorial videos by the IAMM Diffraction Facility](https://www.youtube.com/@IAMMDiffractionFacility)
 * [Panalytical XRD YouTube playlist](https://www.youtube.com/watch?v=YujXF6NKORM&list=PL2wIBTZfZRjdxVJYhan7PHbz_hyStiGgH)
 * [Panalytical Aeris videos](https://www.youtube.com/@MalvernPanalytical/search?query=aeris)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - Identify the mystery powder:** Prepare and run a provided unknown powder, determine the background and peaks in HighScore Plus, and use Search Match to identify the phase. Report the major peak positions and your matched phase.
 * **Level 2 - Amorphous vs. crystalline:** Compare a crystalline polymer with an amorphous one and describe how the patterns differ (sharp peaks vs. broad humps).

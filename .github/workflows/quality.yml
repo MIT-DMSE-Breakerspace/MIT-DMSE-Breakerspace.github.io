@@ -1,0 +1,81 @@
+name: Site quality
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build, links, accessibility, and content
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install accessibility-test dependencies
+        run: npm ci
+
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Check internal links, images, and HTML
+        run: bundle exec htmlproofer ./_site --disable-external --check-html --check-sri --empty-alt-ignore
+
+      - name: Check headings, public content, and asset budgets
+        run: bundle exec script/check-site-quality
+
+      - name: Start the built site for accessibility checks
+        shell: bash
+        run: |
+          ruby -run -e httpd _site -p 4173 > /tmp/breakerspace-http.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/breakerspace-http.log
+          exit 1
+
+      - name: Run automated accessibility checks
+        run: npm run test:a11y
+
+  secrets:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan changed commits for credentials
+        uses: trufflesecurity/trufflehog@v3.95.7
+        with:
+          extra_args: --results=verified,unknown

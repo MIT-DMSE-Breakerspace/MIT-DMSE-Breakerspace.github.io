@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+readonly base_url="${PA11Y_BASE_URL:-http://127.0.0.1:4173}"
+readonly pages=(
+  "/"
+  "/instruments/"
+  "/instruments/ftir.html"
+  "/instruments/sem.html"
+  "/sample-library.html"
+  "/sample-library/bs-000003/"
+  "/quick-guides/ftir/index.html"
+  "/safety.html"
+)
+
+for page in "${pages[@]}"; do
+  url="${base_url}${page}"
+  printf 'Checking %s\n' "${url}"
+  ./node_modules/.bin/pa11y --config .pa11y.json "${url}"
+done
+
+printf 'Accessibility checks passed for %d representative pages.\n' "${#pages[@]}"

@@ -16,11 +16,11 @@ This page is the operating page for the ion mill. It combines the quick referenc
 
 <div style="clear:both;"></div>
 
-### Quick Actions {#quick-actions}
+## Quick Actions {#quick-actions}
 
 <div class="quick-actions-grid">
 <section markdown="1">
-#### Get started
+### Get started
 
 * [New to the ion mill? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the ion mill](https://breakerspace.libcal.com/seat/181542)
@@ -28,7 +28,7 @@ This page is the operating page for the ion mill. It combines the quick referenc
 * [Learn the complete operating workflow](#details)
 </section>
 <section markdown="1">
-#### Learn and reference
+### Learn and reference
 
 * [Choose an ion-milling method](#quick-method)
 * [Learn what ion milling is used for](#science)
@@ -37,9 +37,9 @@ This page is the operating page for the ion mill. It combines the quick referenc
 </section>
 </div>
 
-### What This Instrument Is Used For {#science}
+## What This Instrument Is Used For {#science}
 
-#### The Basic Idea
+### The Basic Idea
 
 The ion mill is a sample-preparation instrument. It does not make an image or directly measure chemistry. Instead, it uses beams of argon ions to gently remove material from a sample surface. Argon is chemically inert, so the goal is mostly physical: knock away a very thin layer of material without the scratches, smearing, embedded abrasive, or mechanical damage that can come from cutting and polishing by hand.
 
@@ -47,7 +47,7 @@ Ion milling is especially useful when the next instrument needs a clean surface 
 
 The SEMPrep 2 can also use a mask to make a controlled slope cut. That lets you expose a layer, coating, interface, or near-surface region that would be hard to reveal cleanly by cutting or grinding alone.
 
-#### What Scientists Use It For
+### What Scientists Use It For
 
 * A materials scientist might polish a metal, ceramic, composite, or coating so grains, phases, pores, or interfaces are easier to image in the SEM.
 * A mechanical engineer might prepare a fracture-adjacent cross section to look for cracks, coating failure, delamination, or damage beneath the visible surface.
@@ -55,7 +55,7 @@ The SEMPrep 2 can also use a mask to make a controlled slope cut. That lets you 
 * A microscopist preparing for EBSD might use ion milling to remove the mechanically damaged layer that prevents clean crystallographic pattern collection.
 * A student developing a project might use the ion mill after optical microscope or SEM inspection shows that the important feature is just below the surface.
 
-#### What To Look For After Milling
+### What To Look For After Milling
 
 The ion mill's result is the prepared sample, so you usually evaluate the work with the optical microscope or SEM. Good before/after images are the best evidence that the method helped.
 
@@ -74,7 +74,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
   <figcaption>Slope-cut example from a coffee bean. The right side is the mechanically prepared surface that sat behind the titanium mask and remained untreated; the center is the smoothly prepared slope-cut surface; the left side is beyond the finished surface and shows heavy ion-beam damage.</figcaption>
 </figure>
 
-#### What This Instrument Cannot Tell You
+### What This Instrument Cannot Tell You
 
 * It cannot identify a material by itself. Use SEM-EDS, FTIR, Raman, XRD, or another method when the question is chemical or structural identification.
 * It is usually a finishing tool, not a replacement for rough cutting, mounting, grinding, or mechanical polishing.
@@ -82,9 +82,9 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * It cannot make a dirty, loose, wet, volatile, or hazardous sample acceptable for the lab. Samples still need to be non-hazardous, dry, stable, and safe to handle unless staff have approved a specific method.
 * It does not guarantee a useful SEM or EBSD result. Good outcomes depend on sample choice, mounting, alignment, ion-source settings, milling time, and careful before/after comparison.
 
-### Standard Operating Protocol {#sop}
+## Standard Operating Protocol {#sop}
 
-#### Instrument Startup {#startup}
+### Instrument Startup {#startup}
 
 * Turn the instrument display on.
 * Confirm that high voltages are off and the chamber is in a safe state.
@@ -96,7 +96,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * Open the needle valve for the ion source you plan to use so it reaches the preset pressure, then let it close automatically.
 * Open the other ion source needle valve only if that source will be used during the session.
 
-#### Operation {#operation}
+### Operation {#operation}
 
 * Wear nitrile gloves when handling samples, holders, carrier plates, masks, and alignment tools.
 * Prepare the sample externally for [polishing](#polishing) or [slope cutting](#slope-cutting).
@@ -109,7 +109,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * When the run is complete, confirm that high voltage and sample motion are off before [unloading](#unloading).
 * Allow cooled samples to return toward room temperature before unloading.
 
-#### Instrument Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Confirm that all high voltages are off.
 * Turn sample motion off.
@@ -122,7 +122,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * Turn off the monitor.
 * Leave the sample holders, alignment tools, and work area clean.
 
-### Compatible Materials And Quick Sample Prep {#materials}
+## Compatible Materials And Quick Sample Prep {#materials}
 
 * Samples must be non-hazardous and safe to handle in the Breakerspace.
 * Samples must be dry and free of volatile materials unless a staff-approved cooling method is being used.
@@ -134,7 +134,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 
 <p class="guidance-note"><em>If you have any questions about whether a material is appropriate to prepare in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
-### Quick Method Selection {#quick-method}
+## Quick Method Selection {#quick-method}
 
 | Goal | Typical method | Starting thought |
 | --- | --- | --- |
@@ -145,13 +145,13 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 | Prepare a heat-sensitive sample | Cooling-assisted polishing or cutting | Staff-guided only until the sample behavior is known. |
 | Develop a repeatable method | Automated recipe | Use an approved recipe or create one with staff after a successful manual run. |
 
-### Detailed Operating Instructions {#details}
+## Detailed Operating Instructions {#details}
 
 The sections above are meant as a quick reference for trained users. The sections below are written as a training guide for new users and include the practical details, images, and troubleshooting cues that are easiest to understand at the instrument.
 
 The ion mill is a high-voltage, high-vacuum instrument. Do not bypass interlocks, open covers, disconnect cables, work inside the chamber during operation, or change service-level settings unless staff have explicitly trained you to do so. If the software or vacuum system behaves unexpectedly, stop and ask for help.
 
-#### What Ion Milling Does {#concepts}
+### What Ion Milling Does {#concepts}
 
 Ion milling removes material by bombarding the sample with argon ions. Compared with mechanical polishing, it can produce cleaner SEM surfaces with less smearing, deformation, embedded abrasive, or polishing damage. It is usually a finishing process, not a substitute for rough cutting, mounting, grinding, and polishing.
 
@@ -162,13 +162,13 @@ The SEMPrep 2 has two ion sources:
 
 The system can run in semi-automatic mode, where a trained user sets the major conditions for a run, or automated mode, where a recipe runs a sequence of milling steps.
 
-#### Surface Polishing Workflow {#polishing}
+### Surface Polishing Workflow {#polishing}
 
 Surface polishing is the level 1 training task for this instrument. A typical training sample should be a mounted metallographic sample that has already been ground and mechanically polished to a reflective finish.
 
 Use polishing when the goal is to clean or improve a broad surface for SEM imaging or EBSD. During polishing, the sample rotates while the ion beam contacts the surface at a low angle, usually in the 3&deg; to 10&deg; range.
 
-##### Prepare A Polishing Sample
+#### Prepare A Polishing Sample
 
 1. Start with a flat, polished, dry sample.
 2. Choose the polishing holder appropriate for the sample geometry.
@@ -190,7 +190,7 @@ Use polishing when the goal is to clean or improve a broad surface for SEM imagi
   <figcaption>Height setting and polishing geometry are central to repeatable polishing results.</figcaption>
 </figure>
 
-##### Run A Polishing Process
+#### Run A Polishing Process
 
 1. Load the polishing holder using the [sample exchange procedure](#loading).
 2. Select the polishing head unit in the software.
@@ -205,13 +205,13 @@ Use polishing when the goal is to clean or improve a broad surface for SEM imagi
 
 For many student training samples, the first goal is not to optimize every parameter. The first goal is to learn the complete sequence safely, then compare before and after SEM images to understand what the ion mill changed.
 
-#### Slope Cutting Workflow {#slope-cutting}
+### Slope Cutting Workflow {#slope-cutting}
 
 Slope cutting uses a titanium mask to shield part of the sample while the ion beam mills a controlled cross section. The position of the mask relative to the sample determines where the cut happens, so sample bonding and alignment matter as much as the milling settings.
 
 Use slope cutting when you want to reveal an interface, coating, layered structure, embedded feature, or near-surface region.
 
-##### Bond The Sample To A Carrier Plate
+#### Bond The Sample To A Carrier Plate
 
 1. Choose a sample with a flat back side that can be bonded to the carrier plate.
 2. Place the carrier plate in the gluing jig.
@@ -227,7 +227,7 @@ Use slope cutting when you want to reveal an interface, coating, layered structu
   <figcaption>The bonding platform and gluing jig help position the sample consistently on the carrier plate.</figcaption>
 </figure>
 
-##### Align The Sample To The Mask
+#### Align The Sample To The Mask
 
 Use the sample alignment microscope and alignment platform to position the sample relative to the Ti mask before loading the holder into the ion mill.
 
@@ -246,7 +246,7 @@ Use the sample alignment microscope and alignment platform to position the sampl
   <figcaption>The alignment microscope, platform, and precision screwdriver are used to set the sample-mask distance.</figcaption>
 </figure>
 
-##### 30&deg; Slope Cutting
+#### 30&deg; Slope Cutting
 
 The 30&deg; holder is useful for cutting a sloped notch into the sample face. Samples may be up to about 5 mm thick, 16 mm wide, and 13 mm long. Best results come from a sample whose target surface is parallel to the mounting surface, so the mask distance is uniform across the region being cut.
 
@@ -257,7 +257,7 @@ The 30&deg; holder is useful for cutting a sloped notch into the sample face. Sa
   <figcaption>30&deg; slope-cutting holder views.</figcaption>
 </figure>
 
-##### 90&deg; Slope Cutting
+#### 90&deg; Slope Cutting
 
 The 90&deg; holder is used when the desired cut surface is approximately perpendicular to the mounting face. Samples may be up to about 6 mm thick, 16 mm wide, and 20 mm long. Redeposition can be a problem at 90&deg;, so a clean, well-polished face and minimal, uniform protrusion above the mask are important.
 
@@ -267,7 +267,7 @@ The 90&deg; holder is used when the desired cut surface is approximately perpend
   <figcaption>90&deg; slope-cutting holder views.</figcaption>
 </figure>
 
-##### Run A Slope-Cutting Process
+#### Run A Slope-Cutting Process
 
 1. Load the aligned slope-cutting holder using the [sample exchange procedure](#loading).
 2. Select the slope-cutting head unit in the software.
@@ -279,7 +279,7 @@ The 90&deg; holder is used when the desired cut surface is approximately perpend
 8. Start sample motion, start the ion source, and monitor the process.
 9. When complete, turn high voltage off, turn motion off, return tilt to 0&deg;, and unload.
 
-#### Startup, Argon Purge, And Needle Valve Setup {#startup-details}
+### Startup, Argon Purge, And Needle Valve Setup {#startup-details}
 
 The ion sources require clean argon flow and stable vacuum. The startup purge routine helps clear the gas line before milling.
 
@@ -296,11 +296,11 @@ The ion sources require clean argon flow and stable vacuum. The startup purge ro
 
 Do not run an ion source until the chamber has reached the required base pressure. If the vacuum does not recover, or if the software shows vacuum warnings during loading or pumping, stop and ask staff for help.
 
-#### Sample Loading And Unloading {#loading}
+### Sample Loading And Unloading {#loading}
 
 The SEMPrep 2 uses a load-lock so samples can be exchanged without fully venting the main working chamber. Always use the software-guided sample exchange procedure.
 
-##### Loading {#loading-procedure}
+#### Loading {#loading-procedure}
 
 1. In the sample stage and head unit control tab, click **Sample loading/removal**.
 2. Follow the step-by-step sample exchange window.
@@ -313,7 +313,7 @@ The SEMPrep 2 uses a load-lock so samples can be exchanged without fully venting
 9. Check vacuum level and stage position.
 10. Click **Finish** when the procedure completes.
 
-##### Unloading {#unloading}
+#### Unloading {#unloading}
 
 1. Confirm all high voltages are off.
 2. Confirm sample motion is off.
@@ -328,7 +328,7 @@ The SEMPrep 2 uses a load-lock so samples can be exchanged without fully venting
   <figcaption>The sample stage and head unit control tab is the starting point for sample exchange and motion control.</figcaption>
 </figure>
 
-#### Semi-Automatic Operation {#manual-operation}
+### Semi-Automatic Operation {#manual-operation}
 
 Semi-automatic operation is useful for training, method development, and staff-guided work where a user needs to understand each condition.
 
@@ -347,7 +347,7 @@ Semi-automatic operation is useful for training, method development, and staff-g
 
 Users should not improvise new high-energy, low-energy, gas-flow, or cathode settings during unsupervised work. Use a trained method or a staff-approved recipe.
 
-#### Automated Recipes {#automated-operation}
+### Automated Recipes {#automated-operation}
 
 Automated mode is best once a process has been established. A recipe can combine multiple steps, such as faster high-energy milling followed by gentler low-energy cleaning.
 
@@ -359,7 +359,7 @@ Automated mode is best once a process has been established. A recipe can combine
 6. Monitor the process.
 7. After the run, switch back to manual thinning mode before starting sample exchange.
 
-### Data Processing And Analysis {#data}
+## Data Processing And Analysis {#data}
 
 The ion mill does not produce analytical data by itself. Its output is the prepared sample surface or cross section. The best way to evaluate a run is to compare the sample before and after milling using the SEM or optical microscope.
 
@@ -370,7 +370,7 @@ For useful before/after comparisons:
 * Capture SEM images after milling at the same magnification and region when possible.
 * Note whether the result shows polishing improvement, curtaining, redeposition, roughness, delamination, thermal damage, or insufficient milling.
 
-### Common Failure Modes {#failures}
+## Common Failure Modes {#failures}
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
@@ -385,16 +385,16 @@ For useful before/after comparisons:
 | Sample detaches or shifts | Poor bonding, loose holder screws, heat, or incompatible adhesive | Rebond sample and use the gluing/alignment fixtures. |
 | Viewing image is poor | Camera/illumination off, dirty viewing window, or focus/position issue | Turn camera/illumination on, adjust focus/illumination, and ask staff before cleaning window. |
 
-### Manufacturer Manuals {#manuals}
+## Manufacturer Manuals {#manuals}
 
 * [SEMPrep2 ion mill manual](https://www.dropbox.com/scl/fi/50x7hl7x68mmfu5ypkt5g/SC-2100_manual_v2.6-2105.pdf?rlkey=d1ivx4xdfuvc14v36bllvusoh&dl=0)
 * [Sample alignment microscope manual](https://www.dropbox.com/scl/fi/4bxxm6zr7q0elwqqvx5a0/Sample-Alignment-Tool-manual.pdf?rlkey=ltp97kascl3a2wrx785xmj749&dl=0)
 
-### Links {#links}
+## Links {#links}
 
 * [Technoorg Linda - making of 100th SEMPrep ion milling system](https://www.youtube.com/watch?v=HaZ6fGmBUhc)
 
-### Exercises {#exercises}
+## Exercises {#exercises}
 
 * **Level 1 - General training:** Mechanically polish a mounted metal sample, image it in the SEM, ion polish it using the standard polishing holder and a staff-approved short polishing method, then image the same region again. Describe what changed.
 * **Level 2 - Slope cutting:** Mount a layered or coated sample on a carrier plate, align it with the 30&deg; slope-cutting holder, run a staff-approved slope-cutting recipe, and image the cross section in the SEM.

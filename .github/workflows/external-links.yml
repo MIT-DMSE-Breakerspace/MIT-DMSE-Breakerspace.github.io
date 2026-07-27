@@ -1,0 +1,31 @@
+name: External links
+
+on:
+  schedule:
+    - cron: "17 10 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Check published external links
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Check internal and external links
+        run: bundle exec htmlproofer ./_site --check-html --check-sri --empty-alt-ignore
