@@ -36,7 +36,7 @@ The normal access process is part of the [Breakerspace training pathway]({{ "/tr
 
 ### Tap Access
 
-Physical tap access is processed by the lab manager after your [one-time Qualtrics training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc) is complete. If you completed the record but cannot enter the lab, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with your name, MIT Kerberos username, MIT ID number, and the approximate date of your first training.
+Physical tap access is processed by the lab manager after your [one-time Qualtrics training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc) is complete. If you completed the record but cannot enter the lab, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) from your MIT email address with your name and the approximate date of your first training. Staff can normally identify your Kerberos account from your MIT email address; if you contact the team from a personal address, expect a request to follow up from your MIT address.
 
 Lounge-only access is managed separately. Use the access information on the [Breakerspace Lounge page]({{ "/lounge.html" | relative_url }}).
 
@@ -44,7 +44,7 @@ Lounge-only access is managed separately. Use the access information on the [Bre
 
 The instrument workstations are on the [MIT WIN domain](https://ist.mit.edu/winmitedu), with permissions managed through [Moira group lists](https://groups.mit.edu/webmoira/). After an instrument training, the trainer should add you to the relevant group, such as `dmse-brkrspc-sem` for the SEMs.
 
-Log on to an instrument workstation using your own MIT Kerberos account. If you completed training but cannot log on, contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and include the instrument, your Kerberos username, when you trained, and the exact error or behavior you encountered.
+Sign in to an instrument workstation using the current instructions provided during training or posted at the instrument. If you completed training but cannot sign in, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) from your MIT email address and include the instrument, when you trained, and the exact error or behavior you encountered. Do not send passwords or authentication codes by email.
 
 ### Slack And Dropbox Access
 

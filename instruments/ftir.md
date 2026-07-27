@@ -93,7 +93,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 #### Instrument Startup {#startup}
 
 * [Power on the instrument](../assets/img/tutorials/ftir/ftir-switch.JPG), [if needed](../assets/img/tutorials/ftir/ftir-power.JPG).
-* Log on to the instrument workstation using your MIT Kerberos.
+* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
 * [Start OMNIC software](../assets/img/tutorials/ftir/ftir-desktop.JPG).
 * Verify instrument connection using [system status](../assets/img/tutorials/ftir/omnic-status.PNG).
 * Remove the protective cover from the ATR crystal plate.

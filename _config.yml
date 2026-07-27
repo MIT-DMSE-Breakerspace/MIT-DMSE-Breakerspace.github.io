@@ -11,6 +11,7 @@ collections:
 exclude:
   - README.md
   - assets/survey
+  - assets/tools
   - assets/img/image-contest
   - handouts
   - image-contest.md

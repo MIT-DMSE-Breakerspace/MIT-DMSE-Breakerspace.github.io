@@ -1,6 +1,6 @@
 # Breakerspace Website To-Do
 
-Last reviewed: 2026-07-24
+Last reviewed: 2026-07-27
 
 This is the canonical unlisted list for cross-site launch work, policy decisions, and ongoing maintenance. It is organized by operational deadline rather than by page.
 
@@ -13,6 +13,26 @@ The redesigned site is already a substantial operational improvement. Production
 | **3. Ongoing fall improvement** | The work adds depth, examples, media, accessibility improvements, or maintainability without being required for safe daily operation. It is suitable for undergraduate lab employees to prepare with staff review. |
 
 Public instrument pages should state current operating information clearly. Instrument-specific planning belongs in [the staff instrument to-do list](../instruments/staff-todo.md), while cross-site planning belongs here.
+
+## Current Post-Launch Priority Order
+
+The external-review security and privacy bundle was closed on July 27, 2026:
+
+* [x] Remove public workstation usernames, passwords, and authentication steps. Direct trained users to current instructions provided during training or posted at the instrument.
+* [x] Stop requesting MIT ID numbers or Kerberos usernames by ordinary email. Ask users to contact the team from their MIT email address and use that address for account identification.
+* [x] Link data tools to the separately maintained MIT Carbonio deployment and exclude the retired embedded ScienceScripts copies from the production build. The Breakerspace production site now links out and no longer publishes or runs the tool code or its CDN loaders.
+
+External follow-up: the live Carbonio applications still load Plotly and h5wasm from cdnjs, unpkg, or jsDelivr as of July 27, 2026. Self-hosting those dependencies remains a task for the separately maintained Carbonio/ScienceScripts applications rather than the Breakerspace site queue.
+
+With that bundle complete, the remaining cross-site work moves up in this order:
+
+1. **Performance and workflow accessibility:** reduce the largest instrument-page transfers and complete keyboard, VoiceOver, reflow, reduced-motion, and third-party workflow testing.
+2. **Responsive design:** fix the intermediate-width overflow, increase body-text readability, remove focus-state layout shift, and replace fragile floated figures.
+3. **Automated quality controls:** add production-equivalent build, link, accessibility, asset-budget, metadata, and sensitive-content checks.
+4. **Instrument-page structure:** correct heading hierarchy and move toward genuinely lightweight standalone Quick Guides.
+5. **Discovery and belonging:** add a vivid homepage inspiration block and improve question- or sample-first instrument selection after the operational work above.
+
+The detailed tiered and instrument-specific checklists below remain authoritative. This execution order does not override urgent safety corrections or fall-readiness dependencies.
 
 ## 1. Must Do Before Launch
 
@@ -70,8 +90,8 @@ These items should be complete before the first major fall training push or cour
 
 ### Instrument Verification And High-Traffic Depth
 
-* [ ] Finish the remaining XRD operational verification: workstation login and export path, actual export formats, supported off-workstation analysis tools, stocked sample holders and special capabilities, and representative stored-program scan durations.
-* [ ] Confirm the particle-size analyzer's approved training powders, workstation login, default database, and any pre-term consumable needs.
+* [ ] Finish the remaining XRD operational verification: export path, actual export formats, supported off-workstation analysis tools, stocked sample holders and special capabilities, and representative stored-program scan durations. Keep workstation authentication details in training or at the instrument.
+* [ ] Confirm the particle-size analyzer's approved training powders, workstation access handoff, default database/export conventions, and any pre-term consumable needs. Keep authentication details out of public documentation.
 * [ ] Confirm the Raman training samples and obtain the current XploRA and LabSpec 6 manuals or an equivalent staff reference.
 * [ ] Complete the Instron operating deep-dive: Bluehill method setup, load-cell and fixture changes, travel limits, each offered test type, video extensometer, saving and export, and a reviewed example force-displacement curve.
 * [ ] Confirm the hardness tester's available scales, load and sample-size limits, safe scale/material pairings, and approved conversion reference.

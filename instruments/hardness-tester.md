@@ -83,7 +83,7 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 #### Startup {#startup}
 
 * Turn on the machine using the red power switch at the back.
-* Log in to the Impressions software. The username is `mit hardness`; leave the password field empty.
+* Start Impressions using the current sign-in instructions provided during training or posted at the instrument.
 
 #### Operation {#operation}
 

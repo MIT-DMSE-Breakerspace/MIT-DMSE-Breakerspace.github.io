@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-07-24
+Last reviewed: 2026-07-27
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -58,7 +58,7 @@ The repository may still be publicly readable. Do not store credentials, access 
 ## DSX-1000 Digital Optical Microscope
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
+* [ ] Add photos or GIFs showing the correct startup sequence: power switch, application sign-in handoff, stage/head movement acknowledgement, lowering the stage, and tilt position. Keep authentication details out of repository media and captions.
 * [ ] Add photos or GIFs showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
 * [ ] Add a screenshot or GIF showing the recommended save-location workflow.
 * [ ] Add example image sets comparing brightfield, oblique, darkfield, brightfield/darkfield mix, polarization, and DIC on the same sample.
@@ -90,7 +90,7 @@ The repository may still be publicly readable. Do not store credentials, access 
 * [ ] Add labeled photos or annotated stills of the sample trays (shallow vs. deep), the fill line, and evenly distributed vs. compressed loading.
 * [ ] Add an annotated example distribution plot showing D10/D50/D90 and a bimodal example.
 * [ ] Confirm approved standard/training powders for the exercises once the sample library is ready, including cabinet location.
-* [ ] Confirm the current workstation login details and default database/export conventions before publishing.
+* [ ] Confirm the workstation access handoff and default database/export conventions. Keep authentication details in training or at the instrument rather than publishing them.
 
 ## Horiba XploRA Confocal Raman Microscope
 

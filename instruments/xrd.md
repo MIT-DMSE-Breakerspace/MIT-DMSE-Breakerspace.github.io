@@ -180,7 +180,7 @@ Plan your reservation around scan time. A quick phase-ID scan can finish in a fe
 
 #### Exporting Data {#export}
 
-Data can be saved to a USB drive or exported to a shared network drive on the XRD workstation to the right of the instrument. The workstation can be accessed using a common login: the username is `xrd` and the password is `xrd-password`. Data can be found in the folder `"C:\XRD\XRD data"` (the path contains a space, so `XRD data` is a single folder name).
+Data can be saved to a USB drive or exported to a shared network drive on the XRD workstation to the right of the instrument. Use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument.
 
 Export both the raw scan and any processed plots so you can reprocess later. Save a copy to your own storage as well, since the shared workstation is not a backup.
 

@@ -111,7 +111,7 @@ The sample library, a populated showcase archive, complete instrument photograph
 * Link to shared lab policy instead of duplicating it, while keeping safety-critical instrument steps on the instrument page.
 * Use real lab photographs and real example data when users need to identify equipment, spaces, samples, or results.
 * Keep staff-only planning in underscore-prefixed directories, but remember that the repository may still be publicly readable.
-* Avoid storing credentials, access codes, private student information, or sensitive physical-security details in the repository.
+* Avoid storing credentials, access codes, private student information, or sensitive physical-security details in the repository. Public pages should direct trained users to current sign-in instructions provided during training or posted at the instrument rather than documenting usernames, passwords, or authentication steps.
 * Preserve old public URLs during migration when practical, but do not maintain two conflicting sources of operational truth.
 
 ## Local Development And Validation

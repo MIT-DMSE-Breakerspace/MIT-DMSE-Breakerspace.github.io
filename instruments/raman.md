@@ -80,7 +80,7 @@ Finally, judge peak sharpness and signal strength against your settings. Sharp, 
 
 #### Instrument Startup {#startup}
 
-* Log on to the instrument workstation using your MIT Kerberos.
+* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
 * Open the LabSpec 6 software.
 * Confirm the instrument is powered on. It should always be left powered on.
 * Turn the laser emission remote-control power to on if needed. This enables the lasers but does not fire one.

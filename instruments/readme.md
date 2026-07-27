@@ -40,10 +40,10 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | Page | Score | State of the detailed section |
 | --- | --- | --- |
 | `ion-mill.md` | 5 | Exemplary and fully self-contained (no includes): concepts, polishing, slope cutting, startup/purge, loading, semi-auto and automated recipes, data. Richest media set. Remaining tasks are enhancement media, not content. |
-| `xrd.md` | 5 | Exemplary: loading, run a program, export (login/path/formats), HighScore analysis, and a 7-step worked unknown-powder example. **Only page with true page-level manual citations.** Best structural model for the priority pages. |
+| `xrd.md` | 5 | Exemplary: loading, run a program, export workflow/formats, HighScore analysis, and a 7-step worked unknown-powder example. **Only page with true page-level manual citations.** Best structural model for the priority pages. |
 | `ftir.md` | 5 | Exemplary: per-sample-type loading (solid/powder/liquid), ATR cleaning, setup, background, collection, all with embedded GIFs. Links whole manuals (not page-cited) and points to in-software Help. |
 | `optical.md` | 4 | Thorough with page-cited manuals (QRG p.11, app manual pp.52/63/106/112/132) and some GIFs; startup/loading light (deferred to SOP/prep) and several acquisition GIFs remain on the staff checklist. |
-| `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. Login/default-database details still need confirming before publish. |
+| `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. The workstation access handoff and default database/export conventions still need confirming; authentication details should remain in training or at the instrument. |
 | `uv-vis.md` | 4 | Good routine-absorbance EZ Spec workflow; needs confirmed method settings and process screenshots. Fluorescence remains staff-guided. Manual references are whole-PDF only. |
 | `raman.md` | 4 | Strong text and conceptual depth (laser/grating choice, Si calibration, mapping, z-profiling) but **zero embedded media** and several control names/settings flagged for staff verification. |
 | `phenom-xl.md` | 4 | Solid; core LiveSEM imaging workflow lives in `_includes/sem/live-sem-workflow.md`. Instrument-specific loading/imaging GIFs remain on the staff checklist. |

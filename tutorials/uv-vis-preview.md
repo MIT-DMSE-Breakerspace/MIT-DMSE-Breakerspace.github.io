@@ -27,7 +27,7 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 #### Start Up {#startup}
 * Flip power switch and press power button.
 * Power button must be blue to operate
-* Log on to the desktop with your kerberos
+* Sign in to the workstation using the current instructions provided during training or posted at the instrument.
 * Open the EzSpec software
 * Click EzSpec button
 

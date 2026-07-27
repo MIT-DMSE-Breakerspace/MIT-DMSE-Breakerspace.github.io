@@ -91,9 +91,9 @@ When comparing observation modes, look for which mode makes the question easier 
 
 * Wear nitrile gloves when handling samples, stage plates, objectives, or sample-prep tools.
 * [Switch](../assets/img/tutorials/optical/switch.JPG) the microscope [on](../assets/img/tutorials/optical/status-on.JPG).
-* Log on to the instrument workstation using your MIT Kerberos.
+* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
 * Clear the [stage](../assets/img/tutorials/optical/stage.JPG) of any samples or other materials.
-* Start the [DSX software](../assets/img/tutorials/optical/desktop.PNG) and [log on as Guest](../assets/img/tutorials/optical/guest.PNG) with no password.
+* Start the [DSX software](../assets/img/tutorials/optical/desktop.PNG) using the current application sign-in instructions provided during training or posted at the instrument.
 * [Acknowledge that it is safe for the stage and head to move](../assets/img/tutorials/optical/acknowledge.PNG).
 * Use the manual focusing knob to [lower the microscope stage](../assets/img/tutorials/optical/lower.GIF).
 * Load or change [objectives](#objectives) if needed.

@@ -60,7 +60,7 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 
 #### Instrument Startup {#startup}
 
-* Log on to the instrument workstation using your MIT Kerberos.
+* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
 * Start the Phenom User Interface software.
 * Wake the instrument if needed.
 * If the instrument does not connect automatically, open [Settings / Phenom / Status](../assets/img/tutorials/sem/connect.PNG) and connect to the microscope.

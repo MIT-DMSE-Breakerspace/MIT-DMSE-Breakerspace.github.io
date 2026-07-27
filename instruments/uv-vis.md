@@ -86,7 +86,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Confirm the sample compartment is empty and the lid can close normally.
 * Turn on the [rear instrument power switch](../assets/img/tutorials/uv-vis/duetta-back-power-switch.jpg), if needed.
 * Press the [front power button](../assets/img/tutorials/uv-vis/duetta-power-front-button.jpg) and confirm it is blue.
-* Log on to the instrument workstation using your MIT Kerberos.
+* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
 * Open EZ Spec software and enter the acquisition interface.
 * Let the lamps warm up before collecting data when quantitative comparison matters.
 
@@ -177,7 +177,7 @@ The most common preventable Duetta problems are dirty cuvettes or slides, mismat
 
 Before starting, confirm the sample compartment is empty and the lid closes normally. If the instrument is off, use the rear power switch first, then press the front power button. The front power button must be blue before operation.
 
-Log on to the instrument workstation using your MIT Kerberos, open EZ Spec, and click the EZ Spec button to enter the acquisition interface. For quick qualitative checks, you may be able to begin after the instrument is ready. For quantitative comparisons, concentration series, or measurements that need better repeatability, let the lamps warm up before collecting data.
+Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument, open EZ Spec, and click the EZ Spec button to enter the acquisition interface. For quick qualitative checks, you may be able to begin after the instrument is ready. For quantitative comparisons, concentration series, or measurements that need better repeatability, let the lamps warm up before collecting data.
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/uv-vis/duetta-back-power-switch.jpg" target="_parent"><img src="../assets/img/tutorials/uv-vis/duetta-back-power-switch.jpg" alt="Rear power switch on the Horiba Duetta." style="width:49%; margin:0"></a>
