@@ -75,6 +75,8 @@ Choose the situation that best matches what you are trying to do. You do not nee
 
 Still not sure where to begin? Ask someone in the lab or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
 
+{% include homepage-feature.html %}
+
 ## Location, Hours, And Arrival {#hours-and-access}
 
 The Breakerspace instrument lab is in **MIT Building 8, Room 8-102A**. Enter through the Breakerspace Lounge from the Building 8 corridor; the instrument lab doors open from inside the lounge.

@@ -114,3 +114,21 @@ ftir-pressure-tips:
   webp_srcset: /assets/img/optimized/ftir-pressure-tips-640.webp 640w, /assets/img/optimized/ftir-pressure-tips-1280.webp 1280w, /assets/img/optimized/ftir-pressure-tips-1920.webp 1920w
   avif_srcset: /assets/img/optimized/ftir-pressure-tips-640.avif 640w, /assets/img/optimized/ftir-pressure-tips-1280.avif 1280w, /assets/img/optimized/ftir-pressure-tips-1920.avif 1920w
   sizes: "(max-width: 720px) 100vw, 700px"
+
+homepage-diamond-sample:
+  width: 1800
+  height: 1350
+  fallback: /assets/img/optimized/homepage-diamond-sample-800.jpg
+  jpeg_srcset: /assets/img/optimized/homepage-diamond-sample-400.jpg 400w, /assets/img/optimized/homepage-diamond-sample-800.jpg 800w
+  webp_srcset: /assets/img/optimized/homepage-diamond-sample-400.webp 400w, /assets/img/optimized/homepage-diamond-sample-800.webp 800w
+  avif_srcset: /assets/img/optimized/homepage-diamond-sample-400.avif 400w, /assets/img/optimized/homepage-diamond-sample-800.avif 800w
+  sizes: "(max-width: 720px) 44vw, 155px"
+
+homepage-diamond-micrograph:
+  width: 1800
+  height: 1800
+  fallback: /assets/img/optimized/homepage-diamond-micrograph-800.jpg
+  jpeg_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.jpg 400w, /assets/img/optimized/homepage-diamond-micrograph-800.jpg 800w
+  webp_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.webp 400w, /assets/img/optimized/homepage-diamond-micrograph-800.webp 800w
+  avif_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.avif 400w, /assets/img/optimized/homepage-diamond-micrograph-800.avif 800w
+  sizes: "(max-width: 720px) 44vw, 155px"

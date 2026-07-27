@@ -189,6 +189,98 @@ main .youtube-facade__trigger:hover {
   font-weight: 700;
 }
 
+.homepage-feature {
+  margin: 2.25rem 0 2.5rem;
+  padding: 1.15rem;
+  border-top: 4px solid #009de6;
+  border-bottom: 1px solid #d8dde2;
+  background: #f5f8fa;
+}
+
+.homepage-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.homepage-feature-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.homepage-feature-eyebrow {
+  margin: 0 0 0.35rem;
+  color: #8b1426;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.homepage-feature h2 {
+  margin: 0 0 0.65rem;
+  color: #17242a;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.homepage-feature-copy > p:not(.homepage-feature-eyebrow) {
+  margin: 0;
+  color: #3f454a;
+  line-height: 1.55;
+}
+
+.homepage-feature-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin-top: 0.9rem;
+}
+
+.homepage-feature-actions a {
+  font-weight: 700;
+}
+
+.homepage-feature-media {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.homepage-feature-media figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.homepage-feature-media .responsive-picture {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border: 1px solid #ccd3d7;
+  background: #eef2f3;
+}
+
+.homepage-feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homepage-feature-media figcaption {
+  margin-top: 0.4rem;
+  color: #526067;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.homepage-feature-media figcaption strong {
+  display: block;
+  color: #303a3f;
+}
+
 .teaching-summary {
   margin: 1.25rem 0 1.75rem;
   padding: 1.15rem 0 1.25rem;
@@ -1710,6 +1802,24 @@ main table a:focus-visible {
   .intent-item {
     grid-template-columns: 1fr;
     gap: 0.65rem;
+  }
+
+  .homepage-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .homepage-feature-copy,
+  .homepage-feature-media {
+    grid-column: 1;
+  }
+
+  .homepage-feature-copy {
+    grid-row: 1;
+  }
+
+  .homepage-feature-media {
+    grid-row: 2;
   }
 
   .teaching-summary-list > div {

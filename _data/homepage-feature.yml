@@ -1,0 +1,19 @@
+enabled: true
+sample_id: BS-000003
+eyebrow: From the sample library
+question: What makes a diamond sharpening stone abrasive?
+summary: To the eye, the surface looks uniformly rough. Under reflected-light microscopy, it resolves into sharp, angular diamond grains electroplated into a nickel matrix. Moving between these views connects an everyday tool to the material structure that gives it its function.
+instrument:
+  label: Explore optical microscopy
+  url: /instruments/optical.html
+images:
+  sample:
+    responsive_id: homepage-diamond-sample
+    label: Everyday view
+    caption: The unused coarse sharpening stone.
+    alt: Rectangular diamond sharpening stone resting diagonally on a worn wooden cutting board.
+  micrograph:
+    responsive_id: homepage-diamond-micrograph
+    label: Microscope view
+    caption: Diamond grains in a nickel matrix.
+    alt: Reflected-light microscope view showing many angular, faceted diamond grains embedded in a pale metallic matrix.

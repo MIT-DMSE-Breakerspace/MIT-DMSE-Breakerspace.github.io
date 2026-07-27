@@ -1,0 +1,37 @@
+{% assign feature = site.data["homepage-feature"] %}
+{% assign matching_samples = site.samples | where: "sample_id", feature.sample_id %}
+{% assign featured_sample = matching_samples | first %}
+{% if feature.enabled and featured_sample %}
+<section class="homepage-feature" aria-labelledby="homepage-feature-title">
+  <div class="homepage-feature-grid">
+    <div class="homepage-feature-copy">
+      <p class="homepage-feature-eyebrow">{{ feature.eyebrow }}</p>
+      <h2 id="homepage-feature-title">{{ feature.question }}</h2>
+      <p>{{ feature.summary }}</p>
+      <div class="homepage-feature-actions">
+        <a href="{{ featured_sample.url | relative_url }}">Examine this sample <span aria-hidden="true">&rarr;</span></a>
+        <a href="{{ feature.instrument.url | relative_url }}">{{ feature.instrument.label }} <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="homepage-feature-media">
+      <figure>
+        {% include responsive-image.html
+          id=feature.images.sample.responsive_id
+          alt=feature.images.sample.alt
+          sizes="(max-width: 720px) 44vw, 155px"
+        %}
+        <figcaption><strong>{{ feature.images.sample.label }}</strong> {{ feature.images.sample.caption }}</figcaption>
+      </figure>
+      <figure>
+        {% include responsive-image.html
+          id=feature.images.micrograph.responsive_id
+          alt=feature.images.micrograph.alt
+          sizes="(max-width: 720px) 44vw, 155px"
+        %}
+        <figcaption><strong>{{ feature.images.micrograph.label }}</strong> {{ feature.images.micrograph.caption }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+{% endif %}
