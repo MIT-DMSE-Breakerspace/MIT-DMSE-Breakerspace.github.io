@@ -11,5 +11,6 @@
   aria-label="{{ video.label | escape }}">
   <source src="{{ video.webm | relative_url }}" type="video/webm">
   <source src="{{ video.mp4 | relative_url }}" type="video/mp4">
+  {% if video.captions %}<track kind="captions" srclang="en" src="{{ video.captions | relative_url }}" label="English" default>{% endif %}
   <p>Your browser cannot play this instructional video. <a href="{{ video.mp4 | relative_url }}">Open the MP4 version</a>.</p>
 </video>

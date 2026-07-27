@@ -82,6 +82,7 @@ Current score 3. The page is lopsided — hardware setup is strong, test executi
 * The SEM family shares content through `_includes/sem/` (notably `live-sem-workflow.md`, `data-and-analysis.md`, `common-failure-modes.md`). When judging or editing a Phenom page's detailed workflow, remember part of it lives in those includes, not the page.
 * Locally hosted manuals currently exist only for UV-Vis (Duetta/EZ Spec) and Raman (LabSpec 6 quick-start, AutoFocus, confocality tech note) under `assets/img/tutorials/`. Other instruments link manufacturer-hosted or Dropbox PDFs.
 * Media tasks recur across nearly every page (gloved re-shoots, annotated example results). They are consolidated in [`staff-todo.md`](staff-todo.md), align with Tier 3 improvement work in `../_staff/site-todo.md`, and are not launch blockers; missing *instruction text* on the two priority pages is the higher-value gap.
+* Staff and maintainers should follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for capture quality, source handoff, processing, accessibility, performance budgets, and publication checks.
 
 ## Content Strategy
 

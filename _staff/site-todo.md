@@ -126,6 +126,8 @@ These are appropriate ongoing projects for undergraduate lab employees. Student 
 
 ### Instrument Pages And Training Media
 
+Use the [Tutorial Media Production Guide](tutorial-media/README.md) for all new tutorial photography, screen capture, motion recording, processing, accessibility, and publication work.
+
 * [ ] Work through the instrument-specific checklist in [`../instruments/staff-todo.md`](../instruments/staff-todo.md): standardized setup photography, software screenshots, annotated controls, example data, troubleshooting detail, and clearer data-export instructions.
 * [x] Replace FTIR and optical instructional GIFs with non-autoplaying MP4/WebM video, controls, poster frames, and descriptive captions; remove the superseded GIFs from the production tree.
 * [ ] Add captions or transcripts for any remaining instructional media that contains meaningful audio or visual information not already explained in adjacent text.

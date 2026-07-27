@@ -10,6 +10,8 @@ This is the canonical staff checklist for instrument-specific page improvements.
 
 The repository may still be publicly readable. Do not store credentials, access codes, private student information, or sensitive security details here.
 
+Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for all new tutorial photography, screen recording, video capture, processing, and publication work.
+
 ## Nicolet iS5 FTIR Spectrometer
 
 * [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
