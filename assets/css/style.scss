@@ -3,6 +3,20 @@
 
 @import "jekyll-theme-minimal";
 
+html {
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --color-text: #3f494e;
+  --color-ink: #17242a;
+  --color-link: #005f7f;
+  --color-link-hover: #ae0721;
+  --color-current-bg: #fff4f5;
+  --color-focus-inner: #fff;
+  --color-focus-outer: #17242a;
+}
+
 .skip-link {
   position: fixed;
   z-index: 1000;
@@ -31,11 +45,17 @@ main a {
   text-underline-offset: 0.16em;
 }
 
+main a:hover,
+main a:focus-visible {
+  text-decoration-thickness: 0.14em;
+}
+
 a:focus-visible,
 button:focus-visible,
 [tabindex="0"]:focus-visible {
-  outline: 3px solid #009de6;
+  outline: 3px solid var(--color-focus-outer);
   outline-offset: 3px;
+  box-shadow: 0 0 0 5px var(--color-focus-inner);
 }
 
 .youtube-facade {
@@ -110,12 +130,28 @@ main .youtube-facade__trigger:hover {
 
 .site-nav a {
   display: block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.12rem;
+  padding: 0.1rem 0.55rem;
+  border-left: 3px solid transparent;
+  border-radius: 2px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.16em;
 }
 
 .site-nav a[aria-current="page"] {
-  color: #17242a;
+  border-left-color: var(--color-link-hover);
+  background: var(--color-current-bg);
+  color: var(--color-ink);
   font-weight: 700;
+  text-decoration: none;
 }
 
 .intent-list {
@@ -658,7 +694,7 @@ main table a:focus-visible {
   border: 0;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1210px) {
   body.data-tool-workspace .wrapper {
     width: min(1500px, calc(100vw - 5rem));
   }
@@ -1636,7 +1672,7 @@ main table a:focus-visible {
   }
 }
 
-@media screen and (min-width: 961px) and (max-height: 620px) {
+@media screen and (min-width: 1210px) and (max-height: 620px) {
   header,
   footer {
     position: static;

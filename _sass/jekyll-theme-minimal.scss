@@ -4,8 +4,8 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  font: 16px/1.6 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:var(--color-text, #3f494e);
   font-weight:400;
 }
 
@@ -35,13 +35,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#267CB9;
+  color:var(--color-link, #005f7f);
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#069;
-  font-weight: bold;
+  color:var(--color-link-hover, #ae0721);
 }
 
 a small {
@@ -162,7 +161,6 @@ ul.downloads {
 
 .downloads a:hover, .downloads a:focus {
   color:#675C5C;
-  font-weight:bold;
 }
 
 .downloads ul a:active {
@@ -210,7 +208,7 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1209px) {
 
   div.wrapper {
     width:auto;
