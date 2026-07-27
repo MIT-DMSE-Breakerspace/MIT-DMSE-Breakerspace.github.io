@@ -1,0 +1,19 @@
+{% assign responsive_images = site.data["responsive-images"] %}
+{% assign image = responsive_images[include.id] %}
+{% assign image_loading = include.loading | default: "lazy" %}
+{% assign image_sizes = include.sizes | default: image.sizes %}
+<picture class="responsive-picture{% if include.picture_class %} {{ include.picture_class }}{% endif %}">
+  <source type="image/avif" srcset="{{ image.avif_srcset }}" sizes="{{ image_sizes }}">
+  <source type="image/webp" srcset="{{ image.webp_srcset }}" sizes="{{ image_sizes }}">
+  <img
+    class="responsive-image{% if include.class %} {{ include.class }}{% endif %}"
+    src="{{ image.fallback | relative_url }}"
+    srcset="{{ image.jpeg_srcset }}"
+    sizes="{{ image_sizes }}"
+    width="{{ image.width }}"
+    height="{{ image.height }}"
+    loading="{{ image_loading }}"
+    decoding="async"
+    {% if image_loading == "eager" %}fetchpriority="high"{% endif %}
+    alt="{{ include.alt | escape }}">
+</picture>

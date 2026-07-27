@@ -1,0 +1,71 @@
+ftir-hero:
+  width: 2400
+  height: 1600
+  fallback: /assets/img/optimized/ftir-hero-960.jpg
+  jpeg_srcset: /assets/img/optimized/ftir-hero-480.jpg 480w, /assets/img/optimized/ftir-hero-960.jpg 960w, /assets/img/optimized/ftir-hero-1440.jpg 1440w
+  webp_srcset: /assets/img/optimized/ftir-hero-480.webp 480w, /assets/img/optimized/ftir-hero-960.webp 960w, /assets/img/optimized/ftir-hero-1440.webp 1440w
+  avif_srcset: /assets/img/optimized/ftir-hero-480.avif 480w, /assets/img/optimized/ftir-hero-960.avif 960w, /assets/img/optimized/ftir-hero-1440.avif 1440w
+  sizes: "(max-width: 720px) 100vw, 45vw"
+
+optical-hero:
+  width: 2400
+  height: 1600
+  fallback: /assets/img/optimized/optical-hero-960.jpg
+  jpeg_srcset: /assets/img/optimized/optical-hero-480.jpg 480w, /assets/img/optimized/optical-hero-960.jpg 960w, /assets/img/optimized/optical-hero-1440.jpg 1440w
+  webp_srcset: /assets/img/optimized/optical-hero-480.webp 480w, /assets/img/optimized/optical-hero-960.webp 960w, /assets/img/optimized/optical-hero-1440.webp 1440w
+  avif_srcset: /assets/img/optimized/optical-hero-480.avif 480w, /assets/img/optimized/optical-hero-960.avif 960w, /assets/img/optimized/optical-hero-1440.avif 1440w
+  sizes: "(max-width: 720px) 100vw, 45vw"
+
+ftir-spectrum:
+  width: 1944
+  height: 1044
+  fallback: /assets/img/optimized/ftir-spectrum-1280.jpg
+  jpeg_srcset: /assets/img/optimized/ftir-spectrum-640.jpg 640w, /assets/img/optimized/ftir-spectrum-1280.jpg 1280w, /assets/img/optimized/ftir-spectrum-1944.jpg 1944w
+  webp_srcset: /assets/img/optimized/ftir-spectrum-640.webp 640w, /assets/img/optimized/ftir-spectrum-1280.webp 1280w, /assets/img/optimized/ftir-spectrum-1944.webp 1944w
+  avif_srcset: /assets/img/optimized/ftir-spectrum-640.avif 640w, /assets/img/optimized/ftir-spectrum-1280.avif 1280w, /assets/img/optimized/ftir-spectrum-1944.avif 1944w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+optical-bee-color:
+  width: 1200
+  height: 1200
+  fallback: /assets/img/optimized/optical-bee-color-800.jpg
+  jpeg_srcset: /assets/img/optimized/optical-bee-color-400.jpg 400w, /assets/img/optimized/optical-bee-color-800.jpg 800w, /assets/img/optimized/optical-bee-color-1200.jpg 1200w
+  webp_srcset: /assets/img/optimized/optical-bee-color-400.webp 400w, /assets/img/optimized/optical-bee-color-800.webp 800w, /assets/img/optimized/optical-bee-color-1200.webp 1200w
+  avif_srcset: /assets/img/optimized/optical-bee-color-400.avif 400w, /assets/img/optimized/optical-bee-color-800.avif 800w, /assets/img/optimized/optical-bee-color-1200.avif 1200w
+  sizes: "(max-width: 720px) 100vw, 220px"
+
+optical-bee-height:
+  width: 1200
+  height: 1200
+  fallback: /assets/img/optimized/optical-bee-height-800.jpg
+  jpeg_srcset: /assets/img/optimized/optical-bee-height-400.jpg 400w, /assets/img/optimized/optical-bee-height-800.jpg 800w, /assets/img/optimized/optical-bee-height-1200.jpg 1200w
+  webp_srcset: /assets/img/optimized/optical-bee-height-400.webp 400w, /assets/img/optimized/optical-bee-height-800.webp 800w, /assets/img/optimized/optical-bee-height-1200.webp 1200w
+  avif_srcset: /assets/img/optimized/optical-bee-height-400.avif 400w, /assets/img/optimized/optical-bee-height-800.avif 800w, /assets/img/optimized/optical-bee-height-1200.avif 1200w
+  sizes: "(max-width: 720px) 100vw, 220px"
+
+optical-scored-glass:
+  width: 750
+  height: 750
+  fallback: /assets/img/optimized/optical-scored-glass-750.jpg
+  jpeg_srcset: /assets/img/optimized/optical-scored-glass-376.jpg 376w, /assets/img/optimized/optical-scored-glass-750.jpg 750w
+  webp_srcset: /assets/img/optimized/optical-scored-glass-376.webp 376w, /assets/img/optimized/optical-scored-glass-750.webp 750w
+  avif_srcset: /assets/img/optimized/optical-scored-glass-376.avif 376w, /assets/img/optimized/optical-scored-glass-750.avif 750w
+  sizes: "(max-width: 720px) 100vw, 220px"
+
+ftir-experiment-setup:
+  width: 1920
+  height: 1200
+  fallback: /assets/img/optimized/ftir-experiment-setup-1280.jpg
+  jpeg_srcset: /assets/img/optimized/ftir-experiment-setup-640.jpg 640w, /assets/img/optimized/ftir-experiment-setup-1280.jpg 1280w, /assets/img/optimized/ftir-experiment-setup-1920.jpg 1920w
+  webp_srcset: /assets/img/optimized/ftir-experiment-setup-640.webp 640w, /assets/img/optimized/ftir-experiment-setup-1280.webp 1280w, /assets/img/optimized/ftir-experiment-setup-1920.webp 1920w
+  avif_srcset: /assets/img/optimized/ftir-experiment-setup-640.avif 640w, /assets/img/optimized/ftir-experiment-setup-1280.avif 1280w, /assets/img/optimized/ftir-experiment-setup-1920.avif 1920w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+ftir-pressure-tips:
+  width: 2400
+  height: 1800
+  fallback: /assets/img/optimized/ftir-pressure-tips-1280.jpg
+  jpeg_srcset: /assets/img/optimized/ftir-pressure-tips-640.jpg 640w, /assets/img/optimized/ftir-pressure-tips-1280.jpg 1280w, /assets/img/optimized/ftir-pressure-tips-1920.jpg 1920w
+  webp_srcset: /assets/img/optimized/ftir-pressure-tips-640.webp 640w, /assets/img/optimized/ftir-pressure-tips-1280.webp 1280w, /assets/img/optimized/ftir-pressure-tips-1920.webp 1920w
+  avif_srcset: /assets/img/optimized/ftir-pressure-tips-640.avif 640w, /assets/img/optimized/ftir-pressure-tips-1280.avif 1280w, /assets/img/optimized/ftir-pressure-tips-1920.avif 1920w
+  sizes: "(max-width: 720px) 100vw, 700px"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Nicolet iS5 FTIR Spectrometer
-print_quick_guide: true
+quick_guide_url: /quick-guides/ftir/
 ---
 # Thermo Scientific Nicolet iS5 FTIR Spectrometer
 
@@ -9,7 +9,7 @@ print_quick_guide: true
 
 ## Overview
 
-<img src="../assets/img/ftir.JPG" alt="Nicolet iS5 FTIR spectrometer." style="width:45%; float:right; margin-left:10px; margin-bottom:1.4em;">
+{% include responsive-image.html id="ftir-hero" alt="Nicolet iS5 FTIR spectrometer." loading="eager" picture_class="instrument-hero" %}
 
 The Thermo Scientific Nicolet iS5 Fourier-transform infrared (FTIR) spectrometer measures how a sample absorbs infrared light. The resulting spectrum is useful for identifying or comparing many organic, polymeric, biological, and other molecular materials.
 
@@ -27,7 +27,7 @@ This page is the operating page for the FTIR. It combines the quick reference fo
 
 * [New to FTIR? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the FTIR](https://breakerspace.libcal.com/seat/174791)
-* [Trained users: open or print the two-page Quick Guide]({{ page.url | relative_url }}?view=quick-guide#quick-guide)
+* [Trained users: open or print the two-page Quick Guide]({{ page.quick_guide_url | relative_url }})
 * [Operating the FTIR now? Follow the standard operating protocol](#sop)
 * [Learn the complete operating workflow](#details)
 </section>
@@ -40,8 +40,6 @@ This page is the operating page for the FTIR. It combines the quick reference fo
 * [Try the practice exercises](#exercises)
 </section>
 </div>
-
-{% include quick-guides/ftir.html %}
 
 ### What This Instrument Shows You {#science}
 
@@ -72,7 +70,7 @@ Think about how complicated the sample is before interpreting the spectrum. FTIR
 For chemically complex bulk mixtures, the interpretation changes. Coffee is a good example: brewed coffee, roasted beans, or coffee residues contain many different reactive compounds mixed in unknown ratios. The FTIR spectrum of the bulk material is a combined molecular fingerprint from everything the infrared beam samples. That fingerprint can still be useful for comparison, such as comparing green and roasted coffee, different extraction methods, or before/after treatment, but it usually cannot be deconvoluted into a reliable list of individual compounds or concentrations.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/instruments/ftir/fake-spiderweb-ftir-spectrum.png" target="_parent"><img src="../assets/img/instruments/ftir/fake-spiderweb-ftir-spectrum.png" alt="FTIR absorbance spectrum of a fake spiderweb decoration." style="width:100%; margin:0"></a>
+  <a href="{{ '/assets/img/optimized/ftir-spectrum-1944.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="ftir-spectrum" alt="FTIR absorbance spectrum of a fake spiderweb decoration." %}</a>
   <figcaption>Example FTIR spectrum from a fake spiderweb decoration. The strong bands near 1712, 1240, 1094, 872, and 722 cm<sup>-1</sup> are consistent with a polyester such as PET. This is the kind of relatively simple polymer sample where FTIR can support a likely material identification.</figcaption>
 </figure>
 
@@ -166,7 +164,7 @@ To maximize signal strength, the sample must make good contact with the ATR wind
 Although many solid samples will not contaminate the window, wipe the window with isopropyl alcohol and a Kimwipe between samples.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/solid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/solid-sample.GIF" alt="Solid sample loading on the FTIR ATR accessory." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-solid-sample" %}
   <figcaption>Loading a solid sample on the ATR accessory.</figcaption>
 </figure>
 
@@ -181,7 +179,7 @@ It is especially important that powders contact the surface of the diamond windo
 * Clean the crystal and surrounding plate completely after measurement.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/powder-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/powder-sample.GIF" alt="Powder sample loading on the FTIR ATR accessory." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-powder-sample" %}
   <figcaption>Loading a powder sample on the ATR accessory.</figcaption>
 </figure>
 
@@ -193,7 +191,7 @@ It is especially important that powders contact the surface of the diamond windo
 * Clean the crystal and surrounding plate completely after measurement.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/liquid-sample.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/liquid-sample.GIF" alt="Liquid sample loading on the FTIR ATR accessory." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-liquid-sample" %}
   <figcaption>Loading a non-volatile liquid sample on the ATR accessory.</figcaption>
 </figure>
 
@@ -205,7 +203,7 @@ It is especially important that powders contact the surface of the diamond windo
 * Confirm that no residue, powder, fibers, or droplets remain before collecting a background or leaving the instrument.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/clean-crystal.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/clean-crystal.GIF" alt="Cleaning the FTIR ATR crystal." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-clean-crystal" %}
   <figcaption>Cleaning the ATR crystal.</figcaption>
 </figure>
 
@@ -217,24 +215,24 @@ There are two ways to collect a spectrum, with preview on or off. If **Preview d
 
 For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG) of the experiment setup parameters, select help in the lower left.
 
-![Experiment setup in OMNIC.](../assets/img/tutorials/ftir/experiment-setup.JPG)
+{% include responsive-image.html id="ftir-experiment-setup" alt="Experiment setup controls in OMNIC." %}
 
 ##### Preview Data Collection Enabled
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/preview.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview.GIF" alt="Background and sample collection with preview data collection on." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-preview" %}
   <figcaption>Background and sample collection with preview data collection on.</figcaption>
 </figure>
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/preview-omnic.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/preview-omnic.GIF" alt="Background and sample collection with preview data collection on in OMNIC." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-preview-omnic" %}
   <figcaption>Background and sample collection with preview data collection on in OMNIC.</figcaption>
 </figure>
 
 ##### Preview Data Collection Not Enabled
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/no-preview.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/no-preview.GIF" alt="Basic sample collection without preview data enabled." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-no-preview" %}
   <figcaption>Basic sample collection without preview data enabled.</figcaption>
 </figure>
 
@@ -261,19 +259,19 @@ If preview is enabled, use the live spectrum as a practical check. If the signal
 #### Volatiles Cover {#volatiles-cover}
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/volatile-cover.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/volatile-cover.GIF" alt="Using the FTIR volatile cover." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-volatile-cover" %}
   <figcaption>Use of the volatiles cover.</figcaption>
 </figure>
 
 #### Pressure Tips {#pressure-tip}
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/pressure-tips.JPG" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tips.JPG" alt="Concave and self-leveling FTIR pressure tips." style="width:100%;"></a>
+  <a href="{{ '/assets/img/optimized/ftir-pressure-tips-1920.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="ftir-pressure-tips" alt="Concave and self-leveling FTIR pressure tips." %}</a>
   <figcaption>Concave pressure tip on the left and self-leveling pressure tip on the right.</figcaption>
 </figure>
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/ftir/pressure-tip.GIF" target="_parent"><img src="../assets/img/tutorials/ftir/pressure-tip.GIF" alt="Swapping FTIR pressure tips." style="width:100%;"></a>
+  {% include instructional-video.html id="ftir-pressure-tip" %}
   <figcaption>Swapping pressure tips.</figcaption>
 </figure>
 

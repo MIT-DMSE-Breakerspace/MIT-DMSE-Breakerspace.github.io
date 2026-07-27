@@ -5,7 +5,7 @@
       <span>For trained users. Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
     </div>
     <div class="quick-guide-screen-actions">
-      <a href="{{ page.url | relative_url }}">Full instrument page</a>
+      <a href="{{ page.instrument_url | relative_url }}">Full instrument page</a>
       <button type="button" onclick="window.print()">Print front and back</button>
     </div>
   </div>
@@ -14,23 +14,24 @@
     <header class="quick-guide-header">
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace · Trained-user reference</p>
-        <h2 id="ftir-quick-guide-title">Nicolet iS5 FTIR Spectrometer</h2>
+        <h1 id="ftir-quick-guide-title">Nicolet iS5 FTIR Spectrometer</h1>
         <p class="quick-guide-subtitle">Collect a clean ATR spectrum, preserve the data, and leave the crystal ready for the next user.</p>
       </div>
-      <img src="{{ '/assets/img/ftir.JPG' | relative_url }}" alt="Thermo Scientific Nicolet iS5 FTIR spectrometer.">
+      {% include responsive-image.html id="ftir-hero" alt="Thermo Scientific Nicolet iS5 FTIR spectrometer." loading="eager" sizes="(max-width: 720px) 12rem, 9rem" %}
     </header>
 
     <aside class="quick-guide-notice">
       This guide supports completed hands-on training; it does not replace training. Routine independent use is ATR with approved, non-hazardous samples.
     </aside>
 
+    <h2 class="visually-hidden">FTIR quick reference</h2>
     <div class="quick-guide-grid quick-guide-grid-wide-left">
       <section>
         <h3>What FTIR shows</h3>
         <p>FTIR records how a sample absorbs infrared light as its molecular bonds vibrate. The spectrum is a pattern of bands that can support material identification or comparison. With ATR, the signal comes mainly from the material touching the diamond crystal, so clean surfaces and good contact matter.</p>
 
         <figure class="quick-guide-figure">
-          <img src="{{ '/assets/img/instruments/ftir/fake-spiderweb-ftir-spectrum.png' | relative_url }}" alt="FTIR absorbance spectrum with several labeled bands consistent with a polyester material.">
+          {% include responsive-image.html id="ftir-spectrum" alt="FTIR absorbance spectrum with several labeled bands consistent with a polyester material." loading="eager" sizes="(max-width: 720px) 100vw, 34rem" %}
           <figcaption>Use several major bands and a reasonable reference—not one peak alone—to support an identification.</figcaption>
         </figure>
 

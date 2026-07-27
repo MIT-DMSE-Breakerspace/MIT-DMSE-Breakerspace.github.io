@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -lt 3 ]]; then
+  echo "Usage: script/generate-responsive-image SOURCE_IMAGE OUTPUT_STEM WIDTH [WIDTH ...]" >&2
+  exit 2
+fi
+
+source_image="$1"
+output_stem="$2"
+shift 2
+
+if [[ ! -f "$source_image" ]]; then
+  echo "Source image not found: $source_image" >&2
+  exit 1
+fi
+
+for required_command in cwebp ffmpeg; do
+  if ! command -v "$required_command" >/dev/null 2>&1; then
+    echo "$required_command is required to generate responsive images." >&2
+    exit 1
+  fi
+done
+
+output_directory="assets/img/optimized"
+mkdir -p "$output_directory"
+
+for width in "$@"; do
+  if [[ ! "$width" =~ ^[0-9]+$ ]]; then
+    echo "Width must be a positive integer: $width" >&2
+    exit 2
+  fi
+  if (( width % 2 != 0 )); then
+    echo "Width must be even for consistent JPEG, WebP, and AVIF dimensions: $width" >&2
+    exit 2
+  fi
+
+  jpeg_output="$output_directory/$output_stem-$width.jpg"
+  webp_output="$output_directory/$output_stem-$width.webp"
+  avif_output="$output_directory/$output_stem-$width.avif"
+
+  ffmpeg -y -hide_banner -loglevel error \
+    -i "$source_image" \
+    -frames:v 1 \
+    -vf "scale=$width:-2:flags=lanczos" \
+    -q:v 3 \
+    -map_metadata -1 \
+    "$jpeg_output"
+
+  cwebp -quiet \
+    -resize "$width" 0 \
+    -q 82 \
+    -metadata none \
+    "$source_image" \
+    -o "$webp_output"
+
+  ffmpeg -y -hide_banner -loglevel error \
+    -i "$source_image" \
+    -frames:v 1 \
+    -vf "scale=$width:-2:flags=lanczos" \
+    -c:v libsvtav1 \
+    -preset 8 \
+    -crf 30 \
+    -pix_fmt yuv420p \
+    -map_metadata -1 \
+    -f avif \
+    "$avif_output"
+
+  for output_file in "$jpeg_output" "$webp_output" "$avif_output"; do
+    if [[ ! -s "$output_file" ]]; then
+      echo "Responsive image generation failed: $output_file" >&2
+      exit 1
+    fi
+  done
+done

@@ -12,8 +12,8 @@ The repository may still be publicly readable. Do not store credentials, access 
 
 ## Nicolet iS5 FTIR Spectrometer
 
-* [ ] Replace hand/sample-loading photos, GIFs, or videos with versions showing appropriate glove use.
-* [ ] Replace or reshoot the solid sample, powder sample, liquid sample, crystal cleaning, volatiles cover, and pressure-tip GIFs with gloved versions.
+* [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
+* [ ] Replace or reshoot the solid sample, powder sample, liquid sample, crystal cleaning, volatiles cover, and pressure-tip videos with gloved versions; publish future motion instruction as controlled MP4/WebM rather than GIF.
 * [ ] Add one or two annotated example spectra showing major peaks and how to compare an unknown with a known reference.
 * [ ] Add a teaching example contrasting a pure or simple sample with a complex mixture such as coffee, emphasizing when FTIR supports identification and when it mainly supports comparison.
 * [ ] Add a short database-search walkthrough using Wiley KnowItAll or another approved reference workflow.
@@ -58,12 +58,12 @@ The repository may still be publicly readable. Do not store credentials, access 
 ## DSX-1000 Digital Optical Microscope
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
-* [ ] Add photos or GIFs showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
-* [ ] Add a screenshot or GIF showing the recommended save-location workflow.
+* [ ] Add photos or videos showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
+* [ ] Add photos or videos showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
+* [ ] Add a screenshot or video showing the recommended save-location workflow.
 * [ ] Add example image sets comparing brightfield, oblique, darkfield, brightfield/darkfield mix, polarization, and DIC on the same sample.
 * [ ] Add more annotated example results for stitched imaging and measurement/profile workflows.
-* [ ] Add a GIF of 2D acquisition, 3D acquisition, and stitching setup.
+* [ ] Add an MP4/WebM video of 2D acquisition, 3D acquisition, and stitching setup.
 * [ ] Add example measurement outputs for profile, volume, roughness, and STL export.
 * [ ] Add common sample-prep examples for flat samples, tall samples, fragile samples, and liquid-containing samples.
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DSX-1000 Digital Optical Microscope
-print_quick_guide: true
+quick_guide_url: /quick-guides/optical/
 ---
 # Olympus DSX-1000 Digital Optical Microscope
 
@@ -9,7 +9,7 @@ print_quick_guide: true
 
 ## Overview
 
-<img src="../assets/img/optical.JPG" alt="Olympus DSX-1000 digital optical microscope." style="width:45%; float:right; margin-left:10px; margin-bottom:1.4em;">
+{% include responsive-image.html id="optical-hero" alt="Olympus DSX-1000 digital optical microscope." loading="eager" picture_class="instrument-hero" %}
 
 The Olympus DSX-1000 digital optical microscope is the Breakerspace instrument for full-color optical imaging, fast inspection, 2D and 3D image capture, stitched images, and basic measurement or surface-analysis workflows. It is a good starting point when you want to inspect a sample before choosing a higher-resolution or more specialized instrument.
 
@@ -27,7 +27,7 @@ This page is the operating page for the optical microscope. It combines the quic
 
 * [New to the optical microscope? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the optical microscope](https://breakerspace.libcal.com/seat/174788)
-* [Trained users: open or print the two-page Quick Guide]({{ page.url | relative_url }}?view=quick-guide#quick-guide)
+* [Trained users: open or print the two-page Quick Guide]({{ page.quick_guide_url | relative_url }})
 * [Operating the microscope now? Follow the standard operating protocol](#sop)
 * [Learn the complete operating workflow](#details)
 </section>
@@ -39,8 +39,6 @@ This page is the operating page for the optical microscope. It combines the quic
 * [Try the practice exercises](#exercises)
 </section>
 </div>
-
-{% include quick-guides/optical.html %}
 
 ### What This Instrument Shows You {#science}
 
@@ -64,10 +62,10 @@ Different lighting modes can make different features stand out. Brightfield ofte
 
 In a normal 2D image, look first for shape, color, scale, and texture. Ask: are features isolated or connected, smooth or rough, random or patterned, uniform or changing across the sample?
 
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/instruments/optical/bee-optical-color.jpg" target="_parent"><img src="../assets/img/instruments/optical/bee-optical-color.jpg" alt="Color optical microscope image of a bee surface." style="width:32%; margin:0"></a>
-  <a href="../assets/img/instruments/optical/bee-height-map.jpg" target="_parent"><img src="../assets/img/instruments/optical/bee-height-map.jpg" alt="Height map of the same bee surface." style="width:32%; margin:0"></a>
-  <a href="../assets/img/instruments/optical/scored-glass-fracture.jpg" target="_parent"><img src="../assets/img/instruments/optical/scored-glass-fracture.jpg" alt="Optical microscope image of a scored glass fracture surface." style="width:32%; margin:0"></a>
+<figure class="page-figure responsive-image-trio">
+  <a href="{{ '/assets/img/optimized/optical-bee-color-1200.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="optical-bee-color" alt="Color optical microscope image of a bee surface." %}</a>
+  <a href="{{ '/assets/img/optimized/optical-bee-height-1200.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="optical-bee-height" alt="Height map of the same bee surface." %}</a>
+  <a href="{{ '/assets/img/optimized/optical-scored-glass-750.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="optical-scored-glass" alt="Optical microscope image of a scored glass fracture surface." %}</a>
   <figcaption>Optical microscopy can show color and texture, estimate surface height, and document materials features such as the fracture surface of scored glass.</figcaption>
 </figure>
 
@@ -95,7 +93,7 @@ When comparing observation modes, look for which mode makes the question easier 
 * Clear the [stage](../assets/img/tutorials/optical/stage.JPG) of any samples or other materials.
 * Start the [DSX software](../assets/img/tutorials/optical/desktop.PNG) and [log on as Guest](../assets/img/tutorials/optical/guest.PNG) with no password.
 * [Acknowledge that it is safe for the stage and head to move](../assets/img/tutorials/optical/acknowledge.PNG).
-* Use the manual focusing knob to [lower the microscope stage](../assets/img/tutorials/optical/lower.GIF).
+* Use the manual focusing knob to [lower the microscope stage](#optical-lower-video).
 * Load or change [objectives](#objectives) if needed.
 * Lower the microscope head into the tilt position using [the button on the console](../assets/img/tutorials/optical/tilt-console.JPG) or the [software button](../assets/img/tutorials/optical/tilt-software.PNG).
 
@@ -103,13 +101,32 @@ When comparing observation modes, look for which mode makes the question easier 
 
 * [Place the sample on the stage](#sample-prep).
 * Remove gloves before using the keyboard, mouse, or instrument workstation.
-* Use the [manual focusing knob](../assets/img/tutorials/optical/focus.GIF) to bring the sample into rough focus.
-* Use the [joystick](../assets/img/tutorials/optical/joystick.GIF) to move the stage and position the sample area under observation.
-* Fine-tune focus by moving the zoom head with the console buttons, [focus wheel](../assets/img/tutorials/optical/focus-wheel.GIF), or software buttons.
+* Use the [manual focusing knob](#optical-focus-video) to bring the sample into rough focus.
+* Use the [joystick](#optical-joystick-video) to move the stage and position the sample area under observation.
+* Fine-tune focus by moving the zoom head with the console buttons, [focus wheel](#optical-focus-wheel-video), or software buttons.
 * Select an observation mode with Best Image, or choose the mode manually.
 * Capture 2D, 3D, stitched, movie, time-lapse, or path images as needed.
 * Verify that files are saved where you intend.
 * Wear gloves again before unloading or handling samples.
+
+<div class="instructional-media-grid">
+  <figure class="page-figure" id="optical-lower-video">
+    {% include instructional-video.html id="optical-lower" %}
+    <figcaption>Lower the stage before loading or changing objectives.</figcaption>
+  </figure>
+  <figure class="page-figure" id="optical-focus-video">
+    {% include instructional-video.html id="optical-focus" %}
+    <figcaption>Bring the sample into rough focus with the manual focusing knob.</figcaption>
+  </figure>
+  <figure class="page-figure" id="optical-joystick-video">
+    {% include instructional-video.html id="optical-joystick" %}
+    <figcaption>Use the joystick to position the region of interest.</figcaption>
+  </figure>
+  <figure class="page-figure" id="optical-focus-wheel-video">
+    {% include instructional-video.html id="optical-focus-wheel" %}
+    <figcaption>Use the focus wheel for fine focus.</figcaption>
+  </figure>
+</div>
 
 #### Instrument Shutdown {#shutdown}
 
@@ -198,7 +215,7 @@ Many observation modes are available from the desktop application or console:
 The Best Image feature previews how the sample looks in each observation mode and lets you apply the preferred mode. The [DSX1000 Digital Microscope Operation Manual](https://www.dropbox.com/scl/fi/bmfph79975i1p0wv4pbuf/DSX1000-Application-M-E.pdf?rlkey=fzmbq39hr926gpbbtgft9fxxt&dl=0) describes Best Image on page 52 and explains the observation modes starting on page 63.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/optical/BestImage.gif" target="_parent"><img src="../assets/img/tutorials/optical/BestImage.gif" alt="Best Image feature operation." style="width:70%; margin:0"></a>
+  {% include instructional-video.html id="optical-best-image" %}
   <figcaption>Using the Best Image feature to choose an observation mode.</figcaption>
 </figure>
 
@@ -237,11 +254,16 @@ To start a measurement workflow:
 5. Use the volume option to estimate the volume of a raised feature or depression.
 6. Save the original image/data and export reports or derived files as needed.
 
-<figure style="margin-left:0; margin-right:0;">
-  <img src="../assets/img/tutorials/optical/WireFrame.gif" alt="Creating a wireframe from DSX optical microscope data." style="width:49%; margin:0">
-  <img src="../assets/img/tutorials/optical/Volume.gif" alt="Measuring volume from DSX optical microscope data." style="width:49%; margin:0">
-  <figcaption>Examples of DSX measurement and 3D visualization tools.</figcaption>
-</figure>
+<div class="instructional-media-grid">
+  <figure class="page-figure">
+    {% include instructional-video.html id="optical-wireframe" %}
+    <figcaption>Creating a wireframe from DSX optical microscope data.</figcaption>
+  </figure>
+  <figure class="page-figure">
+    {% include instructional-video.html id="optical-volume" %}
+    <figcaption>Measuring volume from DSX optical microscope data.</figcaption>
+  </figure>
+</div>
 
 For useful records:
 

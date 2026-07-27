@@ -141,7 +141,8 @@ Before finishing a site change:
 * Run `git diff --check`.
 * Run `bundle exec jekyll build`.
 * Check internal links and heading fragments when navigation or anchors change.
-* Check image dimensions, alternative text, and responsive behavior for new media.
+* Check image dimensions, alternative text, lazy loading, and responsive behavior for new media. Use `_includes/responsive-image.html` for responsive AVIF/WebP/JPEG output and `_includes/instructional-video.html` for non-autoplaying MP4/WebM instruction.
+* Use `script/generate-responsive-image` and `script/convert-instructional-gif` to create consistent production derivatives from reviewed source media.
 * Review the change against `_staff/site-todo.md` when it affects launch policy or more than one page.
 
 ## Sample Library Publication

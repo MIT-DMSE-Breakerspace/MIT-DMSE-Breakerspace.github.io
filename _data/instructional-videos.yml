@@ -1,0 +1,127 @@
+ftir-solid-sample:
+  width: 608
+  height: 342
+  label: Solid sample loading on the FTIR ATR accessory.
+  poster: /assets/media/tutorials/ftir/solid-sample-poster.jpg
+  webm: /assets/media/tutorials/ftir/solid-sample.webm
+  mp4: /assets/media/tutorials/ftir/solid-sample.mp4
+
+ftir-powder-sample:
+  width: 750
+  height: 422
+  label: Powder sample loading on the FTIR ATR accessory.
+  poster: /assets/media/tutorials/ftir/powder-sample-poster.jpg
+  webm: /assets/media/tutorials/ftir/powder-sample.webm
+  mp4: /assets/media/tutorials/ftir/powder-sample.mp4
+
+ftir-liquid-sample:
+  width: 750
+  height: 422
+  label: Liquid sample loading on the FTIR ATR accessory.
+  poster: /assets/media/tutorials/ftir/liquid-sample-poster.jpg
+  webm: /assets/media/tutorials/ftir/liquid-sample.webm
+  mp4: /assets/media/tutorials/ftir/liquid-sample.mp4
+
+ftir-clean-crystal:
+  width: 750
+  height: 422
+  label: Cleaning the FTIR ATR crystal.
+  poster: /assets/media/tutorials/ftir/clean-crystal-poster.jpg
+  webm: /assets/media/tutorials/ftir/clean-crystal.webm
+  mp4: /assets/media/tutorials/ftir/clean-crystal.mp4
+
+ftir-preview:
+  width: 750
+  height: 422
+  label: Background and sample collection with preview data collection on.
+  poster: /assets/media/tutorials/ftir/preview-poster.jpg
+  webm: /assets/media/tutorials/ftir/preview.webm
+  mp4: /assets/media/tutorials/ftir/preview.mp4
+
+ftir-preview-omnic:
+  width: 750
+  height: 469
+  label: Background and sample collection with preview data collection on in OMNIC.
+  poster: /assets/media/tutorials/ftir/preview-omnic-poster.jpg
+  webm: /assets/media/tutorials/ftir/preview-omnic.webm
+  mp4: /assets/media/tutorials/ftir/preview-omnic.mp4
+
+ftir-no-preview:
+  width: 750
+  height: 469
+  label: Basic sample collection without preview data enabled.
+  poster: /assets/media/tutorials/ftir/no-preview-poster.jpg
+  webm: /assets/media/tutorials/ftir/no-preview.webm
+  mp4: /assets/media/tutorials/ftir/no-preview.mp4
+
+ftir-volatile-cover:
+  width: 504
+  height: 284
+  label: Using the FTIR volatile-liquid cover.
+  poster: /assets/media/tutorials/ftir/volatile-cover-poster.jpg
+  webm: /assets/media/tutorials/ftir/volatile-cover.webm
+  mp4: /assets/media/tutorials/ftir/volatile-cover.mp4
+
+ftir-pressure-tip:
+  width: 426
+  height: 240
+  label: Swapping FTIR pressure tips.
+  poster: /assets/media/tutorials/ftir/pressure-tip-poster.jpg
+  webm: /assets/media/tutorials/ftir/pressure-tip.webm
+  mp4: /assets/media/tutorials/ftir/pressure-tip.mp4
+
+optical-lower:
+  width: 708
+  height: 398
+  label: Lowering the DSX optical microscope stage with the manual focusing knob.
+  poster: /assets/media/tutorials/optical/lower-poster.jpg
+  webm: /assets/media/tutorials/optical/lower.webm
+  mp4: /assets/media/tutorials/optical/lower.mp4
+
+optical-focus:
+  width: 468
+  height: 264
+  label: Bringing a sample into rough focus with the DSX manual focusing knob.
+  poster: /assets/media/tutorials/optical/focus-poster.jpg
+  webm: /assets/media/tutorials/optical/focus.webm
+  mp4: /assets/media/tutorials/optical/focus.mp4
+
+optical-joystick:
+  width: 750
+  height: 422
+  label: Moving the DSX stage and positioning a sample with the joystick.
+  poster: /assets/media/tutorials/optical/joystick-poster.jpg
+  webm: /assets/media/tutorials/optical/joystick.webm
+  mp4: /assets/media/tutorials/optical/joystick.mp4
+
+optical-focus-wheel:
+  width: 634
+  height: 356
+  label: Fine-tuning DSX focus with the focus wheel.
+  poster: /assets/media/tutorials/optical/focus-wheel-poster.jpg
+  webm: /assets/media/tutorials/optical/focus-wheel.webm
+  mp4: /assets/media/tutorials/optical/focus-wheel.mp4
+
+optical-best-image:
+  width: 736
+  height: 414
+  label: Comparing observation modes with the DSX Best Image feature.
+  poster: /assets/media/tutorials/optical/best-image-poster.jpg
+  webm: /assets/media/tutorials/optical/best-image.webm
+  mp4: /assets/media/tutorials/optical/best-image.mp4
+
+optical-wireframe:
+  width: 564
+  height: 318
+  label: Creating a wireframe from DSX optical microscope data.
+  poster: /assets/media/tutorials/optical/wireframe-poster.jpg
+  webm: /assets/media/tutorials/optical/wireframe.webm
+  mp4: /assets/media/tutorials/optical/wireframe.mp4
+
+optical-volume:
+  width: 526
+  height: 296
+  label: Measuring volume from DSX optical microscope data.
+  poster: /assets/media/tutorials/optical/volume-poster.jpg
+  webm: /assets/media/tutorials/optical/volume.webm
+  mp4: /assets/media/tutorials/optical/volume.mp4

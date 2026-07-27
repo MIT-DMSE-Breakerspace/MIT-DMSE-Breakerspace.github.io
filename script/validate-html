@@ -26,6 +26,10 @@ def validate(file)
 end
 
 validate "index.html"
+validate File.join "instruments", "ftir.html"
+validate File.join "instruments", "optical.html"
+validate File.join "quick-guides", "ftir", "index.html"
+validate File.join "quick-guides", "optical", "index.html"
 validate "sample-library.html"
 Dir.glob(File.expand_path("../_site/sample-library/*/index.html", __dir__))
   .sort

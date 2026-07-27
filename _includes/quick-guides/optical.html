@@ -5,7 +5,7 @@
       <span>For trained users. Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
     </div>
     <div class="quick-guide-screen-actions">
-      <a href="{{ page.url | relative_url }}">Full instrument page</a>
+      <a href="{{ page.instrument_url | relative_url }}">Full instrument page</a>
       <button type="button" onclick="window.print()">Print front and back</button>
     </div>
   </div>
@@ -14,25 +14,26 @@
     <header class="quick-guide-header">
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace · Trained-user reference</p>
-        <h2 id="optical-quick-guide-title">DSX-1000 Optical Microscope</h2>
+        <h1 id="optical-quick-guide-title">DSX-1000 Optical Microscope</h1>
         <p class="quick-guide-subtitle">Choose an observation mode, capture a useful image, and leave the motorized system clear and ready.</p>
       </div>
-      <img src="{{ '/assets/img/optical.JPG' | relative_url }}" alt="Olympus DSX-1000 digital optical microscope.">
+      {% include responsive-image.html id="optical-hero" alt="Olympus DSX-1000 digital optical microscope." loading="eager" sizes="(max-width: 720px) 12rem, 9rem" %}
     </header>
 
     <aside class="quick-guide-notice">
       This guide supports completed hands-on training; it does not replace training. Stop and ask staff whenever a sample may collide, spill, shed, or move unexpectedly.
     </aside>
 
+    <h2 class="visually-hidden">Optical microscope quick reference</h2>
     <div class="quick-guide-grid quick-guide-grid-wide-left">
       <section>
         <h3>What this instrument shows</h3>
         <p>The DSX-1000 uses visible light, interchangeable objectives, controlled illumination, and a digital camera to inspect surface color, shape, texture, defects, and relief. It can capture 2D images, focus-stacked 3D data, and stitched maps.</p>
 
         <figure class="quick-guide-figure quick-guide-image-trio">
-          <img src="{{ '/assets/img/instruments/optical/bee-optical-color.jpg' | relative_url }}" alt="Color optical image of a bee surface.">
-          <img src="{{ '/assets/img/instruments/optical/bee-height-map.jpg' | relative_url }}" alt="Height map of the same bee surface.">
-          <img src="{{ '/assets/img/instruments/optical/scored-glass-fracture.jpg' | relative_url }}" alt="Optical image of a scored-glass fracture surface.">
+          {% include responsive-image.html id="optical-bee-color" alt="Color optical image of a bee surface." loading="eager" sizes="(max-width: 720px) 100vw, 11rem" %}
+          {% include responsive-image.html id="optical-bee-height" alt="Height map of the same bee surface." loading="eager" sizes="(max-width: 720px) 100vw, 11rem" %}
+          {% include responsive-image.html id="optical-scored-glass" alt="Optical image of a scored-glass fracture surface." loading="eager" sizes="(max-width: 720px) 100vw, 11rem" %}
           <figcaption>Color, surface height, and fracture detail are different views of a sample—not interchangeable measurements.</figcaption>
         </figure>
 

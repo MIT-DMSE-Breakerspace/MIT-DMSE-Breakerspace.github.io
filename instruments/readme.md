@@ -41,8 +41,8 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | --- | --- | --- |
 | `ion-mill.md` | 5 | Exemplary and fully self-contained (no includes): concepts, polishing, slope cutting, startup/purge, loading, semi-auto and automated recipes, data. Richest media set. Remaining tasks are enhancement media, not content. |
 | `xrd.md` | 5 | Exemplary: loading, run a program, export workflow/formats, HighScore analysis, and a 7-step worked unknown-powder example. **Only page with true page-level manual citations.** Best structural model for the priority pages. |
-| `ftir.md` | 5 | Exemplary: per-sample-type loading (solid/powder/liquid), ATR cleaning, setup, background, collection, all with embedded GIFs. Links whole manuals (not page-cited) and points to in-software Help. |
-| `optical.md` | 4 | Thorough with page-cited manuals (QRG p.11, app manual pp.52/63/106/112/132) and some GIFs; startup/loading light (deferred to SOP/prep) and several acquisition GIFs remain on the staff checklist. |
+| `ftir.md` | 5 | Exemplary: per-sample-type loading (solid/powder/liquid), ATR cleaning, setup, background, and collection with on-demand MP4/WebM instruction. Links whole manuals (not page-cited) and points to in-software Help. |
+| `optical.md` | 4 | Thorough with page-cited manuals (QRG p.11, app manual pp.52/63/106/112/132) and on-demand video; startup/loading remains concise and several acquisition videos remain on the staff checklist. |
 | `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. The workstation access handoff and default database/export conventions still need confirming; authentication details should remain in training or at the instrument. |
 | `uv-vis.md` | 4 | Good routine-absorbance EZ Spec workflow; needs confirmed method settings and process screenshots. Fluorescence remains staff-guided. Manual references are whole-PDF only. |
 | `raman.md` | 4 | Strong text and conceptual depth (laser/grating choice, Si calibration, mapping, z-profiling) but **zero embedded media** and several control names/settings flagged for staff verification. |
@@ -87,7 +87,7 @@ Current score 3. The page is lopsided — hardware setup is strong, test executi
 
 Instrument pages should be complete enough to use at the instrument without requiring the user to click away for basic safety, setup, loading, shutdown, or troubleshooting steps.
 
-The top of each operating page should work as a quick reference for trained users. Where a two-page workstation handout exists, it should be included on that same canonical page through `_includes/quick-guides/`, with `print_quick_guide: true` in the page front matter. A prominent action beside the animation control opens the same page in a focused Quick Guide view; the normal operating page does not duplicate the full handout onscreen. The shared print stylesheet hides the surrounding site and prints the component as exactly two US Letter pages for duplex printing. Do not maintain an independent PDF source. Generate a PDF from the page's print view only when a fixed release artifact is needed.
+The top of each operating page should work as a quick reference for trained users. Where a two-page workstation handout exists, publish it at a standalone `/quick-guides/` URL using the `quick-guide` layout and an `_includes/quick-guides/` content include. Set `quick_guide_url` in the instrument page front matter so the prominent action links directly to that lightweight page. Do not embed the full handout or its media in the long operating page. The shared print stylesheet prints the standalone guide as exactly two US Letter pages for duplex printing. Do not maintain an independent PDF source; generate a PDF from the standalone page only when a fixed release artifact is needed.
 
 Every Quick Guide should:
 
@@ -98,7 +98,7 @@ Every Quick Guide should:
 * Remain understandable in grayscale and without printed background colors.
 * Draw technical claims and operating steps from the same instrument page rather than introducing an alternate workflow.
 
-The pilot Quick Guides are `_includes/quick-guides/optical.html` and `_includes/quick-guides/ftir.html`. Use their markup and the shared `quick-guide-*` CSS classes as the pattern for later instruments.
+The pilot Quick Guides are `/quick-guides/optical/` and `/quick-guides/ftir/`, backed by `_includes/quick-guides/optical.html` and `_includes/quick-guides/ftir.html`. Use their page structure and the shared `quick-guide-*` CSS classes as the pattern for later instruments.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 

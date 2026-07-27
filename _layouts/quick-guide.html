@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body class="has-print-quick-guide quick-guide-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="wrapper quick-guide-page-wrapper">
+      <header class="quick-guide-page-header">
+        <a href="{{ "/" | relative_url }}">DMSE Breakerspace</a>
+      </header>
+      <div class="content-shell">
+        <main id="main-content" tabindex="-1">
+          {{ content }}
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

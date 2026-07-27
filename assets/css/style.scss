@@ -236,7 +236,8 @@ main table a:focus-visible {
   margin: 1.5rem 0;
 }
 
-.page-figure img {
+.page-figure img,
+.page-figure video {
   display: block;
   width: 100%;
   height: auto;
@@ -279,6 +280,77 @@ main table a:focus-visible {
 .media-trio img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.responsive-picture {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-image-trio {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.responsive-image-trio > a {
+  display: block;
+}
+
+.responsive-image-trio img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.responsive-image-trio figcaption {
+  grid-column: 1 / -1;
+}
+
+.instrument-hero {
+  float: right;
+  width: 45%;
+  margin: 0 0 1.4em 10px;
+}
+
+.instrument-hero img {
+  width: 100%;
+}
+
+.instructional-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: #17242a;
+}
+
+.instructional-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.instructional-media-grid .page-figure {
+  margin: 0;
 }
 
 .animation-toggle {
@@ -1028,30 +1100,37 @@ main table a:focus-visible {
 }
 
 @media screen {
-  body.has-print-quick-guide:not(.quick-guide-focus) .instrument-quick-guide {
-    display: none;
-  }
-
-  body.quick-guide-focus > .skip-link,
-  body.quick-guide-focus .wrapper > header,
-  body.quick-guide-focus .wrapper > footer,
-  body.quick-guide-focus main > :not(.instrument-quick-guide) {
-    display: none;
-  }
-
-  body.quick-guide-focus .wrapper,
-  body.quick-guide-focus .content-shell,
-  body.quick-guide-focus main {
+  body.quick-guide-page .wrapper,
+  body.quick-guide-page .content-shell,
+  body.quick-guide-page main {
     width: auto;
     max-width: none;
     margin: 0;
     padding: 0;
   }
 
-  body.quick-guide-focus .instrument-quick-guide {
+  body.quick-guide-page .quick-guide-page-wrapper {
     max-width: 70rem;
-    margin: 1.25rem auto 2.5rem;
+    margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  body.quick-guide-page .quick-guide-page-header {
+    position: static;
+    float: none;
+    width: auto;
+    padding: 1rem 0 0;
+  }
+
+  body.quick-guide-page .quick-guide-page-header a {
+    color: #17242a;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  body.quick-guide-page .instrument-quick-guide {
+    max-width: 70rem;
+    margin: 1rem auto 2.5rem;
   }
 }
 
@@ -1064,6 +1143,7 @@ main table a:focus-visible {
   background: #fff;
 }
 
+.quick-guide-sheet h1,
 .quick-guide-sheet h2,
 .quick-guide-sheet h3,
 .quick-guide-sheet p,
@@ -1074,6 +1154,7 @@ main table a:focus-visible {
   margin-top: 0;
 }
 
+.quick-guide-sheet h1,
 .quick-guide-sheet h2 {
   margin-bottom: 0.25rem;
   font-size: 1.65rem;
@@ -1114,7 +1195,12 @@ main table a:focus-visible {
   border-bottom: 3px solid #ae0721;
 }
 
-.quick-guide-header > img {
+.quick-guide-header > picture {
+  display: block;
+}
+
+.quick-guide-header > img,
+.quick-guide-header > picture img {
   display: block;
   width: 100%;
   max-height: 7.5rem;
@@ -1326,7 +1412,8 @@ main table a:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .quick-guide-header > img {
+  .quick-guide-header > img,
+  .quick-guide-header > picture {
     max-width: 12rem;
   }
 
@@ -1390,6 +1477,7 @@ main table a:focus-visible {
     page-break-after: auto;
   }
 
+  body.has-print-quick-guide .quick-guide-sheet h1,
   body.has-print-quick-guide .quick-guide-sheet h2 {
     font-size: 19pt;
   }
@@ -1416,7 +1504,8 @@ main table a:focus-visible {
     padding-bottom: 0.1in;
   }
 
-  body.has-print-quick-guide .quick-guide-header > img {
+  body.has-print-quick-guide .quick-guide-header > img,
+  body.has-print-quick-guide .quick-guide-header > picture img {
     max-height: 1.05in;
   }
 
@@ -1536,6 +1625,14 @@ main table a:focus-visible {
 }
 
 @media print, screen and (max-width: 720px) {
+  .instrument-hero {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.4em;
+  }
+
+  .instructional-media-grid,
+  .responsive-image-trio,
   .media-pair,
   .media-trio {
     grid-template-columns: 1fr;

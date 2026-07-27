@@ -24,12 +24,14 @@ The external-review security and privacy bundle was closed on July 27, 2026:
 
 External follow-up: the live Carbonio applications still load Plotly and h5wasm from cdnjs, unpkg, or jsDelivr as of July 27, 2026. Self-hosting those dependencies remains a task for the separately maintained Carbonio/ScienceScripts applications rather than the Breakerspace site queue.
 
-With that bundle complete, the remaining cross-site work moves up in this order:
+The first performance pass was completed July 27, 2026: the FTIR and optical GIFs were replaced with on-demand MP4/WebM video, responsive AVIF/WebP/JPEG image sets, intrinsic dimensions, and separate lightweight Quick Guide URLs.
 
-1. **Performance and workflow accessibility:** reduce the largest instrument-page transfers and complete keyboard, VoiceOver, reflow, reduced-motion, and third-party workflow testing.
+The remaining cross-site work continues in this order:
+
+1. **Workflow accessibility:** complete keyboard, VoiceOver, reflow, reduced-motion, and third-party workflow testing.
 2. **Responsive design:** fix the intermediate-width overflow, increase body-text readability, remove focus-state layout shift, and replace fragile floated figures.
 3. **Automated quality controls:** add production-equivalent build, link, accessibility, asset-budget, metadata, and sensitive-content checks.
-4. **Instrument-page structure:** correct heading hierarchy and move toward genuinely lightweight standalone Quick Guides.
+4. **Instrument-page structure:** correct heading hierarchy and extend the standalone Quick Guide pattern beyond the FTIR and optical pilots.
 5. **Discovery and belonging:** add a vivid homepage inspiration block and improve question- or sample-first instrument selection after the operational work above.
 
 The detailed tiered and instrument-specific checklists below remain authoritative. This execution order does not override urgent safety corrections or fall-readiness dependencies.
@@ -125,7 +127,8 @@ These are appropriate ongoing projects for undergraduate lab employees. Student 
 ### Instrument Pages And Training Media
 
 * [ ] Work through the instrument-specific checklist in [`../instruments/staff-todo.md`](../instruments/staff-todo.md): standardized setup photography, software screenshots, annotated controls, example data, troubleshooting detail, and clearer data-export instructions.
-* [ ] Add captions, transcripts, and non-autoplaying video replacements for instructional GIFs and videos as source files become available.
+* [x] Replace FTIR and optical instructional GIFs with non-autoplaying MP4/WebM video, controls, poster frames, and descriptive captions; remove the superseded GIFs from the production tree.
+* [ ] Add captions or transcripts for any remaining instructional media that contains meaningful audio or visual information not already explained in adjacent text.
 * [ ] Improve abbreviated alternative text and screenshot descriptions in consolidated instrument pages with review from an instrument trainer.
 * [ ] Inventory linked manuals and request accessible versions from manufacturers; record which operating information still needs an HTML equivalent.
 * [ ] Rebuild the excluded instrument handouts as accessible, reviewed companions before returning them to the public build.

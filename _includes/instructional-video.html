@@ -1,0 +1,15 @@
+{% assign instructional_videos = site.data["instructional-videos"] %}
+{% assign video = instructional_videos[include.id] %}
+<video
+  class="instructional-video{% if include.class %} {{ include.class }}{% endif %}"
+  controls
+  playsinline
+  preload="none"
+  poster="{{ video.poster | relative_url }}"
+  width="{{ video.width }}"
+  height="{{ video.height }}"
+  aria-label="{{ video.label | escape }}">
+  <source src="{{ video.webm | relative_url }}" type="video/webm">
+  <source src="{{ video.mp4 | relative_url }}" type="video/mp4">
+  <p>Your browser cannot play this instructional video. <a href="{{ video.mp4 | relative_url }}">Open the MP4 version</a>.</p>
+</video>

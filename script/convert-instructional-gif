@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -ne 3 ]]; then
+  echo "Usage: script/convert-instructional-gif SOURCE_GIF OUTPUT_DIRECTORY OUTPUT_STEM" >&2
+  exit 2
+fi
+
+source_gif="$1"
+output_directory="$2"
+output_stem="$3"
+
+if [[ ! -f "$source_gif" ]]; then
+  echo "Source GIF not found: $source_gif" >&2
+  exit 1
+fi
+
+for required_command in ffmpeg ffprobe; do
+  if ! command -v "$required_command" >/dev/null 2>&1; then
+    echo "$required_command is required to convert instructional media." >&2
+    exit 1
+  fi
+done
+mkdir -p "$output_directory"
+
+mp4_output="$output_directory/$output_stem.mp4"
+webm_output="$output_directory/$output_stem.webm"
+poster_output="$output_directory/$output_stem-poster.jpg"
+even_dimensions="scale=trunc(iw/2)*2:trunc(ih/2)*2:flags=lanczos"
+
+ffmpeg -y -hide_banner -loglevel error \
+  -i "$source_gif" \
+  -an \
+  -vf "$even_dimensions" \
+  -c:v libx264 \
+  -preset slow \
+  -crf 24 \
+  -pix_fmt yuv420p \
+  -movflags +faststart \
+  "$mp4_output"
+
+ffmpeg -y -hide_banner -loglevel error \
+  -i "$source_gif" \
+  -an \
+  -vf "$even_dimensions" \
+  -c:v libvpx-vp9 \
+  -crf 32 \
+  -b:v 0 \
+  -deadline good \
+  -cpu-used 2 \
+  -row-mt 1 \
+  -pix_fmt yuv420p \
+  "$webm_output"
+
+ffmpeg -y -hide_banner -loglevel error \
+  -ss 1 \
+  -i "$source_gif" \
+  -frames:v 1 \
+  -vf "$even_dimensions" \
+  -q:v 3 \
+  -map_metadata -1 \
+  "$poster_output"
+
+for output_file in "$mp4_output" "$webm_output" "$poster_output"; do
+  if [[ ! -s "$output_file" ]]; then
+    echo "Conversion did not produce a usable file: $output_file" >&2
+    exit 1
+  fi
+done
