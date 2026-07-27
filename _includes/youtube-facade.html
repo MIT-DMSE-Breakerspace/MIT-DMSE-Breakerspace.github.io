@@ -1,0 +1,33 @@
+{% assign youtube_videos = site.data["youtube-videos"] %}
+{% assign video = youtube_videos[include.id] %}
+{% assign responsive_images = site.data["responsive-images"] %}
+{% assign poster = responsive_images[video.poster] %}
+<div
+  class="youtube-facade"
+  style="--youtube-aspect-ratio: {{ video.width }} / {{ video.height }};"
+  data-youtube-id="{{ video.youtube_id }}"
+  data-youtube-title="{{ video.title | escape }}">
+  <picture class="youtube-facade__poster">
+    <source type="image/avif" srcset="{{ poster.avif_srcset }}" sizes="{{ poster.sizes }}">
+    <source type="image/webp" srcset="{{ poster.webp_srcset }}" sizes="{{ poster.sizes }}">
+    <img
+      class="youtube-facade__poster-image"
+      src="{{ poster.fallback | relative_url }}"
+      srcset="{{ poster.jpeg_srcset }}"
+      sizes="{{ poster.sizes }}"
+      width="{{ video.width }}"
+      height="{{ video.height }}"
+      loading="lazy"
+      decoding="async"
+      alt="{{ video.title | escape }} video poster.">
+  </picture>
+  <a
+    class="youtube-facade__trigger"
+    href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+    aria-label="Play {{ video.title | escape }}">
+    <span class="youtube-facade__play" aria-hidden="true">
+      <span class="youtube-facade__play-icon"></span>
+      <span>Play video</span>
+    </span>
+  </a>
+</div>

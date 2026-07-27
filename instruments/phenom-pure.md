@@ -129,14 +129,19 @@ Use the cold stage for wet, vacuum-sensitive, or heat-sensitive samples that nee
 4. Place the cold-stage sample holder in its stand.
 5. Mount the sample on the metal stub using [cryo-embedding compound](../assets/img/tutorials/sem/cold_stage_cryo_embedding_fluid.jpeg), not normal SEM adhesive.
 6. Use a 1.5 mm Allen wrench to [adjust sample height](../assets/img/tutorials/sem/cold_stage_adjusting_sample_height.jpeg). The sample must sit below the top edge of the holder.
-7. Insert the [connector block](../assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif) into the SEM.
+7. Insert the [connector block](#cold-stage-connector-video) into the SEM.
 8. Turn on the [main unit](../assets/img/tutorials/sem/cold_stage_on_switch.jpeg), then use the controller to set the target temperature.
 
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif" target="_parent"><img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_connector.gif" alt="Inserting the cold-stage connector block." style="width:49%; margin:0"></a>
-  <a href="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" target="_parent"><img src="../assets/img/tutorials/sem/cold_stage_gif_putting_in_sample.gif" alt="Loading the cold-stage sample holder." style="width:49%; margin:0"></a>
-  <figcaption>Cold-stage connector and sample-holder loading.</figcaption>
-</figure>
+<div class="instructional-media-grid">
+  <figure class="page-figure" id="cold-stage-connector-video">
+    {% include instructional-video.html id="sem-cold-stage-connector" %}
+    <figcaption>Insert the cold-stage connector block.</figcaption>
+  </figure>
+  <figure class="page-figure">
+    {% include instructional-video.html id="sem-cold-stage-sample-holder" %}
+    <figcaption>Load the cold-stage sample holder.</figcaption>
+  </figure>
+</div>
 
 ##### Freezing Workflow
 

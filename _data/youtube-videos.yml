@@ -1,0 +1,27 @@
+psa-cleaning:
+  youtube_id: CEDb8fk9C0I
+  title: Cleaning the particle size analyzer sample area
+  poster: psa-cleaning-poster
+  width: 1280
+  height: 720
+
+psa-loading:
+  youtube_id: IbPc-y7S9tU
+  title: Loading a sample into the particle size analyzer
+  poster: psa-loading-poster
+  width: 1280
+  height: 720
+
+psa-software:
+  youtube_id: TvgfB1BDVO4
+  title: Particle size analyzer software workflow
+  poster: psa-software-poster
+  width: 1200
+  height: 900
+
+psa-collection:
+  youtube_id: Mt9QangPK5A
+  title: Particle size analyzer sample collection process
+  poster: psa-collection-poster
+  width: 1280
+  height: 720

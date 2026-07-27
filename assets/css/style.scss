@@ -38,29 +38,74 @@ button:focus-visible,
   outline-offset: 3px;
 }
 
-.container-video {
+.youtube-facade {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin: 1rem 0 1.4rem;
+  aspect-ratio: var(--youtube-aspect-ratio);
+  border-radius: 4px;
+  background: #17242a;
 }
 
-.container-video43 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
+.youtube-facade__poster,
+.youtube-facade__poster-image,
+.youtube-facade__trigger,
+.youtube-facade__iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
+}
+
+.youtube-facade__poster {
+  display: block;
+}
+
+.youtube-facade__poster-image {
+  display: block;
+  object-fit: cover;
+}
+
+main .youtube-facade__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, 0.38));
+  color: #fff;
+  text-decoration: none;
+}
+
+main .youtube-facade__trigger:hover {
+  color: #fff;
+}
+
+.youtube-facade__trigger:focus-visible {
+  outline-offset: -6px;
+}
+
+.youtube-facade__play {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  padding: 0.65rem 0.9rem;
+  border-radius: 4px;
+  background: #ae0721;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  font-weight: 700;
+}
+
+.youtube-facade__play-icon {
+  width: 0;
+  height: 0;
+  border-top: 0.48rem solid transparent;
+  border-bottom: 0.48rem solid transparent;
+  border-left: 0.72rem solid currentColor;
+}
+
+.youtube-facade__iframe {
+  border: 0;
 }
 
 .site-nav a {
@@ -353,32 +398,12 @@ main table a:focus-visible {
   margin: 0;
 }
 
-.animation-toggle {
-  margin: 0 0 1.25rem;
-  padding: 0.55rem 0.7rem;
-  border: 2px solid #007aa8;
-  border-radius: 4px;
-  background: #fff;
-  color: #007aa8;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.animation-toggle:hover {
-  background: #eaf7fc;
-}
-
 .instrument-page-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
   align-items: stretch;
   margin: 0 0 1.35rem;
-}
-
-.instrument-page-actions .animation-toggle {
-  margin: 0;
 }
 
 .quick-guide-launch {
@@ -415,12 +440,6 @@ main table a:focus-visible {
   margin-top: 0.12rem;
   font-size: 0.78rem;
   line-height: 1.25;
-}
-
-.paused-animation {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .guidance-note {

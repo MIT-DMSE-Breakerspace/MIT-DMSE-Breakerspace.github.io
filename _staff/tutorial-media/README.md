@@ -368,6 +368,44 @@ Do not add `autoplay`, `loop`, or a scripted custom player to routine tutorial c
 
 HTML video does not have a broadly supported `loading="lazy"` attribute. `preload="none"` is the video equivalent used here; it defers the actual video transfer while still displaying the small poster.
 
+## YouTube-Hosted Tutorials
+
+YouTube remains appropriate for a longer demonstration when adaptive streaming, captions, playback speed, or avoiding multiple large production files is more valuable than local hosting. Preserve the original master in approved lab-managed storage even when the published video remains on YouTube.
+
+Do not embed a YouTube iframe directly on page load. Use the shared click-to-load facade so the page initially requests only a small local poster. The privacy-enhanced `youtube-nocookie.com` player is created after the visitor selects **Play video**.
+
+Create the poster from the original master rather than downloading a YouTube thumbnail:
+
+```sh
+ffmpeg -y -hide_banner -loglevel error \
+  -ss 15 \
+  -i "/absolute/path/to/source.mov" \
+  -frames:v 1 \
+  -map_metadata -1 \
+  /tmp/instrument-action-poster-source.jpg
+
+script/generate-responsive-image \
+  /tmp/instrument-action-poster-source.jpg \
+  instrument-action-poster \
+  480 960 1280
+```
+
+Choose a stable, representative frame that contains no credentials, names, private data, or blurred motion. Register the JPEG, WebP, and AVIF outputs in `_data/responsive-images.yml`, then add the YouTube ID, accessible title, poster entry, and aspect-ratio dimensions to `_data/youtube-videos.yml`.
+
+Embed the facade:
+
+```liquid
+{% include youtube-facade.html id="instrument-action" %}
+```
+
+Load the facade script once on any page that uses it:
+
+```liquid
+<script src="{{ '/assets/js/youtube-facade.js' | relative_url }}" defer></script>
+```
+
+The poster has responsive sources, intrinsic dimensions, lazy loading, and asynchronous decoding. The play control remains an ordinary YouTube link when JavaScript is unavailable. Do not place raw camera masters in the repository or locally host an unprocessed 4K recording.
+
 ## Static Images and Screenshots
 
 Use a high-quality JPEG or PNG source. Preserve an unedited master outside the repository when it may be useful later.
@@ -464,7 +502,7 @@ The site standard is:
 * Responsive derivatives rather than scaling a large original for every device.
 * No large GIF for instructional motion.
 
-A very small non-instructional animation may remain a GIF only when it is genuinely simpler than video, contains no required procedure, respects reduced-motion behavior, and stays below approximately 250 KB. When in doubt, use controlled video.
+Do not add GIF assets to the production repository. Publish motion as controlled MP4/WebM video and publish a still as responsive AVIF, WebP, and JPEG derivatives.
 
 ## Final Quality Checks
 

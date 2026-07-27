@@ -96,7 +96,7 @@ Always check for practical artifacts before interpreting small differences. Bubb
 * Prepare the sample and blank/reference cuvettes or holders.
 * Create or load the appropriate EZ Spec method.
 * Click [Acquire](../assets/img/tutorials/uv-vis/Acquire.png).
-* Load and acquire the blank/reference and [sample](../assets/img/tutorials/uv-vis/add-in-cuvette.gif) in the order prompted by the selected method.
+* Load and acquire the blank/reference and [sample](#uv-vis-load-cuvette-video) in the order prompted by the selected method.
 * Unload all cuvettes, slides, or sample holders from the sample compartment.
 * Save or export the data.
 
@@ -219,11 +219,16 @@ When comparing several samples, use the same blank strategy for all of them and 
 8. Close the sample compartment lid before acquisition.
 9. Remove the cuvette after measurement; do not leave samples in the instrument.
 
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/uv-vis/open-uv-vis-lid.gif" target="_parent"><img src="../assets/img/tutorials/uv-vis/open-uv-vis-lid.gif" alt="Opening the Duetta sample compartment lid." style="width:49%; margin:0"></a>
-  <a href="../assets/img/tutorials/uv-vis/add-in-cuvette.gif" target="_parent"><img src="../assets/img/tutorials/uv-vis/add-in-cuvette.gif" alt="Loading a cuvette into the Duetta sample compartment." style="width:49%; margin:0"></a>
-  <figcaption>Load cuvettes gently, keep the optical faces clean, and close the lid before acquisition.</figcaption>
-</figure>
+<div class="instructional-media-grid">
+  <figure class="page-figure">
+    {% include instructional-video.html id="uv-vis-open-lid" %}
+    <figcaption>Open the Duetta sample compartment lid.</figcaption>
+  </figure>
+  <figure class="page-figure" id="uv-vis-load-cuvette-video">
+    {% include instructional-video.html id="uv-vis-load-cuvette" %}
+    <figcaption>Load the cuvette gently and keep its optical faces clean.</figcaption>
+  </figure>
+</div>
 
 #### Routine Absorbance Workflow In EZ Spec
 

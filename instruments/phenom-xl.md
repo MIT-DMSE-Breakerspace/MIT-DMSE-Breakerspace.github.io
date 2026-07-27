@@ -146,9 +146,8 @@ For EDS data:
 * Export reports, maps, spectra, and CSV data as needed.
 * Be cautious with automatic peak labels. Check whether peaks overlap and whether coating, tape, stub, or mounting materials contributed elements.
 
-<figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/sem/LiveEDS.gif" target="_parent"><img src="../assets/img/tutorials/sem/LiveEDS.gif" alt="Live EDS workflow in the Phenom software." style="width:49%; margin:0"></a>
-  <a href="../assets/img/tutorials/sem/EDS.gif" target="_parent"><img src="../assets/img/tutorials/sem/EDS.gif" alt="EDS workflow in the Phenom software." style="width:49%; margin:0"></a>
+<figure class="page-figure">
+  {% include responsive-image.html id="phenom-xl-eds-interface" alt="Phenom software interface during EDS analysis." %}
   <figcaption>Live EDS is good for quick checks; EDS/EID projects are better for saved spectra, maps, and reports.</figcaption>
 </figure>
 

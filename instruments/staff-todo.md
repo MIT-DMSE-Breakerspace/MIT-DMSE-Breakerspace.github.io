@@ -143,7 +143,7 @@ This page was substantially expanded from a thin original and still needs verifi
 
 * [ ] Confirm the current preferred EZ Spec method settings for routine absorbance training, including wavelength range, increment, integration/acquisition settings, and save/export workflow.
 * [ ] Add screenshots for New Method, Absorbance and Transmission, Spectra, wavelength-range setup, sample naming, save location, blank prompt, and export options.
-* [ ] Replace or supplement the cuvette-loading GIFs with versions showing appropriate glove use and clearer cuvette orientation.
+* [ ] Replace or supplement the cuvette-loading videos with versions showing appropriate glove use and clearer cuvette orientation.
 * [ ] Add photos showing clean vs dirty cuvette optical faces, bubbles in the beam path, and the correct liquid fill height.
 * [ ] Add photos of the transmission sample holder and a correctly loaded quartz slide.
 * [ ] Add a short absorbance example using a safe training dye, including the expected peak region and a dilution-series plot.
@@ -155,8 +155,8 @@ This page was substantially expanded from a thin original and still needs verifi
 ## Aeris Research X-Ray Diffractometer
 
 * [ ] Add a labeled overview photo of the instrument showing the mains switch, power button, and HT keyswitch locations.
-* [ ] Reshoot the loading, queue, and export GIFs with appropriate glove use if handling guidance calls for it.
-* [ ] Add a dedicated screenshot of the changer-position selection in the UI (the current step links the general `Queue.gif`; a still that highlights the position selector would be clearer).
+* [ ] Reshoot the loading, queue, and export videos with appropriate glove use if handling guidance calls for it.
+* [ ] Add a dedicated screenshot of the changer-position selection in the UI (the current step links the general queue video; a still that highlights the position selector would be clearer).
 * [ ] Add one or two annotated example patterns showing background, labeled peaks, and an accepted Search Match candidate.
 * [ ] Add an attention-catching example diffraction pattern to the "What this instrument shows you" section (for example, a sharp crystalline pattern next to a broad amorphous one) to illustrate the educational text.
 * [ ] Cross-link the XRD handout once its cheat-sheet content is finalized and the handout returns to the public build.

@@ -86,7 +86,7 @@ The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot 
 * Prepare your sample at the sample prep table using the correct holder (see [compatible materials and sample prep](#materials)).
 * Remove the plastic sample-changer cover and place the prepared holder in any free loading position.
 * Replace the plastic sample-changer cover.
-* In the software, select the changer position that matches the physical slot where you placed the holder ([see the queue interface](../assets/img/tutorials/xrd/Queue.gif)).
+* In the software, select the changer position that matches the physical slot where you placed the holder ([see the queue interface](#xrd-queue-video)).
 * Select a measurement program from the drop-down list.
 * Enter a descriptive sample name and edit the file name as needed.
 * Start the measurement, or click **Add to Queue** to run it after the current sample.
@@ -144,13 +144,13 @@ The sections above are a quick reference for trained users. The sections below a
 * Place a prepared sample in any of the six positions on the sample changer.
 * Replace the plastic sample-changer cover.
 
-<div class="media-pair">
-  <figure class="page-figure">
-    <img src="../assets/img/tutorials/xrd/removing-plastic-cover-2.gif" alt="Removing the plastic sample-changer cover." width="480" height="640" loading="lazy">
+<div class="instructional-media-grid">
+  <figure class="page-figure" id="xrd-remove-cover-video">
+    {% include instructional-video.html id="xrd-remove-plastic-cover" %}
     <figcaption>Removing the plastic sample-changer cover.</figcaption>
   </figure>
-  <figure class="page-figure">
-    <img src="../assets/img/tutorials/xrd/add-sample.gif" alt="Placing a prepared sample in the sample changer." width="640" height="480" loading="lazy">
+  <figure class="page-figure" id="xrd-add-sample-video">
+    {% include instructional-video.html id="xrd-add-sample" %}
     <figcaption>Placing a prepared sample in the changer.</figcaption>
   </figure>
 </div>
@@ -167,13 +167,13 @@ The stored programs on the instrument cover most basic phase-identification need
 
 Plan your reservation around scan time. A quick phase-ID scan can finish in a few minutes, but a high-resolution scan (small step size, long count time) can take considerably longer, and each queued sample adds to the total. Book enough instrument time for every sample you intend to run, plus sample loading, export, and cleanup.
 
-<div class="media-pair">
-  <figure class="page-figure">
-    <img src="../assets/img/tutorials/xrd/Queue.gif" alt="Adding a sample to the measurement queue in the software." width="618" height="348" loading="lazy">
+<div class="instructional-media-grid">
+  <figure class="page-figure" id="xrd-queue-video">
+    {% include instructional-video.html id="xrd-queue-sample" %}
     <figcaption>Adding a sample to the measurement queue.</figcaption>
   </figure>
-  <figure class="page-figure">
-    <img src="../assets/img/tutorials/xrd/Export.gif" alt="Copying measurement results to a desktop folder." width="612" height="344" loading="lazy">
+  <figure class="page-figure" id="xrd-export-video">
+    {% include instructional-video.html id="xrd-export-results" %}
     <figcaption>Copying results to a desktop folder.</figcaption>
   </figure>
 </div>

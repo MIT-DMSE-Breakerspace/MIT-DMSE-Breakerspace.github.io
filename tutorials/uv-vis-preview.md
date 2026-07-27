@@ -61,8 +61,14 @@ Duetta can be used as a fluorometer, as a UV-Vis-NIR spectrometer to measure abs
 * Load a sample of deionized water when the software instructs you to load a blank.
 
 <figure style="margin-left:0; margin-right:0;">
-	<img src="../assets/img/tutorials/uv-vis/open-uv-vis-lid.gif" alt="Opening UV-Vis Lid" style="width:50%; margin:0">
-	<img src="../assets/img/tutorials/uv-vis/add-in-cuvette.gif" alt="Adding in cuvette" style="width:50%; margin:0">
+	<video controls playsinline preload="none" poster="../assets/media/tutorials/uv-vis/open-lid-poster.jpg" width="480" height="640" aria-label="Opening the Duetta sample compartment lid.">
+		<source src="../assets/media/tutorials/uv-vis/open-lid.webm" type="video/webm">
+		<source src="../assets/media/tutorials/uv-vis/open-lid.mp4" type="video/mp4">
+	</video>
+	<video controls playsinline preload="none" poster="../assets/media/tutorials/uv-vis/load-cuvette-poster.jpg" width="480" height="640" aria-label="Loading a cuvette into the Duetta sample compartment.">
+		<source src="../assets/media/tutorials/uv-vis/load-cuvette.webm" type="video/webm">
+		<source src="../assets/media/tutorials/uv-vis/load-cuvette.mp4" type="video/mp4">
+	</video>
 </figure>
 
 #### Data Analysis {#data}

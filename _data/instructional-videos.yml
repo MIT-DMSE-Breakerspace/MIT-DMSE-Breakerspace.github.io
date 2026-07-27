@@ -125,3 +125,75 @@ optical-volume:
   poster: /assets/media/tutorials/optical/volume-poster.jpg
   webm: /assets/media/tutorials/optical/volume.webm
   mp4: /assets/media/tutorials/optical/volume.mp4
+
+sem-cold-stage-connector:
+  width: 490
+  height: 570
+  label: Inserting the cold-stage connector block into the Phenom Pure SEM.
+  poster: /assets/media/tutorials/sem/cold-stage-connector-poster.jpg
+  webm: /assets/media/tutorials/sem/cold-stage-connector.webm
+  mp4: /assets/media/tutorials/sem/cold-stage-connector.mp4
+
+sem-cold-stage-sample-holder:
+  width: 530
+  height: 630
+  label: Loading the cold-stage sample holder into the Phenom Pure SEM.
+  poster: /assets/media/tutorials/sem/cold-stage-sample-holder-poster.jpg
+  webm: /assets/media/tutorials/sem/cold-stage-sample-holder.webm
+  mp4: /assets/media/tutorials/sem/cold-stage-sample-holder.mp4
+
+uv-vis-open-lid:
+  width: 480
+  height: 640
+  label: Opening the Duetta sample compartment lid.
+  poster: /assets/media/tutorials/uv-vis/open-lid-poster.jpg
+  webm: /assets/media/tutorials/uv-vis/open-lid.webm
+  mp4: /assets/media/tutorials/uv-vis/open-lid.mp4
+
+uv-vis-load-cuvette:
+  width: 480
+  height: 640
+  label: Loading a cuvette into the Duetta sample compartment.
+  poster: /assets/media/tutorials/uv-vis/load-cuvette-poster.jpg
+  webm: /assets/media/tutorials/uv-vis/load-cuvette.webm
+  mp4: /assets/media/tutorials/uv-vis/load-cuvette.mp4
+
+xrd-remove-plastic-cover:
+  width: 480
+  height: 640
+  label: Removing the plastic sample-changer cover from the X-ray diffractometer.
+  poster: /assets/media/tutorials/xrd/remove-plastic-cover-poster.jpg
+  webm: /assets/media/tutorials/xrd/remove-plastic-cover.webm
+  mp4: /assets/media/tutorials/xrd/remove-plastic-cover.mp4
+
+xrd-add-sample:
+  width: 640
+  height: 480
+  label: Placing a prepared sample in the X-ray diffractometer sample changer.
+  poster: /assets/media/tutorials/xrd/add-sample-poster.jpg
+  webm: /assets/media/tutorials/xrd/add-sample.webm
+  mp4: /assets/media/tutorials/xrd/add-sample.mp4
+
+xrd-queue-sample:
+  width: 618
+  height: 348
+  label: Adding a sample to the X-ray diffractometer measurement queue.
+  poster: /assets/media/tutorials/xrd/queue-sample-poster.jpg
+  webm: /assets/media/tutorials/xrd/queue-sample.webm
+  mp4: /assets/media/tutorials/xrd/queue-sample.mp4
+
+xrd-export-results:
+  width: 612
+  height: 344
+  label: Copying X-ray diffraction results to a desktop folder.
+  poster: /assets/media/tutorials/xrd/export-results-poster.jpg
+  webm: /assets/media/tutorials/xrd/export-results.webm
+  mp4: /assets/media/tutorials/xrd/export-results.mp4
+
+raman-display-flip:
+  width: 1280
+  height: 720
+  label: Changing the Raman microscope display orientation.
+  poster: /assets/media/tutorials/raman/display-flip-poster.jpg
+  webm: /assets/media/tutorials/raman/display-flip.webm
+  mp4: /assets/media/tutorials/raman/display-flip.mp4

@@ -28,6 +28,7 @@ end
 validate "index.html"
 validate File.join "instruments", "ftir.html"
 validate File.join "instruments", "optical.html"
+validate File.join "instruments", "psa.html"
 validate File.join "quick-guides", "ftir", "index.html"
 validate File.join "quick-guides", "optical", "index.html"
 validate "sample-library.html"

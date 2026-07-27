@@ -52,6 +52,51 @@ optical-scored-glass:
   avif_srcset: /assets/img/optimized/optical-scored-glass-376.avif 376w, /assets/img/optimized/optical-scored-glass-750.avif 750w
   sizes: "(max-width: 720px) 100vw, 220px"
 
+psa-cleaning-poster:
+  width: 1280
+  height: 720
+  fallback: /assets/img/optimized/psa-cleaning-poster-1280.jpg
+  jpeg_srcset: /assets/img/optimized/psa-cleaning-poster-480.jpg 480w, /assets/img/optimized/psa-cleaning-poster-960.jpg 960w, /assets/img/optimized/psa-cleaning-poster-1280.jpg 1280w
+  webp_srcset: /assets/img/optimized/psa-cleaning-poster-480.webp 480w, /assets/img/optimized/psa-cleaning-poster-960.webp 960w, /assets/img/optimized/psa-cleaning-poster-1280.webp 1280w
+  avif_srcset: /assets/img/optimized/psa-cleaning-poster-480.avif 480w, /assets/img/optimized/psa-cleaning-poster-960.avif 960w, /assets/img/optimized/psa-cleaning-poster-1280.avif 1280w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+psa-loading-poster:
+  width: 1280
+  height: 720
+  fallback: /assets/img/optimized/psa-loading-poster-1280.jpg
+  jpeg_srcset: /assets/img/optimized/psa-loading-poster-480.jpg 480w, /assets/img/optimized/psa-loading-poster-960.jpg 960w, /assets/img/optimized/psa-loading-poster-1280.jpg 1280w
+  webp_srcset: /assets/img/optimized/psa-loading-poster-480.webp 480w, /assets/img/optimized/psa-loading-poster-960.webp 960w, /assets/img/optimized/psa-loading-poster-1280.webp 1280w
+  avif_srcset: /assets/img/optimized/psa-loading-poster-480.avif 480w, /assets/img/optimized/psa-loading-poster-960.avif 960w, /assets/img/optimized/psa-loading-poster-1280.avif 1280w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+psa-collection-poster:
+  width: 1280
+  height: 720
+  fallback: /assets/img/optimized/psa-collection-poster-1280.jpg
+  jpeg_srcset: /assets/img/optimized/psa-collection-poster-480.jpg 480w, /assets/img/optimized/psa-collection-poster-960.jpg 960w, /assets/img/optimized/psa-collection-poster-1280.jpg 1280w
+  webp_srcset: /assets/img/optimized/psa-collection-poster-480.webp 480w, /assets/img/optimized/psa-collection-poster-960.webp 960w, /assets/img/optimized/psa-collection-poster-1280.webp 1280w
+  avif_srcset: /assets/img/optimized/psa-collection-poster-480.avif 480w, /assets/img/optimized/psa-collection-poster-960.avif 960w, /assets/img/optimized/psa-collection-poster-1280.avif 1280w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+psa-software-poster:
+  width: 1200
+  height: 900
+  fallback: /assets/img/optimized/psa-software-poster-1200.jpg
+  jpeg_srcset: /assets/img/optimized/psa-software-poster-400.jpg 400w, /assets/img/optimized/psa-software-poster-800.jpg 800w, /assets/img/optimized/psa-software-poster-1200.jpg 1200w
+  webp_srcset: /assets/img/optimized/psa-software-poster-400.webp 400w, /assets/img/optimized/psa-software-poster-800.webp 800w, /assets/img/optimized/psa-software-poster-1200.webp 1200w
+  avif_srcset: /assets/img/optimized/psa-software-poster-400.avif 400w, /assets/img/optimized/psa-software-poster-800.avif 800w, /assets/img/optimized/psa-software-poster-1200.avif 1200w
+  sizes: "(max-width: 720px) 100vw, 700px"
+
+phenom-xl-eds-interface:
+  width: 540
+  height: 304
+  fallback: /assets/img/optimized/phenom-xl-eds-interface-540.jpg
+  jpeg_srcset: /assets/img/optimized/phenom-xl-eds-interface-270.jpg 270w, /assets/img/optimized/phenom-xl-eds-interface-540.jpg 540w
+  webp_srcset: /assets/img/optimized/phenom-xl-eds-interface-270.webp 270w, /assets/img/optimized/phenom-xl-eds-interface-540.webp 540w
+  avif_srcset: /assets/img/optimized/phenom-xl-eds-interface-270.avif 270w, /assets/img/optimized/phenom-xl-eds-interface-540.avif 540w
+  sizes: "(max-width: 720px) 100vw, 540px"
+
 ftir-experiment-setup:
   width: 1920
   height: 1200

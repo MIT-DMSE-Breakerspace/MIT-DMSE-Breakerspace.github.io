@@ -130,9 +130,7 @@ The workflow is short: start the software, connect to the instrument, let it ini
 
 Loose particles left from a previous sample can be drawn into the instrument and skew your result. Wipe them up with a Kimwipe lightly wetted with isopropanol. For a more thorough cleaning, the sample tray and its carrier can be removed.
 
-<div class="container-video">
-  <iframe class="responsive-iframe" title="Cleaning the particle size analyzer sample area" src="https://www.youtube.com/embed/CEDb8fk9C0I?si=O2J6BDKxPWnC9m0C"></iframe>
-</div>
+{% include youtube-facade.html id="psa-cleaning" %}
 
 #### Loading A Sample {#loading}
 
@@ -142,17 +140,13 @@ Loose particles left from a previous sample can be drawn into the instrument and
 * **Do not compress the powder.** Packing it down creates clumps that the instrument can read as single large particles, which is the most common way to distort a result.
 * Close the sample compartment door before analyzing; the sample cannot be measured with the door open.
 
-<div class="container-video">
-  <iframe class="responsive-iframe" title="Loading a sample into the particle size analyzer" src="https://www.youtube.com/embed/IbPc-y7S9tU?si=WVRutCo-v9ow8Bwf"></iframe>
-</div>
+{% include youtube-facade.html id="psa-loading" %}
 
 #### Full Sequence Of Software Operation {#software}
 
 The software layout can be confusing, so this screen capture walks through the full sequence: starting the software, initializing the instrument, and collecting and exporting data. Remember to load your sample after selecting the measurement SOP and before starting the auto-sequence.
 
-<div class="container-video43">
-  <iframe class="responsive-iframe" title="Particle size analyzer software workflow" src="https://www.youtube.com/embed/TvgfB1BDVO4?si=zmK_IY1oiU3FRg6B"></iframe>
-</div>
+{% include youtube-facade.html id="psa-software" %}
 
 #### Sample Collection {#collection}
 
@@ -163,9 +157,7 @@ After your sample is loaded and the tray door is closed, run the auto-sequence (
 * Once setzero is complete, the sample tray moves under the collection nozzle and the sample is pulled into the instrument.
 * After passing through the analysis chamber, the sample is collected in the shop vacuum below. This means there is little to no cleanup for you, and there is no way to recover the analyzed powder.
 
-<div class="container-video">
-  <iframe class="responsive-iframe" title="Particle size analyzer sample collection process" src="https://www.youtube.com/embed/Mt9QangPK5A?si=Q_4IEbZVe66QyiD5"></iframe>
-</div>
+{% include youtube-facade.html id="psa-collection" %}
 
 ### Data Processing And Analysis {#data}
 
@@ -206,3 +198,5 @@ The data from this instrument is fairly straightforward, but please ask lab staf
 * **Level 2 - Compare two powders:** Measure a fine powder and a coarse powder and compare their distributions, describing the difference in D50 and spread.
 * **Level 3 - Volume vs. number basis:** Take one measurement and recalculate it on volume and number bases. Explain why the same sample looks different and when each basis is appropriate.
 * **Level 3 - Size and shape together:** Measure a powder here, then image the same powder on the optical microscope or SEM, and discuss what the equivalent-diameter distribution does and does not capture about the real particle shapes.
+
+<script src="{{ '/assets/js/youtube-facade.js' | relative_url }}" defer></script>
