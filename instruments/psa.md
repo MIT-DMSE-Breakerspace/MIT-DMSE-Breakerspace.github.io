@@ -78,7 +78,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 #### Instrument Startup {#startup}
 
 * [Power on the instrument](../assets/img/tutorials/psa/power-switch.JPG) [if needed](../assets/img/tutorials/psa/status-light.JPG). The instrument may be left powered on, so it is often already on.
-* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
+* Log on to the instrument workstation using your MIT Kerberos.
 * Open the Microtrac FLEX software.
 * From the [_Open Analyzer_ menu, select _Sync Analyzer_](../assets/img/tutorials/psa/connect.png).
 * Wait while the instrument initializes. Keep the sample compartment door closed during initialization.

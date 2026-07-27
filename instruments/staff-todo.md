@@ -58,7 +58,7 @@ The repository may still be publicly readable. Do not store credentials, access 
 ## DSX-1000 Digital Optical Microscope
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing the correct startup sequence: power switch, application sign-in handoff, stage/head movement acknowledgement, lowering the stage, and tilt position. Keep authentication details out of repository media and captions.
+* [ ] Add photos or GIFs showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
 * [ ] Add photos or GIFs showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
 * [ ] Add a screenshot or GIF showing the recommended save-location workflow.
 * [ ] Add example image sets comparing brightfield, oblique, darkfield, brightfield/darkfield mix, polarization, and DIC on the same sample.

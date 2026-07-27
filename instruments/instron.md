@@ -79,7 +79,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 
 #### Instrument Startup {#startup}
 
-* Sign in to the instrument workstation using the current instructions provided during training or posted at the instrument.
+* Log on to the instrument workstation using your MIT Kerberos.
 * Open the Bluehill Universal software.
 * If the event log opens, you can close it.
 

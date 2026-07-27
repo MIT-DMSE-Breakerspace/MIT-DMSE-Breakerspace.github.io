@@ -44,7 +44,7 @@ Lounge-only access is managed separately. Use the access information on the [Bre
 
 The instrument workstations are on the [MIT WIN domain](https://ist.mit.edu/winmitedu), with permissions managed through [Moira group lists](https://groups.mit.edu/webmoira/). After an instrument training, the trainer should add you to the relevant group, such as `dmse-brkrspc-sem` for the SEMs.
 
-Sign in to an instrument workstation using the current instructions provided during training or posted at the instrument. If you completed training but cannot sign in, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) from your MIT email address and include the instrument, when you trained, and the exact error or behavior you encountered. Do not send passwords or authentication codes by email.
+Log on to an instrument workstation using your own MIT Kerberos account. If you completed training but cannot log on, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) from your MIT email address and include the instrument, when you trained, and the exact error or behavior you encountered. Do not send passwords or authentication codes by email.
 
 ### Slack And Dropbox Access
 

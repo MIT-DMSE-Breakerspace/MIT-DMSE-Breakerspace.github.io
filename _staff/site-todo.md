@@ -18,7 +18,7 @@ Public instrument pages should state current operating information clearly. Inst
 
 The external-review security and privacy bundle was closed on July 27, 2026:
 
-* [x] Remove public workstation usernames, passwords, and authentication steps. Direct trained users to current instructions provided during training or posted at the instrument.
+* [x] Remove public local-workstation usernames and passwords. Public pages may identify MIT Kerberos as the workstation credential type; retain the optical microscope's low-risk DSX Guest login because it reduces avoidable staff contacts for already trained, physically present users.
 * [x] Stop requesting MIT ID numbers or Kerberos usernames by ordinary email. Ask users to contact the team from their MIT email address and use that address for account identification.
 * [x] Link data tools to the separately maintained MIT Carbonio deployment and exclude the retired embedded ScienceScripts copies from the production build. The Breakerspace production site now links out and no longer publishes or runs the tool code or its CDN loaders.
 
