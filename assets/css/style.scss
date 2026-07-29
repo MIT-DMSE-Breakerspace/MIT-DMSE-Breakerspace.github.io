@@ -1086,6 +1086,67 @@ main table a:focus-visible {
   color: #3f494e;
 }
 
+.sample-section-intro {
+  max-width: 46rem;
+  margin: -0.35rem 0 1rem;
+  color: #4d585e;
+}
+
+.sample-capture-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.sample-capture {
+  padding: 1rem;
+  border: 1px solid #d8dde2;
+  border-top: 3px solid #009de6;
+  background: #f8fafb;
+}
+
+.sample-capture h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.sample-capture-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sample-capture-groups h4 {
+  margin: 0 0 0.35rem;
+  color: #657178;
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sample-capture-fields {
+  margin: 0;
+  border-top: 1px solid #d8dde2;
+}
+
+.sample-capture-fields > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.44fr) minmax(0, 1fr);
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e6e8;
+}
+
+.sample-capture-fields dt {
+  color: #384349;
+  font-weight: 700;
+}
+
+.sample-capture-fields dd {
+  margin: 0;
+  color: #3f494e;
+}
+
 .sample-specimen-list {
   border-top: 1px solid #d8dde2;
 }
@@ -1876,7 +1937,8 @@ main table a:focus-visible {
   }
 
   .sample-library-grid,
-  .sample-asset-grid {
+  .sample-asset-grid,
+  .sample-capture-groups {
     grid-template-columns: 1fr;
   }
 
@@ -1889,6 +1951,7 @@ main table a:focus-visible {
   }
 
   .sample-detail-list > div,
+  .sample-capture-fields > div,
   .sample-specimen-list > div,
   .sample-file-list li {
     grid-template-columns: 1fr;
