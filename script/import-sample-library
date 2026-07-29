@@ -13,11 +13,38 @@ class ImportError < StandardError; end
 
 ROOT = File.expand_path(ENV.fetch("SAMPLE_LIBRARY_SITE_ROOT", File.expand_path("..", __dir__)))
 IMAGE_EXTENSIONS = %w[.bmp .jpeg .jpg .png .tif .tiff .webp].freeze
+SUPPORTED_SCHEMA_VERSIONS = [1, 2].freeze
 ROOT_KEYS = %w[schemaVersion exportId generatedAt samples].freeze
-SAMPLE_KEYS = %w[publicId updatedAt fields availability specimens assets].freeze
+SAMPLE_KEYS = {
+  1 => %w[publicId updatedAt fields availability specimens assets],
+  2 => %w[publicId updatedAt fields availability specimens assets microscopy]
+}.freeze
 FIELD_KEYS = %w[name description materialClass composition physicalForm provenance preparationNotes handlingNotes storageRequirements].freeze
 SPECIMEN_KEYS = %w[labelId status location].freeze
 ASSET_KEYS = %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes].freeze
+MICROSCOPY_KEYS = %w[assetId fields].freeze
+MICROSCOPY_FIELD_DEFINITIONS = {
+  "instrumentModel" => ["instrument-model", "Instrument", "Equipment"],
+  "cameraName" => ["camera-name", "Camera", "Equipment"],
+  "captureDate" => ["capture-date", "Capture date", "Equipment"],
+  "imageDimensions" => ["image-dimensions", "Image dimensions", "Image and scale"],
+  "pixelPitch" => ["pixel-pitch", "Pixel pitch", "Image and scale"],
+  "fieldOfView" => ["field-of-view", "Field of view", "Image and scale"],
+  "observationMethod" => ["observation-method", "Observation method", "Acquisition"],
+  "objective" => ["objective", "Objective", "Acquisition"],
+  "zoom" => ["zoom", "Zoom", "Acquisition"],
+  "exposureSetting" => ["exposure-setting", "Exposure", "Acquisition"],
+  "sensitivity" => ["sensitivity", "Sensitivity", "Acquisition"],
+  "brightfieldIllumination" => ["brightfield-illumination", "Brightfield illumination", "Illumination"],
+  "darkfieldIllumination" => ["darkfield-illumination", "Darkfield illumination", "Illumination"],
+  "obliqueDirection" => ["oblique-direction", "Oblique illumination", "Illumination"],
+  "dicSettings" => ["dic-settings", "DIC settings", "Illumination"],
+  "hdrMode" => ["hdr-mode", "HDR mode", "Image processing"],
+  "gamma" => ["gamma", "Gamma", "Image processing"],
+  "shadingCorrection" => ["shading-correction", "Shading correction", "Image processing"],
+  "focusStack" => ["focus-stack", "Focus stack", "Image processing"],
+  "stitching" => ["stitching", "Stitching", "Image processing"]
+}.freeze
 
 def fail_import(message)
   raise ImportError, message
@@ -90,6 +117,28 @@ def humanize(value)
   value.split("-").map(&:capitalize).join(" ")
 end
 
+def microscopy_front_matter(sample)
+  sample.fetch("microscopy", []).map do |capture|
+    fields = capture.fetch("fields")
+    public_fields = MICROSCOPY_FIELD_DEFINITIONS.each_with_object([]) do |(manifest_key, definition), output|
+      value = optional_string(fields, manifest_key, "microscopy fields")
+      next unless value
+
+      key, label, group = definition
+      output << {
+        "key" => key,
+        "label" => label,
+        "group" => group,
+        "value" => value
+      }
+    end
+    {
+      "asset_id" => required_string(capture, "assetId", "microscopy capture"),
+      "fields" => public_fields
+    }
+  end
+end
+
 def write_sample_document(directory, manifest, sample, assets)
   fields = sample.fetch("fields")
   name = required_string(fields, "name", "sample fields")
@@ -97,6 +146,7 @@ def write_sample_document(directory, manifest, sample, assets)
   public_id = required_string(sample, "publicId", "sample")
   slug = public_id.downcase
   fail_import("Invalid public sample ID: #{public_id}") unless slug.match?(/\A[a-z0-9][a-z0-9-]*\z/)
+  microscopy = microscopy_front_matter(sample)
 
   front_matter = {
     "layout" => "sample",
@@ -120,6 +170,7 @@ def write_sample_document(directory, manifest, sample, assets)
       }
     end,
     "assets" => assets,
+    "microscopy" => microscopy.empty? ? nil : microscopy,
     "source_updated_at" => required_string(sample, "updatedAt", "sample"),
     "publication_export_id" => manifest.fetch("exportId"),
     "publication_generated_at" => manifest.fetch("generatedAt")
@@ -131,7 +182,8 @@ end
 
 def validate_manifest(manifest)
   check_keys(manifest, ROOT_KEYS, "manifest")
-  fail_import("Unsupported export schema") unless manifest["schemaVersion"] == 1
+  schema_version = manifest["schemaVersion"]
+  fail_import("Unsupported export schema") unless SUPPORTED_SCHEMA_VERSIONS.include?(schema_version)
   required_string(manifest, "exportId", "manifest")
   required_string(manifest, "generatedAt", "manifest")
   fail_import("manifest.samples must be an array") unless manifest["samples"].is_a?(Array)
@@ -139,7 +191,7 @@ def validate_manifest(manifest)
 
   manifest["samples"].each_with_index do |sample, sample_index|
     context = "sample #{sample_index + 1}"
-    check_keys(sample, SAMPLE_KEYS, context)
+    check_keys(sample, SAMPLE_KEYS.fetch(schema_version), context)
     required_string(sample, "publicId", context)
     required_string(sample, "updatedAt", context)
     required_string(sample, "availability", context)
@@ -150,6 +202,34 @@ def validate_manifest(manifest)
     fail_import("#{context}.assets must be an array") unless sample["assets"].is_a?(Array)
     sample["specimens"].each { |item| check_keys(item, SPECIMEN_KEYS, "#{context}.specimen") }
     sample["assets"].each { |item| check_keys(item, ASSET_KEYS, "#{context}.asset") }
+
+    next if schema_version == 1
+
+    fail_import("#{context}.microscopy must be an array") unless sample["microscopy"].is_a?(Array)
+    asset_ids = sample["assets"].to_h do |asset|
+      [required_string(asset, "assetId", "#{context}.asset"), asset]
+    end
+    microscopy_asset_ids = []
+    sample["microscopy"].each do |capture|
+      capture_context = "#{context}.microscopy"
+      check_keys(capture, MICROSCOPY_KEYS, capture_context)
+      asset_id = required_string(capture, "assetId", capture_context)
+      fail_import("#{capture_context}.assetId does not reference a public asset") unless asset_ids.key?(asset_id)
+      fail_import("#{capture_context}.assetId is duplicated") if microscopy_asset_ids.include?(asset_id)
+
+      microscopy_asset_ids << asset_id
+      asset = asset_ids.fetch(asset_id)
+      content_type = required_string(asset, "contentType", "#{context}.asset")
+      package_path = required_string(asset, "packagePath", "#{context}.asset")
+      fail_import("#{capture_context}.assetId must reference an image") unless image_asset?(content_type, package_path)
+
+      fields = capture["fields"]
+      check_keys(fields, MICROSCOPY_FIELD_DEFINITIONS.keys, "#{capture_context}.fields")
+      published_field_count = MICROSCOPY_FIELD_DEFINITIONS.keys.count do |key|
+        optional_string(fields, key, "#{capture_context}.fields")
+      end
+      fail_import("#{capture_context}.fields must contain a published value") if published_field_count.zero?
+    end
   end
 end
 
