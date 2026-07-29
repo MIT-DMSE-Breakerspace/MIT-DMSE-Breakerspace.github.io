@@ -153,8 +153,11 @@ The Windows-authenticated sample-library application is the operational system o
 After an administrator reviews approved records and downloads a publication ZIP, import it from the repository root:
 
 ```sh
+git switch main
+git pull --ff-only
+git switch -c codex/sample-publication-YYYYMMDD
 script/import-sample-library /path/to/breakerspace-sample-library-EXPORT_ID.zip
-bundle exec jekyll build
+bundle exec script/cibuild
 ```
 
 Safari may automatically expand the ZIP after downloading it. The importer accepts either the `.zip` file or the resulting export folder.
@@ -168,7 +171,11 @@ field width directly on each generated microscope image. Image assets are conver
 Identical exported asset IDs are consolidated into one public image. Full-resolution image sources
 and all other parsed metadata remain in the internal application.
 
-Review the generated index, each detail page, the optimized images, and `git diff` before committing. Generated `_samples/` and `assets/sample-library/` directories carry marker files; the importer refuses to replace an unmarked directory.
+Review the generated index, each detail page, the optimized images, and `git diff` before committing.
+Keep each publication package on its own branch, especially when instrument or other site work is
+happening in parallel. Push that branch and merge it through a pull request only after review.
+Generated `_samples/` and `assets/sample-library/` directories carry marker files; the importer
+refuses to replace an unmarked directory.
 
 ## Repository Context
 
@@ -178,7 +185,11 @@ Production development and GitHub Pages publishing use the `main` branch and the
 https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io.git
 ```
 
-GitHub Pages publishes the repository root from `main`. Make and review changes on `main`; pushing an approved commit to that branch triggers the production deployment.
+GitHub Pages publishes the repository root from `main`, so a merged or direct push to `main` triggers
+the production deployment. Begin routine work from an up-to-date, clean `main`, but make each task on
+a dedicated branch and merge it through a reviewed pull request. Use separate Git worktrees when
+multiple CLIs or people are working in parallel; do not combine a generated sample package with an
+unrelated content branch.
 
 The production site immediately before the 2026-07-24 redesign cutover is preserved by the tag and branch named `production-pre-redesign-2026-07-24`. The final preview source is preserved in the archived preview repository under `preview-final-2026-07-24`.
 

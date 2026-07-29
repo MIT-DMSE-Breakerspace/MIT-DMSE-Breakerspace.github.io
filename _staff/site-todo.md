@@ -143,6 +143,10 @@ Use the [Tutorial Media Production Guide](tutorial-media/README.md) for all new 
 * [x] Implement the administrator publication preview, versioned allowlisted export package, public-site importer, generated sample pages, and screen-sized JPEG conversion.
 * [x] Import the first package containing the two approved test records and verify the generated pages, JPEG conversion, and file integrity checks.
 * [x] Editorially review the initial records, correct the coffee-bean entry, omit the generic `BS-000002` test record, and publish the first two useful records (`BS-000001` and `BS-000003`).
+* [x] Implement and production-test Olympus DSX/REP upload processing: durable background jobs, metadata-free PNG derivatives, LEXT-validated exposure and X/Y calibration, schema-version-3 export, and public import.
+* [x] Limit automatically published microscope metadata to instrument name, readable observation mode with the Olympus abbreviation, and field width. Keep the original source and all other parsed metadata in the private application; do not restore the former detailed capture-settings panel.
+* [ ] Add editor-reviewed calibrated scale bars to separate Olympus publication derivatives, then reprocess existing successful jobs without requiring source re-upload.
+* [ ] Add successful Olympus-job reprocessing plus asset replacement/removal workflows with audit events before treating generated derivatives as permanently maintainable.
 * [ ] Inventory the physical sample cabinet, assign stable identifiers and locations, and photograph each approved sample.
 * [ ] Extend the Level 1 collection beyond the pre-fall minimum and connect additional exercises and observations to the same records.
 * [ ] Define and test a simple way for users to report a missing, damaged, contaminated, or nearly depleted sample.
