@@ -13,6 +13,8 @@ class ImportError < StandardError; end
 
 ROOT = File.expand_path(ENV.fetch("SAMPLE_LIBRARY_SITE_ROOT", File.expand_path("..", __dir__)))
 IMAGE_EXTENSIONS = %w[.bmp .jpeg .jpg .png .tif .tiff .webp].freeze
+JPEG_QUALITIES = [82, 78, 74, 70, 65, 60, 55, 50].freeze
+SAMPLE_LIBRARY_IMAGE_MAX_BYTES = 1024 * 1024
 SUPPORTED_SCHEMA_VERSIONS = [1, 2, 3].freeze
 ROOT_KEYS = %w[schemaVersion exportId generatedAt samples].freeze
 SAMPLE_KEYS = {
@@ -102,14 +104,22 @@ def convert_to_jpeg(source, destination)
   fail_import("The macOS sips image converter was not found") unless File.executable?(sips)
 
   FileUtils.mkdir_p(File.dirname(destination))
-  run_command(
-    sips,
-    "-s", "format", "jpeg",
-    "-s", "formatOptions", "82",
-    "-Z", "1800",
-    source,
-    "--out", destination
-  )
+  JPEG_QUALITIES.each do |quality|
+    FileUtils.rm_f(destination)
+    run_command(
+      sips,
+      "-s", "format", "jpeg",
+      "-s", "formatOptions", quality.to_s,
+      "-Z", "1800",
+      source,
+      "--out", destination
+    )
+    break if File.size(destination) <= SAMPLE_LIBRARY_IMAGE_MAX_BYTES
+  end
+  if File.size(destination) > SAMPLE_LIBRARY_IMAGE_MAX_BYTES
+    fail_import("Converted image exceeds the 1 MiB publication limit: #{source}")
+  end
+
   dimensions = run_command(sips, "-g", "pixelWidth", "-g", "pixelHeight", destination)
   width = dimensions[/pixelWidth:\s+(\d+)/, 1]
   height = dimensions[/pixelHeight:\s+(\d+)/, 1]
@@ -120,6 +130,27 @@ end
 
 def humanize(value)
   value.split("-").map(&:capitalize).join(" ")
+end
+
+def deduplicate_assets(assets)
+  seen = {}
+  assets.each_with_object([]) do |asset, output|
+    context = "asset #{asset['assetId']}"
+    asset_id = required_string(asset, "assetId", context)
+    signature = [
+      required_string(asset, "packagePath", context),
+      required_string(asset, "sha256", context).downcase,
+      asset.fetch("sizeBytes")
+    ]
+    previous = seen[asset_id]
+    if previous
+      fail_import("Duplicate asset ID has conflicting file data: #{asset_id}") unless previous == signature
+      next
+    end
+
+    seen[asset_id] = signature
+    output << asset
+  end
 end
 
 def write_sample_document(directory, manifest, sample, assets)
@@ -302,7 +333,7 @@ begin
     sample_asset_directory = File.join(generated_assets, slug)
     FileUtils.mkdir_p(sample_asset_directory)
 
-    public_assets = sample.fetch("assets").map do |asset|
+    public_assets = deduplicate_assets(sample.fetch("assets")).map do |asset|
       context = "asset #{asset['assetId']}"
       asset_id = required_string(asset, "assetId", context)
       package_path = required_string(asset, "packagePath", context)

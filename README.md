@@ -164,8 +164,9 @@ microscope-image captions. It rejects unexpected data fields and unsafe archive 
 file's SHA-256 hash and size, generates `_samples/*.md`, and places public files under
 `assets/sample-library/`. Version 3 carries the instrument name, observation mode, and calibrated
 field width directly on each generated microscope image. Image assets are converted with macOS
-`sips` to quality-82 JPEGs bounded to 1,800 pixels. Full-resolution image sources and all other
-parsed metadata remain in the internal application.
+`sips` to JPEGs bounded to 1,800 pixels and 1 MiB, reducing quality from 82 only when needed.
+Identical exported asset IDs are consolidated into one public image. Full-resolution image sources
+and all other parsed metadata remain in the internal application.
 
 Review the generated index, each detail page, the optimized images, and `git diff` before committing. Generated `_samples/` and `assets/sample-library/` directories carry marker files; the importer refuses to replace an unmarked directory.
 
