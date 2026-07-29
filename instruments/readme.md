@@ -31,7 +31,7 @@ The sample library and Materials Showcase are planned supporting systems. Level 
 
 ## Detailed Operating Instruction Readiness
 
-This section is a durable status snapshot of the **Detailed Operating Instructions** section (`{#details}`) on each instrument page, so a new working session can pick up the levelling work without re-reading every page. Last full assessment: **2026-07-20**. Re-run the assessment (read each page's detailed section against the rubric below) whenever a page's detailed section is substantially edited, and update the table and date.
+This section is a durable status snapshot of the **Detailed Operating Instructions** section (`{#details}`) on each instrument page, so a new working session can pick up the levelling work without re-reading every page. Last full assessment: **2026-07-20**, with `instron.md` reassessed **2026-07-29**. Re-run the assessment (read each page's detailed section against the rubric below) whenever a page's detailed section is substantially edited, and update the table and date.
 
 **The bar we are levelling to.** Every detailed section should be a useful training guide for the *common* tasks on that instrument — startup context, sample loading, the routine measurement/acquisition workflow, and saving/exporting results — with practical context and media where available. It should **reference specific manual sections or pages for deep dives rather than reproduce the manufacturer manual.** Page-level manual citations (for example "sample-prep guide p. 1.4") are the target; a bare list of whole-PDF links is the weaker fallback. A short worked example (a real run from start to result) is the mark of the strongest pages.
 
@@ -40,8 +40,9 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | Page | Score | State of the detailed section |
 | --- | --- | --- |
 | `ion-mill.md` | 5 | Exemplary and fully self-contained (no includes): concepts, polishing, slope cutting, startup/purge, loading, semi-auto and automated recipes, data. Richest media set. Remaining tasks are enhancement media, not content. |
-| `xrd.md` | 5 | Exemplary: loading, run a program, export workflow/formats, HighScore analysis, and a 7-step worked unknown-powder example. **Only page with true page-level manual citations.** Best structural model for the priority pages. |
+| `xrd.md` | 5 | Exemplary: loading, run a program, export workflow/formats, HighScore analysis, and a 7-step worked unknown-powder example. Has true page-level manual citations. Best structural model for the priority pages. |
 | `ftir.md` | 5 | Exemplary: per-sample-type loading (solid/powder/liquid), ATR cleaning, setup, background, and collection with on-demand MP4/WebM instruction. Links whole manuals (not page-cited) and points to in-software Help. |
+| `instron.md` | 5 | Levelled 2026-07-29. Hardware setup (load cell, fixtures, loading, extensometer) plus the full Bluehill half: operating-modes table, method setup, travel/transducer limits, an 11-step run walkthrough, save/export, and a 12-step worked tensile example. Page-cited to the in-repo 6800 operator guide and the fixture/extensometer guides. Three Bluehill screenshots published. **Remaining gap is the annotated example force-displacement curve** (staff media task); the curve is described in prose meanwhile. |
 | `optical.md` | 4 | Thorough with page-cited manuals (QRG p.11, app manual pp.52/63/106/112/132) and on-demand video; startup/loading remains concise and several acquisition videos remain on the staff checklist. |
 | `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. The workstation access handoff and default database/export conventions still need confirming; authentication details should remain in training or at the instrument. |
 | `uv-vis.md` | 4 | Good routine-absorbance EZ Spec workflow; needs confirmed method settings and process screenshots. Fluorescence remains staff-guided. Manual references are whole-PDF only. |
@@ -50,9 +51,8 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | `phenom-pure.md` | 4 | Solid; **cold-stage section is the most developed of any page.** Standard NavCam-to-LiveSEM imaging delegated to the shared include; generic loading media remain on the staff checklist. |
 | `sem.md` | 3 (hub) | Intentionally a hub with no operating walkthrough — startup/imaging/shutdown are delegated to the two Phenom pages. Strong science and shared sample-prep content. Do not add operation here. |
 | `hardness-tester.md` | 3 ⚠️ | **Priority.** Competent prose walkthrough (loading, focus, scale, run, patterns) but text-only, software-light, and the only linked manual is a marketing brochure for the wrong model (9100, not 5100G2). |
-| `instron.md` | 3 ⚠️ | **Priority.** Strong hardware setup (load cell, fixtures, extensometer) with real figures, but the Bluehill test-method/run half of the workflow is essentially absent from the detailed section. |
 
-**Best-practice exemplars to copy from:** `ion-mill.md`, `xrd.md`, `ftir.md`. When levelling another page, mirror their structure. For the two current priorities, `xrd.md` is the closest model — it shows the target shape: *run the routine measurement → save/export → a worked example → page-cited manual references for deep dives.*
+**Best-practice exemplars to copy from:** `ion-mill.md`, `xrd.md`, `ftir.md`, `instron.md`. When levelling another page, mirror their structure. `xrd.md` and `instron.md` both show the target shape: *run the routine measurement → save/export → a worked example → page-cited manual references for deep dives.* `instron.md` additionally demonstrates hosting the primary manual in-repo so page citations cannot rot.
 
 ### Priority Work: Hardness Tester
 
@@ -65,23 +65,26 @@ Current score 3. To reach 4-5, the detailed section needs:
 * A **worked example** reading a well-formed vs. poor Vickers/Rockwell indent (currently only on the staff checklist).
 * **Correct manuals:** replace the wrong-model Nemesis 9100 brochure with the Impressions software manual and the 5100G2 operator/reference manual, and cite sections. Confirm the exact available Rockwell/Vickers/Brinell scales and any lab limits, and add or link a conversion reference.
 
-### Priority Work: Instron
+### Completed: Instron Levelling (2026-07-29)
 
-Current score 3. The page is lopsided — hardware setup is strong, test execution is missing. To reach 4-5, the detailed section needs:
+The Instron detailed section was levelled from 3 to 5. What was added, for reference when levelling the hardness tester:
 
-* A **Bluehill Universal method walkthrough**: create/select from a template, enter sample dimensions, configure outputs (currently only referenced under Data/SOP, not walked through in the detailed section).
-* The **travel-limit prompt** and a **test-run walkthrough** (unlock / go / stop) written into the detailed section — currently these live only as SOP bullets.
-* **Shutdown / save / export** steps in the detailed section.
-* An **annotated example force-displacement (or stress-strain) curve** showing the stiff region, peak, and failure point.
-* **Bluehill screenshots** for the method screen, test screen, and travel-limit prompt; and **reshoot/standardize** the tensile (1 kN and 50 kN), compression, and flexure setup photos (figure blocks are already laid out and waiting).
-* Manuals are linked with good breadth but **not page-cited**; add "see section/page" pointers for grip torque, fixture changes, and extensometer setup.
+* A **two-halves framing** at the top of `{#details}` (build the load string, then set up and run in software), so the reader knows where they are in a long section.
+* An **operating-modes table** (DISABLED → SET UP → CAUTION → TESTING). This resolved a real documentation gap: the ~2-second CAUTION timeout explains the common "the machine won't start" failure and was previously undocumented on the page.
+* **Method setup, travel/transducer limits, the run sequence, and save/export** as first-class subsections, moving that content out of terse SOP bullets and into the training guide where the editorial model expects it.
+* **Page-level citations** to the 6800 operator guide, now hosted at `assets/img/tutorials/instron/6800-Dual-Column-Table-Model-Operator-Guide.pdf`, plus section-level pointers into the wedge-grip and extensometer guides.
+* Three **Bluehill screenshots** that were already in the repo but unreferenced. Two contained real student and course file names; they were cropped and, where a crop could not exclude the names without losing the instructional content, the name column was covered with a solid fill. Verify any future screenshot the same way before publishing.
+* Grip-technique detail that prevents bad data: 75% jaw-face coverage, centering in the load path, hand-tightening order, and the toe-in-the-curve symptom.
+
+Two content sources that were sitting unused and are worth checking for other instruments: `handouts/3.000 Instron Station .pdf` (a course station handout with a complete real-world run procedure) and the manufacturer manuals themselves, which are paginated and quotable rather than only linkable.
 
 ### Cross-Page Notes
 
 * Every page follows the same editorial pattern: quick reference above, `{#details}` training section below, manual links rather than manual replication. The main levelling axes are (a) page-level manual citations vs. whole-PDF links, (b) embedded media, and (c) a worked start-to-result example.
 * The SEM family shares content through `_includes/sem/` (notably `live-sem-workflow.md`, `data-and-analysis.md`, `common-failure-modes.md`). When judging or editing a Phenom page's detailed workflow, remember part of it lives in those includes, not the page.
-* Locally hosted manuals currently exist only for UV-Vis (Duetta/EZ Spec) and Raman (LabSpec 6 quick-start, AutoFocus, confocality tech note) under `assets/img/tutorials/`. Other instruments link manufacturer-hosted or Dropbox PDFs.
-* Media tasks recur across nearly every page (gloved re-shoots, annotated example results). They are consolidated in [`staff-todo.md`](staff-todo.md), align with Tier 3 improvement work in `../_staff/site-todo.md`, and are not launch blockers; missing *instruction text* on the two priority pages is the higher-value gap.
+* Locally hosted manuals currently exist for UV-Vis (Duetta/EZ Spec), Raman (LabSpec 6 quick-start, AutoFocus, confocality tech note), hardness (Impressions 4, Nemesis 5100G2), and Instron (6800 operator guide) under `assets/img/tutorials/`. Other instruments link manufacturer-hosted or Dropbox PDFs. Hosting the primary manual is preferred when a page relies on page-level citations, because a moved Dropbox link silently invalidates every citation.
+* **Screenshots of lab software often contain student names.** Bluehill's recent-method and sample lists, and equivalent file browsers on other instruments, show real user and course files. Check every screenshot before publishing and crop or redact as needed; see the Instron levelling note above for the approach used.
+* Media tasks recur across nearly every page (gloved re-shoots, annotated example results). They are consolidated in [`staff-todo.md`](staff-todo.md), align with Tier 3 improvement work in `../_staff/site-todo.md`, and are not launch blockers; missing *instruction text* on the remaining priority page is the higher-value gap.
 * Staff and maintainers should follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for capture quality, source handoff, processing, accessibility, performance budgets, and publication checks.
 
 ## Content Strategy

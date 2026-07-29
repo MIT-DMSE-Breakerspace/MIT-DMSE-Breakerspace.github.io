@@ -132,3 +132,30 @@ homepage-diamond-micrograph:
   webp_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.webp 400w, /assets/img/optimized/homepage-diamond-micrograph-800.webp 800w
   avif_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.avif 400w, /assets/img/optimized/homepage-diamond-micrograph-800.avif 800w
   sizes: "(max-width: 720px) 44vw, 155px"
+
+instron-bluehill-home:
+  width: 1080
+  height: 1881
+  fallback: /assets/img/optimized/instron-bluehill-home-540.jpg
+  jpeg_srcset: /assets/img/optimized/instron-bluehill-home-540.jpg 540w, /assets/img/optimized/instron-bluehill-home-1080.jpg 1080w
+  webp_srcset: /assets/img/optimized/instron-bluehill-home-540.webp 540w, /assets/img/optimized/instron-bluehill-home-1080.webp 1080w
+  avif_srcset: /assets/img/optimized/instron-bluehill-home-540.avif 540w, /assets/img/optimized/instron-bluehill-home-1080.avif 1080w
+  sizes: "(max-width: 720px) 100vw, 360px"
+
+instron-bluehill-method:
+  width: 1080
+  height: 1040
+  fallback: /assets/img/optimized/instron-bluehill-method-1080.jpg
+  jpeg_srcset: /assets/img/optimized/instron-bluehill-method-540.jpg 540w, /assets/img/optimized/instron-bluehill-method-1080.jpg 1080w
+  webp_srcset: /assets/img/optimized/instron-bluehill-method-540.webp 540w, /assets/img/optimized/instron-bluehill-method-1080.webp 1080w
+  avif_srcset: /assets/img/optimized/instron-bluehill-method-540.avif 540w, /assets/img/optimized/instron-bluehill-method-1080.avif 1080w
+  sizes: "(max-width: 720px) 100vw, 620px"
+
+instron-bluehill-test:
+  width: 1080
+  height: 600
+  fallback: /assets/img/optimized/instron-bluehill-test-1080.jpg
+  jpeg_srcset: /assets/img/optimized/instron-bluehill-test-540.jpg 540w, /assets/img/optimized/instron-bluehill-test-1080.jpg 1080w
+  webp_srcset: /assets/img/optimized/instron-bluehill-test-540.webp 540w, /assets/img/optimized/instron-bluehill-test-1080.webp 1080w
+  avif_srcset: /assets/img/optimized/instron-bluehill-test-540.avif 540w, /assets/img/optimized/instron-bluehill-test-1080.avif 1080w
+  sizes: "(max-width: 720px) 100vw, 620px"

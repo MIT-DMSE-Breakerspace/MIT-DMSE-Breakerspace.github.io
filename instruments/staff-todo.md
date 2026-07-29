@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-07-27
+Last reviewed: 2026-07-29
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -34,12 +34,17 @@ Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md)
 
 ## Instron 68TM-50 Universal Testing System
 
-* [ ] The setup diagrams and extensometer software screen are now embedded as captioned figures; reshoot/standardize those images and swap them into the existing figure blocks (the layout is ready).
-* [ ] Reshoot or standardize the setup photos for tensile (1 kN and 50 kN), compression, and flexure so each test type has a clear, consistent figure.
-* [ ] Add clean Bluehill Universal screenshots for the method screen, test screen, and travel-limit prompt.
-* [ ] Add an annotated example force-displacement (or stress-strain) curve showing the stiff region, peak, and failure point.
-* [ ] Confirm the operational safety guidance with staff: whether any Instron task should not be done alone, and whether heavy tooling calls for protective footwear or handling aids (tracked in the site to-do).
-* [ ] Add the pumpkin-compression results figure and, if useful, a labeled force-displacement curve from the event.
+The detailed operating instructions were levelled on 2026-07-29 (see the readiness table in [`readme.md`](readme.md)). Remaining items are media and staff verification.
+
+* [ ] **Add an annotated example force-displacement (or stress-strain) curve** showing the stiff region, yield, peak, and failure point. This is the last content gap on the page; the curve is currently described in prose under [reading a force-displacement curve](./instron.md#reading-curves) and a placeholder sentence sits at the end of the worked example. Remove that sentence when the figure lands.
+* [ ] Reshoot or standardize the setup photos for tensile (1 kN, 5 kN, and 50 kN), compression, and flexure so each test type has a clear, consistent figure. All five figure blocks are laid out and populated; this is a quality upgrade, not a gap.
+* [ ] Add a screenshot of the **travel-limit prompt** as it appears when starting a test. The method screen, test screen, and home screen are now published; the limit prompt is the one Bluehill screen still described only in prose.
+* [ ] Consider a short MP4/WebM of the unlock-then-start sequence, since the roughly two-second CAUTION window is hard to convey in text and is a common first-run stumble.
+* [ ] **Confirm the lab's default method names and export conventions.** The page deliberately describes method setup generically (templates, rate, end-of-test condition, operator inputs) because the actual saved method names on the workstation, the default save location, and any course-specific methods were not verified. Confirm these and make the [method](./instron.md#method) and [saving](./instron.md#saving) sections specific to this machine. Keep authentication details in training or at the instrument.
+* [ ] Confirm the **end-of-test condition** the lab recommends for a general tensile test to failure. The page cites the 3.000 coffee-bean method's 30% force-drop condition as an illustrative example, taken from `handouts/3.000 Instron Station .pdf`; a recommended default for independent users would be better.
+* [ ] Confirm whether **load-string preload** is genuinely staff-only, as the page now states. The 6800 guide documents the `Preload Grips` method (pp. 107–109) and the page directs users to ask staff rather than loosen lock nuts; confirm this matches lab policy.
+* [ ] Verify the **1 kN vs. 5 kN mini-grip capacity** language. The page's test-type table says "mini wedge grips, max load 1 kN" and the miniature-grips guide rates the 016 grip at 1 kN and the 017 at 2 kN; confirm which grip the lab actually has so the stated limit is right.
+* [ ] Add the pumpkin-compression results figure and, if useful, a labeled force-displacement curve from the event. (`assets/img/instron-pumpkin-results.jpg` exists and is used on the lounge and showcase pages but not on the instrument page.)
 * [ ] Confirm approved training samples for the exercises once the sample library is ready.
 
 ## SEMPrep 2 Broad Beam Ion Mill
