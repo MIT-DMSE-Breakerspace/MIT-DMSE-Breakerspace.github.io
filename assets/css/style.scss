@@ -47,6 +47,7 @@ main a {
 
 main a:hover,
 main a:focus-visible {
+  color: var(--color-link-hover);
   text-decoration-thickness: 0.14em;
 }
 
@@ -97,7 +98,8 @@ main .youtube-facade__trigger {
   text-decoration: none;
 }
 
-main .youtube-facade__trigger:hover {
+main .youtube-facade__trigger:hover,
+main .youtube-facade__trigger:focus-visible {
   color: #fff;
 }
 
@@ -338,7 +340,8 @@ main .youtube-facade__trigger:hover {
   text-decoration: none;
 }
 
-.teaching-summary-actions a:hover {
+.teaching-summary-actions a:hover,
+.teaching-summary-actions a:focus-visible {
   background: #eaf7fc;
   color: #005f7f;
 }
@@ -348,7 +351,8 @@ main .youtube-facade__trigger:hover {
   color: #17242a;
 }
 
-.teaching-summary-actions .teaching-contact-action:hover {
+.teaching-summary-actions .teaching-contact-action:hover,
+.teaching-summary-actions .teaching-contact-action:focus-visible {
   background: #fff;
   color: #007aa8;
 }
@@ -368,7 +372,8 @@ main .youtube-facade__trigger:hover {
   text-decoration: none;
 }
 
-.reservation-primary a:hover {
+.reservation-primary a:hover,
+.reservation-primary a:focus-visible {
   background: #fff;
   color: #007aa8;
 }
@@ -401,7 +406,7 @@ main table a {
 main table a:hover,
 main table a:focus-visible {
   background: #eaf7fc;
-  color: #005f7f;
+  color: var(--color-link-hover);
   text-decoration-thickness: 0.14em;
 }
 
@@ -1284,9 +1289,18 @@ main table a:focus-visible {
   }
 
   body.quick-guide-page .quick-guide-page-header a {
-    color: #17242a;
+    color: var(--color-link);
     font-size: 1rem;
     font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.16em;
+  }
+
+  body.quick-guide-page .quick-guide-page-header a:hover,
+  body.quick-guide-page .quick-guide-page-header a:focus-visible {
+    color: var(--color-link-hover);
+    text-decoration-thickness: 0.14em;
   }
 
   body.quick-guide-page .instrument-quick-guide {
