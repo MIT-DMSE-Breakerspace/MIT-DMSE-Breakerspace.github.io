@@ -32,3 +32,6 @@ node_modules/
 
 # Local Qualtrics exports contain internal survey metadata and are not site assets
 assets/survey/*.qsf
+
+# Local AI-assistant working notes; not site content and not for publication
+CLAUDE.md

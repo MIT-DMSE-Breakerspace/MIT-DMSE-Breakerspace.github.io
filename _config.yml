@@ -10,6 +10,7 @@ collections:
     permalink: /sample-library/:name/
 exclude:
   - README.md
+  - CLAUDE.md
   - assets/survey
   - assets/tools
   - assets/img/image-contest
