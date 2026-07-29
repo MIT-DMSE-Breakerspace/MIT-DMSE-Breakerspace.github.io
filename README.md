@@ -159,13 +159,13 @@ bundle exec jekyll build
 
 Safari may automatically expand the ZIP after downloading it. The importer accepts either the `.zip` file or the resulting export folder.
 
-The importer accepts schema version 1 for older snapshots and schema version 2 for reviewed
-microscopy settings. It rejects unexpected data fields and unsafe archive paths, verifies each
+The importer accepts schema versions 1 and 2 for older snapshots and schema version 3 for automatic
+microscope-image captions. It rejects unexpected data fields and unsafe archive paths, verifies each
 file's SHA-256 hash and size, generates `_samples/*.md`, and places public files under
-`assets/sample-library/`. Version 2 ties each microscopy record to its exported image and the sample
-page presents the selected values as “How This Image Was Captured.” Image assets are converted with
-macOS `sips` to quality-82 JPEGs bounded to 1,800 pixels. Full-resolution image sources remain in the
-internal application.
+`assets/sample-library/`. Version 3 carries the instrument name, observation mode, and calibrated
+field width directly on each generated microscope image. Image assets are converted with macOS
+`sips` to quality-82 JPEGs bounded to 1,800 pixels. Full-resolution image sources and all other
+parsed metadata remain in the internal application.
 
 Review the generated index, each detail page, the optimized images, and `git diff` before committing. Generated `_samples/` and `assets/sample-library/` directories carry marker files; the importer refuses to replace an unmarked directory.
 

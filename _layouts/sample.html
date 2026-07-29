@@ -76,6 +76,8 @@ layout: default
       <figcaption>
         {{ asset.caption }}
         {% if asset.instrument %}<span>Instrument: {{ asset.instrument }}</span>{% endif %}
+        {% if asset.observation_mode %}<span>Observation mode: {{ asset.observation_mode }}</span>{% endif %}
+        {% if asset.field_width %}<span>Field width: {{ asset.field_width }}</span>{% endif %}
       </figcaption>
     </figure>
   {% endfor %}
@@ -95,44 +97,6 @@ layout: default
   {% endfor %}
   </ul>
   {% endif %}
-</section>
-{% endif %}
-
-{% if page.microscopy %}
-<section class="sample-page-section" aria-labelledby="microscopy-heading">
-  <h2 id="microscopy-heading">How This Image Was Captured</h2>
-  <p class="sample-section-intro">Use these reviewed microscope settings as a starting point when imaging a similar sample.</p>
-  <div class="sample-capture-list">
-  {% for capture in page.microscopy %}
-    {% assign capture_assets = page.assets | where: "asset_id", capture.asset_id %}
-    {% assign capture_asset = capture_assets | first %}
-    <article class="sample-capture">
-      <h3>
-        {% if capture_asset %}
-        <a href="#asset-{{ capture.asset_id }}">Settings for {{ capture_asset.caption }}</a>
-        {% else %}
-        Microscope capture
-        {% endif %}
-      </h3>
-      {% assign field_groups = capture.fields | group_by: "group" %}
-      <div class="sample-capture-groups">
-      {% for field_group in field_groups %}
-        <section>
-          <h4>{{ field_group.name }}</h4>
-          <dl class="sample-capture-fields">
-          {% for field in field_group.items %}
-            <div>
-              <dt>{{ field.label }}</dt>
-              <dd>{{ field.value }}</dd>
-            </div>
-          {% endfor %}
-          </dl>
-        </section>
-      {% endfor %}
-      </div>
-    </article>
-  {% endfor %}
-  </div>
 </section>
 {% endif %}
 
