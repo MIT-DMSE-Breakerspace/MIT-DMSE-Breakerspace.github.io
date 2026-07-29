@@ -95,7 +95,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 * Enter your sample dimensions for this specimen.
 * When prompted, set travel limits so the crosshead and fixtures cannot collide with anything (see [set travel and transducer limits](#limits)).
 * Jog the crosshead into position, press **zero displacement**, and balance the force reading.
-* On the testing page, press **unlock** then **go** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) in quick succession to start. The ready-to-test window lasts about two seconds.
+* On the testing page, press **unlock** then **start** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) in quick succession. The ready-to-test window lasts about two seconds.
 * The test ends when the sample fails. To stop early, press **stop** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG).
 * When every specimen is done, select **Finish sample** to save the sample.
 
@@ -123,6 +123,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 | Test | What it measures | Typical setup |
 | --- | --- | --- |
 | Tensile (small/weak samples) | Strength and stretch under pulling | Mini wedge grips, max load 1 kN |
+| Tensile (intermediate loads) | Strength and stretch under pulling | 5 kN tensile grips on the 5 kN load cell, max load 5 kN |
 | Tensile (standard) | Strength and stretch under pulling | Wedge grips, up to 50 kN |
 | Compression | Response under squeezing | Compression platens on the 50 kN head |
 | Flexure | Bending strength and stiffness | Flexure fixture on the 5 kN head |
@@ -135,7 +136,7 @@ The sections above are a quick reference for trained users. The sections below a
 
 A complete test has two halves. First you build the **load string** — the load cell, adapters, grips or fixtures, and your sample — which is the hardware half covered under [load cell](#load-cell) through [video extensometer](#extensometer). Then you set up and run the test in **Bluehill Universal**, covered under [Bluehill orientation](#bluehill) through [saving and exporting](#saving). Names in **bold** are the on-screen buttons and screens in Bluehill, or the labeled controls on the frame and handset.
 
-Page references point into the [6800 operator guide](#manuals) hosted on this page and the fixture guides linked there.
+Page references point into Instron's [6800 operator guide](#manuals) and the fixture guides linked there.
 
 ### Load Cell {#load-cell}
 
@@ -144,7 +145,7 @@ Page references point into the [6800 operator guide](#manuals) hosted on this pa
 * To install the 5 kN cell, insert its thin end into the bottom of the 50 kN cell, push a clevis pin through both, and attach the safety clip. Rotate the metal ring clockwise until tight.
 * When using the 5 kN cell, plug its connector into the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG). Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) as you insert it; this connector can take several tries.
 
-Two rules matter more than the mechanics. The load cell you plug in is the one Bluehill reads, so a 5 kN cell that is bolted on but not connected produces force readings from the 50 kN cell and a curve that looks far too flat. And the expected test load must not exceed the rating of *any* component in the load string — frame, load cell, adapters, or grips — not just the weakest one you happened to think about. *(6800 operator guide, load string and load-cell selection, pp. 79–81; installation, pp. 82–99.)*
+Two rules matter more than the mechanics. The load cell connected to the designated force-transducer port is the one Bluehill reads. If the 5 kN cell is installed but not connected, Bluehill continues reading the 50 kN cell. A correctly calibrated 50 kN cell should not systematically change the force value, but it provides poorer resolution for a low-force test; connect the intended cell and verify the active transducer before testing. And the expected test load must not exceed the rating of *any* component in the load string — frame, load cell, adapters, or grips. *(6800 operator guide, load string and load-cell selection, pp. 79–81; installation, pp. 82–99.)*
 
 If the frame has been off, let the load cell warm up for about 20 minutes before you rely on the readings. *(6800 operator guide, p. 113, step 9.)*
 
@@ -163,11 +164,6 @@ Each test type uses a different fixture arrangement. The annotated setups below 
 <figure class="page-figure" style="max-width:32rem;">
   <img src="../assets/img/tutorials/instron/FIXED_1kN_set_up.jpg" alt="Instron tensile setup using mini wedge grips for low-force testing, rated to a maximum load of 1 kN." width="3024" height="4032" loading="lazy">
   <figcaption>Tensile testing with mini wedge grips (max load 1 kN).</figcaption>
-</figure>
-
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_5_kN_tensile_set_up.JPG" alt="Instron 5 kN tensile setup, labeling the 50 kN load cell left unplugged, the 5 kN load cell plugged in, the clevis pin and safety pin, the D-to-O adaptors, the metal rings to tighten, and the mini wedge grips." width="3024" height="4032" loading="lazy">
-  <figcaption>Tensile testing on the 5 kN load cell. Note the labels: the 50 kN cell stays mounted but <em>unplugged</em>, and the 5 kN cell is the one connected.</figcaption>
 </figure>
 
 <figure class="page-figure" style="max-width:32rem;">
@@ -330,17 +326,17 @@ Wear safety glasses for mechanical testing, and use a shield or screen when test
 This walkthrough ties the sections above together for the most common test on this machine: pulling a small polymer or 3D-printed coupon to failure.
 
 1. **Plan the load.** A coupon 10 mm wide and 3 mm thick, in a material of roughly 40 MPa tensile strength, needs about 40 MPa × 30 mm² ≈ 1.2 kN to break. That is comfortably inside the 5 kN cell and only about 2% of the 50 kN cell's range, so choose the **5 kN load cell** for better resolution. *(6800 operator guide, load-cell selection worked calculation, p. 80.)*
-2. **Build the load string.** Install the 5 kN cell below the 50 kN cell with a clevis pin and safety clip, and **plug its connector in** — the labeled [5 kN setup photo](#setup-diagrams) shows the 50 kN cell mounted but unplugged. Install the mini wedge grips above and below. Confirm the frame reads **DISABLED** while you work.
+2. **Build the load string.** Install the 5 kN cell below the 50 kN cell with a clevis pin and safety clip, and **plug its connector in**. Install the distinct **5 kN tensile grips** above and below; do not use the 1 kN mini wedge grips for this example. Confirm the frame reads **DISABLED** while you work.
 3. **Mark the sample, if measuring strain.** Using the jig, apply two 3 mm white dots at a known gauge length. Let the ink dry and check the dots are round and opaque.
 4. **Load the coupon.** Open the jaw faces, insert the coupon so it engages the full face length and at least 75% of it, center it in line with the load path, and hand-tighten the lower then upper control nut. Keep fingers clear of the jaw gap.
 5. **Select the method.** Click **Test**, then a tension method — either a saved one with your dimension inputs and a force-drop end condition, or **Run a QuickTest** for a first curve with no calculated properties.
 6. **Enter dimensions.** Type this specimen's measured width (10 mm) and thickness (3 mm) so the software can produce stress-strain rather than force-displacement alone.
-7. **Set limits.** Set the upper travel stop just above the extension you expect plus about 3 mm, the lower stop just below the starting position, and a force limit near the 5 kN cell's rating.
+7. **Set limits.** Set the upper travel stop just above the extension you expect plus about 3 mm, the lower stop just below the starting position, and the force limit no higher than the 5 kN rating of the grips and load cell (or lower if another component in the load string has a lower rating).
 8. **Zero and balance.** Jog until the coupon is just taken up with no slack, press **zero displacement** until it lights green, then balance the force reading to zero.
 9. **Run it.** Confirm the area is clear, press **unlock** then **start** in quick succession, and watch the sample as the curve builds.
 10. **Read the curve as it happens.** Force rises steeply and nearly straight while the coupon stretches elastically — that slope is stiffness. The curve then bends over as the material yields, reaches a peak, and drops when the coupon breaks. The moment you hear or see the break should line up with the drop on screen.
 11. **Finish and export.** Remove both pieces, press **unlock** then **return**, and repeat for the remaining specimens — at least three, because single results are not meaningful. Select **Finish sample**, export the raw data and results, and copy them to your own storage.
-12. **Sanity-check before you trust it.** A soft, curved toe at the start of the curve usually means slack or slipping grips rather than real compliance, so re-seat and re-run if you see one. Breaks repeatedly at the jaw face point to a gripping problem, not the material's true strength. Compare your peak stress against a published value for the material: agreement within a modest margin suggests the setup was sound, while a result several times off usually means a dimension entry error or the wrong load cell. See [common failure modes](#failures).
+12. **Sanity-check before you trust it.** A soft, curved toe at the start of the curve usually means slack or slipping grips rather than real compliance, so re-seat and re-run if you see one. Breaks repeatedly at the jaw face point to a gripping problem, not the material's true strength. Compare your peak stress against a published value for the material: agreement within a modest margin suggests the setup was sound, while a result several times off usually means a dimension or unit-entry error, grip slip, misalignment, or a calculation problem. Using a higher-capacity load cell mainly reduces resolution at low force; it should not multiply a correctly calibrated force reading. See [common failure modes](#failures).
 
 An annotated example curve marking the stiff region, peak, and failure point is on the staff media checklist and will be added here once a reviewed example is available.
 
@@ -373,21 +369,21 @@ A curve that starts with a soft, curved "toe" before stiffening is usually repor
 | Video extensometer does not work | It is not actually on | Confirm the red light is lit; press the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button again if not. |
 | Extensometer loses the dots mid-test | Marks too small, low contrast, smudged, or stretched out of view | Use 2-4 mm dots in a contrasting color (white usually reads best), let the ink dry, and check they are round and opaque before testing. See [video extensometer](#extensometer). |
 | Load cell connector will not seat | Side clips not pushed in | Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) while inserting; it can take several tries. |
-| Forces read far too low, or the curve looks unexpectedly flat | The 5 kN cell is mounted but not plugged in, so the 50 kN cell is being read | Confirm the intended load cell is connected to the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG); see the labeled [5 kN setup photo](#setup-diagrams). |
+| Low-force readings are noisy or lack the expected resolution | The higher-capacity 50 kN cell is active instead of the 5 kN cell | Confirm the intended load cell is connected to the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG) and verify the active transducer in Bluehill before testing. |
 | Test will not start even though the frame is enabled | The two-second ready-to-test window expired | Press **unlock** then **start** in quick succession. See [operating modes](#bluehill). |
 | Software will not start a test, or the hand controller is unresponsive; disabled light is blinking | Emergency stop is engaged | Hold the red emergency button and turn it clockwise about 15 degrees until it pops up, then press **unlock**. |
 | Software will not start a test; disabled light is lit but not blinking | Machine is in disabled mode | Press [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller to enter setup mode. |
 | Test stops early with no failure, or the crosshead will not move | A travel limit or software transducer limit tripped | Jog the crosshead in the direction that removes the condition. See [set travel and transducer limits](#limits). |
-| Force-displacement curve looks wrong | Loose attachments | Confirm every attachment is tight; gently shake the setup, which should not move at all. |
+| Force-displacement curve looks wrong | Loose attachments | With the frame **DISABLED**, the crosshead stationary, and the load fully relieved, check each attachment by hand; nothing should move. Never touch or adjust the load string while the frame is enabled or loaded. |
 | Curve starts with a soft, curved toe | Slack in the setup or grips slipping before they bite | Take up the slack before zeroing displacement, seat the sample deeper in the jaw faces, and re-run. See [loading a sample](#loading). |
 | Sample keeps breaking right at the grip face | Grip pressure, grip type, or serrations biting too hard | Loosen the grips slightly, try a different grip type, or ask staff about finer serrations or masking tape to soften the bite. |
 | Readings drift or will not settle at zero | Load cell not warmed up, or force not balanced | Allow about 20 minutes of warm-up after the frame is switched on, then balance the force reading with no load applied. |
 
 ## Manufacturer Manuals {#manuals}
 
-The manual that matters most for operation is the **6800 Dual Column Table Model operator guide**, which covers the frame, handset, operating modes, load string, limits, and the full test procedure. It is hosted here, and the page references throughout this page point into it.
+The manual that matters most for operation is the **6800 Dual Column Table Model operator guide**, which covers the frame, handset, operating modes, load string, limits, and the full test procedure. It is published by Instron, and the page references throughout this page point into it.
 
-* [6800 Dual Column Table Model operator guide](../assets/img/tutorials/instron/6800-Dual-Column-Table-Model-Operator-Guide.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
+* [6800 Dual Column Table Model operator guide](https://www.instron.com/-/media/literature-library/manuals/6800-series/6800-dual-column-table-model-operator-guide.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
 
 Fixture and accessory guides, for grip-specific and fixture-specific detail:
 
