@@ -13,15 +13,20 @@ class ImportError < StandardError; end
 
 ROOT = File.expand_path(ENV.fetch("SAMPLE_LIBRARY_SITE_ROOT", File.expand_path("..", __dir__)))
 IMAGE_EXTENSIONS = %w[.bmp .jpeg .jpg .png .tif .tiff .webp].freeze
-SUPPORTED_SCHEMA_VERSIONS = [1, 2].freeze
+SUPPORTED_SCHEMA_VERSIONS = [1, 2, 3].freeze
 ROOT_KEYS = %w[schemaVersion exportId generatedAt samples].freeze
 SAMPLE_KEYS = {
   1 => %w[publicId updatedAt fields availability specimens assets],
-  2 => %w[publicId updatedAt fields availability specimens assets microscopy]
+  2 => %w[publicId updatedAt fields availability specimens assets microscopy],
+  3 => %w[publicId updatedAt fields availability specimens assets]
 }.freeze
 FIELD_KEYS = %w[name description materialClass composition physicalForm provenance preparationNotes handlingNotes storageRequirements].freeze
 SPECIMEN_KEYS = %w[labelId status location].freeze
-ASSET_KEYS = %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes].freeze
+ASSET_KEYS = {
+  1 => %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes],
+  2 => %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes],
+  3 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth sha256 sizeBytes]
+}.freeze
 MICROSCOPY_KEYS = %w[assetId fields].freeze
 MICROSCOPY_FIELD_DEFINITIONS = {
   "instrumentModel" => ["instrument-model", "Instrument", "Equipment"],
@@ -117,28 +122,6 @@ def humanize(value)
   value.split("-").map(&:capitalize).join(" ")
 end
 
-def microscopy_front_matter(sample)
-  sample.fetch("microscopy", []).map do |capture|
-    fields = capture.fetch("fields")
-    public_fields = MICROSCOPY_FIELD_DEFINITIONS.each_with_object([]) do |(manifest_key, definition), output|
-      value = optional_string(fields, manifest_key, "microscopy fields")
-      next unless value
-
-      key, label, group = definition
-      output << {
-        "key" => key,
-        "label" => label,
-        "group" => group,
-        "value" => value
-      }
-    end
-    {
-      "asset_id" => required_string(capture, "assetId", "microscopy capture"),
-      "fields" => public_fields
-    }
-  end
-end
-
 def write_sample_document(directory, manifest, sample, assets)
   fields = sample.fetch("fields")
   name = required_string(fields, "name", "sample fields")
@@ -146,8 +129,6 @@ def write_sample_document(directory, manifest, sample, assets)
   public_id = required_string(sample, "publicId", "sample")
   slug = public_id.downcase
   fail_import("Invalid public sample ID: #{public_id}") unless slug.match?(/\A[a-z0-9][a-z0-9-]*\z/)
-  microscopy = microscopy_front_matter(sample)
-
   front_matter = {
     "layout" => "sample",
     "title" => name,
@@ -170,7 +151,6 @@ def write_sample_document(directory, manifest, sample, assets)
       }
     end,
     "assets" => assets,
-    "microscopy" => microscopy.empty? ? nil : microscopy,
     "source_updated_at" => required_string(sample, "updatedAt", "sample"),
     "publication_export_id" => manifest.fetch("exportId"),
     "publication_generated_at" => manifest.fetch("generatedAt")
@@ -201,9 +181,23 @@ def validate_manifest(manifest)
     fail_import("#{context}.specimens must be an array") unless sample["specimens"].is_a?(Array)
     fail_import("#{context}.assets must be an array") unless sample["assets"].is_a?(Array)
     sample["specimens"].each { |item| check_keys(item, SPECIMEN_KEYS, "#{context}.specimen") }
-    sample["assets"].each { |item| check_keys(item, ASSET_KEYS, "#{context}.asset") }
+    sample["assets"].each do |asset|
+      asset_context = "#{context}.asset"
+      check_keys(asset, ASSET_KEYS.fetch(schema_version), asset_context)
+      next unless schema_version == 3
 
-    next if schema_version == 1
+      instrument = optional_string(asset, "instrument", asset_context)
+      observation_mode = optional_string(asset, "observationMode", asset_context)
+      field_width = optional_string(asset, "fieldWidth", asset_context)
+      next unless observation_mode || field_width
+
+      fail_import("#{asset_context} microscope metadata must include instrument, observationMode, and fieldWidth") unless instrument && observation_mode && field_width
+      content_type = required_string(asset, "contentType", asset_context)
+      package_path = required_string(asset, "packagePath", asset_context)
+      fail_import("#{asset_context} microscope metadata must describe an image") unless image_asset?(content_type, package_path)
+    end
+
+    next unless schema_version == 2
 
     fail_import("#{context}.microscopy must be an array") unless sample["microscopy"].is_a?(Array)
     asset_ids = sample["assets"].to_h do |asset|
@@ -324,6 +318,8 @@ begin
       kind = required_string(asset, "kind", context)
       caption = required_string(asset, "caption", context)
       instrument = optional_string(asset, "instrument", context)
+      observation_mode = optional_string(asset, "observationMode", context)
+      field_width = optional_string(asset, "fieldWidth", context)
 
       if image_asset?(content_type, source)
         filename = "#{asset_id}.jpg"
@@ -336,6 +332,8 @@ begin
           "kind_label" => humanize(kind),
           "caption" => caption,
           "instrument" => instrument,
+          "observation_mode" => observation_mode,
+          "field_width" => field_width,
           "is_image" => true,
           "content_type" => "image/jpeg",
           "width" => width,
