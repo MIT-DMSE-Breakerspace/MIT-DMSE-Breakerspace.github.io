@@ -83,6 +83,14 @@ layout: default
         {% if asset.spectral_range %}<span>Spectral range: {{ asset.spectral_range }}</span>{% endif %}
         {% if asset.resolution %}<span>Resolution: {{ asset.resolution }}</span>{% endif %}
         {% if asset.scan_summary %}<span>Scans: {{ asset.scan_summary }}</span>{% endif %}
+        {% if asset.x_axis %}<span>X axis: {{ asset.x_axis }}</span>{% endif %}
+        {% if asset.y_axis %}<span>Y axis: {{ asset.y_axis }}</span>{% endif %}
+        {% if asset.radiation %}<span>Radiation: {{ asset.radiation }}</span>{% endif %}
+        {% if asset.scan_range %}<span>Scan range: {{ asset.scan_range }}</span>{% endif %}
+        {% if asset.step_size %}<span>Step size: {{ asset.step_size }}</span>{% endif %}
+        {% if asset.counting_time %}<span>Counting time: {{ asset.counting_time }}</span>{% endif %}
+        {% if asset.tube_conditions %}<span>Tube conditions: {{ asset.tube_conditions }}</span>{% endif %}
+        {% if asset.point_count %}<span>Data points: {{ asset.point_count }}</span>{% endif %}
       </figcaption>
     </figure>
   {% endfor %}
