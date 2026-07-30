@@ -63,6 +63,12 @@ layout: default
 
 {% assign image_assets = page.assets | where: "is_image", true %}
 {% assign file_assets = page.assets | where: "is_image", false %}
+{% assign standalone_file_count = 0 %}
+{% for asset in file_assets %}
+  {% unless asset.is_related_download %}
+    {% assign standalone_file_count = standalone_file_count | plus: 1 %}
+  {% endunless %}
+{% endfor %}
 {% if image_assets.size > 0 or file_assets.size > 0 %}
 <section class="sample-page-section" aria-labelledby="characterization-heading">
   <h2 id="characterization-heading">Images And Characterization</h2>
@@ -91,15 +97,22 @@ layout: default
         {% if asset.counting_time %}<span>Counting time: {{ asset.counting_time }}</span>{% endif %}
         {% if asset.tube_conditions %}<span>Tube conditions: {{ asset.tube_conditions }}</span>{% endif %}
         {% if asset.point_count %}<span>Data points: {{ asset.point_count }}</span>{% endif %}
+        {% if asset.related_download_asset_id %}
+          {% assign related_download = page.assets | where: "asset_id", asset.related_download_asset_id | first %}
+          {% if related_download %}
+            <span class="sample-related-download"><a href="{{ related_download.url | relative_url }}" download>Download spectrum data (JCAMP-DX)</a></span>
+          {% endif %}
+        {% endif %}
       </figcaption>
     </figure>
   {% endfor %}
   </div>
   {% endif %}
 
-  {% if file_assets.size > 0 %}
+  {% if standalone_file_count > 0 %}
   <ul class="sample-file-list">
   {% for asset in file_assets %}
+    {% unless asset.is_related_download %}
     <li>
       <div>
         <strong>{{ asset.caption }}</strong>
@@ -107,6 +120,7 @@ layout: default
       </div>
       <a href="{{ asset.url | relative_url }}" download>Download {{ asset.kind_label }}</a>
     </li>
+    {% endunless %}
   {% endfor %}
   </ul>
   {% endif %}

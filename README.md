@@ -163,8 +163,9 @@ bundle exec script/cibuild
 Safari may automatically expand the ZIP after downloading it. The importer accepts either the `.zip` file or the resulting export folder.
 
 The importer accepts schema versions 1 and 2 for older snapshots, schema version 3 for automatic
-microscope-image captions, schema version 4 for FTIR spectrum previews, and schema version 5 for
-XRD diffraction previews. It rejects unexpected
+microscope-image captions, schema version 4 for FTIR spectrum previews, schema version 5 for XRD
+diffraction previews, and schema version 6 for explicit preview-to-download relationships. It
+rejects unexpected
 data fields and unsafe archive paths, verifies each file's SHA-256 hash and size, generates
 `_samples/*.md`, and places public files under `assets/sample-library/`. Version 3 carries the
 instrument name, observation mode, and calibrated field width directly on each generated microscope
@@ -172,8 +173,10 @@ image. Version 4 adds a generated FTIR spectrum image with the instrument, confi
 mode/accessory, signal, spectral range, and available resolution and scan counts; the sanitized
 JCAMP-DX remains a separate download. Version 5 adds the generated XRD preview with axis definitions,
 radiation and wavelength, scan range and step, counting time, tube conditions, and point count; the
-sanitized raw coordinate/count CSV remains a separate download. Image assets are converted with
-macOS `sips` to JPEGs bounded
+sanitized raw coordinate/count CSV remains a separate download. Version 6 retains the XRD fields and
+relates the JCAMP-DX download to its FTIR preview so the sample page can keep a compact download link
+with the plot while preserving independent publication controls for both assets. Image assets are
+converted with macOS `sips` to JPEGs bounded
 to 1,800 pixels and 1 MiB, reducing quality from 82 only when needed.
 Identical exported asset IDs are consolidated into one public image. Full-resolution image sources
 and all other parsed metadata remain in the internal application.

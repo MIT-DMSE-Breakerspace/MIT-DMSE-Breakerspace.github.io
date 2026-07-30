@@ -15,14 +15,15 @@ ROOT = File.expand_path(ENV.fetch("SAMPLE_LIBRARY_SITE_ROOT", File.expand_path("
 IMAGE_EXTENSIONS = %w[.bmp .jpeg .jpg .png .tif .tiff .webp].freeze
 JPEG_QUALITIES = [82, 78, 74, 70, 65, 60, 55, 50].freeze
 SAMPLE_LIBRARY_IMAGE_MAX_BYTES = 1024 * 1024
-SUPPORTED_SCHEMA_VERSIONS = [1, 2, 3, 4, 5].freeze
+SUPPORTED_SCHEMA_VERSIONS = [1, 2, 3, 4, 5, 6].freeze
 ROOT_KEYS = %w[schemaVersion exportId generatedAt samples].freeze
 SAMPLE_KEYS = {
   1 => %w[publicId updatedAt fields availability specimens assets],
   2 => %w[publicId updatedAt fields availability specimens assets microscopy],
   3 => %w[publicId updatedAt fields availability specimens assets],
   4 => %w[publicId updatedAt fields availability specimens assets],
-  5 => %w[publicId updatedAt fields availability specimens assets]
+  5 => %w[publicId updatedAt fields availability specimens assets],
+  6 => %w[publicId updatedAt fields availability specimens assets]
 }.freeze
 FIELD_KEYS = %w[name description materialClass composition physicalForm provenance preparationNotes handlingNotes storageRequirements].freeze
 SPECIMEN_KEYS = %w[labelId status location].freeze
@@ -31,7 +32,8 @@ ASSET_KEYS = {
   2 => %w[assetId packagePath contentType kind caption instrument sha256 sizeBytes],
   3 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth sha256 sizeBytes],
   4 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth samplingMode signal spectralRange resolution scanSummary sha256 sizeBytes],
-  5 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth samplingMode signal spectralRange resolution scanSummary xAxis yAxis radiation scanRange stepSize countingTime tubeConditions pointCount sha256 sizeBytes]
+  5 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth samplingMode signal spectralRange resolution scanSummary xAxis yAxis radiation scanRange stepSize countingTime tubeConditions pointCount sha256 sizeBytes],
+  6 => %w[assetId packagePath contentType kind caption instrument observationMode fieldWidth samplingMode signal spectralRange resolution scanSummary xAxis yAxis radiation scanRange stepSize countingTime tubeConditions pointCount relatedDownloadAssetId sha256 sizeBytes]
 }.freeze
 MICROSCOPY_KEYS = %w[assetId fields].freeze
 MICROSCOPY_FIELD_DEFINITIONS = {
@@ -216,10 +218,13 @@ def validate_manifest(manifest)
     fail_import("#{context}.specimens must be an array") unless sample["specimens"].is_a?(Array)
     fail_import("#{context}.assets must be an array") unless sample["assets"].is_a?(Array)
     sample["specimens"].each { |item| check_keys(item, SPECIMEN_KEYS, "#{context}.specimen") }
+    asset_ids = sample["assets"].to_h do |asset|
+      [required_string(asset, "assetId", "#{context}.asset"), asset]
+    end
     sample["assets"].each do |asset|
       asset_context = "#{context}.asset"
       check_keys(asset, ASSET_KEYS.fetch(schema_version), asset_context)
-      next unless [3, 4, 5].include?(schema_version)
+      next unless [3, 4, 5, 6].include?(schema_version)
 
       instrument = optional_string(asset, "instrument", asset_context)
       observation_mode = optional_string(asset, "observationMode", asset_context)
@@ -231,7 +236,7 @@ def validate_manifest(manifest)
         fail_import("#{asset_context} microscope metadata must describe an image") unless image_asset?(content_type, package_path)
       end
 
-      if [4, 5].include?(schema_version)
+      if [4, 5, 6].include?(schema_version)
         sampling_mode = optional_string(asset, "samplingMode", asset_context)
         signal = optional_string(asset, "signal", asset_context)
         spectral_range = optional_string(asset, "spectralRange", asset_context)
@@ -243,31 +248,53 @@ def validate_manifest(manifest)
         end
       end
 
-      next unless schema_version == 5
+      if [5, 6].include?(schema_version)
+        x_axis = optional_string(asset, "xAxis", asset_context)
+        y_axis = optional_string(asset, "yAxis", asset_context)
+        radiation = optional_string(asset, "radiation", asset_context)
+        scan_range = optional_string(asset, "scanRange", asset_context)
+        step_size = optional_string(asset, "stepSize", asset_context)
+        counting_time = optional_string(asset, "countingTime", asset_context)
+        tube_conditions = optional_string(asset, "tubeConditions", asset_context)
+        point_count = optional_string(asset, "pointCount", asset_context)
+        xrd_metadata = [
+          x_axis,
+          y_axis,
+          radiation,
+          scan_range,
+          step_size,
+          counting_time,
+          tube_conditions,
+          point_count
+        ]
+        if xrd_metadata.any?
+          fail_import("#{asset_context} XRD metadata must include instrument, xAxis, yAxis, radiation, scanRange, stepSize, countingTime, tubeConditions, and pointCount") unless instrument && xrd_metadata.all?
+          fail_import("#{asset_context} XRD metadata must use diffraction-pattern kind") unless required_string(asset, "kind", asset_context) == "diffraction-pattern"
+          fail_import("#{asset_context} XRD metadata must describe an image") unless image_asset?(content_type, package_path)
+        end
+      end
 
-      x_axis = optional_string(asset, "xAxis", asset_context)
-      y_axis = optional_string(asset, "yAxis", asset_context)
-      radiation = optional_string(asset, "radiation", asset_context)
-      scan_range = optional_string(asset, "scanRange", asset_context)
-      step_size = optional_string(asset, "stepSize", asset_context)
-      counting_time = optional_string(asset, "countingTime", asset_context)
-      tube_conditions = optional_string(asset, "tubeConditions", asset_context)
-      point_count = optional_string(asset, "pointCount", asset_context)
-      xrd_metadata = [
-        x_axis,
-        y_axis,
-        radiation,
-        scan_range,
-        step_size,
-        counting_time,
-        tube_conditions,
-        point_count
-      ]
-      next unless xrd_metadata.any?
+      next unless schema_version == 6
 
-      fail_import("#{asset_context} XRD metadata must include instrument, xAxis, yAxis, radiation, scanRange, stepSize, countingTime, tubeConditions, and pointCount") unless instrument && xrd_metadata.all?
-      fail_import("#{asset_context} XRD metadata must use diffraction-pattern kind") unless required_string(asset, "kind", asset_context) == "diffraction-pattern"
-      fail_import("#{asset_context} XRD metadata must describe an image") unless image_asset?(content_type, package_path)
+      related_download_asset_id = optional_string(asset, "relatedDownloadAssetId", asset_context)
+      next unless related_download_asset_id
+
+      fail_import("#{asset_context}.relatedDownloadAssetId must be on an FTIR spectrum image") unless
+        required_string(asset, "kind", asset_context) == "spectrum" &&
+        image_asset?(content_type, package_path) &&
+        instrument && sampling_mode && signal && spectral_range
+      related_download = asset_ids[related_download_asset_id]
+      fail_import("#{asset_context}.relatedDownloadAssetId does not reference a public asset") unless related_download
+      related_content_type = required_string(related_download, "contentType", "#{asset_context}.relatedDownload")
+      related_package_path = required_string(related_download, "packagePath", "#{asset_context}.relatedDownload")
+      related_kind = required_string(related_download, "kind", "#{asset_context}.relatedDownload")
+      related_extension = File.extname(related_package_path).downcase
+      valid_jcamp_download =
+        related_kind == "spectrum" &&
+        related_content_type == "chemical/x-jcamp-dx" &&
+        %w[.jdx .dx].include?(related_extension) &&
+        !image_asset?(related_content_type, related_package_path)
+      fail_import("#{asset_context}.relatedDownloadAssetId must reference a JCAMP-DX spectrum") unless valid_jcamp_download
     end
 
     next unless schema_version == 2
@@ -374,6 +401,10 @@ begin
     slug = public_id.downcase
     sample_asset_directory = File.join(generated_assets, slug)
     FileUtils.mkdir_p(sample_asset_directory)
+    related_download_asset_ids = sample.fetch("assets").each_with_object([]) do |asset, ids|
+      related_id = optional_string(asset, "relatedDownloadAssetId", "asset #{asset['assetId']}")
+      ids << related_id if related_id
+    end
 
     public_assets = deduplicate_assets(sample.fetch("assets")).map do |asset|
       context = "asset #{asset['assetId']}"
@@ -406,6 +437,7 @@ begin
       counting_time = optional_string(asset, "countingTime", context)
       tube_conditions = optional_string(asset, "tubeConditions", context)
       point_count = optional_string(asset, "pointCount", context)
+      related_download_asset_id = optional_string(asset, "relatedDownloadAssetId", context)
 
       if image_asset?(content_type, source)
         filename = "#{asset_id}.jpg"
@@ -433,6 +465,7 @@ begin
           "counting_time" => counting_time,
           "tube_conditions" => tube_conditions,
           "point_count" => point_count,
+          "related_download_asset_id" => related_download_asset_id,
           "is_image" => true,
           "content_type" => "image/jpeg",
           "width" => width,
@@ -450,6 +483,7 @@ begin
           "kind_label" => humanize(kind),
           "caption" => caption,
           "instrument" => instrument,
+          "is_related_download" => related_download_asset_ids.include?(asset_id) ? true : nil,
           "is_image" => false,
           "content_type" => content_type
         }.compact
