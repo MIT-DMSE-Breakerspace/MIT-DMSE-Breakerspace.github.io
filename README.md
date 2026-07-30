@@ -162,12 +162,15 @@ bundle exec script/cibuild
 
 Safari may automatically expand the ZIP after downloading it. The importer accepts either the `.zip` file or the resulting export folder.
 
-The importer accepts schema versions 1 and 2 for older snapshots and schema version 3 for automatic
-microscope-image captions. It rejects unexpected data fields and unsafe archive paths, verifies each
-file's SHA-256 hash and size, generates `_samples/*.md`, and places public files under
-`assets/sample-library/`. Version 3 carries the instrument name, observation mode, and calibrated
-field width directly on each generated microscope image. Image assets are converted with macOS
-`sips` to JPEGs bounded to 1,800 pixels and 1 MiB, reducing quality from 82 only when needed.
+The importer accepts schema versions 1 and 2 for older snapshots, schema version 3 for automatic
+microscope-image captions, and schema version 4 for FTIR spectrum previews. It rejects unexpected
+data fields and unsafe archive paths, verifies each file's SHA-256 hash and size, generates
+`_samples/*.md`, and places public files under `assets/sample-library/`. Version 3 carries the
+instrument name, observation mode, and calibrated field width directly on each generated microscope
+image. Version 4 adds a generated FTIR spectrum image with the instrument, confirmed sampling
+mode/accessory, signal, spectral range, and available resolution and scan counts; the sanitized
+JCAMP-DX remains a separate download. Image assets are converted with macOS `sips` to JPEGs bounded
+to 1,800 pixels and 1 MiB, reducing quality from 82 only when needed.
 Identical exported asset IDs are consolidated into one public image. Full-resolution image sources
 and all other parsed metadata remain in the internal application.
 
