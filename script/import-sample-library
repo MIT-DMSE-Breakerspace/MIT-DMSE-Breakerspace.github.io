@@ -138,6 +138,20 @@ def humanize(value)
   value.split("-").map(&:capitalize).join(" ")
 end
 
+def download_label(kind, content_type, path)
+  extension = File.extname(path).downcase
+  return "Download spectrum data (JCAMP-DX)" if
+    kind == "spectrum" &&
+    content_type == "chemical/x-jcamp-dx" &&
+    %w[.jdx .dx].include?(extension)
+  return "Download diffraction data (CSV)" if
+    kind == "diffraction-pattern" &&
+    content_type == "text/csv" &&
+    extension == ".csv"
+
+  "Download #{humanize(kind)}"
+end
+
 def deduplicate_assets(assets)
   seen = {}
   assets.each_with_object([]) do |asset, output|
@@ -279,22 +293,32 @@ def validate_manifest(manifest)
       related_download_asset_id = optional_string(asset, "relatedDownloadAssetId", asset_context)
       next unless related_download_asset_id
 
-      fail_import("#{asset_context}.relatedDownloadAssetId must be on an FTIR spectrum image") unless
-        required_string(asset, "kind", asset_context) == "spectrum" &&
-        image_asset?(content_type, package_path) &&
-        instrument && sampling_mode && signal && spectral_range
       related_download = asset_ids[related_download_asset_id]
       fail_import("#{asset_context}.relatedDownloadAssetId does not reference a public asset") unless related_download
       related_content_type = required_string(related_download, "contentType", "#{asset_context}.relatedDownload")
       related_package_path = required_string(related_download, "packagePath", "#{asset_context}.relatedDownload")
       related_kind = required_string(related_download, "kind", "#{asset_context}.relatedDownload")
       related_extension = File.extname(related_package_path).downcase
-      valid_jcamp_download =
+      source_kind = required_string(asset, "kind", asset_context)
+      valid_ftir_relationship =
+        source_kind == "spectrum" &&
+        image_asset?(content_type, package_path) &&
+        instrument && sampling_mode && signal && spectral_range &&
         related_kind == "spectrum" &&
         related_content_type == "chemical/x-jcamp-dx" &&
         %w[.jdx .dx].include?(related_extension) &&
         !image_asset?(related_content_type, related_package_path)
-      fail_import("#{asset_context}.relatedDownloadAssetId must reference a JCAMP-DX spectrum") unless valid_jcamp_download
+      valid_xrd_relationship =
+        source_kind == "diffraction-pattern" &&
+        image_asset?(content_type, package_path) &&
+        instrument && xrd_metadata&.all? &&
+        related_kind == "diffraction-pattern" &&
+        related_content_type == "text/csv" &&
+        related_extension == ".csv" &&
+        !image_asset?(related_content_type, related_package_path)
+      fail_import(
+        "#{asset_context}.relatedDownloadAssetId must connect a supported preview to its matching public data format"
+      ) unless valid_ftir_relationship || valid_xrd_relationship
     end
 
     next unless schema_version == 2
@@ -483,6 +507,7 @@ begin
           "kind_label" => humanize(kind),
           "caption" => caption,
           "instrument" => instrument,
+          "download_label" => download_label(kind, content_type, package_path),
           "is_related_download" => related_download_asset_ids.include?(asset_id) ? true : nil,
           "is_image" => false,
           "content_type" => content_type
