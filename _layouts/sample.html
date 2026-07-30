@@ -78,6 +78,11 @@ layout: default
         {% if asset.instrument %}<span>Instrument: {{ asset.instrument }}</span>{% endif %}
         {% if asset.observation_mode %}<span>Observation mode: {{ asset.observation_mode }}</span>{% endif %}
         {% if asset.field_width %}<span>Field width: {{ asset.field_width }}</span>{% endif %}
+        {% if asset.sampling_mode %}<span>Sampling mode/accessory: {{ asset.sampling_mode }}</span>{% endif %}
+        {% if asset.signal %}<span>Signal: {{ asset.signal }}</span>{% endif %}
+        {% if asset.spectral_range %}<span>Spectral range: {{ asset.spectral_range }}</span>{% endif %}
+        {% if asset.resolution %}<span>Resolution: {{ asset.resolution }}</span>{% endif %}
+        {% if asset.scan_summary %}<span>Scans: {{ asset.scan_summary }}</span>{% endif %}
       </figcaption>
     </figure>
   {% endfor %}
