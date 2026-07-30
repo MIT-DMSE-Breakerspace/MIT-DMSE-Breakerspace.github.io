@@ -314,7 +314,7 @@ begin
   if File.file?(package)
     validate_archive_entries(package)
     FileUtils.mkdir_p(extract_root)
-    run_command("unzip", "-qq", package, "-d", extract_root)
+    run_command("unzip", "-oqq", package, "-d", extract_root)
   end
 
   manifest_path = File.join(extract_root, "manifest.json")
