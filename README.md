@@ -174,9 +174,10 @@ mode/accessory, signal, spectral range, and available resolution and scan counts
 JCAMP-DX remains a separate download. Version 5 adds the generated XRD preview with axis definitions,
 radiation and wavelength, scan range and step, counting time, tube conditions, and point count; the
 sanitized raw coordinate/count CSV remains a separate download. Version 6 retains the XRD fields and
-relates the JCAMP-DX download to its FTIR preview so the sample page can keep a compact download link
-with the plot while preserving independent publication controls for both assets. Image assets are
-converted with macOS `sips` to JPEGs bounded
+relates each supported companion data download to its preview: JCAMP-DX to an FTIR plot and CSV to an
+XRD plot. The sample page keeps the appropriately labeled download link with the preview while
+preserving independent publication controls for both assets. Image assets are converted with macOS
+`sips` to JPEGs bounded
 to 1,800 pixels and 1 MiB, reducing quality from 82 only when needed.
 Identical exported asset IDs are consolidated into one public image. Full-resolution image sources
 and all other parsed metadata remain in the internal application.

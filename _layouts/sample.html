@@ -100,7 +100,7 @@ layout: default
         {% if asset.related_download_asset_id %}
           {% assign related_download = page.assets | where: "asset_id", asset.related_download_asset_id | first %}
           {% if related_download %}
-            <span class="sample-related-download"><a href="{{ related_download.url | relative_url }}" download>Download spectrum data (JCAMP-DX)</a></span>
+            <span class="sample-related-download"><a href="{{ related_download.url | relative_url }}" download>{{ related_download.download_label | default: "Download data" }}</a></span>
           {% endif %}
         {% endif %}
       </figcaption>
@@ -118,7 +118,7 @@ layout: default
         <strong>{{ asset.caption }}</strong>
         {% if asset.instrument %}<span>Instrument: {{ asset.instrument }}</span>{% endif %}
       </div>
-      <a href="{{ asset.url | relative_url }}" download>Download {{ asset.kind_label }}</a>
+      <a href="{{ asset.url | relative_url }}" download>{{ asset.download_label | default: "Download data" }}</a>
     </li>
     {% endunless %}
   {% endfor %}
