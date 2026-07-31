@@ -8,7 +8,7 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 | --- | --- |
 | Instrument | Thermo Scientific Nicolet iS5 FTIR with iD7 ATR accessory |
 | Public instrument page and Quick Guide | [FTIR operating page](../instruments/ftir.md#quick-guide) |
-| LibCal training | Breakerspace general training calendar; confirm the current FTIR event template before release |
+| LibCal training | Template: **Fourier Transform Infrared (FTIR) Spectrometer Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two known solid materials with ATR and save native spectra |

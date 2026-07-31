@@ -115,11 +115,15 @@ There is currently no skills demonstration, no training expiration, and no recur
 
 ## Scheduling And Enrollment
 
-Standard sessions are **60 minutes** with a **maximum of three participants**.
+Standard sessions are **60 minutes** with a **maximum of three participants**. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
 
-All twelve public instrument pages currently link the same LibCal registration URL — calendar `19408`, category `69558` — rather than a per-instrument training event. Practically, this means a guide cannot yet cite "the FTIR training event" because no such distinct event has been confirmed to exist.
+Per-instrument LibCal training events **do exist** — there are eight instrument training templates, so a guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event, so the public link and the underlying event structure are not aligned.
 
-**Open question:** decide whether the fall schedule uses one general training event with the instrument chosen at booking, or a distinct LibCal event per instrument. This choice determines whether each guide's Guide Control table can name a specific event, and it affects how a trainer knows which instrument a registration is for. Resolve it once, here, before writing more guides.
+Two instruments have no template: the **hardness tester** and the **ion mill**. Neither can be advertised as a scheduled training until that is resolved.
+
+The templates themselves are outdated and contain factual errors, including an automated follow-up email that promises instrument login access to attendees of instruments that have no access control. **Do not copy content out of them into a guide.** Their pre-revision state and the planned rewrite are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the rewrite is tracked in [`../_staff/site-todo.md`](../_staff/site-todo.md).
+
+Two operational rules appear in the current LibCal reminder email but nowhere on the website: sessions start and end five minutes before and after the posted time, and attendees must stay for the whole session to be cleared. Both need a decision before a guide repeats them.
 
 ## Guide Owners
 

@@ -8,7 +8,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | --- | --- |
 | Instrument | Olympus DSX-1000 digital optical microscope |
 | Public instrument page and Quick Guide | [Optical microscope operating page](../instruments/optical.md#quick-guide) |
-| LibCal training | Breakerspace general training calendar; confirm the current optical event template before release |
+| LibCal training | Template: **Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
