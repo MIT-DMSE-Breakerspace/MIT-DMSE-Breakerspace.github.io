@@ -14,7 +14,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
 | Training sample | Stable textured sample kit; exact sample, identifier, and cabinet location require approval |
 | Moira group | `dmse-brkrspc-optical` — rename from `dmse-brkrspc-dsx` pending; see [access and logistics](access-and-logistics.md#rename-status--verify-before-relying-on-this-table) |
-| Guide owner | Breakerspace instrument owner; assign by name or role |
+| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
 

@@ -125,4 +125,4 @@ Three terms are currently in use for the same people. LibCal event descriptions 
 * The single public-facing term for student staff.
 * Whether the extra-care instrument list is policy or guidance, confirmed with the lab manager.
 * Whether any instrument should require a second staff member present for *every* training rather than only for a new trainer's first.
-* Guide owners per instrument, tracked in [`access-and-logistics.md`](access-and-logistics.md#guide-owners).
+* Reassigning individual guides from the lab manager to student staff owners as they take on particular instruments; see [guide owners](access-and-logistics.md#guide-owners).

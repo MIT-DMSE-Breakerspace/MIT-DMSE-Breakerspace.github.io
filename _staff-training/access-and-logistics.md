@@ -129,7 +129,14 @@ Two operational rules appear in the current LibCal reminder email but nowhere on
 
 Each guide needs a named owner responsible for keeping it accurate and for approving changes.
 
-**Open question:** assign an owner per guide, by name or by role. Both pilot guides currently say "Breakerspace instrument owner; assign by name or role," which is a placeholder rather than an assignment.
+**The lab manager owns every guide as of 2026-07-31.** This is the current state rather than the intended end state: a single owner for eleven guides does not scale, and the point of writing these guides is that many people can deliver the same session. Reassign individual guides to student staff as they take ownership of particular instruments, and record the assignment in each guide's Guide Control table.
+
+Two roles are worth keeping distinct even while one person holds both:
+
+* **Guide owner** keeps the staff guide accurate, reviews it after a workflow change, and approves edits. A student staff member can hold this.
+* **Operational owner** confirms that the instrument's stated workflow, limits, safety claims, and stop conditions are correct. This requires the authority to make an operational call and should stay with the lab manager or another staff member with that standing.
+
+A guide's `Status` row referring to "operational-owner review" means the second role, not the first. When a guide is reassigned to a student owner, the operational-owner sign-off stays where it is.
 
 ## Open Items Tracked Elsewhere
 

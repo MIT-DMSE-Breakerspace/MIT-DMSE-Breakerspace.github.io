@@ -14,7 +14,7 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 | Level 1 exercise | Compare two known solid materials with ATR and save native spectra |
 | Training sample | Known polymer and paper-product kit; exact samples, identifiers, and cabinet location require approval |
 | Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
-| Guide owner | Breakerspace instrument owner; assign by name or role |
+| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
 

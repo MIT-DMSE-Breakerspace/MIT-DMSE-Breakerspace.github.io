@@ -16,7 +16,7 @@ Draw operating content from the canonical public instrument page and its Quick G
 | Level 1 exercise | [Exercise name and public-page anchor] |
 | Training sample | [Sample-library item, cabinet location, or prepared kit] |
 | Moira group | `dmse-brkrspc-[page slug]` |
-| Guide owner | [Staff member or role] |
+| Guide owner | Lab manager unless reassigned; see [guide owners](access-and-logistics.md#guide-owners) |
 | Status | [Draft, pilot, or ready for routine delivery] |
 | Last reviewed | [YYYY-MM-DD] |
 

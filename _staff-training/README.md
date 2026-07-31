@@ -8,7 +8,7 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-The public training pathway is implemented in [`../training.md`](../training.md). Pilot instrument-specific guides now exist for the optical microscope and FTIR. Both require operational-owner review, an approved training sample or kit and location, an assigned guide owner, and a practice training before they are marked ready for routine use. Their Moira groups are now confirmed. The guide template reflects the current operating model:
+The public training pathway is implemented in [`../training.md`](../training.md). Pilot instrument-specific guides now exist for the optical microscope and FTIR. Both require operational-owner review, an approved training sample or kit and location, and a practice training before they are marked ready for routine use. Their Moira groups, LibCal templates, and guide owners are now recorded. The guide template reflects the current operating model:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
 * Participants may divide the Level 1 workflow, provided the trainer makes the full sequence visible and involves everyone meaningfully.
