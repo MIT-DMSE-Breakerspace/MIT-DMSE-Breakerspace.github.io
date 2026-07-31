@@ -71,6 +71,16 @@ Choose the situation that best matches what you are trying to do. You do not nee
       <a class="intent-link" href="{{ "/lounge.html" | relative_url }}">Visit the lounge page <span aria-hidden="true">&rarr;</span></a>
     </div>
   </article>
+
+  <article class="intent-item">
+    <div class="intent-prompt">
+      <h3>I might be interested in joining the student staff</h3>
+    </div>
+    <div class="intent-detail">
+      <p>Student staff are essential to the Breakerspace: they train users, support lab and course work, and help the space keep improving. We are always happy to hear from anyone who might like to join the team.</p>
+      <a class="intent-link" href="{{ "/about.html#meet-the-team" | relative_url }}">Learn about the team <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
 </div>
 
 Still not sure where to begin? Ask someone in the lab or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
