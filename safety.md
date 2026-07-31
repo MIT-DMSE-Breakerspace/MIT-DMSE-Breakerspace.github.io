@@ -16,14 +16,18 @@ Instrument pages contain additional rules for specific equipment and samples. Fo
 For fire, smoke, a serious injury, or a major spill or release:
 
 1. Stop work and move away from the hazard. The Breakerspace has one exit route: leave the lab through the lab door into the lounge, then leave the lounge through its door into the Building 8 corridor. Keep this route clear, continue to the nearest safe building exit, and do not use elevators.
-2. If there is fire or smoke, activate the nearest fire alarm pull as you leave if you can do so safely. Do not delay evacuation to locate an alarm pull or use a fire extinguisher.
-3. From an MIT campus phone, dial **100**. From a mobile or other phone, call **MIT Police, Fire, and Ambulance at 617-253-1212**. On campus, use these numbers rather than 911 so that the call reaches MIT emergency services directly.
+2. If there is fire or smoke, activate a fire alarm pull as you leave. The pulls are in the main corridor near the building exits, not inside the lab, so you pass one on your way out and move toward safety as you use it. Do not search for a pull inside the lab, and do not delay evacuation to find one.
+3. Call for help. From an MIT campus phone, dial **100**. From a mobile or other phone, call **MIT Police, Fire, and Ambulance at 617-253-1212**. On campus, use these numbers rather than 911 so that the call reaches MIT emergency services directly.
 4. Say that you are in the **DMSE Breakerspace, Building 8, Room 8-102A**, and describe what happened.
 5. Notify Breakerspace staff after emergency help is on the way and it is safe to do so.
+
+The lab's campus phone is on the desk by the lab doors. **If you are evacuating because of fire or smoke, do not stay in the lab or re-enter it to reach that phone.** Leave the building and call 617-253-1212 from a mobile phone instead. Use the campus phone when you are safely able to remain in the lab, such as for an injury or a contained problem that does not require evacuation.
 
 Do not use Slack or email for an urgent emergency. See [MIT Emergency Management's current emergency contacts](https://prepared.mit.edu/response/emergency-contacts/) for Institute-wide guidance.
 
 Emergency and first-aid supplies are in the labeled cabinet above the sink. The emergency shower and eyewash are immediately to the left of the sink, and the spill kit is in the same sink area. Keep access to this equipment clear.
+
+A fire extinguisher is also to the left of the sink, near the shower and eyewash, with signage. **MIT policy is not to fight a fire yourself.** Evacuate, activate a pull in the corridor on your way out, and call for help from outside the building.
 
 </div>
 
