@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Aeris Research X-Ray Diffractometer
+quick_guide_url: /quick-guides/xrd/
 ---
 # Malvern Panalytical Aeris Research XRD
 
@@ -22,6 +23,7 @@ This page is the operating page for the XRD. It combines the quick reference for
 
 * [New to XRD? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
 * [Reserve time on the XRD](https://breakerspace.libcal.com/seat/174789)
+* [Trained users: open or print the two-page Quick Guide]({{ page.quick_guide_url | relative_url }})
 * [Operating the XRD now? Follow the standard operating protocol](#sop)
 * [Learn the complete operating workflow](#details)
 </section>
