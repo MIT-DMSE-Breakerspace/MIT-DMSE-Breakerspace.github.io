@@ -13,7 +13,7 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two known solid materials with ATR and save native spectra |
 | Training sample | Known polymer and paper-product kit; exact samples, identifiers, and cabinet location require approval |
-| Moira group | **Confirm the exact FTIR-workstation group before this guide is used** |
+| Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
 | Guide owner | Breakerspace instrument owner; assign by name or role |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
@@ -128,7 +128,7 @@ Complete every item before considering the session closed.
 * [ ] Confirm that all samples are removed, the crystal and surrounding plate are clean, the cover is clamped in place, OMNIC is closed, Windows is logged out, and the FTIR remains powered on.
 * [ ] Confirm that participants know where their native spectra were saved and how to access them.
 * [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee directly to the confirmed FTIR-workstation Moira group. Do not record attendee Kerberos usernames in this file.
+* [ ] Add each attendee to `dmse-brkrspc-ftir`. Do not record attendee Kerberos usernames in this file.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.

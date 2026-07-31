@@ -160,6 +160,7 @@ This page was substantially expanded from a thin original and still needs verifi
 
 ## Aeris Research X-Ray Diffractometer
 
+* [ ] Confirm what governs sign-in on the **XRD companion workstation** (the export/HighScore/XRDMP computer to the right of the instrument). The Aeris itself has a custom control touchscreen that boots directly into instrument operation with no access control, and `dmse-brkrspc-xrd` is a communication-only list that grants nothing. But [the export section](./xrd.md#export) tells users to "use the current workstation sign-in ... provided during training," which implies the companion workstation has a sign-in of its own. Resolve whether that is a Kerberos/WIN login, a local account, or nothing, then make the export section specific. Keep authentication details in training or at the instrument rather than publishing them. See [`../_staff-training/access-and-logistics.md`](../_staff-training/access-and-logistics.md#xrds-companion-workstation).
 * [ ] Add a labeled overview photo of the instrument showing the mains switch, power button, and HT keyswitch locations.
 * [ ] Reshoot the loading, queue, and export videos with appropriate glove use if handling guidance calls for it.
 * [ ] Add a dedicated screenshot of the changer-position selection in the UI (the current step links the general queue video; a still that highlights the position selector would be clearer).
