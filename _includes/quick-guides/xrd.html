@@ -1,0 +1,158 @@
+<section class="instrument-quick-guide" id="quick-guide" aria-labelledby="xrd-quick-guide-title">
+  <div class="quick-guide-screen-bar">
+    <div>
+      <strong>Two-page Quick Guide</strong>
+      <span>For trained users. Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
+    </div>
+    <div class="quick-guide-screen-actions">
+      <a href="{{ page.instrument_url | relative_url }}">Full instrument page</a>
+      <button type="button" onclick="window.print()">Print front and back</button>
+    </div>
+  </div>
+
+  <section class="quick-guide-sheet quick-guide-front" aria-labelledby="xrd-quick-guide-title">
+    <header class="quick-guide-header">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · Trained-user reference</p>
+        <h1 id="xrd-quick-guide-title">Aeris Research X-Ray Diffractometer</h1>
+        <p class="quick-guide-subtitle">Prepare a flat, level sample, run a stored program, and export both the raw scan and your processed result.</p>
+      </div>
+      <img src="{{ "/assets/img/xrd.JPG" | relative_url }}" alt="Malvern Panalytical Aeris Research X-ray diffractometer." width="440" height="330" loading="eager">
+    </header>
+
+    <aside class="quick-guide-notice">
+      This guide supports completed hands-on training; it does not replace training. The Aeris is fully enclosed and interlocked: never defeat an interlock or try to open the cover during a measurement. Record every session in the X-ray safety log book.
+    </aside>
+
+    <h2 class="visually-hidden">XRD quick reference</h2>
+    <div class="quick-guide-grid quick-guide-grid-wide-left">
+      <section>
+        <h3>What XRD shows</h3>
+        <p>Atomic planes in a crystal scatter X-rays, and at certain angles the scattered waves reinforce each other. The instrument records where those reflections appear across a range of angles (2θ). Peak <em>positions</em> come from atomic-plane spacings and are what identifies a phase — so anything that shifts them, especially sample height, costs you the result.</p>
+
+        <!-- TODO: annotated example pattern (sharp crystalline peaks beside a broad amorphous hump). Tracked in instruments/staff-todo.md. -->
+
+        <h3>Select a measurement program</h3>
+        <p>Choose a stored program from the drop-down list; you do not set scan parameters by hand. If none looks right for your sample, ask staff. Budget your reservation for every queued sample plus loading, export, and cleanup — a high-resolution program takes considerably longer than a quick phase-ID scan.</p>
+
+        <h3>Choose the right holder</h3>
+        <p>Powder, back or front loading → <strong>PW1811/00</strong> or <strong>PW1811/27</strong> · Odd shapes, fixed with plasticine or wax → <strong>PW1812/00</strong> · Metal plates, membranes, pressed pellets → <strong>PW1813/26</strong>. Panalytical's prep guide in the lab lists every holder type.</p>
+      </section>
+
+      <section>
+        <h3>Compatible samples</h3>
+        <ul class="quick-guide-checks">
+          <li>Non-hazardous materials only. Powders, plates, pellets, coupons, membranes, and odd solids all have a holder.</li>
+          <li>Grind powders to a few micrometers (roughly 5–10 µm), which also reduces preferred orientation.</li>
+          <li>Grind gently, avoid airborne dust, wear safety glasses, and contain spills. Ask staff about fine, floaty, or irritating powders.</li>
+          <li>Iron- or manganese-bearing samples fluoresce under Cu Kα, raising background and possibly preventing a usable result.</li>
+        </ul>
+
+        <aside class="quick-guide-stop">
+          <h3>Get sample height right</h3>
+          <p>Sample height is the most common source of bad beginner data. A surface sitting high or low shifts <em>every</em> peak to a slightly wrong 2θ, which can block a correct database match even when the sample is fine. Fill the holder so the surface is flush with the reference surface — not mounded, not sunk.</p>
+        </aside>
+
+        <h3>Before you leave the instrument</h3>
+        <ul>
+          <li>Check that the pattern has peaks and reasonable counts, not a flat trace.</li>
+          <li>Broad humps with no sharp peaks mean an amorphous material — a real result, not a failure.</li>
+          <li>Unexpected extra peaks? Run an empty holder for comparison while you are still here.</li>
+          <li>Weak, smeared, or shifted peaks usually mean sample height or grain size, both fixable by re-preparing now.</li>
+        </ul>
+        <p>Background subtraction, peak search, and database matching happen afterward in HighScore Plus. See <strong>Data Processing And Analysis</strong> on the instrument page.</p>
+
+        <aside class="quick-guide-stop">
+          <h3>Stop and ask staff</h3>
+          <p>Do not proceed with an interlock fault, unusual noise, error you do not recognize, or any sign of damage — leave the cover closed. Ask first about magnetic powders, liquids or greasy samples, single crystals or large chunks, air-sensitive material, thin films needing grazing incidence, or very small sample quantities.</p>
+        </aside>
+      </section>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Full operating guide: breakerspace.mit.edu/instruments/xrd.html</span>
+      <span>Reviewed 2026-07-31 · Side 1 of 2</span>
+    </footer>
+  </section>
+
+  <section class="quick-guide-sheet quick-guide-back" aria-labelledby="xrd-workflow-title">
+    <header class="quick-guide-header quick-guide-header-compact">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace · Aeris Research XRD</p>
+        <h2 id="xrd-workflow-title">Routine trained-user workflow</h2>
+      </div>
+    </header>
+
+    <div class="quick-guide-flow">
+      <section>
+        <h3><span>1</span> Prepare and start up</h3>
+        <ol>
+          <li>Prepare your sample at the sample prep table using the correct holder. Holders and mounting clay are in the black cabinet beside the table.</li>
+          <li>Load the holder so the sample surface is flat, level, centered, and flush with the reference surface.</li>
+          <li>Label the holder physically. Plan a descriptive measurement name such as <code>Lastname_sampleID_YYYYMMDD</code>.</li>
+          <li><strong>Leave at least one changer position empty.</strong> Booting with all six occupied causes a startup error.</li>
+          <li>Confirm the cover is closed and the interlocks are engaged. The mains switch at the rear is normally left on.</li>
+          <li>Press the power button, then turn the HT keyswitch clockwise to switch on the high-tension generator.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>2</span> Load and queue</h3>
+        <ol>
+          <li>Remove the plastic sample-changer cover and place the holder in any free position. <strong>Note the slot number.</strong></li>
+          <li>Replace the plastic cover.</li>
+          <li>In the software, select the changer position matching the physical slot. A mismatch scans the wrong slot or an empty one.</li>
+          <li>Choose a measurement program from the drop-down list.</li>
+          <li>Enter the sample name and edit the file name as needed.</li>
+          <li>Start the measurement, or click <strong>Add to Queue</strong> to run it after the current sample.</li>
+          <li>More samples can be loaded and queued while a scan runs. Confirm each one is actually added to the queue.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>3</span> Export your data</h3>
+        <ol>
+          <li>Export to the XRD workstation to the right of the instrument, or to a USB drive. Follow the current sign-in and export-folder instructions from your training or posted at the instrument.</li>
+          <li>Export <strong>both</strong> the raw scan and any processed plots so you can reprocess later.</li>
+          <li>Scans save in Panalytical's <code>.xrdml</code> format; a plain-text or <code>.csv</code> pattern can also be exported for use elsewhere.</li>
+          <li>Keep a copy in your own storage. The shared workstation is not a backup.</li>
+          <li>Phase matching in HighScore Plus runs on the lab workstation, which holds the reference database.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3><span>4</span> Log, clean, and shut down</h3>
+        <ol>
+          <li>Confirm every file you need has been exported.</li>
+          <li><strong>Fill in the X-ray safety log book.</strong> This is the only record that you used the instrument.</li>
+          <li>Press the power button to switch off the instrument.</li>
+          <li>Turn the HT keyswitch counter-clockwise to switch off the HT generator.</li>
+          <li>Remove your holders, return them to storage, and leave the sample prep area clean.</li>
+          <li>Switch off the mains supply only if the instrument will be off for a long period.</li>
+        </ol>
+      </section>
+    </div>
+
+    <div class="quick-guide-bottom-grid">
+      <aside class="quick-guide-stop">
+        <h3>Common reasons to stop</h3>
+        <ul>
+          <li>Interlock fault, unusual noise, or unfamiliar error — leave the cover closed</li>
+          <li>Sample compatibility or holder choice is uncertain</li>
+          <li>Magnetic powder, liquid, greasy sample, or a large solid chunk</li>
+          <li>No peaks or very low counts after re-seating the sample</li>
+        </ul>
+      </aside>
+      <aside class="quick-guide-help">
+        <h3>Need help?</h3>
+        <p>Leave the cover closed and the instrument as it is. Ask a lab assistant, use <strong>#breakerspace-help</strong>, or email <strong>dmse-breakerspace@mit.edu</strong>.</p>
+        <p><strong>Before leaving:</strong> data exported and backed up, log book filled in, instrument powered off, HT keyswitch off, holders returned, prep area clean.</p>
+      </aside>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Canonical content and detailed troubleshooting: breakerspace.mit.edu/instruments/xrd.html</span>
+      <span>Reviewed 2026-07-31 · Side 2 of 2</span>
+    </footer>
+  </section>
+</section>

@@ -98,11 +98,15 @@ The top of each operating page should work as a quick reference for trained user
 Every Quick Guide should:
 
 * Identify itself as a trained-user reference that does not replace training.
-* Use Side 1 for what the instrument shows, routine method selection, compatibility, interpretation, and stop conditions.
+* Use Side 1 for what the instrument shows, routine method selection, compatibility, and stop conditions.
 * Use Side 2 for the routine startup, operation, saving, cleanup, shutdown, and help workflow.
 * Include the canonical page URL, document owner or review responsibility, and last-reviewed date.
 * Remain understandable in grayscale and without printed background colors.
 * Draw technical claims and operating steps from the same instrument page rather than introducing an alternate workflow.
+
+**Scope.** A Quick Guide is a hybrid of an SOP, a set of reminders for inexperienced users, and the major safety considerations — everything needed *while standing at the instrument*. Interpretation and data analysis belong on the operating page instead, linked from the Quick Guide rather than summarized in it. The FTIR and optical pilots include some interpretation guidance that predates this rule; prefer a pointer to the page's analysis section when writing a new guide or revising an old one.
+
+Keep parameter tables out when the routine workflow is selecting a stored method or program. Listing scan settings a user never types invites them to type them. Name the programs instead, once the instrument's program list is curated.
 
 The pilot Quick Guides are `/quick-guides/optical/` and `/quick-guides/ftir/`, backed by `_includes/quick-guides/optical.html` and `_includes/quick-guides/ftir.html`. Use their page structure and the shared `quick-guide-*` CSS classes as the pattern for later instruments.
 

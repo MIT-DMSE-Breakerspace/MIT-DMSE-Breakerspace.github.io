@@ -8,13 +8,13 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 | --- | --- |
 | Instrument | Thermo Scientific Nicolet iS5 FTIR with iD7 ATR accessory |
 | Public instrument page and Quick Guide | [FTIR operating page](../instruments/ftir.md#quick-guide) |
-| LibCal training | Breakerspace general training calendar; confirm the current FTIR event template before release |
+| LibCal training | Template: **Fourier Transform Infrared (FTIR) Spectrometer Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two known solid materials with ATR and save native spectra |
 | Training sample | Known polymer and paper-product kit; exact samples, identifiers, and cabinet location require approval |
-| Moira group | **Confirm the exact FTIR-workstation group before this guide is used** |
-| Guide owner | Breakerspace instrument owner; assign by name or role |
+| Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
+| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
 
@@ -22,6 +22,7 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what an FTIR spectrum represents and why ATR contact and crystal cleanliness matter.
 * Decide whether a routine sample is compatible and recognize samples that require staff review.
 * Start OMNIC, verify the instrument connection, clean the ATR crystal, and collect a background.
@@ -61,13 +62,16 @@ The session does not currently include a separate individual skills demonstratio
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 5-12 minutes | What FTIR and ATR show, compatible samples, interpretation limits, and stop conditions. |
-| 12-20 minutes | Trainer-led crystal inspection, cleaning, glove transition, connection check, and background. |
+| 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What FTIR and ATR show, compatible samples, interpretation limits, and stop conditions. |
+| 14-20 minutes | Trainer-led crystal inspection, cleaning, glove transition, connection check, and background. |
 | 20-42 minutes | Participants load, preview, collect, name, and save the two known samples. |
 | 42-50 minutes | Compare spectra, contact quality, contamination cues, and interpretation limits. |
 | 50-56 minutes | Participant-led unloading, cleaning, covering, software closeout, and logout. |
 | 56-60 minutes | Reservations, access closeout, help pathways, and final questions. |
+
+The glove-transition demonstration in the safety orientation sets up the ATR workflow directly: this instrument requires gloves for crystal cleaning and sample handling, then bare hands at the keyboard to collect.
 
 ## Level 1 Exercise: Compare Two Known Solids
 
@@ -128,7 +132,7 @@ Complete every item before considering the session closed.
 * [ ] Confirm that all samples are removed, the crystal and surrounding plate are clean, the cover is clamped in place, OMNIC is closed, Windows is logged out, and the FTIR remains powered on.
 * [ ] Confirm that participants know where their native spectra were saved and how to access them.
 * [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee directly to the confirmed FTIR-workstation Moira group. Do not record attendee Kerberos usernames in this file.
+* [ ] Add each attendee to `dmse-brkrspc-ftir`. Do not record attendee Kerberos usernames in this file.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.

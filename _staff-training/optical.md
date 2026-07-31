@@ -8,13 +8,13 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | --- | --- |
 | Instrument | Olympus DSX-1000 digital optical microscope |
 | Public instrument page and Quick Guide | [Optical microscope operating page](../instruments/optical.md#quick-guide) |
-| LibCal training | Breakerspace general training calendar; confirm the current optical event template before release |
+| LibCal training | Template: **Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
 | Training sample | Stable textured sample kit; exact sample, identifier, and cabinet location require approval |
-| Moira group | **Confirm the exact optical-workstation group before this guide is used** |
-| Guide owner | Breakerspace instrument owner; assign by name or role |
+| Moira group | `dmse-brkrspc-optical` — rename from `dmse-brkrspc-dsx` pending; see [access and logistics](access-and-logistics.md#rename-status--verify-before-relying-on-this-table) |
+| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
 
@@ -22,6 +22,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what optical microscopy can show and when a different instrument is needed.
 * Screen a sample for handling, stage-load, containment, stability, and motion-clearance concerns.
 * Start the microscope, clear the stage, acknowledge motorized motion safely, load a sample, and focus.
@@ -60,13 +61,16 @@ The session does not currently include a separate individual skills demonstratio
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 5-12 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
-| 12-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
+| 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
+| 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
 | 20-42 minutes | Participants focus, navigate, compare modes, capture a 2D image, and save the result. |
 | 42-50 minutes | Review the image, settings, scale, file location, and what the result can and cannot support. |
 | 50-56 minutes | Participant-led unloading and shutdown using the Quick Guide. |
 | 56-60 minutes | Reservations, access closeout, help pathways, and final questions. |
+
+If the session uses glass slides, connect the sharps-disposal point from the safety orientation to this instrument directly — slides go in the sharps container, not the regular trash.
 
 ## Level 1 Exercise: Compare Observation Modes
 
@@ -125,7 +129,7 @@ Complete every item before considering the session closed.
 * [ ] Confirm that the sample has been removed, the stage is empty, the head retracted normally, the microscope is off, Windows is logged out, and the dust cover is on.
 * [ ] Confirm that participants know where their image was saved and how to access it.
 * [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee directly to the confirmed optical-workstation Moira group. Do not record attendee Kerberos usernames in this file.
+* [ ] Add each attendee to `dmse-brkrspc-optical`. This group is being renamed from `dmse-brkrspc-dsx`; if the new name is not yet in [WebMoira](https://groups.mit.edu/webmoira/), use the old one. Do not record attendee Kerberos usernames in this file.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.

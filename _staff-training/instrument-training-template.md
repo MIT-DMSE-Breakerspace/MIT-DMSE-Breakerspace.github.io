@@ -2,6 +2,8 @@
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
+Draw operating content from the canonical public instrument page and its Quick Guide. Do not maintain a separate operating sequence in a staff guide. Take the Moira group, closeout sequence, and scheduling rules from [access and logistics](access-and-logistics.md) rather than restating them here.
+
 ## Guide Control
 
 | Field | Value |
@@ -13,14 +15,16 @@ Use this template to build a trainer-facing guide for a standard Breakerspace in
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | [Exercise name and public-page anchor] |
 | Training sample | [Sample-library item, cabinet location, or prepared kit] |
-| Moira group | `[exact group name]` |
-| Guide owner | [Staff member or role] |
+| Moira group | `dmse-brkrspc-[page slug]` |
+| Guide owner | Lab manager unless reassigned; see [guide owners](access-and-logistics.md#guide-owners) |
+| Status | [Draft, pilot, or ready for routine delivery] |
 | Last reviewed | [YYYY-MM-DD] |
 
 ## Training Outcome
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what the instrument measures and what its output can show.
 * Identify compatible samples and know when to ask staff before proceeding.
 * Find and use the trained-user quick reference and detailed guide.
@@ -34,6 +38,7 @@ This session does not currently require a separate skills demonstration. Partici
 ### Instrument And Space
 
 * [ ] Confirm that the instrument is available, functioning normally, and left in the expected starting state.
+* [ ] Confirm that the exit route, emergency shower and eyewash, first-aid cabinet, spill kit, and sharps container are unobstructed and that nothing has moved since the last session.
 * [ ] Open the public instrument page and any software or method needed for the Level 1 exercise.
 * [ ] Prepare required holders, tools, PPE, wipes, solvents, consumables, and cleanup materials.
 * [ ] Confirm that the training area can safely accommodate the registered participants.
@@ -57,12 +62,15 @@ Adapt the timing to the instrument while preserving the full workflow and enough
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, and where to find the public instrument page and help. |
-| 5-12 minutes | What the instrument measures, compatible samples, safety, and stop conditions. |
-| 12-22 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
+| 0-3 minutes | Welcome, participant goals, and where to find the public instrument page and help. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What the instrument measures, compatible samples, and instrument-specific stop conditions. |
+| 14-22 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
 | 22-45 minutes | Participants complete the Level 1 exercise, dividing and rotating through steps as practical. |
 | 45-53 minutes | Review the result, data quality, file saving, and common failure modes. |
 | 53-60 minutes | Shutdown, cleanup, reservations, access follow-up, and final questions. |
+
+Take compression out of the instrument-overview discussion rather than out of cleanup, shutdown, or closeout.
 
 ## Level 1 Exercise
 
@@ -113,7 +121,7 @@ Complete these tasks before considering the session closed.
 * [ ] Confirm that all samples are removed and the instrument is clean and in its expected state.
 * [ ] Confirm that participants know where their files were saved and how to access them.
 * [ ] Ask participants to locate the SOP, detailed operating guidance, and common failure modes on the public instrument page.
-* [ ] Add every attendee directly to the instrument's MIT Moira group: `[exact group name]`.
+* [ ] Add every attendee directly to the instrument's MIT Moira group: `dmse-brkrspc-[page slug]`. Confirm the name in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group and some renames may still be pending.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested membership in the DMSE Breakerspace Team, or help them complete the self-service steps.
