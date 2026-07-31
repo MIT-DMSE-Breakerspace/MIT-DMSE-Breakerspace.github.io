@@ -8,7 +8,7 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-Last substantive work: 2026-07-31, on branch `worktree-staff-training-guides`.
+Last substantive work: 2026-07-31.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
