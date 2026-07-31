@@ -24,6 +24,7 @@ Draw operating content from the canonical public instrument page and its Quick G
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what the instrument measures and what its output can show.
 * Identify compatible samples and know when to ask staff before proceeding.
 * Find and use the trained-user quick reference and detailed guide.
@@ -37,6 +38,7 @@ This session does not currently require a separate skills demonstration. Partici
 ### Instrument And Space
 
 * [ ] Confirm that the instrument is available, functioning normally, and left in the expected starting state.
+* [ ] Confirm that the exit route, emergency shower and eyewash, first-aid cabinet, spill kit, and sharps container are unobstructed and that nothing has moved since the last session.
 * [ ] Open the public instrument page and any software or method needed for the Level 1 exercise.
 * [ ] Prepare required holders, tools, PPE, wipes, solvents, consumables, and cleanup materials.
 * [ ] Confirm that the training area can safely accommodate the registered participants.
@@ -60,12 +62,15 @@ Adapt the timing to the instrument while preserving the full workflow and enough
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, and where to find the public instrument page and help. |
-| 5-12 minutes | What the instrument measures, compatible samples, safety, and stop conditions. |
-| 12-22 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
+| 0-3 minutes | Welcome, participant goals, and where to find the public instrument page and help. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What the instrument measures, compatible samples, and instrument-specific stop conditions. |
+| 14-22 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
 | 22-45 minutes | Participants complete the Level 1 exercise, dividing and rotating through steps as practical. |
 | 45-53 minutes | Review the result, data quality, file saving, and common failure modes. |
 | 53-60 minutes | Shutdown, cleanup, reservations, access follow-up, and final questions. |
+
+Take compression out of the instrument-overview discussion rather than out of cleanup, shutdown, or closeout.
 
 ## Level 1 Exercise
 

@@ -11,6 +11,7 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 The public training pathway is implemented in [`../training.md`](../training.md). Pilot instrument-specific guides now exist for the optical microscope and FTIR. Both require operational-owner review, an approved training sample or kit and location, and a practice training before they are marked ready for routine use. Their Moira groups, LibCal templates, and guide owners are now recorded. The guide template reflects the current operating model:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
+* Every session opens with the [lab safety orientation](lab-safety-orientation.md), for all participants, regardless of prior training.
 * Participants may divide the Level 1 workflow, provided the trainer makes the full sequence visible and involves everyone meaningfully.
 * The trainer adds attendees directly to the appropriate MIT Moira group after the session.
 * The trainer sends each attendee a Breakerspace Slack invitation as part of training closeout.
@@ -23,6 +24,7 @@ The current Qualtrics survey remains coordinated with the active production webs
 ## Files In This Directory
 
 * `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, and scheduling rules. Guides link to it instead of restating these facts.
+* `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session. It is currently the only place a user learns where the emergency equipment is.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.

@@ -52,7 +52,7 @@ The requirement in `site-todo.md` is that each guide gets at least one practice 
 ### The Four Stages
 
 1. **Be a trained user.** Complete the instrument's own user training and use the instrument independently enough to have encountered its ordinary annoyances. Someone who has only ever seen the instrument work correctly cannot recognize a bad result.
-2. **Read the guide and the public page.** Work through the staff guide, the public operating page, and the Quick Guide together. The guide deliberately contains no operating sequence of its own, so a trainer who has not read the public page does not know the workflow they are about to teach.
+2. **Read the guide and the public page.** Work through the staff guide, the public operating page, and the Quick Guide together. The guide deliberately contains no operating sequence of its own, so a trainer who has not read the public page does not know the workflow they are about to teach. Read the [lab safety orientation](lab-safety-orientation.md) too, and confirm every location in it by walking the lab — a trainer cannot point out a campus phone they have not found.
 3. **Observe a session.** Watch a qualified trainer deliver the full session, including closeout. Closeout is the part most often skipped in practice and the part with the most durable consequences.
 4. **Deliver a practice session** to a qualified trainer or another staff member acting as the participant, covering the whole guide including the Level 1 exercise and closeout. The observer confirms readiness and records it.
 
@@ -62,6 +62,7 @@ A staff member who has completed stage 4 for an instrument may deliver that inst
 
 The observer is checking whether an ordinary session would go well, not conducting an exam.
 
+* [ ] The [lab safety orientation](lab-safety-orientation.md) was delivered, on foot, with each location physically pointed out.
 * [ ] The full Level 1 exercise was completed and produced a recognizable, correct result.
 * [ ] The trainer knew what a *bad* result looks like on this instrument and could name at least one way the session's data could have been wrong.
 * [ ] The instrument's stop-and-ask-for-help conditions were stated, not skipped.

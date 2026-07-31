@@ -22,6 +22,7 @@ This pilot guide standardizes a one-hour general FTIR training using the routine
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what an FTIR spectrum represents and why ATR contact and crystal cleanliness matter.
 * Decide whether a routine sample is compatible and recognize samples that require staff review.
 * Start OMNIC, verify the instrument connection, clean the ATR crystal, and collect a background.
@@ -61,13 +62,16 @@ The session does not currently include a separate individual skills demonstratio
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 5-12 minutes | What FTIR and ATR show, compatible samples, interpretation limits, and stop conditions. |
-| 12-20 minutes | Trainer-led crystal inspection, cleaning, glove transition, connection check, and background. |
+| 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What FTIR and ATR show, compatible samples, interpretation limits, and stop conditions. |
+| 14-20 minutes | Trainer-led crystal inspection, cleaning, glove transition, connection check, and background. |
 | 20-42 minutes | Participants load, preview, collect, name, and save the two known samples. |
 | 42-50 minutes | Compare spectra, contact quality, contamination cues, and interpretation limits. |
 | 50-56 minutes | Participant-led unloading, cleaning, covering, software closeout, and logout. |
 | 56-60 minutes | Reservations, access closeout, help pathways, and final questions. |
+
+The glove-transition demonstration in the safety orientation sets up the ATR workflow directly: this instrument requires gloves for crystal cleaning and sample handling, then bare hands at the keyboard to collect.
 
 ## Level 1 Exercise: Compare Two Known Solids
 

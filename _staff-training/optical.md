@@ -22,6 +22,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 
 By the end of the session, participants should be able to:
 
+* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
 * Explain what optical microscopy can show and when a different instrument is needed.
 * Screen a sample for handling, stage-load, containment, stability, and motion-clearance concerns.
 * Start the microscope, clear the stage, acknowledge motorized motion safely, load a sample, and focus.
@@ -60,13 +61,16 @@ The session does not currently include a separate individual skills demonstratio
 
 | Time | Activity |
 | --- | --- |
-| 0-5 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 5-12 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
-| 12-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
+| 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
+| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
+| 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
 | 20-42 minutes | Participants focus, navigate, compare modes, capture a 2D image, and save the result. |
 | 42-50 minutes | Review the image, settings, scale, file location, and what the result can and cannot support. |
 | 50-56 minutes | Participant-led unloading and shutdown using the Quick Guide. |
 | 56-60 minutes | Reservations, access closeout, help pathways, and final questions. |
+
+If the session uses glass slides, connect the sharps-disposal point from the safety orientation to this instrument directly — slides go in the sharps container, not the regular trash.
 
 ## Level 1 Exercise: Compare Observation Modes
 

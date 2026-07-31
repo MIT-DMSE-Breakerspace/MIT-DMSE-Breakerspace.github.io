@@ -108,7 +108,7 @@ These items should be complete before the first major fall training push or cour
 ### Safety Communication And Accessibility
 
 * [ ] Photograph the verified exit route, campus phone, alarm pull, fire extinguisher, emergency and first-aid cabinet, shower and eyewash, spill kit, sharps container, and waste bins.
-* [ ] Create one compact annotated emergency-equipment and egress visual from real photographs or an accurate plan, then obtain staff or EHS approval before publication.
+* [ ] Create one compact annotated emergency-equipment and egress visual from real photographs or an accurate plan, then obtain staff or EHS approval before publication. `safety.md` now states every location in text, including the corridor alarm pulls, the campus phone on the desk by the lab doors, and the extinguisher by the sink; the visual should match that text and make the single exit route legible at a glance.
 * [ ] Complete the broader keyboard and VoiceOver pass on the production build, including image-heavy and table-heavy instrument pages, animations, and authenticated third-party workflows.
 * [ ] Test the Dropbox enrollment, team-membership request, approval, and shared-file workflow for keyboard and screen-reader access, or document an accessible alternative.
 * [ ] Confirm accurate captions for instructional videos needed in fall training and provide transcripts where captions cannot be corrected promptly.
