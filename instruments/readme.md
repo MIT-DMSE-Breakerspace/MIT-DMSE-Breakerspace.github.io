@@ -108,7 +108,9 @@ Every Quick Guide should:
 
 Keep parameter tables out when the routine workflow is selecting a stored method or program. Listing scan settings a user never types invites them to type them. Name the programs instead, once the instrument's program list is curated.
 
-The pilot Quick Guides are `/quick-guides/optical/` and `/quick-guides/ftir/`, backed by `_includes/quick-guides/optical.html` and `_includes/quick-guides/ftir.html`. Use their page structure and the shared `quick-guide-*` CSS classes as the pattern for later instruments.
+Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Use their page structure and the shared `quick-guide-*` CSS classes as the pattern for later instruments. The optical and FTIR guides are the original pilots and predate the scope rules above, so they still contain some interpretation guidance; `xrd.html` follows the current rules and is the better model for a new guide. Its Side 1 also runs longer than the pilots and has not had a print check, so verify the two-page budget before copying its density.
+
+A Quick Guide is a prerequisite for that instrument's staff training guide, because a staff guide carries no operating sequence of its own and references the Quick Guide instead. See [`../_staff-training/README.md`](../_staff-training/README.md) for that dependency and the intended order of work.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 

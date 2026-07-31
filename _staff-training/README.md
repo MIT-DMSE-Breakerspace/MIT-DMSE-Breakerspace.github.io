@@ -8,7 +8,16 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-The public training pathway is implemented in [`../training.md`](../training.md). Pilot instrument-specific guides now exist for the optical microscope and FTIR. Both require operational-owner review, an approved training sample or kit and location, and a practice training before they are marked ready for routine use. Their Moira groups, LibCal templates, and guide owners are now recorded. The guide template reflects the current operating model:
+Last substantive work: 2026-07-31.
+
+The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
+
+* **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
+* **Per-instrument guides** — pilots for the optical microscope and FTIR. Two of eleven instruments.
+
+Both pilots have their Moira group, LibCal template, and guide owner recorded. **Each is blocked on two things only: an approved Level 1 training sample with a cabinet location, and operational-owner review.** Neither is a writing task.
+
+The operating model the template reflects:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
 * Every session opens with the [lab safety orientation](lab-safety-orientation.md), for all participants, regardless of prior training.
@@ -19,12 +28,46 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * Dropbox access is trainee-managed: the trainee creates an MIT Dropbox for Business account and requests membership in the DMSE Breakerspace Team. Trainers should help first-time users with the process when needed rather than attempting to invite an account that may not exist.
 * There is currently no separate skills demonstration, training expiration, or recurring retraining requirement.
 
-The current Qualtrics survey remains coordinated with the active production website until the redesigned site launches. Make survey changes from `qualtrics-manual-edit-guide.md`. Its release status is tracked in `qualtrics-launch-review.md`; the complete July 2026 extraction and rationale are in `qualtrics-survey-audit.md`.
+The current Qualtrics survey remains coordinated with the active production website until the redesigned site launches. Make survey changes from `qualtrics-manual-edit-guide.md`. Its release status is tracked in `qualtrics-launch-review.md`; the complete July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
+
+## Picking This Work Up Again
+
+### The dependency that gates new guides
+
+A staff guide carries **no operating sequence of its own** — it draws that from the public instrument page and its two-page Quick Guide. So a guide cannot be written for an instrument that has no Quick Guide, because the trainer would have nothing to point at.
+
+Quick Guides exist for **optical, FTIR, and XRD** (`/quick-guides/`). The first two are exactly the two instruments with pilot staff guides, which is why the model has worked so far and why it was untested. XRD's was written in advance of its staff guide precisely to unblock it.
+
+**So the order is: Quick Guide → staff training guide, one instrument at a time.** The Quick Guide pattern and scope rules are documented in [`../instruments/readme.md`](../instruments/readme.md).
+
+### Suggested next steps, cheapest first
+
+1. **Draft the XRD staff training guide.** Its Quick Guide exists, its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. One caveat below.
+2. **Select Level 1 samples for the two pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
+3. **SEM next after XRD.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
+4. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
+
+### Open questions that affect writing
+
+* **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+* **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
+* **Three Moira renames are pending** — `-dsx`, `-duetta`, `-utm`. Guides name the target values; verify in WebMoira before relying on them. See the rename table in `access-and-logistics.md`.
+* **Terminology is inconsistent.** LibCal says "laboratory assistant," the website says "student staff," these guides say "trainer."
+
+### Decisions already made, with reasons
+
+Do not relitigate these without new information; the reasoning is in `access-and-logistics.md`, `trainer-readiness.md`, and the commit history.
+
+* Moira group names follow `dmse-brkrspc-` plus the page slug, with no abbreviations. Near-consistency is worse than obvious difference, because it invites a guess that is wrong just often enough to cause a silent access failure.
+* `instruments/instron.md` keeps its brand slug. Renaming `-utm` to `-instron` gives alignment plus the term students actually use, and avoids putting an ambiguous abbreviation in a public URL.
+* The safety orientation runs every session for everyone, scaled rather than skipped. A trainer cannot tell who is new from a LibCal registration list, and an optional first item gets dropped under time pressure.
+* The shower and eyewash get fifteen seconds, not a featured slot. They exist because MIT adds them to any renovated lab, not because this lab's materials require them; the material restriction is the actual safety control.
+* Quick Guides exclude interpretation and analysis, and exclude parameter tables when the workflow is selecting a stored method.
 
 ## Files In This Directory
 
-* `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, and scheduling rules. Guides link to it instead of restating these facts.
-* `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session. It is currently the only place a user learns where the emergency equipment is.
+* `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, scheduling, and guide owners. Guides link to it instead of restating these facts.
+* `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.

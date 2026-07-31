@@ -85,8 +85,8 @@ Old public URLs are preserved: each legacy `tutorials/*.html` page is a redirect
 Use one source of truth for each kind of work:
 
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
-* `_staff-training/`: trainer-facing guide model and the coordinated Qualtrics launch review.
-* `instruments/readme.md`: instrument-page architecture, migration status, shared includes, and authoring conventions.
+* `_staff-training/README.md`: trainer-facing guide model, the shared trainer references, the Quick Guide dependency that gates new guides, and the coordinated Qualtrics launch review. Start there for any staff-training work.
+* `instruments/readme.md`: instrument-page architecture, migration status, Quick Guide contract and scope rules, shared includes, and authoring conventions.
 * `instruments/staff-todo.md`: unpublished instrument-specific missing images, workflows, examples, exercises, and technical review items.
 * `showcases/README.md`: Materials Showcase purpose, source model, editorial workflow, cadence, automation boundaries, and authoring contract.
 
