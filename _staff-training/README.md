@@ -23,6 +23,7 @@ The current Qualtrics survey remains coordinated with the active production webs
 ## Files In This Directory
 
 * `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, and scheduling rules. Guides link to it instead of restating these facts.
+* `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum and completion checklist.
