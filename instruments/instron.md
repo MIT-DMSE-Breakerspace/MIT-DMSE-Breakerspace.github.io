@@ -383,7 +383,7 @@ A curve that starts with a soft, curved "toe" before stiffening is usually repor
 
 The manual that matters most for operation is the **6800 Dual Column Table Model operator guide**, which covers the frame, handset, operating modes, load string, limits, and the full test procedure. It is published by Instron, and the page references throughout this page point into it.
 
-* [6800 Dual Column Table Model operator guide](https://www.instron.com/-/media/literature-library/manuals/6800-series/6800-dual-column-table-model-operator-guide.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
+* [6800 Dual Column Table Model operator guide](https://www.instron.com/wp-content/uploads/2024/07/6800-dual-column-table-model-operator-guide-7.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
 
 Fixture and accessory guides, for grip-specific and fixture-specific detail:
 
