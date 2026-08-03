@@ -87,13 +87,17 @@ The names above are the target state, adopted 2026-07-31 so that every group is 
 | --- | --- | --- |
 | `dmse-brkrspc-hrdnss` | `dmse-brkrspc-hardness-tester` | **Done 2026-07-31** |
 | `dmse-brkrspc-ionmill` | `dmse-brkrspc-ion-mill` | **Done 2026-07-31** |
+| `dmse-brkrspc-utm` | `dmse-brkrspc-instron` | **Done 2026-08-03** |
 | `dmse-brkrspc-dsx` | `dmse-brkrspc-optical` | Pending |
 | `dmse-brkrspc-duetta` | `dmse-brkrspc-uv-vis` | Pending |
-| `dmse-brkrspc-utm` | `dmse-brkrspc-instron` | Pending |
 
-The two completed renames were the comms-only lists, so neither touched workstation access. They confirmed two useful things: WebMoira renamed a list without error, and it accepted `dmse-brkrspc-hardness-tester` at 28 characters — the longest name in the scheme, so no other name will hit a length limit.
+Three findings from the completed renames, worth knowing before doing the last two:
 
-The three pending renames are all access-controlling lists. Each one changes the list name and the workstation's WIN logon privileges in the same operation. **Until a row shows Done, check the actual name in [WebMoira](https://groups.mit.edu/webmoira/) before adding an attendee**, and confirm a real login afterward, since these are the renames where a mistake blocks a trained user.
+* **WebMoira renames a list without error**, and accepted `dmse-brkrspc-hardness-tester` at 28 characters — the longest name in the scheme, so no other name will hit a length limit.
+* **The Windows `Allow log on locally` security setting followed the rename automatically.** The Instron rename was the first on an access-controlling list, and the `gpedit.msc` policy carried the new group name across without being retyped. So a rename does not silently strip workstation access, which was the main risk this section was written to guard against.
+* That said, **the remaining two renames should still be verified.** One instrument confirming the behavior is good evidence, not proof that every workstation is configured the same way.
+
+For `-dsx` and `-duetta`, check the name in [WebMoira](https://groups.mit.edu/webmoira/) before adding an attendee, and confirm the `Allow log on locally` setting picked up the new name afterward. A mistake on either of these blocks a trained user from logging in.
 
 Delete this section once all five are done, so the table above is the only thing to read.
 
@@ -105,11 +109,11 @@ Every standard instrument training ends with the same steps. Instrument guides s
 
 1. **Moira.** Add each attendee to the instrument's group from the table above, whether or not that group grants a workstation login. Do not record attendee Kerberos usernames in this repository.
 2. **Workstation sign-in.** For a domain-managed instrument, the Moira add in step 1 is what enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, the Moira add grants nothing — cover the actual sign-in arrangement at the instrument instead, and do not describe the Moira add as the thing that grants access. The XRD touchscreen needs no sign-in at all, but its companion export/analysis workstation may.
-2. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and point them to `#breakerspace-help`.
-3. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
-4. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Help them through the self-service steps; staff cannot add someone before the account exists.
-5. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
-6. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
+3. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and point them to `#breakerspace-help`.
+4. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
+5. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Help them through the self-service steps; staff cannot add someone before the account exists.
+6. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
+7. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
 
 There is currently no skills demonstration, no training expiration, and no recurring retraining requirement.
 
