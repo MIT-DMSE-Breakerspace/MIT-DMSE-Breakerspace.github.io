@@ -51,7 +51,6 @@ Quick Guides exist for **optical, FTIR, and XRD** (`/quick-guides/`). The first 
 
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
-* **Two Moira renames are pending** — `-dsx` → `-optical` and `-duetta` → `-uv-vis`. Guides name the target values; verify in WebMoira before relying on them. See the rename table in `access-and-logistics.md`.
 * **Terminology is inconsistent.** LibCal says "laboratory assistant," the website says "student staff," these guides say "trainer."
 
 ### Decisions already made, with reasons

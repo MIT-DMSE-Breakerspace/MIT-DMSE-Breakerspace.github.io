@@ -13,7 +13,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
 | Training sample | Stable textured sample kit; exact sample, identifier, and cabinet location require approval |
-| Moira group | `dmse-brkrspc-optical` — rename from `dmse-brkrspc-dsx` pending; see [access and logistics](access-and-logistics.md#rename-status--verify-before-relying-on-this-table) |
+| Moira group | `dmse-brkrspc-optical` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-07-22 |
@@ -129,7 +129,7 @@ Complete every item before considering the session closed.
 * [ ] Confirm that the sample has been removed, the stage is empty, the head retracted normally, the microscope is off, Windows is logged out, and the dust cover is on.
 * [ ] Confirm that participants know where their image was saved and how to access it.
 * [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee to `dmse-brkrspc-optical`. This group is being renamed from `dmse-brkrspc-dsx`; if the new name is not yet in [WebMoira](https://groups.mit.edu/webmoira/), use the old one. Do not record attendee Kerberos usernames in this file.
+* [ ] Add each attendee to `dmse-brkrspc-optical`. Do not record attendee Kerberos usernames in this file.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.

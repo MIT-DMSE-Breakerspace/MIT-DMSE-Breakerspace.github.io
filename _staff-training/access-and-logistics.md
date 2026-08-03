@@ -45,7 +45,7 @@ Keep this rule intact when adding an instrument. A group name that merely resemb
 | Innovatest Nemesis 5100G2 hardness tester | [`hardness-tester.md`](../instruments/hardness-tester.md) | `dmse-brkrspc-hardness-tester` | **Comms only** |
 | Technoorg-Linda SEMPrep 2 ion mill | [`ion-mill.md`](../instruments/ion-mill.md) | `dmse-brkrspc-ion-mill` | **Comms only** |
 
-The **Access + comms** rows were confirmed by the lab manager on 2026-07-31 to the extent that each rename applied cleanly; treat an individual row as verified when someone has actually logged in after being added. Re-check a row before relying on it if a workstation is rebuilt or re-imaged.
+The three **Access + comms** rows whose groups were renamed — optical, Duetta, and Instron — were verified on their workstations on 2026-08-03. The remaining Access + comms rows are inherited from `../resources.md`, which describes Moira as the general mechanism, rather than individually confirmed; treat one as verified when someone has actually logged in after being added. Re-check a row if a workstation is rebuilt or re-imaged.
 
 Two details that the naming rule does not cover:
 
@@ -79,27 +79,18 @@ The XRD is the one comms-only instrument with a **second computer involved in th
 
 In practice the ion mill is close to staff-assisted-only, which is a consequence of how rarely it is used rather than a stated policy. Do not document it to users as a restriction. If demand increases, revisit whether the workstation should become access-managed and whether the right artifact is a training guide or a staff-assisted-use protocol.
 
-### Rename Status
+### If You Need To Rename A Group
 
-The names above are the target state, adopted 2026-07-31 so that every group is derivable from its page slug. Five groups needed renaming:
+Five groups were renamed between 2026-07-31 and 2026-08-03 to bring every name in line with the rule above. All are complete and verified, so the table is the only thing to read — but the process is recorded here because it will be needed again when an instrument is added or a page slug changes.
 
-| Former name | New name | Status |
-| --- | --- | --- |
-| `dmse-brkrspc-hrdnss` | `dmse-brkrspc-hardness-tester` | **Done 2026-07-31** |
-| `dmse-brkrspc-ionmill` | `dmse-brkrspc-ion-mill` | **Done 2026-07-31** |
-| `dmse-brkrspc-utm` | `dmse-brkrspc-instron` | **Done 2026-08-03** |
-| `dmse-brkrspc-dsx` | `dmse-brkrspc-optical` | Pending |
-| `dmse-brkrspc-duetta` | `dmse-brkrspc-uv-vis` | Pending |
+Renaming is safe and cheap:
 
-Three findings from the completed renames, worth knowing before doing the last two:
+* WebMoira renames a list without error, and accepts a 28-character name. `dmse-brkrspc-hardness-tester` is the longest name in the scheme, so no name that follows the rule can hit a length limit.
+* **The Windows `Allow log on locally` security setting follows the rename automatically.** The `gpedit.msc` policy picks up the new group name without being retyped. This was verified on the Instron, optical, and Duetta workstations — all three access-controlling renames — so a rename does not silently strip workstation access.
 
-* **WebMoira renames a list without error**, and accepted `dmse-brkrspc-hardness-tester` at 28 characters — the longest name in the scheme, so no other name will hit a length limit.
-* **The Windows `Allow log on locally` security setting followed the rename automatically.** The Instron rename was the first on an access-controlling list, and the `gpedit.msc` policy carried the new group name across without being retyped. So a rename does not silently strip workstation access, which was the main risk this section was written to guard against.
-* That said, **the remaining two renames should still be verified.** One instrument confirming the behavior is good evidence, not proof that every workstation is configured the same way.
+Still confirm the new name in [WebMoira](https://groups.mit.edu/webmoira/) and check `Allow log on locally` on the affected workstation afterward. The failure this guards against is invisible at rename time and surfaces later as a trained user who cannot log in.
 
-For `-dsx` and `-duetta`, check the name in [WebMoira](https://groups.mit.edu/webmoira/) before adding an attendee, and confirm the `Allow log on locally` setting picked up the new name afterward. A mistake on either of these blocks a trained user from logging in.
-
-Delete this section once all five are done, so the table above is the only thing to read.
+The former names, should one appear in an old document or a posted note: `-hrdnss` (now `-hardness-tester`), `-ionmill` (now `-ion-mill`), `-utm` (now `-instron`), `-dsx` (now `-optical`), and `-duetta` (now `-uv-vis`).
 
 The unchanged groups — `-ftir`, `-raman`, `-xrd`, `-psa`, and `-sem` — already satisfy the rule and need no action.
 
