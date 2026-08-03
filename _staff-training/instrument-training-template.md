@@ -2,7 +2,13 @@
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
-Draw operating content from the canonical public instrument page and its Quick Guide. Do not maintain a separate operating sequence in a staff guide. Take the Moira group, closeout sequence, and scheduling rules from [access and logistics](access-and-logistics.md) rather than restating them here.
+A staff training guide is an **outline and checklist for the trainer**, not a manual. It assumes a person is present to instruct. Its job is to make different trainers deliver the same session: the same opening, the same core operations in the same order, the same closeout.
+
+Three things follow from that:
+
+* **The instrument page's SOP and detailed operating instructions are canonical.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
+* **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date.
+* **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
 
 ## Guide Control
 
@@ -82,15 +88,34 @@ Take compression out of the instrument-overview discussion rather than out of cl
 
 [Identify the sample-library item, cabinet location, preparation completed before the session, and any consumables.]
 
+### Which Operations This Training Covers
+
+**This is the decision that has to be made before the rest of the guide can be written.** An instrument can do far more than a beginner needs, and a training that tries to cover everything covers nothing well. Name the small set of core operations a new user must be able to perform independently, and name what is deliberately excluded.
+
+| Taught in this training | Deliberately excluded |
+| --- | --- |
+| [Core operation a beginner needs] | [Capability left for later, staff-guided work, or a Level 2 exercise] |
+| [Core operation a beginner needs] | [Capability left for later] |
+
+Excluding something is not hiding it — say where it lives instead, such as the detailed operating instructions or a staff conversation. The exclusions matter as much as the inclusions, because they are what keeps a session finishable in an hour and what stops different trainers from teaching different things.
+
 ### Participant Workflow
 
-1. [Observe or inspect the sample before measurement.]
-2. [Load or position the sample.]
-3. [Select the standard method or settings.]
-4. [Collect the standard image, spectrum, measurement, or dataset.]
-5. [Save the data in the expected location with a useful filename.]
-6. [Interpret the main feature or compare the result with a reference.]
-7. [Unload, clean, and return the instrument to its expected state.]
+Each step cites the section of the public instrument page it comes from. **The trainer should say the connection out loud** — "this is the loading step in the SOP" — so participants learn to navigate the page, not just follow a person. That is what makes them able to work independently afterward.
+
+Anchors are stable by convention, so a link like `../instruments/xrd.md#loading` keeps working when heading text changes.
+
+| # | Step | SOP reference |
+| --- | --- | --- |
+| 1 | [Inspect or prepare the sample] | [`#materials`](../instruments/[slug].md#materials) |
+| 2 | [Start up the instrument] | [`#startup`](../instruments/[slug].md#startup) |
+| 3 | [Load or position the sample] | [`#loading`](../instruments/[slug].md#loading) |
+| 4 | [Select the standard method or program] | [`#operation`](../instruments/[slug].md#operation) |
+| 5 | [Collect the standard result] | [`#operation`](../instruments/[slug].md#operation) |
+| 6 | [Save or export the data] | [`#export`](../instruments/[slug].md#export) |
+| 7 | [Unload, clean, and shut down] | [`#shutdown`](../instruments/[slug].md#shutdown) |
+
+If a step has no matching SOP section, that is a finding about the instrument page rather than a reason to write the step out here. Record it in [`../instruments/staff-todo.md`](../instruments/staff-todo.md) and link the closest section meanwhile.
 
 ### Suggested Roles For Three Participants
 

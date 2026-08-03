@@ -32,20 +32,48 @@ The current Qualtrics survey remains coordinated with the active production webs
 
 ## Picking This Work Up Again
 
-### The dependency that gates new guides
+### What A Staff Training Guide Is
 
-A staff guide carries **no operating sequence of its own** — it draws that from the public instrument page and its two-page Quick Guide. So a guide cannot be written for an instrument that has no Quick Guide, because the trainer would have nothing to point at.
+An **outline and checklist for the undergraduate lab staff member delivering a training**, so that different trainers deliver a consistent session. It assumes a trainer is present to instruct, which is why it can be terse where a manual could not be.
 
-Quick Guides exist for **optical, FTIR, and XRD** (`/quick-guides/`). The first two are exactly the two instruments with pilot staff guides, which is why the model has worked so far and why it was untested. XRD's was written in advance of its staff guide precisely to unblock it.
+Every guide has the same three-part shape:
 
-**So the order is: Quick Guide → staff training guide, one instrument at a time.** The Quick Guide pattern and scope rules are documented in [`../instruments/readme.md`](../instruments/readme.md).
+1. **Shared opening** — welcome and goals, then the [lab safety orientation](lab-safety-orientation.md), identical in every session.
+2. **The instrument's core operations**, walked through in SOP order.
+3. **Shared administrative closeout** — the sequence in [`access-and-logistics.md`](access-and-logistics.md), identical in every session.
 
-### Suggested next steps, cheapest first
+Only the middle changes between instruments. The opening and closeout are shared precisely so a trainer cannot accidentally omit them and so they only need maintaining in one place.
 
-1. **Draft the XRD staff training guide.** Its Quick Guide exists, its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. One caveat below.
-2. **Select Level 1 samples for the two pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
-3. **SEM next after XRD.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
-4. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
+**The trainer explicitly links each step to its SOP bullet**, out loud, during the session. Every workflow step in a guide cites the section of the public instrument page it comes from. This is the mechanism by which a trainee learns to navigate the page instead of depending on the trainer, which is what makes them able to work independently afterward.
+
+### The Real Decision: Which Operations To Teach
+
+The hard part of writing a guide is **not** assembling the document — the opening, closeout, and SOP links are mechanical. It is deciding **which operations belong in a beginner training** out of everything the instrument can do.
+
+Every instrument can do more than a one-hour session can cover. Each guide names the small set of core operations a new user must perform independently, and names what is deliberately excluded and where that lives instead. The exclusions are what keep a session finishable and what stop two trainers from teaching two different things.
+
+Expect this to need instrument knowledge and a judgment call per instrument. It is the part to work through with the lab manager rather than infer from the page.
+
+### Source Of Truth, And Where Quick Guides Fit
+
+The instrument page's **SOP and detailed operating instructions are canonical.** Every other document validates against them: staff guides, Quick Guides, and LibCal descriptions all point at the page rather than restating it.
+
+**Training guide first, then Quick Guide.** Once a training guide has settled which operations are taught, that same scope becomes the Quick Guide's scope — an illustrated, annotated walkthrough of the operations the trainer just covered, plus the core startup and shutdown reminders. Built in that order, the Quick Guide reinforces and supplements what the trainer said, and the two documents cannot disagree about what a routine session involves.
+
+A Quick Guide is therefore **not a prerequisite** for a training guide. An earlier version of this README claimed a guide could not be written without one; that was an inference from the fact that the two pilot guides happened to be the two instruments with Quick Guides, and it was wrong. A guide can cite the page's `{#sop}` and `{#details}` sections directly.
+
+Quick Guides currently exist for optical, FTIR, and XRD. XRD's was written before its training guide, which is the reverse of the intended order — treat its scope as provisional until the XRD training guide settles which operations are taught.
+
+### Suggested next steps
+
+Training guides come first, and each one starts by scoping its operations with the lab manager.
+
+1. **Add the operations table and SOP-step citations to the two pilots.** They predate both requirements. Doing this first tests the pattern on instruments whose workflows are already understood, and it is where the operation-scoping conversation is cheapest to have.
+2. **Draft the XRD training guide.** Its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. Two open questions below affect its closeout.
+3. **SEM after that.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
+4. **Select Level 1 samples for the pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
+5. **Then revisit the Quick Guides**, so each one matches the operation scope its training guide settled on. XRD's exists already and should be re-checked against its training guide rather than treated as fixed.
+6. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
 
 ### Open questions that affect writing
 
