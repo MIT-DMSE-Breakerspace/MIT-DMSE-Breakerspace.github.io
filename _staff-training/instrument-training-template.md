@@ -2,14 +2,15 @@
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
-Draw operating content from the canonical public instrument page and its Quick Guide. Do not maintain a separate operating sequence in a staff guide. Take the Moira group, closeout sequence, and scheduling rules from [access and logistics](access-and-logistics.md) rather than restating them here.
+Treat the canonical public instrument page as the operating authority. Develop this curriculum and the Quick Guide as sibling derivatives of that page. This guide should map and verify the complete SOP without becoming an alternate technical SOP; the Quick Guide supplies the physical routine-workflow aid, while this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Take the Moira group, closeout sequence, and scheduling rules from [access and logistics](access-and-logistics.md) rather than restating them here.
 
 ## Guide Control
 
 | Field | Value |
 | --- | --- |
 | Instrument | [Name and model] |
-| Public instrument page | [Relative link] |
+| Public instrument page and SOP | [Relative links] |
+| Quick Guide | [Standalone URL, review date, and physical location at the instrument] |
 | LibCal training | [Template or event link] |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
@@ -31,7 +32,7 @@ By the end of the session, participants should be able to:
 * Follow the standard setup, measurement, data-saving, cleanup, and shutdown sequence with the written reference available.
 * Recognize the most important stop-and-ask-for-help conditions.
 
-This session does not currently require a separate skills demonstration. Participants may divide the Level 1 workflow. The trainer should make the complete sequence visible to everyone and involve each participant in at least one meaningful part of sample handling, instrument control, data collection, or interpretation.
+This session does not currently require a separate skills demonstration. Participants may divide the Level 1 workflow. The trainer should make the complete sequence visible to everyone, have participants use the printed Quick Guide during the hands-on work, and involve each participant in at least one meaningful part of sample handling, instrument control, data collection, or interpretation. Participant-led cleanup and shutdown should use the Quick Guide with as little trainer prompting as is safely practical.
 
 ## Before The Session
 
@@ -72,6 +73,20 @@ Adapt the timing to the instrument while preserving the full workflow and enough
 
 Take compression out of the instrument-overview discussion rather than out of cleanup, shutdown, or closeout.
 
+## SOP Coverage Map
+
+This table is an audit and teaching plan, not an alternate SOP. Link to the canonical SOP and use short labels rather than rewriting technical instructions. Expand the table so **every startup and shutdown bullet appears individually**. Routine operation may map to a Level 1 workflow section when the grouping remains clear. Do not use “follow the Quick Guide” as the only evidence that a phase was taught.
+
+| Canonical SOP item | Quick Guide step | How training covers it | Participant check |
+| --- | --- | --- | --- |
+| Startup: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Startup: [one row for each remaining startup item] | [Side/step] | [Coverage] | [Check] |
+| Operation: [routine workflow or linked group] | [Side/steps] | [Level 1 workflow steps] | [Check] |
+| Saving/export: [short label and canonical anchor] | [Side/step] | [Coverage] | [Check] |
+| Shutdown: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Shutdown: [one row for each remaining shutdown item] | [Side/step] | [Coverage] | [Check] |
+| Stop and ask: [critical condition or linked group] | [Location] | [Prompt or scenario] | [Expected response] |
+
 ## Level 1 Exercise
 
 ### Question Or Goal
@@ -83,6 +98,8 @@ Take compression out of the instrument-overview discussion rather than out of cl
 [Identify the sample-library item, cabinet location, preparation completed before the session, and any consumables.]
 
 ### Participant Workflow
+
+Use the Quick Guide as the mechanical spine of this exercise. Add the Level 1 sample, question, expected result, role rotation, and trainer checkpoints here; do not alter the baseline operating sequence merely to make the exercise more distinctive.
 
 1. [Observe or inspect the sample before measurement.]
 2. [Load or position the sample.]
@@ -121,6 +138,7 @@ Complete these tasks before considering the session closed.
 * [ ] Confirm that all samples are removed and the instrument is clean and in its expected state.
 * [ ] Confirm that participants know where their files were saved and how to access them.
 * [ ] Ask participants to locate the SOP, detailed operating guidance, and common failure modes on the public instrument page.
+* [ ] Confirm that the printed Quick Guide is returned to its place at the instrument, is legible and undamaged, and carries the same review state as the web version.
 * [ ] Add every attendee directly to the instrument's MIT Moira group: `dmse-brkrspc-[page slug]`. Confirm the name in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group and some renames may still be pending.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.

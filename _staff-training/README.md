@@ -8,20 +8,22 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-Last substantive work: 2026-07-31.
+Last substantive work: 2026-08-03.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
 * **Per-instrument guides** — pilots for the optical microscope and FTIR. Two of eleven instruments.
 
-Both pilots have their Moira group, LibCal template, and guide owner recorded. **Each is blocked on two things only: an approved Level 1 training sample with a cabinet location, and operational-owner review.** Neither is a writing task.
+Both pilots have their Moira group, LibCal template, and guide owner recorded. They still need an approved Level 1 training sample with a cabinet location and operational-owner review. Following the 2026-08-03 Quick Guide decision, they also need a structural audit: add an explicit SOP coverage map and confirm that the Level 1 workflow uses the printed Quick Guide without treating it as the source of the curriculum.
 
 The operating model the template reflects:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
 * Every session opens with the [lab safety orientation](lab-safety-orientation.md), for all participants, regardless of prior training.
 * Participants may divide the Level 1 workflow, provided the trainer makes the full sequence visible and involves everyone meaningfully.
+* Participants use the printed Quick Guide during the hands-on workflow, particularly for participant-led cleanup and shutdown.
+* The staff guide contains an explicit coverage map showing where every canonical startup and shutdown step, the routine operation, saving, and stop conditions are taught or verified.
 * The trainer adds attendees directly to the appropriate MIT Moira group after the session.
 * The trainer sends each attendee a Breakerspace Slack invitation as part of training closeout.
 * The lab manager processes physical tap access separately after the one-time Qualtrics training record is complete.
@@ -32,20 +34,27 @@ The current Qualtrics survey remains coordinated with the active production webs
 
 ## Picking This Work Up Again
 
-### The dependency that gates new guides
+### The source model that gates routine delivery
 
-A staff guide carries **no operating sequence of its own** — it draws that from the public instrument page and its two-page Quick Guide. So a guide cannot be written for an instrument that has no Quick Guide, because the trainer would have nothing to point at.
+The canonical public instrument page is the operating authority. The Quick Guide and staff training guide are sibling derivatives of that page:
 
-Quick Guides exist for **optical, FTIR, and XRD** (`/quick-guides/`). The first two are exactly the two instruments with pilot staff guides, which is why the model has worked so far and why it was untested. XRD's was written in advance of its staff guide precisely to unblock it.
+* The Quick Guide supplies the routine mechanical workflow that a recently trained user can hold at the instrument.
+* The staff guide supplies trainer preparation, full SOP coverage, the Level 1 sample and question, coaching prompts, participant roles, success criteria, and administrative closeout.
 
-**So the order is: Quick Guide → staff training guide, one instrument at a time.** The Quick Guide pattern and scope rules are documented in [`../instruments/readme.md`](../instruments/readme.md).
+The staff guide therefore does contain a **coverage map and Level 1 participant workflow**, but it must not become an alternate technical SOP. Link each mapped item to the canonical page and use short labels rather than rewriting the technical instruction. Every startup and shutdown SOP item must appear individually in the map; routine operation can map to the Level 1 workflow as a group where that remains unambiguous.
+
+Do not impose an authoring sequence of Quick Guide first, staff guide second. Draft and test them together once the canonical SOP and intended Level 1 workflow are stable. Routine delivery is ready only when the canonical page, Quick Guide, staff guide, and exercise agree; the Quick Guide has been print-tested and installed at the instrument; and the training has been practiced by a qualified trainer.
+
+Quick Guides currently exist for **optical, FTIR, and XRD** (`/quick-guides/`). The optical and FTIR staff guides are pilots. All five artifacts need auditing against the current content contract in [`../instruments/readme.md`](../instruments/readme.md) before the pattern is extended.
 
 ### Suggested next steps, cheapest first
 
-1. **Draft the XRD staff training guide.** Its Quick Guide exists, its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. One caveat below.
-2. **Select Level 1 samples for the two pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
-3. **SEM next after XRD.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
-4. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
+1. **Retrofit the optical and FTIR pilot staff guides.** Add the SOP coverage map, make use of the physical Quick Guide explicit, and verify that the Level 1 exercise is an overlay on the routine workflow rather than the source of it.
+2. **Audit and print-test the optical, FTIR, and XRD Quick Guides.** Reconcile every operating step with the canonical page, reduce interpretation beyond the immediate quality gate, add control-finding visuals where needed, and install reviewed laminated copies.
+3. **Draft the XRD staff training guide in parallel with the XRD Quick Guide audit.** Its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. One caveat below.
+4. **Select Level 1 samples for the two pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
+5. **SEM next after XRD.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
+6. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
 
 ### Open questions that affect writing
 
@@ -62,7 +71,14 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `instruments/instron.md` keeps its brand slug. Renaming `-utm` to `-instron` gives alignment plus the term students actually use, and avoids putting an ambiguous abbreviation in a public URL.
 * The safety orientation runs every session for everyone, scaled rather than skipped. A trainer cannot tell who is new from a LibCal registration list, and an optional first item gets dropped under time pressure.
 * The shower and eyewash get fifteen seconds, not a featured slot. They exist because MIT adds them to any renovated lab, not because this lab's materials require them; the material restriction is the actual safety control.
-* Quick Guides exclude interpretation and analysis, and exclude parameter tables when the workflow is selecting a stored method.
+* Quick Guides serve recently trained and trained users at the instrument; they do not replace training or authorize untrained use.
+* Quick Guides and staff guides are sibling derivatives of the canonical instrument page and may be written in parallel.
+* Every Quick Guide and staff-guide coverage map represents the complete canonical startup and shutdown sequence.
+* Quick Guides cover one default routine workflow; Level 1 exercises use that mechanical spine while adding the sample, question, expected result, and teaching prompts.
+* Immediate data-quality checks belong in Quick Guides; extended interpretation and analysis do not.
+* Quick Guides exclude parameter tables when the workflow is selecting a reviewed stored method.
+* Participants use the printed Quick Guide during training, especially for participant-led cleanup and shutdown.
+* Reviewed laminated Quick Guides are kept at the instruments. The web version supports printing, accessibility, personal copies, and fallback rather than routine browser toggling.
 
 ## Files In This Directory
 
@@ -91,6 +107,8 @@ A complete guide should define:
 * A suggested agenda for a maximum of three participants.
 * Safe ways for participants to divide the workflow.
 * The public operating-page sections participants should learn to use.
+* An auditable map of every canonical startup and shutdown step, the routine operation, saving, and stop conditions.
+* How participants will use the physical Quick Guide during the hands-on workflow.
 * Shutdown, cleanup, data-saving, and post-training access tasks.
 * The exact MIT Moira group the trainer must update after the session, taken from [`access-and-logistics.md`](access-and-logistics.md).
 
@@ -114,4 +132,4 @@ Changes should be written once in the most authoritative location and linked or 
 
 ## Planned Guide Rollout
 
-Create a staff guide after the corresponding public instrument workflow and Level 1 exercise are stable enough to train consistently. Each guide should then be paired with a real sample-library item or prepared kit, an expected result, a cabinet location, and a replenishment plan. Track cross-instrument rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md), not by adding placeholder guide files for every instrument at once.
+Develop the Quick Guide and staff guide together after the corresponding public instrument workflow and Level 1 exercise are stable enough to train consistently. Before routine delivery, pair them with a real sample-library item or prepared kit, an expected result, a cabinet location, a replenishment plan, and a reviewed laminated Quick Guide at the instrument. Track cross-instrument rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md), not by adding placeholder guide files for every instrument at once.
