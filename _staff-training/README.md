@@ -17,7 +17,15 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 
 **FTIR is the reference implementation.** Its Quick Guide and training guide were rebuilt together on 2026-08-03 under the model below, then corrected through four review rounds. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive.
 
-FTIR's remaining blockers are all non-writing: a Letter duplex print proof, one identified paper specimen with a sample ID and location, measured band positions from reviewed reference spectra, operational-owner approval, a laminated copy installed at the instrument, and a practice training.
+**FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
+
+* **What a good background preview looks like.** The page has no acceptance criterion, so the Quick Guide currently says only to confirm the crystal is bare and unclamped.
+* **Atmospheric and contamination band positions.** Described qualitatively on the page with no wavenumbers, so the Quick Guide cannot name them. A draft did, from nothing — see the lessons below.
+* **The background-redo cycle as canonical text.** The Quick Guide spells it out; the page should own it.
+
+Also required: one identified paper specimen with a sample ID and location, measured band positions from reviewed reference spectra to replace the placeholder contrast in the training guide, operational-owner approval, a Letter duplex print proof that may force edits, a laminated copy installed at the instrument, and a practice training.
+
+All three page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 
 **Optical is next.** It has a Quick Guide and a staff guide, both predating the content contract, so it needs the same retrofit FTIR just had.
 
@@ -73,15 +81,21 @@ The staff guide therefore does contain a **coverage map and Level 1 participant 
 
 Two earlier claims in this README were wrong and are superseded. It first said a guide could not be written for an instrument without a Quick Guide, which was inferred from the two pilot guides happening to be the two instruments with Quick Guides. It then said the training guide must come first. Both imposed an authoring sequence that the sibling model removes.
 
-Quick Guides currently exist for **optical, FTIR, and XRD** (`/quick-guides/`). The optical and FTIR staff guides are pilots. All five artifacts need auditing against the [content contract](../instruments/readme.md#quick-guide-content-contract) before the pattern is extended.
+Quick Guides currently exist for **optical, FTIR, and XRD** (`/quick-guides/`). Their maturity differs, and conflating them wastes effort:
+
+| Instrument | Quick Guide | Staff guide |
+| --- | --- | --- |
+| **FTIR** | Rebuilt to the contract 2026-08-03. Needs empirical inputs, approval, and a print proof — not another audit | Retrofitted 2026-08-03, including the SOP coverage map |
+| **Optical** | Predates the contract. Needs retrofit | Pilot predating the contract. Needs the coverage map, operations table, and a named default sample |
+| **XRD** | Predates the contract, and is dense. Needs retrofit | **Does not exist.** Needs writing |
 
 ### Suggested next steps
 
 Each instrument's Quick Guide and staff guide are developed together, starting from the canonical SOP.
 
-1. **Retrofit the optical pair.** Both documents predate the content contract. Follow the FTIR pair as the model: numbered Quick Guide steps, an SOP coverage map with every startup and shutdown bullet as its own row, an operations table, and a named default sample. Optical's SOP is shorter than FTIR's, so this should be faster.
-2. **Print-proof FTIR before building more.** Side 2 is roughly 582 words and has never been printed. If the two-page budget does not hold, the fix affects every guide written after it, so testing now is cheaper than retrofitting three.
-3. **XRD pair.** Its Quick Guide predates the contract and is dense; its training guide does not exist. `../handouts/xrd/` holds two draft tutorials and a student report template worth harvesting. Two open questions below affect its closeout.
+1. **Print-proof the FTIR Quick Guide.** Side 2 is roughly 582 words and has never been printed. If the two-page budget does not hold, the fix changes how optical and XRD get written, so this comes first. It needs a physical printer, not a browser preview.
+2. **Retrofit the optical pair.** Follow the FTIR pair as the model: numbered Quick Guide steps, an SOP coverage map with every startup and shutdown bullet as its own row, an operations table, and a named default sample. Optical's SOP is shorter than FTIR's, so this should be faster. **If the print proof is not yet available**, optical may proceed in parallel — but treat its page budget as unverified and expect to revise both guides once the proof lands.
+3. **XRD pair.** The Quick Guide needs retrofit; the training guide needs writing from scratch. `../handouts/xrd/` holds two draft tutorials and a student report template worth harvesting. Two open questions below affect its closeout.
 4. **Level 1 samples.** FTIR needs one identified paper specimen. Optical needs its own default named.
 5. **SEM.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
 6. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
