@@ -1,6 +1,6 @@
 # Breakerspace Website To-Do
 
-Last reviewed: 2026-07-27
+Last reviewed: 2026-08-03
 
 This is the canonical unlisted list for cross-site launch work, policy decisions, and ongoing maintenance. It is organized by operational deadline rather than by page.
 
@@ -31,7 +31,7 @@ The remaining cross-site work continues in this order:
 1. **Workflow accessibility:** complete keyboard, VoiceOver, reflow, reduced-motion, and third-party workflow testing.
 2. **Responsive design:** fix the intermediate-width overflow, increase body-text readability, remove focus-state layout shift, and replace fragile floated figures.
 3. **Automated quality controls:** add production-equivalent build, link, accessibility, asset-budget, metadata, and sensitive-content checks.
-4. **Instrument-page structure:** correct heading hierarchy and extend the standalone Quick Guide pattern beyond the FTIR and optical pilots.
+4. **Instrument-page structure:** correct heading hierarchy, retrofit the existing Quick Guides to the 2026-08-03 content contract, then extend the pattern alongside staff training guides.
 5. **Discovery and belonging:** add a vivid homepage inspiration block and improve question- or sample-first instrument selection after the operational work above.
 
 The detailed tiered and instrument-specific checklists below remain authoritative. This execution order does not override urgent safety corrections or fall-readiness dependencies.
@@ -86,7 +86,10 @@ These items should be complete before the first major fall training push or cour
 
 * [ ] Create a minimum staff training guide from [instrument-training-template.md](../_staff-training/instrument-training-template.md) for every instrument that will be offered for training early in the fall. Instruments not yet documented should receive a guide before their next training is advertised.
 * [ ] Select a stable Level 1 sample or prepared kit, expected result, cabinet location, and replenishment plan for each fall training guide.
-* [ ] Connect each fall Level 1 exercise, public operating page, staff training guide, LibCal description, and Moira group to the same workflow.
+* [ ] Connect each fall Level 1 exercise, canonical public operating page, Quick Guide, staff training guide, LibCal description, and Moira group to the same workflow. Quick Guides and staff guides may be written in parallel; routine delivery requires both to be reviewed against the SOP.
+* [ ] Add a complete SOP coverage map to the FTIR and optical pilot staff guides, then practice the training with participants using the printed Quick Guide as the routine-workflow aid.
+* [ ] Audit, print-test, laminate, and install the FTIR, optical, and XRD Quick Guides under the [content contract](../instruments/readme.md#quick-guide-content-contract) before treating them as the rollout model.
+* [ ] Demote the current Quick Guide link on instrument pages from the at-instrument decision path to a clearly labeled Quick Actions link for at-instrument use, printing, accessibility, and fallback. Keep the canonical page and SOP as the primary web starting point.
 * [x] Standardize the Moira list names so every group is `dmse-brkrspc-` plus the instrument's page slug. All five renames are complete: `-hrdnss` → `-hardness-tester` and `-ionmill` → `-ion-mill` on 2026-07-31, then `-utm` → `-instron`, `-dsx` → `-optical`, and `-duetta` → `-uv-vis` on 2026-08-03. The three access-controlling renames were verified on their workstations. WebMoira renames cleanly, accepts a 28-character name, and the Windows `Allow log on locally` policy follows a rename automatically without being retyped. The current table and the rename procedure are in [access-and-logistics.md](../_staff-training/access-and-logistics.md#moira-groups-by-instrument).
 * [ ] Run at least one staff or student-staff practice training from each new guide and revise steps that produce inconsistent outcomes. Trainer qualification is per instrument and is defined in [trainer-readiness.md](../_staff-training/trainer-readiness.md); a guide's first practice run validates the document, while later runs qualify the trainer.
 * [ ] Maintain the trainer roster in the private staff channel's Slack canvas, recording the stage reached, practice date, and observer per staff member and per instrument. It stays out of the repository because it holds individual names. Trim workflow text from the canvas that [trainer-readiness.md](../_staff-training/trainer-readiness.md) now covers, and link there instead so the process is documented once.
@@ -139,7 +142,7 @@ Use the [Tutorial Media Production Guide](tutorial-media/README.md) for all new 
 * [ ] Add captions or transcripts for any remaining instructional media that contains meaningful audio or visual information not already explained in adjacent text.
 * [ ] Improve abbreviated alternative text and screenshot descriptions in consolidated instrument pages with review from an instrument trainer.
 * [ ] Inventory linked manuals and request accessible versions from manufacturers; record which operating information still needs an HTML equivalent.
-* [ ] Rebuild the excluded instrument handouts as accessible, reviewed companions before returning them to the public build.
+* [ ] Harvest the excluded legacy handouts and 3.000 activity packets for control screenshots, sequencing, quality cues, and worked examples. Publish new accessible Quick Guides under the current content contract rather than restoring the legacy PDFs as parallel operating sources. Note that two legacy handouts print workstation credentials, so do not copy content forward without review.
 * [ ] Review the Help page after major instrument updates and move instrument-specific material back to the appropriate operating page.
 * [ ] Add a short screenshot or rendered example of the recommended Breakerspace Files folder structure.
 

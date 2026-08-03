@@ -4,13 +4,26 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-07-29
+Last reviewed: 2026-08-03
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
 The repository may still be publicly readable. Do not store credentials, access codes, private student information, or sensitive security details here.
 
 Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for all new tutorial photography, screen recording, video capture, processing, and publication work.
+
+## Cross-Instrument Quick Guide Rollout
+
+The content contract and relationship to staff training were settled on 2026-08-03 in [`readme.md`](readme.md#quick-guide-content-contract). The canonical instrument page is the source; the Quick Guide and staff guide are sibling derivatives.
+
+* [ ] Audit the FTIR, optical, and XRD Quick Guides against the canonical SOP. Account for every startup and shutdown item, one routine operation, saving/export, cleanup, stop conditions, and the before-leaving state.
+* [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling.
+* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen.
+* [ ] Move the Quick Guide link out of the at-instrument decision path in Quick Actions and label it for at-instrument use, printing, accessibility, and fallback. Keep the canonical page and SOP as the apparent web starting point.
+* [ ] Confirm workstation desktop shortcuts and general posted QR codes open the canonical instrument page rather than bypassing it for the Quick Guide.
+* [ ] Print, laminate, label, and install the reviewed guide at each instrument. Record who checks the physical copy after workflow revisions and who replaces damaged or outdated copies.
+* [ ] Add Quick Guides for remaining instruments in parallel with their staff guides once each canonical SOP and Level 1 workflow are stable. Complete the staff-guide SOP coverage map and a practice training before routine delivery.
+* [ ] When one routine workflow cannot fit legibly on two sides, keep a primary Quick Guide and create a separate task-specific workflow card rather than shrinking or cramming the guide.
 
 ## Nicolet iS5 FTIR Spectrometer
 

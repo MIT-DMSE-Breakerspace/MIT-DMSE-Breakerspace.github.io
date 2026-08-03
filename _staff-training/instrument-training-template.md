@@ -4,10 +4,11 @@ Use this template to build a trainer-facing guide for a standard Breakerspace in
 
 A staff training guide is an **outline and checklist for the trainer**, not a manual. It assumes a person is present to instruct. Its job is to make different trainers deliver the same session: the same opening, the same core operations in the same order, the same closeout.
 
-Three things follow from that:
+Four things follow from that:
 
-* **The instrument page's SOP and detailed operating instructions are canonical.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
-* **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date.
+* **The canonical instrument page is the operating authority.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
+* **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
+* **This guide and the Quick Guide are siblings**, both derived from the instrument page. The Quick Guide supplies the physical routine-workflow aid participants hold during the session; this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
 * **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
 
 ## Guide Control
@@ -15,7 +16,8 @@ Three things follow from that:
 | Field | Value |
 | --- | --- |
 | Instrument | [Name and model] |
-| Public instrument page | [Relative link] |
+| Public instrument page and SOP | [Relative links] |
+| Quick Guide | [Standalone URL, review date, and physical location at the instrument] |
 | LibCal training | [Template or event link] |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
@@ -37,7 +39,7 @@ By the end of the session, participants should be able to:
 * Follow the standard setup, measurement, data-saving, cleanup, and shutdown sequence with the written reference available.
 * Recognize the most important stop-and-ask-for-help conditions.
 
-This session does not currently require a separate skills demonstration. Participants may divide the Level 1 workflow. The trainer should make the complete sequence visible to everyone and involve each participant in at least one meaningful part of sample handling, instrument control, data collection, or interpretation.
+This session does not currently require a separate skills demonstration. Participants may divide the Level 1 workflow. The trainer should make the complete sequence visible to everyone, have participants use the printed Quick Guide during the hands-on work, and involve each participant in at least one meaningful part of sample handling, instrument control, data collection, or interpretation. Participant-led cleanup and shutdown should use the Quick Guide with as little trainer prompting as is safely practical.
 
 ## Before The Session
 
@@ -78,6 +80,22 @@ Adapt the timing to the instrument while preserving the full workflow and enough
 
 Take compression out of the instrument-overview discussion rather than out of cleanup, shutdown, or closeout.
 
+## SOP Coverage Map
+
+This table is an audit and teaching plan, not an alternate SOP. Link to the canonical SOP and use short labels rather than rewriting technical instructions. Expand the table so **every startup and shutdown bullet appears individually**. Routine operation may map to a Level 1 workflow section when the grouping remains clear. Do not use "follow the Quick Guide" as the only evidence that a phase was taught.
+
+| Canonical SOP item | Quick Guide step | How training covers it | Participant check |
+| --- | --- | --- | --- |
+| Startup: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Startup: [one row for each remaining startup item] | [Side/step] | [Coverage] | [Check] |
+| Operation: [routine workflow or linked group] | [Side/steps] | [Level 1 workflow steps] | [Check] |
+| Saving/export: [short label and canonical anchor] | [Side/step] | [Coverage] | [Check] |
+| Shutdown: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Shutdown: [one row for each remaining shutdown item] | [Side/step] | [Coverage] | [Check] |
+| Stop and ask: [critical condition or linked group] | [Location] | [Prompt or scenario] | [Expected response] |
+
+A canonical SOP item with no matching page section is a gap in the instrument page, not a reason to write the procedure out here. Record it in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+
 ## Level 1 Exercise
 
 ### Question Or Goal
@@ -90,7 +108,7 @@ Take compression out of the instrument-overview discussion rather than out of cl
 
 ### Which Operations This Training Covers
 
-**This is the decision that has to be made before the rest of the guide can be written.** An instrument can do far more than a beginner needs, and a training that tries to cover everything covers nothing well. Name the small set of core operations a new user must be able to perform independently, and name what is deliberately excluded.
+**This is the decision that has to be made before the rest of the guide can be written**, and it is shared with the Quick Guide: the routine workflow the Quick Guide documents is the workflow this training teaches. An instrument can do far more than a beginner needs, and a training that tries to cover everything covers nothing well. Name the small set of core operations a new user must be able to perform independently, and name what is deliberately excluded.
 
 | Taught in this training | Deliberately excluded |
 | --- | --- |
@@ -101,7 +119,9 @@ Excluding something is not hiding it — say where it lives instead, such as the
 
 ### Participant Workflow
 
-Each step cites the section of the public instrument page it comes from. **The trainer should say the connection out loud** — "this is the loading step in the SOP" — so participants learn to navigate the page, not just follow a person. That is what makes them able to work independently afterward.
+Use the Quick Guide as the mechanical spine of this exercise. Add the Level 1 sample, question, expected result, role rotation, and trainer checkpoints here; do not alter the baseline operating sequence merely to make the exercise more distinctive.
+
+Each step also cites the section of the public instrument page it comes from. **The trainer should say the connection out loud** — "this is the loading step in the SOP" — so participants learn to navigate the page, not just follow a person. That is what makes them able to work independently afterward.
 
 Anchors are stable by convention, so a link like `../instruments/xrd.md#loading` keeps working when heading text changes.
 
@@ -146,6 +166,7 @@ Complete these tasks before considering the session closed.
 * [ ] Confirm that all samples are removed and the instrument is clean and in its expected state.
 * [ ] Confirm that participants know where their files were saved and how to access them.
 * [ ] Ask participants to locate the SOP, detailed operating guidance, and common failure modes on the public instrument page.
+* [ ] Confirm that the printed Quick Guide is returned to its place at the instrument, is legible and undamaged, and carries the same review state as the web version.
 * [ ] Add every attendee directly to the instrument's MIT Moira group: `dmse-brkrspc-[page slug]`. Confirm the name in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group and some renames may still be pending.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.

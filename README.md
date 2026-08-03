@@ -85,7 +85,7 @@ Old public URLs are preserved: each legacy `tutorials/*.html` page is a redirect
 Use one source of truth for each kind of work:
 
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
-* `_staff-training/README.md`: trainer-facing guide model, the shared trainer references, the Quick Guide dependency that gates new guides, and the coordinated Qualtrics launch review. Start there for any staff-training work.
+* `_staff-training/README.md`: trainer-facing guide model, shared trainer references, the canonical-SOP/Quick-Guide/staff-guide relationship, and the coordinated Qualtrics launch review. Start there for any staff-training work.
 * `instruments/readme.md`: instrument-page architecture, migration status, Quick Guide contract and scope rules, shared includes, and authoring conventions.
 * `instruments/staff-todo.md`: unpublished instrument-specific missing images, workflows, examples, exercises, and technical review items.
 * `showcases/README.md`: Materials Showcase purpose, source model, editorial workflow, cadence, automation boundaries, and authoring contract.
@@ -107,7 +107,7 @@ The sample library, a populated showcase archive, complete instrument photograph
 * Prefer task-based routes and plain operational language.
 * Keep the homepage short; do not turn it into a complete policy page.
 * Make each consolidated instrument page the canonical destination for that instrument.
-* Put trained-user quick references near the top and detailed learning guidance below.
+* Keep the canonical instrument page as the primary web destination. Link clearly but contextually to the trained-user Quick Guide for at-instrument use, printing, accessibility, and fallback; do not let it visually supersede the canonical page.
 * Link to shared lab policy instead of duplicating it, while keeping safety-critical instrument steps on the instrument page.
 * Use real lab photographs and real example data when users need to identify equipment, spaces, samples, or results.
 * Keep staff-only planning in underscore-prefixed directories, but remember that the repository may still be publicly readable.
