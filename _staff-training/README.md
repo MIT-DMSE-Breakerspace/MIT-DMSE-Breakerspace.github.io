@@ -13,9 +13,13 @@ Last substantive work: 2026-08-03.
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
-* **Per-instrument guides** — pilots for the optical microscope and FTIR. Two of eleven instruments.
+* **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
 
-Both pilots have their Moira group, LibCal template, and guide owner recorded. They still need an approved Level 1 training sample with a cabinet location and operational-owner review. Following the 2026-08-03 Quick Guide decision, they also need a structural audit: add an explicit SOP coverage map and confirm that the Level 1 workflow uses the printed Quick Guide without treating it as the source of the curriculum.
+**FTIR is the reference implementation.** Its Quick Guide and training guide were rebuilt together on 2026-08-03 under the model below, then corrected through four review rounds. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive.
+
+FTIR's remaining blockers are all non-writing: a Letter duplex print proof, one identified paper specimen with a sample ID and location, measured band positions from reviewed reference spectra, operational-owner approval, a laminated copy installed at the instrument, and a practice training.
+
+**Optical is next.** It has a Quick Guide and a staff guide, both predating the content contract, so it needs the same retrofit FTIR just had.
 
 The operating model the template reflects:
 
@@ -75,12 +79,24 @@ Quick Guides currently exist for **optical, FTIR, and XRD** (`/quick-guides/`). 
 
 Each instrument's Quick Guide and staff guide are developed together, starting from the canonical SOP.
 
-1. **Retrofit the optical and FTIR pilot staff guides.** Add the SOP coverage map and the operations table, make use of the physical Quick Guide explicit, and verify that the Level 1 exercise is an overlay on the routine workflow rather than the source of it. Doing this first tests both requirements on instruments whose workflows are already understood.
-2. **Audit and print-test the optical, FTIR, and XRD Quick Guides.** Reconcile every operating step with the canonical page, reduce interpretation beyond the immediate quality gate, add control-finding visuals where needed, and install reviewed laminated copies.
-3. **Draft the XRD staff training guide in parallel with the XRD Quick Guide audit.** Its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. Two open questions below affect its closeout.
-4. **Select Level 1 samples for the pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
-5. **SEM after that.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
+1. **Retrofit the optical pair.** Both documents predate the content contract. Follow the FTIR pair as the model: numbered Quick Guide steps, an SOP coverage map with every startup and shutdown bullet as its own row, an operations table, and a named default sample. Optical's SOP is shorter than FTIR's, so this should be faster.
+2. **Print-proof FTIR before building more.** Side 2 is roughly 582 words and has never been printed. If the two-page budget does not hold, the fix affects every guide written after it, so testing now is cheaper than retrofitting three.
+3. **XRD pair.** Its Quick Guide predates the contract and is dense; its training guide does not exist. `../handouts/xrd/` holds two draft tutorials and a student report template worth harvesting. Two open questions below affect its closeout.
+4. **Level 1 samples.** FTIR needs one identified paper specimen. Optical needs its own default named.
+5. **SEM.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
 6. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
+
+### What The FTIR Retrofit Taught
+
+Four review rounds on the FTIR pair produced corrections worth not repeating. Every one of these shipped in a draft.
+
+* **Never write a technical specific the canonical page does not contain.** Two fabrications got through: wavenumbers for atmospheric bands (approximately 3700 and 2350 cm<sup>-1</sup>) and a nitrile-versus-C-H contrast between acrylic and paper. Both were plausible and neither came from the page. **Grep the page for any number, band, control name, or causal claim before writing it.** Where the page is silent, omit it or write "ask staff," and log a page gap in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+* **A Quick Guide wants concrete detail, and that is the trap.** Vague guidance is useless at an instrument, so filling a gap in the page feels like helping. It is not — it creates an unsourced claim in a document whose only job is to restate the page.
+* **Verify software sequences against the recorded media, not intuition.** The draft had OMNIC's preview backwards: `Collect Sample` starts the preview, the user evaluates, then `start collection` commits. Spectrum naming happens after the scan, not before. Both were visible in the bundled instructional videos.
+* **Recovery procedures must be complete cycles.** "Recollect the background" is not actionable with the sample still loaded. Any recovery step should say what to unload, what to clean, and where to rejoin the numbered sequence.
+* **Do not let a fix become a new absolute.** Correcting an over-prescribed background redo produced a false binary — weak signal means contact, anything else means the background — which then needed a third branch restored. The canonical failure table had three rows all along.
+* **Every diagnostic branch needs a terminal condition.** A guide that only offers fixes invites a user to keep trying fixes. Each branch should end in stopping and asking staff.
+* **Correctness costs length.** FTIR Side 2 went 378 → 582 words across the rounds. Budget for that: a first draft that already fills two pages has no room to become correct.
 
 ### Open questions that affect writing
 
@@ -112,8 +128,8 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
-* `optical.md` is the pilot DSX-1000 optical-microscope curriculum and completion checklist.
-* `ftir.md` is the pilot Nicolet iS5 FTIR ATR curriculum and completion checklist.
+* `ftir.md` is the Nicolet iS5 FTIR ATR curriculum, **retrofitted 2026-08-03 and the reference implementation** of the current model. Copy its structure for a new instrument.
+* `optical.md` is the pilot DSX-1000 optical-microscope curriculum. Predates the content contract and needs the same retrofit.
 * `qualtrics-launch-review.md` tracks updates that should be coordinated with the launch of the redesigned website.
 * `qualtrics-manual-edit-guide.md` is the canonical page-by-page copy deck and Qualtrics editing checklist.
 * `qualtrics-survey-audit.md` inventories the current QSF and records the rationale behind the revision.

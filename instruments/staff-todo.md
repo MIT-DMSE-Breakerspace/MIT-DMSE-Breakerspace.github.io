@@ -16,9 +16,9 @@ Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md)
 
 The content contract and relationship to staff training were settled on 2026-08-03 in [`readme.md`](readme.md#quick-guide-content-contract). The canonical instrument page is the source; the Quick Guide and staff guide are sibling derivatives.
 
-* [ ] Audit the FTIR, optical, and XRD Quick Guides against the canonical SOP. Account for every startup and shutdown item, one routine operation, saving/export, cleanup, stop conditions, and the before-leaving state.
+* [ ] Audit the optical and XRD Quick Guides against the canonical SOP. Account for every startup and shutdown item, one routine operation, saving/export, cleanup, stop conditions, and the before-leaving state. FTIR was audited and rebuilt 2026-08-03; use `_includes/quick-guides/ftir.html` as the model.
 * [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling.
-* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen.
+* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. **Start with FTIR:** its Side 2 reached roughly 582 words during correctness work and is the first real test of the two-page budget.
 * [ ] Move the Quick Guide link out of the at-instrument decision path in Quick Actions and label it for at-instrument use, printing, accessibility, and fallback. Keep the canonical page and SOP as the apparent web starting point.
 * [ ] Confirm workstation desktop shortcuts and general posted QR codes open the canonical instrument page rather than bypassing it for the Quick Guide.
 * [ ] Print, laminate, label, and install the reviewed guide at each instrument. Record who checks the physical copy after workflow revisions and who replaces damaged or outdated copies.

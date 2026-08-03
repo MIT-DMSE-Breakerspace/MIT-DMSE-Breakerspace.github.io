@@ -150,7 +150,13 @@ Use the following two-side structure by default:
 
 If the routine workflow cannot fit legibly on two sides, do not shrink or cram the content. Keep one primary Quick Guide and create a separate task-specific workflow card for the additional routine path, or leave the advanced path on the canonical page.
 
-Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Their shared page structure and `quick-guide-*` CSS classes remain the implementation starting point, but none should be treated as the final editorial model until it has been audited against this contract, print-tested, and paired with its staff-guide SOP coverage map. The optical and FTIR pilots contain interpretation material that should be reduced or moved; the XRD guide is dense, was written before its staff guide, and still needs a complete print and content audit.
+Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Their shared page structure and `quick-guide-*` CSS classes are the implementation starting point.
+
+**`ftir.html` is the reference implementation.** Rebuilt 2026-08-03 under the contract above and corrected through four review rounds, it is the one to copy: numbered steps across both sides so a staff guide can cite them individually, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair.
+
+The optical guide predates the contract and still carries interpretation material. The XRD guide also predates it, is dense, and was written before its staff guide existed. Both need the same retrofit FTIR received.
+
+**None of the three has been print-tested.** FTIR Side 2 is roughly 582 words after correctness work grew it from 378. Verify the two-page budget before copying any of their density, and expect a correct first draft to be longer than a fluent one.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 
