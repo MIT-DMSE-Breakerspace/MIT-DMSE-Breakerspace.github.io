@@ -27,6 +27,8 @@ The content contract and relationship to staff training were settled on 2026-08-
 
 ## Nicolet iS5 FTIR Spectrometer
 
+* [ ] **Add named atmospheric and contamination band positions to the page.** [`#failures`](./ftir.md#failures) and the science section describe water vapor, carbon dioxide, solvent, and residue features qualitatively but give no wavenumbers, so a user cannot recognize them on a spectrum. A draft Quick Guide revision cited approximately 3700 and 2350 cm<sup>-1</sup>; those numbers were not sourced from this page and were removed. Have staff confirm the positions actually seen on this instrument, add them to the page, and only then let the Quick Guide name them.
+* [ ] **Make the background-redo cycle explicit in the SOP.** [`#operation`](./ftir.md#operation) says to repeat background, collection, cleaning, and saving as needed, but never states that a background must be collected on a bare, unclamped crystal with the sample removed. A user can read "recollect the background" as something doable with the sample still loaded. The Quick Guide now spells the cycle out; the canonical page should own it.
 * [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
 * [ ] Replace or reshoot the solid sample, powder sample, liquid sample, crystal cleaning, volatiles cover, and pressure-tip videos with gloved versions; publish future motion instruction as controlled MP4/WebM rather than GIF.
 * [ ] Add one or two annotated example spectra showing major peaks and how to compare an unknown with a known reference.

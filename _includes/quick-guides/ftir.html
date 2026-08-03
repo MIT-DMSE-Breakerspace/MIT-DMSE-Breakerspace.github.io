@@ -40,20 +40,21 @@
           <tbody>
             <tr><td>Flat solid</td><td>Clean face on the crystal; self-leveling tip; tighten until the clutch slips</td></tr>
             <tr><td>Powder</td><td>Small, finely ground amount covering the crystal; concave or self-leveling tip</td></tr>
-            <tr><td>Non-volatile liquid</td><td>Small droplet; no pressure tip</td></tr>
-            <tr><td>Volatile liquid</td><td>Volatiles cover; ask staff if odor or exposure is uncertain</td></tr>
           </tbody>
         </table>
+        <p><em>Liquids, the volatiles cover, and the transmission and diffuse-reflectance accessories are outside this workflow. Ask staff before attempting them.</em></p>
 
-        <h3>3 · Start up</h3>
+        <h3>3 · Start up and collect a background</h3>
         <ol>
           <li>Leave the FTIR powered on. Power it on only if it is off.</li>
           <li>Log on to the workstation with your MIT Kerberos.</li>
           <li>Start <strong>OMNIC</strong>.</li>
           <li>Verify the instrument connection in <strong>system status</strong>.</li>
-          <li>Remove the protective cover from the ATR crystal plate.</li>
-          <li>Gloves on. Clean the crystal: isopropyl alcohol on a Kimwipe, wipe center outward, dry with a clean portion. Confirm nothing remains.</li>
-          <li>Gloves off before touching the keyboard. With the crystal bare and no pressure clamp, click <strong>Collect Background</strong>.</li>
+          <li>Gloves on. Release the pressure tower and remove the protective cover from the ATR crystal plate.</li>
+          <li>Clean the crystal: isopropyl alcohol on a Kimwipe, wipe center outward, dry with a clean portion. Confirm no residue, powder, fibers, or droplets remain.</li>
+          <li>Gloves off before touching the keyboard. Leave the crystal bare with no pressure clamp.</li>
+          <li>Click <strong>Collect Background</strong>. If <strong>Preview data collection</strong> is on, a live spectrum appears — check it looks like a clean baseline, then click <strong>start collection</strong> (upper right) to run the full scan. If preview is off, the full scan runs immediately.</li>
+          <li>Choose whether to add the background to the spectra window. Either way it is used for the sample collections that follow.</li>
         </ol>
       </section>
 
@@ -103,8 +104,10 @@
       <section>
         <h3><span>5</span> Collect</h3>
         <ol>
-          <li>If preview is enabled, look at the live spectrum before committing.</li>
           <li>Click <strong>Collect Sample</strong> and give the spectrum a descriptive name.</li>
+          <li>If <strong>Preview data collection</strong> is on, a live spectrum appears. Use it to judge contact <em>before</em> committing: adequate signal, sensible baseline, no obvious contamination.</li>
+          <li>Satisfied? Click <strong>start collection</strong> (upper right) to run the full scan. Not satisfied? Fix the contact first — see step 6.</li>
+          <li>If preview is off, the full scan runs immediately and step 6 applies to the finished spectrum.</li>
         </ol>
       </section>
 
@@ -112,12 +115,12 @@
         <h3><span>6</span> Check it before you unload</h3>
         <p>Decide whether the spectrum is worth keeping <em>while the sample is still on the crystal</em>:</p>
         <ul class="quick-guide-checks">
-          <li><strong>Weak or flat signal</strong> — usually poor contact. Gloves on, re-seat the sample, tighten further, or change the tip.</li>
-          <li><strong>Negative bands</strong> — the crystal was dirty when the background was collected. Clean and recollect the background.</li>
-          <li><strong>Sharp spikes near 3700 and 2350 cm<sup>-1</sup></strong> — water vapor and carbon dioxide. Recollect the background.</li>
-          <li><strong>Bands resembling the previous user's material</strong> — residue. Clean and recollect the background.</li>
+          <li><strong>Weak or flat signal</strong> — usually poor contact. Gloves on, re-seat the sample, retighten only until the clutch slips again, or switch to a different pressure tip. Do not force the tower past the clutch.</li>
+          <li><strong>Negative bands</strong> — the crystal was dirty when the background was collected. Needs a full background redo, below.</li>
+          <li><strong>Bands that do not belong</strong> — water, carbon dioxide, leftover solvent, or residue from the previous user. If a solvent may still be evaporating, wait; otherwise redo the background.</li>
         </ul>
-        <p>Fixing any of these now is faster than repeating the session later. Working out <em>what the material is</em> comes afterward; see Data Processing on the instrument page.</p>
+        <p><strong>To redo a background:</strong> gloves on → unload the sample → release the pressure tower and clamp → clean and dry the crystal → gloves off → <strong>Collect Background</strong> on the bare crystal → then reload and collect the sample again. A background cannot be recollected with the sample in place.</p>
+        <p>Fixing these now is faster than repeating the session later. Working out <em>what the material is</em> comes afterward; see Data Processing on the instrument page.</p>
       </section>
 
       <section>
@@ -131,7 +134,7 @@
 
       <section>
         <h3><span>8</span> Another sample, or finish</h3>
-        <p>For another sample: gloves on, unload, clean the crystal, then return to step 4. Recollect the background if the crystal needed more than a routine wipe.</p>
+        <p>For another sample: gloves on, unload, clean and dry the crystal, then return to step 4. Collect a fresh background first if the crystal needed more than a routine wipe.</p>
       </section>
 
       <section>

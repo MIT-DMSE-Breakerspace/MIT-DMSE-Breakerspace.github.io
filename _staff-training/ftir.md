@@ -15,7 +15,7 @@ The [canonical instrument page](../instruments/ftir.md) is the operating authori
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two solid materials with ATR and save native spectra |
-| Training sample | Trainer's choice per session; see [choosing the sample](#choosing-the-sample). Default kit requires approval and a cabinet location |
+| Training sample | **Default pair:** `BS-000004` acrylic yarn (CAB-01/BIN-03) and a clean paper product. Both require operational-owner approval and a recorded expected result; the paper product needs a sample-library record. Documented variations in [choosing the sample](#choosing-the-sample) |
 | Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
@@ -29,7 +29,8 @@ By the end of the session, participants should be able to:
 * Explain what an FTIR spectrum represents and why ATR contact and crystal cleanliness matter.
 * Decide whether a routine sample is compatible and recognize samples that require staff review.
 * Work through the whole routine ATR cycle from the printed Quick Guide, with the glove transitions in the right places.
-* Judge, before unloading, whether a spectrum is good enough to keep.
+* Use preview to judge contact and commit the scan with **start collection**, or run without preview knowingly.
+* Judge, before unloading, whether a spectrum is good enough to keep, and run a full background redo when it is not.
 * Save native spectra individually and copy them off the workstation.
 * Complete shutdown: crystal clean and covered, OMNIC closed, logged off, instrument left powered on.
 * Find the SOP, detailed operating instructions, common failure modes, reservations, and help pathways on the instrument page.
@@ -89,14 +90,14 @@ An audit and teaching plan, not an alternate SOP. Quick Guide steps are numbered
 | Startup: log on with MIT Kerberos ([`#startup`](../instruments/ftir.md#startup)) | 3.2 | Participant performs | Logs on unaided |
 | Startup: start OMNIC ([`#startup`](../instruments/ftir.md#startup)) | 3.3 | Participant performs | — |
 | Startup: verify connection in system status ([`#startup`](../instruments/ftir.md#startup)) | 3.4 | Trainer shows where, participant confirms | Can say what a failed connection looks like |
-| Startup: remove crystal cover ([`#startup`](../instruments/ftir.md#startup)) | 3.5 | Participant performs, gloved | Handles the pressure tower correctly |
+| Startup: remove crystal cover ([`#startup`](../instruments/ftir.md#startup)) | 3.5 | Participant performs, gloved — gloves go on *before* releasing the tower | Gloves on before touching the tower |
 | Startup: clean the ATR crystal ([`#crystal`](../instruments/ftir.md#crystal)) | 3.6 | Trainer demonstrates center-outward wipe, each participant repeats | Confirms nothing remains before proceeding |
-| Startup: collect a background ([`#background`](../instruments/ftir.md#background)) | 3.7 | Participant performs with bare crystal, no clamp | Explains why the crystal must be bare |
-| Operation: glove discipline ([`#operation`](../instruments/ftir.md#operation)) | Glove rule, 4.1, 4.5 | Reinforced at every transition all session | Completes at least one transition unprompted |
+| Startup: collect a background ([`#background`](../instruments/ftir.md#background)) | 3.7–3.9 | Participant performs with bare crystal, no clamp. Show both preview branches and name **start collection** | Explains why the crystal must be bare; knows the scan is not finished until start collection |
+| Operation: glove discipline ([`#operation`](../instruments/ftir.md#operation)) | Glove rule, 3.5, 3.7, 4.1, 4.5 | Reinforced at every transition all session | Completes at least one transition unprompted |
 | Operation: clean between samples ([`#crystal`](../instruments/ftir.md#crystal)) | 4.2, 8 | Participant performs between the two samples | Cleans without being told |
 | Operation: choose sampling method and tip ([`#quick-method`](../instruments/ftir.md#quick-method)) | 2 | Trainer explains the choice for each of the two samples | Picks the approach for the second sample |
-| Operation: load for good contact ([`#sample`](../instruments/ftir.md#sample)) | 4.3, 4.4 | Participant performs; trainer watches the clutch | Recognizes when the clutch has slipped |
-| Operation: collect the spectrum ([`#sample`](../instruments/ftir.md#sample)) | 5 | Participant performs, both samples | — |
+| Operation: load for good contact ([`#sample`](../instruments/ftir.md#sample)) | 4.3, 4.4 | Participant performs; trainer watches the clutch | Recognizes the clutch slipping, and does not force past it |
+| Operation: collect the spectrum ([`#sample`](../instruments/ftir.md#sample)) | 5.1–5.4 | Participant performs, both samples. With preview on, the live spectrum is the contact check and **start collection** commits the scan | Does not mistake the preview for a saved spectrum |
 | Operation: save each spectrum individually ([`#shutdown`](../instruments/ftir.md#shutdown)) | 7 | Trainer flags that group-saving does not exist | Saves both files and can find them |
 | Operation: repeat the cycle ([`#operation`](../instruments/ftir.md#operation)) | 8 | Second sample is the repetition | Runs the second sample with less prompting |
 | Shutdown: save all data ([`#shutdown`](../instruments/ftir.md#shutdown)) | 9.1 | Participant confirms | Knows where files are and how to retrieve them |
@@ -122,29 +123,42 @@ Shared with the Quick Guide: the routine workflow it documents is the workflow t
 
 | Taught in this training | Deliberately excluded |
 | --- | --- |
-| iD7 ATR on a flat solid or powder | iD1 transmission and EasiDiff diffuse reflectance — staff-guided |
-| Crystal cleaning and background collection | Liquid samples and the volatiles cover — an extension when time allows |
-| Judging contact quality before saving | Database searching and material identification — [`#data`](../instruments/ftir.md#data) |
+| iD7 ATR on a flat solid, and pressing a fibrous or powdered solid into contact | Liquids and the volatiles cover — an extension once the solid workflow is consistent, and not covered by the Quick Guide |
+| Crystal cleaning and background collection, with both preview branches | iD1 transmission and EasiDiff diffuse reflectance — staff-guided |
+| Judging contact quality before committing a scan | Database searching and material identification — [`#data`](../instruments/ftir.md#data) |
 | Saving native spectra individually | Baseline correction, subtraction, and other processing |
 | Full startup and shutdown | Any accessory change |
 
 Excluded does not mean hidden. Say where each lives — usually the detailed operating instructions or a staff conversation. The exclusions are what keep the session finishable in an hour.
 
+**The Quick Guide matches this scope.** It documents the solid and powder workflow only, and explicitly directs users to ask staff about liquids and other accessories, so a newly trained user cannot read it as authorization for a workflow they were not taught.
+
 ### Choosing The Sample
 
-**Two solids that give visibly different spectra.** The exercise is the comparison, not any particular pair of materials.
+**The default pair is the baseline for every general session.** Use it unless there is a reason not to, so that participants and trainers can be assessed against a consistent exercise.
 
-That flexibility is the point. It lets the trainer use:
+| | Default pair |
+| --- | --- |
+| Sample A | `BS-000004` acrylic yarn, CAB-01/BIN-03 |
+| Sample B | A clean paper product — index card or filter paper |
+| Why this pair | A synthetic polymer against a cellulose material: different enough that the two spectra are obviously distinguishable to a beginner |
+| Expected difference | The paper shows a broad O-H-associated feature the acrylic does not; the acrylic shows nitrile and aliphatic C-H features the paper does not. **Confirm and record the actual band positions from a reviewed reference spectrum before release.** |
+| Built-in teaching value | The yarn's own sample-library note says fibers are challenging to cover the ATR window completely, so it demonstrates contact quality honestly rather than hiding it. Press the fibers into a flat mass under the self-leveling tip. |
+| Quality cues | Fibers give weaker signal than a flat solid. If the spectrum is very weak, the fibers are bridging rather than contacting — re-seat and retighten to the clutch. |
 
-* **A default lab pair** — a known polymer with a smooth face, and a paper product. Reliable and repeatable for a general session.
-* **The participant's own material**, when they arrive with an approved project sample. Training on the thing they will actually measure is worth more than training on a stand-in.
-* **A subject-specific pair**, when a course sends students for a standard workflow on course samples.
+**Still required before release:** operational-owner approval of both materials, a reviewed reference spectrum for each with actual band positions, a sample-library record and cabinet location for the paper product, and a replenishment plan.
 
-In every case the trainer must be able to recognize a bad result on the chosen materials. If you have not run them, run them first — that is the whole reason a trainer supplies the sample rather than the paper.
+#### Documented variations
 
-Requirements for any pair: non-hazardous, clean, dry, stable, no risk of crumbling into the instrument or staining the plate, and a face that can make real contact with the diamond. A fibrous or lumpy sample is a legitimate teaching case — it demonstrates poor contact — but pick it deliberately, not by accident.
+The workflow is fixed; the material can change when there is a reason.
 
-**Default kit still needs approval:** identifiers, expected major bands, cabinet location, and a replenishment plan. `BS-000004` (acrylic yarn, CAB-01/BIN-03) already carries Nicolet iS5 assets and a prep note that fibers are hard to press flat, which makes it a candidate for one half of the pair.
+* **The participant's own approved project sample.** Training on the material they will actually measure is worth more than a stand-in. Requires prior staff approval, and the trainer must still run the default pair's comparison if the project sample cannot support one.
+* **Course-specific samples**, when a subject sends students for a standard workflow on course materials.
+* **A deliberately awkward second solid** — lumpy or curved — when the trainer wants to teach contact quality harder.
+
+In every variation the trainer must be able to recognize a bad result on the chosen materials. If you have not run them, run them first. That judgment is what the trainer supplies and the printed guide cannot.
+
+Requirements for any substitute: non-hazardous, clean, dry, stable, no risk of crumbling into the instrument or staining the plate, and a face that can make real contact with the diamond.
 
 The legacy 3.000 coffee-roast exercise is a useful course-specific variation but should describe its output as a relative O-H-associated peak ratio — not percent water or direct moisture content — unless a calibrated quantitative method is developed and validated.
 
@@ -155,9 +169,9 @@ The Quick Guide is the mechanical spine. Participants follow its numbered steps;
 | Stage | Quick Guide | What the trainer adds |
 | --- | --- | --- |
 | Inspect and decide | 1–2 | Why *these* two materials, and which loading approach each needs |
-| Start up and background | 3 | Watch the center-outward wipe; explain what a dirty background does to a spectrum |
-| First sample | 4–5 | Watch for the clutch slipping; catch over-tightening |
-| Quality check | 6 | **The teaching moment.** Ask what they see before they save |
+| Start up and background | 3 | Watch the center-outward wipe; explain what a dirty background does to a spectrum; show both preview branches |
+| First sample | 4–5 | Watch for the clutch slipping; catch over-tightening; make sure **start collection** is understood as the commit |
+| Quality check | 6 | **The teaching moment.** Ask what they see before they save. If a background redo is needed, let them run the full unload-clean-rebackground cycle |
 | Save | 7 | Point out that individual saving is a real trap here |
 | Second sample | 8, then 4–7 | Hand over more; prompt less |
 | Compare | — | Several bands, not one peak. Say where identification lives |
