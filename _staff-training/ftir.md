@@ -30,7 +30,7 @@ By the end of the session, participants should be able to:
 * Decide whether a routine sample is compatible and recognize samples that require staff review.
 * Work through the whole routine ATR cycle from the printed Quick Guide, with the glove transitions in the right places.
 * Use preview to judge contact and commit the scan with **start collection**, or run without preview knowingly.
-* Judge, before unloading, whether a spectrum is good enough to keep, and tell apart a contact problem — fixed by re-seating the sample — from evidence of a bad or stale background, which needs a full background redo.
+* Judge, before unloading, whether a spectrum is good enough to keep, and choose the right response: correct the contact for a weak signal, redo the background for negative bands, and diagnose before acting on any other unexpected feature.
 * Save native spectra individually and copy them off the workstation.
 * Complete shutdown: crystal clean and covered, OMNIC closed, logged off, instrument left powered on.
 * Find the SOP, detailed operating instructions, common failure modes, reservations, and help pathways on the instrument page.
@@ -177,7 +177,7 @@ The Quick Guide is the mechanical spine. Participants follow its numbered steps;
 | Inspect and decide | 1–2 | Why *these* two materials, and which loading approach each needs |
 | Start up and background | 3 | Watch the center-outward wipe; explain what a dirty background does to a spectrum; show both preview branches |
 | First sample | 4–5 | Watch for the clutch slipping; catch over-tightening; make sure **start collection** is understood as the commit |
-| Quality check | 6 | **The teaching moment.** Ask what they see before they save. Make the distinction explicit: weak signal means re-seat the sample, while negative or foreign bands mean the background is at fault. Let them run the full redo cycle only in the second case |
+| Quality check | 6 | **The teaching moment.** Ask what they see before they save. Teach three branches: weak signal means correct the contact first; negative bands mean the background was collected on a dirty crystal; anything else unexpected means diagnose before acting — wait for solvent, clean, or ask staff — and redo the background only when the evidence points there |
 | Save | 7 | Point out that individual saving is a real trap here |
 | Second sample | 8, then 4–7 | Hand over more; prompt less |
 | Compare | — | Several bands, not one peak. Say where identification lives |
@@ -197,7 +197,7 @@ Rotate roles between the two materials. Every participant should complete or nar
 * [ ] Both native spectrum files were individually selected, named, saved, and copied off the workstation.
 * [ ] Participants can explain why ATR contact matters and identify a weak-contact spectrum.
 * [ ] Participants ran the quality check before unloading, not after.
-* [ ] Participants can say which problems call for re-seating the sample and which call for a new background.
+* [ ] Participants can say which problems call for correcting contact, which call for a new background, and which call for waiting, cleaning, or asking staff.
 * [ ] Participants can identify contamination cues and know when to recollect the background.
 * [ ] Participants completed cleanup and shutdown from the Quick Guide with minimal prompting.
 * [ ] Participants can find the SOP, detailed instructions, common failure modes, reservations, and help pathways on the instrument page.
