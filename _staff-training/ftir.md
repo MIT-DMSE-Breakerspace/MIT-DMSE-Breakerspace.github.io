@@ -177,7 +177,7 @@ The Quick Guide is the mechanical spine. Participants follow its numbered steps;
 | Inspect and decide | 1–2 | Why *these* two materials, and which loading approach each needs |
 | Start up and background | 3 | Watch the center-outward wipe; explain what a dirty background does to a spectrum; show both preview branches |
 | First sample | 4–5 | Watch for the clutch slipping; catch over-tightening; make sure **start collection** is understood as the commit |
-| Quality check | 6 | **The teaching moment.** Ask what they see before they save. Teach three branches: weak signal means correct the contact first; negative bands mean the background was collected on a dirty crystal; anything else unexpected means diagnose before acting — wait for solvent, clean, or ask staff — and redo the background only when the evidence points there |
+| Quality check | 6 | **The teaching moment.** Ask what they see before they save. Teach three branches: weak signal means correct the contact first, and ask staff about sample suitability if it stays weak; negative bands mean the background was collected on a dirty crystal; anything else unexpected means diagnose before acting — wait for solvent, clean, or ask staff — and redo the background only when the evidence points there. Every branch has a point at which the answer is to stop and ask |
 | Save | 7 | Point out that individual saving is a real trap here |
 | Second sample | 8, then 4–7 | Hand over more; prompt less |
 | Compare | — | Several bands, not one peak. Say where identification lives |
