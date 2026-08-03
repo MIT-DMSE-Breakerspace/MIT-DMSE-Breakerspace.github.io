@@ -15,7 +15,7 @@ The [canonical instrument page](../instruments/ftir.md) is the operating authori
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two solid materials with ATR and save native spectra |
-| Training sample | **Default pair:** `BS-000004` acrylic yarn (CAB-01/BIN-03) and a clean paper product. Both require operational-owner approval and a recorded expected result; the paper product needs a sample-library record. Documented variations in [choosing the sample](#choosing-the-sample) |
+| Training sample | **Default pair:** `BS-000004` acrylic yarn (CAB-01/BIN-03) and one identified paper specimen, **not yet selected**. Both require operational-owner approval and a reviewed reference spectrum; the paper needs a sample-library record. Documented variations in [choosing the sample](#choosing-the-sample) |
 | Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
@@ -30,7 +30,7 @@ By the end of the session, participants should be able to:
 * Decide whether a routine sample is compatible and recognize samples that require staff review.
 * Work through the whole routine ATR cycle from the printed Quick Guide, with the glove transitions in the right places.
 * Use preview to judge contact and commit the scan with **start collection**, or run without preview knowingly.
-* Judge, before unloading, whether a spectrum is good enough to keep, and run a full background redo when it is not.
+* Judge, before unloading, whether a spectrum is good enough to keep, and tell apart a contact problem — fixed by re-seating the sample — from evidence of a bad or stale background, which needs a full background redo.
 * Save native spectra individually and copy them off the workstation.
 * Complete shutdown: crystal clean and covered, OMNIC closed, logged off, instrument left powered on.
 * Find the SOP, detailed operating instructions, common failure modes, reservations, and help pathways on the instrument page.
@@ -52,12 +52,18 @@ The session does not currently include a separate individual skills demonstratio
 
 ### Training Sample
 
-See [choosing the sample](#choosing-the-sample) — the exercise needs two solids, but which two is the trainer's call.
+Use the approved default pair unless a documented variation applies. See [choosing the sample](#choosing-the-sample).
 
-* [ ] Decide which two materials this session will use, and confirm both are non-hazardous, clean, dry, stable, and able to give repeatable ATR contact.
-* [ ] Run the pair yourself, or know their expected spectra well enough to recognize poor contact or contamination during the session.
-* [ ] Identify several major differences participants should be able to see between the two.
-* [ ] If a participant brings a project sample, confirm staff approved it beforehand.
+* [ ] Retrieve the default pair: `BS-000004` acrylic yarn from CAB-01/BIN-03 and the approved paper specimen from its recorded location.
+* [ ] Inspect both: clean, dry, stable, and able to make real contact with the diamond.
+* [ ] Have the reviewed reference spectrum for each on hand, so you can tell poor contact from a genuine spectral difference during the session.
+* [ ] Confirm stock is sufficient for this session and note replenishment needs afterward.
+
+If substituting a variation — a participant's approved project sample or a course-specific material:
+
+* [ ] Confirm staff approved the substitute in advance.
+* [ ] Confirm you have run it yourself, or know its expected spectrum well enough to recognize a bad result.
+* [ ] Note which variation was used, so a later session can be compared against the default.
 
 ### Participants
 
@@ -140,13 +146,13 @@ Excluded does not mean hidden. Say where each lives — usually the detailed ope
 | | Default pair |
 | --- | --- |
 | Sample A | `BS-000004` acrylic yarn, CAB-01/BIN-03 |
-| Sample B | A clean paper product — index card or filter paper |
+| Sample B | **One identified paper specimen — not yet selected.** Pick a single material, give it a sample-library ID and location, and use only that. "Index card or filter paper" is two different materials and cannot serve as a reproducible baseline. |
 | Why this pair | A synthetic polymer against a cellulose material: different enough that the two spectra are obviously distinguishable to a beginner |
-| Expected difference | The paper shows a broad O-H-associated feature the acrylic does not; the acrylic shows nitrile and aliphatic C-H features the paper does not. **Confirm and record the actual band positions from a reviewed reference spectrum before release.** |
+| Expected difference | The paper should show a broad O-H-associated feature the acrylic does not, and the two should have clearly different overall fingerprints. **Both descriptions must be replaced with actual band positions from the reviewed reference spectra before release.** Do not claim the acrylic has C-H features the paper lacks — cellulose contains aliphatic C-H bonds too, so both materials show C-H stretching. |
 | Built-in teaching value | The yarn's own sample-library note says fibers are challenging to cover the ATR window completely, so it demonstrates contact quality honestly rather than hiding it. Press the fibers into a flat mass under the self-leveling tip. |
 | Quality cues | Fibers give weaker signal than a flat solid. If the spectrum is very weak, the fibers are bridging rather than contacting — re-seat and retighten to the clutch. |
 
-**Still required before release:** operational-owner approval of both materials, a reviewed reference spectrum for each with actual band positions, a sample-library record and cabinet location for the paper product, and a replenishment plan.
+**Still required before release:** select and identify the single paper specimen, obtain operational-owner approval of both materials, record a reviewed reference spectrum for each with actual band positions, create the sample-library record and cabinet location for the paper, and set a replenishment plan.
 
 #### Documented variations
 
@@ -171,7 +177,7 @@ The Quick Guide is the mechanical spine. Participants follow its numbered steps;
 | Inspect and decide | 1–2 | Why *these* two materials, and which loading approach each needs |
 | Start up and background | 3 | Watch the center-outward wipe; explain what a dirty background does to a spectrum; show both preview branches |
 | First sample | 4–5 | Watch for the clutch slipping; catch over-tightening; make sure **start collection** is understood as the commit |
-| Quality check | 6 | **The teaching moment.** Ask what they see before they save. If a background redo is needed, let them run the full unload-clean-rebackground cycle |
+| Quality check | 6 | **The teaching moment.** Ask what they see before they save. Make the distinction explicit: weak signal means re-seat the sample, while negative or foreign bands mean the background is at fault. Let them run the full redo cycle only in the second case |
 | Save | 7 | Point out that individual saving is a real trap here |
 | Second sample | 8, then 4–7 | Hand over more; prompt less |
 | Compare | — | Several bands, not one peak. Say where identification lives |
@@ -191,6 +197,7 @@ Rotate roles between the two materials. Every participant should complete or nar
 * [ ] Both native spectrum files were individually selected, named, saved, and copied off the workstation.
 * [ ] Participants can explain why ATR contact matters and identify a weak-contact spectrum.
 * [ ] Participants ran the quality check before unloading, not after.
+* [ ] Participants can say which problems call for re-seating the sample and which call for a new background.
 * [ ] Participants can identify contamination cues and know when to recollect the background.
 * [ ] Participants completed cleanup and shutdown from the Quick Guide with minimal prompting.
 * [ ] Participants can find the SOP, detailed instructions, common failure modes, reservations, and help pathways on the instrument page.
