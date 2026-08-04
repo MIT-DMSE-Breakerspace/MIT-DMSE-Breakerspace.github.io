@@ -182,6 +182,7 @@ Use the [Tutorial Media Production Guide](tutorial-media/README.md) for all new 
 
 ### Recurring Quality Checks
 
+* [ ] After the staff-training worktree is merged and removed, run a repository-wide terminology audit. Replace remaining uses of "student staff," "student-staff," "lab assistant," and "laboratory assistant" with "Breakerspace Lab Assistant" when they refer to the hourly student role; preserve historical quotations and keep "trainer" for the training function.
 * [ ] Check contact details, hours, access forms, training links, reservation links, emergency references, and external services at least once each term.
 * [ ] Re-run the internal-link, fragment, responsive-layout, keyboard, and representative screen-reader checks after major structural changes.
 * [ ] Review public contribution notes and [`../instruments/staff-todo.md`](../instruments/staff-todo.md) each term so completed tasks do not accumulate and internal planning stays off operating pages.
