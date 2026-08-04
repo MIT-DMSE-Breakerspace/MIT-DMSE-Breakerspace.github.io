@@ -2,7 +2,7 @@
 
 Last reviewed: 2026-07-31
 
-Breakerspace instrument training is delivered mostly by undergraduate student staff. This file defines who may deliver a training, how someone becomes qualified on an instrument, and what a trainer does when a session does not go as planned.
+Breakerspace instrument training is delivered mostly by Breakerspace Lab Assistants. This file defines who may deliver a training, how someone becomes qualified on an instrument, and what a trainer does when a session does not go as planned.
 
 It exists because [`../training.md`](../training.md) tells users their session will be led by "Breakerspace staff or another designated trainer" without defining what makes someone designated, and because [`../_staff/site-todo.md`](../_staff/site-todo.md) requires a practice training per guide without saying where that is recorded.
 
@@ -15,7 +15,7 @@ These are routinely discussed together and are easy to conflate. They have diffe
 | Onboarding | Who it is for | Who does it | Where it lives |
 | --- | --- | --- | --- |
 | **New lab user** | A student who just completed instrument training | Any lab staff, as training closeout | [`access-and-logistics.md`](access-and-logistics.md#trainer-closeout-sequence) |
-| **New staff account setup** | A newly hired lab assistant | Lab manager | [Staff Account Setup](#staff-account-setup) below |
+| **New staff account setup** | A newly hired Breakerspace Lab Assistant | Lab manager | [Staff Account Setup](#staff-account-setup) below |
 | **Trainer qualification** | A staff member preparing to deliver training on a specific instrument | Guide owner or lab manager | [Becoming Qualified](#becoming-qualified-on-an-instrument) below |
 
 The third is the one that has not existed in written form. Account setup makes someone *able* to add a trainee to a Moira group; it does not make them able to *teach the instrument*. Those are separate readiness questions and only the first has been tracked.
@@ -24,7 +24,7 @@ A useful consequence of the current permission model: **any lab staff member can
 
 ## Staff Account Setup
 
-Completed by the lab manager when a lab assistant is hired. Each item is an access or account grant, not a competence check.
+Completed by the lab manager when a Breakerspace Lab Assistant is hired. Each item is an access or account grant, not a competence check.
 
 * [ ] Physical lab clearance for the instrument lab and lounge.
 * [ ] LibCal administrative invitation, so the assistant can be scheduled and can create events.
@@ -117,13 +117,12 @@ Trainers are mostly undergraduates who may be encountering these situations for 
 
 ## Terminology
 
-Three terms are currently in use for the same people. LibCal event descriptions say "laboratory assistant," the public website says "student staff," and this directory says "trainer." A trainee reading the LibCal description and then the About page cannot tell whether these are the same role.
+**Breakerspace Lab Assistant** is the standard public-facing employment title. **Trainer** remains a functional term in these internal guides because a qualified trainer may be a Breakerspace Lab Assistant, the lab manager, or a trained course instructor. LibCal event templates should use Breakerspace Lab Assistant when referring to the role and trainer only when describing the training function.
 
-**Open question:** choose one public-facing term and use it consistently in LibCal, on the website, and in these guides. Fold the fix into the [LibCal template rewrite](libcal-event-templates.md#revision-direction) rather than making it a separate pass.
+The remaining external terminology changes should be folded into the [LibCal template rewrite](libcal-event-templates.md#revision-direction) rather than handled as a separate manual pass.
 
 ## Open Items
 
-* The single public-facing term for student staff.
 * Whether the extra-care instrument list is policy or guidance, confirmed with the lab manager.
 * Whether any instrument should require a second staff member present for *every* training rather than only for a new trainer's first.
-* Reassigning individual guides from the lab manager to student staff owners as they take on particular instruments; see [guide owners](access-and-logistics.md#guide-owners).
+* Reassigning individual guides from the lab manager to Breakerspace Lab Assistant owners as they take on particular instruments; see [guide owners](access-and-logistics.md#guide-owners).

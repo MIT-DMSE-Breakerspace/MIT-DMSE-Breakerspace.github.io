@@ -22,7 +22,7 @@ Highest-priority updates:
 
 * Require respondents to review the current Safety And Lab Use page and record an explicit acknowledgment before `ACCESS_READY` can be set to `1`.
 * Replace the retired `/sop.html` tutorial index with the new instrument catalog and integrated instrument pages.
-* Direct users to `/training.html` for the current training pathway and LibCal training calendar.
+* Direct users to `/training.html` for the current training pathway and `/calendar.html` for the Breakerspace calendar.
 * Replace old "tutorial" terminology with the final language used by the new site.
 * Update the description of instrument-page organization to match the two-speed model: concise trained-user reference plus detailed learning guidance.
 * Remove the claim that staff hours appear on the homepage unless that calendar returns before launch.

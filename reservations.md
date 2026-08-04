@@ -11,7 +11,7 @@ Use this page when you are ready to work independently on an instrument for whic
 
 [Use LibCal's screen-reader and keyboard-friendly reservation view](https://breakerspace.libcal.com/r/accessible?lid=19797&gid=41631).
 
-## Reservation Rules At A Glance
+## Reservation Rules At A Glance {#reservation-rules}
 
 | Rule | What it means |
 | --- | --- |
@@ -39,6 +39,8 @@ Include:
 * reasonable alternative dates or times, when available.
 
 Staff will review existing reservations, staffing, safety, and the proposed activity before approving the request. A request is not confirmed until the organizer receives written confirmation from the Breakerspace. Staff will add the activity to the appropriate calendar and make affected instrument times unavailable.
+
+Confirmed activities that affect general lab availability also appear on the [Breakerspace calendar]({{ "/calendar.html#calendar" | relative_url }}).
 
 Whole-lab reservations are intended for activities that genuinely require coordinated or exclusive use of the lab. Individual project work and routine instrument use should continue through the normal instrument-reservation process.
 

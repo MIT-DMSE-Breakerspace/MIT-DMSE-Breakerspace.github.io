@@ -127,5 +127,6 @@ Principles for the rewrite:
 * **Never restate access mechanics in an automated email.** They differ by instrument and have already gone stale once. Link to the training pathway and let one page carry the current rule.
 * **Write the shared opening paragraph once** and keep it genuinely identical, so future edits are a find-and-replace across ten forms rather than ten separate rewrites.
 * **Verify each instrument's claims against its own facts** before pasting shared copy. The current templates are wrong precisely because shared text was cloned without checking whether it applied.
+* **Rename the public hours template and category to `Lab Assistant on duty`.** Use `Breakerspace Lab Assistant` when the description names the role, and explain that these entries identify drop-in support rather than the lab's opening hours.
 
 Tracked as a task in [`../_staff/site-todo.md`](../_staff/site-todo.md).

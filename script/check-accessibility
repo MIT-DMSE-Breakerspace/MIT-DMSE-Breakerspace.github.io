@@ -5,6 +5,7 @@ set -euo pipefail
 readonly base_url="${PA11Y_BASE_URL:-http://127.0.0.1:4173}"
 readonly pages=(
   "/"
+  "/calendar.html"
   "/instruments/"
   "/instruments/ftir.html"
   "/instruments/sem.html"

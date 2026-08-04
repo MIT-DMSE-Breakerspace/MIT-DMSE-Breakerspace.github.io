@@ -34,11 +34,11 @@ Learn more about the available [teaching collaboration pathways]({{ "/teaching.h
 
 ## Meet The Team
 
-The Breakerspace is led by **Professor Jeffrey Grossman** and managed by **Justin Lavallee**. Together with the lab's student staff, they support training, course activities, instrument use, project questions, and the continued development of the space.
+The Breakerspace is led by **Professor Jeffrey Grossman** and managed by **Justin Lavallee**. Together with the Breakerspace Lab Assistants, they support training, course activities, instrument use, project questions, and the continued development of the space.
 
-Student staff are central to daily Breakerspace operation. They provide hands-on instrument training, help users work through questions in the lab, support course sessions, and contribute to improving exercises and shared resources. Teaching assistants, teaching fellows, and trained subject instructors also work with the Breakerspace team when courses use the lab.
+**Breakerspace Lab Assistants are students employed in hourly positions** that are central to daily Breakerspace operation. They provide hands-on instrument training, help users work through questions in the lab, support course sessions, and contribute to improving exercises and shared resources. Teaching assistants, teaching fellows, and trained subject instructors also work with the Breakerspace team when courses use the lab.
 
-<p class="guidance-note"><strong>Interested in joining the student staff?</strong> We are always happy to hear from anyone who might be interested in joining the team. Email <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a> to introduce yourself and tell us a little about your interests.</p>
+<p class="guidance-note"><strong>Interested in becoming a Breakerspace Lab Assistant?</strong> We are always happy to hear from anyone who might be interested in joining the team. Email <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a> to introduce yourself and tell us a little about your interests.</p>
 
 <figure class="page-figure">
   <img src="./assets/img/jeff-justin.JPG" alt="Professor Jeffrey Grossman and Breakerspace manager Justin Lavallee standing beside the lounge espresso machine." width="2400" height="1800" loading="lazy">

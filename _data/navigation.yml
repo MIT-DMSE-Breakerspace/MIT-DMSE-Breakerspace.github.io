@@ -1,5 +1,7 @@
 - label: Start Here
   url: /
+- label: Calendar
+  url: /calendar.html
 - label: Find an Instrument
   url: /instruments/
 - label: Get Trained
