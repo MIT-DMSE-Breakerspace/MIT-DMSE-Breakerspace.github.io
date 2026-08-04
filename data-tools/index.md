@@ -67,6 +67,8 @@ Use these browser-based workspaces to look closely at characterization data, try
 
 The analysis applications and their associated reference libraries are hosted on `carbonio.mit.edu` and maintained separately from the Breakerspace website. Features, availability, reference-library content, and application updates are therefore outside the maintenance scope of this site.
 
-The applications are developed in the open-source [ScienceScripts project](https://github.com/feranick/ScienceScripts) by Feranick. Breakerspace provides these links as a convenient starting point for learning and exploratory analysis.
+The applications are developed in the open-source [ScienceScripts project](https://github.com/feranick/ScienceScripts) by Feranick. Comments, bugs, suggestions can be submitted via: [https://github.com/feranick/ScienceScripts/issues](https://github.com/feranick/ScienceScripts/issues)
+
+Breakerspace provides these links as a convenient starting point for learning and exploratory analysis.
 
 Questions about Breakerspace teaching materials or accessibility barriers on this page can be sent to [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
