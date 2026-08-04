@@ -13,7 +13,7 @@ Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, s
 
 <div class="quick-actions-list" markdown="1">
 
-* [View upcoming training sessions on the Breakerspace calendar]({{ "/calendar.html#calendar" | relative_url }})
+* [View upcoming training sessions](#upcoming-training-sessions)
 * [Explore the instrument pages]({{ "/instruments/" | relative_url }}) or ask Breakerspace staff which measurement fits your question.
 * Before your first in-person instrument training, [complete the one-time online training and training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc).
 * If the training you need is not scheduled, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with the instrument and several times that work for you.
@@ -30,7 +30,7 @@ If your project involves an unusual sample or an advanced measurement, ask staff
 
 ### 2. Register For Training
 
-Choose an available session from the [Breakerspace calendar]({{ "/calendar.html#calendar" | relative_url }}). Standard sessions are one hour and have a maximum enrollment of three people. If the instrument you need is not listed, or none of the available times work, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
+Choose an available session from the [calendar below](#upcoming-training-sessions). Standard sessions are one hour and have a maximum enrollment of three people. If the instrument you need is not listed, or none of the available times work, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
 
 If your plans change, please cancel your registration when you can so another student can use the place. There is no penalty for missing a session or registering again; the team understands that student schedules change.
 
@@ -67,7 +67,7 @@ If you completed training but cannot enter the lab, log in to an instrument work
 
 ### Standard Instrument Training
 
-The normal starting point for users who want to operate an instrument independently. Register through the [Breakerspace calendar]({{ "/calendar.html#calendar" | relative_url }}) or contact the Breakerspace team when no suitable session is listed.
+The normal starting point for users who want to operate an instrument independently. Register through the [upcoming training calendar](#upcoming-training-sessions) or contact the Breakerspace team when no suitable session is listed.
 
 ### Advanced And Project Support
 
@@ -76,3 +76,7 @@ Already-trained users can work with Breakerspace staff when a project requires a
 ### Course And Teaching-Team Training
 
 The Breakerspace can coordinate instrument training for students, instructors, teaching assistants, and teaching fellows as part of a broader subject collaboration. More substantial engagements should be planned before the semester begins whenever possible. See [Teach With The Breakerspace]({{ "/teaching.html" | relative_url }}) for collaboration models and staffing guidance.
+
+## Upcoming Training Sessions {#upcoming-training-sessions}
+
+{% include breakerspace-calendar.html %}

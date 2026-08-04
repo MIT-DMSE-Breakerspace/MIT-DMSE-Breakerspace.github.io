@@ -4,6 +4,8 @@ Last reviewed: 2026-07-31
 
 **Status: historical reference only. Do not use this file as a source for current training content.**
 
+For the approved field-by-field revision procedure and paste-ready copy, use the [LibCal Manual Event Template Update Guide](libcal-manual-update-guide.md).
+
 This is a record of the ten LibCal event templates as they existed on 2026-07-31, captured from the LibCal admin **Edit Template** forms before any revision. It exists so that a future editor can see what the templates said, identify what changed, and understand why.
 
 The templates are **outdated and contain factual errors** (see [Known Problems](#known-problems)). They predate the redesigned website, the consolidated instrument pages, the Quick Guides, and the access facts recorded in [`access-and-logistics.md`](access-and-logistics.md). Where this file and any current staff guide disagree, **the current guide is correct and the template is wrong.**
@@ -44,7 +46,7 @@ Eight instrument trainings, plus two informational hours templates that are a di
 | Staffed Open Hours | — | No registration; informational |
 | Subject Lab Hours | — | No registration; informational |
 
-**No template exists for the hardness tester or the ion mill.** Both need a decision before either instrument's training can be advertised. For the ion mill, first decide whether the right artifact is a training event at all or a staff-assisted-use arrangement.
+**No template exists for the hardness tester or the ion mill.** Resolved for the manual revision on 2026-08-04: create a standard instrument-training template for each as part of the same revision effort. See the [current template map](libcal-manual-update-guide.md#instrument-template-map).
 
 ## Shared Settings
 
@@ -109,7 +111,7 @@ Reasons not to treat these templates as a content source:
 2. **The 48-hour access window is unsourced.** No current page states it. Tap access is processed by the lab manager after the Qualtrics record is complete, with no published turnaround.
 3. **Unfilled placeholder text is publicly visible.** The Duetta description contains `**********ADD OPERATIONS**********` twice.
 4. **PSA has a copy-paste error** — its "More about" heading reads "Scanning Electron Microscopes."
-5. **Two operational rules are undocumented elsewhere.** The 5-minute early start/end convention and the full-attendance requirement are real and trainers should know them, but they contradict the guides' current "no separate skills demonstration" framing and need a decision rather than a copy.
+5. **Two operational rules were undocumented elsewhere.** Resolved for the manual revision on 2026-08-04: omit all public explanation of MIT's calendar-time convention and budget 50 usable minutes internally for a one-hour block; tell attendees, "Plan to attend the full session. If you arrive late or need to leave early, ask the trainer whether you need to register for another session."
 6. **Featured images are inconsistent and fragile.** FTIR, optical, XRD, Raman, and Instron point at `breakerspace.mit.edu/assets/img/*.JPG`; SEM and PSA use LibCal-hosted CloudFront URLs. The site-hosted links break if assets are renamed or moved.
 7. **The Instron image is `utm.JPG`**, the same brand-versus-family naming inconsistency resolved for the Moira lists.
 8. **Descriptions duplicate the website.** Instruction lists, model names, and manufacturer links all restate content that now lives on the consolidated instrument pages — in a system with no API and no version control.
@@ -123,10 +125,12 @@ The goal is the least content in LibCal that still lets a student register for t
 Principles for the rewrite:
 
 * **Keep in LibCal** what LibCal alone can do: title, date and time, the 3-person limit, registration form, LibAuth, waitlist, reminder and follow-up scheduling, category, and enough description to confirm the right session was booked.
-* **Move to the website** anything that explains, instructs, or is likely to change: what the instrument does, what the session covers, sample preparation, model details, manufacturer links, and access consequences. Link to the instrument page, its Quick Guide, and the training pathway instead.
+* **Move to the website** anything that explains, instructs, or is likely to change: what the instrument does, what the session covers, sample preparation, model details, manufacturer links, and access consequences. Link to the canonical instrument page and training pathway instead. Do not link directly to a trained-user Quick Guide from a registration template.
 * **Never restate access mechanics in an automated email.** They differ by instrument and have already gone stale once. Link to the training pathway and let one page carry the current rule.
 * **Write the shared opening paragraph once** and keep it genuinely identical, so future edits are a find-and-replace across ten forms rather than ten separate rewrites.
 * **Verify each instrument's claims against its own facts** before pasting shared copy. The current templates are wrong precisely because shared text was cloned without checking whether it applied.
 * **Rename the public hours template and category to `Lab Assistant on duty`.** Use `Breakerspace Lab Assistant` when the description names the role, and explain that these entries identify drop-in support rather than the lab's opening hours.
 
 Tracked as a task in [`../_staff/site-todo.md`](../_staff/site-todo.md).
+
+The current implementation procedure is the [LibCal Manual Event Template Update Guide](libcal-manual-update-guide.md).

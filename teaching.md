@@ -116,7 +116,7 @@ Teaching assistants and teaching fellows are valuable partners in developing and
 
 Formal exercises that need coordinated or exclusive use of the instrument lab require a staff-approved whole-lab reservation. These reservations are not self-service. Email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) at least **one week in advance** with the course or activity, requested time including setup and cleanup, enrollment, instruments, responsible teaching staff, training or access needs, and possible alternative times.
 
-Earlier requests are important for recurring sessions, larger groups, multi-instrument rotations, or activities that require Breakerspace staffing or sample review. Staff will check existing reservations and operational constraints before confirming the session, adding it to the calendar, and making the affected instrument times unavailable. Do not announce the lab reservation to participants until the Breakerspace has confirmed it in writing.
+Earlier requests are important for recurring sessions, larger groups, multi-instrument rotations, or activities that require Breakerspace staffing or sample review. Staff will check existing reservations and operational constraints before confirming the session, adding it to the calendar, and making all individual instrument reservation times unavailable for the confirmed interval. This lab-wide reservation block applies even when the activity itself uses only part of the room. Do not announce the lab reservation to participants until the Breakerspace has confirmed it in writing.
 
 Email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with the course, enrollment, learning goal, likely timing, and the activity you have in mind. Early ideas are welcome.
 

@@ -46,10 +46,10 @@ The homepage should remain concise. It routes users by intent and provides the l
 | Area | Current status |
 | --- | --- |
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
-| Calendar | Implemented at `calendar.md`, with training registration, Lab Assistant on duty hours, reserved activities and availability notices, and routes to individual instrument reservations and related policies. |
+| Calendar | Implemented at `calendar.md`, with an embedded schedule for training registration, Lab Assistant on duty hours, and reserved activities or availability notices. |
 | Location and arrival | Implemented on the homepage: Building 8, Room 8-102A, entered through the Breakerspace Lounge. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
 | Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages, grouped by capability. |
-| Training | Implemented at `training.md`, including the one-time Qualtrics record, one-hour in-person sessions, access follow-up, advanced support, and links to the dedicated Breakerspace calendar. The revised Qualtrics flow and validations were tested before production release. |
+| Training | Implemented at `training.md`, including the one-time Qualtrics record, one-hour in-person sessions, access follow-up, advanced support, and an embedded view of the Breakerspace calendar. The revised Qualtrics flow and validations were tested before production release. |
 | Reservations | Implemented at `reservations.md`, including direct calendars, a three-day advance booking window, the one-hour initial norm, reservation ownership, the 10-minute late rule, cancellations, handoffs, guests, problem routing, and staff-mediated whole-lab reservations for teaching and organized activities. |
 | Safety and lab use | Implemented at `safety.md`, including emergency response, PPE, food and drink, samples, guests, working alone, cleanup, damage, and incident reporting. The physical-space wording and high-consequence operational guidance were reviewed before production release. |
 | Help and support | Implemented at `resources.md`, covering instrument problems, access, workstation permissions, files, Dropbox, Slack, project support, and contact paths. |

@@ -95,6 +95,6 @@ The Breakerspace lab and lounge are open 8 AM to midnight, seven days/week.
 
 Check the [Breakerspace calendar]({{ "/calendar.html" | relative_url }}) for upcoming training, times when a Lab Assistant will be on duty, and scheduled activities that may affect lab availability.
 
-Lounge access and instrument authorization are separate. New lab users should complete the relevant training before reserving or using instruments independently. See [Get Trained]({{ "/training.html" | relative_url }}) for the onboarding pathway and the [Breakerspace calendar]({{ "/calendar.html#calendar" | relative_url }}) for upcoming sessions. If no listed training works for you, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
+Lounge access and instrument authorization are separate. New lab users should complete the relevant training before reserving or using instruments independently. See [Get Trained]({{ "/training.html" | relative_url }}) for the onboarding pathway and upcoming sessions. If no listed training works for you, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
 
 Before working independently, review [Safety And Lab Use]({{ "/safety.html" | relative_url }}) for lab-wide rules on PPE, samples, guests, cleanup, reservations, and emergency response.

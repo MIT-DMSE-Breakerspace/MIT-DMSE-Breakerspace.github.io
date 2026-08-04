@@ -27,12 +27,12 @@ This is the internal operating procedure for teaching exercises, orientations, o
 ## Scheduling Workflow
 
 1. Acknowledge the request and collect any missing information.
-2. Check every affected instrument calendar for existing reservations, as well as other teaching, maintenance, and staffing commitments.
+2. Check every instrument calendar for existing reservations, as well as other teaching, maintenance, and staffing commitments.
 3. Resolve conflicts before approval. Do not displace an existing user without direct staff coordination and notice.
 4. Confirm the activity, staffing model, trained operators, sample compatibility, room capacity, and setup or reset requirements.
 5. Create the LibCal room reservation for the complete interval. A room reservation blocks new reservations for the seats assigned to that room.
 6. Add the teaching activity or closure to the appropriate shared calendar so staff and participants can see the lab commitment.
-7. Check the signed-out public reservation view for every affected instrument. The reserved interval must be unavailable to ordinary users before the organizer receives confirmation. If the room reservation did not block an affected instrument, add a staff-controlled instrument block and investigate the resource assignment.
+7. Check the signed-out public reservation view for every instrument. The reserved interval must be unavailable to ordinary users across the lab before the organizer receives confirmation. If the room reservation did not block any instrument, add a staff-controlled instrument block and investigate the resource assignment.
 8. Send written confirmation stating the approved date and time, setup access, responsible staff contacts, participant preparation, and any conditions.
 9. If the activity changes or is canceled, update both the room reservation and the shared event, remove any supplemental instrument blocks, then verify the public grids again.
 
