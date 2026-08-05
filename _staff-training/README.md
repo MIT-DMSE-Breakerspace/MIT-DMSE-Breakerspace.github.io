@@ -8,7 +8,7 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-Last substantive work: 2026-08-03.
+Last substantive work: 2026-08-05.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
@@ -29,6 +29,8 @@ All three page gaps are tracked in [`../instruments/staff-todo.md`](../instrumen
 
 **Optical is next.** It has a Quick Guide and a staff guide, both predating the content contract, so it needs the same retrofit FTIR just had.
 
+The live LibCal revision was completed on 2026-08-04. All ten instrument-training templates now use the approved minimal copy and shared registration settings, including the new hardness-tester and ion-mill templates. The Lab Assistant and three scope-specific reserved-activity templates were also revised and verified through unpublished test events. The historical state and completed revision record are in [`libcal-event-templates.md`](libcal-event-templates.md) and [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
+
 The operating model the template reflects:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
@@ -42,7 +44,7 @@ The operating model the template reflects:
 * Dropbox access is trainee-managed: the trainee creates an MIT Dropbox for Business account and requests membership in the DMSE Breakerspace Team. Trainers should help first-time users with the process when needed rather than attempting to invite an account that may not exist.
 * There is currently no separate skills demonstration, training expiration, or recurring retraining requirement.
 
-The current Qualtrics survey remains coordinated with the active production website until the redesigned site launches. Make survey changes from `qualtrics-manual-edit-guide.md`. Its release status is tracked in `qualtrics-launch-review.md`; the complete July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
+The current Qualtrics survey was released with the redesigned production website on 2026-07-24. Its notification, retention, response-handling, live-path, and proportionate accessibility closeout was completed on 2026-08-05. Make future survey changes from `qualtrics-manual-edit-guide.md`; the completed release record is in `qualtrics-launch-review.md`, and the full July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
 
 ## Picking This Work Up Again
 
@@ -96,9 +98,8 @@ Each instrument's Quick Guide and staff guide are developed together, starting f
 1. **Print-proof the FTIR Quick Guide.** Side 2 is roughly 582 words and has never been printed. If the two-page budget does not hold, the fix changes how optical and XRD get written, so this comes first. It needs a physical printer, not a browser preview.
 2. **Retrofit the optical pair.** Follow the FTIR pair as the model: numbered Quick Guide steps, an SOP coverage map with every startup and shutdown bullet as its own row, an operations table, and a named default sample. Optical's SOP is shorter than FTIR's, so this should be faster. **If the print proof is not yet available**, optical may proceed in parallel — but treat its page budget as unverified and expect to revise both guides once the proof lands.
 3. **XRD pair.** The Quick Guide needs retrofit; the training guide needs writing from scratch. `../handouts/xrd/` holds two draft tutorials and a student report template worth harvesting. Two open questions below affect its closeout.
-4. **Level 1 samples.** FTIR needs one identified paper specimen. Optical needs its own default named.
+4. **Level 1 samples.** FTIR already uses `BS-000004` acrylic yarn and needs one identified paper specimen. Optical needs its own default named.
 5. **SEM.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
-6. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
 
 ### What The FTIR Retrofit Taught
 
@@ -116,7 +117,6 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
-* **Terminology is inconsistent.** LibCal says "laboratory assistant," the website says "student staff," these guides say "trainer."
 
 ### Decisions already made, with reasons
 
@@ -140,7 +140,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, scheduling, and guide owners. Guides link to it instead of restating these facts.
 * `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
-* `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
+* `libcal-event-templates.md` preserves the outdated, error-containing 2026-07-31 template state for historical comparison and records the completed 2026-08-04 revision. Do not use the pre-revision copy as a current content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
 * `ftir.md` is the Nicolet iS5 FTIR ATR curriculum, **retrofitted 2026-08-03 and the reference implementation** of the current model. Copy its structure for a new instrument.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum. Predates the content contract and needs the same retrofit.

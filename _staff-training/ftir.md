@@ -11,7 +11,7 @@ The [canonical instrument page](../instruments/ftir.md) is the operating authori
 | Instrument | Thermo Scientific Nicolet iS5 FTIR with iD7 ATR accessory |
 | Public instrument page and SOP | [FTIR operating page](../instruments/ftir.md) · [SOP](../instruments/ftir.md#sop) |
 | Quick Guide | [`/quick-guides/ftir/`](../quick-guides/ftir.md), reviewed 2026-08-03. Laminated copy at the instrument: **not yet installed** |
-| LibCal training | Template: **Fourier Transform Infrared (FTIR) Spectrometer Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
+| LibCal training | Template: **Nicolet iS5 FTIR Spectrometer Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; see the [completion record](libcal-manual-update-guide.md#completion-record) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two solid materials with ATR and save native spectra |
@@ -19,7 +19,7 @@ The [canonical instrument page](../instruments/ftir.md) is the operating authori
 | Moira group | `dmse-brkrspc-ftir` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
-| Last reviewed | 2026-08-03 |
+| Last reviewed | 2026-08-05 |
 
 ## Training Outcome
 

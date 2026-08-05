@@ -27,15 +27,17 @@ The site is an operational guide for undergraduate lab users and teaching teams.
 The current top-level navigation is defined in `_data/navigation.yml`:
 
 1. Start Here
-2. Reserve Time
+2. Calendar
 3. Find an Instrument
-4. Sample Library
-5. Get Trained
-6. Get Help
-7. Safety & Lab Use
-8. Use the Lounge
-9. Teach With Us
-10. About
+4. Get Trained
+5. Reserve Time
+6. Data Tools
+7. Sample Library
+8. Get Help
+9. Safety & Lab Use
+10. Use the Lounge
+11. Teach With Us
+12. About
 
 The homepage should remain concise. It routes users by intent and provides the lab location, arrival route, hours, and access distinction. Detailed policies and workflows belong on their task-specific pages.
 
@@ -44,15 +46,16 @@ The homepage should remain concise. It routes users by intent and provides the l
 | Area | Current status |
 | --- | --- |
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
+| Calendar | Implemented at `calendar.md`, with an embedded schedule for training registration, Lab Assistant on duty hours, and reserved activities or availability notices. |
 | Location and arrival | Implemented on the homepage: Building 8, Room 8-102A, entered through the Breakerspace Lounge. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
 | Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages, grouped by capability. |
-| Training | Implemented at `training.md`, including the one-time Qualtrics record, one-hour in-person sessions, access follow-up, advanced support, and the LibCal training calendar. The revised Qualtrics flow and validations were tested before production release. |
+| Training | Implemented at `training.md`, including the one-time Qualtrics record, one-hour in-person sessions, access follow-up, advanced support, and an embedded view of the Breakerspace calendar. The revised Qualtrics flow and validations were tested before production release. |
 | Reservations | Implemented at `reservations.md`, including direct calendars, a three-day advance booking window, the one-hour initial norm, reservation ownership, the 10-minute late rule, cancellations, handoffs, guests, problem routing, and staff-mediated whole-lab reservations for teaching and organized activities. |
 | Safety and lab use | Implemented at `safety.md`, including emergency response, PPE, food and drink, samples, guests, working alone, cleanup, damage, and incident reporting. The physical-space wording and high-consequence operational guidance were reviewed before production release. |
 | Help and support | Implemented at `resources.md`, covering instrument problems, access, workstation permissions, files, Dropbox, Slack, project support, and contact paths. |
 | Teaching | Implemented at `teaching.md`, with collaboration models, staffing guidance, planning timelines, student preparation, and established course examples. |
 | Lounge | Implemented at `lounge.md` for the current lounge, coffee equipment, access, food and drink boundary, teaching, and community use. Future accuracy depends on the unresolved space decision. |
-| About | Implemented at `about.md`, with the lab's educational purpose, a brief account of its development through undergraduate teaching and student use, the team model, and contact pathways. The current student-staff roster can be added when it is ready for ongoing maintenance. |
+| About | Implemented at `about.md`, with the lab's educational purpose, a brief account of its development through undergraduate teaching and student use, the team model, and contact pathways. The current Breakerspace Lab Assistant roster can be added when it is ready for ongoing maintenance. |
 | Sample library | The public index, generated detail-page layout, versioned importer, search/filter controls, and screen-image conversion are implemented. Two reviewed records currently populate the library, which is linked from top-level navigation. The pre-fall collection goal is 25 publishable samples, with 50 as a stretch target. |
 | Materials showcase | The proposed educational showcase system is documented in `showcases/README.md`, with an unlisted pumpkin strength-to-weight demonstration at `showcases/pumpkin-strength-to-weight.md`. It is not yet a populated archive or top-level navigation destination. |
 

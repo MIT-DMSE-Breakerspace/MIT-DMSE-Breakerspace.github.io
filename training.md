@@ -30,11 +30,11 @@ If your project involves an unusual sample or an advanced measurement, ask staff
 
 ### 2. Register For Training
 
-Choose an available session from the [training calendar](#upcoming-training-sessions). Standard sessions are one hour and have a maximum enrollment of three people. If the instrument you need is not listed, or none of the available times work, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
+Choose an available session from the [calendar below](#upcoming-training-sessions). Standard sessions are one hour and have a maximum enrollment of three people. If the instrument you need is not listed, or none of the available times work, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
 
 If your plans change, please cancel your registration when you can so another student can use the place. There is no penalty for missing a session or registering again; the team understands that student schedules change.
 
-### 3. Prepare Before The Session
+### 3. Prepare Before The Session {#prepare-for-training}
 
 Before your first in-person instrument training, complete the [one-time Breakerspace online training and training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc). It includes a review of [Safety And Lab Use]({{ "/safety.html" | relative_url }}) and collects the information needed for physical tap access.
 
@@ -67,7 +67,7 @@ If you completed training but cannot enter the lab, log in to an instrument work
 
 ### Standard Instrument Training
 
-The normal starting point for users who want to operate an instrument independently. Register through the training calendar or contact the Breakerspace team when no suitable session is listed.
+The normal starting point for users who want to operate an instrument independently. Register through the [upcoming training calendar](#upcoming-training-sessions) or contact the Breakerspace team when no suitable session is listed.
 
 ### Advanced And Project Support
 
@@ -77,6 +77,6 @@ Already-trained users can work with Breakerspace staff when a project requires a
 
 The Breakerspace can coordinate instrument training for students, instructors, teaching assistants, and teaching fellows as part of a broader subject collaboration. More substantial engagements should be planned before the semester begins whenever possible. See [Teach With The Breakerspace]({{ "/teaching.html" | relative_url }}) for collaboration models and staffing guidance.
 
-## Upcoming Training Sessions
+## Upcoming Training Sessions {#upcoming-training-sessions}
 
-<iframe id="training-calendar" title="Breakerspace training calendar" src="https://breakerspace.libcal.com/embed_calendar.php?cal_id=19408&amp;w=750&amp;h=600&amp;dv=agendaWeek&amp;st=0&amp;we=1&amp;hl=prev%2Cnext%20today&amp;hc=title&amp;hr=basicWeek%20agendaDay%2CagendaWeek%2Cmonth&amp;hd=dddd%2C%20MMM%20D%2C%20YYYY&amp;hw=MMMM%20D&amp;hm=MMMM%20YYYY&amp;cd=dddd%20M%2FD&amp;cw=ddd%20M%2FD&amp;cm=ddd&amp;ta=h(%3Amm)a&amp;td=h(%3Amm)a&amp;tm=h(%3Amm)a&amp;fh=08%3A00%3A00&amp;mi=08%3A00%3A00&amp;ma=24%3A00%3A00&amp;ts=00%3A30%3A00&amp;eo=1&amp;el=0&amp;hf=1&amp;sp=1&amp;c1=%23000000&amp;c2=%23000000&amp;c3=%23F3F3F3&amp;c4=%23D0D0D0&amp;c5=%23000000&amp;audience=&amp;cam=&amp;cat=&amp;tar=0&amp;set=1" style="border: 0" width="100%" height="600" frameborder="0" scrolling="auto"></iframe>
+{% include breakerspace-calendar.html %}

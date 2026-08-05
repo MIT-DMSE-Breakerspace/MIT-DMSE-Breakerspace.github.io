@@ -112,13 +112,17 @@ There is currently no skills demonstration, no training expiration, and no recur
 
 Standard sessions are **60 minutes** with a **maximum of three participants**. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
 
-Per-instrument LibCal training events **do exist** — there are eight instrument training templates, so a guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event, so the public link and the underlying event structure are not aligned.
+### Fall Schedule Timing
 
-Two instruments have no template: the **hardness tester** and the **ion mill**. Neither can be advertised as a scheduled training until that is resolved.
+Recurring fall training sessions are posted only after Breakerspace Lab Assistants return to campus, settle their academic schedules, and confirm the hours they will work in the lab. An empty or sparse public calendar during the first week is normal and is not evidence of a staffing or readiness failure. Do not create a speculative August schedule that will need to be rebuilt after student schedules change.
 
-The templates themselves are outdated and contain factual errors, including an automated follow-up email that promises instrument login access to attendees of instruments that have no access control. **Do not copy content out of them into a guide.** Their pre-revision state and the planned rewrite are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the rewrite is tracked in [`../_staff/site-todo.md`](../_staff/site-todo.md).
+Subjects, courses, and research or teaching labs that require coordinated training arrange it directly with Breakerspace staff and provide the staffing needed for that activity. During the early weeks of the term, handle individual requests through ad-hoc sessions when no public event is available. A temporary notice above the public calendar may explain this timing and direct users to `dmse-breakerspace@mit.edu`; remove it after recurring sessions are posted so the ordinary calendar remains the source of truth.
 
-Two operational rules appear in the current LibCal reminder email but nowhere on the website: sessions start and end five minutes before and after the posted time, and attendees must stay for the whole session to be cleared. Both need a decision before a guide repeats them.
+Per-instrument LibCal training events **do exist** — there are ten instrument-training templates, including the hardness tester and ion mill templates added on 2026-08-04, so every guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event; this is intentional public routing rather than an absence of instrument-specific templates.
+
+All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state and completed verification are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the as-built procedure and completion record are in [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
+
+The timing and attendance questions are resolved. A one-hour calendar block provides 50 usable training minutes internally; do not publish MIT's informal early-start/end convention. Public copy asks attendees to plan to attend the full session and to ask the trainer whether they need to register again if they arrive late or leave early.
 
 ## Guide Owners
 

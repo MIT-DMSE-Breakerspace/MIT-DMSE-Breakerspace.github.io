@@ -74,10 +74,10 @@ Choose the situation that best matches what you are trying to do. You do not nee
 
   <article class="intent-item">
     <div class="intent-prompt">
-      <h3>I might be interested in joining the student staff</h3>
+      <h3>I might be interested in becoming a Breakerspace Lab Assistant</h3>
     </div>
     <div class="intent-detail">
-      <p>Student staff are essential to the Breakerspace: they train users, support lab and course work, and help the space keep improving. We are always happy to hear from anyone who might like to join the team.</p>
+      <p>Breakerspace Lab Assistants are essential to the lab: they train users, support lab and course work, and help the space keep improving. We are always happy to hear from anyone who might like to join the team.</p>
       <a class="intent-link" href="{{ "/about.html#meet-the-team" | relative_url }}">Learn about the team <span aria-hidden="true">&rarr;</span></a>
     </div>
   </article>
@@ -92,6 +92,8 @@ Still not sure where to begin? Ask someone in the lab or email [dmse-breakerspac
 The Breakerspace instrument lab is in **MIT Building 8, Room 8-102A**. Enter through the Breakerspace Lounge from the Building 8 corridor; the instrument lab doors open from inside the lounge.
 
 The Breakerspace lab and lounge are open 8 AM to midnight, seven days/week.
+
+Check the [Breakerspace calendar]({{ "/calendar.html" | relative_url }}) for upcoming training, times when a Lab Assistant will be on duty, and scheduled activities that may affect lab availability.
 
 Lounge access and instrument authorization are separate. New lab users should complete the relevant training before reserving or using instruments independently. See [Get Trained]({{ "/training.html" | relative_url }}) for the onboarding pathway and upcoming sessions. If no listed training works for you, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
 
