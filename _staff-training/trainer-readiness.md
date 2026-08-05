@@ -119,7 +119,7 @@ Trainers are mostly undergraduates who may be encountering these situations for 
 
 **Breakerspace Lab Assistant** is the standard public-facing employment title. **Trainer** remains a functional term in these internal guides because a qualified trainer may be a Breakerspace Lab Assistant, the lab manager, or a trained course instructor. LibCal event templates should use Breakerspace Lab Assistant when referring to the role and trainer only when describing the training function.
 
-The remaining external terminology changes should be folded into the [LibCal template rewrite](libcal-event-templates.md#revision-direction) rather than handled as a separate manual pass.
+The LibCal terminology changes were completed with the template revision on 2026-08-04. The live support template and category now use **Lab Assistant on duty**; the instrument-training copy uses **trainer** only for the training function.
 
 ## Open Items
 

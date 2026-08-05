@@ -2,28 +2,28 @@
 
 Last reviewed: 2026-08-04
 
-**Status: approved runbook for the next manual LibCal template revision.**
+**Status: completed 2026-08-04; retained as the as-built runbook and maintenance reference.**
 
-Use this guide to revise the eight existing instrument-training templates, create templates for the hardness tester and ion mill, rename the staff-support template, and replace the subject-hours template with a general lab-availability template. The result is twelve maintained templates:
+This guide records the procedure used to revise the eight existing instrument-training templates, create templates for the hardness tester and ion mill, rename the staff-support template, and replace the subject-hours template with three scope-specific reserved-activity templates. The completed result is fourteen maintained templates:
 
 * ten instrument-training templates;
 * one **Lab Assistant on duty** template; and
-* one **Reserved activity or availability notice** template.
+* three reserved-activity templates covering the lab, lounge, or both.
 
-The [archival template audit](libcal-event-templates.md) records what existed before this revision and why it must change. It is evidence, not copy to paste into LibCal.
+The [archival template audit](libcal-event-templates.md) records what existed before this revision, why it changed, and the verified live outcome. Its pre-revision copy is evidence, not content to paste into LibCal.
 
 ## Confirmed Decisions
 
-These decisions are settled for this revision:
+These decisions were applied in the completed revision and remain the maintenance baseline:
 
 * A training event remains scheduled as a one-hour MIT calendar block. For internal planning, trainers should assume that the block provides **50 minutes of usable session time**.
 * Do not explain, reinterpret, or restate MIT's calendar-time convention in the public event description, reminder, or follow-up email. The posted event time remains the only public time statement.
 * Use this attendance wording: **Plan to attend the full session. If you arrive late or need to leave early, ask the trainer whether you need to register for another session.**
 * Standard enrollment remains three in-person participants, with no guests and a one-person waitlist.
-* Create new instrument-training templates for the **Innovatest Nemesis 5100G2 hardness tester** and **Technoorg-Linda SEMPrep 2 broad beam ion mill**.
+* Maintain instrument-training templates for the **Innovatest Nemesis 5100G2 hardness tester** and **Technoorg-Linda SEMPrep 2 broad beam ion mill**, created on 2026-08-04.
 * Use **Breakerspace Lab Assistant** for the hourly student role. Use **trainer** only when describing the training function, which may also be performed by the lab manager or another qualified instructor.
-* Rename `Staffed Open Hours` to **Lab Assistant on duty**. These entries identify support availability, not the lab's opening hours.
-* Replace `Subject Lab Hours` with **Reserved activity or availability notice**. Every event must state that individual instrument reservations are unavailable across the lab for the listed period. It may also identify where the activity physically takes place, but it must not imply that instruments elsewhere remain reservable.
+* Use **Lab Assistant on duty** for the former `Staffed Open Hours` function. These entries identify support availability, not the lab's opening hours.
+* Use the three scope-specific reserved-activity templates for the instrument lab, lounge, or both. Lab-only and combined reservations block instrument availability; lounge-only reservations do not.
 * LibCal should not summarize an instrument's operations, training exercise, access mechanics, or Quick Guide. Link to the canonical instrument page and the public training pathway instead.
 
 ## Before Editing
@@ -86,23 +86,28 @@ The SEM template continues to cover both the Phenom XL and Phenom Pure. The shar
 
 ## Paste-Ready Instrument-Training Copy
 
-Replace `[INSTRUMENT]` and `[INSTRUMENT PAGE URL]` with the values from the template map. Use LibCal's rich-text link control if desired, but keep the destination visible and correct. Do not add a Quick Guide link.
+Replace `[INSTRUMENT]` and `[INSTRUMENT PAGE URL]` with the values from the template map. For **Description** and **More Info**, switch the LibCal rich-text editor to **Source** mode, paste the HTML below, then switch back and verify the rendered structure and links. Paste the reminder and follow-up HTML directly into their body fields and confirm the generated preview contains the expected clickable links. If a preview does not refresh after a paste, type and remove one harmless character in the field. Keep every destination visible and correct. Do not add a Quick Guide link.
 
 ### Event Description
 
-```text
-This is a small-group, hands-on training for the [INSTRUMENT]. Complete the relevant Breakerspace training before reserving or using an instrument independently.
+```html
+<p>This is a small-group, hands-on training for the [INSTRUMENT]. Complete the relevant Breakerspace training before reserving or using an instrument independently.</p>
+<p><strong>Before attending:</strong></p>
+<ul>
+  <li>Review the instrument page: <a href="[INSTRUMENT PAGE URL]">[INSTRUMENT PAGE URL]</a></li>
+  <li>Before your first in-person Breakerspace instrument training, complete the one-time online training and training record: <a href="https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc">https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc</a></li>
+  <li>Do not bring an unusual or project-specific sample unless you have discussed it with Breakerspace staff.</li>
+</ul>
+<p><strong>Plan to attend the full session.</strong> If you arrive late or need to leave early, ask the trainer whether you need to register for another session.</p>
+<p>Training takes place in the DMSE Breakerspace instrument lab, MIT Building 8, Room 8-102A. Enter through the Breakerspace Lounge.</p>
+<p>Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, staff, and other community members interested in training should email <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a> to discuss their needs.</p>
+```
 
-Before attending:
-• Review the instrument page: [INSTRUMENT PAGE URL]
-• Before your first in-person Breakerspace instrument training, complete the one-time online training and training record: https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc
-• Do not bring an unusual or project-specific sample unless you have discussed it with Breakerspace staff.
+Use this **More Info** source:
 
-Plan to attend the full session. If you arrive late or need to leave early, ask the trainer whether you need to register for another session.
-
-Training takes place in the DMSE Breakerspace instrument lab, MIT Building 8, Room 8-102A. Enter through the Breakerspace Lounge.
-
-Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, staff, and other community members interested in training should email dmse-breakerspace@mit.edu to discuss their needs.
+```html
+<p><strong>Instrument page:</strong><br />
+<a href="[INSTRUMENT PAGE URL]">[INSTRUMENT PAGE URL]</a></p>
 ```
 
 ### Reminder Email
@@ -117,19 +122,17 @@ Reminder: upcoming Breakerspace instrument training
 
 Body:
 
-```text
-This is a reminder about your upcoming Breakerspace instrument training. Confirm the instrument, date, time, and location in your registration.
-
-Before attending:
-• Review the instrument page: [INSTRUMENT PAGE URL]
-• Before your first in-person Breakerspace instrument training, complete the one-time online training and training record: https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc
-• Do not bring an unusual or project-specific sample unless you have discussed it with Breakerspace staff.
-
-Plan to attend the full session. If you arrive late or need to leave early, ask the trainer whether you need to register for another session.
-
-If you cannot attend, use the cancellation or registration-management link in your LibCal confirmation as soon as possible so another student can use the place. There is no penalty for cancelling, missing a session, or registering again.
-
-Questions: dmse-breakerspace@mit.edu
+```html
+<p>This is a reminder about your upcoming Breakerspace instrument training. Confirm the instrument, date, time, and location in your registration.</p>
+<p><strong>Before attending:</strong></p>
+<ul>
+  <li>Review the instrument page: <a href="[INSTRUMENT PAGE URL]">[INSTRUMENT PAGE URL]</a></li>
+  <li>Before your first in-person Breakerspace instrument training, complete the one-time online training and training record: <a href="https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc">https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc</a></li>
+  <li>Do not bring an unusual or project-specific sample unless you have discussed it with Breakerspace staff.</li>
+</ul>
+<p><strong>Plan to attend the full session.</strong> If you arrive late or need to leave early, ask the trainer whether you need to register for another session.</p>
+<p>If you cannot attend, use the cancellation or registration-management link in your LibCal confirmation as soon as possible so another student can use the place. There is no penalty for cancelling, missing a session, or registering again.</p>
+<p>Questions: <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a></p>
 ```
 
 ### Follow-Up Email
@@ -144,19 +147,15 @@ After your Breakerspace instrument training
 
 Body:
 
-```text
-Thank you for attending a Breakerspace instrument training.
-
-Use the instrument page for the current operating guidance, reservation link, and support resources:
-[INSTRUMENT PAGE URL]
-
-The current training and access pathway is:
-https://breakerspace.mit.edu/training.html
-
-This automated message does not itself confirm instrument-login permission or physical tap access. If an expected permission, invitation, or access step is missing, follow:
-https://breakerspace.mit.edu/resources.html#access-and-account-problems
-
-Questions: dmse-breakerspace@mit.edu
+```html
+<p>Thank you for attending a Breakerspace instrument training.</p>
+<p>Use the instrument page for the current operating guidance, reservation link, and support resources:<br />
+<a href="[INSTRUMENT PAGE URL]">[INSTRUMENT PAGE URL]</a></p>
+<p>The current training and access pathway is:<br />
+<a href="https://breakerspace.mit.edu/training.html">https://breakerspace.mit.edu/training.html</a></p>
+<p><strong>This automated message does not itself confirm instrument-login permission or physical tap access.</strong> If an expected permission, invitation, or access step is missing, follow:<br />
+<a href="https://breakerspace.mit.edu/resources.html#access-and-account-problems">https://breakerspace.mit.edu/resources.html#access-and-account-problems</a></p>
+<p>Questions: <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a></p>
 ```
 
 ## Lab Assistant On Duty Template
@@ -175,55 +174,73 @@ Rename the existing `Staffed Open Hours` template and its category to **Lab Assi
 
 Use this description:
 
-```text
-A Breakerspace Lab Assistant will be in the instrument lab for drop-in project questions and ad-hoc support. No registration is required.
-
-These hours are not a substitute for required instrument training or instrument reservations. Individual instrument availability is shown separately in LibCal.
-
-Breakerspace calendar and related actions:
-https://breakerspace.mit.edu/calendar.html
+```html
+<p>A Breakerspace Lab Assistant will be in the instrument lab for drop-in project questions and ad-hoc support. <strong>No registration is required.</strong></p>
+<p>These hours are not a substitute for required instrument training or instrument reservations. Individual instrument availability is shown separately in LibCal.</p>
+<p><strong>Breakerspace calendar and related actions:</strong><br />
+<a href="https://breakerspace.mit.edu/calendar.html">https://breakerspace.mit.edu/calendar.html</a></p>
 ```
 
 The event title should remain **Lab Assistant on duty** unless a short, user-relevant qualifier is necessary. Do not put an assistant's name in the public title.
 
-## Reserved Activity Or Availability Notice Template
+## Reserved Activity Templates
 
-Rename `Subject Lab Hours` to **Reserved activity or availability notice**. Use it for confirmed teaching sessions, organized group activities, maintenance, and other work that affects ordinary lab use.
+Use three scope-specific templates for confirmed teaching sessions, organized group activities, maintenance, and other work that affects ordinary use. Keep `Reserved activity or availability notice` as the shared category, but use the straightforward baked-in event titles below. A creator may add a short useful qualifier, but an untouched title must still communicate the affected space clearly.
+
+Shared settings:
 
 | LibCal field | Required value |
 | --- | --- |
-| Template name | `Reserved activity or availability notice` |
-| Registration | Not required |
+| Registration | Not required in the template editor; see the LibCal inheritance note below |
 | Waitlist | Disabled |
 | Reminder and follow-up emails | Disabled |
 | Category | `Reserved activity or availability notice` |
 | More Info | `https://breakerspace.mit.edu/calendar.html` |
 | Featured image | Remove |
 
-Every event created from this template must replace the generic title with one of these lab-wide availability patterns:
+### Lab Reserved For Activity
 
-```text
-Lab unavailable — [brief activity label]
-Lab reserved — [brief activity label]
-Maintenance closure — [brief maintenance label]
+Template name and default event title: `Lab reserved for activity`
+
+```html
+<p>The Breakerspace instrument lab is reserved for a confirmed activity.</p>
+<p><strong>Individual instrument reservations are unavailable across the lab for the full listed period, including setup and cleanup.</strong></p>
+<p><strong>Physical activity location:</strong> MIT Building 8, Room 8-102A.</p>
+<p>This reservation does not include the Breakerspace Lounge in Room 8-102.</p>
+<p>Check individual instrument availability in LibCal:<br />
+<a href="https://breakerspace.libcal.com/space/168610">https://breakerspace.libcal.com/space/168610</a></p>
+<p>Questions: <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a></p>
 ```
 
-Use this description structure and delete bracketed prompts before publication:
+### Lounge Reserved For Activity
 
-```text
-The Breakerspace instrument lab is reserved for a confirmed activity.
+Template name and default event title: `Lounge reserved for activity`
 
-Individual instrument reservations are unavailable across the lab for the full listed period, including setup and cleanup.
-
-Physical activity location: [optional; name the area when useful, while retaining the lab-wide reservation statement above]
-
-Check individual instrument availability separately in LibCal:
-https://breakerspace.libcal.com/space/168610
-
-Questions: dmse-breakerspace@mit.edu
+```html
+<p>The Breakerspace Lounge is reserved for a confirmed activity.</p>
+<p><strong>The lounge is unavailable for the full listed period, including setup and cleanup.</strong></p>
+<p><strong>Physical activity location:</strong> MIT Building 8, Room 8-102.</p>
+<p>This lounge-only reservation does not block individual instrument reservations in the instrument lab. Check instrument availability separately in LibCal:<br />
+<a href="https://breakerspace.libcal.com/space/168610">https://breakerspace.libcal.com/space/168610</a></p>
+<p>Questions: <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a></p>
 ```
 
-Do not expose participant names, private class information, organizer contact details, or internal notes. Create the LibCal room reservation for the same setup-through-cleanup interval; that room reservation provides the lab-wide instrument block. Then verify that every individual instrument calendar is unavailable for the complete interval. The shared calendar notice communicates the closure but does not replace the room reservation.
+### Lab And Lounge Reserved For Activity
+
+Template name and default event title: `Lab and lounge reserved for activity`
+
+```html
+<p>The Breakerspace instrument lab and lounge are reserved for a confirmed activity.</p>
+<p><strong>Individual instrument reservations are unavailable across the lab, and the lounge is unavailable, for the full listed period, including setup and cleanup.</strong></p>
+<p><strong>Physical activity location:</strong> MIT Building 8, Rooms 8-102A and 8-102.</p>
+<p>Check individual instrument availability in LibCal:<br />
+<a href="https://breakerspace.libcal.com/space/168610">https://breakerspace.libcal.com/space/168610</a></p>
+<p>Questions: <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a></p>
+```
+
+Do not expose participant names, private class information, organizer contact details, or internal notes. Reserve Room 8-102A for the full setup-through-cleanup interval for lab-only events; this must block all eleven individual instrument calendars. Reserve Room 8-102 only for lounge-only events and do not apply a lab-wide instrument block. For combined events, reserve both rooms for the same interval and verify that all eleven instrument calendars are blocked. The shared calendar notice communicates the closure but does not replace the applicable room reservation.
+
+LibCal currently shows registration disabled in all informational template editors but may restore a 15-seat registration form when an event is created from one of them. This behavior was accepted on 2026-08-04: event creators may leave it enabled as an optional signal of intent or disable it before publication. Registration has no effect on the room reservation or instrument-calendar block.
 
 ## Editing Sequence
 
@@ -231,7 +248,7 @@ Do not expose participant names, private class information, organizer contact de
 2. **Create and inspect a temporary FTIR event.** Use a nonpublic/test calendar or unpublished state if the administrative interface provides one. Otherwise remove the temporary event immediately after verification.
 3. **Revise the other seven existing training templates.** Work from the settings table rather than copying prose from the old templates.
 4. **Create the hardness-tester and ion-mill templates.** Duplicate the revised FTIR template if LibCal offers a reliable duplicate action, then replace every title, public name, and URL. Otherwise create each from the shared settings table.
-5. **Rename and revise the two informational templates.** Apply the approved copy and category names above.
+5. **Rename and revise the informational templates.** Apply the approved Lab Assistant copy and create the three scope-specific reserved-activity templates above.
 6. **Audit future events already on the calendar.** Correct any event that still carries an old title, description, category, image, reminder, follow-up, registration rule, or access promise.
 7. **Run the verification procedure below.** Do not delete the pre-revision captures until the new state has been captured and reviewed.
 
@@ -241,18 +258,20 @@ Mark a row only after the template itself and one event created from it have bee
 
 | Template | Settings | Description and More Info | Emails | Test event |
 | --- | --- | --- | --- | --- |
-| Nicolet iS5 FTIR Spectrometer Training | [ ] | [ ] | [ ] | [ ] |
-| DSX-1000 Digital Optical Microscope Training | [ ] | [ ] | [ ] | [ ] |
-| Phenom Scanning Electron Microscopes (SEM) Training | [ ] | [ ] | [ ] | [ ] |
-| Aeris Research X-Ray Diffractometer (XRD) Training | [ ] | [ ] | [ ] | [ ] |
-| Microtrac Sync Particle Size Analyzer Training | [ ] | [ ] | [ ] | [ ] |
-| Duetta Fluorescence and Absorbance Spectrometer Training | [ ] | [ ] | [ ] | [ ] |
-| XploRA Confocal Raman Microscope Training | [ ] | [ ] | [ ] | [ ] |
-| Instron 68TM-50 Universal Testing System Training | [ ] | [ ] | [ ] | [ ] |
-| Nemesis 5100G2 Hardness Tester Training | [ ] | [ ] | [ ] | [ ] |
-| SEMPrep 2 Broad Beam Ion Mill Training | [ ] | [ ] | [ ] | [ ] |
-| Lab Assistant on duty | [ ] | [ ] | N/A | [ ] |
-| Reserved activity or availability notice | [ ] | [ ] | N/A | [ ] |
+| Nicolet iS5 FTIR Spectrometer Training | [x] | [x] | [x] | [x] |
+| DSX-1000 Digital Optical Microscope Training | [x] | [x] | [x] | [x] |
+| Phenom Scanning Electron Microscopes (SEM) Training | [x] | [x] | [x] | [x] |
+| Aeris Research X-Ray Diffractometer (XRD) Training | [x] | [x] | [x] | [x] |
+| Microtrac Sync Particle Size Analyzer Training | [x] | [x] | [x] | [x] |
+| Duetta Fluorescence and Absorbance Spectrometer Training | [x] | [x] | [x] | [x] |
+| XploRA Confocal Raman Microscope Training | [x] | [x] | [x] | [x] |
+| Instron 68TM-50 Universal Testing System Training | [x] | [x] | [x] | [x] |
+| Nemesis 5100G2 Hardness Tester Training | [x] | [x] | [x] | [x] |
+| SEMPrep 2 Broad Beam Ion Mill Training | [x] | [x] | [x] | [x] |
+| Lab Assistant on duty | [x] | [x] | N/A | [x] |
+| Lab reserved for activity | [x] | [x] | N/A | [x] |
+| Lounge reserved for activity | [x] | [x] | N/A | [x] |
+| Lab and lounge reserved for activity | [x] | [x] | N/A | [x] |
 
 ## Verification Procedure
 
@@ -271,9 +290,9 @@ For each instrument-training template, create or inspect an event and verify:
 * The event has no fragile featured image.
 * The public event works in the normal calendar view and remains understandable without category color.
 
-For **Lab Assistant on duty**, verify that registration and emails are disabled and that the description distinguishes support availability from lab opening hours.
+For **Lab Assistant on duty**, verify that the description distinguishes support availability from lab opening hours. The template editor should keep registration disabled, but the accepted LibCal inheritance behavior above may enable it on a created event.
 
-For **Reserved activity or availability notice**, verify that the public title and description state that individual instrument reservations are unavailable across the lab. Confirm that every instrument calendar is blocked for the same setup-through-cleanup period, even when the activity physically occupies only one area.
+For the three **reserved activity** templates, verify that the baked-in title, room number, and scope agree. A lab-only or combined event must block all eleven instrument calendars for the same setup-through-cleanup interval. A lounge-only event must reserve Room 8-102 without applying a lab-wide instrument block.
 
 Finally:
 
@@ -289,12 +308,12 @@ Finally:
 
 | Field | Record |
 | --- | --- |
-| Editor | |
-| Revision started | |
-| Revision completed | |
-| Ten instrument-training templates verified | |
-| Two informational templates verified | |
-| Future events audited through | |
-| Test registration completed | |
-| Revised captures stored | |
-| Deviations or follow-up work | |
+| Editor | Justin Lavallee |
+| Revision started | 2026-08-04 |
+| Revision completed | 2026-08-04 |
+| Ten instrument-training templates verified | Yes — template forms reopened after save and ten unpublished test events created, inspected, and removed on 2026-08-04 |
+| Four informational templates verified | Yes — all four verified through unpublished test events that were removed after inspection |
+| Future events audited through | 2027-12-31 — event 17324794 was created after the initial no-results audit, corrected to `Lab reserved for activity`, and verified to block all eleven instrument calendars from 3:00–4:00 PM on 2026-08-04 |
+| Test registration completed | Private preview and MIT-authenticated form verified; no registration submitted because the required test-profile fields were not available |
+| Revised captures stored | Yes — `~/.codex/visualizations/2026/08/04/019fcd80-7d8d-7182-b13b-3e6671ac0745/libcal-revised-captures/` (outside the repository; copy to the lab's permanent capture archive when convenient) |
+| Deviations or follow-up work | Description and More Info fields were entered in Source mode as semantic HTML so links and emphasis publish correctly. LibCal may restore a 15-seat registration form when an informational event is created even though registration is disabled in its template; this was accepted as harmless and potentially useful. The generic reserved-activity template was replaced by lab-only, lounge-only, and combined templates with baked-in titles and room scopes. Both public embeds and the full LibCal event page display the corrected live lab reservation. An end-to-end registration submission, reminder/cancellation/follow-up delivery, narrow-viewport event check, and keyboard-only registration submission remain unperformed; the private preview and authenticated form were inspected without submitting unavailable test-profile data. |

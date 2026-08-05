@@ -8,7 +8,7 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 ## Current Status
 
-Last substantive work: 2026-07-31.
+Last substantive work: 2026-08-04.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
@@ -16,6 +16,8 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Per-instrument guides** — pilots for the optical microscope and FTIR. Two of eleven instruments.
 
 Both pilots have their Moira group, LibCal template, and guide owner recorded. **Each is blocked on two things only: an approved Level 1 training sample with a cabinet location, and operational-owner review.** Neither is a writing task.
+
+The live LibCal revision was completed on 2026-08-04. All ten instrument-training templates now use the approved minimal copy and shared registration settings, including the new hardness-tester and ion-mill templates. The Lab Assistant and three scope-specific reserved-activity templates were also revised and verified through unpublished test events. The historical state and completed revision record are in [`libcal-event-templates.md`](libcal-event-templates.md) and [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
 
 The operating model the template reflects:
 
@@ -45,14 +47,12 @@ Quick Guides exist for **optical, FTIR, and XRD** (`/quick-guides/`). The first 
 1. **Draft the XRD staff training guide.** Its Quick Guide exists, its operating page scores 5 in the readiness table, and `../handouts/xrd/` holds two draft tutorials plus a student report template worth harvesting. One caveat below.
 2. **Select Level 1 samples for the two pilots.** `BS-000004` (acrylic yarn, `available`, CAB-01/BIN-03) already carries both Nicolet iS5 and DSX-1000 assets and FTIR-specific prep notes. FTIR's exercise compares two solids, so it needs a second material named.
 3. **SEM next after XRD.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
-4. **Rewrite the LibCal templates.** Well specified in `libcal-event-templates.md`; the work is manual form entry because the API cannot edit templates.
 
 ### Open questions that affect writing
 
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
 * **Three Moira renames are pending** — `-dsx`, `-duetta`, `-utm`. Guides name the target values; verify in WebMoira before relying on them. See the rename table in `access-and-logistics.md`.
-* **Terminology is inconsistent.** LibCal says "laboratory assistant," the website says "student staff," these guides say "trainer."
 
 ### Decisions already made, with reasons
 
@@ -69,7 +69,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, scheduling, and guide owners. Guides link to it instead of restating these facts.
 * `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
-* `libcal-event-templates.md` is an archival record of the ten LibCal event templates as of 2026-07-31, kept for historical comparison. The templates are outdated and contain errors; do not use them as a content source.
+* `libcal-event-templates.md` preserves the outdated, error-containing 2026-07-31 template state for historical comparison and records the completed 2026-08-04 revision. Do not use the pre-revision copy as a current content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum and completion checklist.
 * `ftir.md` is the pilot Nicolet iS5 FTIR ATR curriculum and completion checklist.

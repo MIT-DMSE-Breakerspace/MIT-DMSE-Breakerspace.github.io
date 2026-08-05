@@ -1,8 +1,18 @@
 # Whole-Lab Reservation Policy And Staff Workflow
 
-Last reviewed: 2026-07-23
+Last reviewed: 2026-08-04
 
-This is the internal operating procedure for teaching exercises, orientations, organized group activities, maintenance, and other approved activities that require coordinated or exclusive use of the Breakerspace instrument lab.
+This is the internal operating procedure for teaching exercises, orientations, organized group activities, maintenance, and other approved activities that require coordinated or exclusive use of the Breakerspace instrument lab, lounge, or both.
+
+## Reservation Scope
+
+Choose the physical scope before creating the shared event or room reservation:
+
+* **Lab only:** Use the `Lab reserved for activity` event template. The physical activity location is Room 8-102A, and all eleven individual instrument calendars must be blocked for the complete setup-through-cleanup interval.
+* **Lounge only:** Use the `Lounge reserved for activity` event template. The physical activity location is Room 8-102. Do not apply a lab-wide instrument block; the instrument lab remains subject to its ordinary individual calendars.
+* **Lab and lounge:** Use the `Lab and lounge reserved for activity` event template. The physical activity locations are Rooms 8-102A and 8-102, and all eleven individual instrument calendars must be blocked for the complete interval.
+
+The event titles are intentionally safe defaults. Add a short qualifier only when it helps users understand the closure without exposing participant names, private class information, or internal notes.
 
 ## Policy
 
@@ -30,15 +40,15 @@ This is the internal operating procedure for teaching exercises, orientations, o
 2. Check every instrument calendar for existing reservations, as well as other teaching, maintenance, and staffing commitments.
 3. Resolve conflicts before approval. Do not displace an existing user without direct staff coordination and notice.
 4. Confirm the activity, staffing model, trained operators, sample compatibility, room capacity, and setup or reset requirements.
-5. Create the LibCal room reservation for the complete interval. A room reservation blocks new reservations for the seats assigned to that room.
-6. Add the teaching activity or closure to the appropriate shared calendar so staff and participants can see the lab commitment.
-7. Check the signed-out public reservation view for every instrument. The reserved interval must be unavailable to ordinary users across the lab before the organizer receives confirmation. If the room reservation did not block any instrument, add a staff-controlled instrument block and investigate the resource assignment.
+5. Create the applicable LibCal room reservation or reservations for the complete interval. A Room 8-102A reservation blocks new reservations for the instrument seats assigned to the lab. A lounge-only activity must use the Room 8-102 scope and must not use the lab room as a substitute. If LibCal does not provide a separate lounge reservation resource, record that deviation and use the shared lounge event for the public notice rather than creating an unintended instrument block.
+6. Add the activity to the shared calendar using `Lab reserved for activity`, `Lounge reserved for activity`, or `Lab and lounge reserved for activity` as appropriate.
+7. Verify the signed-out public reservation view against the selected scope. For lab-only and combined reservations, every instrument must be unavailable for the complete interval; if the room reservation did not block an instrument, add a staff-controlled instrument block and investigate the resource assignment. For lounge-only reservations, confirm that no unintended lab-wide instrument block was introduced.
 8. Send written confirmation stating the approved date and time, setup access, responsible staff contacts, participant preparation, and any conditions.
-9. If the activity changes or is canceled, update both the room reservation and the shared event, remove any supplemental instrument blocks, then verify the public grids again.
+9. If the activity changes or is canceled, update every applicable room reservation and the shared event, remove any supplemental instrument blocks, then verify the public grids again.
 
 ## LibCal Configuration To Verify
 
-Confirmed behavior: reserving the Breakerspace room blocks new reservations for the instrument seats assigned to that room.
+Confirmed behavior: reserving Room 8-102A blocks new reservations for all eleven instrument seats assigned to the lab. On 2026-08-04, a 3:00–4:00 PM lab reservation was verified in the signed-out accessible view: all eleven calendars stopped offering times at 3:00 PM and resumed at 4:00 PM.
 
 The remaining collision behavior must be tested before relying on the room hierarchy without manual conflict review:
 

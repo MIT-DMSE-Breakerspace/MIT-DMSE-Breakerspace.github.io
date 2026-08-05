@@ -1,16 +1,16 @@
 # LibCal Event Templates — Archival Record
 
-Last reviewed: 2026-07-31
+Last reviewed: 2026-08-04
 
-**Status: historical reference only. Do not use this file as a source for current training content.**
+**Status: historical pre-revision reference plus completion record. Do not use the captured 2026-07-31 copy as a source for current training content. The live revision was completed on 2026-08-04.**
 
 For the approved field-by-field revision procedure and paste-ready copy, use the [LibCal Manual Event Template Update Guide](libcal-manual-update-guide.md).
 
-This is a record of the ten LibCal event templates as they existed on 2026-07-31, captured from the LibCal admin **Edit Template** forms before any revision. It exists so that a future editor can see what the templates said, identify what changed, and understand why.
+This is a record of the ten LibCal event templates as they existed on 2026-07-31, captured from the LibCal admin **Edit Template** forms before revision. It exists so that a future editor can see what the templates said, identify what changed, and understand why. The completed live state is summarized under [2026-08-04 Revision Status](#2026-08-04-revision-status).
 
-The templates are **outdated and contain factual errors** (see [Known Problems](#known-problems)). They predate the redesigned website, the consolidated instrument pages, the Quick Guides, and the access facts recorded in [`access-and-logistics.md`](access-and-logistics.md). Where this file and any current staff guide disagree, **the current guide is correct and the template is wrong.**
+The templates captured below **were outdated and contained factual errors** (see [Known Problems](#known-problems)). They predated the redesigned website, the consolidated instrument pages, the Quick Guides, and the access facts recorded in [`access-and-logistics.md`](access-and-logistics.md). Those problems were corrected in the live templates on 2026-08-04. Where the historical copy in this file and any current staff guide disagree, **the current guide is authoritative.**
 
-The intended direction is the reverse of how these templates were built: rather than restating training content inside LibCal, each template should carry the minimum needed to register for a session and link to the website for everything else. See [Revision Direction](#revision-direction).
+The completed revision reversed the former content model: rather than restating training content inside LibCal, each live template now carries the minimum needed to register for a session and links to the website for everything else. See [Revision Direction](#revision-direction).
 
 Source PDFs are kept outside the repository. They are print-to-PDF captures of an admin UI, roughly 10 MB total, not diffable, and they include LibCal's own preview placeholder data. Ask the lab manager for the current copy.
 
@@ -46,7 +46,7 @@ Eight instrument trainings, plus two informational hours templates that are a di
 | Staffed Open Hours | — | No registration; informational |
 | Subject Lab Hours | — | No registration; informational |
 
-**No template exists for the hardness tester or the ion mill.** Resolved for the manual revision on 2026-08-04: create a standard instrument-training template for each as part of the same revision effort. See the [current template map](libcal-manual-update-guide.md#instrument-template-map).
+**Historical state:** no template existed for the hardness tester or the ion mill on 2026-07-31. Standard instrument-training templates for both were created and verified on 2026-08-04. See the [current template map](libcal-manual-update-guide.md#instrument-template-map).
 
 ## Shared Settings
 
@@ -120,9 +120,9 @@ Reasons not to treat these templates as a content source:
 
 ## Revision Direction
 
-The goal is the least content in LibCal that still lets a student register for the right session and arrive prepared, because LibCal is the only surface here that cannot be automated or version-controlled.
+The revision used the least content in LibCal that still lets a student register for the right session and arrive prepared, because LibCal is the only surface here that cannot be automated or version-controlled.
 
-Principles for the rewrite:
+Principles implemented in the live templates:
 
 * **Keep in LibCal** what LibCal alone can do: title, date and time, the 3-person limit, registration form, LibAuth, waitlist, reminder and follow-up scheduling, category, and enough description to confirm the right session was booked.
 * **Move to the website** anything that explains, instructs, or is likely to change: what the instrument does, what the session covers, sample preparation, model details, manufacturer links, and access consequences. Link to the canonical instrument page and training pathway instead. Do not link directly to a trained-user Quick Guide from a registration template.
@@ -131,6 +131,18 @@ Principles for the rewrite:
 * **Verify each instrument's claims against its own facts** before pasting shared copy. The current templates are wrong precisely because shared text was cloned without checking whether it applied.
 * **Rename the public hours template and category to `Lab Assistant on duty`.** Use `Breakerspace Lab Assistant` when the description names the role, and explain that these entries identify drop-in support rather than the lab's opening hours.
 
-Tracked as a task in [`../_staff/site-todo.md`](../_staff/site-todo.md).
+Completion is recorded in [`../_staff/site-todo.md`](../_staff/site-todo.md) and in the status section below.
 
 The current implementation procedure is the [LibCal Manual Event Template Update Guide](libcal-manual-update-guide.md).
+
+## 2026-08-04 Revision Status
+
+The eight captured instrument-training templates were revised and templates were added for the Nemesis 5100G2 hardness tester and SEMPrep 2 broad beam ion mill. All ten now use the approved minimal copy and shared registration settings. Description and More Info content was entered as semantic HTML through each rich-text editor's Source mode so canonical instrument, training-record, and contact links render as clickable links; reminder and follow-up bodies also use HTML. Each training template was reopened after saving and checked through an unpublished test event that was removed after inspection.
+
+The informational template and category name was changed to `Lab Assistant on duty`. The former generic reserved-activity template was replaced with three scope-specific templates whose names are also their safe default event titles: `Lab reserved for activity`, `Lounge reserved for activity`, and `Lab and lounge reserved for activity`. Their descriptions identify Room 8-102A, Room 8-102, or both as appropriate. All four informational templates were reopened after saving and verified through unpublished test events that were removed after inspection.
+
+LibCal shows registration disabled in the informational template editors but restores a default 15-seat registration form when an event is created from one. On 2026-08-04 this was accepted as harmless and potentially useful as an intent signal; staff may leave it enabled or disable it before publication. Registration does not control the applicable room reservation or instrument-calendar block.
+
+The initial future-event audit covered 2026-08-04 through 2027-12-31 and found no events. Event 17324794 was then created while the revision was in progress with the former generic title and bracketed location prompt. It was corrected to `Lab reserved for activity`, its rendered HTML and both website embeds were verified, and the accessible reservation view confirmed that all eleven instrument calendars were unavailable from 3:00–4:00 PM with availability ending at 3:00 PM and resuming at 4:00 PM.
+
+Revised screenshots of the FTIR template, email previews, four informational templates, accepted registration-inheritance behavior, corrected live event, and instrument-block verification are stored outside the repository in the capture location recorded by the [completion record](libcal-manual-update-guide.md#completion-record).

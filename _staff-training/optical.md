@@ -8,7 +8,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | --- | --- |
 | Instrument | Olympus DSX-1000 digital optical microscope |
 | Public instrument page and Quick Guide | [Optical microscope operating page](../instruments/optical.md#quick-guide) |
-| LibCal training | Template: **Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. The template needs rewriting before release; see [archival record](libcal-event-templates.md) |
+| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; see the [completion record](libcal-manual-update-guide.md#completion-record) |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
@@ -16,7 +16,7 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | Moira group | `dmse-brkrspc-optical` — rename from `dmse-brkrspc-dsx` pending; see [access and logistics](access-and-logistics.md#rename-status--verify-before-relying-on-this-table) |
 | Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
-| Last reviewed | 2026-07-22 |
+| Last reviewed | 2026-08-05 |
 
 ## Training Outcome
 
