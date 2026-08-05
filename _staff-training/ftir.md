@@ -32,7 +32,7 @@ The [canonical instrument page]({% link instruments/ftir.md %}) is the operating
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare two solid materials with ATR and save native spectra |
-| Training sample | **Default pair:** `BS-000004` acrylic yarn (CAB-01/BIN-03) and one identified paper specimen, **not yet selected**. Both require operational-owner approval and a reviewed reference spectrum; the paper needs a sample-library record. Documented variations in [choosing the sample](#choosing-the-sample) |
+| Training sample | **Trainer-selected.** Two solids that meet the [sample criteria](#choosing-the-sample) and give visibly different spectra. No specific material is prescribed, so the trainer can match the session to a subject exercise or research project |
 | Moira group | `dmse-brkrspc-ftir` (see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
@@ -67,20 +67,17 @@ The session does not currently include a separate individual skills demonstratio
 * [ ] Confirm that three participants can see the crystal area and workstation without crowding sample handling.
 * [ ] Confirm the exit route, sink-area emergency equipment, and sharps container are unobstructed.
 
-### Training Sample
+### Training Samples
 
-Use the approved default pair unless a documented variation applies. See [choosing the sample](#choosing-the-sample).
+Choose two solids that satisfy the [sample criteria](#choosing-the-sample). No specific material is prescribed.
 
-* [ ] Retrieve the default pair: `BS-000004` acrylic yarn from CAB-01/BIN-03 and the approved paper specimen from its recorded location.
+* [ ] Select both materials and retrieve them.
 * [ ] Inspect both: clean, dry, stable, and able to make real contact with the diamond.
-* [ ] Have the reviewed reference spectrum for each on hand, so you can tell poor contact from a genuine spectral difference during the session.
+* [ ] **Confirm you have run both yourself, or otherwise know what a good and a bad result looks like on them.** This is the judgment the printed guide cannot supply. If you have not run a material, run it before the session.
+* [ ] Confirm the two will give visibly different spectra, so the comparison teaches something to a beginner.
 * [ ] Confirm stock is sufficient for this session and note replenishment needs afterward.
 
-If substituting a variation — a participant's approved project sample or a course-specific material:
-
-* [ ] Confirm staff approved the substitute in advance.
-* [ ] Confirm you have run it yourself, or know its expected spectrum well enough to recognize a bad result.
-* [ ] Note which variation was used, so a later session can be compared against the default.
+If a participant asks to use their own project sample, staff must have approved it in advance. When an unapproved sample appears mid-session, run the session on your selected materials and route the project sample to staff.
 
 ### Participants
 
@@ -134,11 +131,11 @@ An audit and teaching plan, not an alternate SOP. Quick Guide steps are numbered
 
 Every startup and shutdown bullet on the instrument page appears above. If the page's SOP changes, this table is what must be re-checked.
 
-## Level 1 Exercise: Compare Two Known Solids
+## Level 1 Exercise: Compare Two Solids
 
 ### Question Or Goal
 
-How do spectra from two known materials differ, and what practical signs show whether each ATR measurement was collected cleanly and with adequate sample contact?
+How do spectra from two different materials compare, and what practical signs show whether each ATR measurement was collected cleanly and with adequate sample contact?
 
 ### Which Operations This Training Covers
 
@@ -158,30 +155,33 @@ Excluded does not mean hidden. Say where each lives — usually the detailed ope
 
 ### Choosing The Sample
 
-**The default pair is the baseline for every general session.** Use it unless there is a reason not to, so that participants and trainers can be assessed against a consistent exercise.
+**The workflow is fixed; the material is the trainer's choice.** This guide prescribes no specific material, so a session can be matched to a subject exercise, a research project, or a general walk-in group. What does not change is the set of properties a material must have and the trainer's obligation to recognize a bad result on it.
 
-| | Default pair |
+#### Requirements For Any Material
+
+Non-hazardous, clean, dry, and stable. No risk of crumbling into the instrument or staining the plate. A face that can make real contact with the diamond. Anything sharp, sticky, abrasive, very hard, reactive, odorous, unknown, staining, or difficult to clean is a stop-and-ask-staff conversation rather than a training sample.
+
+#### What The Pair Must Achieve
+
+| Requirement | Why it matters |
 | --- | --- |
-| Sample A | `BS-000004` acrylic yarn, CAB-01/BIN-03 |
-| Sample B | **One identified paper specimen — not yet selected.** Pick a single material, give it a sample-library ID and location, and use only that. "Index card or filter paper" is two different materials and cannot serve as a reproducible baseline. |
-| Why this pair | A synthetic polymer against a cellulose material: different enough that the two spectra are obviously distinguishable to a beginner |
-| Expected difference | The paper should show a broad O-H-associated feature the acrylic does not, and the two should have clearly different overall fingerprints. **Both descriptions must be replaced with actual band positions from the reviewed reference spectra before release.** Do not claim the acrylic has C-H features the paper lacks — cellulose contains aliphatic C-H bonds too, so both materials show C-H stretching. |
-| Built-in teaching value | The yarn's own sample-library note says fibers are challenging to cover the ATR window completely, so it demonstrates contact quality honestly rather than hiding it. Press the fibers into a flat mass under the self-leveling tip. |
-| Quality cues | Fibers give weaker signal than a flat solid. If the spectrum is very weak, the fibers are bridging rather than contacting — re-seat and retighten to the clutch. |
+| Two solids with **visibly different spectra** | The comparison is the exercise. If a beginner cannot see the difference, there is nothing to discuss. Materials from different classes — for example a synthetic polymer against a natural fiber — separate more obviously than two similar plastics |
+| At least one material that **demonstrates contact quality honestly** | A fibrous, powdered, lumpy, or curved solid shows what poor contact looks like, where two flat easy solids hide it. Choose this deliberately rather than avoiding it |
+| A result **you can already recognize** | You must be able to tell poor contact from a genuine spectral difference in real time. That means having run these materials yourself |
 
-**Still required before release:** select and identify the single paper specimen, obtain operational-owner approval of both materials, record a reviewed reference spectrum for each with actual band positions, create the sample-library record and cabinet location for the paper, and set a replenishment plan.
+**Do not describe expected band positions from memory or inference.** If you want to name specific bands during the session, work from a spectrum you actually collected on this instrument. Naming a band the material does not have teaches an error that is hard to unlearn — and a plausible-sounding contrast can be wrong. Cellulose and acrylic, for instance, both contain aliphatic C-H bonds, so "one has C-H features and the other does not" would be false for that pair.
 
-#### Documented variations
+#### Loading Approach Follows The Material
 
-The workflow is fixed; the material can change when there is a reason.
+Match the approach to what you chose, using [`#quick-method`]({% link instruments/ftir.md %}#quick-method): a flat solid needs a clean face on the crystal, while a fibrous or powdered solid needs pressing into a flat mass under the self-leveling tip. Fibers give weaker signal than a flat solid; if the spectrum is very weak, the fibers are bridging rather than contacting, so re-seat and retighten to the clutch.
 
-* **The participant's own approved project sample.** Training on the material they will actually measure is worth more than a stand-in. Requires prior staff approval, and the trainer must still run the default pair's comparison if the project sample cannot support one.
-* **Course-specific samples**, when a subject sends students for a standard workflow on course materials.
-* **A deliberately awkward second solid** — lumpy or curved — when the trainer wants to teach contact quality harder.
+#### Variations Worth Choosing On Purpose
 
-In every variation the trainer must be able to recognize a bad result on the chosen materials. If you have not run them, run them first. That judgment is what the trainer supplies and the printed guide cannot.
+* **A participant's own approved project sample.** Training on the material they will actually measure is worth more than a stand-in. Requires prior staff approval, and the comparison still needs a second material.
+* **Course-specific materials**, when a subject sends students for a standard workflow on the materials they will use.
+* **A deliberately awkward second solid** — lumpy, curved, or fibrous — when you want to teach contact quality harder.
 
-Requirements for any substitute: non-hazardous, clean, dry, stable, no risk of crumbling into the instrument or staining the plate, and a face that can make real contact with the diamond.
+If a later round of development adopts specific approved samples, record them in Guide Control and here; keep the workflow text and the Quick Guide sample-agnostic.
 
 The legacy 3.000 coffee-roast exercise is a useful course-specific variation but should describe its output as a relative O-H-associated peak ratio — not percent water or direct moisture content — unless a calibrated quantitative method is developed and validated.
 
@@ -247,8 +247,8 @@ Complete every item before considering the session closed.
 
 ## Trainer Notes And Variations
 
-* **The sample is the trainer's lever.** Same workflow, different material: a general session, a participant's own approved project sample, or a course's standard samples. See [choosing the sample](#choosing-the-sample).
-* For an unapproved project sample, run the known pair first and route the project sample to staff.
+* **The sample is the trainer's lever.** Same workflow, different material: a general session, a participant's own approved project sample, or a course's standard materials. See [choosing the sample](#choosing-the-sample).
+* For an unapproved project sample, run the session on your selected materials and route the project sample to staff.
 * A non-volatile liquid is a useful extension once the solid workflow is consistent, but it must not displace the full background/save/clean sequence.
 * The 3.000 coffee exercise can be offered as a guided comparison after its quantitative language and expected result are revised.
 * Treat a database match as evidence rather than proof, particularly for mixtures or contaminated samples.
@@ -257,7 +257,7 @@ Complete every item before considering the session closed.
 
 ## Guide Maintenance
 
-When this guide changes, review the [Quick Guide]({% link quick-guides/ftir.md %}), the [operating page]({% link instruments/ftir.md %}), the sample kit, reference spectra, sample-library records, LibCal description, and Moira information together.
+When this guide changes, review the [Quick Guide]({% link quick-guides/ftir.md %}), the [operating page]({% link instruments/ftir.md %}), the LibCal description, and the Moira information together. This guide names no specific material, so it does not need re-checking when the sample library changes.
 
 **If the instrument page's SOP changes, re-check the [SOP coverage map](#sop-coverage-map) row by row.** That table is the contract between this guide and the page; a new or removed SOP bullet must appear or disappear there.
 

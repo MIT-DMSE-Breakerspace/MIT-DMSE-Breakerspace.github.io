@@ -18,7 +18,7 @@ The content contract and relationship to staff training were settled on 2026-08-
 
 * [ ] Audit the optical and XRD Quick Guides against the canonical SOP. Account for every startup and shutdown item, one routine operation, saving/export, cleanup, stop conditions, and the before-leaving state. FTIR was audited and rebuilt 2026-08-03; use `_includes/quick-guides/ftir.html` as the model.
 * [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling.
-* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. **Start with FTIR:** its Side 2 reached roughly 582 words during correctness work and is the first real test of the two-page budget.
+* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. **Start with FTIR:** its Side 2 reached roughly 595 words during correctness work and is the first real test of the two-page budget.
 * [ ] Move the Quick Guide link out of the at-instrument decision path in Quick Actions and label it for at-instrument use, printing, accessibility, and fallback. Keep the canonical page and SOP as the apparent web starting point.
 * [ ] Confirm workstation desktop shortcuts and general posted QR codes open the canonical instrument page rather than bypassing it for the Quick Guide.
 * [ ] Print, laminate, label, and install the reviewed guide at each instrument. Record who checks the physical copy after workflow revisions and who replaces damaged or outdated copies.
@@ -36,7 +36,7 @@ The content contract and relationship to staff training were settled on 2026-08-
 * [ ] Add a teaching example contrasting a pure or simple sample with a complex mixture such as coffee, emphasizing when FTIR supports identification and when it mainly supports comparison.
 * [ ] Add a short database-search walkthrough using Wiley KnowItAll or another approved reference workflow.
 * [ ] Add a concise accessory-change note for iD1 transmission and EasiDiff diffuse reflectance, or mark those as staff-guided until a dedicated workflow is written.
-* [ ] Add a small set of approved training samples for repeatable FTIR exercises once the sample library is ready.
+* [ ] Add a small set of approved training samples for repeatable FTIR exercises once the sample library is ready. **Not a guide blocker:** the FTIR guide pair is sample-agnostic by decision of 2026-08-05, so it states selection criteria rather than naming materials. Adopting approved samples later is an enhancement, not a prerequisite for rollout. See [`../_staff-training/README.md`](../_staff-training/README.md#sample-agnostic-guides).
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 

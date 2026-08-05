@@ -37,7 +37,9 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Atmospheric and contamination band positions.** Described qualitatively on the page with no wavenumbers, so the Quick Guide cannot name them. A draft did, from nothing — see the lessons below.
 * **The background-redo cycle as canonical text.** The Quick Guide spells it out; the page should own it.
 
-Also required: one identified paper specimen with a sample ID and location, measured band positions from reviewed reference spectra to replace the placeholder contrast in the training guide, operational-owner approval, a Letter duplex print proof that may force edits, a laminated copy installed at the instrument, and a practice training.
+Also required: operational-owner approval, a Letter duplex print proof that may force edits, a laminated copy installed at the instrument, and a practice training.
+
+Per the [sample-agnostic decision](#sample-agnostic-guides), FTIR is no longer blocked on identifying a paper specimen or on measured band positions from reviewed reference spectra. The guide states the contrast the exercise needs and requires the trainer to know a bad result on whatever they chose. Approved samples remain worth adding later and are not a release gate now.
 
 All three page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 
@@ -102,6 +104,27 @@ The staff guide therefore does contain a **coverage map and Level 1 participant 
 
 Two earlier claims in this README were wrong and are superseded. It first said a guide could not be written for an instrument without a Quick Guide, which was inferred from the two pilot guides happening to be the two instruments with Quick Guides. It then said the training guide must come first. Both imposed an authoring sequence that the sibling model removes.
 
+### Sample-Agnostic Guides
+
+**Decided 2026-08-05. Neither the Quick Guide nor the staff guide names a specific material, sample-library identifier, or cabinet location.** Both describe the workflow and the properties a suitable sample must have; the trainer chooses the material for each session.
+
+The reasoning:
+
+* **Trainers need to tailor the material to the audience.** A subject exercise, a specific research project, and a walk-in general session want different samples through the same workflow. A named default in the guide works against that.
+* **Sample-library readiness must not gate guide development or rollout.** The approved-sample work — identifiers, cabinet locations, reference spectra, replenishment plans — is real and worth doing, but it moves on its own schedule. Blocking a curriculum on it stalls training materials that are otherwise ready to hand off.
+* **The workflow is the durable content.** Which material to use is a per-session decision; how to run the instrument safely and correctly is not. Only the second belongs in a maintained document.
+
+What a guide states instead of a material:
+
+* **Selection criteria** — the properties a sample must have to run safely and produce a usable result on this instrument, and what disqualifies one.
+* **The comparison or result the exercise needs** — for example, two materials whose results are distinguishable to a beginner — as a requirement the trainer satisfies, not a named pair.
+* **The trainer's own obligation:** the trainer must know what a *bad* result looks like on the material they chose. If they have not run it, they run it before the session. This is the judgment a printed guide cannot supply and it does not depend on which material is used.
+* **Quality cues in terms of the workflow** — weak signal, poor contact, contamination — rather than in terms of one material's expected spectrum or image.
+
+This is a scoping decision for the current round, not a rejection of approved samples. If a later round specifies sample-library items, add them **in Guide Control and the exercise section only**, keep the workflow text sample-agnostic, and do not reintroduce material names into a Quick Guide.
+
+Sample-library work that a guide no longer waits on is tracked in `../_staff/site-todo.md`, Tier 2.
+
 ### Late-August Guide-Pair Inventory
 
 Use these visible states for handoff planning: **missing**, **drafting**, **needs operational check**, **needs practice run**, and **ready for late-August handoff**. This inventory records repository coverage, not approval to deliver a training.
@@ -110,9 +133,9 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | --- | --- | --- | --- | --- |
 | First | **SEM/EDS** | Missing | Missing | Decide the guide split while preserving the two Phenoms' different sample-height rules and the XL-only EDS workflow. |
 | First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
-| First | **FTIR** | Needs operational check and print proof | Needs operational check, then practice run | Supply the empirical background and band-position evidence, approve the sample pair, and test the printed guide. |
+| First | **FTIR** | Needs operational check and print proof | Needs operational check, then practice run | Supply the empirical background evidence and test the printed guide. |
 | First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit | Needs retrofit | Add the coverage map, operations table, and approved Level 1 sample. |
+| Second | **Optical microscopy** | Needs retrofit | Needs retrofit | Add the coverage map and operations table, and state the Level 1 sample-selection criteria. |
 | Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, starting settings, and approved Level 1 sample before planned fall subject use. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
 | Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
@@ -129,7 +152,7 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
-The FTIR Letter-duplex print proof remains required: Side 2 is roughly 582 words and the two-page budget is not yet verified. Its result should inform later layouts, but an unavailable physical print test should not block accurate drafting or operational checks on another first-wave guide.
+The FTIR Letter-duplex print proof remains required: Side 2 is roughly 595 words and the two-page budget is not yet verified. Its result should inform later layouts, but an unavailable physical print test should not block accurate drafting or operational checks on another first-wave guide.
 
 ### What The FTIR Retrofit Taught
 
@@ -141,7 +164,7 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 * **Recovery procedures must be complete cycles.** "Recollect the background" is not actionable with the sample still loaded. Any recovery step should say what to unload, what to clean, and where to rejoin the numbered sequence.
 * **Do not let a fix become a new absolute.** Correcting an over-prescribed background redo produced a false binary — weak signal means contact, anything else means the background — which then needed a third branch restored. The canonical failure table had three rows all along.
 * **Every diagnostic branch needs a terminal condition.** A guide that only offers fixes invites a user to keep trying fixes. Each branch should end in stopping and asking staff.
-* **Correctness costs length.** FTIR Side 2 went 378 → 582 words across the rounds. Budget for that: a first draft that already fills two pages has no room to become correct.
+* **Correctness costs length.** FTIR Side 2 went 378 → 595 words across the rounds. Budget for that: a first draft that already fills two pages has no room to become correct.
 
 ### Open questions that affect writing
 
@@ -158,6 +181,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * The shower and eyewash get fifteen seconds, not a featured slot. They exist because MIT adds them to any renovated lab, not because this lab's materials require them; the material restriction is the actual safety control.
 * Quick Guides serve recently trained and trained users at the instrument; they do not replace training or authorize untrained use.
 * Quick Guides and staff guides are sibling derivatives of the canonical instrument page and may be written in parallel. Neither gates the other.
+* **Both artifacts are sample-agnostic. Neither names a specific material, sample-library identifier, or cabinet location.** Decided 2026-08-05; see [sample-agnostic guides](#sample-agnostic-guides) for the reasoning and for what a guide states instead.
 * Every Quick Guide and staff-guide coverage map represents the complete canonical startup and shutdown sequence.
 * Quick Guides cover one default routine workflow; Level 1 exercises use that mechanical spine while adding the sample, question, expected result, and teaching prompts.
 * Immediate data-quality checks belong in Quick Guides; extended interpretation and analysis do not.
@@ -183,7 +207,7 @@ A complete guide should define:
 
 * The learning goals for a standard one-hour session.
 * The Level 1 exercise used during training.
-* The sample-library item, sample kit, or approved training sample used for that exercise.
+* The criteria a training sample must satisfy for that exercise, and what disqualifies one. Do not name a specific material or cabinet location; see [sample-agnostic guides](#sample-agnostic-guides).
 * Instrument setup, supplies, and trainer preparation.
 * A suggested agenda for a maximum of three participants.
 * Safe ways for participants to divide the workflow.
@@ -213,4 +237,4 @@ Changes should be written once in the most authoritative location and linked or 
 
 ## Planned Guide Rollout
 
-Develop the Quick Guide and staff guide together once the corresponding public instrument workflow and Level 1 exercise are stable enough to train consistently. Before routine delivery, pair them with a real sample-library item or prepared kit, an expected result, a cabinet location, a replenishment plan, and a reviewed laminated Quick Guide at the instrument. Track cross-instrument rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md), not by adding placeholder guide files for every instrument at once.
+Develop the Quick Guide and staff guide together once the corresponding public instrument workflow and Level 1 exercise are stable enough to train consistently. Before routine delivery, each pair needs stated sample-selection criteria, a recognizable expected result, and a reviewed laminated Quick Guide at the instrument. **A specific approved sample is not a prerequisite** — see [sample-agnostic guides](#sample-agnostic-guides); the trainer supplies the material and must know what a bad result looks like on it. Track cross-instrument rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md), not by adding placeholder guide files for every instrument at once.

@@ -75,6 +75,14 @@ The first wave is **SEM/EDS, XRD, FTIR, and Instron** as co-equal priorities. Th
 
 For each instrument, prioritize the accurate routine sequence, safety boundaries, stop conditions, cleanup, data handling, practice, and trainer handoff. Defer cosmetic polish and nonessential media.
 
+## Choosing A Training Sample
+
+**The guides prescribe workflows, not materials.** Each instrument guide states the properties a sample must have and what the exercise's result needs to show; you choose the material. That is deliberate, so a session can be matched to a subject exercise, a specific research project, or a general walk-in group.
+
+One obligation comes with that flexibility: **know what a bad result looks like on the material you picked.** If you have not run it yourself, run it before the session. Recognizing a poor measurement in real time is the part of training a printed guide cannot do for you.
+
+A participant's own project sample needs staff approval in advance. If someone arrives with an unapproved sample, run the session on your selected material and route theirs to staff afterward.
+
 ## Administrative Shortcuts
 
 * [Open WebMoira](https://groups.mit.edu/webmoira/) and use the exact group name from [Training Access And Closeout]({% link _staff-training/access-and-logistics.md %}).

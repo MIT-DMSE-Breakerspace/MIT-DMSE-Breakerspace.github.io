@@ -8,12 +8,13 @@ Use this template to build a trainer-facing guide for a standard Breakerspace in
 
 A staff training guide is an **outline and checklist for the trainer**, not a manual. It assumes a person is present to instruct. Its job is to make different trainers deliver the same session: the same opening, the same core operations in the same order, the same closeout.
 
-Four things follow from that:
+Five things follow from that:
 
 * **The canonical instrument page is the operating authority.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
 * **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
 * **This guide and the Quick Guide are siblings**, both derived from the instrument page. The Quick Guide supplies the physical routine-workflow aid participants hold during the session; this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
 * **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
+* **Guides are sample-agnostic.** State the criteria a training sample must meet, never a specific material, sample-library identifier, or cabinet location. The trainer chooses the material per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
 
 ## Guide Control
 
@@ -26,7 +27,7 @@ Four things follow from that:
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | [Exercise name and public-page anchor] |
-| Training sample | [Sample-library item, cabinet location, or prepared kit] |
+| Training sample | **Trainer-selected.** [The properties a suitable sample must have. Do not name a material or cabinet location] |
 | Moira group | `dmse-brkrspc-[page slug]` |
 | Guide owner | Lab manager unless reassigned; see [guide owners](access-and-logistics.md#guide-owners) |
 | Status | [Draft, pilot, or ready for routine delivery] |
@@ -57,9 +58,11 @@ This session does not currently require a separate skills demonstration. Partici
 
 ### Training Sample
 
-* [ ] Retrieve the standard sample or sample kit from `[cabinet/bin/location]`.
-* [ ] Confirm that the sample is usable and that consumable materials are sufficiently stocked.
-* [ ] Review the expected result so the trainer can recognize a setup or data-quality problem during the session.
+Guides are **sample-agnostic**: state the criteria, not a material. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+
+* [ ] Select and retrieve a sample meeting the stated criteria.
+* [ ] Confirm that it is usable and that consumable materials are sufficiently stocked.
+* [ ] **Confirm you have run this sample yourself**, so you can recognize a setup or data-quality problem during the session. If you have not, run it first.
 * [ ] If a participant was invited to bring a project sample, confirm that staff approved it before the session.
 
 ### Participants
@@ -106,9 +109,13 @@ A canonical SOP item with no matching page section is a gap in the instrument pa
 
 [State the concrete question participants will answer or the result they will produce.]
 
-### Sample And Preparation
+### Sample Selection Criteria
 
-[Identify the sample-library item, cabinet location, preparation completed before the session, and any consumables.]
+**Guides are sample-agnostic.** State the properties a sample must have to run safely and produce a usable result on this instrument, what disqualifies one, and what the exercise's result must demonstrate. Do not name a material, sample-library identifier, or cabinet location — the trainer chooses the sample so the session can be matched to a subject exercise or research project. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+
+Always include the trainer's own obligation: **the trainer must know what a bad result looks like on the material they chose.** If they have not run it, they run it before the session. That judgment is what a printed guide cannot supply, and it does not depend on which material is used.
+
+Do not state expected results — band positions, feature sizes, curve shapes — for a material this guide does not name. Where a trainer wants specifics, they come from a measurement the trainer actually made on this instrument.
 
 ### Which Operations This Training Covers
 
@@ -176,7 +183,7 @@ Complete these tasks before considering the session closed.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested membership in the DMSE Breakerspace Team, or help them complete the self-service steps.
 * [ ] Point participants to reservations, the public operating reference, `#breakerspace-help`, and the staff email.
-* [ ] Return the training sample and kit to `[cabinet/bin/location]` and note anything that needs replenishment.
+* [ ] Return the training sample and supplies to their locations and note anything that needs replenishment.
 * [ ] Record any instrument, guide, exercise, or sample-library issue discovered during the session.
 
 ## Trainer Notes And Common Variations
