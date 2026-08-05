@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: trainer-shell
 ---
 
 <article class="trainer-guide" data-trainer-guide data-guide-revision="{{ page.guide_revision | default: site.time | date: '%Y-%m-%d' }}">
@@ -38,7 +38,9 @@ layout: default
     {{ content }}
   </div>
 
+  {% unless page.trainer_index %}
   <p class="trainer-portal-footer"><a href="{{ '/trainer/' | relative_url }}">Return to the Trainer Portal</a> · Report a guide problem to <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a>.</p>
+  {% endunless %}
 </article>
 
 {% if page.interactive_checklist %}

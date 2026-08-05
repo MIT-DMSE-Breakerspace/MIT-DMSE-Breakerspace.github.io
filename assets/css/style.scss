@@ -595,6 +595,40 @@ main table a:focus-visible {
   color: #3f454a;
 }
 
+body.trainer-portal-page {
+  margin: 0;
+  padding: 0;
+  background: #eef3f5;
+}
+
+.trainer-shell {
+  width: min(100%, 72rem);
+  margin: 0 auto;
+  padding: clamp(0.75rem, 2.5vw, 2rem);
+  box-sizing: border-box;
+}
+
+.trainer-shell main {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trainer-guide {
+  padding: clamp(1rem, 3vw, 2.25rem);
+  border: 1px solid #d4dde1;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(23 36 42 / 10%);
+}
+
+.trainer-guide-content table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
 .trainer-portal-bar {
   display: flex;
   gap: 0.65rem 1rem;
@@ -1804,6 +1838,18 @@ main table a:focus-visible {
 }
 
 @media print {
+  body.trainer-portal-page,
+  .trainer-shell,
+  .trainer-guide {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+    box-shadow: none;
+  }
+
   body.trainer-portal-page .trainer-portal-bar,
   body.trainer-portal-page .trainer-quick-links,
   body.trainer-portal-page .trainer-session-tools,

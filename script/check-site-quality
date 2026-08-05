@@ -104,6 +104,10 @@ TRAINER_PAGES.each do |slug|
 
   h1_count = document.css("main h1").length
   errors << "#{relative(path)} must contain exactly one H1; found #{h1_count}" unless h1_count == 1
+  errors << "#{relative(path)} must not include the public site navigation" if document.at_css("nav.site-nav")
+  if document.at_css("body > .wrapper > header, body > .wrapper > footer")
+    errors << "#{relative(path)} must use the standalone trainer shell"
+  end
 end
 
 INTERACTIVE_TRAINER_PAGES.each do |slug|
