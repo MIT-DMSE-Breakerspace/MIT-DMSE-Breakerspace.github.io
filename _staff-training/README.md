@@ -152,7 +152,13 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
-The FTIR Letter-duplex print proof remains required: Side 2 is roughly 595 words and the two-page budget is not yet verified. Its result should inform later layouts, but an unavailable physical print test should not block accurate drafting or operational checks on another first-wave guide.
+The FTIR guide was relaid out on 2026-08-05 as a **single continuous two-column flow** rather than two fixed-height sheets, and now measures 2 Letter pages with no clipped content (1,044 words total; verified by headless-Chrome PDF render at 300 dpi). A physical duplex print proof is still worth doing for legibility and long-edge flip, but the page-count and clipping questions are resolved.
+
+Two layout lessons from that rebuild, both of which had shipped:
+
+* **A fixed-height print sheet with `overflow: hidden` clips silently.** The old Side 2 was authored past one page, so the printed copy lost step 9's steps, the closing checklist, and the help box — with no warning anywhere in the HTML or the build. If a layout constrains height, something must verify that content fits.
+* **A multicol container inside a flex parent balances across the whole document, not per page.** That put steps 1–3 in the left column and step 6 at the top of the right. Block layout lets multicol fragment per page, which is what produces correct reading order. Screenshot-scrolling a print stylesheet does not reveal this; only a real paginated render does.
+
 
 ### What The FTIR Retrofit Taught
 
@@ -164,7 +170,7 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 * **Recovery procedures must be complete cycles.** "Recollect the background" is not actionable with the sample still loaded. Any recovery step should say what to unload, what to clean, and where to rejoin the numbered sequence.
 * **Do not let a fix become a new absolute.** Correcting an over-prescribed background redo produced a false binary — weak signal means contact, anything else means the background — which then needed a third branch restored. The canonical failure table had three rows all along.
 * **Every diagnostic branch needs a terminal condition.** A guide that only offers fixes invites a user to keep trying fixes. Each branch should end in stopping and asking staff.
-* **Correctness costs length.** FTIR Side 2 went 378 → 595 words across the rounds. Budget for that: a first draft that already fills two pages has no room to become correct.
+* **Correctness costs length.** FTIR content went 378 → 595 words on the old Side 2 across the rounds, and the guide totals 1,044 words. Budget for that: a first draft that already fills its pages has no room to become correct. Prefer a layout that flows onto another page over one that clips.
 
 ### Open questions that affect writing
 

@@ -102,32 +102,32 @@ The glove-transition demonstration in the safety orientation sets up the ATR wor
 
 ## SOP Coverage Map
 
-An audit and teaching plan, not an alternate SOP. Quick Guide steps are numbered 1–9 across both sides.
+An audit and teaching plan, not an alternate SOP. The Quick Guide is a single continuous sequence of numbered sections 1–9; sub-items are unnumbered bullets, so this table cites the section plus a short label for the item.
 
 | Canonical SOP item | Quick Guide step | How training covers it | Participant check |
 | --- | --- | --- | --- |
-| Startup: power on if needed, leave on otherwise ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3.1 | Trainer states the leave-powered-on rule and why | Asks why it is left on |
-| Startup: log on with MIT Kerberos ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3.2 | Participant performs | Logs on unaided |
-| Startup: start OMNIC ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3.3 | Participant performs | — |
-| Startup: verify connection in system status ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3.4 | Trainer shows where, participant confirms | Can say what a failed connection looks like |
-| Startup: remove crystal cover ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3.5 | Participant performs, gloved — gloves go on *before* releasing the tower | Gloves on before touching the tower |
-| Startup: clean the ATR crystal ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 3.6 | Trainer demonstrates center-outward wipe, each participant repeats | Confirms nothing remains before proceeding |
-| Startup: collect a background ([`#background`]({% link instruments/ftir.md %}#background)) | 3.7–3.9 | Participant performs with bare crystal, no clamp. Show both preview branches and name **start collection** | Explains why the crystal must be bare; knows the scan is not finished until start collection |
-| Operation: glove discipline ([`#operation`]({% link instruments/ftir.md %}#operation)) | Glove rule, 3.5, 3.7, 4.1, 4.5 | Reinforced at every transition all session | Completes at least one transition unprompted |
-| Operation: clean between samples ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 4.2, 8 | Participant performs between the two samples | Cleans without being told |
+| Startup: power on if needed, leave on otherwise ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3 · leave powered on | Trainer states the leave-powered-on rule and why | Asks why it is left on |
+| Startup: log on with MIT Kerberos ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3 · log on | Participant performs | Logs on unaided |
+| Startup: start OMNIC ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3 · start OMNIC | Participant performs | — |
+| Startup: verify connection in system status ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3 · verify connection | Trainer shows where, participant confirms | Can say what a failed connection looks like |
+| Startup: remove crystal cover ([`#startup`]({% link instruments/ftir.md %}#startup)) | 3 · remove cover | Participant performs, gloved — gloves go on *before* releasing the tower | Gloves on before touching the tower |
+| Startup: clean the ATR crystal ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 3 · clean the crystal | Trainer demonstrates center-outward wipe, each participant repeats | Confirms nothing remains before proceeding |
+| Startup: collect a background ([`#background`]({% link instruments/ftir.md %}#background)) | 3 · final three items | Participant performs with bare crystal, no clamp. Show both preview branches and name **start collection** | Explains why the crystal must be bare; knows the scan is not finished until start collection |
+| Operation: glove discipline ([`#operation`]({% link instruments/ftir.md %}#operation)) | Glove rule box; 3, 4 | Reinforced at every transition all session | Completes at least one transition unprompted |
+| Operation: clean between samples ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 4 · clean again; 8 | Participant performs between the two samples | Cleans without being told |
 | Operation: choose sampling method and tip ([`#quick-method`]({% link instruments/ftir.md %}#quick-method)) | 2 | Trainer explains the choice for each of the two samples | Picks the approach for the second sample |
-| Operation: load for good contact ([`#sample`]({% link instruments/ftir.md %}#sample)) | 4.3, 4.4 | Participant performs; trainer watches the clutch | Recognizes the clutch slipping, and does not force past it |
-| Operation: collect the spectrum ([`#sample`]({% link instruments/ftir.md %}#sample)) | 5.1–5.4 | Participant performs, both samples. With preview on, the live spectrum is the contact check and **start collection** commits the scan | Does not mistake the preview for a saved spectrum |
+| Operation: load for good contact ([`#sample`]({% link instruments/ftir.md %}#sample)) | 4 · place and tighten | Participant performs; trainer watches the clutch | Recognizes the clutch slipping, and does not force past it |
+| Operation: collect the spectrum ([`#sample`]({% link instruments/ftir.md %}#sample)) | 5 | Participant performs, both samples. With preview on, the live spectrum is the contact check and **start collection** commits the scan | Does not mistake the preview for a saved spectrum |
 | Operation: save each spectrum individually ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 7 | Trainer flags that group-saving does not exist | Saves both files and can find them |
 | Operation: repeat the cycle ([`#operation`]({% link instruments/ftir.md %}#operation)) | 8 | Second sample is the repetition | Runs the second sample with less prompting |
-| Shutdown: save all data ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.1 | Participant confirms | Knows where files are and how to retrieve them |
-| Shutdown: close OMNIC ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.2 | Participant performs | — |
-| Shutdown: log off the workstation ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.3 | Participant performs | — |
-| Shutdown: clean the crystal ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 9.4 | Participant performs, gloved | Crystal and plate genuinely clean |
-| Shutdown: cover and clamp the plate ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.5 | Participant performs | Cover seated and clamped |
-| Shutdown: leave instrument powered on ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.6 | Trainer restates | Does not switch it off |
-| Shutdown: clear the work area ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9.7 | Participant performs | Wipes and waste removed |
-| Stop and ask: uncertain sample, damaged crystal, unfamiliar error ([`#failures`]({% link instruments/ftir.md %}#failures)) | Side 1 stop box | Trainer poses one scenario aloud | Says "ask staff" rather than improvising |
+| Shutdown: save all data ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · confirm saved | Participant confirms | Knows where files are and how to retrieve them |
+| Shutdown: close OMNIC ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · close OMNIC | Participant performs | — |
+| Shutdown: log off the workstation ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · log off | Participant performs | — |
+| Shutdown: clean the crystal ([`#crystal`]({% link instruments/ftir.md %}#crystal)) | 9 · clean crystal | Participant performs, gloved | Crystal and plate genuinely clean |
+| Shutdown: cover and clamp the plate ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · cover and clamp | Participant performs | Cover seated and clamped |
+| Shutdown: leave instrument powered on ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · leave powered on | Trainer restates | Does not switch it off |
+| Shutdown: clear the work area ([`#shutdown`]({% link instruments/ftir.md %}#shutdown)) | 9 · clear the area | Participant performs | Wipes and waste removed |
+| Stop and ask: uncertain sample, damaged crystal, unfamiliar error ([`#failures`]({% link instruments/ftir.md %}#failures)) | Stop-and-ask box | Trainer poses one scenario aloud | Says "ask staff" rather than improvising |
 
 Every startup and shutdown bullet on the instrument page appears above. If the page's SOP changes, this table is what must be re-checked.
 

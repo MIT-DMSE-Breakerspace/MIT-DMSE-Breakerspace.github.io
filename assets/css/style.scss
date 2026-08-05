@@ -1574,6 +1574,14 @@ body.trainer-portal-page {
   line-height: 1.25;
 }
 
+/* Section headings inside the flowing layout are step labels, not sheet titles,
+   so they must not inherit the h1/h2 title size above. */
+.quick-guide-columns h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
 .quick-guide-sheet p,
 .quick-guide-sheet li,
 .quick-guide-sheet td,
@@ -1692,6 +1700,83 @@ body.trainer-portal-page {
 .quick-guide-bottom-grid {
   grid-template-columns: 1fr 1fr;
   margin-top: 0.85rem;
+}
+
+/* Continuous two-column flow. Content fills column one top to bottom, then
+   column two, and paginates naturally instead of being forced onto fixed-height
+   sheets. Used by the FTIR guide; the optical and XRD guides still use the
+   older .quick-guide-grid / .quick-guide-flow two-sheet layout above. */
+.quick-guide-columns {
+  columns: 2;
+  column-gap: 1.1rem;
+  column-rule: 1px solid #cbd3d7;
+}
+
+.quick-guide-columns > * {
+  break-inside: avoid;
+}
+
+.quick-guide-columns > h2 {
+  margin-top: 0.85rem;
+  margin-bottom: 0.3rem;
+  break-after: avoid;
+  font-size: 1rem;
+}
+
+.quick-guide-columns > h2:first-child,
+.quick-guide-columns > :first-child {
+  margin-top: 0;
+}
+
+.quick-guide-columns > ul,
+.quick-guide-columns > ol,
+.quick-guide-columns > p,
+.quick-guide-columns > table {
+  margin-bottom: 0.5rem;
+}
+
+.quick-guide-columns > aside {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.quick-guide-columns > aside:first-child {
+  margin-top: 0;
+}
+
+.quick-guide-columns h2 + ul,
+.quick-guide-columns h2 + ol {
+  margin-top: 0;
+}
+
+.quick-guide-qr-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.quick-guide-qr {
+  margin: 0;
+}
+
+.quick-guide-qr img {
+  display: block;
+  width: 100%;
+  max-width: 4.2rem;
+  height: auto;
+}
+
+.quick-guide-qr figcaption {
+  margin-top: 0.2rem;
+  font-size: 0.76rem;
+  line-height: 1.25;
+}
+
+.quick-guide-qr-email {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
 
 .quick-guide-stop,
@@ -1884,18 +1969,92 @@ body.trainer-portal-page {
 
   body.has-print-quick-guide .quick-guide-sheet {
     display: flex;
-    overflow: hidden;
     width: 8.5in;
-    height: 10.98in;
     margin: 0;
     padding: 0.42in 0.48in 0.38in;
-    break-after: page;
     border: 0;
     color: #000;
     font-size: 10pt;
     line-height: 1.28;
     flex-direction: column;
+  }
+
+  /* The flowing sheet must NOT be a flex container. Flex gives the multicol
+     child a definite height spanning the whole document, so columns balance
+     across all pages at once — the left column ends up holding steps 1-3 and
+     the right column starts at step 6. Block layout lets multicol fragment
+     per page, which is what produces correct top-to-bottom reading order in
+     column one, then column two, on each page. */
+  body.has-print-quick-guide .quick-guide-flowing {
+    display: block;
+    padding-bottom: 0.3in;
+  }
+
+  /* Fixed-height sheets apply only to the older two-sheet layout, where each
+     side is authored to fit one page. Note that overflow:hidden silently clips
+     anything longer than the page rather than reflowing it. */
+  body.has-print-quick-guide .quick-guide-front,
+  body.has-print-quick-guide .quick-guide-back {
+    overflow: hidden;
+    height: 10.98in;
+    break-after: page;
     page-break-after: always;
+  }
+
+  /* The continuous-flow layout paginates instead: no fixed height, no clipping,
+     and page breaks fall between sections rather than mid-step. */
+  body.has-print-quick-guide .quick-guide-columns {
+    columns: 2;
+    column-gap: 0.26in;
+    column-rule: 1px solid #000;
+    orphans: 3;
+    widows: 3;
+  }
+
+  body.has-print-quick-guide .quick-guide-columns > * {
+    break-inside: avoid;
+  }
+
+  body.has-print-quick-guide .quick-guide-columns > h2 {
+    margin-top: 0.13in;
+    margin-bottom: 0.05in;
+    break-after: avoid;
+    font-size: 10.5pt;
+  }
+
+  body.has-print-quick-guide .quick-guide-columns > :first-child {
+    margin-top: 0;
+  }
+
+  body.has-print-quick-guide .quick-guide-columns > ul,
+  body.has-print-quick-guide .quick-guide-columns > ol,
+  body.has-print-quick-guide .quick-guide-columns > p,
+  body.has-print-quick-guide .quick-guide-columns > table {
+    margin-bottom: 0.08in;
+  }
+
+  body.has-print-quick-guide .quick-guide-columns > aside {
+    margin-top: 0.13in;
+    margin-bottom: 0.13in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr-pair {
+    gap: 0.16in;
+    margin-top: 0.07in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr img {
+    max-width: 0.78in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr figcaption {
+    font-size: 6.6pt;
+    line-height: 1.28;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr-email {
+    margin-top: 0.06in;
+    font-size: 7.4pt;
   }
 
   body.has-print-quick-guide .quick-guide-sheet:last-child {
@@ -1906,6 +2065,12 @@ body.trainer-portal-page {
   body.has-print-quick-guide .quick-guide-sheet h1,
   body.has-print-quick-guide .quick-guide-sheet h2 {
     font-size: 19pt;
+  }
+
+  /* Section headings inside the flowing layout are step labels, not sheet
+     titles. Declared after the 19pt rule above so it does not win. */
+  body.has-print-quick-guide .quick-guide-columns h2 {
+    font-size: 10.5pt;
   }
 
   body.has-print-quick-guide .quick-guide-sheet h3 {
@@ -2023,7 +2188,20 @@ body.trainer-portal-page {
     background: transparent;
   }
 
+  /* Flowing layout: the footer simply ends the document. */
   body.has-print-quick-guide .quick-guide-footer {
+    margin-top: 0.12in;
+    padding-top: 0.07in;
+    font-size: 6.8pt;
+    break-inside: avoid;
+  }
+
+  /* Absolute positioning pins the footer to the bottom of a fixed-height sheet.
+     It is correct only for the two-sheet layout; on a flowing document it would
+     land in the wrong place. Must follow the rule above to win on specificity
+     and source order. */
+  body.has-print-quick-guide .quick-guide-front .quick-guide-footer,
+  body.has-print-quick-guide .quick-guide-back .quick-guide-footer {
     position: absolute;
     right: 0.48in;
     bottom: 0.28in;
