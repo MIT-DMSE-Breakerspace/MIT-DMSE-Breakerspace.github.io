@@ -29,7 +29,7 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
 * **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
 
-**FTIR is the reference implementation.** Its Quick Guide and training guide were rebuilt together on 2026-08-03 under the model below, then corrected through four review rounds. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive.
+**FTIR is the reference implementation** for both content and layout. Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and relaid out the same day as a continuous two-column flow. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. See [Quick Guide layout model](#quick-guide-layout-model) for the structural rules and how to verify them.
 
 **FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
 
@@ -37,11 +37,11 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Atmospheric and contamination band positions.** Described qualitatively on the page with no wavenumbers, so the Quick Guide cannot name them. A draft did, from nothing — see the lessons below.
 * **The background-redo cycle as canonical text.** The Quick Guide spells it out; the page should own it.
 
-Also required: operational-owner approval, a Letter duplex print proof that may force edits, a laminated copy installed at the instrument, and a practice training.
+Also required: operational-owner approval, a physical Letter duplex print proof, a laminated copy installed at the instrument, and a practice training. The print proof is now for legibility, grayscale QR scanning, and long-edge flip only — page count and clipping were verified by paginated render on 2026-08-05.
 
 Per the [sample-agnostic decision](#sample-agnostic-guides), FTIR is no longer blocked on identifying a paper specimen or on measured band positions from reviewed reference spectra. The guide states the contrast the exercise needs and requires the trainer to know a bad result on whatever they chose. Approved samples remain worth adding later and are not a release gate now.
 
-All three page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+All three page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md). Two further unresolved questions — FTIR's Level 1 divergence from its canonical page, and whether a video-verified software step counts as sourced — are in [open questions](#open-questions-that-affect-writing).
 
 ### Active Late-August Work Order
 
@@ -125,6 +125,38 @@ This is a scoping decision for the current round, not a rejection of approved sa
 
 Sample-library work that a guide no longer waits on is tracked in `../_staff/site-todo.md`, Tier 2.
 
+### Quick Guide Layout Model
+
+**`_includes/quick-guides/ftir.html` is the layout reference as of 2026-08-05.** Copy it for a new instrument. Optical and XRD still use an older two-sheet layout and should be migrated when they are next revised.
+
+The model:
+
+* **One continuous flow, not per-side sheets.** A single `.quick-guide-sheet.quick-guide-flowing` containing one `.quick-guide-columns` div. Content fills column one top to bottom, then column two, and paginates onto as many Letter sides as it needs. Do not author "Side 1" and "Side 2" as separate fixed units — that break was arbitrary and it forced content decisions for layout reasons.
+* **Uniform numbering.** `<h2>1. Section name</h2>` with the period. Sub-items are always `<ul>` bullets, never `<ol>`, so a series of actions under a numbered section reads consistently.
+* **Safety and stop boxes sit in the flow**, at the point where they apply — the glove rule first, before any work starts; stop-and-ask between the sample-screening and startup sections. A red outline does not reliably signal "read this out of order," so position matters.
+* **No per-section boxes and no numbered badges.** Both came from the older layout and made the two sides look like different documents.
+* **QR codes** are static SVGs in `assets/img/qr/`, generated once and committed, so the site build needs no QR dependency. Include the plain-text URL beside every code — the printed guide must work for someone without a phone.
+
+Two failure modes this layout exists to avoid, both of which shipped in the FTIR guide:
+
+* **Fixed-height print sheets with `overflow: hidden` clip silently.** Content past one page vanishes from the printed copy with no warning in the HTML, the build, or any check. The FTIR guide lost most of its shutdown section, its closing checklist, and its help box this way.
+* **A multicol container inside a flex parent balances across the whole document, not per page.** Reading order breaks — the left column holds the early steps while the right column opens partway through the guide. Keep the flowing sheet `display: block` in print.
+
+**Verify a layout by rendering it paginated, not by scrolling it.** Screenshotting a print stylesheet in a scrolling viewport reproduces neither bug; it can show a plausible-looking page that does not match what prints. Render to PDF and inspect the actual pages:
+
+```sh
+# with the worktree served on 4173
+node -e "const p=require('puppeteer');(async()=>{const b=await p.launch();const g=await b.newPage();
+await g.goto('http://127.0.0.1:4173/quick-guides/ftir/',{waitUntil:'networkidle0'});
+await g.emulateMediaType('print');
+await g.pdf({path:'/tmp/qg.pdf',format:'Letter',printBackground:true,margin:{top:0,right:0,bottom:0,left:0}});
+await b.close()})()"
+pdftoppm -r 110 -png /tmp/qg.pdf /tmp/qg      # then look at the page images
+pdftotext -layout /tmp/qg.pdf - | tail -20    # confirm the last section actually prints
+```
+
+Check that every section heading appears in the PDF text, that reading order is sequential on each page, and that QR codes decode at 300 dpi (`pdftoppm -r 300`, then any QR reader). A word count is not a substitute: tables cost more vertical space than the same words as prose.
+
 ### Late-August Guide-Pair Inventory
 
 Use these visible states for handoff planning: **missing**, **drafting**, **needs operational check**, **needs practice run**, and **ready for late-August handoff**. This inventory records repository coverage, not approval to deliver a training.
@@ -133,10 +165,10 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | --- | --- | --- | --- | --- |
 | First | **SEM/EDS** | Missing | Missing | Decide the guide split while preserving the two Phenoms' different sample-height rules and the XL-only EDS workflow. |
 | First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
-| First | **FTIR** | Needs operational check and print proof | Needs operational check, then practice run | Supply the empirical background evidence and test the printed guide. |
+| First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then practice run | Supply the empirical background evidence; resolve the Level 1 divergence; print proof for legibility and QR scanning only. |
 | First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit | Needs retrofit | Add the coverage map and operations table, and state the Level 1 sample-selection criteria. |
-| Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, starting settings, and approved Level 1 sample before planned fall subject use. |
+| Second | **Optical microscopy** | Needs retrofit, incl. layout migration | Needs retrofit | Add the coverage map and operations table, state Level 1 sample-selection criteria, and migrate to the continuous-flow layout. |
+| Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, and starting settings before planned fall subject use. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
 | Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
 | Second | **UV-Vis** | Missing | Missing | Scope the beginner workflow and verify the routine absorbance method; keep advanced fluorescence support separate unless approved. |
@@ -174,6 +206,8 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 
 ### Open questions that affect writing
 
+* **FTIR's Level 1 exercise diverges from its canonical page.** The page's [`#exercises`](../instruments/ftir.md#exercises) Level 1 is "a known plastic, a paper product, **and a non-volatile liquid**." The training guide teaches two solids and puts liquids in the deliberately-excluded column. Two solids is almost certainly right for a 60-minute session, but the page still advertises the three-sample version, so the two documents contradict each other on what Level 1 *is*. Raised 2026-08-05 and not yet decided: either revise the page's exercise to match the taught scope, or expand the session. Do not let a later reader assume the guide simply drifted.
+* **The Quick Guide names OMNIC's post-scan naming prompt, which the canonical page does not mention.** Step 5's final item says to give the spectrum a descriptive name when OMNIC prompts, after the scan completes. That sequence was verified against the bundled instructional videos during the retrofit, and it is operationally correct, but `grep` for it in [`ftir.md`](../instruments/ftir.md) returns nothing. Under the page-grep rule this is an unsourced specific. Unresolved question of principle, raised 2026-08-05: does video-verified count as sourced, or does anything absent from the page get a logged page gap regardless? The answer applies to every guide, not just FTIR.
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
 
