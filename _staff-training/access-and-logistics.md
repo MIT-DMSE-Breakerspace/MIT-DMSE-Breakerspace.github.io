@@ -117,6 +117,12 @@ There is currently no skills demonstration, no training expiration, and no recur
 
 Standard sessions are **60 minutes** with a **maximum of three participants**. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
 
+### Fall Schedule Timing
+
+Recurring fall training sessions are posted only after Breakerspace Lab Assistants return to campus, settle their academic schedules, and confirm the hours they will work in the lab. An empty or sparse public calendar during the first week is normal and is not evidence of a staffing or readiness failure. Do not create a speculative August schedule that will need to be rebuilt after student schedules change.
+
+Subjects, courses, and research or teaching labs that require coordinated training arrange it directly with Breakerspace staff and provide the staffing needed for that activity. During the early weeks of the term, handle individual requests through ad-hoc sessions when no public event is available. A temporary notice above the public calendar may explain this timing and direct users to `dmse-breakerspace@mit.edu`; remove it after recurring sessions are posted so the ordinary calendar remains the source of truth.
+
 Per-instrument LibCal training events **do exist** — there are ten instrument-training templates, including the hardness tester and ion mill templates added on 2026-08-04, so every guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event; this is intentional public routing rather than an absence of instrument-specific templates.
 
 All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state and completed verification are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the as-built procedure and completion record are in [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
