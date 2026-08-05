@@ -30,7 +30,7 @@ The operating model the template reflects:
 * Dropbox access is trainee-managed: the trainee creates an MIT Dropbox for Business account and requests membership in the DMSE Breakerspace Team. Trainers should help first-time users with the process when needed rather than attempting to invite an account that may not exist.
 * There is currently no separate skills demonstration, training expiration, or recurring retraining requirement.
 
-The current Qualtrics survey remains coordinated with the active production website until the redesigned site launches. Make survey changes from `qualtrics-manual-edit-guide.md`. Its release status is tracked in `qualtrics-launch-review.md`; the complete July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
+The current Qualtrics survey was released with the redesigned production website on 2026-07-24. Its notification, retention, response-handling, live-path, and proportionate accessibility closeout was completed on 2026-08-05. Make future survey changes from `qualtrics-manual-edit-guide.md`; the completed release record is in `qualtrics-launch-review.md`, and the full July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
 
 ## Picking This Work Up Again
 

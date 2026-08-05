@@ -1,5 +1,7 @@
 # Qualtrics Review For Website Launch
 
+Last reviewed: 2026-08-05
+
 The Qualtrics onboarding survey is coordinated with the active site at `breakerspace.mit.edu`. The redesigned website and revised survey were released together on July 24, 2026 so new users are not sent between incompatible versions.
 
 Survey: <https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc>
@@ -8,7 +10,7 @@ Survey: <https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc>
 
 The production site now has stable task pages for instrument selection, training, reservations, safety, help and support, lounge use, and teaching. The public training page describes the one-time Qualtrics record as one part of training, followed by an in-person instrument session. It also documents trainer-managed Moira access and separately processed physical tap access.
 
-The survey was updated before the production release, and its new flow and validations were reported working as expected. Keep the remaining checklist items below open until their notification, retention, response-handling, and live-path details have been explicitly verified.
+The survey was updated before the production release. On 2026-08-05 the operational owner explicitly verified its notifications, retention settings and cleanup, response handling, validation behavior, tap-access data, and complete live submissions. The coordinated launch checklist is closed.
 
 The remaining operating decisions were resolved July 23, 2026. The final manual guide now specifies nine-digit MIT ID handling, access-ready response filtering, a no-PII staff notification, 30-day deletion of unfinished responses, duplicate handling, restricted response access, need-based retention with annual review, and use of the custom completion page without an email receipt.
 
@@ -63,13 +65,21 @@ The current responses have been fully exported, and changes to their presentatio
 ## Coordinated Launch Checklist
 
 * [x] Final production URLs and page anchors are stable.
-* [ ] Every survey link has been updated and tested against the production site.
-* [ ] Survey language matches the published training, resources, safety, and access policies.
-* [ ] Required questions and display logic have been reviewed.
-* [ ] The 30-day unfinished-response deletion setting and one-time cleanup of exported unfinished records have been verified.
-* [ ] The access-ready staff notification sends no personal data or response report and does not fire on non-ready or unfinished paths.
-* [ ] A complete clean test response has been submitted and checked.
-* [ ] Tap-access information arrives in the format needed by the lab manager.
-* [ ] Moira and Slack closeout responsibilities are clear to instrument trainers.
+* [x] Every survey link has been updated and tested against the production site.
+* [x] Survey language matches the published training, resources, safety, and access policies.
+* [x] Required questions and display logic have been reviewed.
+* [x] The 30-day unfinished-response deletion setting and one-time cleanup of exported unfinished records have been verified.
+* [x] The access-ready staff notification sends no personal data or response report and does not fire on non-ready or unfinished paths.
+* [x] Complete clean test responses have been submitted and checked.
+* [x] Tap-access information arrives in the format needed by the lab manager.
+* [x] Moira and Slack closeout responsibilities are clear to instrument trainers.
 * [x] The active survey and redesigned website are released in the same window.
 * [x] Old website links resolve to their intended production destinations through redirects.
+
+## Accessibility And Third-Party Reliance Record
+
+Qualtrics ExpertReview reported no accessibility errors or warnings on 2026-08-05. It displayed a compatibility tip for synthetic panels, an AI-generated market-research respondent feature that Breakerspace does not use; the tip does not affect human respondents, accessibility, notifications, or ordinary survey operation.
+
+Keyboard-only testing in Firefox covered the complete survey, understandable validation errors, and successful live submission. A keyboard-only path from the Breakerspace site through the embedded calendar to successful LibCal event registration also passed in Firefox. Safari initially appeared not to traverse page controls with `Tab`; `Option-Tab` worked as documented for Safari and confirmed that the behavior was a browser keyboard-navigation preference rather than a Qualtrics or LibCal compatibility failure.
+
+Breakerspace uses MIT-supported Qualtrics and institutionally deployed LibCal. Vendor-platform accessibility is accepted based on MIT procurement and support plus vendor conformance documentation; Breakerspace will not independently audit vendor platform code. Breakerspace remains responsible for its authored survey and event content and configuration, uses standard question types and semantic HTML, provides `dmse-breakerspace@mit.edu` as an alternative support route, and will correct local content barriers or escalate reported platform barriers to MIT IS&T and the applicable vendor. A formal VoiceOver conformance audit was not performed and is not retained as a launch gate under this proportionate approach.
