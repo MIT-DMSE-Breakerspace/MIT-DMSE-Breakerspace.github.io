@@ -27,7 +27,16 @@ Also required: one identified paper specimen with a sample ID and location, meas
 
 All three page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 
-**Optical is next.** It has a Quick Guide and a staff guide, both predating the content contract, so it needs the same retrofit FTIR just had.
+### Active Late-August Work Order
+
+The active priority is to complete Quick Guides and staff training guides for student-led training in the last week of August 2026.
+
+* **First wave — co-equal immediate priorities:** SEM/EDS, XRD, FTIR, and Instron.
+* **Second wave — after the first four, in order:** optical microscopy, Raman, hardness tester, particle size analyzer, UV-Vis, then ion mill.
+
+Use the wave order to allocate limited time, but move to another guide when an instrument is blocked by an operational decision. A blocked instrument should not stop useful progress on the rest of its wave. Raman follows optical because planned use in fall lab subjects raises it above its historically lower general-interest priority.
+
+FTIR remains the structural reference implementation, not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
 
 The live LibCal revision was completed on 2026-08-04. All ten instrument-training templates now use the approved minimal copy and shared registration settings, including the new hardness-tester and ion-mill templates. The Lab Assistant and three scope-specific reserved-activity templates were also revised and verified through unpublished test events. The historical state and completed revision record are in [`libcal-event-templates.md`](libcal-event-templates.md) and [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
 
@@ -83,23 +92,34 @@ The staff guide therefore does contain a **coverage map and Level 1 participant 
 
 Two earlier claims in this README were wrong and are superseded. It first said a guide could not be written for an instrument without a Quick Guide, which was inferred from the two pilot guides happening to be the two instruments with Quick Guides. It then said the training guide must come first. Both imposed an authoring sequence that the sibling model removes.
 
-Quick Guides currently exist for **optical, FTIR, and XRD** (`/quick-guides/`). Their maturity differs, and conflating them wastes effort:
+### Late-August Guide-Pair Inventory
 
-| Instrument | Quick Guide | Staff guide |
-| --- | --- | --- |
-| **FTIR** | Rebuilt to the contract 2026-08-03. Needs empirical inputs, approval, and a print proof — not another audit | Retrofitted 2026-08-03, including the SOP coverage map |
-| **Optical** | Predates the contract. Needs retrofit | Pilot predating the contract. Needs the coverage map, operations table, and a named default sample |
-| **XRD** | Predates the contract, and is dense. Needs retrofit | **Does not exist.** Needs writing |
+Use these visible states for handoff planning: **missing**, **drafting**, **needs operational check**, **needs practice run**, and **ready for late-August handoff**. This inventory records repository coverage, not approval to deliver a training.
 
-### Suggested next steps
+| Wave | Instrument system | Quick Guide | Staff guide | Immediate readiness issue |
+| --- | --- | --- | --- | --- |
+| First | **SEM/EDS** | Missing | Missing | Decide the guide split while preserving the two Phenoms' different sample-height rules and the XL-only EDS workflow. |
+| First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
+| First | **FTIR** | Needs operational check and print proof | Needs operational check, then practice run | Supply the empirical background and band-position evidence, approve the sample pair, and test the printed guide. |
+| First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
+| Second | **Optical microscopy** | Needs retrofit | Needs retrofit | Add the coverage map, operations table, and approved Level 1 sample. |
+| Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, starting settings, and approved Level 1 sample before planned fall subject use. |
+| Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
+| Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
+| Second | **UV-Vis** | Missing | Missing | Scope the beginner workflow and verify the routine absorbance method; keep advanced fluorescence support separate unless approved. |
+| Second | **Ion mill** | Missing | Missing | Define the beginner training boundary and stop conditions for the existing operating workflow. |
 
-Each instrument's Quick Guide and staff guide are developed together, starting from the canonical SOP.
+### Late-August Execution Plan
 
-1. **Print-proof the FTIR Quick Guide.** Side 2 is roughly 582 words and has never been printed. If the two-page budget does not hold, the fix changes how optical and XRD get written, so this comes first. It needs a physical printer, not a browser preview.
-2. **Retrofit the optical pair.** Follow the FTIR pair as the model: numbered Quick Guide steps, an SOP coverage map with every startup and shutdown bullet as its own row, an operations table, and a named default sample. Optical's SOP is shorter than FTIR's, so this should be faster. **If the print proof is not yet available**, optical may proceed in parallel — but treat its page budget as unverified and expect to revise both guides once the proof lands.
-3. **XRD pair.** The Quick Guide needs retrofit; the training guide needs writing from scratch. `../handouts/xrd/` holds two draft tutorials and a student report template worth harvesting. Two open questions below affect its closeout.
-4. **Level 1 samples.** FTIR already uses `BS-000004` acrylic yarn and needs one identified paper specimen. Optical needs its own default named.
-5. **SEM.** Highest traffic, one combined LibCal template, one shared Moira group — but decide first whether it is one guide or two. The two Phenoms have deliberately different sample-height rules, which argues for two.
+Develop each instrument's Quick Guide and staff guide together from the canonical SOP.
+
+1. Work across the four first-wave systems as co-equal priorities, starting with the highest-risk unblocked gaps: safety boundaries, stop conditions, exact sequence, cleanup, data handling, and access closeout.
+2. Reconcile each guide pair with the canonical operating page and current LibCal description. Record unresolved operational questions explicitly and move to another first-wave system rather than writing around them.
+3. Walk through each critical workflow at the instrument and run a practice training when feasible. A guide that cannot be validated in time must state the limitation or exclude that workflow.
+4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
+5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
+
+The FTIR Letter-duplex print proof remains required: Side 2 is roughly 582 words and the two-page budget is not yet verified. Its result should inform later layouts, but an unavailable physical print test should not block accurate drafting or operational checks on another first-wave guide.
 
 ### What The FTIR Retrofit Taught
 
