@@ -1,3 +1,17 @@
+---
+title: Training Access And Closeout
+description: Shared access, scheduling, Moira, and closeout reference for Breakerspace instrument trainers.
+guide_status: Current shared reference
+guide_revision: 2026-08-05
+trainer_links:
+  - label: WebMoira
+    url: https://groups.mit.edu/webmoira/
+  - label: Training calendar
+    url: https://breakerspace.libcal.com/calendar?cid=19408
+  - label: Public training pathway
+    url: /training.html
+---
+
 # Trainer Access And Logistics Reference
 
 Last reviewed: 2026-07-31
@@ -6,7 +20,7 @@ This file holds the shared operational facts that every instrument training guid
 
 Individual guides should **link to this file rather than restate its contents**. When a group name, closeout step, or scheduling rule changes, change it here once. A per-guide copy of these facts will drift.
 
-This directory is unpublished, but the repository may still be publicly readable. Moira group *names* are recorded here because they are administrative list identifiers rather than credentials, and one of them is already published on the public Help page. Do not add Kerberos usernames, attendee names, MIT ID numbers, passwords, or workstation login details to this file.
+This reference is published through an unlisted, search-blocked trainer URL, and the repository is publicly readable. Moira group *names* are recorded here because they are administrative list identifiers rather than credentials, and one of them is already published on the public Help page. Do not add Kerberos usernames, attendee names, MIT ID numbers, passwords, or workstation login details to this file.
 
 ## Moira Groups By Instrument
 
@@ -33,17 +47,17 @@ Keep this rule intact when adding an instrument. A group name that merely resemb
 
 | Instrument | Public operating page | Moira group | Group role |
 | --- | --- | --- | --- |
-| Olympus DSX-1000 optical microscope | [`optical.md`](../instruments/optical.md) | `dmse-brkrspc-optical` | Access + comms |
-| Thermo Scientific Nicolet iS5 FTIR | [`ftir.md`](../instruments/ftir.md) | `dmse-brkrspc-ftir` | Access + comms |
-| Horiba Duetta fluorescence and absorbance | [`uv-vis.md`](../instruments/uv-vis.md) | `dmse-brkrspc-uv-vis` | Access + comms |
-| Horiba XploRA confocal Raman microscope | [`raman.md`](../instruments/raman.md) | `dmse-brkrspc-raman` | Access + comms |
-| Microtrac Sync particle size analyzer | [`psa.md`](../instruments/psa.md) | `dmse-brkrspc-psa` | Access + comms |
-| Instron 68TM-50 universal testing system | [`instron.md`](../instruments/instron.md) | `dmse-brkrspc-instron` | Access + comms |
-| Phenom XL SEM | [`phenom-xl.md`](../instruments/phenom-xl.md) | `dmse-brkrspc-sem` | Access + comms |
-| Phenom Pure SEM | [`phenom-pure.md`](../instruments/phenom-pure.md) | `dmse-brkrspc-sem` | Access + comms |
-| Malvern Panalytical Aeris Research XRD | [`xrd.md`](../instruments/xrd.md) | `dmse-brkrspc-xrd` | **Comms only** |
-| Innovatest Nemesis 5100G2 hardness tester | [`hardness-tester.md`](../instruments/hardness-tester.md) | `dmse-brkrspc-hardness-tester` | **Comms only** |
-| Technoorg-Linda SEMPrep 2 ion mill | [`ion-mill.md`](../instruments/ion-mill.md) | `dmse-brkrspc-ion-mill` | **Comms only** |
+| Olympus DSX-1000 optical microscope | [`optical.md`]({% link instruments/optical.md %}) | `dmse-brkrspc-optical` | Access + comms |
+| Thermo Scientific Nicolet iS5 FTIR | [`ftir.md`]({% link instruments/ftir.md %}) | `dmse-brkrspc-ftir` | Access + comms |
+| Horiba Duetta fluorescence and absorbance | [`uv-vis.md`]({% link instruments/uv-vis.md %}) | `dmse-brkrspc-uv-vis` | Access + comms |
+| Horiba XploRA confocal Raman microscope | [`raman.md`]({% link instruments/raman.md %}) | `dmse-brkrspc-raman` | Access + comms |
+| Microtrac Sync particle size analyzer | [`psa.md`]({% link instruments/psa.md %}) | `dmse-brkrspc-psa` | Access + comms |
+| Instron 68TM-50 universal testing system | [`instron.md`]({% link instruments/instron.md %}) | `dmse-brkrspc-instron` | Access + comms |
+| Phenom XL SEM | [`phenom-xl.md`]({% link instruments/phenom-xl.md %}) | `dmse-brkrspc-sem` | Access + comms |
+| Phenom Pure SEM | [`phenom-pure.md`]({% link instruments/phenom-pure.md %}) | `dmse-brkrspc-sem` | Access + comms |
+| Malvern Panalytical Aeris Research XRD | [`xrd.md`]({% link instruments/xrd.md %}) | `dmse-brkrspc-xrd` | **Comms only** |
+| Innovatest Nemesis 5100G2 hardness tester | [`hardness-tester.md`]({% link instruments/hardness-tester.md %}) | `dmse-brkrspc-hardness-tester` | **Comms only** |
+| Technoorg-Linda SEMPrep 2 ion mill | [`ion-mill.md`]({% link instruments/ion-mill.md %}) | `dmse-brkrspc-ion-mill` | **Comms only** |
 
 The three **Access + comms** rows whose groups were renamed — optical, Duetta, and Instron — were verified on their workstations on 2026-08-03. The remaining Access + comms rows are inherited from `../resources.md`, which describes Moira as the general mechanism, rather than individually confirmed; treat one as verified when someone has actually logged in after being added. Re-check a row if a workstation is rebuilt or re-imaged.
 
@@ -71,7 +85,7 @@ Because these instruments have no per-user sign-in, they also produce no electro
 
 The XRD is the one comms-only instrument with a **second computer involved in the normal workflow**. The instrument touchscreen has no access control, but data export, HighScore Plus phase matching, and XRDMP Creator all happen on the separate XRD workstation to the right of the instrument.
 
-[`instruments/xrd.md`](../instruments/xrd.md#export) currently tells users to "use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument," which implies that companion workstation has some sign-in of its own.
+The [XRD export instructions]({% link instruments/xrd.md %}#export) currently tell users to "use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument," which implies that companion workstation has some sign-in of its own.
 
 **Open question:** confirm what governs sign-in on the XRD companion workstation, and whether `dmse-brkrspc-xrd` has any role there. Until that is settled, an XRD guide should describe the touchscreen as having no access control while treating the companion workstation's sign-in as something the trainer covers in person. This is the one instrument where "the instrument has no access control" and "the user needs no credentials to finish the workflow" may not be the same statement.
 
@@ -120,7 +134,7 @@ Subjects, courses, and research or teaching labs that require coordinated traini
 
 Per-instrument LibCal training events **do exist** — there are ten instrument-training templates, including the hardness tester and ion mill templates added on 2026-08-04, so every guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event; this is intentional public routing rather than an absence of instrument-specific templates.
 
-All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state and completed verification are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the as-built procedure and completion record are in [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
+All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state, procedure, and completion evidence are maintained as administrative records in `../_admin/`.
 
 The timing and attendance questions are resolved. A one-hour calendar block provides 50 usable training minutes internally; do not publish MIT's informal early-start/end convention. Public copy asks attendees to plan to attend the full session and to ask the trainer whether they need to register again if they arrive late or leave early.
 
@@ -128,17 +142,17 @@ The timing and attendance questions are resolved. A one-hour calendar block prov
 
 Each guide needs a named owner responsible for keeping it accurate and for approving changes.
 
-**The lab manager owns every guide as of 2026-07-31.** This is the current state rather than the intended end state: a single owner for eleven guides does not scale, and the point of writing these guides is that many people can deliver the same session. Reassign individual guides to student staff as they take ownership of particular instruments, and record the assignment in each guide's Guide Control table.
+**The lab manager owns every guide as of 2026-07-31.** This is the current state rather than the intended end state: a single owner for eleven guides does not scale, and the point of writing these guides is that many people can deliver the same session. Reassign individual guides to Breakerspace Lab Assistants as they take ownership of particular instruments, and record the assignment in each guide's Guide Control table.
 
 Two roles are worth keeping distinct even while one person holds both:
 
-* **Guide owner** keeps the staff guide accurate, reviews it after a workflow change, and approves edits. A student staff member can hold this.
+* **Guide owner** keeps the staff guide accurate, reviews it after a workflow change, and approves edits. A Breakerspace Lab Assistant can hold this role.
 * **Operational owner** confirms that the instrument's stated workflow, limits, safety claims, and stop conditions are correct. This requires the authority to make an operational call and should stay with the lab manager or another staff member with that standing.
 
 A guide's `Status` row referring to "operational-owner review" means the second role, not the first. When a guide is reassigned to a student owner, the operational-owner sign-off stays where it is.
 
 ## Open Items Tracked Elsewhere
 
-* Approved Level 1 training samples, identifiers, cabinet locations, and replenishment plans: [`../_staff/site-todo.md`](../_staff/site-todo.md), Tier 2.
+* Approved Level 1 training samples, identifiers, cabinet locations, and replenishment plans: repository file `_staff/site-todo.md`, Tier 2.
 * Trainer readiness and who may deliver training: not yet written.
-* Instrument-page media and verification work: [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+* Instrument-page media and verification work: repository file `instruments/staff-todo.md`.

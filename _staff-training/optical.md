@@ -1,20 +1,37 @@
+---
+title: Optical Microscope Trainer Guide
+description: Session checklist and teaching outline for a one-hour Olympus DSX-1000 optical microscope training.
+guide_status: Needs retrofit and operational check
+guide_revision: 2026-08-05
+interactive_checklist: true
+trainer_links:
+  - label: Participant Quick Guide
+    url: /quick-guides/optical/
+  - label: Operating page and SOP
+    url: /instruments/optical.html#sop
+  - label: Training calendar
+    url: https://breakerspace.libcal.com/calendar?cid=19408
+  - label: WebMoira
+    url: https://groups.mit.edu/webmoira/
+---
+
 # DSX-1000 Optical Microscope Staff Training Guide
 
-This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page](../instruments/optical.md), including the two-page Quick Guide on that page. Do not maintain a separate operating sequence here.
+This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page]({% link instruments/optical.md %}) and its sibling [two-page Quick Guide]({% link quick-guides/optical.md %}). Do not maintain a separate operating sequence here.
 
 ## Guide Control
 
 | Field | Value |
 | --- | --- |
 | Instrument | Olympus DSX-1000 digital optical microscope |
-| Public instrument page and Quick Guide | [Optical microscope operating page](../instruments/optical.md#quick-guide) |
-| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; see the [completion record](libcal-manual-update-guide.md#completion-record) |
+| Public instrument page and Quick Guide | [Optical microscope operating page]({% link instruments/optical.md %}) · [Quick Guide]({% link quick-guides/optical.md %}) |
+| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; the administrative completion record is maintained in `_admin/libcal-manual-update-guide.md` |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
 | Training sample | Stable textured sample kit; exact sample, identifier, and cabinet location require approval |
-| Moira group | `dmse-brkrspc-optical` (see [access and logistics](access-and-logistics.md#moira-groups-by-instrument)) |
-| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
+| Moira group | `dmse-brkrspc-optical` (see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument)) |
+| Guide owner | Lab manager (see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-08-05 |
 
@@ -39,7 +56,7 @@ The session does not currently include a separate individual skills demonstratio
 
 * [ ] Confirm that the microscope is functioning normally and in its expected starting state.
 * [ ] Confirm that the stage is empty, the installed objective is appropriate, and the full motion path is clear.
-* [ ] Open the [public operating page and Quick Guide](../instruments/optical.md#quick-guide) on the workstation.
+* [ ] Open the [public operating page]({% link instruments/optical.md %}) and [Quick Guide]({% link quick-guides/optical.md %}) on the workstation.
 * [ ] Confirm that DSX starts normally and that the training save location is available.
 * [ ] Prepare nitrile gloves and any sample-preparation tools needed for the approved sample kit.
 * [ ] Confirm that three participants can see the stage, console, and display without obstructing movement.
@@ -62,7 +79,7 @@ The session does not currently include a separate individual skills demonstratio
 | Time | Activity |
 | --- | --- |
 | 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 3-8 minutes | [Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
 | 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
 | 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
 | 20-42 minutes | Participants focus, navigate, compare modes, capture a 2D image, and save the result. |
@@ -146,4 +163,4 @@ Complete every item before considering the session closed.
 
 ## Guide Maintenance
 
-When this guide changes, review the public Quick Guide and operating page, approved sample kit, sample-library record, LibCal description, and Moira information together. Practice the guide with a staff or student-staff trainer before marking it ready for routine delivery.
+When this guide changes, review the public Quick Guide and operating page, approved sample kit, sample-library record, LibCal description, and Moira information together. Practice the guide with a qualified Breakerspace Lab Assistant or other designated trainer before marking it ready for routine delivery.

@@ -12,7 +12,7 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body{% if page.data_tool_workspace %} class="data-tool-workspace"{% endif %}>
+  <body{% if page.data_tool_workspace %} class="data-tool-workspace"{% elsif page.trainer_portal %} class="trainer-portal-page"{% endif %}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
       <header>

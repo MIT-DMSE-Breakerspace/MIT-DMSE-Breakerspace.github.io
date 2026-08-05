@@ -1,10 +1,24 @@
+---
+published: false
+---
+
 # Breakerspace Staff Training Guides
 
-This directory contains staff-facing guides for delivering consistent instrument training. Jekyll does not publish this underscore-prefixed directory, and it is not linked from the public website navigation.
+This directory contains trainer-facing guides for helping Breakerspace Lab Assistants and other qualified trainers deliver consistent instrument training. Selected delivery documents are rendered in the unlisted Trainer Portal; planning files and templates remain unpublished.
 
 The repository may still be publicly readable. Do not store credentials, physical-security details, private student information, access codes, or other sensitive information here.
 
 Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](../_staff/site-todo.md). Keep this directory focused on training delivery and trainer resources.
+
+LibCal and Qualtrics administration, audits, and editing runbooks belong in [`../_admin/`](../_admin/), not alongside trainer delivery materials.
+
+### Trainer Portal Deployment
+
+Jekyll publishes selected files in this directory as the unlisted Trainer Portal at `/trainer/`. The portal index is `../trainer/index.md`; `_layouts/trainer.html`, `assets/css/style.scss`, and `assets/js/trainer-checklist.js` provide its presentation and session checklist behavior. `_config.yml` marks the collection `noindex` and supplies the trainer layout by default.
+
+Add normal front matter to a delivery document to publish it. Use `published: false` for planning files, templates, and this README. Instrument guides with Markdown task lists may set `interactive_checklist: true`; checkmarks then persist only in the current browser tab and are never a qualification record. Use Jekyll `{% raw %}{% link ... %}{% endraw %}` tags for links inside rendered collection documents so paths remain correct under `/trainer/`.
+
+The portal is **unlisted, not private**. Never add credentials, attendee records, private roster information, account details, or physical-security information. Official trainer qualification stays in the approved private staff system. `_admin/` is explicitly excluded from the Jekyll build and must remain outside the portal.
 
 ## Current Status
 
@@ -38,8 +52,6 @@ Use the wave order to allocate limited time, but move to another guide when an i
 
 FTIR remains the structural reference implementation, not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
 
-The live LibCal revision was completed on 2026-08-04. All ten instrument-training templates now use the approved minimal copy and shared registration settings, including the new hardness-tester and ion-mill templates. The Lab Assistant and three scope-specific reserved-activity templates were also revised and verified through unpublished test events. The historical state and completed revision record are in [`libcal-event-templates.md`](libcal-event-templates.md) and [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
-
 The operating model the template reflects:
 
 * Standard sessions are 60 minutes with a maximum of three participants.
@@ -52,8 +64,6 @@ The operating model the template reflects:
 * The lab manager processes physical tap access separately after the one-time Qualtrics training record is complete.
 * Dropbox access is trainee-managed: the trainee creates an MIT Dropbox for Business account and requests membership in the DMSE Breakerspace Team. Trainers should help first-time users with the process when needed rather than attempting to invite an account that may not exist.
 * There is currently no separate skills demonstration, training expiration, or recurring retraining requirement.
-
-The current Qualtrics survey was released with the redesigned production website on 2026-07-24. Its notification, retention, response-handling, live-path, and proportionate accessibility closeout was completed on 2026-08-05. Make future survey changes from `qualtrics-manual-edit-guide.md`; the completed release record is in `qualtrics-launch-review.md`, and the full July 2026 extraction and rationale are in `qualtrics-survey-audit.md`. That project is separate from training delivery and shares this directory only by history.
 
 ## Picking This Work Up Again
 
@@ -160,13 +170,9 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, scheduling, and guide owners. Guides link to it instead of restating these facts.
 * `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
-* `libcal-event-templates.md` preserves the outdated, error-containing 2026-07-31 template state for historical comparison and records the completed 2026-08-04 revision. Do not use the pre-revision copy as a current content source.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
 * `ftir.md` is the Nicolet iS5 FTIR ATR curriculum, **retrofitted 2026-08-03 and the reference implementation** of the current model. Copy its structure for a new instrument.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum. Predates the content contract and needs the same retrofit.
-* `qualtrics-launch-review.md` tracks updates that should be coordinated with the launch of the redesigned website.
-* `qualtrics-manual-edit-guide.md` is the canonical page-by-page copy deck and Qualtrics editing checklist.
-* `qualtrics-survey-audit.md` inventories the current QSF and records the rationale behind the revision.
 * New instrument guides should use the public instrument slug, such as `ftir.md`, `optical.md`, or `phenom-xl.md`.
 
 ## Training Guide Goals

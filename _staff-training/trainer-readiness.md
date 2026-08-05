@@ -1,10 +1,26 @@
+---
+title: Trainer Readiness And Qualification
+description: Qualification, practice-training, and escalation expectations for Breakerspace instrument trainers.
+guide_status: Current shared reference
+guide_revision: 2026-08-05
+trainer_links:
+  - label: Training access and closeout
+    url: /trainer/access-and-logistics/
+  - label: Lab safety orientation
+    url: /trainer/lab-safety-orientation/
+  - label: Public training pathway
+    url: /training.html
+---
+
 # Trainer Readiness
 
 Last reviewed: 2026-07-31
 
 Breakerspace instrument training is delivered mostly by Breakerspace Lab Assistants. This file defines who may deliver a training, how someone becomes qualified on an instrument, and what a trainer does when a session does not go as planned.
 
-It exists because [`../training.md`](../training.md) tells users their session will be led by "Breakerspace staff or another designated trainer" without defining what makes someone designated, and because [`../_staff/site-todo.md`](../_staff/site-todo.md) requires a practice training per guide without saying where that is recorded.
+**Breakerspace Lab Assistant** is the role name for the lab's hourly undergraduate student positions. **Trainer** describes a function: a qualified Lab Assistant, the lab manager, or another designated person may deliver a particular instrument training.
+
+It exists because the [public training page]({% link training.md %}) tells users their session will be led by "Breakerspace staff or another designated trainer" without defining what makes someone designated. The corresponding practice-training work is tracked in the repository's `_staff/site-todo.md`; the private qualification record remains outside the site.
 
 Do not put private student information in this repository. Keep the trainer roster and any individual's progress in the staff-facing system described under [Recording Readiness](#recording-readiness), not here. Do not record physical-clearance names, account credentials, or personal Kerberos identifiers in this file.
 
@@ -14,7 +30,7 @@ These are routinely discussed together and are easy to conflate. They have diffe
 
 | Onboarding | Who it is for | Who does it | Where it lives |
 | --- | --- | --- | --- |
-| **New lab user** | A student who just completed instrument training | Any lab staff, as training closeout | [`access-and-logistics.md`](access-and-logistics.md#trainer-closeout-sequence) |
+| **New lab user** | A student who just completed instrument training | Any lab staff, as training closeout | [Training access and closeout]({% link _staff-training/access-and-logistics.md %}#trainer-closeout-sequence) |
 | **New staff account setup** | A newly hired Breakerspace Lab Assistant | Lab manager | [Staff Account Setup](#staff-account-setup) below |
 | **Trainer qualification** | A staff member preparing to deliver training on a specific instrument | Guide owner or lab manager | [Becoming Qualified](#becoming-qualified-on-an-instrument) below |
 
@@ -40,7 +56,7 @@ Slack and Dropbox admin rights are what allow a staff member to invite users dur
 * [ ] Create an [MIT Dropbox for Business account](https://ist.mit.edu/dropbox/business) if one does not already exist. Team membership cannot be granted before the account exists — the same constraint that applies to trainees.
 * [ ] Confirm scheduled shifts in LibCal.
 * [ ] Schedule at least one training session per week during a shift.
-* [ ] Read the closeout sequence in [`access-and-logistics.md`](access-and-logistics.md) and the guide for each instrument they will train on.
+* [ ] Read the [training access and closeout sequence]({% link _staff-training/access-and-logistics.md %}) and the guide for each instrument they will train on.
 * [ ] Submit weekly hours through the MIT payroll system **and** email the total submitted to the lab manager and DMSE HR for approval. Submitting without the email leaves the approval incomplete.
 
 ## Becoming Qualified On An Instrument
@@ -52,7 +68,7 @@ The requirement in `site-todo.md` is that each guide gets at least one practice 
 ### The Four Stages
 
 1. **Be a trained user.** Complete the instrument's own user training and use the instrument independently enough to have encountered its ordinary annoyances. Someone who has only ever seen the instrument work correctly cannot recognize a bad result.
-2. **Read the guide and the public page.** Work through the staff guide, the public operating page, and the Quick Guide together. The guide deliberately contains no operating sequence of its own, so a trainer who has not read the public page does not know the workflow they are about to teach. Read the [lab safety orientation](lab-safety-orientation.md) too, and confirm every location in it by walking the lab — a trainer cannot point out a campus phone they have not found.
+2. **Read the guide and the public page.** Work through the staff guide, the public operating page, and the Quick Guide together. The guide deliberately contains no operating sequence of its own, so a trainer who has not read the public page does not know the workflow they are about to teach. Read the [lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}) too, and confirm every location in it by walking the lab — a trainer cannot point out a campus phone they have not found.
 3. **Observe a session.** Watch a qualified trainer deliver the full session, including closeout. Closeout is the part most often skipped in practice and the part with the most durable consequences.
 4. **Deliver a practice session** to a qualified trainer or another staff member acting as the participant, covering the whole guide including the Level 1 exercise and closeout. The observer confirms readiness and records it.
 
@@ -62,14 +78,14 @@ A staff member who has completed stage 4 for an instrument may deliver that inst
 
 The observer is checking whether an ordinary session would go well, not conducting an exam.
 
-* [ ] The [lab safety orientation](lab-safety-orientation.md) was delivered, on foot, with each location physically pointed out.
+* [ ] The [lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}) was delivered, on foot, with each location physically pointed out.
 * [ ] The full Level 1 exercise was completed and produced a recognizable, correct result.
 * [ ] The trainer knew what a *bad* result looks like on this instrument and could name at least one way the session's data could have been wrong.
 * [ ] The instrument's stop-and-ask-for-help conditions were stated, not skipped.
 * [ ] Safety-critical and damage-critical steps specific to this instrument were covered correctly.
 * [ ] The trainer could locate the Quick Guide, detailed instructions, and common failure modes on the public page while at the instrument.
 * [ ] The complete closeout sequence was performed, including the correct Moira group.
-* [ ] For the XRD, hardness tester, and ion mill: the trainer did **not** describe the Moira add as granting access, and knew what actually governs sign-in. See [comms-only groups](access-and-logistics.md#comms-only-groups-xrd-hardness-tester-and-ion-mill).
+* [ ] For the XRD, hardness tester, and ion mill: the trainer did **not** describe the Moira add as granting access, and knew what actually governs sign-in. See [comms-only groups]({% link _staff-training/access-and-logistics.md %}#comms-only-groups-xrd-hardness-tester-and-ion-mill).
 * [ ] The instrument was left in its expected state.
 
 ### Instruments Needing Extra Care
@@ -101,7 +117,7 @@ The canvas and this file describe different things, and should keep doing so. **
 
 Trainers are mostly undergraduates who may be encountering these situations for the first time. Defaults matter more than completeness.
 
-**Nobody arrives.** Wait for the reservation-holder grace period, then use the time for guide review or instrument checks. Note the no-show. There is no penalty for a missed session — [`../training.md`](../training.md) says so deliberately, and trainers should not improvise one.
+**Nobody arrives.** Wait for the reservation-holder grace period, then use the time for guide review or instrument checks. Note the no-show. There is no penalty for a missed session — the [public training page]({% link training.md %}) says so deliberately, and trainers should not improvise one.
 
 **More people arrive than registered.** The limit is three participants. A fourth person should be asked to register for another session rather than added on the spot; the limit exists for sightlines and safe sample handling, not administrative tidiness.
 
@@ -109,7 +125,7 @@ Trainers are mostly undergraduates who may be encountering these situations for 
 
 **The instrument is not working.** Do not troubleshoot beyond the documented common failure modes with participants waiting. Convert the session to a demonstration and discussion using the public page, reschedule the hands-on portion, and report the fault.
 
-**Something is damaged, or someone is hurt.** Follow [`../safety.md`](../safety.md). Injuries and near misses are reported even when resolved, and the reporting path differs for unpaid students versus paid staff. Reporting is for fixing the condition, not for blame — a trainer who breaks something during a training should say so.
+**Something is damaged, or someone is hurt.** Follow the [public safety page]({% link safety.md %}). Injuries and near misses are reported even when resolved, and the reporting path differs for unpaid students versus paid staff. Reporting is for fixing the condition, not for blame — a trainer who breaks something during a training should say so.
 
 **A participant cannot safely do a step.** Involve them in another meaningful part of the workflow. The guides already allow dividing the Level 1 exercise; every participant needs a real role, not every step.
 
@@ -125,4 +141,4 @@ The LibCal terminology changes were completed with the template revision on 2026
 
 * Whether the extra-care instrument list is policy or guidance, confirmed with the lab manager.
 * Whether any instrument should require a second staff member present for *every* training rather than only for a new trainer's first.
-* Reassigning individual guides from the lab manager to Breakerspace Lab Assistant owners as they take on particular instruments; see [guide owners](access-and-logistics.md#guide-owners).
+* Reassigning individual guides from the lab manager to Breakerspace Lab Assistant owners as they take on particular instruments; see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners).

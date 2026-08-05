@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 # [Instrument Name] Staff Training Guide
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.

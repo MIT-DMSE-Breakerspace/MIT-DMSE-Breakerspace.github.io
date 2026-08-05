@@ -22,6 +22,17 @@ INSTRUMENT_PAGES = %w[
   xrd
 ].freeze
 
+TRAINER_PAGES = %w[
+  index
+  access-and-logistics
+  ftir
+  lab-safety-orientation
+  optical
+  trainer-readiness
+].freeze
+
+INTERACTIVE_TRAINER_PAGES = %w[ftir optical].freeze
+
 ASSET_RULES = [
   ["published asset", "assets/**/*", 25 * 1024 * 1024],
   ["instructional video", "assets/media/**/*.{mp4,webm}", 10 * 1024 * 1024],
@@ -78,6 +89,40 @@ INSTRUMENT_PAGES.each do |slug|
   end
 end
 
+TRAINER_PAGES.each do |slug|
+  path = slug == "index" ? SITE.join("trainer", "index.html") : SITE.join("trainer", slug, "index.html")
+  unless path.file?
+    errors << "Missing built trainer page: #{relative(path)}"
+    next
+  end
+
+  document = Nokogiri::HTML(path.read)
+  robots = document.at_css('meta[name="robots"]')
+  unless robots && robots["content"].to_s.split(",").map(&:strip).include?("noindex")
+    errors << "#{relative(path)} must include a noindex robots directive"
+  end
+
+  h1_count = document.css("main h1").length
+  errors << "#{relative(path)} must contain exactly one H1; found #{h1_count}" unless h1_count == 1
+end
+
+INTERACTIVE_TRAINER_PAGES.each do |slug|
+  path = SITE.join("trainer", slug, "index.html")
+  next unless path.file?
+
+  document = Nokogiri::HTML(path.read)
+  errors << "#{relative(path)} has no interactive checklist items" if document.css('.trainer-guide-content input[type="checkbox"]').empty?
+  errors << "#{relative(path)} is missing the trainer checklist script" if document.css('script[src*="trainer-checklist.js"]').empty?
+end
+
+admin_output = Dir.glob(SITE.join("**", "{_admin,libcal-*,qualtrics-*}*"))
+admin_output.each { |path| errors << "Administrative source must not be published: #{relative(path)}" }
+
+%w[README instrument-training-template].each do |slug|
+  path = SITE.join("trainer", slug, "index.html")
+  errors << "Planning source must not be published: #{relative(path)}" if path.exist?
+end
+
 Dir.glob(SITE.join("**", "*.html")).sort.each do |path|
   document = Nokogiri::HTML(File.read(path))
 
@@ -127,7 +172,7 @@ ASSET_RULES.each do |label, pattern, maximum|
 end
 
 if errors.empty?
-  puts "Site quality checks passed: instrument headings, public content, and asset budgets."
+  puts "Site quality checks passed: instrument and trainer pages, public content, and asset budgets."
   exit
 end
 

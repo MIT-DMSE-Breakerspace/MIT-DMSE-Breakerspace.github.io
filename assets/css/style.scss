@@ -595,6 +595,200 @@ main table a:focus-visible {
   color: #3f454a;
 }
 
+.trainer-portal-bar {
+  display: flex;
+  gap: 0.65rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.8rem;
+  border-top: 4px solid #ae0721;
+  background: #fff4f5;
+}
+
+.trainer-portal-bar a {
+  color: #8b061a;
+  font-weight: 800;
+}
+
+.trainer-portal-bar span {
+  color: #5c4549;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.trainer-guide-status {
+  margin: 0 0 1rem;
+  padding: 0.62rem 0.75rem;
+  border-left: 4px solid #e1a000;
+  background: #fff8df;
+}
+
+.trainer-guide-status span {
+  display: block;
+  color: #5b4b16;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.trainer-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.2rem;
+}
+
+.trainer-quick-links a {
+  display: inline-flex;
+  min-height: 2.6rem;
+  padding: 0.5rem 0.72rem;
+  border: 2px solid #007aa8;
+  border-radius: 4px;
+  align-items: center;
+  color: #005f7f;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.trainer-quick-links a:hover,
+.trainer-quick-links a:focus-visible {
+  background: #eaf7fc;
+  color: #004c66;
+  text-decoration: underline;
+}
+
+.trainer-session-tools {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.65rem 1rem;
+  align-items: center;
+  margin: 0 0 1.4rem;
+  padding: 0.8rem;
+  border: 1px solid #9ec7d8;
+  border-left: 5px solid #007aa8;
+  border-radius: 4px;
+  background: #f3f9fc;
+  box-shadow: 0 3px 10px rgb(23 36 42 / 16%);
+}
+
+.trainer-session-tools[hidden] {
+  display: none;
+}
+
+.trainer-session-tools h2,
+.trainer-session-tools p {
+  margin: 0;
+}
+
+.trainer-session-tools h2 {
+  color: #17242a;
+  font-size: 1rem;
+}
+
+.trainer-session-tools [data-trainer-progress] {
+  margin-top: 0.12rem;
+  color: #3f494e;
+  font-size: 0.88rem;
+}
+
+.trainer-session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: flex-end;
+}
+
+.trainer-session-actions button {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.7rem;
+  border: 2px solid #007aa8;
+  border-radius: 4px;
+  background: #fff;
+  color: #005f7f;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.trainer-session-actions button:hover:not(:disabled) {
+  background: #eaf7fc;
+}
+
+.trainer-session-actions button:disabled {
+  border-color: #7b8a91;
+  color: #596970;
+  cursor: default;
+}
+
+.trainer-session-tools .trainer-session-note {
+  grid-column: 1 / -1;
+  padding-top: 0.6rem;
+  border-top: 1px solid #bfd8e2;
+  color: #526067;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.trainer-guide-content li:has(> .trainer-checklist-box) {
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 3px;
+}
+
+.trainer-checklist-box {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 0.4rem 0 -1.65rem;
+  vertical-align: -0.22rem;
+  accent-color: #007aa8;
+  cursor: pointer;
+}
+
+.trainer-guide-content .trainer-task-complete {
+  background: #edf5ee;
+  color: #52645a;
+}
+
+.trainer-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0.7rem 0 1.7rem;
+}
+
+.trainer-card-grid > section {
+  min-width: 0;
+  padding: 0.85rem 0.9rem;
+  border-top: 3px solid #009de6;
+  background: #f5f8fa;
+}
+
+.trainer-card-grid h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.trainer-card-grid p {
+  margin: 0;
+}
+
+.trainer-portal-footer {
+  margin-top: 2.2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #cbd3d7;
+  color: #526067;
+  font-size: 0.85rem;
+}
+
 .quick-actions-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1610,6 +1804,13 @@ main table a:focus-visible {
 }
 
 @media print {
+  body.trainer-portal-page .trainer-portal-bar,
+  body.trainer-portal-page .trainer-quick-links,
+  body.trainer-portal-page .trainer-session-tools,
+  body.trainer-portal-page .trainer-portal-footer {
+    display: none !important;
+  }
+
   body.has-print-quick-guide {
     margin: 0;
     padding: 0;
@@ -1804,6 +2005,31 @@ main table a:focus-visible {
 }
 
 @media print, screen and (max-width: 720px) {
+  .trainer-portal-bar,
+  .trainer-session-tools {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-portal-bar {
+    flex-direction: column;
+  }
+
+  .trainer-session-actions,
+  .trainer-session-actions button,
+  .trainer-quick-links a {
+    width: 100%;
+  }
+
+  .trainer-session-actions {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .trainer-card-grid {
+    grid-template-columns: 1fr;
+  }
+
   .instrument-hero {
     float: none;
     width: 100%;

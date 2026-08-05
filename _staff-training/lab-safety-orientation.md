@@ -1,3 +1,15 @@
+---
+title: Lab Safety Orientation For Trainers
+description: The shared in-person safety orientation delivered at the beginning of every instrument training.
+guide_status: Current shared reference
+guide_revision: 2026-07-31
+trainer_links:
+  - label: Safety And Lab Use
+    url: /safety.html
+  - label: Emergency contacts
+    url: /safety.html#emergency-or-immediate-danger
+---
+
 # Lab Safety Orientation
 
 Last reviewed: 2026-07-31
@@ -8,7 +20,7 @@ This is the canonical version. Instrument guides reference it and add only instr
 
 ## Why This Exists
 
-[`../safety.md`](../safety.md) is thorough, and the one-time Qualtrics record has trainees review and acknowledge it. But reading a rule and being able to act on it in the room are different.
+The [public safety page]({% link safety.md %}) is thorough, and the one-time Qualtrics record has trainees review and acknowledge it. But reading a rule and being able to act on it in the room are different.
 
 As of 2026-07-31, `safety.md` publishes every emergency-equipment location: the sink-area first-aid cabinet, shower, eyewash, spill kit, and extinguisher; the campus phone on the desk by the lab doors; and the fact that alarm pulls are in the main corridor rather than in the lab. So this orientation is no longer the sole source for any of it.
 
