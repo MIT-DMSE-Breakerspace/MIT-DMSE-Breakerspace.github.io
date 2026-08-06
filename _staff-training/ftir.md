@@ -86,8 +86,8 @@ Deliver this on foot, pointing at each thing. Scale it down when everyone has cl
 Trainer-led, participants following Quick Guide section 3. Every canonical startup bullet appears here.
 
 * [ ] State the leave-powered-on rule and why the instrument stays on. *Check: a participant can say why.*
-* [ ] Participant logs on to the workstation with their own MIT Kerberos, unaided.
-* [ ] Participant starts **OMNIC**.
+* [ ] **You log on to the workstation, with participants watching.** They cannot log on themselves yet — workstation access comes from the `{{ page.moira_group }}` group you add them to at closeout. Say that out loud: it is why their own Kerberos will work from their next visit onward, and it tells them what to do if it does not.
+* [ ] Start **OMNIC**, or have a participant do it once you are logged in.
 * [ ] Show where **system status** is; participant confirms the instrument connection. *Check: they can say what a failed connection looks like.*
 * [ ] Participant removes the crystal cover — **gloves on before releasing the pressure tower**, not after. *Check: gloves on before touching the tower.*
 * [ ] Demonstrate the center-outward wipe with isopropyl alcohol on a Kimwipe, then each participant repeats it. See [cleaning the ATR crystal]({% link instruments/ftir.md %}#crystal). *Check: they confirm nothing remains before proceeding.*
@@ -118,7 +118,7 @@ Participant-led from the Quick Guide, with as little prompting as is safely prac
 
 * [ ] Participant confirms all needed data is saved and copied. *Check: they know where the files are and how to retrieve them.*
 * [ ] Participant closes OMNIC.
-* [ ] Participant logs off the workstation.
+* [ ] Log off the workstation — your session, so you do it, but say that logging off is part of every shutdown so nobody leaves an account open.
 * [ ] Participant cleans the crystal and surrounding plate, gloved. *Check: crystal and plate are genuinely clean.*
 * [ ] Participant covers the crystal plate and clamps it with the pressure tower. *Check: cover seated and clamped.*
 * [ ] Restate that the instrument is **left powered on**. *Check: nobody switches it off.*
