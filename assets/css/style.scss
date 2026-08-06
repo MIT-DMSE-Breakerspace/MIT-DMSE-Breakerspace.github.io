@@ -792,6 +792,64 @@ body.trainer-portal-page {
   color: #52645a;
 }
 
+/* Phase markers inside the session checklist. These are wayfinding, not section
+   breaks: the checklist should read as one continuous list, so the marker is a
+   thin rule with a small label rather than a heading. A marker between two task
+   lists does split the underlying <ul>, so the vertical rhythm here is what
+   keeps the run feeling unbroken. */
+.trainer-phase {
+  margin: 1.6rem 0 0.7rem;
+  padding-top: 0.45rem;
+  border-top: 2px solid #d8dde2;
+  color: #526067;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.trainer-phase:first-of-type {
+  margin-top: 1rem;
+}
+
+.trainer-phase > span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  background: #eef3f5;
+  color: #17242a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.trainer-phase a {
+  font-weight: 700;
+}
+
+/* Tighten the gap where a phase marker follows a task list, so the split <ul>
+   elements still look like one run of items. */
+.trainer-guide-content ul:has(> li > .trainer-checklist-box) {
+  margin-bottom: 0;
+}
+
+.trainer-facts {
+  margin: 1.1rem 0 1.6rem;
+}
+
+.trainer-facts table {
+  margin: 0;
+}
+
+.trainer-facts td:first-child {
+  width: 11rem;
+  white-space: nowrap;
+}
+
+.trainer-facts thead {
+  display: none;
+}
+
 .trainer-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
