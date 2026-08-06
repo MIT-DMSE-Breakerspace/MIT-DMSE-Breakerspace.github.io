@@ -110,23 +110,28 @@ The unchanged groups — `-ftir`, `-raman`, `-xrd`, `-psa`, and `-sem` — alrea
 
 ## Trainer Closeout Sequence
 
-Every standard instrument training ends with the same steps. Instrument guides should reference this list and add only instrument-specific items, such as returning a particular sample kit or confirming a covered ATR crystal.
+Every standard instrument training ends with the same closeout. Instrument guides should reference this list and add only instrument-specific items, such as returning a particular sample kit or confirming a covered ATR crystal. The attendee-facing explanation must fit inside the 50-minute participant window; the trainer completes account administration and documentation afterward.
 
-1. **Moira.** Add each attendee to the instrument's group from the table above, whether or not that group grants a workstation login. Do not record attendee Kerberos usernames in this repository.
-2. **Workstation sign-in.** For a domain-managed instrument, the Moira add in step 1 is what enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, the Moira add grants nothing — cover the actual sign-in arrangement at the instrument instead, and do not describe the Moira add as the thing that grants access. The XRD touchscreen needs no sign-in at all, but its companion export/analysis workstation may.
+Before attendees leave:
 
-   **Timing consequence for the session itself:** because the add happens at closeout, a first-time trainee has no workstation login *during* their own training. On an access-controlled instrument the **trainer performs the initial login while participants watch** — a guide must not ask a trainee to log on with their own Kerberos at the start of a first session, because it will fail. Say why out loud during the session: it explains what the closeout add does, and what to do if their login is not working on the next visit.
-3. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and point them to `#breakerspace-help`.
-4. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
-5. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Help them through the self-service steps; staff cannot add someone before the account exists.
-6. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
+1. **Explain the Moira handoff.** Tell attendees that you will add them to the instrument's group after the session and what that membership does. For a domain-managed instrument, the add enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, it grants nothing — cover the actual sign-in arrangement instead. The XRD touchscreen needs no sign-in, but its companion export/analysis workstation may.
+2. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
+3. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Confirm they know the self-service path; walk through it when time allows or include it in follow-up. Staff cannot add someone before the account exists.
+4. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
+
+After attendees leave:
+
+5. **Moira.** Add each attendee to the instrument's group from the table above, whether or not that group grants a workstation login. Do not record attendee Kerberos usernames in this repository.
+6. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and include `#breakerspace-help` in the follow-up.
 7. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
+
+**Timing consequence for the session itself:** because the Moira add happens after attendees leave, a first-time trainee has no workstation login *during* their own training. On an access-controlled instrument the **trainer performs the initial login while participants watch** — a guide must not ask a trainee to log on with their own Kerberos at the start of a first session, because it will fail. Say why out loud during the session: it explains what the later add does, and what to do if their login is not working on the next visit.
 
 There is currently no skills demonstration, no training expiration, and no recurring retraining requirement.
 
 ## Scheduling And Enrollment
 
-Standard sessions are **60 minutes** with a **maximum of three participants**. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
+Standard calendar blocks are **60 minutes** with **50 participant-facing minutes** and a **maximum of three participants**. Breakerspace Lab Assistants should schedule themselves with time before the event for setup and after it for Moira, Slack, documentation, and equipment closeout. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
 
 ### Fall Schedule Timing
 
@@ -138,7 +143,7 @@ Per-instrument LibCal training events **do exist** — there are ten instrument-
 
 All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state, procedure, and completion evidence are maintained as administrative records in `../_admin/`.
 
-The timing and attendance questions are resolved. A one-hour calendar block provides 50 usable training minutes internally; do not publish MIT's informal early-start/end convention. Public copy asks attendees to plan to attend the full session and to ask the trainer whether they need to register again if they arrive late or leave early.
+The timing and attendance questions are resolved. A one-hour calendar block provides 50 participant-facing minutes internally; do not publish MIT's informal early-start/end convention. Public copy asks attendees to plan to attend the full session and to ask the trainer whether they need to register again if they arrive late or leave early. Guide phase timings are planning hypotheses until a practice run measures them; revise the allocation from observed sessions rather than protecting an aspirational minute-by-minute schedule.
 
 ## Guide Owners
 

@@ -101,7 +101,7 @@ The Quick Guide and staff training guide are **sibling derivatives of the canoni
 * The **Quick Guide** is an at-instrument performance aid for recently trained and trained users following one routine workflow.
 * The **staff training guide** is the trainer's curriculum, SOP-coverage checklist, Level 1 exercise, coaching plan, and administrative closeout.
 
-Do not require the Quick Guide to be written before the staff guide can be drafted, or the reverse. Both can be developed in parallel once the canonical SOP and intended Level 1 workflow are stable. Before a training is marked ready for routine delivery, however, both artifacts must be reviewed against the same SOP, the Quick Guide must be available in print at the instrument, and the staff guide must show how every SOP phase is covered. See [`../_staff-training/README.md`](../_staff-training/README.md) for the trainer-facing model.
+Do not require the Quick Guide to be written before the staff guide can be drafted, or the reverse. Both can be developed in parallel once the canonical SOP and intended Level 1 workflow are stable. Before a training is marked ready for routine delivery, however, both artifacts must be reviewed against the same SOP, the Quick Guide must be available in print at the instrument, and the staff guide must show how the complete normal-use path is covered. See [`../_staff-training/README.md`](../_staff-training/README.md) for the trainer-facing model.
 
 ### Quick Guide Audience And Delivery
 
@@ -119,7 +119,7 @@ Every Quick Guide must:
 
 * Identify itself as a recently-trained/trained-user reference that does not replace training.
 * Draw technical claims and operating steps from the canonical instrument page rather than introduce an alternate workflow.
-* Represent every canonical startup and shutdown step. Shortening or regrouping is acceptable only when the meaning and order remain auditable.
+* Represent the complete normal-use path a trained user encounters when the instrument is in the state the previous user should have left it. Routine shutdown must restore that state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the Quick Guide states the expected condition and directs users to the page or staff if reality differs.
 * Cover one default routine workflow, with compact branches only for genuinely routine choices such as sample type, holder, accessory, or observation mode.
 * Include the minimum safe sample-compatibility, preparation, PPE, and stop-and-ask guidance needed while standing at the instrument.
 * Use numbered steps, exact control names, and selected photographs or screenshots where users must locate or recognize hardware or software controls.
@@ -152,11 +152,11 @@ If the routine workflow cannot fit legibly on two sides, do not shrink or cram t
 
 Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Their shared page structure and `quick-guide-*` CSS classes are the implementation starting point.
 
-**`ftir.html` is the reference implementation.** Rebuilt 2026-08-03 under the contract above and corrected through four review rounds, it is the one to copy: numbered steps across both sides so a staff guide can cite them individually, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair.
+**`ftir.html` is the reference implementation for content.** Rebuilt 2026-08-03 under the contract above and corrected through later review, it demonstrates numbered workflow sections, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair. Its two-page composition is still a layout candidate pending physical proof; do not automatically apply that composition to another instrument.
 
 The optical guide predates the contract and still carries interpretation material. The XRD guide also predates it, is dense, and was written before its staff guide existed. Both need the same retrofit FTIR received.
 
-**None of the three has been print-tested.** FTIR Side 2 is roughly 582 words after correctness work grew it from 378. Verify the two-page budget before copying any of their density, and expect a correct first draft to be longer than a fluent one.
+**None of the three has received its physical print proof.** FTIR currently renders as two explicit Letter pages without clipping or overlap; test print-scale legibility, grayscale reproduction, QR scanning, and duplex flip before treating its layout as a model. Keep current measurements and readiness status in [`../_staff-training/README.md`](../_staff-training/README.md#quick-guide-layout-model) rather than duplicating them here.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 

@@ -125,9 +125,9 @@ Close with the culture point:
 * Report damage, spills, injuries, and near misses **even when they seem resolved**, and say directly that reporting exists to fix conditions, not to blame the person who asked for help. Trainees who believe otherwise hide problems.
 * Mention that a user may end up in the lab alone, and that unfamiliar or higher-risk work is a reason to ask staff rather than proceed.
 
-## Fitting It Into 60 Minutes
+## Fitting It Into The Participant Window
 
-The orientation takes about five minutes of a fixed 60-minute session, so something else compresses. Take it from the instrument-overview discussion rather than from cleanup, shutdown, or closeout — those are the parts with consequences that outlast the session.
+The orientation takes about five minutes of the 50 participant-facing minutes in a one-hour calendar block, so something else compresses. Take it from the instrument-overview discussion rather than from cleanup, shutdown, or attendee closeout — those are the parts with consequences that outlast the session. Trainer setup happens before attendees arrive, and trainer-only administration continues after they leave.
 
 If a particular instrument's full workflow genuinely cannot fit alongside the orientation, that is a scheduling decision to raise with the lab manager, not a reason to rush the end of the session. Do not solve a timing problem by skipping shutdown.
 

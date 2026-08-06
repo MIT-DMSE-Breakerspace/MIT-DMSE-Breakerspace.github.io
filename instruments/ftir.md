@@ -256,6 +256,8 @@ Once the background is collected, load the sample according to the instructions 
 
 If preview is enabled, use the live spectrum as a practical check. If the signal is weak, improve contact between the sample and ATR crystal, adjust the pressure tip, or ask staff whether the sample is appropriate for ATR.
 
+After the full scan completes, give the spectrum a descriptive name when OMNIC prompts.
+
 ### Volatiles Cover {#volatiles-cover}
 
 <figure style="margin-left:0; margin-right:0;">
@@ -314,8 +316,9 @@ When comparing spectra:
 
 ## Exercises {#exercises}
 
-* **Level 1 - General training:** Collect ATR spectra from a known plastic, a paper product, and a non-volatile liquid. Save each spectrum and note which handling step affected signal strength most.
+* **Level 1 - General training:** Collect ATR spectra from two approved, non-hazardous solids chosen to give visibly different spectra. Save each spectrum, compare their overall patterns, and note which handling step affected signal strength most.
 * **Level 1 - Cleaning check:** Collect a background on a clean crystal, collect a sample, clean the crystal, then collect a second background. Compare whether any negative features or residue-related peaks appear.
+* **Level 2 - Liquid-sample extension:** With staff guidance, collect an ATR spectrum from an approved non-volatile liquid. Practice loading without the pressure tower, containing the droplet, and cleaning the crystal and surrounding plate completely afterward.
 * **Level 2 - Sample-contact comparison:** Collect the same solid sample with weak contact and with proper pressure. Compare signal strength and peak quality.
 * **Level 2 - Unknown comparison:** Collect an unknown non-hazardous polymer or residue and compare it with a known reference or database result. Report the evidence for and against the proposed identification.
 * **Level 3 - Accessory comparison:** With staff guidance, compare ATR with transmission or diffuse reflectance for a sample where the method choice changes the spectrum.

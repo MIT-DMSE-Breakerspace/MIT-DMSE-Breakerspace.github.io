@@ -36,7 +36,7 @@ These are routinely discussed together and are easy to conflate. They have diffe
 
 The third is the one that has not existed in written form. Account setup makes someone *able* to add a trainee to a Moira group; it does not make them able to *teach the instrument*. Those are separate readiness questions and only the first has been tracked.
 
-A useful consequence of the current permission model: **any lab staff member can perform the user-onboarding steps** — Moira adds, Slack invitations, Dropbox team invitations. Access closeout is not gated on the lab manager. Only physical tap access is, and that is processed after the trainee's one-time Qualtrics record rather than by the trainer.
+A useful consequence of the current permission model: **any lab staff member can perform the trainer-owned user-onboarding steps** — Moira adds, Slack invitations, and approval of Dropbox team requests after a trainee creates the account and submits the request. Access closeout is not gated on the lab manager. Only physical tap access is, and that is processed after the trainee's one-time Qualtrics record rather than by the trainer.
 
 ## Staff Account Setup
 
@@ -49,7 +49,7 @@ Completed by the lab manager when a Breakerspace Lab Assistant is hired. Each it
 * [ ] Add to the Breakerspace Slack workspace, add to the private staff channel, and grant admin rights.
 * [ ] Invite to the website repository on GitHub.
 
-Slack and Dropbox admin rights are what allow a staff member to invite users during training closeout, so these are prerequisites for delivering training, not optional extras.
+Slack admin rights allow a staff member to send workspace invitations, and Dropbox admin rights allow approval of a trainee's self-service team request. These are prerequisites for completing training follow-up, not optional extras.
 
 ### What The New Staff Member Does
 
@@ -63,7 +63,7 @@ Slack and Dropbox admin rights are what allow a staff member to invite users dur
 
 Readiness is **per instrument**, not global. A staff member fully qualified on the FTIR is not thereby qualified on the Instron. Track it per instrument and per person.
 
-The requirement in `site-todo.md` is that each guide gets at least one practice training before it is used routinely. That serves two purposes at once — it validates the guide, and it qualifies the trainer — and those should not be confused. A guide's first practice run tests the document. Later practice runs test the trainer.
+The requirement in `site-todo.md` is that each guide gets at least one practice training before it is used routinely. That serves two purposes at once — it validates the guide, including whether the participant-facing work fits 50 minutes, and it qualifies the trainer — and those should not be confused. A guide's first practice run tests the document. Later practice runs test the trainer.
 
 ### The Four Stages
 

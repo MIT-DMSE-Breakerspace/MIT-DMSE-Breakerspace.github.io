@@ -4,7 +4,7 @@ published: false
 
 # [Instrument Name] Staff Training Guide
 
-> **This template is behind the current model as of 2026-08-05.** The FTIR guide was restructured as a single continuous session checklist — one run of checkable items in session order, shared safety and closeout pulled in as includes, no separate SOP coverage-map table, rationale below the checklist, and Guide Control split into trainer-facing facts plus a status table. See [the session-checklist model](README.md#the-session-checklist-model) and read [`ftir.md`](ftir.md) as the reference. Copy FTIR's structure rather than the section layout below, which is retained only until the new shape is confirmed by use and extracted here.
+> **This template intentionally retains an older section layout as of 2026-08-06.** The FTIR guide is the current structural reference: one continuous session checklist, shared safety and closeout inline, rationale below, and no separate coverage-map table. Update this template only when prompted to, using generalized versions of specific decisions finalized in the guide under renovation, for the specific purpose of informing future guide development. Until practice and feedback confirm which parts of FTIR should generalize, copy [`ftir.md`](ftir.md)'s structure rather than the section layout below.
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
@@ -12,12 +12,12 @@ A staff training guide is an **outline and checklist for the trainer**, not a ma
 
 Six things follow from that:
 
-* **The canonical instrument page is the operating authority.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
+* **The canonical instrument page is the operating authority.** Every normal-use workflow step here cites the section it comes from, and the trainer names that connection out loud so participants learn where to find conditional recovery, maintenance, and unusual-startup instructions when the instrument is not in its expected ready state.
 * **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
 * **This guide and the Quick Guide are siblings**, both derived from the instrument page. The Quick Guide supplies the physical routine-workflow aid participants hold during the session; this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
 * **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
 * **Guides are sample-agnostic.** State the criteria a training sample must meet, never a specific material, sample-library identifier, or cabinet location. The trainer chooses the material per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
-* **Work on one instrument at a time.** Build this guide and its Quick Guide against real, verifiable content for this instrument. When a decision here generalizes, record it in this template — do not apply it to the other instrument guides in the same pass. See [scope of work](README.md#scope-of-work-one-instrument-at-a-time).
+* **Work on one instrument at a time.** Build this guide and its Quick Guide against real, verifiable content for this instrument. Generalize a finalized decision into this template only when prompted; do not apply it to the other instrument guides in the same pass. See [scope of work](README.md#scope-of-work-one-instrument-at-a-time).
 
 ## Guide Control
 
@@ -27,7 +27,7 @@ Six things follow from that:
 | Public instrument page and SOP | [Relative links] |
 | Quick Guide | [Standalone URL, review date, and physical location at the instrument] |
 | LibCal training | [Template or event link] |
-| Session length | 60 minutes |
+| Session length | 50 participant-facing minutes within a 60-minute calendar block; trainer setup before and administration after |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | [Exercise name and public-page anchor] |
 | Training sample | **Trainer-selected.** [The properties a suitable sample must have. Do not name a material or cabinet location] |
@@ -74,25 +74,25 @@ Guides are **sample-agnostic**: state the criteria, not a material. See [sample-
 * [ ] Remind first-time Breakerspace users to complete the one-time Qualtrics online training record.
 * [ ] Note any project-specific goals or accommodations shared in advance.
 
-## Suggested 60-Minute Agenda
+## Suggested 50-Minute Participant Agenda
 
-Adapt the timing to the instrument while preserving the full workflow and enough time for cleanup.
+Treat this as a starting hypothesis for a practice run, not a promise. Adapt the timing from observed sessions while preserving cleanup, shutdown, and attendee-facing closeout; trainer-only administration continues afterward.
 
 | Time | Activity |
 | --- | --- |
 | 0-3 minutes | Welcome, participant goals, and where to find the public instrument page and help. |
 | 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
-| 8-14 minutes | What the instrument measures, compatible samples, and instrument-specific stop conditions. |
-| 14-22 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
-| 22-45 minutes | Participants complete the Level 1 exercise, dividing and rotating through steps as practical. |
-| 45-53 minutes | Review the result, data quality, file saving, and common failure modes. |
-| 53-60 minutes | Shutdown, cleanup, reservations, access follow-up, and final questions. |
+| 8-13 minutes | What the instrument measures, compatible samples, and instrument-specific stop conditions. |
+| 13-20 minutes | Trainer-guided setup and introduction to the controls used in the Level 1 exercise. |
+| 20-37 minutes | Participants complete the Level 1 exercise, dividing and rotating through steps as practical. |
+| 37-43 minutes | Review the result, data quality, file saving, and common failure modes. |
+| 43-50 minutes | Shutdown, cleanup, attendee-facing access explanation, reservations, and final questions. |
 
 Take compression out of the instrument-overview discussion rather than out of cleanup, shutdown, or closeout.
 
-## SOP Coverage Map
+## Normal-Use Coverage Audit — Legacy Template Section
 
-This table is an audit and teaching plan, not an alternate SOP. Link to the canonical SOP and use short labels rather than rewriting technical instructions. Expand the table so **every startup and shutdown bullet appears individually**. Routine operation may map to a Level 1 workflow section when the grouping remains clear. Do not use "follow the Quick Guide" as the only evidence that a phase was taught.
+The current FTIR model carries these checks directly in one session checklist and does not render a separate table. If this legacy section is used during drafting, treat it only as an audit and fold the results into checkable session items before publication. Account for the complete normal-use path from the state the previous user should have left. Conditional recovery, maintenance, and unusual-startup steps may stay on the canonical page when the guide states the expected condition and directs users to that page or staff if reality differs. Do not use "follow the Quick Guide" as the only evidence that a routine phase was taught.
 
 | Canonical SOP item | Quick Guide step | How training covers it | Participant check |
 | --- | --- | --- | --- |
@@ -104,7 +104,7 @@ This table is an audit and teaching plan, not an alternate SOP. Link to the cano
 | Shutdown: [one row for each remaining shutdown item] | [Quick Guide location] | [Coverage] | [Check] |
 | Stop and ask: [critical condition or linked group] | [Quick Guide location] | [Prompt or scenario] | [Expected response] |
 
-**Quick Guide layout and step-citation format are under revision as of 2026-08-05 and are not settled.** Cite whatever locator the current Quick Guide actually supports, and expect this column's convention to change. Avoid citing a physical page or side: which side a step lands on is a layout outcome that moves whenever content does.
+**The two-page FTIR Quick Guide layout remains a candidate pending physical proof.** Cite section numbers rather than a physical page or side: which side a step lands on is a composition choice that may change with later content.
 
 A canonical SOP item with no matching page section is a gap in the instrument page, not a reason to write the procedure out here. Record it in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 
@@ -131,7 +131,7 @@ Do not state expected results — band positions, feature sizes, curve shapes �
 | [Core operation a beginner needs] | [Capability left for later, staff-guided work, or a Level 2 exercise] |
 | [Core operation a beginner needs] | [Capability left for later] |
 
-Excluding something is not hiding it — say where it lives instead, such as the detailed operating instructions or a staff conversation. The exclusions matter as much as the inclusions, because they are what keeps a session finishable in an hour and what stops different trainers from teaching different things.
+Excluding something is not hiding it — say where it lives instead, such as the detailed operating instructions or a staff conversation. The exclusions matter as much as the inclusions, because they are what keeps the participant-facing work finishable in 50 minutes and what stops different trainers from teaching different things.
 
 ### Participant Workflow
 
@@ -175,19 +175,23 @@ Participants may divide the workflow. Rotate roles when the instrument and time 
 * [Unexpected software, vacuum, motion, force, temperature, or detector behavior.]
 * [Data-quality symptom that should not be solved by changing untrained settings.]
 
-## Post-Training Checklist
+## Session Closeout
 
-Complete these tasks before considering the session closed.
+### Before Attendees Leave
 
 * [ ] Confirm that all samples are removed and the instrument is clean and in its expected state.
 * [ ] Confirm that participants know where their files were saved and how to access them.
 * [ ] Ask participants to locate the SOP, detailed operating guidance, and common failure modes on the public instrument page.
 * [ ] Confirm that the printed Quick Guide is returned to its place at the instrument, is legible and undamaged, and carries the same review state as the web version.
-* [ ] Add every attendee directly to the instrument's MIT Moira group: `dmse-brkrspc-[page slug]`. Confirm the name in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group and some renames may still be pending.
-* [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
+* [ ] Tell attendees that you will add them to the instrument's MIT Moira group after the session and what that membership does for this instrument. Confirm the group in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.
-* [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested membership in the DMSE Breakerspace Team, or help them complete the self-service steps.
+* [ ] For first-time users, confirm that they know how to create an MIT Dropbox for Business account and request membership in the DMSE Breakerspace Team. Walk through the self-service steps when time allows, or include them in the follow-up.
 * [ ] Point participants to reservations, the public operating reference, `#breakerspace-help`, and the staff email.
+
+### After Attendees Leave
+
+* [ ] Add every attendee directly to the instrument's MIT Moira group: `dmse-brkrspc-[page slug]`.
+* [ ] Send every attendee an invitation to the Breakerspace Slack workspace and include `#breakerspace-help` in the follow-up.
 * [ ] Return the training sample and supplies to their locations and note anything that needs replenishment.
 * [ ] Record any instrument, guide, exercise, or sample-library issue discovered during the session.
 

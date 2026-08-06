@@ -1,19 +1,19 @@
 ---
 title: FTIR Trainer Guide
-description: Session checklist and teaching outline for a one-hour Nicolet iS5 FTIR training.
+description: Session checklist and teaching outline for a 50-minute participant-facing Nicolet iS5 FTIR training within a one-hour booking.
 guide_status: Needs operational check and practice run
-guide_revision: 2026-08-05
+guide_revision: 2026-08-06
 interactive_checklist: true
 instrument_name: Thermo Scientific Nicolet iS5 FTIR with iD7 ATR accessory
 moira_group: dmse-brkrspc-ftir
-session_length: 60 minutes
+session_length: 50 participant-facing minutes within a 60-minute calendar block
 max_enrollment: 3 participants
 guide_owner: Lab manager
 guide_review_state: Pilot draft; operational-owner review required
-last_reviewed: 2026-08-05
+last_reviewed: 2026-08-06
 libcal_template: Nicolet iS5 FTIR Spectrometer Training
 libcal_verified: 2026-08-04
-quick_guide_reviewed: 2026-08-05
+quick_guide_reviewed: 2026-08-06
 quick_guide_laminated: false
 trainer_links:
   - label: Participant Quick Guide
@@ -28,13 +28,13 @@ trainer_links:
 
 # Nicolet iS5 FTIR Staff Training Guide
 
-A one-hour general FTIR training on the routine iD7 ATR workflow. **Every training covers every step of the instrument's [canonical SOP]({% link instruments/ftir.md %}#sop)** — the checklist below is that SOP in teaching order, with the trainer's prompts attached.
+A general FTIR training on the routine iD7 ATR workflow. The checklist covers the complete normal-use path a trained user encounters when the instrument is in the expected ready state, with the trainer's prompts attached. Conditional recovery and unusual-startup instructions remain on the [canonical SOP]({% link instruments/ftir.md %}#sop); teach participants to use that page or ask staff when the instrument is not in its normal starting state.
 
 <div class="trainer-facts" markdown="1">
 
 | | |
 | --- | --- |
-| **Session** | {{ page.session_length }}, maximum {{ page.max_enrollment }} |
+| **Session** | {{ page.session_length }}, maximum {{ page.max_enrollment }}. Schedule trainer setup before and trainer administration after the participant window |
 | **Moira group** | `{{ page.moira_group }}` — see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument) |
 | **Participants hold** | The printed [Quick Guide]({% link quick-guides/ftir.md %}); print a copy each |
 | **Operating authority** | The [instrument page]({% link instruments/ftir.md %}) and its [SOP]({% link instruments/ftir.md %}#sop) |
@@ -53,7 +53,7 @@ Work top to bottom. The phase labels are wayfinding, not separate lists — prog
 * [ ] Confirm OMNIC starts normally and the training save location is available.
 * [ ] Confirm the laminated Quick Guide is at the instrument, legible, and matches the current review date. Print a copy for each participant to hold and mark up.
 * [ ] Open the [operating page]({% link instruments/ftir.md %}) on the workstation, ready to show where the SOP lives.
-* [ ] Prepare nitrile gloves, Kimwipes, isopropyl alcohol, and the self-leveling pressure tip.
+* [ ] Prepare nitrile gloves, Kimwipes, isopropyl alcohol, and the pressure tip or tips appropriate for the selected samples.
 * [ ] Choose and retrieve two solids meeting the [sample criteria](#choosing-a-sample). Confirm both are clean, dry, stable, and able to make real contact with the diamond.
 * [ ] **Confirm you have run both materials yourself, or otherwise know what a good and a bad result looks like on them.** If you have not, run them before the session — this is the judgment the printed guide cannot supply.
 * [ ] Confirm the two will give visibly different spectra, so the comparison teaches a beginner something.
@@ -73,7 +73,7 @@ Deliver this on foot, pointing at each thing. Scale it down when everyone has cl
 
 {% include trainer/checklist-safety.md %}
 
-<p class="trainer-phase" id="phase-context"><span>8–14 minutes</span> What FTIR shows, and what it cannot</p>
+<p class="trainer-phase" id="phase-context"><span>8–13 minutes</span> What FTIR shows, and what it cannot</p>
 
 * [ ] Explain what an FTIR spectrum represents and why ATR contact and crystal cleanliness determine whether it means anything. Reference [what this instrument shows you]({% link instruments/ftir.md %}#science).
 * [ ] Cover compatible samples and what requires staff review, from [compatible materials]({% link instruments/ftir.md %}#materials).
@@ -81,9 +81,9 @@ Deliver this on foot, pointing at each thing. Scale it down when everyone has cl
 * [ ] Show where the SOP, detailed instructions, and failure modes live on the instrument page, so participants can navigate it without you afterward.
 * [ ] Explain the choice of sampling method and pressure tip for each of your two materials, citing [quick method selection]({% link instruments/ftir.md %}#quick-method). *Check: a participant picks the approach for the second sample.*
 
-<p class="trainer-phase" id="phase-startup"><span>14–20 minutes</span> Startup and background — SOP <a href="{% link instruments/ftir.md %}#startup">#startup</a></p>
+<p class="trainer-phase" id="phase-startup"><span>13–19 minutes</span> Startup and background — SOP <a href="{% link instruments/ftir.md %}#startup">#startup</a></p>
 
-Trainer-led, participants following Quick Guide section 3. Every canonical startup bullet appears here.
+Trainer-led, participants following Quick Guide section 3. This is the normal startup path from the expected state: powered on, covered, and clamped. If the instrument is unexpectedly off or otherwise not in that state, use the canonical page or ask staff rather than expanding the routine training checklist into recovery instructions.
 
 * [ ] State the leave-powered-on rule and why the instrument stays on. *Check: a participant can say why.*
 * [ ] **You log on to the workstation, with participants watching.** They cannot log on themselves yet — workstation access comes from the `{{ page.moira_group }}` group you add them to at closeout. Say that out loud: it is why their own Kerberos will work from their next visit onward, and it tells them what to do if it does not.
@@ -94,25 +94,25 @@ Trainer-led, participants following Quick Guide section 3. Every canonical start
 * [ ] Explain what a dirty background does to every spectrum that follows.
 * [ ] Participant collects a background on the bare, unclamped crystal. Show both preview branches and name **start collection** explicitly. See [background collection]({% link instruments/ftir.md %}#background). *Check: they explain why the crystal must be bare, and know the scan is not finished until start collection.*
 
-<p class="trainer-phase" id="phase-measure"><span>20–42 minutes</span> Measure both samples — SOP <a href="{% link instruments/ftir.md %}#operation">#operation</a></p>
+<p class="trainer-phase" id="phase-measure"><span>19–36 minutes</span> Measure both samples — SOP <a href="{% link instruments/ftir.md %}#operation">#operation</a></p>
 
 Participants run the cycle from the Quick Guide. Hand over more on the second sample and prompt less.
 
 * [ ] Participant loads the first sample for good contact, centering the pressure tower and tightening only until the clutch slips. Watch the clutch and catch over-tightening. See [sample loading]({% link instruments/ftir.md %}#sample). *Check: they recognize the clutch slipping and do not force past it.*
 * [ ] Participant collects the spectrum. With preview on, the live spectrum is the contact check and **start collection** commits the scan. *Check: they do not mistake the preview for a saved spectrum.*
-* [ ] **The teaching moment — run the quality check before unloading.** Ask what they see. Teach all three branches: weak signal means correct the contact first, and ask staff about sample suitability if it stays weak; negative bands mean the background was collected on a dirty crystal; anything else unexpected means diagnose before acting — wait for solvent, clean, or ask staff — and redo the background only when the evidence points there. Every branch ends in stopping and asking if it does not resolve.
+* [ ] **The teaching moment — run the quality check before unloading.** Ask what they see. Teach all three branches: weak signal means correct the contact first, and ask staff about sample suitability if it stays weak; negative bands can indicate that the background was collected on a dirty crystal; anything else unexpected means diagnose before acting — wait for solvent, clean, or ask staff — and redo the background only when the evidence points there. Every branch ends in stopping and asking if it does not resolve.
 * [ ] Participant saves the spectrum individually, and you flag that group-saving does not exist here. *Check: they save the file and can find it again.*
 * [ ] Participant cleans the crystal between samples, unprompted if possible. *Check: they clean without being told.*
 * [ ] Participant repeats the full cycle on the second material with less prompting.
 * [ ] Reinforce the glove transition at every crossing, all session. *Check: each participant completes at least one transition unprompted.*
 
-<p class="trainer-phase" id="phase-compare"><span>42–50 minutes</span> Compare and interpret</p>
+<p class="trainer-phase" id="phase-compare"><span>36–41 minutes</span> Compare and interpret</p>
 
 * [ ] Compare the two spectra together: several bands, not one peak. Discuss contact quality and contamination cues visible in the results.
 * [ ] Say where material identification lives — [data processing]({% link instruments/ftir.md %}#data) and a staff conversation — and that a database match is evidence, not proof.
 * [ ] Confirm both native spectrum files were individually named, saved, and copied off the workstation. The workstation is not a backup.
 
-<p class="trainer-phase" id="phase-shutdown"><span>50–56 minutes</span> Participant-led shutdown — SOP <a href="{% link instruments/ftir.md %}#shutdown">#shutdown</a></p>
+<p class="trainer-phase" id="phase-shutdown"><span>41–46 minutes</span> Participant-led shutdown — SOP <a href="{% link instruments/ftir.md %}#shutdown">#shutdown</a></p>
 
 Participant-led from the Quick Guide, with as little prompting as is safely practical. Every canonical shutdown bullet appears here.
 
@@ -124,12 +124,12 @@ Participant-led from the Quick Guide, with as little prompting as is safely prac
 * [ ] Restate that the instrument is **left powered on**. *Check: nobody switches it off.*
 * [ ] Participant clears the work area of samples, wipes, and waste.
 
-<p class="trainer-phase" id="phase-closeout"><span>56–60 minutes</span> Closeout — questions, then access</p>
+<p class="trainer-phase" id="phase-closeout"><span>46–50 minutes</span> Participant closeout; trainer administration continues afterward</p>
 
 * [ ] Ask participants to locate the SOP, detailed operating instructions, common failure modes, and the reservation link on the instrument page themselves.
 * [ ] Answer remaining questions and point to the reservation calendar.
 * [ ] Confirm the laminated Quick Guide is back in its place at the instrument, legible and undamaged. Participants keep their printed copies.
-* [ ] Return the training samples and supplies to their locations, and note any replenishment needs.
+* [ ] After attendees leave, return the training samples and supplies to their locations, and note any replenishment needs.
 
 {% include trainer/checklist-closeout.md moira=page.moira_group %}
 
@@ -151,11 +151,11 @@ Read this once or twice, then work from the checklist. It explains the decisions
 
 ### What This Training Covers, And What It Excludes
 
-The exclusions are what keep the session finishable in an hour, and what stop two trainers from teaching two different things. This scope is shared with the Quick Guide: the routine workflow it documents is the workflow this training teaches.
+The exclusions are what keep the participant-facing work finishable in 50 minutes, and what stop two trainers from teaching two different things. This scope is shared with the Quick Guide: the routine workflow it documents is the workflow this training teaches.
 
 | Taught in this training | Deliberately excluded |
 | --- | --- |
-| iD7 ATR on a flat solid, and pressing a fibrous or powdered solid into contact | Liquids and the volatiles cover — an extension once the solid workflow is consistent, and not covered by the Quick Guide |
+| iD7 ATR on two trainer-selected solids, covering the diamond and using the pressure tower to make direct contact | Liquids and the volatiles cover — a later exercise once the solid workflow is consistent, and not covered by the Quick Guide |
 | Crystal cleaning and background collection, with both preview branches | iD1 transmission and EasiDiff diffuse reflectance — staff-guided |
 | Judging contact quality before committing a scan | Database searching and material identification — [`#data`]({% link instruments/ftir.md %}#data) |
 | Saving native spectra individually | Baseline correction, subtraction, and other processing |
@@ -181,13 +181,13 @@ What the pair must achieve:
 
 | Requirement | Why it matters |
 | --- | --- |
-| Two solids with **visibly different spectra** | The comparison is the exercise. If a beginner cannot see the difference, there is nothing to discuss. Materials from different classes — a synthetic polymer against a natural fiber, say — separate more obviously than two similar plastics |
-| At least one material that **demonstrates contact quality honestly** | A fibrous, powdered, lumpy, or curved solid shows what poor contact looks like, where two flat easy solids hide it. Choose this deliberately rather than avoiding it |
+| Two solids with **visibly different spectra** | The comparison is the exercise. If a beginner cannot see the difference, there is nothing to discuss. Choose a pair whose overall spectral patterns separate clearly for a beginner |
+| At least one material that **demonstrates contact quality honestly** | Choose a material whose placement makes it possible to show the difference between incomplete and adequate contact rather than selecting two samples that conceal that teaching point |
 | A result **you can already recognize** | You must be able to tell poor contact from a genuine spectral difference in real time. That means having run these materials yourself |
 
 **Do not describe expected band positions from memory or inference.** If you want to name specific bands during the session, work from a spectrum you actually collected on this instrument. Naming a band a material does not have teaches an error that is hard to unlearn, and a plausible-sounding contrast can be wrong: cellulose and acrylic both contain aliphatic C-H bonds, so "one has C-H features and the other does not" would be false for that pair.
 
-Match the loading approach to what you chose, using [`#quick-method`]({% link instruments/ftir.md %}#quick-method). Fibers give weaker signal than a flat solid; if the spectrum is very weak, the fibers are bridging rather than contacting, so re-seat and retighten to the clutch.
+Match the loading approach to what you chose, using [`#quick-method`]({% link instruments/ftir.md %}#quick-method). If contact is incomplete, re-seat the sample so the measured area covers and touches the diamond, then retighten only until the clutch slips.
 
 Variations worth choosing on purpose:
 
@@ -243,6 +243,6 @@ Covered once in [trainer readiness]({% link _staff-training/trainer-readiness.md
 
 When this guide changes, review the [Quick Guide]({% link quick-guides/ftir.md %}), the [operating page]({% link instruments/ftir.md %}), the LibCal description, and the Moira information together. This guide names no specific material, so it does not need re-checking when the sample library changes.
 
-**If the instrument page's SOP changes, re-check the session checklist against it.** Every canonical startup, operation, and shutdown bullet must have a checklist item; a new or removed SOP bullet must appear or disappear here. That correspondence is the contract between this guide and the page.
+**If the instrument page's SOP changes, re-check the session checklist against it.** Every step in the normal-use path from the instrument's expected ready state must remain represented. Conditional recovery, maintenance, and unusual-startup steps may stay on the canonical page when the checklist clearly teaches the expected state and directs users to that page or staff when the state is different.
 
 Practice the guide with a qualified Breakerspace Lab Assistant or other designated trainer, and print-test the Quick Guide, before marking either ready for routine delivery.
