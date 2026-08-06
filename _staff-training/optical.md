@@ -19,6 +19,9 @@ trainer_links:
 
 This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page]({% link instruments/optical.md %}) and its sibling [two-page Quick Guide]({% link quick-guides/optical.md %}). Do not maintain a separate operating sequence here.
 
+<p class="guidance-note"><strong>This guide predates the current model and is awaiting its own development round.</strong> Its sample-selection text was applied on 2026-08-05 as part of a decision made while working on the FTIR guide, ahead of any operational review of optical microscopy — treat that section as a draft to verify, not as settled content. The coverage map, operations table, and continuous-flow layout migration are still outstanding.</p>
+
+
 ## Guide Control
 
 | Field | Value |

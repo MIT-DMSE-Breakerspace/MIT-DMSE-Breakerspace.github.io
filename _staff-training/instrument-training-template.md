@@ -8,13 +8,14 @@ Use this template to build a trainer-facing guide for a standard Breakerspace in
 
 A staff training guide is an **outline and checklist for the trainer**, not a manual. It assumes a person is present to instruct. Its job is to make different trainers deliver the same session: the same opening, the same core operations in the same order, the same closeout.
 
-Five things follow from that:
+Six things follow from that:
 
 * **The canonical instrument page is the operating authority.** Every workflow step here cites the section it comes from, and the trainer names that connection out loud during the session so participants learn to navigate the page rather than depend on the trainer.
 * **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
 * **This guide and the Quick Guide are siblings**, both derived from the instrument page. The Quick Guide supplies the physical routine-workflow aid participants hold during the session; this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
 * **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
 * **Guides are sample-agnostic.** State the criteria a training sample must meet, never a specific material, sample-library identifier, or cabinet location. The trainer chooses the material per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+* **Work on one instrument at a time.** Build this guide and its Quick Guide against real, verifiable content for this instrument. When a decision here generalizes, record it in this template — do not apply it to the other instrument guides in the same pass. See [scope of work](README.md#scope-of-work-one-instrument-at-a-time).
 
 ## Guide Control
 
@@ -93,13 +94,15 @@ This table is an audit and teaching plan, not an alternate SOP. Link to the cano
 
 | Canonical SOP item | Quick Guide step | How training covers it | Participant check |
 | --- | --- | --- | --- |
-| Startup: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
-| Startup: [one row for each remaining startup item] | [Side/step] | [Coverage] | [Check] |
-| Operation: [routine workflow or linked group] | [Side/steps] | [Level 1 workflow steps] | [Check] |
-| Saving/export: [short label and canonical anchor] | [Side/step] | [Coverage] | [Check] |
-| Shutdown: [short label and canonical anchor] | [Side/step] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
-| Shutdown: [one row for each remaining shutdown item] | [Side/step] | [Coverage] | [Check] |
-| Stop and ask: [critical condition or linked group] | [Location] | [Prompt or scenario] | [Expected response] |
+| Startup: [short label and canonical anchor] | [Quick Guide location] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Startup: [one row for each remaining startup item] | [Quick Guide location] | [Coverage] | [Check] |
+| Operation: [routine workflow or linked group] | [Quick Guide location] | [Level 1 workflow steps] | [Check] |
+| Saving/export: [short label and canonical anchor] | [Quick Guide location] | [Coverage] | [Check] |
+| Shutdown: [short label and canonical anchor] | [Quick Guide location] | [Trainer demonstrates or participant performs] | [What the trainer observes or asks] |
+| Shutdown: [one row for each remaining shutdown item] | [Quick Guide location] | [Coverage] | [Check] |
+| Stop and ask: [critical condition or linked group] | [Quick Guide location] | [Prompt or scenario] | [Expected response] |
+
+**Quick Guide layout and step-citation format are under revision as of 2026-08-05 and are not settled.** Cite whatever locator the current Quick Guide actually supports, and expect this column's convention to change. Avoid citing a physical page or side: which side a step lands on is a layout outcome that moves whenever content does.
 
 A canonical SOP item with no matching page section is a gap in the instrument page, not a reason to write the procedure out here. Record it in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 

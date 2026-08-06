@@ -29,7 +29,7 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
 * **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
 
-**FTIR is the reference implementation** for both content and layout. Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and relaid out the same day as a continuous two-column flow. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. See [Quick Guide layout model](#quick-guide-layout-model) for the structural rules and how to verify them.
+**FTIR is the reference implementation for content.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, and made sample-agnostic on 2026-08-05. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. **Its print layout is not a reference — that format is under revision**; see [Quick Guide layout model](#quick-guide-layout-model).
 
 **FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
 
@@ -104,6 +104,24 @@ The staff guide therefore does contain a **coverage map and Level 1 participant 
 
 Two earlier claims in this README were wrong and are superseded. It first said a guide could not be written for an instrument without a Quick Guide, which was inferred from the two pilot guides happening to be the two instruments with Quick Guides. It then said the training guide must come first. Both imposed an authoring sequence that the sibling model removes.
 
+### Scope Of Work: One Instrument At A Time
+
+**Work on one instrument's guide pair at a time. Update the template in parallel. Do not propagate a change into the other instrument guides.**
+
+Adopted 2026-08-05, after a sample-agnostic scoping decision made while working on FTIR was also applied to `optical.md` in the same commit — including newly invented optical-specific selection criteria for a guide whose content has not been designed yet.
+
+The reasoning is about iteration cost. Guide development is iterative, and a decision that looks settled while working on one instrument is often revised while working on the next. Applying an intermediate decision across ten files means redoing that work when it changes, and it puts plausible-looking text into guides nobody has actually thought through — which is worse than leaving them visibly unfinished, because it reads as complete.
+
+So:
+
+* **Edit the instrument under discussion.** That is the deliverable.
+* **Update [`instrument-training-template.md`](instrument-training-template.md) in parallel.** This is wanted. The template is the precise record of where a decision has landed, and keeping it current is what makes a later cross-file retrofit cheap and mechanical.
+* **Leave the other guides alone**, even when a change plainly applies to them. Record the needed retrofit in the [guide-pair inventory](#late-august-guide-pair-inventory) or `../instruments/staff-todo.md`, and let a later session do it deliberately.
+
+**Direction of travel: real content first, then extract the template.** Write and test a decision against an actual instrument, where the facts can be verified against a canonical page and a real workflow, then lift the general pattern into the template. Do not design in the template and instantiate downward — a pattern that has never been tested on real content tends not to survive contact with one.
+
+Thinking about how a decision will generalize is a useful part of designing it, and the parallel template update is where that thinking belongs. Rewriting nine other guides is a different activity, and not one to do on speculation.
+
 ### Sample-Agnostic Guides
 
 **Decided 2026-08-05. Neither the Quick Guide nor the staff guide names a specific material, sample-library identifier, or cabinet location.** Both describe the workflow and the properties a suitable sample must have; the trainer chooses the material for each session.
@@ -127,25 +145,26 @@ Sample-library work that a guide no longer waits on is tracked in `../_staff/sit
 
 ### Quick Guide Layout Model
 
-**`_includes/quick-guides/ftir.html` is the layout reference as of 2026-08-05.** Copy it for a new instrument. Optical and XRD still use an older two-sheet layout and should be migrated when they are next revised.
+**Under revision as of 2026-08-05. Do not treat this as settled, and do not apply it to another instrument's Quick Guide yet.**
 
-The model:
+The FTIR Quick Guide was relaid out on 2026-08-05 in response to review — the previous version had inconsistent formatting between its two sides and its printed copy ran past page 2. That rebuild fixed real bugs (below), but the resulting format is itself due for another revision round. Optical and XRD keep the older two-sheet layout in the meantime; per [scope of work](#scope-of-work-one-instrument-at-a-time), leave them alone until the format is agreed.
 
-* **One continuous flow, not per-side sheets.** A single `.quick-guide-sheet.quick-guide-flowing` containing one `.quick-guide-columns` div. Content fills column one top to bottom, then column two, and paginates onto as many Letter sides as it needs. Do not author "Side 1" and "Side 2" as separate fixed units — that break was arbitrary and it forced content decisions for layout reasons.
-* **Uniform numbering.** `<h2>1. Section name</h2>` with the period. Sub-items are always `<ul>` bullets, never `<ol>`, so a series of actions under a numbered section reads consistently.
-* **Safety and stop boxes sit in the flow**, at the point where they apply — the glove rule first, before any work starts; stop-and-ask between the sample-screening and startup sections. A red outline does not reliably signal "read this out of order," so position matters.
-* **No per-section boxes and no numbered badges.** Both came from the older layout and made the two sides look like different documents.
-* **QR codes** are static SVGs in `assets/img/qr/`, generated once and committed, so the site build needs no QR dependency. Include the plain-text URL beside every code — the printed guide must work for someone without a phone.
+What the current FTIR implementation does, for reference rather than as a standard:
 
-Two failure modes this layout exists to avoid, both of which shipped in the FTIR guide:
+* One continuous flow — a single `.quick-guide-sheet.quick-guide-flowing` containing one `.quick-guide-columns` div — instead of two fixed-height sides. Content fills column one top to bottom, then column two, and paginates onto as many Letter sides as it needs.
+* `<h2>1. Section name</h2>` with the period, and sub-items always as `<ul>` bullets rather than a mix of numbered and bulleted lists.
+* Safety and stop boxes positioned in the flow at the point where they apply, rather than set outside it.
+* QR codes as static SVGs in `assets/img/qr/`, generated once and committed so the build needs no QR dependency, with the plain-text URL beside each code.
 
-* **Fixed-height print sheets with `overflow: hidden` clip silently.** Content past one page vanishes from the printed copy with no warning in the HTML, the build, or any check. The FTIR guide lost most of its shutdown section, its closing checklist, and its help box this way.
-* **A multicol container inside a flex parent balances across the whole document, not per page.** Reading order breaks — the left column holds the early steps while the right column opens partway through the guide. Keep the flowing sheet `display: block` in print.
+**The two bugs it fixed are worth keeping in mind regardless of what the format becomes**, because both are invisible in normal use:
 
-**Verify a layout by rendering it paginated, not by scrolling it.** Screenshotting a print stylesheet in a scrolling viewport reproduces neither bug; it can show a plausible-looking page that does not match what prints. Render to PDF and inspect the actual pages:
+* **A fixed-height print sheet with `overflow: hidden` clips silently.** Content past one page vanishes from the printed copy with no warning in the HTML, the build, or any check. The FTIR guide lost most of its shutdown section, its closing checklist, and its help box this way, and the word count looked fine throughout.
+* **A multicol container inside a flex parent balances across the whole document, not per page.** Reading order breaks: the left column holds the early steps while the right column opens partway through the guide.
+
+**Verify any print layout by rendering it paginated, never by scrolling it.** Screenshotting a print stylesheet in a scrolling viewport reproduces neither bug and can show a plausible page that does not match what prints:
 
 ```sh
-# with the worktree served on 4173
+# with the worktree served on 4173, run from the worktree root
 node -e "const p=require('puppeteer');(async()=>{const b=await p.launch();const g=await b.newPage();
 await g.goto('http://127.0.0.1:4173/quick-guides/ftir/',{waitUntil:'networkidle0'});
 await g.emulateMediaType('print');
@@ -155,7 +174,7 @@ pdftoppm -r 110 -png /tmp/qg.pdf /tmp/qg      # then look at the page images
 pdftotext -layout /tmp/qg.pdf - | tail -20    # confirm the last section actually prints
 ```
 
-Check that every section heading appears in the PDF text, that reading order is sequential on each page, and that QR codes decode at 300 dpi (`pdftoppm -r 300`, then any QR reader). A word count is not a substitute: tables cost more vertical space than the same words as prose.
+Check that every section heading appears in the PDF text, that reading order is sequential on each page, and that QR codes decode at 300 dpi (`pdftoppm -r 300`, then any QR reader). A word count is not a substitute: tables cost more vertical space than the same words as prose, and a count cannot see clipping at all.
 
 ### Late-August Guide-Pair Inventory
 
@@ -167,7 +186,7 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
 | First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then practice run | Supply the empirical background evidence; resolve the Level 1 divergence; print proof for legibility and QR scanning only. |
 | First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit, incl. layout migration | Needs retrofit | Add the coverage map and operations table, state Level 1 sample-selection criteria, and migrate to the continuous-flow layout. |
+| Second | **Optical microscopy** | Needs retrofit; leave the layout alone until the Quick Guide format is agreed | Needs retrofit; sample text pre-applied 2026-08-05 and unreviewed | Add the coverage map and operations table, and **review the sample-selection text that was applied ahead of optical's own design round** — including its "surface texture that reads differently across observation modes" criterion, which was written without an operational check. |
 | Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, and starting settings before planned fall subject use. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
 | Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
@@ -184,7 +203,7 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
-The FTIR guide was relaid out on 2026-08-05 as a **single continuous two-column flow** rather than two fixed-height sheets, and now measures 2 Letter pages with no clipped content (1,044 words total; verified by headless-Chrome PDF render at 300 dpi). A physical duplex print proof is still worth doing for legibility and long-edge flip, but the page-count and clipping questions are resolved.
+The FTIR guide was relaid out on 2026-08-05 as a single continuous two-column flow rather than two fixed-height sheets. It currently measures 2 Letter pages with no clipped content (1,044 words total; verified by headless-Chrome PDF render, QR codes decoding at 300 dpi). **The format is under revision, so treat those measurements as describing the current state rather than a target**; see [Quick Guide layout model](#quick-guide-layout-model). A physical duplex proof is still wanted for legibility, grayscale QR scanning, and long-edge flip.
 
 Two layout lessons from that rebuild, both of which had shipped:
 
@@ -222,6 +241,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * Quick Guides serve recently trained and trained users at the instrument; they do not replace training or authorize untrained use.
 * Quick Guides and staff guides are sibling derivatives of the canonical instrument page and may be written in parallel. Neither gates the other.
 * **Both artifacts are sample-agnostic. Neither names a specific material, sample-library identifier, or cabinet location.** Decided 2026-08-05; see [sample-agnostic guides](#sample-agnostic-guides) for the reasoning and for what a guide states instead.
+* **One instrument at a time, plus the template.** A decision made while working on one instrument is not propagated into the other guides in the same pass. Decided 2026-08-05; see [scope of work](#scope-of-work-one-instrument-at-a-time).
 * Every Quick Guide and staff-guide coverage map represents the complete canonical startup and shutdown sequence.
 * Quick Guides cover one default routine workflow; Level 1 exercises use that mechanical spine while adding the sample, question, expected result, and teaching prompts.
 * Immediate data-quality checks belong in Quick Guides; extended interpretation and analysis do not.
