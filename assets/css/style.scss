@@ -620,7 +620,7 @@ body.trainer-portal-page {
   border: 1px solid #d4dde1;
   border-radius: 6px;
   background: #fff;
-  box-shadow: 0 8px 28px rgb(23 36 42 / 10%);
+  box-shadow: 0 8px 28px rgba(23, 36, 42, 0.1);
 }
 
 .trainer-guide-content table {
@@ -710,7 +710,7 @@ body.trainer-portal-page {
   border-left: 5px solid #007aa8;
   border-radius: 4px;
   background: #f3f9fc;
-  box-shadow: 0 3px 10px rgb(23 36 42 / 16%);
+  box-shadow: 0 3px 10px rgba(23, 36, 42, 0.16);
 }
 
 .trainer-session-tools[hidden] {
