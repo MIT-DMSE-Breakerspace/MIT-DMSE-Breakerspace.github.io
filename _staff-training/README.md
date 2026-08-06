@@ -29,7 +29,9 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
 * **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
 
-**FTIR is the reference implementation for content.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, and made sample-agnostic on 2026-08-05. Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. **Its print layout is not a reference — that format is under revision**; see [Quick Guide layout model](#quick-guide-layout-model).
+**FTIR is the reference implementation for content and for staff-guide structure.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and restructured the same day as a single continuous session checklist — see [the session-checklist model](#the-session-checklist-model). Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. **Its Quick Guide print layout is not yet a reference** — that format is under revision; see [Quick Guide layout model](#quick-guide-layout-model).
+
+**The template is behind the current model.** [`instrument-training-template.md`](instrument-training-template.md) still describes Guide Control and an SOP coverage map. Extract the current structure from `ftir.md` into it once the checklist shape has been confirmed by use — per [scope of work](#scope-of-work-one-instrument-at-a-time), real content first, then the template.
 
 **FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
 
@@ -60,7 +62,7 @@ The operating model the template reflects:
 * Every session opens with the [lab safety orientation](lab-safety-orientation.md), for all participants, regardless of prior training.
 * Participants may divide the Level 1 workflow, provided the trainer makes the full sequence visible and involves everyone meaningfully.
 * Participants use the printed Quick Guide during the hands-on workflow, particularly for participant-led cleanup and shutdown.
-* The staff guide contains an explicit coverage map showing where every canonical startup and shutdown step, the routine operation, saving, and stop conditions are taught or verified.
+* The staff guide accounts for every canonical startup and shutdown step, the routine operation, saving, and stop conditions. As of 2026-08-05 that is done with checkable items in one session checklist rather than a separate coverage-map table; see [the session-checklist model](#the-session-checklist-model).
 * The trainer adds attendees directly to the appropriate MIT Moira group after the session.
 * The trainer sends each attendee a Breakerspace Slack invitation as part of training closeout.
 * The lab manager processes physical tap access separately after the one-time Qualtrics training record is complete.
@@ -98,7 +100,7 @@ The canonical public instrument page is the operating authority: its SOP and det
 * The **Quick Guide** supplies the routine mechanical workflow that a recently trained user can hold at the instrument. It is a printed, laminated artifact; the web version exists for printing, replacement, accessibility, personal copies, and fallback.
 * The **staff guide** supplies trainer preparation, full SOP coverage, the Level 1 sample and question, coaching prompts, participant roles, success criteria, and administrative closeout.
 
-The staff guide therefore does contain a **coverage map and Level 1 participant workflow**, but it must not become an alternate technical SOP. Link each mapped item to the canonical page and use short labels rather than rewriting the technical instruction. Every startup and shutdown SOP item must appear individually in the map; routine operation can map to the Level 1 workflow as a group where that remains unambiguous.
+The staff guide therefore does carry the full SOP and the Level 1 exercise, but it must not become an alternate technical SOP. Cite the canonical page for each step and use short labels rather than rewriting the technical instruction. Every startup and shutdown SOP item must be individually accounted for; routine operation may group where that remains unambiguous. As of 2026-08-05 this is done with checkable checklist items carrying `#anchor` citations, not a separate table — see [the session-checklist model](#the-session-checklist-model).
 
 **Neither artifact gates the other.** Draft and test them together once the canonical SOP and intended Level 1 workflow are stable. Routine delivery is ready only when the canonical page, Quick Guide, staff guide, and exercise agree; the Quick Guide has been print-tested and installed at the instrument; and the training has been practiced by a qualified trainer.
 
@@ -176,6 +178,22 @@ pdftotext -layout /tmp/qg.pdf - | tail -20    # confirm the last section actuall
 
 Check that every section heading appears in the PDF text, that reading order is sequential on each page, and that QR codes decode at 300 dpi (`pdftoppm -r 300`, then any QR reader). A word count is not a substitute: tables cost more vertical space than the same words as prose, and a count cannot see clipping at all.
 
+### The Session-Checklist Model
+
+**Adopted 2026-08-05 for FTIR. This is the current staff-guide shape; `ftir.md` is the reference.** The template still describes the older structure and should be updated from FTIR once the shape is confirmed by use.
+
+A staff guide is a **checklist a trainer runs**, with the reasoning available but out of the way. Five decisions define it:
+
+* **One continuous checklist, in session order.** Every checkable item in a single run — before-session prep, welcome, safety orientation, the instrument SOP in teaching order, the exercise, closeout, and success criteria. Not prose interleaved with several short lists. The earlier FTIR guide had 36 checkboxes across four sections with explanation between them, so a trainer mid-session scrolled past rationale to find the next action.
+* **Everything the trainer must do appears on the page.** The shared safety orientation and administrative closeout are pulled in as Jekyll includes — [`_includes/trainer/checklist-safety.md`](../_includes/trainer/checklist-safety.md) and [`checklist-closeout.md`](../_includes/trainer/checklist-closeout.md) — so they stay single-source but appear inline. The closeout include takes the instrument's Moira group as a parameter. Included checkboxes join the page's progress count and its next-unchecked-item button automatically, because the checklist script scopes to any checkbox inside `.trainer-guide-content`.
+* **No separate SOP coverage-map table.** Every training covers every SOP step — state that once at the top, then make each SOP step a checkable item with its own `#anchor` citation. The old table listed all 22 canonical FTIR bullets immediately before the checklists repeated them. What the table did carry worth keeping was its observation column; those became italic *Check:* clauses on the items ("*Check: they recognize the clutch slipping and do not force past it*").
+* **Checklist first, rationale second.** A trainer reads the reasoning once or twice and runs the checklist dozens of times. Leading with explanation taxes every future session to serve the first two, and does not survive contact with a tablet at the instrument. The rationale stays on the page below, under a heading experienced trainers skip; [trainer readiness](trainer-readiness.md) stage 2 already directs new trainers to read the whole guide.
+* **Phase markers, not sections.** Modest wayfinding inside the run: a thin rule, a small recommended-time label, and a short phrase. The agenda table is gone — the times live on the markers where the work is. Note that a marker between two task lists splits the underlying `<ul>`, so the CSS manages vertical rhythm to keep it reading as one list.
+
+**Guide Control was split.** The old table mixed trainer-facing operational facts with audit fields (status, last-reviewed, LibCal verification, lamination state), which is why it read as confusing and unclear who it served. Operational facts a trainer needs mid-session sit in a short block near the checklist; tracking fields live in front matter and render in a status table at the bottom.
+
+**One constraint this model makes easy to get wrong:** a checklist in session order tempts you to write steps in the order they *feel* natural, which can contradict how access actually works. See [access and logistics](access-and-logistics.md#trainer-closeout-sequence) — a trainee has no workstation login during their own first session, because the Moira add happens at closeout, so the trainer performs the initial login.
+
 ### Late-August Guide-Pair Inventory
 
 Use these visible states for handoff planning: **missing**, **drafting**, **needs operational check**, **needs practice run**, and **ready for late-August handoff**. This inventory records repository coverage, not approval to deliver a training.
@@ -186,7 +204,7 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
 | First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then practice run | Supply the empirical background evidence; resolve the Level 1 divergence; print proof for legibility and QR scanning only. |
 | First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit; leave the layout alone until the Quick Guide format is agreed | Needs retrofit; sample text pre-applied 2026-08-05 and unreviewed | Add the coverage map and operations table, and **review the sample-selection text that was applied ahead of optical's own design round** — including its "surface texture that reads differently across observation modes" criterion, which was written without an operational check. |
+| Second | **Optical microscopy** | Needs retrofit; leave the layout alone until the Quick Guide format is agreed | Needs retrofit to the [session-checklist model](#the-session-checklist-model) | Restructure as one continuous checklist, and **review the sample-selection text that was applied ahead of optical's own design round** — including its "surface texture that reads differently across observation modes" criterion, which was written without an operational check. |
 | Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, and starting settings before planned fall subject use. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
 | Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
@@ -242,7 +260,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * Quick Guides and staff guides are sibling derivatives of the canonical instrument page and may be written in parallel. Neither gates the other.
 * **Both artifacts are sample-agnostic. Neither names a specific material, sample-library identifier, or cabinet location.** Decided 2026-08-05; see [sample-agnostic guides](#sample-agnostic-guides) for the reasoning and for what a guide states instead.
 * **One instrument at a time, plus the template.** A decision made while working on one instrument is not propagated into the other guides in the same pass. Decided 2026-08-05; see [scope of work](#scope-of-work-one-instrument-at-a-time).
-* Every Quick Guide and staff-guide coverage map represents the complete canonical startup and shutdown sequence.
+* Every Quick Guide and staff guide accounts for the complete canonical startup and shutdown sequence. In staff guides this is done with checkable items, not a coverage-map table; see [the session-checklist model](#the-session-checklist-model).
 * Quick Guides cover one default routine workflow; Level 1 exercises use that mechanical spine while adding the sample, question, expected result, and teaching prompts.
 * Immediate data-quality checks belong in Quick Guides; extended interpretation and analysis do not.
 * Quick Guides exclude parameter tables when the workflow is selecting a reviewed stored method.

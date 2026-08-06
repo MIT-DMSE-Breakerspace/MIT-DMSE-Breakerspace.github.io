@@ -4,6 +4,8 @@ published: false
 
 # [Instrument Name] Staff Training Guide
 
+> **This template is behind the current model as of 2026-08-05.** The FTIR guide was restructured as a single continuous session checklist — one run of checkable items in session order, shared safety and closeout pulled in as includes, no separate SOP coverage-map table, rationale below the checklist, and Guide Control split into trainer-facing facts plus a status table. See [the session-checklist model](README.md#the-session-checklist-model) and read [`ftir.md`](ftir.md) as the reference. Copy FTIR's structure rather than the section layout below, which is retained only until the new shape is confirmed by use and extracted here.
+
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
 A staff training guide is an **outline and checklist for the trainer**, not a manual. It assumes a person is present to instruct. Its job is to make different trainers deliver the same session: the same opening, the same core operations in the same order, the same closeout.
