@@ -1632,9 +1632,9 @@ body.trainer-portal-page {
   line-height: 1.25;
 }
 
-/* Section headings inside the flowing layout are step labels, not sheet titles,
+/* Section headings inside the page grid are step labels, not sheet titles,
    so they must not inherit the h1/h2 title size above. */
-.quick-guide-columns h2 {
+.quick-guide-page-column h2 {
   margin-bottom: 0.3rem;
   font-size: 1rem;
   line-height: 1.25;
@@ -1760,124 +1760,114 @@ body.trainer-portal-page {
   margin-top: 0.85rem;
 }
 
-/* Continuous two-column flow inside one page. Content fills column one top to
-   bottom, then column two. Used by the FTIR guide; the optical and XRD guides
-   still use the older .quick-guide-grid / .quick-guide-flow layout above. */
-.quick-guide-columns {
-  columns: 2;
-  column-gap: 1.1rem;
-  column-rule: 1px solid #cbd3d7;
-}
-
-/* WYSIWYG pages: the screen sheet carries true Letter geometry so the web view
-   is the print preview. Same width, min-height, padding, and type scale as the
-   print rules, so a break that falls in a given place on screen falls there on
-   paper. min-height rather than height means content that outgrows two pages
-   becomes visible instead of being silently clipped. */
-/* Two columns on a fixed page, and the column block's height is what makes the
-   page break fall where it does. Content fills column one to that height, then
-   column two.
-
-   CSS multicol treats column-count as a MINIMUM: if content is taller than the
-   block, the browser adds a third and fourth column rather than clipping. So a
-   third column appearing is the signal that a page's content does not fit —
-   move a section to the next page rather than shrinking the type or capping the
-   height with overflow:hidden, which hides content silently.
-
-   Heights below are measured, not estimated: page height minus vertical padding
-   minus the header (and notice, page 1 only) minus footer clearance. The footer
-   is absolutely positioned, so it needs clearance rather than a reservation. */
+/* FTIR uses two explicitly composed Letter pages. Each page has two real grid
+   columns in DOM reading order instead of a fixed-height multicol container.
+   That makes overflow visible and testable: the browser cannot invent hidden
+   third columns or rebalance content differently between screen and print. */
 .quick-guide-paged {
-  display: flex;
+  display: block;
+  position: relative;
   box-sizing: border-box;
   width: 8.5in;
-  min-height: 10.92in;
+  height: 10.98in;
   max-width: 100%;
   margin: 0 auto 1.5rem;
   padding: 0.42in 0.48in 0.38in;
   font-size: 10pt;
   line-height: 1.28;
-  flex-direction: column;
 }
 
-.quick-guide-paged .quick-guide-columns {
-  columns: auto;
-  column-count: 2;
-  column-fill: auto;
-  height: 795px;
-  column-gap: 0.26in;
-  orphans: 3;
-  widows: 3;
+.quick-guide-page-grid {
+  display: grid;
+  position: absolute;
+  top: 2.25in;
+  right: 0.48in;
+  bottom: 0.56in;
+  left: 0.48in;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.26in;
 }
 
-/* A compact sheet has no hero photo or notice, so more of its page is usable. */
-.quick-guide-paged.quick-guide-page-compact .quick-guide-columns {
-  height: 905px;
+.quick-guide-page-compact .quick-guide-page-grid {
+  top: 1.04in;
 }
 
-/* A compact page has no hero header or trained-user notice, so it has room for
-   a taller column block. */
+.quick-guide-page-column {
+  min-width: 0;
+}
 
-
+.quick-guide-page-column + .quick-guide-page-column {
+  padding-left: 0.26in;
+  border-left: 1px solid #cbd3d7;
+}
 
 .quick-guide-paged h1,
 .quick-guide-paged h2 {
   font-size: 19pt;
 }
 
-.quick-guide-paged .quick-guide-columns h2 {
+.quick-guide-paged .quick-guide-page-column h2 {
   font-size: 10.5pt;
 }
 
-/* Keep a block whole within a column where possible, but a long list must be
-   allowed to break across the column boundary. Step 3's startup list and the
-   step 6 quality gate are each 350-450px; forcing them whole makes the page
-   unsplittable, so the browser adds a third column instead. Individual list
-   items still stay intact. */
-.quick-guide-columns > * {
-  break-inside: avoid;
+.quick-guide-page-column > h2 {
+  margin-top: 0.68rem;
+  margin-bottom: 0.28rem;
 }
 
-.quick-guide-columns > ul,
-.quick-guide-columns > ol {
-  break-inside: auto;
-}
-
-.quick-guide-columns li {
-  break-inside: avoid;
-}
-
-.quick-guide-columns > h2 {
-  margin-top: 0.85rem;
-  margin-bottom: 0.3rem;
-  break-after: avoid;
-  font-size: 1rem;
-}
-
-.quick-guide-columns > h2:first-child,
-.quick-guide-columns > :first-child {
+.quick-guide-page-column > h2:first-child,
+.quick-guide-page-column > :first-child {
   margin-top: 0;
 }
 
-.quick-guide-columns > ul,
-.quick-guide-columns > ol,
-.quick-guide-columns > p,
-.quick-guide-columns > table {
-  margin-bottom: 0.5rem;
+.quick-guide-page-column > ul,
+.quick-guide-page-column > ol,
+.quick-guide-page-column > p,
+.quick-guide-page-column > table {
+  margin-bottom: 0.44rem;
 }
 
-.quick-guide-columns > aside {
-  margin-top: 0.85rem;
-  margin-bottom: 0.85rem;
+.quick-guide-page-column > aside {
+  margin-top: 0.64rem;
+  margin-bottom: 0.64rem;
 }
 
-.quick-guide-columns > aside:first-child {
+.quick-guide-page-column > aside:first-child {
   margin-top: 0;
 }
 
-.quick-guide-columns h2 + ul,
-.quick-guide-columns h2 + ol {
+.quick-guide-closing-column > aside:last-child {
+  margin-bottom: 0;
+}
+
+.quick-guide-closing-column p,
+.quick-guide-closing-column li {
+  line-height: 1.2;
+}
+
+.quick-guide-closing-column > h2 {
+  margin-top: 0.56rem;
+  margin-bottom: 0.24rem;
+}
+
+.quick-guide-closing-column > ul,
+.quick-guide-closing-column > p {
+  margin-bottom: 0.34rem;
+}
+
+.quick-guide-closing-column > aside {
+  margin-top: 0.42rem;
+  margin-bottom: 0.42rem;
+  padding: 0.52rem 0.56rem;
+}
+
+.quick-guide-page-column h2 + ul,
+.quick-guide-page-column h2 + ol {
   margin-top: 0;
+}
+
+.quick-guide-before-leaving .quick-guide-checks {
+  margin-bottom: 0;
 }
 
 .quick-guide-qr-pair {
@@ -2006,7 +1996,193 @@ body.trainer-portal-page {
   line-height: 1.25;
 }
 
+/* The paged FTIR guide is a print preview on screen. Keep every measurement
+   that affects wrapping or vertical fit identical to the print rules below. */
+.quick-guide-paged .quick-guide-footer {
+  position: absolute;
+  right: 0.48in;
+  bottom: 0.28in;
+  left: 0.48in;
+  margin-top: 0;
+  padding-top: 0.07in;
+  font-size: 6.8pt;
+}
+
+.quick-guide-paged .quick-guide-page-column > h2 {
+  margin-top: 0.1in;
+  margin-bottom: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-page-column > ul,
+.quick-guide-paged .quick-guide-page-column > ol,
+.quick-guide-paged .quick-guide-page-column > p,
+.quick-guide-paged .quick-guide-page-column > table {
+  margin-bottom: 0.065in;
+}
+
+.quick-guide-paged .quick-guide-page-column > aside {
+  margin-top: 0.09in;
+  margin-bottom: 0.09in;
+}
+
+.quick-guide-paged .quick-guide-page-column > aside:first-child {
+  margin-top: 0;
+}
+
+.quick-guide-paged .quick-guide-closing-column > aside:last-child {
+  margin-bottom: 0;
+}
+
+.quick-guide-paged p,
+.quick-guide-paged li,
+.quick-guide-paged td,
+.quick-guide-paged th {
+  line-height: 1.23;
+}
+
+.quick-guide-paged li {
+  margin-bottom: 0.035in;
+}
+
+.quick-guide-paged .quick-guide-closing-column p,
+.quick-guide-paged .quick-guide-closing-column li {
+  line-height: 1.2;
+}
+
+.quick-guide-paged .quick-guide-closing-column > h2 {
+  margin-top: 0.075in;
+  margin-bottom: 0.035in;
+}
+
+.quick-guide-paged .quick-guide-closing-column > ul,
+.quick-guide-paged .quick-guide-closing-column > p {
+  margin-bottom: 0.045in;
+}
+
+.quick-guide-paged .quick-guide-closing-column > aside {
+  margin-top: 0.055in;
+  margin-bottom: 0.055in;
+  padding: 0.07in;
+}
+
+.quick-guide-paged .quick-guide-header {
+  grid-template-columns: minmax(0, 1fr) 1.55in;
+  gap: 0.2in;
+  padding-bottom: 0.1in;
+}
+
+.quick-guide-paged .quick-guide-header > img,
+.quick-guide-paged .quick-guide-header > picture img {
+  max-height: 1.05in;
+}
+
+.quick-guide-paged .quick-guide-header-compact {
+  display: block;
+}
+
+.quick-guide-paged.quick-guide-page-compact .quick-guide-header {
+  padding-bottom: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-kicker {
+  font-size: 7.5pt;
+}
+
+.quick-guide-paged .quick-guide-subtitle {
+  font-size: 9.5pt;
+}
+
+.quick-guide-paged .quick-guide-notice {
+  margin: 0.1in 0;
+  padding: 0.07in 0.1in;
+  font-size: 8.5pt;
+}
+
+.quick-guide-paged .quick-guide-stop,
+.quick-guide-paged .quick-guide-help {
+  padding: 0.09in;
+}
+
+.quick-guide-paged .quick-guide-table {
+  font-size: 8pt;
+}
+
+.quick-guide-paged .quick-guide-table th,
+.quick-guide-paged .quick-guide-table td {
+  padding: 0.04in 0.06in;
+}
+
+.quick-guide-paged .quick-guide-qr-pair {
+  gap: 0.16in;
+  margin-top: 0.07in;
+}
+
+.quick-guide-paged .quick-guide-qr img {
+  max-width: 0.7in;
+}
+
+.quick-guide-paged .quick-guide-qr figcaption {
+  font-size: 6.6pt;
+  line-height: 1.28;
+}
+
+.quick-guide-paged .quick-guide-qr-email {
+  margin-top: 0.06in;
+  font-size: 7.4pt;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr-pair {
+  gap: 0.12in;
+  margin-top: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr img {
+  max-width: 0.62in;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr figcaption {
+  font-size: 6.4pt;
+  line-height: 1.18;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr-email {
+  margin-top: 0.03in;
+}
+
 @media screen and (max-width: 720px) {
+  .quick-guide-paged {
+    width: auto;
+    height: auto;
+    min-height: 0;
+  }
+
+  .quick-guide-page-grid {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+
+  .quick-guide-page-column + .quick-guide-page-column {
+    padding-top: 0.85rem;
+    padding-left: 0;
+    border-top: 1px solid #cbd3d7;
+    border-left: 0;
+  }
+
+  .quick-guide-paged .quick-guide-footer {
+    position: static;
+    margin-top: 0.75rem;
+  }
+
+  .quick-guide-paged .quick-guide-header {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .quick-guide-paged .quick-guide-header > img,
+  .quick-guide-paged .quick-guide-header > picture {
+    max-width: 12rem;
+  }
+
   .quick-guide-screen-bar,
   .quick-guide-footer {
     align-items: stretch;
@@ -2110,19 +2286,18 @@ body.trainer-portal-page {
     flex-direction: column;
   }
 
-  /* Each paged sheet is exactly one Letter page and breaks after itself, so the
-     screen view and the printed view show the same two pages. It must NOT be a
-     flex container: flex gives the multicol child a definite height spanning the
-     whole document, so columns balance across every page at once instead of
-     fragmenting per page. min-height rather than a fixed height with
-     overflow:hidden means content that outgrows the page flows onto another one
-     and stays visible; the fixed-height version silently discarded the excess. */
+  /* The FTIR screen sheets and print sheets use the same Letter geometry and
+     explicit grid columns. Overflow is deliberately visible; a PDF render that
+     exceeds two pages fails the layout check instead of losing content. */
   body.has-print-quick-guide .quick-guide-paged {
     display: block;
+    position: relative;
     box-sizing: border-box;
     width: 8.5in;
-    min-height: 10.92in;
+    height: 10.98in;
     padding: 0.42in 0.48in 0.38in;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
     break-after: page;
     page-break-after: always;
   }
@@ -2132,27 +2307,25 @@ body.trainer-portal-page {
     page-break-after: auto;
   }
 
-  /* Match the screen column-block heights so a break that falls in a given
-     place on screen falls in the same place on paper. column-fill:auto fills
-     column one to the block height before starting column two; column-count
-     (not the `columns` shorthand) prevents a third column appearing when
-     content is taller than the block. */
-  body.has-print-quick-guide .quick-guide-paged .quick-guide-columns {
-    columns: auto;
-    column-count: 2;
-    column-fill: auto;
-    height: 795px;
-    column-gap: 0.26in;
-    column-rule: 1px solid #000;
-    orphans: 3;
-    widows: 3;
+  body.has-print-quick-guide .quick-guide-page-grid {
+    display: grid;
+    position: absolute;
+    top: 2.25in;
+    right: 0.48in;
+    bottom: 0.56in;
+    left: 0.48in;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.26in;
   }
 
-  body.has-print-quick-guide .quick-guide-paged.quick-guide-page-compact .quick-guide-columns {
-    height: 905px;
+  body.has-print-quick-guide .quick-guide-page-compact .quick-guide-page-grid {
+    top: 1.04in;
   }
 
-
+  body.has-print-quick-guide .quick-guide-page-column + .quick-guide-page-column {
+    padding-left: 0.26in;
+    border-left-color: #000;
+  }
 
   /* Fixed-height sheets apply only to the older two-sheet layout, where each
      side is authored to fit one page. Note that overflow:hidden silently clips
@@ -2165,41 +2338,51 @@ body.trainer-portal-page {
     page-break-after: always;
   }
 
-  /* The continuous-flow layout paginates instead: no fixed height, no clipping,
-     and page breaks fall between sections rather than mid-step. */
-  body.has-print-quick-guide .quick-guide-columns {
-    columns: 2;
-    column-gap: 0.26in;
-    column-rule: 1px solid #000;
-    orphans: 3;
-    widows: 3;
-  }
-
-  body.has-print-quick-guide .quick-guide-columns > * {
-    break-inside: avoid;
-  }
-
-  body.has-print-quick-guide .quick-guide-columns > h2 {
-    margin-top: 0.13in;
-    margin-bottom: 0.05in;
-    break-after: avoid;
+  body.has-print-quick-guide .quick-guide-page-column > h2 {
+    margin-top: 0.1in;
+    margin-bottom: 0.04in;
     font-size: 10.5pt;
   }
 
-  body.has-print-quick-guide .quick-guide-columns > :first-child {
+  body.has-print-quick-guide .quick-guide-page-column > :first-child {
     margin-top: 0;
   }
 
-  body.has-print-quick-guide .quick-guide-columns > ul,
-  body.has-print-quick-guide .quick-guide-columns > ol,
-  body.has-print-quick-guide .quick-guide-columns > p,
-  body.has-print-quick-guide .quick-guide-columns > table {
-    margin-bottom: 0.08in;
+  body.has-print-quick-guide .quick-guide-page-column > ul,
+  body.has-print-quick-guide .quick-guide-page-column > ol,
+  body.has-print-quick-guide .quick-guide-page-column > p,
+  body.has-print-quick-guide .quick-guide-page-column > table {
+    margin-bottom: 0.065in;
   }
 
-  body.has-print-quick-guide .quick-guide-columns > aside {
-    margin-top: 0.13in;
-    margin-bottom: 0.13in;
+  body.has-print-quick-guide .quick-guide-page-column > aside {
+    margin-top: 0.09in;
+    margin-bottom: 0.09in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > aside:last-child {
+    margin-bottom: 0;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column p,
+  body.has-print-quick-guide .quick-guide-closing-column li {
+    line-height: 1.2;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > h2 {
+    margin-top: 0.075in;
+    margin-bottom: 0.035in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > ul,
+  body.has-print-quick-guide .quick-guide-closing-column > p {
+    margin-bottom: 0.045in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > aside {
+    margin-top: 0.055in;
+    margin-bottom: 0.055in;
+    padding: 0.07in;
   }
 
   body.has-print-quick-guide .quick-guide-qr-pair {
@@ -2207,8 +2390,17 @@ body.trainer-portal-page {
     margin-top: 0.07in;
   }
 
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr-pair {
+    gap: 0.12in;
+    margin-top: 0.04in;
+  }
+
   body.has-print-quick-guide .quick-guide-qr img {
-    max-width: 0.78in;
+    max-width: 0.7in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr img {
+    max-width: 0.62in;
   }
 
   body.has-print-quick-guide .quick-guide-qr figcaption {
@@ -2216,9 +2408,18 @@ body.trainer-portal-page {
     line-height: 1.28;
   }
 
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr figcaption {
+    font-size: 6.4pt;
+    line-height: 1.18;
+  }
+
   body.has-print-quick-guide .quick-guide-qr-email {
     margin-top: 0.06in;
     font-size: 7.4pt;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr-email {
+    margin-top: 0.03in;
   }
 
   body.has-print-quick-guide .quick-guide-sheet:last-child {
@@ -2231,9 +2432,9 @@ body.trainer-portal-page {
     font-size: 19pt;
   }
 
-  /* Section headings inside the flowing layout are step labels, not sheet
+  /* Section headings inside the page grid are step labels, not sheet
      titles. Declared after the 19pt rule above so it does not win. */
-  body.has-print-quick-guide .quick-guide-columns h2 {
+  body.has-print-quick-guide .quick-guide-page-column h2 {
     font-size: 10.5pt;
   }
 
@@ -2246,11 +2447,11 @@ body.trainer-portal-page {
   body.has-print-quick-guide .quick-guide-sheet li,
   body.has-print-quick-guide .quick-guide-sheet td,
   body.has-print-quick-guide .quick-guide-sheet th {
-    line-height: 1.28;
+    line-height: 1.23;
   }
 
   body.has-print-quick-guide .quick-guide-sheet li {
-    margin-bottom: 0.045in;
+    margin-bottom: 0.035in;
   }
 
   body.has-print-quick-guide .quick-guide-header {
@@ -2266,6 +2467,10 @@ body.trainer-portal-page {
 
   body.has-print-quick-guide .quick-guide-header-compact {
     display: block;
+  }
+
+  body.has-print-quick-guide .quick-guide-paged.quick-guide-page-compact .quick-guide-header {
+    padding-bottom: 0.04in;
   }
 
   body.has-print-quick-guide .quick-guide-kicker {
@@ -2352,7 +2557,7 @@ body.trainer-portal-page {
     background: transparent;
   }
 
-  /* Flowing layout: the footer simply ends the document. */
+  /* Default footer behavior for layouts without a pinned sheet footer. */
   body.has-print-quick-guide .quick-guide-footer {
     margin-top: 0.12in;
     padding-top: 0.07in;
@@ -2360,10 +2565,8 @@ body.trainer-portal-page {
     break-inside: avoid;
   }
 
-  /* Absolute positioning pins the footer to the bottom of a fixed-height sheet.
-     It is correct only for the two-sheet layout; on a flowing document it would
-     land in the wrong place. Must follow the rule above to win on specificity
-     and source order. */
+  /* Absolute positioning pins the footer to the bottom of fixed-height sheets.
+     This must follow the default rule above to win on source order. */
   body.has-print-quick-guide .quick-guide-front .quick-guide-footer,
   body.has-print-quick-guide .quick-guide-back .quick-guide-footer,
   body.has-print-quick-guide .quick-guide-paged .quick-guide-footer {
