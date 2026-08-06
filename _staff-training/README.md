@@ -145,13 +145,16 @@ Sample-library work that a guide no longer waits on is tracked in `../_staff/sit
 
 ### Quick Guide Layout Model
 
-**Under revision as of 2026-08-05. Do not treat this as settled, and do not apply it to another instrument's Quick Guide yet.**
+**Candidate revision as of 2026-08-06. Do not apply it to another instrument's Quick Guide until the FTIR print proof and user review are complete.**
 
-The FTIR Quick Guide was relaid out on 2026-08-05 in response to review — the previous version had inconsistent formatting between its two sides and its printed copy ran past page 2. That rebuild fixed real bugs (below), but the resulting format is itself due for another revision round. Optical and XRD keep the older two-sheet layout in the meantime; per [scope of work](#scope-of-work-one-instrument-at-a-time), leave them alone until the format is agreed.
+The FTIR Quick Guide was relaid out again on 2026-08-06 after the automatic multicol version expanded to three sparsely filled pages. The candidate keeps the intended two-sided Letter artifact without shrinking the 10-point body type or removing workflow content. Optical and XRD keep the older two-sheet layout in the meantime; per [scope of work](#scope-of-work-one-instrument-at-a-time), leave them alone until the format is agreed.
 
-What the current FTIR implementation does, for reference rather than as a standard:
+What the candidate FTIR implementation does, for reference rather than as a standard:
 
-* One continuous flow — a single `.quick-guide-sheet.quick-guide-flowing` containing one `.quick-guide-columns` div — instead of two fixed-height sides. Content fills column one top to bottom, then column two, and paginates onto as many Letter sides as it needs.
+* Two explicitly composed `.quick-guide-sheet.quick-guide-paged` Letter sides, each with two real grid columns in DOM reading order. Page 1 contains the trained-user notice and steps 1-4; page 2 contains steps 5-9, the closing checklist, and help contacts.
+* Screen and print use the same page, column, type, spacing, and footer measurements. The on-screen sheets are therefore a print preview rather than a separately reflowed approximation.
+* The grid content is not hidden or automatically balanced. If a later edit exceeds the page, it remains visible and the paginated PDF check fails instead of silently discarding text or generating an unseen third column.
+* The current step allocation is a composition choice for this content, not a rule that every guide side must end at the same workflow phase.
 * `<h2>1. Section name</h2>` with the period, and sub-items always as `<ul>` bullets rather than a mix of numbered and bulleted lists.
 * Safety and stop boxes positioned in the flow at the point where they apply, rather than set outside it.
 * QR codes as static SVGs in `assets/img/qr/`, generated once and committed so the build needs no QR dependency, with the plain-text URL beside each code.
@@ -203,7 +206,7 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
-The FTIR guide was relaid out on 2026-08-05 as a single continuous two-column flow rather than two fixed-height sheets. It currently measures 2 Letter pages with no clipped content (1,044 words total; verified by headless-Chrome PDF render, QR codes decoding at 300 dpi). **The format is under revision, so treat those measurements as describing the current state rather than a target**; see [Quick Guide layout model](#quick-guide-layout-model). A physical duplex proof is still wanted for legibility, grayscale QR scanning, and long-edge flip.
+The FTIR guide was relaid out on 2026-08-06 as two explicitly composed, two-column Letter sheets. It currently measures 2 pages with no clipped or overlapping content (1,044 words total; verified by headless-Chrome PDF render, with both QR codes decoding from the 300 dpi page image). **The format remains a candidate until user review and a physical duplex proof**, including legibility, grayscale QR scanning, and long-edge flip; see [Quick Guide layout model](#quick-guide-layout-model).
 
 Two layout lessons from that rebuild, both of which had shipped:
 
