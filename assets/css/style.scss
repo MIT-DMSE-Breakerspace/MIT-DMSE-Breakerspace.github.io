@@ -1702,17 +1702,90 @@ body.trainer-portal-page {
   margin-top: 0.85rem;
 }
 
-/* Continuous two-column flow. Content fills column one top to bottom, then
-   column two, and paginates naturally instead of being forced onto fixed-height
-   sheets. Used by the FTIR guide; the optical and XRD guides still use the
-   older .quick-guide-grid / .quick-guide-flow two-sheet layout above. */
+/* Continuous two-column flow inside one page. Content fills column one top to
+   bottom, then column two. Used by the FTIR guide; the optical and XRD guides
+   still use the older .quick-guide-grid / .quick-guide-flow layout above. */
 .quick-guide-columns {
   columns: 2;
   column-gap: 1.1rem;
   column-rule: 1px solid #cbd3d7;
 }
 
+/* WYSIWYG pages: the screen sheet carries true Letter geometry so the web view
+   is the print preview. Same width, min-height, padding, and type scale as the
+   print rules, so a break that falls in a given place on screen falls there on
+   paper. min-height rather than height means content that outgrows two pages
+   becomes visible instead of being silently clipped. */
+/* Two columns on a fixed page, and the column block's height is what makes the
+   page break fall where it does. Content fills column one to that height, then
+   column two.
+
+   CSS multicol treats column-count as a MINIMUM: if content is taller than the
+   block, the browser adds a third and fourth column rather than clipping. So a
+   third column appearing is the signal that a page's content does not fit —
+   move a section to the next page rather than shrinking the type or capping the
+   height with overflow:hidden, which hides content silently.
+
+   Heights below are measured, not estimated: page height minus vertical padding
+   minus the header (and notice, page 1 only) minus footer clearance. The footer
+   is absolutely positioned, so it needs clearance rather than a reservation. */
+.quick-guide-paged {
+  display: flex;
+  box-sizing: border-box;
+  width: 8.5in;
+  min-height: 10.92in;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+  padding: 0.42in 0.48in 0.38in;
+  font-size: 10pt;
+  line-height: 1.28;
+  flex-direction: column;
+}
+
+.quick-guide-paged .quick-guide-columns {
+  columns: auto;
+  column-count: 2;
+  column-fill: auto;
+  height: 795px;
+  column-gap: 0.26in;
+  orphans: 3;
+  widows: 3;
+}
+
+/* A compact sheet has no hero photo or notice, so more of its page is usable. */
+.quick-guide-paged.quick-guide-page-compact .quick-guide-columns {
+  height: 905px;
+}
+
+/* A compact page has no hero header or trained-user notice, so it has room for
+   a taller column block. */
+
+
+
+.quick-guide-paged h1,
+.quick-guide-paged h2 {
+  font-size: 19pt;
+}
+
+.quick-guide-paged .quick-guide-columns h2 {
+  font-size: 10.5pt;
+}
+
+/* Keep a block whole within a column where possible, but a long list must be
+   allowed to break across the column boundary. Step 3's startup list and the
+   step 6 quality gate are each 350-450px; forcing them whole makes the page
+   unsplittable, so the browser adds a third column instead. Individual list
+   items still stay intact. */
 .quick-guide-columns > * {
+  break-inside: avoid;
+}
+
+.quick-guide-columns > ul,
+.quick-guide-columns > ol {
+  break-inside: auto;
+}
+
+.quick-guide-columns li {
   break-inside: avoid;
 }
 
@@ -1979,16 +2052,49 @@ body.trainer-portal-page {
     flex-direction: column;
   }
 
-  /* The flowing sheet must NOT be a flex container. Flex gives the multicol
-     child a definite height spanning the whole document, so columns balance
-     across all pages at once — the left column ends up holding steps 1-3 and
-     the right column starts at step 6. Block layout lets multicol fragment
-     per page, which is what produces correct top-to-bottom reading order in
-     column one, then column two, on each page. */
-  body.has-print-quick-guide .quick-guide-flowing {
+  /* Each paged sheet is exactly one Letter page and breaks after itself, so the
+     screen view and the printed view show the same two pages. It must NOT be a
+     flex container: flex gives the multicol child a definite height spanning the
+     whole document, so columns balance across every page at once instead of
+     fragmenting per page. min-height rather than a fixed height with
+     overflow:hidden means content that outgrows the page flows onto another one
+     and stays visible; the fixed-height version silently discarded the excess. */
+  body.has-print-quick-guide .quick-guide-paged {
     display: block;
-    padding-bottom: 0.3in;
+    box-sizing: border-box;
+    width: 8.5in;
+    min-height: 10.92in;
+    padding: 0.42in 0.48in 0.38in;
+    break-after: page;
+    page-break-after: always;
   }
+
+  body.has-print-quick-guide .quick-guide-paged:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  /* Match the screen column-block heights so a break that falls in a given
+     place on screen falls in the same place on paper. column-fill:auto fills
+     column one to the block height before starting column two; column-count
+     (not the `columns` shorthand) prevents a third column appearing when
+     content is taller than the block. */
+  body.has-print-quick-guide .quick-guide-paged .quick-guide-columns {
+    columns: auto;
+    column-count: 2;
+    column-fill: auto;
+    height: 795px;
+    column-gap: 0.26in;
+    column-rule: 1px solid #000;
+    orphans: 3;
+    widows: 3;
+  }
+
+  body.has-print-quick-guide .quick-guide-paged.quick-guide-page-compact .quick-guide-columns {
+    height: 905px;
+  }
+
+
 
   /* Fixed-height sheets apply only to the older two-sheet layout, where each
      side is authored to fit one page. Note that overflow:hidden silently clips
@@ -2201,7 +2307,8 @@ body.trainer-portal-page {
      land in the wrong place. Must follow the rule above to win on specificity
      and source order. */
   body.has-print-quick-guide .quick-guide-front .quick-guide-footer,
-  body.has-print-quick-guide .quick-guide-back .quick-guide-footer {
+  body.has-print-quick-guide .quick-guide-back .quick-guide-footer,
+  body.has-print-quick-guide .quick-guide-paged .quick-guide-footer {
     position: absolute;
     right: 0.48in;
     bottom: 0.28in;
