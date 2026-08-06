@@ -1,0 +1,48 @@
+---
+layout: trainer-shell
+---
+
+<article class="trainer-guide" data-trainer-guide data-guide-revision="{{ page.guide_revision | default: site.time | date: '%Y-%m-%d' }}">
+  <div class="trainer-portal-bar">
+    <a href="{{ '/trainer/' | relative_url }}">Trainer Portal</a>
+    <span>Unlisted trainer resource</span>
+  </div>
+
+  {% if page.guide_status %}
+  <p class="trainer-guide-status"><span>Current state</span> {{ page.guide_status }}</p>
+  {% endif %}
+
+  {% if page.trainer_links %}
+  <nav class="trainer-quick-links" aria-label="Guide resources">
+    {% for link in page.trainer_links %}
+    <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
+  {% if page.interactive_checklist %}
+  <section class="trainer-session-tools" data-trainer-session-tools hidden aria-labelledby="trainer-session-tools-title">
+    <div>
+      <h2 id="trainer-session-tools-title">Session checklist</h2>
+      <p data-trainer-progress role="status" aria-live="polite">Preparing checklist…</p>
+    </div>
+    <div class="trainer-session-actions">
+      <button type="button" data-trainer-next>Next unchecked item</button>
+      <button type="button" data-trainer-reset>Start or reset session</button>
+    </div>
+    <p class="trainer-session-note">Checkmarks stay in this browser tab through a reload. They are not saved to the repository and do not replace the private trainer qualification record. Reset before a new session.</p>
+  </section>
+  {% endif %}
+
+  <div class="trainer-guide-content">
+    {{ content }}
+  </div>
+
+  {% unless page.trainer_index %}
+  <p class="trainer-portal-footer"><a href="{{ '/trainer/' | relative_url }}">Return to the Trainer Portal</a> · Report a guide problem to <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a>.</p>
+  {% endunless %}
+</article>
+
+{% if page.interactive_checklist %}
+<script src="{{ '/assets/js/trainer-checklist.js' | relative_url }}" defer></script>
+{% endif %}

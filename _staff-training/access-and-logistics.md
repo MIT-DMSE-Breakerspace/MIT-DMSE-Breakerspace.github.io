@@ -1,3 +1,17 @@
+---
+title: Training Access And Closeout
+description: Shared access, scheduling, Moira, and closeout reference for Breakerspace instrument trainers.
+guide_status: Current shared reference
+guide_revision: 2026-08-05
+trainer_links:
+  - label: WebMoira
+    url: https://groups.mit.edu/webmoira/
+  - label: Training calendar
+    url: https://breakerspace.libcal.com/calendar?cid=19408
+  - label: Public training pathway
+    url: /training.html
+---
+
 # Trainer Access And Logistics Reference
 
 Last reviewed: 2026-07-31
@@ -6,7 +20,7 @@ This file holds the shared operational facts that every instrument training guid
 
 Individual guides should **link to this file rather than restate its contents**. When a group name, closeout step, or scheduling rule changes, change it here once. A per-guide copy of these facts will drift.
 
-This directory is unpublished, but the repository may still be publicly readable. Moira group *names* are recorded here because they are administrative list identifiers rather than credentials, and one of them is already published on the public Help page. Do not add Kerberos usernames, attendee names, MIT ID numbers, passwords, or workstation login details to this file.
+This reference is published through an unlisted, search-blocked trainer URL, and the repository is publicly readable. Moira group *names* are recorded here because they are administrative list identifiers rather than credentials, and one of them is already published on the public Help page. Do not add Kerberos usernames, attendee names, MIT ID numbers, passwords, or workstation login details to this file.
 
 ## Moira Groups By Instrument
 
@@ -33,19 +47,19 @@ Keep this rule intact when adding an instrument. A group name that merely resemb
 
 | Instrument | Public operating page | Moira group | Group role |
 | --- | --- | --- | --- |
-| Olympus DSX-1000 optical microscope | [`optical.md`](../instruments/optical.md) | `dmse-brkrspc-optical` | Access + comms |
-| Thermo Scientific Nicolet iS5 FTIR | [`ftir.md`](../instruments/ftir.md) | `dmse-brkrspc-ftir` | Access + comms |
-| Horiba Duetta fluorescence and absorbance | [`uv-vis.md`](../instruments/uv-vis.md) | `dmse-brkrspc-uv-vis` | Access + comms |
-| Horiba XploRA confocal Raman microscope | [`raman.md`](../instruments/raman.md) | `dmse-brkrspc-raman` | Access + comms |
-| Microtrac Sync particle size analyzer | [`psa.md`](../instruments/psa.md) | `dmse-brkrspc-psa` | Access + comms |
-| Instron 68TM-50 universal testing system | [`instron.md`](../instruments/instron.md) | `dmse-brkrspc-instron` | Access + comms |
-| Phenom XL SEM | [`phenom-xl.md`](../instruments/phenom-xl.md) | `dmse-brkrspc-sem` | Access + comms |
-| Phenom Pure SEM | [`phenom-pure.md`](../instruments/phenom-pure.md) | `dmse-brkrspc-sem` | Access + comms |
-| Malvern Panalytical Aeris Research XRD | [`xrd.md`](../instruments/xrd.md) | `dmse-brkrspc-xrd` | **Comms only** |
-| Innovatest Nemesis 5100G2 hardness tester | [`hardness-tester.md`](../instruments/hardness-tester.md) | `dmse-brkrspc-hardness-tester` | **Comms only** |
-| Technoorg-Linda SEMPrep 2 ion mill | [`ion-mill.md`](../instruments/ion-mill.md) | `dmse-brkrspc-ion-mill` | **Comms only** |
+| Olympus DSX-1000 optical microscope | [`optical.md`]({% link instruments/optical.md %}) | `dmse-brkrspc-optical` | Access + comms |
+| Thermo Scientific Nicolet iS5 FTIR | [`ftir.md`]({% link instruments/ftir.md %}) | `dmse-brkrspc-ftir` | Access + comms |
+| Horiba Duetta fluorescence and absorbance | [`uv-vis.md`]({% link instruments/uv-vis.md %}) | `dmse-brkrspc-uv-vis` | Access + comms |
+| Horiba XploRA confocal Raman microscope | [`raman.md`]({% link instruments/raman.md %}) | `dmse-brkrspc-raman` | Access + comms |
+| Microtrac Sync particle size analyzer | [`psa.md`]({% link instruments/psa.md %}) | `dmse-brkrspc-psa` | Access + comms |
+| Instron 68TM-50 universal testing system | [`instron.md`]({% link instruments/instron.md %}) | `dmse-brkrspc-instron` | Access + comms |
+| Phenom XL SEM | [`phenom-xl.md`]({% link instruments/phenom-xl.md %}) | `dmse-brkrspc-sem` | Access + comms |
+| Phenom Pure SEM | [`phenom-pure.md`]({% link instruments/phenom-pure.md %}) | `dmse-brkrspc-sem` | Access + comms |
+| Malvern Panalytical Aeris Research XRD | [`xrd.md`]({% link instruments/xrd.md %}) | `dmse-brkrspc-xrd` | **Comms only** |
+| Innovatest Nemesis 5100G2 hardness tester | [`hardness-tester.md`]({% link instruments/hardness-tester.md %}) | `dmse-brkrspc-hardness-tester` | **Comms only** |
+| Technoorg-Linda SEMPrep 2 ion mill | [`ion-mill.md`]({% link instruments/ion-mill.md %}) | `dmse-brkrspc-ion-mill` | **Comms only** |
 
-The **Access + comms** rows were confirmed by the lab manager on 2026-07-31 to the extent that each rename applied cleanly; treat an individual row as verified when someone has actually logged in after being added. Re-check a row before relying on it if a workstation is rebuilt or re-imaged.
+The three **Access + comms** rows whose groups were renamed — optical, Duetta, and Instron — were verified on their workstations on 2026-08-03. The remaining Access + comms rows are inherited from `../resources.md`, which describes Moira as the general mechanism, rather than individually confirmed; treat one as verified when someone has actually logged in after being added. Re-check a row if a workstation is rebuilt or re-imaged.
 
 Two details that the naming rule does not cover:
 
@@ -71,7 +85,7 @@ Because these instruments have no per-user sign-in, they also produce no electro
 
 The XRD is the one comms-only instrument with a **second computer involved in the normal workflow**. The instrument touchscreen has no access control, but data export, HighScore Plus phase matching, and XRDMP Creator all happen on the separate XRD workstation to the right of the instrument.
 
-[`instruments/xrd.md`](../instruments/xrd.md#export) currently tells users to "use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument," which implies that companion workstation has some sign-in of its own.
+The [XRD export instructions]({% link instruments/xrd.md %}#export) currently tell users to "use the current workstation sign-in and export-folder instructions provided during training or posted at the instrument," which implies that companion workstation has some sign-in of its own.
 
 **Open question:** confirm what governs sign-in on the XRD companion workstation, and whether `dmse-brkrspc-xrd` has any role there. Until that is settled, an XRD guide should describe the touchscreen as having no access control while treating the companion workstation's sign-in as something the trainer covers in person. This is the one instrument where "the instrument has no access control" and "the user needs no credentials to finish the workflow" may not be the same statement.
 
@@ -79,23 +93,18 @@ The XRD is the one comms-only instrument with a **second computer involved in th
 
 In practice the ion mill is close to staff-assisted-only, which is a consequence of how rarely it is used rather than a stated policy. Do not document it to users as a restriction. If demand increases, revisit whether the workstation should become access-managed and whether the right artifact is a training guide or a staff-assisted-use protocol.
 
-### Rename Status
+### If You Need To Rename A Group
 
-The names above are the target state, adopted 2026-07-31 so that every group is derivable from its page slug. Five groups needed renaming:
+Five groups were renamed between 2026-07-31 and 2026-08-03 to bring every name in line with the rule above. All are complete and verified, so the table is the only thing to read — but the process is recorded here because it will be needed again when an instrument is added or a page slug changes.
 
-| Former name | New name | Status |
-| --- | --- | --- |
-| `dmse-brkrspc-hrdnss` | `dmse-brkrspc-hardness-tester` | **Done 2026-07-31** |
-| `dmse-brkrspc-ionmill` | `dmse-brkrspc-ion-mill` | **Done 2026-07-31** |
-| `dmse-brkrspc-dsx` | `dmse-brkrspc-optical` | Pending |
-| `dmse-brkrspc-duetta` | `dmse-brkrspc-uv-vis` | Pending |
-| `dmse-brkrspc-utm` | `dmse-brkrspc-instron` | Pending |
+Renaming is safe and cheap:
 
-The two completed renames were the comms-only lists, so neither touched workstation access. They confirmed two useful things: WebMoira renamed a list without error, and it accepted `dmse-brkrspc-hardness-tester` at 28 characters — the longest name in the scheme, so no other name will hit a length limit.
+* WebMoira renames a list without error, and accepts a 28-character name. `dmse-brkrspc-hardness-tester` is the longest name in the scheme, so no name that follows the rule can hit a length limit.
+* **The Windows `Allow log on locally` security setting follows the rename automatically.** The `gpedit.msc` policy picks up the new group name without being retyped. This was verified on the Instron, optical, and Duetta workstations — all three access-controlling renames — so a rename does not silently strip workstation access.
 
-The three pending renames are all access-controlling lists. Each one changes the list name and the workstation's WIN logon privileges in the same operation. **Until a row shows Done, check the actual name in [WebMoira](https://groups.mit.edu/webmoira/) before adding an attendee**, and confirm a real login afterward, since these are the renames where a mistake blocks a trained user.
+Still confirm the new name in [WebMoira](https://groups.mit.edu/webmoira/) and check `Allow log on locally` on the affected workstation afterward. The failure this guards against is invisible at rename time and surfaces later as a trained user who cannot log in.
 
-Delete this section once all five are done, so the table above is the only thing to read.
+The former names, should one appear in an old document or a posted note: `-hrdnss` (now `-hardness-tester`), `-ionmill` (now `-ion-mill`), `-utm` (now `-instron`), `-dsx` (now `-optical`), and `-duetta` (now `-uv-vis`).
 
 The unchanged groups — `-ftir`, `-raman`, `-xrd`, `-psa`, and `-sem` — already satisfy the rule and need no action.
 
@@ -105,11 +114,13 @@ Every standard instrument training ends with the same steps. Instrument guides s
 
 1. **Moira.** Add each attendee to the instrument's group from the table above, whether or not that group grants a workstation login. Do not record attendee Kerberos usernames in this repository.
 2. **Workstation sign-in.** For a domain-managed instrument, the Moira add in step 1 is what enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, the Moira add grants nothing — cover the actual sign-in arrangement at the instrument instead, and do not describe the Moira add as the thing that grants access. The XRD touchscreen needs no sign-in at all, but its companion export/analysis workstation may.
-2. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and point them to `#breakerspace-help`.
-3. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
-4. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Help them through the self-service steps; staff cannot add someone before the account exists.
-5. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
-6. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
+
+   **Timing consequence for the session itself:** because the add happens at closeout, a first-time trainee has no workstation login *during* their own training. On an access-controlled instrument the **trainer performs the initial login while participants watch** — a guide must not ask a trainee to log on with their own Kerberos at the start of a first session, because it will fail. Say why out loud during the session: it explains what the closeout add does, and what to do if their login is not working on the next visit.
+3. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and point them to `#breakerspace-help`.
+4. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
+5. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Help them through the self-service steps; staff cannot add someone before the account exists.
+6. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
+7. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
 
 There is currently no skills demonstration, no training expiration, and no recurring retraining requirement.
 
@@ -125,7 +136,7 @@ Subjects, courses, and research or teaching labs that require coordinated traini
 
 Per-instrument LibCal training events **do exist** — there are ten instrument-training templates, including the hardness tester and ion mill templates added on 2026-08-04, so every guide can name its own template rather than pointing at a general calendar. Note that all twelve public instrument pages currently link the same general registration URL (calendar `19408`, category `69558`) rather than a per-instrument event; this is intentional public routing rather than an absence of instrument-specific templates.
 
-All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state and completed verification are recorded in [`libcal-event-templates.md`](libcal-event-templates.md); the as-built procedure and completion record are in [`libcal-manual-update-guide.md`](libcal-manual-update-guide.md).
+All ten templates were revised on 2026-08-04 to use the approved minimal semantic HTML, canonical instrument-page links, shared registration settings, and follow-up language that does not promise login or tap access. The pre-revision state, procedure, and completion evidence are maintained as administrative records in `../_admin/`.
 
 The timing and attendance questions are resolved. A one-hour calendar block provides 50 usable training minutes internally; do not publish MIT's informal early-start/end convention. Public copy asks attendees to plan to attend the full session and to ask the trainer whether they need to register again if they arrive late or leave early.
 
@@ -133,17 +144,17 @@ The timing and attendance questions are resolved. A one-hour calendar block prov
 
 Each guide needs a named owner responsible for keeping it accurate and for approving changes.
 
-**The lab manager owns every guide as of 2026-07-31.** This is the current state rather than the intended end state: a single owner for eleven guides does not scale, and the point of writing these guides is that many people can deliver the same session. Reassign individual guides to student staff as they take ownership of particular instruments, and record the assignment in each guide's Guide Control table.
+**The lab manager owns every guide as of 2026-07-31.** This is the current state rather than the intended end state: a single owner for eleven guides does not scale, and the point of writing these guides is that many people can deliver the same session. Reassign individual guides to Breakerspace Lab Assistants as they take ownership of particular instruments, and record the assignment in each guide's Guide Control table.
 
 Two roles are worth keeping distinct even while one person holds both:
 
-* **Guide owner** keeps the staff guide accurate, reviews it after a workflow change, and approves edits. A student staff member can hold this.
+* **Guide owner** keeps the staff guide accurate, reviews it after a workflow change, and approves edits. A Breakerspace Lab Assistant can hold this role.
 * **Operational owner** confirms that the instrument's stated workflow, limits, safety claims, and stop conditions are correct. This requires the authority to make an operational call and should stay with the lab manager or another staff member with that standing.
 
 A guide's `Status` row referring to "operational-owner review" means the second role, not the first. When a guide is reassigned to a student owner, the operational-owner sign-off stays where it is.
 
 ## Open Items Tracked Elsewhere
 
-* Approved Level 1 training samples, identifiers, cabinet locations, and replenishment plans: [`../_staff/site-todo.md`](../_staff/site-todo.md), Tier 2.
+* Approved Level 1 training samples, identifiers, cabinet locations, and replenishment plans: repository file `_staff/site-todo.md`, Tier 2.
 * Trainer readiness and who may deliver training: not yet written.
-* Instrument-page media and verification work: [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
+* Instrument-page media and verification work: repository file `instruments/staff-todo.md`.

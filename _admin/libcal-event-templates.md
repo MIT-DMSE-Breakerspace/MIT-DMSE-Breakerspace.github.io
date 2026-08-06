@@ -8,7 +8,7 @@ For the approved field-by-field revision procedure and paste-ready copy, use the
 
 This is a record of the ten LibCal event templates as they existed on 2026-07-31, captured from the LibCal admin **Edit Template** forms before revision. It exists so that a future editor can see what the templates said, identify what changed, and understand why. The completed live state is summarized under [2026-08-04 Revision Status](#2026-08-04-revision-status).
 
-The templates captured below **were outdated and contained factual errors** (see [Known Problems](#known-problems)). They predated the redesigned website, the consolidated instrument pages, the Quick Guides, and the access facts recorded in [`access-and-logistics.md`](access-and-logistics.md). Those problems were corrected in the live templates on 2026-08-04. Where the historical copy in this file and any current staff guide disagree, **the current guide is authoritative.**
+The templates captured below **were outdated and contained factual errors** (see [Known Problems](#known-problems)). They predated the redesigned website, the consolidated instrument pages, the Quick Guides, and the access facts recorded in [`../_staff-training/access-and-logistics.md`](../_staff-training/access-and-logistics.md). Those problems were corrected in the live templates on 2026-08-04. Where the historical copy in this file and any current staff guide disagree, **the current guide is authoritative.**
 
 The completed revision reversed the former content model: rather than restating training content inside LibCal, each live template now carries the minimum needed to register for a session and links to the website for everything else. See [Revision Direction](#revision-direction).
 
@@ -107,7 +107,7 @@ Both emails were identical across the eight instrument templates apart from the 
 
 Reasons not to treat these templates as a content source:
 
-1. **The follow-up email promises access that does not exist for three instruments.** It is sent automatically an hour after every session and states the attendee now has login access to the instrument. Per [`access-and-logistics.md`](access-and-logistics.md#comms-only-groups-xrd-hardness-tester-and-ion-mill), the XRD and ion mill have no access control at all and the hardness tester uses a local account. The XRD *description* makes the same false claim. This is the most consequential error: it is automated, outbound, and wrong.
+1. **The follow-up email promises access that does not exist for three instruments.** It is sent automatically an hour after every session and states the attendee now has login access to the instrument. Per [`../_staff-training/access-and-logistics.md`](../_staff-training/access-and-logistics.md#comms-only-groups-xrd-hardness-tester-and-ion-mill), the XRD and ion mill have no access control at all and the hardness tester uses a local account. The XRD *description* makes the same false claim. This is the most consequential error: it is automated, outbound, and wrong.
 2. **The 48-hour access window is unsourced.** No current page states it. Tap access is processed by the lab manager after the Qualtrics record is complete, with no published turnaround.
 3. **Unfilled placeholder text is publicly visible.** The Duetta description contains `**********ADD OPERATIONS**********` twice.
 4. **PSA has a copy-paste error** — its "More about" heading reads "Scanning Electron Microscopes."

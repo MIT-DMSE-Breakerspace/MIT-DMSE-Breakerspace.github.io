@@ -595,6 +595,292 @@ main table a:focus-visible {
   color: #3f454a;
 }
 
+body.trainer-portal-page {
+  margin: 0;
+  padding: 0;
+  background: #eef3f5;
+}
+
+.trainer-shell {
+  width: min(100%, 72rem);
+  margin: 0 auto;
+  padding: clamp(0.75rem, 2.5vw, 2rem);
+  box-sizing: border-box;
+}
+
+.trainer-shell main {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trainer-guide {
+  padding: clamp(1rem, 3vw, 2.25rem);
+  border: 1px solid #d4dde1;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(23 36 42 / 10%);
+}
+
+.trainer-guide-content table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.trainer-portal-bar {
+  display: flex;
+  gap: 0.65rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.8rem;
+  border-top: 4px solid #ae0721;
+  background: #fff4f5;
+}
+
+.trainer-portal-bar a {
+  color: #8b061a;
+  font-weight: 800;
+}
+
+.trainer-portal-bar span {
+  color: #5c4549;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.trainer-guide-status {
+  margin: 0 0 1rem;
+  padding: 0.62rem 0.75rem;
+  border-left: 4px solid #e1a000;
+  background: #fff8df;
+}
+
+.trainer-guide-status span {
+  display: block;
+  color: #5b4b16;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.trainer-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.2rem;
+}
+
+.trainer-quick-links a {
+  display: inline-flex;
+  min-height: 2.6rem;
+  padding: 0.5rem 0.72rem;
+  border: 2px solid #007aa8;
+  border-radius: 4px;
+  align-items: center;
+  color: #005f7f;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.trainer-quick-links a:hover,
+.trainer-quick-links a:focus-visible {
+  background: #eaf7fc;
+  color: #004c66;
+  text-decoration: underline;
+}
+
+.trainer-session-tools {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.65rem 1rem;
+  align-items: center;
+  margin: 0 0 1.4rem;
+  padding: 0.8rem;
+  border: 1px solid #9ec7d8;
+  border-left: 5px solid #007aa8;
+  border-radius: 4px;
+  background: #f3f9fc;
+  box-shadow: 0 3px 10px rgb(23 36 42 / 16%);
+}
+
+.trainer-session-tools[hidden] {
+  display: none;
+}
+
+.trainer-session-tools h2,
+.trainer-session-tools p {
+  margin: 0;
+}
+
+.trainer-session-tools h2 {
+  color: #17242a;
+  font-size: 1rem;
+}
+
+.trainer-session-tools [data-trainer-progress] {
+  margin-top: 0.12rem;
+  color: #3f494e;
+  font-size: 0.88rem;
+}
+
+.trainer-session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: flex-end;
+}
+
+.trainer-session-actions button {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.7rem;
+  border: 2px solid #007aa8;
+  border-radius: 4px;
+  background: #fff;
+  color: #005f7f;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.trainer-session-actions button:hover:not(:disabled) {
+  background: #eaf7fc;
+}
+
+.trainer-session-actions button:disabled {
+  border-color: #7b8a91;
+  color: #596970;
+  cursor: default;
+}
+
+.trainer-session-tools .trainer-session-note {
+  grid-column: 1 / -1;
+  padding-top: 0.6rem;
+  border-top: 1px solid #bfd8e2;
+  color: #526067;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.trainer-guide-content li:has(> .trainer-checklist-box) {
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 3px;
+}
+
+.trainer-checklist-box {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 0.4rem 0 -1.65rem;
+  vertical-align: -0.22rem;
+  accent-color: #007aa8;
+  cursor: pointer;
+}
+
+.trainer-guide-content .trainer-task-complete {
+  background: #edf5ee;
+  color: #52645a;
+}
+
+/* Phase markers inside the session checklist. These are wayfinding, not section
+   breaks: the checklist should read as one continuous list, so the marker is a
+   thin rule with a small label rather than a heading. A marker between two task
+   lists does split the underlying <ul>, so the vertical rhythm here is what
+   keeps the run feeling unbroken. */
+.trainer-phase {
+  margin: 1.6rem 0 0.7rem;
+  padding-top: 0.45rem;
+  border-top: 2px solid #d8dde2;
+  color: #526067;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.trainer-phase:first-of-type {
+  margin-top: 1rem;
+}
+
+.trainer-phase > span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  background: #eef3f5;
+  color: #17242a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.trainer-phase a {
+  font-weight: 700;
+}
+
+/* Tighten the gap where a phase marker follows a task list, so the split <ul>
+   elements still look like one run of items. */
+.trainer-guide-content ul:has(> li > .trainer-checklist-box) {
+  margin-bottom: 0;
+}
+
+.trainer-facts {
+  margin: 1.1rem 0 1.6rem;
+}
+
+.trainer-facts table {
+  margin: 0;
+}
+
+.trainer-facts td:first-child {
+  width: 11rem;
+  white-space: nowrap;
+}
+
+.trainer-facts thead {
+  display: none;
+}
+
+.trainer-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0.7rem 0 1.7rem;
+}
+
+.trainer-card-grid > section {
+  min-width: 0;
+  padding: 0.85rem 0.9rem;
+  border-top: 3px solid #009de6;
+  background: #f5f8fa;
+}
+
+.trainer-card-grid h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.trainer-card-grid p {
+  margin: 0;
+}
+
+.trainer-portal-footer {
+  margin-top: 2.2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #cbd3d7;
+  color: #526067;
+  font-size: 0.85rem;
+}
+
 .quick-actions-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1346,6 +1632,14 @@ main table a:focus-visible {
   line-height: 1.25;
 }
 
+/* Section headings inside the page grid are step labels, not sheet titles,
+   so they must not inherit the h1/h2 title size above. */
+.quick-guide-page-column h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
 .quick-guide-sheet p,
 .quick-guide-sheet li,
 .quick-guide-sheet td,
@@ -1466,6 +1760,146 @@ main table a:focus-visible {
   margin-top: 0.85rem;
 }
 
+/* FTIR uses two explicitly composed Letter pages. Each page has two real grid
+   columns in DOM reading order instead of a fixed-height multicol container.
+   That makes overflow visible and testable: the browser cannot invent hidden
+   third columns or rebalance content differently between screen and print. */
+.quick-guide-paged {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 8.5in;
+  height: 10.98in;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+  padding: 0.42in 0.48in 0.38in;
+  font-size: 10pt;
+  line-height: 1.28;
+}
+
+.quick-guide-page-grid {
+  display: grid;
+  position: absolute;
+  top: 2.25in;
+  right: 0.48in;
+  bottom: 0.56in;
+  left: 0.48in;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.26in;
+}
+
+.quick-guide-page-compact .quick-guide-page-grid {
+  top: 1.04in;
+}
+
+.quick-guide-page-column {
+  min-width: 0;
+}
+
+.quick-guide-page-column + .quick-guide-page-column {
+  padding-left: 0.26in;
+  border-left: 1px solid #cbd3d7;
+}
+
+.quick-guide-paged h1,
+.quick-guide-paged h2 {
+  font-size: 19pt;
+}
+
+.quick-guide-paged .quick-guide-page-column h2 {
+  font-size: 10.5pt;
+}
+
+.quick-guide-page-column > h2 {
+  margin-top: 0.68rem;
+  margin-bottom: 0.28rem;
+}
+
+.quick-guide-page-column > h2:first-child,
+.quick-guide-page-column > :first-child {
+  margin-top: 0;
+}
+
+.quick-guide-page-column > ul,
+.quick-guide-page-column > ol,
+.quick-guide-page-column > p,
+.quick-guide-page-column > table {
+  margin-bottom: 0.44rem;
+}
+
+.quick-guide-page-column > aside {
+  margin-top: 0.64rem;
+  margin-bottom: 0.64rem;
+}
+
+.quick-guide-page-column > aside:first-child {
+  margin-top: 0;
+}
+
+.quick-guide-closing-column > aside:last-child {
+  margin-bottom: 0;
+}
+
+.quick-guide-closing-column p,
+.quick-guide-closing-column li {
+  line-height: 1.2;
+}
+
+.quick-guide-closing-column > h2 {
+  margin-top: 0.56rem;
+  margin-bottom: 0.24rem;
+}
+
+.quick-guide-closing-column > ul,
+.quick-guide-closing-column > p {
+  margin-bottom: 0.34rem;
+}
+
+.quick-guide-closing-column > aside {
+  margin-top: 0.42rem;
+  margin-bottom: 0.42rem;
+  padding: 0.52rem 0.56rem;
+}
+
+.quick-guide-page-column h2 + ul,
+.quick-guide-page-column h2 + ol {
+  margin-top: 0;
+}
+
+.quick-guide-before-leaving .quick-guide-checks {
+  margin-bottom: 0;
+}
+
+.quick-guide-qr-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.quick-guide-qr {
+  margin: 0;
+}
+
+.quick-guide-qr img {
+  display: block;
+  width: 100%;
+  max-width: 4.2rem;
+  height: auto;
+}
+
+.quick-guide-qr figcaption {
+  margin-top: 0.2rem;
+  font-size: 0.76rem;
+  line-height: 1.25;
+}
+
+.quick-guide-qr-email {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
 .quick-guide-stop,
 .quick-guide-help {
   padding: 0.65rem 0.7rem;
@@ -1562,7 +1996,193 @@ main table a:focus-visible {
   line-height: 1.25;
 }
 
+/* The paged FTIR guide is a print preview on screen. Keep every measurement
+   that affects wrapping or vertical fit identical to the print rules below. */
+.quick-guide-paged .quick-guide-footer {
+  position: absolute;
+  right: 0.48in;
+  bottom: 0.28in;
+  left: 0.48in;
+  margin-top: 0;
+  padding-top: 0.07in;
+  font-size: 6.8pt;
+}
+
+.quick-guide-paged .quick-guide-page-column > h2 {
+  margin-top: 0.1in;
+  margin-bottom: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-page-column > ul,
+.quick-guide-paged .quick-guide-page-column > ol,
+.quick-guide-paged .quick-guide-page-column > p,
+.quick-guide-paged .quick-guide-page-column > table {
+  margin-bottom: 0.065in;
+}
+
+.quick-guide-paged .quick-guide-page-column > aside {
+  margin-top: 0.09in;
+  margin-bottom: 0.09in;
+}
+
+.quick-guide-paged .quick-guide-page-column > aside:first-child {
+  margin-top: 0;
+}
+
+.quick-guide-paged .quick-guide-closing-column > aside:last-child {
+  margin-bottom: 0;
+}
+
+.quick-guide-paged p,
+.quick-guide-paged li,
+.quick-guide-paged td,
+.quick-guide-paged th {
+  line-height: 1.23;
+}
+
+.quick-guide-paged li {
+  margin-bottom: 0.035in;
+}
+
+.quick-guide-paged .quick-guide-closing-column p,
+.quick-guide-paged .quick-guide-closing-column li {
+  line-height: 1.2;
+}
+
+.quick-guide-paged .quick-guide-closing-column > h2 {
+  margin-top: 0.075in;
+  margin-bottom: 0.035in;
+}
+
+.quick-guide-paged .quick-guide-closing-column > ul,
+.quick-guide-paged .quick-guide-closing-column > p {
+  margin-bottom: 0.045in;
+}
+
+.quick-guide-paged .quick-guide-closing-column > aside {
+  margin-top: 0.055in;
+  margin-bottom: 0.055in;
+  padding: 0.07in;
+}
+
+.quick-guide-paged .quick-guide-header {
+  grid-template-columns: minmax(0, 1fr) 1.55in;
+  gap: 0.2in;
+  padding-bottom: 0.1in;
+}
+
+.quick-guide-paged .quick-guide-header > img,
+.quick-guide-paged .quick-guide-header > picture img {
+  max-height: 1.05in;
+}
+
+.quick-guide-paged .quick-guide-header-compact {
+  display: block;
+}
+
+.quick-guide-paged.quick-guide-page-compact .quick-guide-header {
+  padding-bottom: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-kicker {
+  font-size: 7.5pt;
+}
+
+.quick-guide-paged .quick-guide-subtitle {
+  font-size: 9.5pt;
+}
+
+.quick-guide-paged .quick-guide-notice {
+  margin: 0.1in 0;
+  padding: 0.07in 0.1in;
+  font-size: 8.5pt;
+}
+
+.quick-guide-paged .quick-guide-stop,
+.quick-guide-paged .quick-guide-help {
+  padding: 0.09in;
+}
+
+.quick-guide-paged .quick-guide-table {
+  font-size: 8pt;
+}
+
+.quick-guide-paged .quick-guide-table th,
+.quick-guide-paged .quick-guide-table td {
+  padding: 0.04in 0.06in;
+}
+
+.quick-guide-paged .quick-guide-qr-pair {
+  gap: 0.16in;
+  margin-top: 0.07in;
+}
+
+.quick-guide-paged .quick-guide-qr img {
+  max-width: 0.7in;
+}
+
+.quick-guide-paged .quick-guide-qr figcaption {
+  font-size: 6.6pt;
+  line-height: 1.28;
+}
+
+.quick-guide-paged .quick-guide-qr-email {
+  margin-top: 0.06in;
+  font-size: 7.4pt;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr-pair {
+  gap: 0.12in;
+  margin-top: 0.04in;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr img {
+  max-width: 0.62in;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr figcaption {
+  font-size: 6.4pt;
+  line-height: 1.18;
+}
+
+.quick-guide-paged .quick-guide-closing-column .quick-guide-qr-email {
+  margin-top: 0.03in;
+}
+
 @media screen and (max-width: 720px) {
+  .quick-guide-paged {
+    width: auto;
+    height: auto;
+    min-height: 0;
+  }
+
+  .quick-guide-page-grid {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+
+  .quick-guide-page-column + .quick-guide-page-column {
+    padding-top: 0.85rem;
+    padding-left: 0;
+    border-top: 1px solid #cbd3d7;
+    border-left: 0;
+  }
+
+  .quick-guide-paged .quick-guide-footer {
+    position: static;
+    margin-top: 0.75rem;
+  }
+
+  .quick-guide-paged .quick-guide-header {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .quick-guide-paged .quick-guide-header > img,
+  .quick-guide-paged .quick-guide-header > picture {
+    max-width: 12rem;
+  }
+
   .quick-guide-screen-bar,
   .quick-guide-footer {
     align-items: stretch;
@@ -1610,6 +2230,25 @@ main table a:focus-visible {
 }
 
 @media print {
+  body.trainer-portal-page,
+  .trainer-shell,
+  .trainer-guide {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  body.trainer-portal-page .trainer-portal-bar,
+  body.trainer-portal-page .trainer-quick-links,
+  body.trainer-portal-page .trainer-session-tools,
+  body.trainer-portal-page .trainer-portal-footer {
+    display: none !important;
+  }
+
   body.has-print-quick-guide {
     margin: 0;
     padding: 0;
@@ -1637,18 +2276,150 @@ main table a:focus-visible {
 
   body.has-print-quick-guide .quick-guide-sheet {
     display: flex;
-    overflow: hidden;
     width: 8.5in;
-    height: 10.98in;
     margin: 0;
     padding: 0.42in 0.48in 0.38in;
-    break-after: page;
     border: 0;
     color: #000;
     font-size: 10pt;
     line-height: 1.28;
     flex-direction: column;
+  }
+
+  /* The FTIR screen sheets and print sheets use the same Letter geometry and
+     explicit grid columns. Overflow is deliberately visible; a PDF render that
+     exceeds two pages fails the layout check instead of losing content. */
+  body.has-print-quick-guide .quick-guide-paged {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 8.5in;
+    height: 10.98in;
+    padding: 0.42in 0.48in 0.38in;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    break-after: page;
     page-break-after: always;
+  }
+
+  body.has-print-quick-guide .quick-guide-paged:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-grid {
+    display: grid;
+    position: absolute;
+    top: 2.25in;
+    right: 0.48in;
+    bottom: 0.56in;
+    left: 0.48in;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.26in;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-compact .quick-guide-page-grid {
+    top: 1.04in;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-column + .quick-guide-page-column {
+    padding-left: 0.26in;
+    border-left-color: #000;
+  }
+
+  /* Fixed-height sheets apply only to the older two-sheet layout, where each
+     side is authored to fit one page. Note that overflow:hidden silently clips
+     anything longer than the page rather than reflowing it. */
+  body.has-print-quick-guide .quick-guide-front,
+  body.has-print-quick-guide .quick-guide-back {
+    overflow: hidden;
+    height: 10.98in;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-column > h2 {
+    margin-top: 0.1in;
+    margin-bottom: 0.04in;
+    font-size: 10.5pt;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-column > :first-child {
+    margin-top: 0;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-column > ul,
+  body.has-print-quick-guide .quick-guide-page-column > ol,
+  body.has-print-quick-guide .quick-guide-page-column > p,
+  body.has-print-quick-guide .quick-guide-page-column > table {
+    margin-bottom: 0.065in;
+  }
+
+  body.has-print-quick-guide .quick-guide-page-column > aside {
+    margin-top: 0.09in;
+    margin-bottom: 0.09in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > aside:last-child {
+    margin-bottom: 0;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column p,
+  body.has-print-quick-guide .quick-guide-closing-column li {
+    line-height: 1.2;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > h2 {
+    margin-top: 0.075in;
+    margin-bottom: 0.035in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > ul,
+  body.has-print-quick-guide .quick-guide-closing-column > p {
+    margin-bottom: 0.045in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column > aside {
+    margin-top: 0.055in;
+    margin-bottom: 0.055in;
+    padding: 0.07in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr-pair {
+    gap: 0.16in;
+    margin-top: 0.07in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr-pair {
+    gap: 0.12in;
+    margin-top: 0.04in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr img {
+    max-width: 0.7in;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr img {
+    max-width: 0.62in;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr figcaption {
+    font-size: 6.6pt;
+    line-height: 1.28;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr figcaption {
+    font-size: 6.4pt;
+    line-height: 1.18;
+  }
+
+  body.has-print-quick-guide .quick-guide-qr-email {
+    margin-top: 0.06in;
+    font-size: 7.4pt;
+  }
+
+  body.has-print-quick-guide .quick-guide-closing-column .quick-guide-qr-email {
+    margin-top: 0.03in;
   }
 
   body.has-print-quick-guide .quick-guide-sheet:last-child {
@@ -1661,6 +2432,12 @@ main table a:focus-visible {
     font-size: 19pt;
   }
 
+  /* Section headings inside the page grid are step labels, not sheet
+     titles. Declared after the 19pt rule above so it does not win. */
+  body.has-print-quick-guide .quick-guide-page-column h2 {
+    font-size: 10.5pt;
+  }
+
   body.has-print-quick-guide .quick-guide-sheet h3 {
     margin-bottom: 0.12in;
     font-size: 11pt;
@@ -1670,11 +2447,11 @@ main table a:focus-visible {
   body.has-print-quick-guide .quick-guide-sheet li,
   body.has-print-quick-guide .quick-guide-sheet td,
   body.has-print-quick-guide .quick-guide-sheet th {
-    line-height: 1.28;
+    line-height: 1.23;
   }
 
   body.has-print-quick-guide .quick-guide-sheet li {
-    margin-bottom: 0.045in;
+    margin-bottom: 0.035in;
   }
 
   body.has-print-quick-guide .quick-guide-header {
@@ -1690,6 +2467,10 @@ main table a:focus-visible {
 
   body.has-print-quick-guide .quick-guide-header-compact {
     display: block;
+  }
+
+  body.has-print-quick-guide .quick-guide-paged.quick-guide-page-compact .quick-guide-header {
+    padding-bottom: 0.04in;
   }
 
   body.has-print-quick-guide .quick-guide-kicker {
@@ -1776,7 +2557,19 @@ main table a:focus-visible {
     background: transparent;
   }
 
+  /* Default footer behavior for layouts without a pinned sheet footer. */
   body.has-print-quick-guide .quick-guide-footer {
+    margin-top: 0.12in;
+    padding-top: 0.07in;
+    font-size: 6.8pt;
+    break-inside: avoid;
+  }
+
+  /* Absolute positioning pins the footer to the bottom of fixed-height sheets.
+     This must follow the default rule above to win on source order. */
+  body.has-print-quick-guide .quick-guide-front .quick-guide-footer,
+  body.has-print-quick-guide .quick-guide-back .quick-guide-footer,
+  body.has-print-quick-guide .quick-guide-paged .quick-guide-footer {
     position: absolute;
     right: 0.48in;
     bottom: 0.28in;
@@ -1804,6 +2597,31 @@ main table a:focus-visible {
 }
 
 @media print, screen and (max-width: 720px) {
+  .trainer-portal-bar,
+  .trainer-session-tools {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-portal-bar {
+    flex-direction: column;
+  }
+
+  .trainer-session-actions,
+  .trainer-session-actions button,
+  .trainer-quick-links a {
+    width: 100%;
+  }
+
+  .trainer-session-actions {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .trainer-card-grid {
+    grid-template-columns: 1fr;
+  }
+
   .instrument-hero {
     float: none;
     width: 100%;

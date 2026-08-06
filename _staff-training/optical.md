@@ -1,20 +1,40 @@
+---
+title: Optical Microscope Trainer Guide
+description: Session checklist and teaching outline for a one-hour Olympus DSX-1000 optical microscope training.
+guide_status: Needs retrofit and operational check
+guide_revision: 2026-08-05
+interactive_checklist: true
+trainer_links:
+  - label: Participant Quick Guide
+    url: /quick-guides/optical/
+  - label: Operating page and SOP
+    url: /instruments/optical.html#sop
+  - label: Training calendar
+    url: https://breakerspace.libcal.com/calendar?cid=19408
+  - label: WebMoira
+    url: https://groups.mit.edu/webmoira/
+---
+
 # DSX-1000 Optical Microscope Staff Training Guide
 
-This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page](../instruments/optical.md), including the two-page Quick Guide on that page. Do not maintain a separate operating sequence here.
+This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page]({% link instruments/optical.md %}) and its sibling [two-page Quick Guide]({% link quick-guides/optical.md %}). Do not maintain a separate operating sequence here.
+
+<p class="guidance-note"><strong>This guide predates the current model and is awaiting its own development round.</strong> Its sample-selection text was applied on 2026-08-05 as part of a decision made while working on the FTIR guide, ahead of any operational review of optical microscopy — treat that section as a draft to verify, not as settled content. The coverage map, operations table, and continuous-flow layout migration are still outstanding.</p>
+
 
 ## Guide Control
 
 | Field | Value |
 | --- | --- |
 | Instrument | Olympus DSX-1000 digital optical microscope |
-| Public instrument page and Quick Guide | [Optical microscope operating page](../instruments/optical.md#quick-guide) |
-| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; see the [completion record](libcal-manual-update-guide.md#completion-record) |
+| Public instrument page and Quick Guide | [Optical microscope operating page]({% link instruments/optical.md %}) · [Quick Guide]({% link quick-guides/optical.md %}) |
+| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; the administrative completion record is maintained in `_admin/libcal-manual-update-guide.md` |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | Compare observation modes and save a documented 2D image |
-| Training sample | Stable textured sample kit; exact sample, identifier, and cabinet location require approval |
-| Moira group | `dmse-brkrspc-optical` — rename from `dmse-brkrspc-dsx` pending; see [access and logistics](access-and-logistics.md#rename-status--verify-before-relying-on-this-table) |
-| Guide owner | Lab manager (see [guide owners](access-and-logistics.md#guide-owners)) |
+| Training sample | **Trainer-selected.** A stable, well-supported sample with surface texture that reads differently in different observation modes. No specific material is prescribed |
+| Moira group | `dmse-brkrspc-optical` (see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument)) |
+| Guide owner | Lab manager (see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
 | Last reviewed | 2026-08-05 |
 
@@ -39,17 +59,20 @@ The session does not currently include a separate individual skills demonstratio
 
 * [ ] Confirm that the microscope is functioning normally and in its expected starting state.
 * [ ] Confirm that the stage is empty, the installed objective is appropriate, and the full motion path is clear.
-* [ ] Open the [public operating page and Quick Guide](../instruments/optical.md#quick-guide) on the workstation.
+* [ ] Open the [public operating page]({% link instruments/optical.md %}) and [Quick Guide]({% link quick-guides/optical.md %}) on the workstation.
 * [ ] Confirm that DSX starts normally and that the training save location is available.
-* [ ] Prepare nitrile gloves and any sample-preparation tools needed for the approved sample kit.
+* [ ] Prepare nitrile gloves and any sample-preparation tools the selected sample needs.
 * [ ] Confirm that three participants can see the stage, console, and display without obstructing movement.
 
 ### Training Sample
 
-* [ ] Retrieve the approved stable textured sample or sample kit from its assigned location.
+Choose a sample that satisfies the criteria below. No specific material is prescribed, so the session can be matched to a subject exercise or research project.
+
+* [ ] Select and retrieve the sample.
 * [ ] Confirm that it is clean, dry, stable, non-hazardous, and short enough to provide generous objective and head clearance.
-* [ ] Review the expected brightfield image and at least one alternate mode that reveals a different feature.
-* [ ] Confirm that the kit has a stable orientation or recognizable region that allows different training groups to obtain comparable results.
+* [ ] Confirm it has **surface texture that reads differently in different observation modes** — that contrast is the exercise.
+* [ ] **Confirm you have imaged it yourself**, so you know the expected brightfield result and at least one alternate mode that reveals a different feature. If you have not, image it before the session.
+* [ ] Confirm it has a stable orientation or recognizable region, so different participants can obtain comparable results.
 
 ### Participants
 
@@ -62,7 +85,7 @@ The session does not currently include a separate individual skills demonstratio
 | Time | Activity |
 | --- | --- |
 | 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 3-8 minutes | [Lab safety orientation](lab-safety-orientation.md): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
+| 3-8 minutes | [Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
 | 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
 | 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
 | 20-42 minutes | Participants focus, navigate, compare modes, capture a 2D image, and save the result. |
@@ -78,9 +101,11 @@ If the session uses glass slides, connect the sharps-disposal point from the saf
 
 Which observation mode makes the selected surface feature easiest to see and explain, and what settings must be recorded so another user can understand the image?
 
-### Sample And Preparation
+### Sample Selection
 
-Use the approved stable textured sample. Before adoption, record its sample-library identifier or kit name, cabinet location, normal orientation, expected feature, and replenishment or replacement plan in Guide Control.
+**The workflow is fixed; the material is the trainer's choice.** Requirements: clean, dry, stable, non-hazardous, short enough for generous objective and head clearance, and carrying surface texture that reads differently across observation modes. The trainer must have imaged the sample before the session, so a focus, lighting, or clearance problem is recognizable in real time.
+
+If a later round of development adopts specific approved samples, record them in Guide Control and here; keep the workflow text and the Quick Guide sample-agnostic.
 
 The former 3.000 filter exercise is a useful course-specific variation, but it should not become the default general exercise until all pore measurements use the same quantity and units. A three-point radius and a point-to-point diameter must not be averaged as if they were equivalent.
 
@@ -129,12 +154,12 @@ Complete every item before considering the session closed.
 * [ ] Confirm that the sample has been removed, the stage is empty, the head retracted normally, the microscope is off, Windows is logged out, and the dust cover is on.
 * [ ] Confirm that participants know where their image was saved and how to access it.
 * [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee to `dmse-brkrspc-optical`. This group is being renamed from `dmse-brkrspc-dsx`; if the new name is not yet in [WebMoira](https://groups.mit.edu/webmoira/), use the old one. Do not record attendee Kerberos usernames in this file.
+* [ ] Add each attendee to `dmse-brkrspc-optical`. Do not record attendee Kerberos usernames in this file.
 * [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
 * [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.
 * [ ] Point participants to reservations, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
-* [ ] Return the training sample kit to its assigned location and record damage or replenishment needs in the appropriate operational system.
+* [ ] Return the training sample and supplies to their locations and record damage or replenishment needs in the appropriate operational system.
 * [ ] Record any instrument, guide, exercise, or sample-library issue discovered during the session.
 
 ## Trainer Notes And Variations
@@ -146,4 +171,4 @@ Complete every item before considering the session closed.
 
 ## Guide Maintenance
 
-When this guide changes, review the public Quick Guide and operating page, approved sample kit, sample-library record, LibCal description, and Moira information together. Practice the guide with a staff or student-staff trainer before marking it ready for routine delivery.
+When this guide changes, review the public Quick Guide and operating page, the LibCal description, and the Moira information together. This guide names no specific material, so it does not need re-checking when the sample library changes. Practice the guide with a qualified Breakerspace Lab Assistant or other designated trainer before marking it ready for routine delivery.

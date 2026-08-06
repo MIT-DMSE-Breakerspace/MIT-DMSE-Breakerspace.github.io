@@ -8,9 +8,21 @@ collections:
   samples:
     output: true
     permalink: /sample-library/:name/
+  staff-training:
+    output: true
+    permalink: /trainer/:name/
+defaults:
+  - scope:
+      path: ""
+      type: staff-training
+    values:
+      layout: trainer
+      trainer_portal: true
+      sitemap: false
 exclude:
   - README.md
   - CLAUDE.md
+  - _admin
   - assets/survey
   - assets/tools
   - assets/img/image-contest

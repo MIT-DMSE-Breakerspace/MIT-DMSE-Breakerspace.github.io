@@ -91,26 +91,72 @@ Two content sources that were sitting unused and are worth checking for other in
 
 ## Content Strategy
 
-Instrument pages should be complete enough to use at the instrument without requiring the user to click away for basic safety, setup, loading, shutdown, or troubleshooting steps.
+Instrument pages are the canonical Breakerspace destination for each instrument. They should be complete enough to use at the instrument without requiring the user to click away for basic safety, setup, loading, shutdown, or troubleshooting steps. Manufacturer manuals support the technical content and remain the ultimate reference for capabilities and advanced details, but the instrument page owns the lab-approved operating workflow.
 
-The top of each operating page should work as a quick reference for trained users. Where a two-page workstation handout exists, publish it at a standalone `/quick-guides/` URL using the `quick-guide` layout and an `_includes/quick-guides/` content include. Set `quick_guide_url` in the instrument page front matter so the prominent action links directly to that lightweight page. Do not embed the full handout or its media in the long operating page. The shared print stylesheet prints the standalone guide as exactly two US Letter pages for duplex printing. Do not maintain an independent PDF source; generate a PDF from the standalone page only when a fixed release artifact is needed.
+### Relationship Between The Page, Quick Guide, And Staff Guide
 
-Every Quick Guide should:
+The Quick Guide and staff training guide are **sibling derivatives of the canonical instrument page**, not source and derivative of each other:
 
-* Identify itself as a trained-user reference that does not replace training.
-* Use Side 1 for what the instrument shows, routine method selection, compatibility, and stop conditions.
-* Use Side 2 for the routine startup, operation, saving, cleanup, shutdown, and help workflow.
-* Include the canonical page URL, document owner or review responsibility, and last-reviewed date.
+* The **instrument page** owns the complete SOP, sample limits, detailed common workflows, troubleshooting, analysis guidance, exercises, and manual links.
+* The **Quick Guide** is an at-instrument performance aid for recently trained and trained users following one routine workflow.
+* The **staff training guide** is the trainer's curriculum, SOP-coverage checklist, Level 1 exercise, coaching plan, and administrative closeout.
+
+Do not require the Quick Guide to be written before the staff guide can be drafted, or the reverse. Both can be developed in parallel once the canonical SOP and intended Level 1 workflow are stable. Before a training is marked ready for routine delivery, however, both artifacts must be reviewed against the same SOP, the Quick Guide must be available in print at the instrument, and the staff guide must show how every SOP phase is covered. See [`../_staff-training/README.md`](../_staff-training/README.md) for the trainer-facing model.
+
+### Quick Guide Audience And Delivery
+
+A Quick Guide serves recently trained and trained users standing at the instrument. It does not replace training or authorize independent use by an untrained person.
+
+The expected delivery is a reviewed, laminated duplex copy kept at the instrument. The standalone `/quick-guides/` web page exists so staff can print or replace that copy, users can obtain an accessible or personal copy, and a user has a fallback when the physical copy is unavailable. It should work on screen, but the design should not assume or encourage users to toggle between instrument-control software and a browser during routine operation.
+
+The canonical instrument page should link clearly to the Quick Guide from **Quick Actions**, using language such as **At the instrument? Open or print the trained-user Quick Guide**. Keep the link easy to find without presenting the Quick Guide as the primary web starting point. Do not use a lone large banner above the overview that makes the Quick Guide appear to supersede the canonical page or SOP. Workstation desktop shortcuts and posted general-purpose QR codes should continue to open the canonical instrument page; the laminated guide itself can carry the direct Quick Guide URL or QR code for replacement and personal access.
+
+Do not embed the full handout or duplicate its media in the long operating page. Publish it at a standalone `/quick-guides/` URL using the `quick-guide` layout and an `_includes/quick-guides/` content include. Set `quick_guide_url` in the instrument page front matter. The shared print stylesheet should produce exactly two US Letter pages for duplex printing. Do not maintain an independent PDF source; generate a PDF from the standalone page only when a fixed release artifact is needed.
+
+### Quick Guide Content Contract
+
+Every Quick Guide must:
+
+* Identify itself as a recently-trained/trained-user reference that does not replace training.
+* Draw technical claims and operating steps from the canonical instrument page rather than introduce an alternate workflow.
+* Represent every canonical startup and shutdown step. Shortening or regrouping is acceptable only when the meaning and order remain auditable.
+* Cover one default routine workflow, with compact branches only for genuinely routine choices such as sample type, holder, accessory, or observation mode.
+* Include the minimum safe sample-compatibility, preparation, PPE, and stop-and-ask guidance needed while standing at the instrument.
+* Use numbered steps, exact control names, and selected photographs or screenshots where users must locate or recognize hardware or software controls.
+* Include an immediate quality gate: enough information to decide whether contact, focus, signal, alignment, force, or another essential condition is plausible before saving or unloading.
+* Include saving/exporting, unloading, cleanup, shutdown, a before-leaving check, and a safe help state.
+* Include the canonical instrument-page URL, document owner or review responsibility, and last-reviewed date.
 * Remain understandable in grayscale and without printed background colors.
-* Draw technical claims and operating steps from the same instrument page rather than introducing an alternate workflow.
 
-**Scope.** A Quick Guide is a hybrid of an SOP, a set of reminders for inexperienced users, and the major safety considerations — everything needed *while standing at the instrument*. Interpretation and data analysis belong on the operating page instead, linked from the Quick Guide rather than summarized in it. The FTIR and optical pilots include some interpretation guidance that predates this rule; prefer a pointer to the page's analysis section when writing a new guide or revising an old one.
+Interpretation beyond the immediate quality gate belongs on the instrument page. For example, deciding whether an FTIR spectrum has usable contact belongs in the Quick Guide; identifying the material from that spectrum belongs in the page's analysis guidance. Keep parameter tables out when routine operation means selecting a stored method or program. Listing settings a user never types invites unauthorized or accidental changes; name the reviewed stored programs instead.
 
-Keep parameter tables out when the routine workflow is selecting a stored method or program. Listing scan settings a user never types invites them to type them. Name the programs instead, once the instrument's program list is curated.
+Use the following two-side structure by default:
 
-Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Use their page structure and the shared `quick-guide-*` CSS classes as the pattern for later instruments. The optical and FTIR guides are the original pilots and predate the scope rules above, so they still contain some interpretation guidance; `xrd.html` follows the current rules and is the better model for a new guide. Its Side 1 also runs longer than the pilots and has not had a print check, so verify the two-page budget before copying its density.
+**Side 1 — Decide, prepare, and start**
 
-A Quick Guide is a prerequisite for that instrument's staff training guide, because a staff guide carries no operating sequence of its own and references the Quick Guide instead. See [`../_staff-training/README.md`](../_staff-training/README.md) for that dependency and the intended order of work.
+1. Instrument identity, one-sentence purpose, trained-user statement, canonical URL, owner, and review date.
+2. Before-you-start compatibility, PPE, holder/accessory/method, and condition checks.
+3. Compact routine method or mode selection where needed.
+4. Numbered startup, preparation, and loading steps with essential visual control-finding support.
+5. Stop-and-ask conditions placed beside the relevant decisions or steps.
+
+**Side 2 — Measure, verify, save, and leave**
+
+1. Routine acquisition or measurement steps.
+2. Immediate data-quality check.
+3. Save, export, and personal-copy requirements.
+4. Unloading, cleaning, and complete shutdown.
+5. Before-leaving checklist and help pathway.
+
+If the routine workflow cannot fit legibly on two sides, do not shrink or cram the content. Keep one primary Quick Guide and create a separate task-specific workflow card for the additional routine path, or leave the advanced path on the canonical page.
+
+Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Their shared page structure and `quick-guide-*` CSS classes are the implementation starting point.
+
+**`ftir.html` is the reference implementation.** Rebuilt 2026-08-03 under the contract above and corrected through four review rounds, it is the one to copy: numbered steps across both sides so a staff guide can cite them individually, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair.
+
+The optical guide predates the contract and still carries interpretation material. The XRD guide also predates it, is dense, and was written before its staff guide existed. Both need the same retrofit FTIR received.
+
+**None of the three has been print-tested.** FTIR Side 2 is roughly 582 words after correctness work grew it from 378. Verify the two-page budget before copying any of their density, and expect a correct first draft to be longer than a fluent one.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 
@@ -123,17 +169,18 @@ Use this order unless an instrument family needs a hub/split structure:
 1. Title and instrument name.
 2. Overview: what it does and what it is good for.
 3. Quick actions: concise, fully linked actions grouped under **Get started** and **Learn and reference**. Use a two-column goal/guidance table only when the guidance adds a meaningful condition, choice, or preparation step rather than restating the goal.
-4. Two-page Quick Guide for trained users, when available.
-5. What this instrument shows you: accessible educational context, use cases, example results, and limits.
-6. Page index.
-7. Standard operating protocol: startup, operation, shutdown.
-8. Compatible materials and sample preparation.
-9. Quick method, mode, or settings selection where useful.
-10. Detailed operating instructions for new users.
-11. Data processing and analysis.
-12. Common failure modes.
-13. Manufacturer manuals and links.
-14. Exercises.
+4. What this instrument shows you: accessible educational context, use cases, example results, and limits.
+5. Page index.
+6. Standard operating protocol: startup, operation, shutdown.
+7. Compatible materials and sample preparation.
+8. Quick method, mode, or settings selection where useful.
+9. Detailed operating instructions for new users.
+10. Data processing and analysis.
+11. Common failure modes.
+12. Manufacturer manuals and links.
+13. Exercises.
+
+The Quick Guide is not a section of this page. It is a separate standalone document linked from Quick Actions, so it does not appear in this order.
 
 Each operating page should have one H1 for the instrument name. The major sections in the list above should be H2s, and headings within those sections should be H3s. Add deeper levels only when the content genuinely has another nested layer; do not use heading rank only to control visual size.
 

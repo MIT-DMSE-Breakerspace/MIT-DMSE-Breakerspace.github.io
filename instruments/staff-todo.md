@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-07-29
+Last reviewed: 2026-08-03
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -12,15 +12,31 @@ The repository may still be publicly readable. Do not store credentials, access 
 
 Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for all new tutorial photography, screen recording, video capture, processing, and publication work.
 
+## Cross-Instrument Quick Guide Rollout
+
+The content contract and relationship to staff training were settled on 2026-08-03 in [`readme.md`](readme.md#quick-guide-content-contract). The canonical instrument page is the source; the Quick Guide and staff guide are sibling derivatives.
+
+* [ ] Audit the optical and XRD Quick Guides against the canonical SOP. Account for every startup and shutdown item, one routine operation, saving/export, cleanup, stop conditions, and the before-leaving state. FTIR was audited and rebuilt 2026-08-03; use `_includes/quick-guides/ftir.html` as the model.
+* [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling.
+* [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. FTIR was redesigned 2026-08-06 as two explicitly composed grid pages (currently 2 pages with no clipping or overlap in the paginated render); review that candidate before the physical proof, then test QR scanning at print scale. Optical and XRD keep the older fixed-height two-sheet layout; both were checked on 2026-08-05 and currently print complete, but that layout clips silently if content grows past one page per side, so re-check after any content addition.
+* [ ] Move the Quick Guide link out of the at-instrument decision path in Quick Actions and label it for at-instrument use, printing, accessibility, and fallback. Keep the canonical page and SOP as the apparent web starting point.
+* [ ] Confirm workstation desktop shortcuts and general posted QR codes open the canonical instrument page rather than bypassing it for the Quick Guide.
+* [ ] Print, laminate, label, and install the reviewed guide at each instrument. Record who checks the physical copy after workflow revisions and who replaces damaged or outdated copies.
+* [ ] Add Quick Guides for remaining instruments in parallel with their staff guides once each canonical SOP and Level 1 workflow are stable. Complete the staff-guide SOP coverage map and a practice training before routine delivery.
+* [ ] When one routine workflow cannot fit legibly on two sides, keep a primary Quick Guide and create a separate task-specific workflow card rather than shrinking or cramming the guide.
+
 ## Nicolet iS5 FTIR Spectrometer
 
+* [ ] **Define what a good background preview looks like.** [`#background`](./ftir.md#background) defines a background as a single-beam spectrum carrying the source, optics, detector, and atmospheric response — so it is structured, not flat, and the bundled preview recording shows that. The page gives no acceptance criterion, which leaves a trainee with no way to judge the live trace. A draft Quick Guide told users to check for a "clean baseline"; that was wrong and could cause repeated rejection of valid backgrounds, so it was removed in favour of confirming the crystal is bare and unclamped. Have staff describe the expected display, add it to the page, and then let the Quick Guide reference it.
+* [ ] **Add named atmospheric and contamination band positions to the page.** [`#failures`](./ftir.md#failures) and the science section describe water vapor, carbon dioxide, solvent, and residue features qualitatively but give no wavenumbers, so a user cannot recognize them on a spectrum. A draft Quick Guide revision cited approximately 3700 and 2350 cm<sup>-1</sup>; those numbers were not sourced from this page and were removed. Have staff confirm the positions actually seen on this instrument, add them to the page, and only then let the Quick Guide name them.
+* [ ] **Make the background-redo cycle explicit in the SOP.** [`#operation`](./ftir.md#operation) says to repeat background, collection, cleaning, and saving as needed, but never states that a background must be collected on a bare, unclamped crystal with the sample removed. A user can read "recollect the background" as something doable with the sample still loaded. The Quick Guide now spells the cycle out; the canonical page should own it.
 * [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
 * [ ] Replace or reshoot the solid sample, powder sample, liquid sample, crystal cleaning, volatiles cover, and pressure-tip videos with gloved versions; publish future motion instruction as controlled MP4/WebM rather than GIF.
 * [ ] Add one or two annotated example spectra showing major peaks and how to compare an unknown with a known reference.
 * [ ] Add a teaching example contrasting a pure or simple sample with a complex mixture such as coffee, emphasizing when FTIR supports identification and when it mainly supports comparison.
 * [ ] Add a short database-search walkthrough using Wiley KnowItAll or another approved reference workflow.
 * [ ] Add a concise accessory-change note for iD1 transmission and EasiDiff diffuse reflectance, or mark those as staff-guided until a dedicated workflow is written.
-* [ ] Add a small set of approved training samples for repeatable FTIR exercises once the sample library is ready.
+* [ ] Add a small set of approved training samples for repeatable FTIR exercises once the sample library is ready. **Not a guide blocker:** the FTIR guide pair is sample-agnostic by decision of 2026-08-05, so it states selection criteria rather than naming materials. Adopting approved samples later is an enhancement, not a prerequisite for rollout. See [`../_staff-training/README.md`](../_staff-training/README.md#sample-agnostic-guides). Note when that work starts: `_samples/bs-000004.md` (acrylic yarn) **already carries an ATR-FTIR spectrum measured on this instrument** — a JCAMP-DX file plus an image, absorbance, 400.036–4000.001 cm<sup>-1</sup>, 1 cm<sup>-1</sup> resolution, 32 sample / 32 background scans. It is a candidate reference spectrum that nobody has reviewed as a teaching reference yet. It is also the only one of the five current sample-library entries with FTIR data, and there is no paper or cellulose specimen in the library at all.
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 

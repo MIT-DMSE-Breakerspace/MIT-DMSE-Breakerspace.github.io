@@ -14,6 +14,9 @@ readonly pages=(
   "/sample-library/bs-000003/"
   "/quick-guides/ftir/index.html"
   "/safety.html"
+  "/trainer/"
+  "/trainer/ftir/"
+  "/trainer/optical/"
 )
 
 for page in "${pages[@]}"; do
