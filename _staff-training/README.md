@@ -22,14 +22,14 @@ The portal is **unlisted, not private**. Never add credentials, attendee records
 
 ## Current Status
 
-Last substantive work: 2026-08-06.
+Last substantive work: 2026-08-07.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
 * **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
 
-**FTIR is the reference implementation for content and for staff-guide structure.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and restructured the same day as a single continuous session checklist — see [the session-checklist model](#the-session-checklist-model). Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument; the shape is easier to copy than to re-derive. **Its Quick Guide print layout is not yet a reference** — that format is under revision; see [Quick Guide layout model](#quick-guide-layout-model).
+**FTIR is the reference implementation for content and for staff-guide structure.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and restructured the same day as a single continuous session checklist — see [the session-checklist model](#the-session-checklist-model). Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument. **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) is now the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model).
 
 **The template is intentionally not an automatic mirror of every experiment in a live guide.** Update [`instrument-training-template.md`](instrument-training-template.md) when prompted to, using generalized versions of specific decisions that have been finalized in the guide currently under renovation, for the specific purpose of informing future guide development. Until the FTIR session-checklist shape is confirmed by practice and feedback, read `ftir.md` as the structural reference rather than copying the template's older section layout.
 
@@ -39,7 +39,7 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 * **Atmospheric and contamination band positions.** Described qualitatively on the page with no wavenumbers, so the Quick Guide cannot name them. A draft did, from nothing — see the lessons below.
 * **The background-redo cycle as canonical text.** The Quick Guide spells it out; the page should own it.
 
-Also required: operational-owner approval, a physical Letter duplex print proof, a laminated copy installed at the instrument, and a practice training. The print proof is now for legibility, grayscale QR scanning, and long-edge flip only — page count and clipping were verified by paginated render on 2026-08-06.
+Also required: operational-owner approval, a physical Letter duplex print proof, a laminated copy installed at the instrument, and a practice training. Re-run the complete print checks for the compact prototype; the 2026-08-06 paginated verification applied to the preceding composition.
 
 Per the [sample-agnostic decision](#sample-agnostic-guides), FTIR is no longer blocked on identifying a paper specimen or on measured band positions from reviewed reference spectra. The guide states the contrast the exercise needs and requires the trainer to know a bad result on whatever they chose. Approved samples remain worth adding later and are not a release gate now.
 
@@ -147,19 +147,19 @@ Sample-library work that a guide no longer waits on is tracked in `../_staff/sit
 
 ### Quick Guide Layout Model
 
-**Candidate revision as of 2026-08-06. Do not apply it to another instrument's Quick Guide until the FTIR print proof and user review are complete.**
+**Approved on 2026-08-07 for locked, unpublished drafting and lab-assistant review. Instrument-specific technical review and physical duplex proof are still required before publication.**
 
-The FTIR Quick Guide was relaid out again on 2026-08-06 after the automatic multicol version expanded to three sparsely filled pages. The candidate keeps the intended two-sided Letter artifact without shrinking the 10-point body type or removing workflow content. Optical and XRD keep the older two-sheet layout in the meantime; per [scope of work](#scope-of-work-one-instrument-at-a-time), leave them alone until the format is agreed.
+The compact model is embodied in [`../quick-guides/ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md). Its purpose is not to split a long linear tutorial across two sides. It gives the participant one complete SOP side and one control-finding/quality-decision side:
 
-What the candidate FTIR implementation does, for reference rather than as a standard:
+* **Side 1:** a title and trained-user notice; the complete startup, routine operation, and shutdown SOP in the left column; and three guidance boxes in the right column for the instrument's critical handling/safety boundary, before-leaving state, and stop/help path.
+* **Side 2:** one annotated primary software or hardware view; numbered keys whose markers sit outside the controls; two compact immediate-quality or readiness states; and minimal acquisition/before-unloading reminders.
+* **Heading hierarchy:** one document `<h1>`; `<h2>` for **Standard Operating Procedure (SOP)** and the Side 2 visual-map title; `<h3>` for startup, operation, shutdown, interface/result subsections, and reminder headings. The Side 2 `<h2>` is styled at display size without becoming a second `<h1>`.
+* **Fixed common architecture:** all instruments use the same three Side 1 boxes. Only the first topic changes — for example glove separation, holder clearance, enclosure/interlock, moving crosshead, laser, indenter/scale, powder loading, cuvette handling, or high-voltage/vacuum state. If the safe boundary does not fit, narrow the workflow or commission a task card rather than add boxes or shrink text.
+* **One routine workflow:** accessory and advanced workflows stay on the canonical page or receive a separately commissioned task-specific card. The primary guide is not a compressed rewrite of all detailed operating instructions.
 
-* Two explicitly composed `.quick-guide-sheet.quick-guide-paged` Letter sides, each with two real grid columns in DOM reading order. Page 1 contains the trained-user notice and steps 1-4; page 2 contains steps 5-9, the closing checklist, and help contacts.
-* Screen and print use the same page, column, type, spacing, and footer measurements. The on-screen sheets are therefore a print preview rather than a separately reflowed approximation.
-* The grid content is not hidden or automatically balanced. If a later edit exceeds the page, it remains visible and the paginated PDF check fails instead of silently discarding text or generating an unseen third column.
-* The current step allocation is a composition choice for this content, not a rule that every guide side must end at the same workflow phase.
-* `<h2>1. Section name</h2>` with the period, and sub-items always as `<ul>` bullets rather than a mix of numbered and bulleted lists.
-* Safety and stop boxes positioned in the flow at the point where they apply, rather than set outside it.
-* QR codes as static SVGs in `assets/img/qr/`, generated once and committed so the build needs no QR dependency, with the plain-text URL beside each code.
+The exact reusable markup, locked-versus-replaceable rules, stop conditions, and per-instrument image/callout plans are in [`../_staff/quick-guides/README.md`](../_staff/quick-guides/README.md). Use that work order rather than deriving a layout from the FTIR file. Existing optical and XRD guides remain untouched until their own retrofit tasks are authorized.
+
+The compact model still needs a physical FTIR proof. Passing a generated two-page render establishes layout feasibility, not approval to install it.
 
 **The two bugs it fixed are worth keeping in mind regardless of what the format becomes**, because both are invisible in normal use:
 
@@ -171,7 +171,7 @@ What the candidate FTIR implementation does, for reference rather than as a stan
 ```sh
 # with the worktree served on 4173, run from the worktree root
 node -e "const p=require('puppeteer');(async()=>{const b=await p.launch();const g=await b.newPage();
-await g.goto('http://127.0.0.1:4173/quick-guides/ftir/',{waitUntil:'networkidle0'});
+await g.goto('http://127.0.0.1:4173/quick-guides/ftir-sop-map-prototype/',{waitUntil:'networkidle0'});
 await g.emulateMediaType('print');
 await g.pdf({path:'/tmp/qg.pdf',format:'Letter',printBackground:true,margin:{top:0,right:0,bottom:0,left:0}});
 await b.close()})()"
@@ -207,7 +207,7 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
 | First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then timed practice run | Supply the empirical background evidence; test whether the two-solid session and attendee closeout fit 50 minutes; print proof for legibility and QR scanning only. |
 | First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit; leave the layout alone until the Quick Guide format is agreed | Needs retrofit to the [session-checklist model](#the-session-checklist-model) | Restructure as one continuous checklist, and **review the sample-selection text that was applied ahead of optical's own design round** — including its "surface texture that reads differently across observation modes" criterion, which was written without an operational check. |
+| Second | **Optical microscopy** | Needs retrofit; blocked on routine capture/save view and quality pair | Needs retrofit to the [session-checklist model](#the-session-checklist-model) | Resolve the [optical Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#olympus-dsx100-optical-microscope), restructure the staff guide as one continuous checklist, and review sample-selection text written before optical's own design round. |
 | Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, and starting settings before planned fall subject use. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
 | Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
@@ -224,7 +224,7 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 4. Assemble the student-trainer handoff as the guides mature: what can be taught independently, where the guide and materials are located, what remains out of scope, and how to escalate a problem.
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
-The FTIR guide was relaid out on 2026-08-06 as two explicitly composed, two-column Letter sheets. It renders as 2 pages with no clipped or overlapping content; the earlier QR images also decoded from the 300 dpi page render. **The format remains a candidate until a physical duplex proof**, including legibility, grayscale QR scanning, and long-edge flip; see [Quick Guide layout model](#quick-guide-layout-model). Keep volatile word counts in generated review output rather than copying them into multiple handoff documents.
+The compact FTIR SOP/visual-map prototype was accepted on 2026-08-07 as the composition to test and use for locked unpublished drafts. It still requires lab-assistant review and a physical duplex proof before it can replace the published guide. Keep volatile measurements and render observations in generated review output rather than copying them into multiple handoff documents.
 
 Two layout lessons from that rebuild, both of which had shipped:
 

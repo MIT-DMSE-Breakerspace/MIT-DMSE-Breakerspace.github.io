@@ -2149,6 +2149,403 @@ body.trainer-portal-page {
   margin-top: 0.03in;
 }
 
+/* Two-sided SOP + visual-map Quick Guide model. The FTIR prototype is the
+   reference composition; instrument candidates reuse these measurements and
+   classes without adding instrument-specific CSS. */
+.quick-guide-sop-map-sheet {
+  font-size: 10pt;
+}
+
+.quick-guide-sop-map-sheet-header {
+  display: flex;
+  position: static;
+  float: none;
+  width: auto;
+  gap: 0.2in;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 0.1in;
+  border-bottom: 3px solid #ae0721;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sheet-header h1,
+.quick-guide-paged .quick-guide-sop-map-sheet-header h2 {
+  margin: 0 0 0.04in;
+  font-size: 19pt;
+  line-height: 1.08;
+}
+
+.quick-guide-sop-map-sheet-subtitle {
+  max-width: 6.2in;
+  margin: 0;
+  color: #3f4a50;
+  font-size: 9.5pt;
+  line-height: 1.25;
+}
+
+.quick-guide-sop-map-review-badge {
+  flex: 0 0 0.92in;
+  padding: 0.07in 0.08in;
+  border: 2px solid #ae0721;
+  color: #7b1021;
+  font-size: 7.5pt;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quick-guide-sop-map-trained-user-note {
+  margin-top: 0.08in;
+  padding: 0.06in 0.09in;
+  border-left: 4px solid #009de6;
+  background: #f2f8fb;
+  font-size: 8.6pt;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.quick-guide-sop-map-sop-grid {
+  display: grid;
+  position: absolute;
+  top: 1.82in;
+  right: 0.48in;
+  bottom: 0.57in;
+  left: 0.48in;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 0.27in;
+}
+
+.quick-guide-sop-map-sop-column {
+  min-width: 0;
+}
+
+.quick-guide-sop-map-sop-column-primary {
+  font-size: 8.6pt;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sop-column-title {
+  margin: 0 0 0.12in;
+  padding-bottom: 0.055in;
+  border-bottom: 1px solid #8ca1ad;
+  color: #3f4a50;
+  font-size: 14.5pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-sop-column-title span {
+  white-space: nowrap;
+}
+
+.quick-guide-sop-map-sop-column-secondary {
+  padding-left: 0.27in;
+  border-left: 1px solid #aeb9bf;
+}
+
+.quick-guide-sop-map-sop-section {
+  margin-bottom: 0.14in;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sop-section h3 {
+  margin: 0 0 0.045in;
+  font-size: 12.5pt;
+  line-height: 1.12;
+}
+
+.quick-guide-paged .quick-guide-sop-map-critical-rule h2,
+.quick-guide-paged .quick-guide-sop-map-before-leaving h2,
+.quick-guide-paged .quick-guide-sop-map-stop-help h2 {
+  margin: 0 0 0.06in;
+  font-size: 12pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-sop-section h3 span {
+  display: inline-flex;
+  width: 0.23in;
+  height: 0.23in;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.04in;
+  border-radius: 50%;
+  background: #17242a;
+  color: #fff;
+  font-size: 8pt;
+  vertical-align: 0.02in;
+}
+
+.quick-guide-sop-map-sop-section ul,
+.quick-guide-sop-map-before-leaving ul {
+  margin: 0;
+  padding-left: 0.2in;
+}
+
+.quick-guide-sop-map-sop-section li {
+  margin-bottom: 0.035in;
+  line-height: 1.22;
+}
+
+.quick-guide-sop-map-critical-rule,
+.quick-guide-sop-map-before-leaving,
+.quick-guide-sop-map-stop-help {
+  margin-bottom: 0.13in;
+  padding: 0.1in;
+}
+
+.quick-guide-sop-map-critical-rule {
+  border: 2px solid #8b1426;
+}
+
+.quick-guide-sop-map-critical-rule p {
+  margin: 0.025in 0 0;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-before-leaving {
+  border: 1px solid #8ca1ad;
+  background: #f5f8fa;
+}
+
+.quick-guide-sop-map-before-leaving li {
+  margin-bottom: 0.025in;
+  line-height: 1.2;
+}
+
+.quick-guide-sop-map-stop-help {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 0.86in;
+  gap: 0.11in;
+  align-items: start;
+  border: 2px solid #007aa8;
+}
+
+.quick-guide-sop-map-stop-help p {
+  margin: 0;
+  font-size: 8.7pt;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-stop-help figure {
+  margin: 0;
+  text-align: center;
+}
+
+.quick-guide-sop-map-stop-help img {
+  display: block;
+  width: 0.68in;
+  height: 0.68in;
+  margin: 0 auto;
+}
+
+.quick-guide-sop-map-stop-help figcaption {
+  margin-top: 0.035in;
+  font-size: 5.8pt;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+}
+
+.quick-guide-sop-map-map-body {
+  position: absolute;
+  top: 1.4in;
+  right: 0.48in;
+  bottom: 0.57in;
+  left: 0.48in;
+}
+
+.quick-guide-sop-map-map-section {
+  margin-bottom: 0.16in;
+}
+
+.quick-guide-sop-map-map-heading {
+  display: flex;
+  gap: 0.15in;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.05in;
+}
+
+.quick-guide-paged .quick-guide-sop-map-map-heading h3,
+.quick-guide-paged .quick-guide-sop-map-map-reminders h3 {
+  margin: 0;
+  font-size: 12.5pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-map-heading p {
+  max-width: 5.35in;
+  margin: 0;
+  color: #455159;
+  font-size: 8.2pt;
+  line-height: 1.22;
+  text-align: right;
+}
+
+.quick-guide-sop-map-toolbar-figure {
+  margin: 0;
+}
+
+.quick-guide-sop-map-toolbar-crop {
+  position: relative;
+  height: 1.55in;
+  overflow: hidden;
+  border: 1px solid #8ca1ad;
+  background: #eef1f3;
+}
+
+.quick-guide-sop-map-toolbar-crop img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quick-guide-sop-map-callout-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quick-guide-sop-map-control-key {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.06in;
+  margin-top: 0.06in;
+  font-size: 7.8pt;
+  line-height: 1.2;
+}
+
+.quick-guide-sop-map-control-key span {
+  display: flex;
+  gap: 0.045in;
+  align-items: center;
+}
+
+.quick-guide-sop-map-control-key b,
+.quick-guide-sop-map-map-reminders h3 span {
+  display: inline-flex;
+  flex: 0 0 0.2in;
+  width: 0.2in;
+  height: 0.2in;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ae0721;
+  color: #fff;
+  font-size: 7.5pt;
+}
+
+.quick-guide-sop-map-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.18in;
+}
+
+.quick-guide-sop-map-quality-card {
+  margin: 0;
+  border: 1px solid #8ca1ad;
+  background: #fff;
+}
+
+.quick-guide-sop-map-quality-card > img,
+.quick-guide-sop-map-quality-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quick-guide-sop-map-quality-image {
+  position: relative;
+}
+
+.quick-guide-sop-map-quality-card figcaption {
+  min-height: 0.67in;
+  padding: 0.07in 0.09in;
+  font-size: 8pt;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-quality-stop {
+  border-top: 4px solid #ae0721;
+}
+
+.quick-guide-sop-map-quality-ready {
+  border-top: 4px solid #087f5b;
+}
+
+.quick-guide-sop-map-map-reminders {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 0.82in;
+  gap: 0.14in;
+  align-items: center;
+  margin-top: 0.13in;
+  padding: 0.1in 0.12in;
+  border: 2px solid #007aa8;
+  background: #f2f8fb;
+}
+
+.quick-guide-sop-map-map-reminders > div + div {
+  padding-left: 0.14in;
+  border-left: 1px solid #8ca1ad;
+}
+
+.quick-guide-sop-map-map-reminders p {
+  margin: 0.04in 0 0;
+  font-size: 8pt;
+  line-height: 1.22;
+}
+
+.quick-guide-sop-map-map-reminders figure {
+  margin: 0;
+  text-align: center;
+}
+
+.quick-guide-sop-map-map-reminders img {
+  display: block;
+  width: 0.64in;
+  height: 0.64in;
+  margin: 0 auto;
+}
+
+.quick-guide-sop-map-map-reminders figcaption {
+  margin-top: 0.03in;
+  font-size: 6.2pt;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 720px) {
+  .quick-guide-sop-map-sop-grid,
+  .quick-guide-sop-map-map-body {
+    position: static;
+  }
+
+  .quick-guide-sop-map-sop-grid,
+  .quick-guide-sop-map-quality-grid,
+  .quick-guide-sop-map-map-reminders {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-guide-sop-map-sop-column-secondary,
+  .quick-guide-sop-map-map-reminders > div + div {
+    padding-top: 0.75rem;
+    padding-left: 0;
+    border-top: 1px solid #aeb9bf;
+    border-left: 0;
+  }
+
+  .quick-guide-sop-map-toolbar-crop {
+    height: auto;
+    overflow: visible;
+  }
+
+  .quick-guide-sop-map-map-heading {
+    display: block;
+  }
+
+  .quick-guide-sop-map-map-heading p {
+    margin-top: 0.25rem;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .quick-guide-paged {
     width: auto;

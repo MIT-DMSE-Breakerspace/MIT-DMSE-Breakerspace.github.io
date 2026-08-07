@@ -89,6 +89,7 @@ Use one source of truth for each kind of work:
 
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
 * `_staff-training/README.md`: trainer-facing guide model, shared trainer references, and the canonical-SOP/Quick-Guide/staff-guide relationship. Start there for any staff-training work.
+* `_staff/quick-guides/README.md`: locked two-page Quick Guide production procedure, reusable SOP/visual-map template, and instrument-specific image/callout work orders.
 * `_admin/README.md`: unpublished LibCal and Qualtrics administration, audit, and maintenance records.
 * `instruments/readme.md`: instrument-page architecture, migration status, Quick Guide contract and scope rules, shared includes, and authoring conventions.
 * `instruments/staff-todo.md`: unpublished instrument-specific missing images, workflows, examples, exercises, and technical review items.
