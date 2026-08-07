@@ -88,7 +88,7 @@ Finally, remember the measurement basis matters. A volume-based distribution is 
 * [Check the active database](../assets/img/tutorials/psa/database.png) and [change or create a new one](../assets/img/tutorials/psa/database-change.png) if needed, so your data is saved where you expect.
 * [Load a measurement SOP](../assets/img/tutorials/psa/load-sop.png). If no suitable SOP exists, ask lab staff for assistance.
 * Clean loose particles from the sample area (see [cleaning the sample area](#cleaning)).
-* Load the sample: about 1/4 teaspoon for the shallow sample tray, spread evenly and not compressed (see [loading a sample](#loading)).
+* Load the sample using the appropriate accessory and the selected measurement SOP (see [loading a sample](#loading)).
 * Close the sample compartment door.
 * Run the Auto-Sequence, editing the title, sample ID, and notes as appropriate.
 * Repeat as needed.

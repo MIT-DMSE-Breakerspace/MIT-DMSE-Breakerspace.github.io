@@ -87,16 +87,13 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 
 ### Operation {#operation}
 
-* Set up your mechanical test (see [detailed operating instructions](#details) for each sample type).
+* Set up the mechanical test appropriate for your sample (see [detailed operating instructions](#details) for each test type).
 * Confirm the correct load cell connector (5 kN or 50 kN) is inserted and plugged in.
-* On the [home screen](#bluehill), click **Method** to create a method from a template or review existing methods (see [setting up a test method](#method)).
-* Return to the home screen with the house icon at the top left.
-* Click **Test**. Run a basic **QuickTest** or choose a method.
-* Enter your sample dimensions for this specimen.
-* When prompted, set travel limits so the crosshead and fixtures cannot collide with anything (see [set travel and transducer limits](#limits)).
-* Jog the crosshead into position, press **zero displacement**, and balance the force reading.
+* Select or create the appropriate test method in Bluehill (see [setting up a test method](#method)).
+* Enter the required specimen information and set travel limits so the crosshead and fixtures cannot collide with anything (see [set travel and transducer limits](#limits)).
+* Position and load the sample, zero displacement, and balance the force reading.
 * On the testing page, press **unlock** then **start** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) in quick succession. The ready-to-test window lasts about two seconds.
-* The test ends when the sample fails. To stop early, press **stop** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG) or push the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG).
+* Perform the mechanical characterization appropriate for the sample and method. To stop the test, press **stop** on the [hand controller](../assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG); use the red emergency [stop button](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG) for an emergency.
 * When every specimen is done, select **Finish sample** to save the sample.
 
 ### Instrument Shutdown {#shutdown}

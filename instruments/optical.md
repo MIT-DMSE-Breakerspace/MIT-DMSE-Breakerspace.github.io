@@ -93,7 +93,7 @@ When comparing observation modes, look for which mode makes the question easier 
 * Clear the [stage](../assets/img/tutorials/optical/stage.JPG) of any samples or other materials.
 * Start the [DSX software](../assets/img/tutorials/optical/desktop.PNG) and [log on as Guest](../assets/img/tutorials/optical/guest.PNG) with no password.
 * [Acknowledge that it is safe for the stage and head to move](../assets/img/tutorials/optical/acknowledge.PNG).
-* Use the manual focusing knob to [lower the microscope stage](#optical-lower-video).
+* Use the manual focusing knob to [lower the microscope stage](../assets/media/tutorials/optical/lower.mp4).
 * Load or change [objectives](#objectives) if needed.
 * Lower the microscope head into the tilt position using [the button on the console](../assets/img/tutorials/optical/tilt-console.JPG) or the [software button](../assets/img/tutorials/optical/tilt-software.PNG).
 
@@ -101,32 +101,12 @@ When comparing observation modes, look for which mode makes the question easier 
 
 * [Place the sample on the stage](#sample-prep).
 * Remove gloves before using the keyboard, mouse, or instrument workstation.
-* Use the [manual focusing knob](#optical-focus-video) to bring the sample into rough focus.
-* Use the [joystick](#optical-joystick-video) to move the stage and position the sample area under observation.
-* Fine-tune focus by moving the zoom head with the console buttons, [focus wheel](#optical-focus-wheel-video), or software buttons.
-* Select an observation mode with Best Image, or choose the mode manually.
-* Capture 2D, 3D, stitched, movie, time-lapse, or path images as needed.
+* Use the [manual focusing knob](../assets/media/tutorials/optical/focus.mp4) to bring the sample into rough focus.
+* Use the [joystick](../assets/media/tutorials/optical/joystick.mp4) to move the stage and position the sample area under observation.
+* Fine-tune focus by moving the zoom head with the console buttons, [focus wheel](../assets/media/tutorials/optical/focus-wheel.mp4), or software buttons.
+* Characterize the sample as appropriate for your goals (see [detailed operating instructions](#details)).
 * Verify that files are saved where you intend.
 * Wear gloves again before unloading or handling samples.
-
-<div class="instructional-media-grid">
-  <figure class="page-figure" id="optical-lower-video">
-    {% include instructional-video.html id="optical-lower" %}
-    <figcaption>Lower the stage before loading or changing objectives.</figcaption>
-  </figure>
-  <figure class="page-figure" id="optical-focus-video">
-    {% include instructional-video.html id="optical-focus" %}
-    <figcaption>Bring the sample into rough focus with the manual focusing knob.</figcaption>
-  </figure>
-  <figure class="page-figure" id="optical-joystick-video">
-    {% include instructional-video.html id="optical-joystick" %}
-    <figcaption>Use the joystick to position the region of interest.</figcaption>
-  </figure>
-  <figure class="page-figure" id="optical-focus-wheel-video">
-    {% include instructional-video.html id="optical-focus-wheel" %}
-    <figcaption>Use the focus wheel for fine focus.</figcaption>
-  </figure>
-</div>
 
 ### Instrument Shutdown {#shutdown}
 

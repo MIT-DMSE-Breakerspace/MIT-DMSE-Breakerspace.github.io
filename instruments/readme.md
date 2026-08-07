@@ -185,6 +185,17 @@ The Quick Guide is not a section of this page. It is a separate standalone docum
 
 Each operating page should have one H1 for the instrument name. The major sections in the list above should be H2s, and headings within those sections should be H3s. Add deeper levels only when the content genuinely has another nested layer; do not use heading rank only to control visual size.
 
+## Standard Operating Protocol Content Contract
+
+The SOP is the trained user's short state-transition sequence, not the introductory exercise or a compressed version of the detailed operating instructions.
+
+* Use bullet-point text under **Instrument Startup**, **Operation**, and **Instrument Shutdown**. A short safety guidance block may appear immediately before Startup when experienced users need to see a persistent hazard reminder.
+* Do not embed images, videos, animations, tables, or step-by-step screenshot sequences in the SOP. Link a relevant asset or detailed section inline when a user may need a visual reminder.
+* Include the unavoidable physical, software, and interface actions needed to establish a safe ready state, load or position the sample, perform characterization, save the result, unload, clean, and leave the instrument in its required final state.
+* Keep clearance, interlock, contamination, stored-energy, high-voltage, pressure, and other safety-critical checks that apply to normal use. Put abnormal recovery procedures and optional accessory workflows in detailed instructions or failure modes unless the action is required to reach a safe state.
+* When several legitimate characterization paths branch after loading and initial setup, use a general step such as **Characterize the sample as appropriate for your goals** and link the detailed operating instructions. Do not enumerate a subset of capabilities in a way that looks exhaustive or make the SOP follow one Level 1 exercise.
+* Define the Level 1 teaching workflow separately. Training may demonstrate a selected set of methods and the Quick Guide software map may identify the controls used for that curriculum, but neither should expand or narrow the canonical SOP.
+
 ## Educational Section Format
 
 The educational section should usually be 500-900 words total, plus images or example data when available. A good default structure is:
