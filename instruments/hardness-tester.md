@@ -80,7 +80,7 @@ When you run a pattern of several points, look at the spread as well as the aver
 
 Match the indenter and scale to your sample before testing. Using a scale whose indenter is too soft for a hard surface can damage the indenter or the machine (see [common failure modes](#failures)). If you are not sure which scale is safe for your material, ask staff.
 
-### Startup {#startup}
+### Instrument Startup {#startup}
 
 * Turn on the machine using the red power switch at the back.
 * Start Impressions using the current sign-in instructions provided during training or posted at the instrument.
@@ -94,7 +94,7 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 * Choose a safe scale and test method with **SCALE SELECT** (see [test method selection](#test-method)).
 * Perform hardness testing appropriate for your sample (see [detailed operating instructions](#details)).
 
-### Shutdown {#shutdown}
+### Instrument Shutdown {#shutdown}
 
 * Confirm you are back in single-point mode (patterns are retained across users).
 * Remove your sample and turn off the workstation.

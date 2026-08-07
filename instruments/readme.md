@@ -93,6 +93,15 @@ Two content sources that were sitting unused and are worth checking for other in
 
 Instrument pages are the canonical Breakerspace destination for each instrument. They should be complete enough to use at the instrument without requiring the user to click away for basic safety, setup, loading, shutdown, or troubleshooting steps. Manufacturer manuals support the technical content and remain the ultimate reference for capabilities and advanced details, but the instrument page owns the lab-approved operating workflow.
 
+### Two-Speed Instrument-Page Model
+
+**Two-speed** describes two reading modes within one canonical instrument page, not two competing sources of operating instructions:
+
+* The **fast trained-user path** is the Standard Operating Protocol (SOP): a short, bullet-only state-transition sequence covering the unavoidable actions needed to reach the ready state, load or position a sample, characterize it as appropriate, save, unload, clean, and leave the instrument in its required final state.
+* The **teaching and reference path** is the detailed operating content: branching common workflows, control-level explanation, media, troubleshooting, analysis guidance, and links to the manufacturer's manuals for deeper technical reference.
+
+The SOP must not become a compressed tutorial, capability list, Level 1 exercise, or miniature manual. When characterization can branch, the SOP uses a general characterization step and links to the detailed instructions. The approved Level 1 workflow is defined separately: staff may teach several specific operations, and the Quick Guide may map their controls, without adding those operations to the SOP or implying that they exhaust the instrument's capabilities.
+
 ### Relationship Between The Page, Quick Guide, And Staff Guide
 
 The Quick Guide and staff training guide are **sibling derivatives of the canonical instrument page**, not source and derivative of each other:

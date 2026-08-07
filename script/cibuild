@@ -2,6 +2,7 @@
 
 set -e
 
+script/check-sop-contract
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --disable-external --check-html --check-sri --empty-alt-ignore
 bundle exec script/check-site-quality

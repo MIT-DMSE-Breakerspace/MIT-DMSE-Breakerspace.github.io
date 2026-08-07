@@ -1,0 +1,115 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "pathname"
+
+ROOT = Pathname.new(__dir__).parent
+INSTRUMENTS = ROOT.join("instruments")
+EXPECTED_SOP_SLUGS = %w[
+  ftir
+  hardness-tester
+  instron
+  ion-mill
+  optical
+  phenom-pure
+  phenom-xl
+  psa
+  raman
+  uv-vis
+  xrd
+].freeze
+SOP_HEADING = /^## Standard Operating Protocol(?:\s+\{#sop\})?\s*$/
+NEXT_H2 = /^##\s+/
+SUBHEADING = /^###\s+(.+?)(?:\s+\{#[^}]+\})?\s*$/
+REQUIRED_SUBHEADINGS = ["Instrument Startup", "Operation", "Instrument Shutdown"].freeze
+PROHIBITED_CONTENT = {
+  "embedded media or figure" => /!\[[^\]]*\](?:\([^)]*\)|\[[^\]]*\])|<(?:audio|canvas|embed|figure|iframe|img|object|picture|svg|video)\b/i,
+  "Jekyll include" => /\{%\s*include\b/i,
+  "HTML table" => /<table\b/i,
+  "Markdown table row" => /^\s*\|.*\|\s*$/,
+  "Markdown table delimiter" => /^\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$/
+}.freeze
+
+def relative(path)
+  Pathname.new(path).relative_path_from(ROOT).to_s
+end
+
+def source_location(path, line_index)
+  "#{relative(path)}:#{line_index + 1}"
+end
+
+errors = []
+sop_count = 0
+expected_paths = EXPECTED_SOP_SLUGS.map { |slug| INSTRUMENTS.join("#{slug}.md").to_s }
+expected_paths.reject { |path| File.file?(path) }.each do |path|
+  errors << "Missing expected instrument page: #{relative(path)}"
+end
+
+Dir.glob(INSTRUMENTS.join("*.md")).sort.each do |path_string|
+  path = Pathname.new(path_string)
+  lines = path.readlines(chomp: true)
+  starts = lines.each_index.select { |index| lines[index].match?(SOP_HEADING) }
+  if starts.empty?
+    errors << "#{relative(path)} is missing its Standard Operating Protocol section" if expected_paths.include?(path_string)
+    next
+  end
+
+  if starts.length > 1
+    errors << "#{relative(path)} contains more than one Standard Operating Protocol section"
+    next
+  end
+
+  sop_count += 1
+  start_index = starts.first
+  finish_index = ((start_index + 1)...lines.length).find { |index| lines[index].match?(NEXT_H2) } || lines.length
+  sop_range = (start_index + 1)...finish_index
+
+  sop_range.each do |index|
+    PROHIBITED_CONTENT.each do |label, pattern|
+      errors << "#{source_location(path, index)} contains prohibited #{label}" if lines[index].match?(pattern)
+    end
+  end
+
+  subheadings = sop_range.filter_map do |index|
+    match = lines[index].match(SUBHEADING)
+    [index, match[1]] if match
+  end
+  names = subheadings.map(&:last)
+  unless names == REQUIRED_SUBHEADINGS
+    errors << "#{relative(path)} SOP subsections must be exactly #{REQUIRED_SUBHEADINGS.join(', ')}; " \
+              "found #{names.empty? ? 'none' : names.join(', ')}"
+    next
+  end
+
+  subheadings.each_with_index do |(heading_index, heading_name), position|
+    section_end = subheadings[position + 1]&.first || finish_index
+    in_bullet = false
+
+    ((heading_index + 1)...section_end).each do |index|
+      line = lines[index]
+      next if line.strip.empty?
+
+      if line.match?(/^[*+-]\s+\S/)
+        in_bullet = true
+        next
+      end
+
+      # Indented continuation lines remain part of the preceding bullet.
+      next if in_bullet && line.match?(/^\s{2,}\S/)
+
+      errors << "#{source_location(path, index)} has non-bullet procedure content under #{heading_name}"
+    end
+  end
+end
+
+errors << "No instrument SOP sections were found" if sop_count.zero?
+
+if errors.empty?
+  puts "SOP contract checks passed: #{sop_count} instrument SOPs have the required headings, " \
+       "bullet-only procedure text, and no embedded media or tables."
+  exit
+end
+
+warn "SOP contract checks failed:"
+errors.each { |error| warn "- #{error}" }
+exit 1
