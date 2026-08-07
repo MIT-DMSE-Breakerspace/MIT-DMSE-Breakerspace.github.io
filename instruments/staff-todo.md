@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-08-03
+Last reviewed: 2026-08-07
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -16,6 +16,7 @@ Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md)
 
 The content contract and relationship to staff training were settled on 2026-08-03 in [`readme.md`](readme.md#quick-guide-content-contract). The canonical instrument page is the source; the Quick Guide and staff guide are sibling derivatives.
 
+* [x] Audit the SOP/visual-map work orders against the canonical page H1s, Level 1 exercises, current staff gaps, and actual source images. False instrument identities were corrected and source-backed facts were separated from proposed drafting decisions on 2026-08-07. See [`instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md).
 * [ ] Audit the optical and XRD Quick Guides against the canonical SOP. Account for the complete normal-use path from the expected ready state: routine startup, operation, saving/export, cleanup, shutdown, stop conditions, and before-leaving state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the guide states the expected condition and points users there or to staff. FTIR was audited and rebuilt 2026-08-03; use `_includes/quick-guides/ftir.html` as the content model.
 * [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling. The unpublished [FTIR SOP/visual-map prototype](../quick-guides/ftir-sop-map-prototype.md) is the approved drafting model as of 2026-08-07; use the [locked production procedure](../_staff/quick-guides/README.md), not ad hoc propagation.
 * [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. The compact FTIR prototype currently renders as two explicit pages without clipping or overlap, but still needs the physical proof and lab-assistant content review. Optical and XRD keep their older layout until separately authorized for retrofit.
@@ -57,6 +58,8 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] **Replace the removed, incorrect 5 kN setup image.** Photograph the 5 kN load cell with the actual 5 kN tensile grips installed, have staff confirm every component and capacity label before publication, and only then add it to the 5 kN setup section. The removed image showed 1 kN grips and must not be reused as a 5 kN reference.
 * [ ] Reshoot or standardize the remaining setup photos for tensile (1 kN and 50 kN), compression, and flexure so each test type has a clear, consistent figure. When the corrected 5 kN photo is ready, match it to the same format.
 * [ ] Add a screenshot of the **travel-limit prompt** as it appears when starting a test. The method screen, test screen, and home screen are now published; the limit prompt is the one Bluehill screen still described only in prose.
+* [ ] Capture a clean, unannotated current handset photo for the Quick Guide. The existing annotated student-worker images are composition references only and must not be reused as the final source.
+* [ ] Capture a matched force-displacement example showing the canonical soft curved toe from slack/grip slip and a repeat after correcting the setup; have staff approve the at-instrument caption.
 * [ ] Consider a short MP4/WebM of the unlock-then-start sequence, since the roughly two-second CAUTION window is hard to convey in text and is a common first-run stumble.
 * [ ] **Confirm the lab's default method names and export conventions.** The page deliberately describes method setup generically (templates, rate, end-of-test condition, operator inputs) because the actual saved method names on the workstation, the default save location, and any course-specific methods were not verified. Confirm these and make the [method](./instron.md#method) and [saving](./instron.md#saving) sections specific to this machine. Keep authentication details in training or at the instrument.
 * [ ] Confirm the **end-of-test condition** the lab recommends for a general tensile test to failure. The page cites the 3.000 coffee-bean method's 30% force-drop condition as an illustrative example, taken from `handouts/3.000 Instron Station .pdf`; a recommended default for independent users would be better.
@@ -67,6 +70,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## SEMPrep 2 Broad Beam Ion Mill
 
+* [ ] Capture a current, unannotated Level 1 control view and matched not-ready/ready system states. The existing `stage-control.JPG` shows 8.96 x 10<sup>-6</sup> mbar, above the canonical below-5 x 10<sup>-6</sup> mbar run threshold, so it must not be labeled ready.
 * [ ] Add a photo or GIF of a trained user opening the argon cylinder and confirming the correct regulator state.
 * [ ] Add a short screen-capture GIF of the startup purge sequence and semi-automatic needle-valve setup.
 * [ ] Add a screen-capture GIF of the software-guided sample loading/removal procedure.
@@ -82,6 +86,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## DSX-1000 Digital Optical Microscope
 
+* [ ] Capture a native-resolution Level 1 **2D** acquisition window and a matched poor-focus/focused pair of the same field. The current `best-image-poster.jpg` displays a 3D Acquisition state and is not the Quick Guide source.
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or videos showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
 * [ ] Add photos or videos showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
@@ -94,8 +99,9 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Phenom Pure SEM
 
+* [ ] Capture a clean, unannotated LiveSEM control view for the room-temperature Level 1 workflow.
 * [ ] Add a complete Pure level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing Phenom Pure holder selection, stub loading, and the correct below-holder-edge height check.
+* [ ] Add photos or GIFs showing Phenom Pure holder selection and stub loading, including a matched over-height versus correct below-holder-edge pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
 * [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
 * [ ] Add cold-stage photos or GIFs showing cryo gel turning fully white, acceptable vs excessive frost, and black wire/connector placement during loading.
@@ -103,8 +109,9 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Phenom XL SEM
 
+* [ ] Capture a clean, unannotated LiveSEM control view for the Level 1 imaging workflow.
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing XL tray removal, stub loading, and the correct 5-7 mm below-tray height check.
+* [ ] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
 * [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
 * [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away.
@@ -112,6 +119,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Microtrac Sync Particle Size Analyzer
 
+* [ ] Recapture the routine FLEX views without baked-in red boxes, private database names, or file paths. Use one unannotated native-resolution source for the Quick Guide control map.
 * [ ] Add labeled photos or annotated stills of the sample trays (shallow vs. deep), the fill line, and evenly distributed vs. compressed loading.
 * [ ] Add an annotated example distribution plot showing D10/D50/D90 and a bimodal example.
 * [ ] Confirm approved standard/training powders for the exercises once the sample library is ready, including cabinet location.
@@ -164,6 +172,7 @@ This page was substantially expanded from a thin original and still needs verifi
 
 ## Duetta Fluorescence And Absorbance Spectrometer
 
+* [ ] Recapture the routine EZ Spec views without baked-in arrows/boxes, usernames, personal paths, sample names, or method names. Capture a fully seated cuvette with its optical-face orientation visible.
 * [ ] Confirm the current preferred EZ Spec method settings for routine absorbance training, including wavelength range, increment, integration/acquisition settings, and save/export workflow.
 * [ ] Add screenshots for New Method, Absorbance and Transmission, Spectra, wavelength-range setup, sample naming, save location, blank prompt, and export options.
 * [ ] Replace or supplement the cuvette-loading videos with versions showing appropriate glove use and clearer cuvette orientation.
@@ -180,7 +189,7 @@ This page was substantially expanded from a thin original and still needs verifi
 * [ ] **Pare down the stored measurement programs on the instrument.** This is instrument configuration rather than website work, but it directly determines what the operating page and Quick Guide can say. The routine user workflow is selecting a stored program, not entering scan parameters, so the program list is the real interface. Reduce it to a focused set, give each a filename that identifies what it does, and write a short description of what each is useful for. Then list them on the operating page and in the Quick Guide so a user can pick correctly without asking. Until this is done, both documents can only say "choose a stored program from the drop-down list, and ask staff if none looks right."
 * [ ] Confirm what governs sign-in on the **XRD companion workstation** (the export/HighScore/XRDMP computer to the right of the instrument). The Aeris itself has a custom control touchscreen that boots directly into instrument operation with no access control, and `dmse-brkrspc-xrd` is a communication-only list that grants nothing. But [the export section](./xrd.md#export) tells users to "use the current workstation sign-in ... provided during training," which implies the companion workstation has a sign-in of its own. Resolve whether that is a Kerberos/WIN login, a local account, or nothing, then make the export section specific. Keep authentication details in training or at the instrument rather than publishing them. See [`../_staff-training/access-and-logistics.md`](../_staff-training/access-and-logistics.md#xrds-companion-workstation).
 * [ ] Add a labeled overview photo of the instrument showing the mains switch, power button, and HT keyswitch locations.
-* [ ] Reshoot the loading, queue, and export videos with appropriate glove use if handling guidance calls for it.
+* [ ] Reshoot the loading, queue, and export media with appropriate glove use if handling guidance calls for it. For the Quick Guide, capture a native queue screen, an overhead view with loaded slot number and restored plastic changer cover visible, and the confirmed companion-workstation export destination. The current add-sample poster does not show the restored cover, and the current export poster is a measurement screen rather than an export view.
 * [ ] Add a dedicated screenshot of the changer-position selection in the UI (the current step links the general queue video; a still that highlights the position selector would be clearer).
 * [ ] Add one or two annotated example patterns showing background, labeled peaks, and an accepted Search Match candidate.
 * [ ] Add an attention-catching example diffraction pattern to the "What this instrument shows you" section (for example, a sharp crystalline pattern next to a broad amorphous one) to illustrate the educational text.

@@ -166,7 +166,7 @@ instrument_url: /instruments/ftir.html
           <figcaption class="quick-guide-sop-map-control-key">
             <span><b>1</b> Collect Background</span>
             <span><b>2</b> Collect Sample</span>
-            <span><b>3</b> Save selected spectrum</span>
+            <span><b>3</b> Save (selected spectrum)</span>
             <span><b>4</b> System Status</span>
           </figcaption>
         </figure>
@@ -180,8 +180,8 @@ instrument_url: /instruments/ftir.html
 
         <div class="quick-guide-sop-map-quality-grid">
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
-            <img src="{{ '/assets/img/prototypes/ftir-preview-weak.jpg' | relative_url }}" alt="OMNIC preview showing a nearly flat, weak ATR spectrum with little usable signal.">
-            <figcaption><strong>Weak or nearly flat signal:</strong> improve sample contact before committing. Re-seat the sample or use the appropriate pressure tip. Ask staff if it stays weak.</figcaption>
+            <img src="{{ '/assets/img/prototypes/ftir-preview-weak.jpg' | relative_url }}" alt="OMNIC preview showing a low-amplitude ATR signal before contact correction.">
+            <figcaption><strong>Weak signal:</strong> improve sample contact before committing. Re-seat the sample or use the appropriate pressure tip. Ask staff if it stays weak.</figcaption>
           </figure>
 
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
@@ -196,7 +196,7 @@ instrument_url: /instruments/ftir.html
                 </g>
               </svg>
             </div>
-            <figcaption><strong>Usable signal:</strong> when contact and the live trace look plausible, select <strong>Start Collection</strong> to run the full scan.</figcaption>
+            <figcaption><strong>Signal improves with contact:</strong> when the sample is making good physical contact and the live signal has strengthened, select <strong>Start Collection</strong>. Spectrum shape varies by material; ask staff if unsure.</figcaption>
           </figure>
         </div>
       </section>

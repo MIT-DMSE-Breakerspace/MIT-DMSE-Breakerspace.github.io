@@ -45,13 +45,23 @@ The Side 2 title is an `<h2>` styled at the same display size as the document ti
 | Page size, two-side composition, columns, spacing, type sizes, colors, footers, review badge, and CSS classes | **Locked. Do not change.** |
 | Heading levels and section order | **Locked. Do not change.** |
 | Three Side 1 guidance boxes | **Locked structure. Replace only the instrument-specific text described below.** |
-| Side 2 control-map image count | One primary annotated image. A small hardware inset is allowed only when the instrument specification explicitly requires it. |
+| Side 2 control-map image count | One primary annotated image. Do not add an inset. If a physical state is essential, make it the primary map or use the existing two decision panels. |
 | Side 2 decision panels | Two panels using the existing stop/ready treatment. They may show bad/good output, incorrect/correct loading, or stop/continue system state as specified for the instrument. |
 | Instrument title, software/map title, subtitle, URL, QR asset, owner/date, SOP bullets, control labels, captions, and image paths | Replace from the canonical page and the instrument specification. |
 | Inline SVG target rectangles, leaders, and number locations | Reposition mechanically for the approved images. Keep the annotation style unchanged. |
 | Canonical instrument pages, staff guides, published Quick Guides, and shared CSS | **Out of scope. Do not edit.** |
 
 Do not add sections, explanatory paragraphs, parameter tables, optional workflows, interpretation lessons, manufacturer-manual summaries, or new safety claims. Do not improve wording by supplying facts that are absent from the canonical page.
+
+## Source Preflight
+
+Before treating an instrument work order as mechanical, audit its source trail.
+
+* Copy the full manufacturer/model identity from the canonical instrument page's H1. A manual, image filename, similar product, or remembered instrument is not an identity source.
+* Distinguish a canonical workflow from a proposed drafting decision. A proposal in `instrument-specifications.md` remains a blocker until staff approves it; it must not become guide prose merely because it sounds reasonable.
+* Confirm every named control in both the canonical page and the source image. If the page names a function but the image shows only an unverified icon, record the icon/function check as a release gate.
+* Inspect every source image at full resolution. Recapture any image with baked-in annotation, a username, personal or project identifier, file path, unrelated data, obsolete interface state, or text that will not remain legible in print.
+* Confirm that each stop/ready pair asks one observable question. Use only a corrective action already stated on the canonical page; a visually plausible result is not automatically an approved acceptance standard.
 
 ## The Three Guidance Boxes
 
@@ -63,21 +73,23 @@ Every instrument uses the same three-box architecture.
 
 No instrument currently needs a fourth general-purpose box. If three boxes cannot hold the safe boundary legibly, stop. The likely answer is a narrower primary workflow or a separate task-specific card, not another box or smaller text.
 
-Advanced or accessory workflows do not belong in the primary guide merely because they are common. Examples include Phenom Pure cold-stage work, Phenom XL EDS if it is not part of Level 1, optical 3D capture or stitching, fluorescence on the Duetta, or special ion-mill recipes. Keep them on the canonical page until an independently justified task-specific card is commissioned.
+Advanced or accessory workflows do not belong in the primary guide merely because they are common. Examples include Phenom Pure cold-stage work, Phenom XL EDS, optical 3D capture or stitching, fluorescence on the Duetta, or special ion-mill recipes. Keep them on the canonical page until an independently justified task-specific card is commissioned.
+
+The locked template has no inset slot. Do not invent one. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. If that still cannot carry the routine safely and legibly, stop and narrow the workflow or commission a separate task card.
 
 ## Mechanical Work Order
 
 For each instrument, follow these steps in order.
 
 1. Read this file, [`sop-visual-map-template.md`](sop-visual-map-template.md), and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md).
-2. Read the canonical instrument page's SOP, routine detailed workflow, save/export directions, quality gate, stop conditions, and shutdown. Do not use memory or a manufacturer manual to fill gaps.
+2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Do not use memory or a manufacturer manual to fill gaps.
 3. Check the specification's status. If it is **BLOCKED**, do not create a guide. Report the listed missing decisions or assets verbatim and move to the next explicitly assigned instrument.
 4. Copy the template to `quick-guides/<slug>-sop-map-prototype.md`. Keep `published: false`, the prototype permalink, screen warning, and review badges.
 5. Replace only bracketed fields and the explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, and guidance-box text.
 6. Copy the canonical SOP's order and technical meaning exactly. Minor removal of repeated context is allowed only when the same sentence remains unambiguous. If it does not fit, stop and report overflow; do not summarize, shrink type, or omit a step.
-7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label, or the canonical page and interface disagree, stop and report the mismatch.
+7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label or verified icon function, or the canonical page and interface disagree, stop and report the mismatch.
 8. Draw each callout as: outlined rectangle around the target, leader line away from the target, numbered circle at the free end, and matching numbered key. The circle or leader may not cover the control, its label, or another callout.
-9. Use a source screenshot at native resolution. Cropping and proportional resizing for legibility are allowed. Do not redraw the UI, sharpen it with generated content, alter displayed values, or bake annotations into the raster image.
+9. Use a sanitized, unannotated source screenshot at native resolution. Cropping and proportional resizing for legibility are allowed. Do not redact a private screenshot into a final source, redraw the UI, sharpen it with generated content, alter displayed values, or bake annotations into the raster image.
 10. Run the repository checks, build the site, render the candidate as a paginated PDF, inspect both page images, extract the PDF text, and verify the QR at print resolution.
 11. Leave the candidate unpublished. Report files changed, validation results, and every unresolved question. Do not edit another instrument in the same commit unless the work order explicitly names more than one.
 

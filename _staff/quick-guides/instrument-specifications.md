@@ -8,21 +8,31 @@ These are bounded work orders for the two-sided SOP-and-visual-map model. They s
 
 Read [`README.md`](README.md) first. A **BLOCKED** status means no instrument candidate should be created until every release gate in that entry is resolved. Existing assets are candidates, not proof that the displayed interface or workflow is current.
 
+## Source And Proposal Discipline
+
+This file records both facts already established by a canonical instrument page and choices that still need staff approval. Keep those categories separate.
+
+* Copy each instrument identity from the canonical page's H1. Do not infer a model from a photo, manual, similar instrument, prior facility, or remembered product line.
+* A **canonical workflow** is a workflow already stated in the page's SOP, detailed instructions, or Level 1 exercise. A **proposed drafting decision** is not policy and must remain visibly labeled as a proposal until staff approves it.
+* Use an exact software or hardware control name only when the canonical page states it and the approved source image visibly supports it. If either source is missing, keep the guide blocked.
+* An existing asset may be a composition reference without being a publishable source. Reject or recapture assets with baked-in arrows or boxes, private names, usernames, sample identifiers, file paths, obsolete interface states, or unreadable print text.
+* A result or readiness panel must ask one observable question and use only a corrective action stated on the canonical page. Do not turn a plausible-looking result into an acceptance standard.
+
 ## Status Summary
 
 | Instrument | Drafting status | Principal reason |
 | --- | --- | --- |
-| Nicolet iS5 FTIR | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
-| Phenom XL SEM/EDS | **BLOCKED** | Level 1 EDS scope and loading/height visual are unresolved. |
-| Phenom Pure SEM | **BLOCKED** | Primary-versus-cold-stage scope and routine loading/height visual are unresolved. |
-| PANalytical X'Pert Pro XRD | **BLOCKED** | Approved stored programs and companion-workstation data handoff are unresolved. |
-| Instron 5984 | **BLOCKED** | Default method, end condition, result quality gate, and export convention are unresolved. |
-| Olympus DSX100 optical microscope | **BLOCKED** | Exact routine capture/save interface and Level 1 output need selection and capture. |
-| Horiba Raman microscope | **BLOCKED** | Routine controls, laser procedure, settings boundary, and quality evidence require staff verification. |
-| Innovatest hardness tester | **BLOCKED** | Installed scales/indenter configuration and current software views require staff verification. |
-| Microtrac particle size analyzer | **BLOCKED** | Database/export convention and immediate quality evidence are unresolved. |
-| Horiba Duetta UV-Vis | **BLOCKED** | Beginner absorbance method, required settings, and save/export convention are unresolved. |
-| Hitachi IM4000 ion mill | **BLOCKED** | Beginner boundary, approved recipe, and stop-state evidence are unresolved. |
+| Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
+| Thermo Fisher Phenom XL SEM | **BLOCKED** | The routine loading/height pair, current control map, and save/export end state are unresolved. |
+| Thermo Fisher Phenom Pure SEM | **BLOCKED** | The routine loading/height pair, current control map, and save/export end state are unresolved. |
+| Malvern Panalytical Aeris Research XRD | **BLOCKED** | Stored-program curation, data handoff, native queue capture, and changer-cover pair are unresolved. |
+| Instron 68TM-50 Universal Testing System | **BLOCKED** | The Level 1 method/end condition, handset map, result gate, and export convention are unresolved. |
+| Olympus DSX-1000 Digital Optical Microscope | **BLOCKED** | The current routine capture/save interface and matched focus evidence need capture. |
+| Horiba XploRA Confocal Raman Microscope | **BLOCKED** | Routine controls, laser procedure, settings boundary, and calibration evidence require staff verification. |
+| Innovatest Nemesis 5100G2 Hardness Tester | **BLOCKED** | Installed scales/indenter configuration and current software views require staff verification. |
+| Microtrac Sync Particle Size Analyzer | **BLOCKED** | Database/export convention, sanitized interface captures, and tray-loading evidence are unresolved. |
+| Horiba Duetta Fluorescence And Absorbance Spectrometer | **BLOCKED** | Beginner absorbance settings, sanitized interface captures, quality evidence, and save/export convention are unresolved. |
+| Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill | **BLOCKED** | The Level 1 holder/process parameters, approved control state, and readiness evidence are unresolved. |
 
 The statuses are intentionally conservative. A visually plausible draft made before these decisions would turn unknowns into apparent policy.
 
@@ -33,11 +43,12 @@ For every instrument:
 * The primary Side 2 image should answer “where are the few controls I need during this routine workflow?” It is not a linear screenshot tutorial.
 * Use no more than four callouts on the primary image unless this file explicitly authorizes a fifth. If more controls are essential, use a better interface state or narrow the workflow.
 * The two quality panels answer one immediate decision: stop/correct versus continue. They are not a worked interpretation example.
-* Use one full-width software image when software drives the workflow. Use one full-width hardware image when physical loading or alignment is the dominant risk. A small inset is permitted only where specified.
+* Use one full-width software image when software drives the workflow. Use one full-width hardware image when physical loading or alignment is the dominant risk. The locked template has no inset; use the two decision panels for one matched physical state when necessary.
+* Never create an unsafe or damaging state merely to photograph it. Stage incorrect loading on a removed holder/tray or use a clearly labeled safe mockup; do not insert an over-height sample, defeat an interlock, trigger an overload, or run outside approved conditions.
 * Do not use hero images, manufacturer marketing images, or decorative result images merely to fill space.
 * Existing video poster frames may be used as review candidates, but final software maps should be recaptured at native resolution when the existing text is soft at print scale.
 
-## Nicolet iS5 FTIR — Reference Prototype
+## Thermo Scientific Nicolet iS5 FTIR Spectrometer — Reference Prototype
 
 **Candidate:** [`../../quick-guides/ftir-sop-map-prototype.md`](../../quick-guides/ftir-sop-map-prototype.md)
 
@@ -53,84 +64,77 @@ For every instrument:
 
 1. `Collect Background`
 2. `Collect Sample`
-3. save selected spectrum
+3. `Save` (the selected spectrum)
 4. `System Status`
 
 **Quality images:** `assets/img/prototypes/ftir-preview-weak.jpg` and `assets/img/prototypes/ftir-preview-usable.jpg`.
 
 **Secondary callout:** `Start Collection` on the usable live-preview image.
 
-**Immediate decision:** weak/nearly flat contact versus plausible live signal before starting the full collection. This is contact triage, not spectral identification.
+**Immediate decision:** a weak live signal that calls for contact correction versus a visibly stronger live signal after re-seating or changing the pressure tip. This is contact triage, not a universal spectrum-shape acceptance standard or spectral identification.
 
 **Do not add:** band assignments, atmospheric peak positions, a named sample, method-parameter tables, liquids, or accessory workflows.
 
 **Remaining release gates:** staff review of the background/quality language, native-resolution final screenshots if the prototype strategy is endorsed, and physical duplex proof.
 
-## Phenom XL SEM/EDS
+## Thermo Fisher Phenom XL SEM
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/phenom-xl.md`](../../instruments/phenom-xl.md). Do not substitute the SEM hub or Pure page.
 
-**Default workflow proposed for decision:** routine SEM navigation, focus/brightness/contrast, image acquisition, and saving. Include EDS only if staff explicitly confirm that it is part of the default Level 1 workflow; otherwise commission an XL-only EDS task card later.
+**Canonical Level 1 mechanical spine:** load one prepared dry sample, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, save/copy, unload, and return the instrument to standby. Hair is the sample named in the Level 1 exercise, not required Quick Guide content. EDS is a Level 2 exercise and is excluded from this primary guide; commission a separate EDS task card later if justified.
 
-**Side 1 critical box:** **Sample and holder clearance** — use the XL-specific canonical sample-height rule, secure loose particles, and keep contaminated gloves off controls. Do not reuse the Pure height rule.
+**Side 1 critical box:** **Sample and holder clearance** — use the XL-specific canonical sample-height rule, secure loose particles, and remove gloves before using the computer. Do not reuse the Pure height rule.
 
-**Primary image candidate:** `assets/img/tutorials/sem/FocBri.PNG`, if a current-machine check confirms that it clearly shows the routine SEM imaging controls. Use `assets/img/tutorials/sem/navcam.PNG` instead if it provides the clearer single workflow view.
+**Primary image required:** a new native-resolution LiveSEM screenshot in the current routine state. `assets/img/tutorials/sem/FocBri.PNG` is a composition reference, but it has baked-in annotation and does not visibly provide every proposed control name. `assets/img/tutorials/sem/navcam.PNG` documents the navigation state but cannot serve as the same control map.
 
 **Primary callouts proposed:**
 
-1. `NavCam`
-2. `Move to SEM`
-3. focus / autofocus control using the exact visible label
-4. brightness/contrast or auto brightness/contrast using the exact visible label
-5. acquisition camera control, only if it is visible in the same approved view
+1. focus control, using the exact visible label or verified icon function
+2. brightness/contrast control, using the exact visible label or verified icon function
+3. auto brightness/contrast, only if it is a distinct visible control in the approved view
+4. acquisition camera control
 
-If five controls cannot be shown without crowding, combine focus and brightness/contrast in the numbered key only when a single visible control group supports that grouping. Do not squeeze five overlapping annotations into the image.
+Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminder; do not imply that `NavCam`, `Move to SEM`, and all LiveSEM controls coexist in one screenshot.
 
-**Specified hardware inset:** a new, clear photo of a sample correctly secured in the XL holder and measured **5–7 mm below the tray top**, with the relevant clearance visible. No suitable current asset was found.
+**Readiness panels required:** a matched loading pair staged on the removed tray, showing an over-height/incorrect state versus a correctly secured sample measured **5–7 mm below the XL tray top**, with the clearance visible. Never load the incorrect state into the microscope. This uses the template's existing two panels for the dominant physical safety decision. Keep focus, charging, drift, washout, outgassing, and beam damage in the SOP/stop-help language rather than combining unrelated diagnoses.
 
-**Quality panels required:** a staff-approved pair showing (a) a stop/correct image with charging, drift, severe washout, poor focus, or evidence of outgassing/beam damage and (b) a usable, stable, focused image of the same or comparable training specimen. The caption must state only the observable decision and canonical corrective action.
+**Do not add:** EDS, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions.
 
-**EDS variant, only if approved as Level 1:** use `assets/img/optimized/phenom-xl-eds-interface-540.jpg` as a candidate and call out the exact verified live-spectrum start/stop control and save/export control. The guide must state the canonical rule to stop live EDS before moving. Do not add element-identification interpretation.
+**Release gates:** capture and approve the matched XL loading/height pair and an unannotated LiveSEM control map; verify the current interface and exact icon/label functions; confirm save/export and the final tray/chamber state.
 
-**Do not add:** accelerating-voltage or detector-setting tables, EDS quantification lessons, coating recipes, charging explanations beyond the immediate stop/adjust decision, or Pure/cold-stage instructions.
-
-**Release gates:** decide EDS scope; capture the XL loading/height image; verify the current interface and exact labels; approve the bad/usable image pair; confirm save/export and final chamber state.
-
-## Phenom Pure SEM
+## Thermo Fisher Phenom Pure SEM
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/phenom-pure.md`](../../instruments/phenom-pure.md). Do not substitute the SEM hub or XL page.
 
-**Default workflow proposed for decision:** routine room-temperature SEM navigation, focus/brightness/contrast, image acquisition, and saving. Treat cold-stage work as a separate task-specific card unless staff explicitly make it the default Level 1 workflow.
+**Canonical Level 1 mechanical spine:** load one prepared dry sample at room temperature, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, save/copy, unload, and return the microscope to standby. Hair is the sample named in the Level 1 exercise, not required Quick Guide content. Cold-stage observation is a Level 2 exercise and is excluded from this primary guide.
 
-**Side 1 critical box:** **Sample and holder clearance** — use the Pure-specific canonical rule that the sample remains below the holder edge, with dry or properly frozen material as applicable. Do not reuse the XL's 5–7 mm rule.
+**Side 1 critical box:** **Sample and holder clearance** — for this room-temperature Level 1 workflow, the sample must be dry, secure, free of loose particles, and below the holder edge. Do not reuse the XL's 5–7 mm rule or add cold-stage conditions.
 
-**Primary image candidate and callouts:** the same SEM control-finding plan as the Phenom XL, using `assets/img/tutorials/sem/navcam.PNG` or `assets/img/tutorials/sem/FocBri.PNG` only after verifying the Pure interface matches the image.
+**Primary image and callouts:** capture a separate current Pure LiveSEM view and use the same four-control plan as the Phenom XL only after verifying the Pure interface. Do not reuse an XL capture merely because the software looks similar. The existing `navcam.PNG` and `FocBri.PNG` files are composition references, not approved final sources.
 
-**Specified hardware inset:** a new, clear Pure holder photo showing a correctly secured sample below the holder edge. No suitable routine-loading asset was found.
-
-**Quality panels required:** a staff-approved stop/correct versus usable SEM image pair, using the same observable categories as the XL but verified on the Pure.
+**Readiness panels required:** a matched Pure loading pair staged with the holder outside the chamber, showing an over-height/incorrect state versus a correctly secured sample below the holder edge. Never load the incorrect state into the microscope. Keep focus and other image-quality diagnoses in the SOP/stop-help language.
 
 **Cold-stage extension:** do not place cold-stage connector, sample-holder, temperature, or refill media in the primary Quick Guide. Existing files under `assets/media/tutorials/sem/cold-stage-*` and `assets/img/tutorials/sem/cold_stage_*` are source candidates for a later, separately scoped card.
 
 **Do not add:** EDS, XL height rules, cold-stage setup in the primary guide, coating recipes, or settings tables.
 
-**Release gates:** decide cold-stage scope; capture the Pure loading/height image; verify the current interface; approve the quality pair; confirm save/export and final chamber state.
+**Release gates:** capture and approve the matched Pure loading/height pair and a separate unannotated Pure LiveSEM control map; verify the current interface and exact icon/label functions; confirm save/export and the final holder/chamber state.
 
-## PANalytical X'Pert Pro XRD
+## Malvern Panalytical Aeris Research XRD
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/xrd.md`](../../instruments/xrd.md).
 
-**Default workflow:** load one prepared powder sample into the automatic changer, select an approved stored measurement program, add it to the queue, collect, export, and restore the enclosure.
+**Canonical workflow:** load one prepared sample holder into a free changer position, replace the plastic sample-changer cover, select the matching software position and a stored measurement program, enter identifiers, start or queue the measurement, export, complete the X-ray log book, remove the holder, and shut down.
 
-**Side 1 critical box:** **X-ray enclosure and sample-cover rule** — use the canonical locked/interlocked enclosure language, match physical and software changer positions, and replace the sample cover before operation.
+**Side 1 critical box:** **X-ray enclosure and changer-cover rule** — never defeat an enclosure interlock or open the enclosure during a measurement; separately, replace the removable plastic sample-changer cover and match the physical slot to the software position before starting.
 
-**Primary image candidate:** `assets/media/tutorials/xrd/queue-sample-poster.jpg`, recaptured at native resolution for the final guide if print text is soft.
+**Primary image required:** a new native-resolution, unannotated queue screen. `assets/media/tutorials/xrd/queue-sample-poster.jpg` is a soft video frame with a hand over the changer control; use it only to plan composition, not as the final map.
 
 **Primary callouts, in this order:**
 
@@ -139,106 +143,92 @@ If five controls cannot be shown without crowding, combine focus and brightness/
 3. sample ID and file-name fields, grouped only if visually adjacent
 4. `Add to Queue`
 
-**Specified hardware inset:** `assets/media/tutorials/xrd/add-sample-poster.jpg`, if staff confirm it clearly shows the physical changer position and restored cover. Otherwise capture a new overhead photo with the slot number and cover state legible.
+**Readiness panels required:** a matched overhead pair showing the plastic sample-changer cover absent versus restored over a loaded holder. The primary queue map locates the software position control; the SOP/critical box tells the user to match it to the physical slot and complete the identifiers/program checks. `assets/media/tutorials/xrd/add-sample-poster.jpg` shows a hand loading the changer with the cover removed and is not a complete matched source. A diffraction pattern is not the primary immediate quality gate unless staff defines an observable pass/fail rule appropriate for a new user.
 
-**Quality panels required:**
-
-* stop/correct: physical changer position and software position do not match, cover is absent, or required fields are incomplete;
-* ready: physical and software positions match, cover is restored, approved program and identifiers are present, and the enclosure is ready to close.
-
-These are pre-run readiness states. A diffraction pattern is not the primary immediate quality gate unless staff define an observable pass/fail rule appropriate for a new user.
-
-**Bottom reminder:** export/copy data before leaving, using `assets/media/tutorials/xrd/export-results-poster.jpg` or `assets/img/tutorials/xrd/xrd-data-in-folder.png` only after the exact destination and companion-workstation sequence are confirmed.
+**Bottom reminder:** export/copy data before leaving. Recapture the exact companion-workstation destination after the sequence is confirmed. `assets/media/tutorials/xrd/export-results-poster.jpg` shows the instrument measurement screen rather than the export destination, and `assets/img/tutorials/xrd/xrd-data-in-folder.png` exposes old sample filenames; neither is an approved final source.
 
 **Do not add:** scan parameters for stored programs, phase identification, peak indexing, crystallite-size interpretation, or instructions to bypass an interlock.
 
-**Release gates:** approve the routine stored-program list and names; resolve workstation sign-in and export/copy sequence; verify queue field labels; verify shutdown/end state; approve or recapture the physical slot/cover image.
+**Release gates:** curate and document the routine stored-program list (until then retain the canonical “choose a stored program; ask staff if none looks right” direction); resolve workstation sign-in and export/copy sequence; verify queue field labels and numbered changer-position control; capture and approve the matched changer-cover pair.
 
-## Instron 5984 Universal Testing Machine
+## Instron 68TM-50 Universal Testing System
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/instron.md`](../../instruments/instron.md).
 
-**Default workflow proposed for decision:** run one approved stored Bluehill method with the installed fixture and load cell, establish safe limits/zeros, acquire a test, save/export the result, and return the machine to the approved idle state. Do not attempt to cover tension, compression, and flexure as parallel beginner workflows.
+**Canonical Level 1 workflow:** run a 50 kN tensile test, establish safe travel/transducer limits, zero displacement, balance force, acquire the test, finish/save and export the sample, remove fragments, and return the frame to its idle state. Staff must still decide whether the training run uses a named saved method or `Run a QuickTest`, and must define the approved end condition.
 
 **Side 1 critical box:** **Moving crosshead and stored-energy rule** — hands clear during motion/testing, remain within fixture/load-cell/specimen limits, and use emergency stop only as the canonical page directs.
 
-**Primary image candidate:** `assets/img/optimized/instron-bluehill-test-1080.jpg`. If method selection is the more error-prone beginner decision, use `assets/img/optimized/instron-bluehill-method-1080.jpg` instead and put the live-test screen in the decision panels.
+**Primary image required:** a new unannotated handset photo. The handset is the dominant routine control surface for zeroing displacement, jogging, entering the ready state, starting, and stopping; make it the one full-width control map. The existing `ANNOTATED_hand_controller_in_set_up.JPG` and `ANNOTATED_hand_controller_when_disabled.JPG` are composition references only, and their baked-in prose/arrows make them unsuitable as final sources.
 
 **Primary callouts proposed, subject to visible-label verification:**
 
-1. approved method / `Browse Methods` or equivalent exact control
-2. force reading / balance control
-3. displacement reading / zero control
-4. start/stop test control
+1. unlock
+2. start
+3. stop
+4. zero displacement
 
-**Specified hardware inset:** `assets/img/tutorials/instron/ANNOTATED_hand_controller_in_set_up.JPG`, with a paired reference to `ANNOTATED_hand_controller_when_disabled.JPG` only if the exact `DISABLED` → `SET UP` → `CAUTION` → `TESTING` sequence remains current. Call out controller unlock, start, and stop without obscuring the buttons.
+Keep the approved `Browse methods` or `Run a QuickTest` entry route, the force readout/balance step, and the `DISABLED` → `SET UP` → `CAUTION` → `TESTING` sequence in the SOP and compact reminders. `assets/img/optimized/instron-bluehill-test-1080.jpg` is a useful operating-page reference, but do not add it as a second map. Do not use `instron-bluehill-method-1080.jpg`; it is the excluded method-authoring screen.
 
-**Quality panels required:**
-
-* stop/correct: current interface state displaying a travel-limit, transducer-limit, overload, or setup warning that the canonical workflow tells a user not to bypass;
-* ready/result: an approved force-displacement curve with the minimum observable completion/sanity criteria a beginner can check before unloading.
+**Quality panels proposed for staff approval:** a matched pair asking one question about setup quality: a curve with the canonical soft, curved toe caused by slack or grip slip versus a repeat after correcting the setup with that artifact absent. The canonical corrective action is to take up slack, seat the specimen correctly, and re-run. Do not add a generic warning, overload state, or an idealized material curve. Keep the travel-limit prompt as a required SOP check and capture it for the canonical page, but do not mix it into this result comparison.
 
 **Do not add:** method creation, `Admin`, arbitrary test rates or limits, material-property calculations, tensile/compression/flexure variants not selected for Level 1, or a pumpkin example as the generic quality standard.
 
-**Release gates:** choose the one Level 1 method and fixture; record its exact stored-method name; verify initial and final machine state; define the end condition; capture the warning and approved curve; confirm save/export location and naming; verify controller labels and the roughly two-second unlock/start behavior.
+**Release gates:** decide saved method versus QuickTest and, if applicable, record the exact stored-method name; verify the 50 kN Level 1 fixture image and initial/final machine state; define the end condition; capture the travel-limit prompt for the operating page and the matched toe-artifact pair for this guide; capture an unannotated handset; confirm save/export location and naming. The controller modes and roughly two-second unlock/start sequence are documented on the canonical page but still need a current-machine visual check before annotation.
 
-## Olympus DSX100 Optical Microscope
+## Olympus DSX-1000 Digital Optical Microscope
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/optical.md`](../../instruments/optical.md).
 
-**Default workflow proposed for decision:** load a dry stable sample, establish stage/objective clearance, obtain and focus a live 2D image in one approved observation mode, capture, save/copy, lower/clear the stage, and shut down. Treat 3D capture and stitched imaging as detailed operating instructions or later task-specific cards.
+**Canonical Level 1 workflow:** load a dry, stable textured sample, establish stage/objective clearance, use `Best Image` to compare modes, obtain and focus a brightfield live view, capture a 2D image, save it in the correct project folder, repeat the same region at a second magnification, lower/clear the stage, and shut down. Keep 3D capture and stitching in the detailed operating instructions or later task-specific cards.
 
 **Side 1 critical box:** **Protect the objective and sample** — establish clearance before motion or tilt, keep gloved sample handling separate from controls, and stop on collision risk or control errors.
 
-**Primary image required:** a new native-resolution screenshot of the routine DSX acquisition window after startup, showing the actual controls a Level 1 user touches. `assets/media/tutorials/optical/best-image-poster.jpg` is a composition candidate, not yet an approved final software map.
+**Primary image required:** a new native-resolution screenshot of the routine DSX 2D acquisition window after startup, showing the actual controls a Level 1 user touches. `assets/media/tutorials/optical/best-image-poster.jpg` displays a 3D Acquisition state and is not an approved composition source for this 2D guide despite its filename.
 
 **Primary callouts proposed:**
 
 1. `Best Image`, if it remains the approved beginner starting control
 2. approved observation-mode selector
 3. 2D capture/acquisition control
-4. save or destination control using its exact visible label
+4. save/destination control, only after its exact current label and view are captured
 
-**Specified hardware inset:** `assets/media/tutorials/optical/focus-wheel-poster.jpg` or `assets/media/tutorials/optical/joystick-poster.jpg`, whichever best supports the one physical action that is hardest to locate after training. Do not use both unless staff identify two independent critical controls.
-
-**Quality panels required:** the same field in visibly poor focus/collision-risk state and in a sharp usable 2D state. The current example result assets `assets/img/optimized/optical-bee-color-1200.jpg`, `optical-bee-height-1200.jpg`, and `optical-scored-glass-750.jpg` demonstrate capabilities but do not by themselves provide a matched immediate quality gate.
+**Quality panels required:** the same field in visibly poor focus and in a sharp, usable 2D state. Keep collision risk in the critical/stop box rather than mixing a physical clearance decision into the focus comparison. The current example result assets `assets/img/optimized/optical-bee-color-1200.jpg`, `assets/img/optimized/optical-bee-height-1200.jpg`, and `assets/img/optimized/optical-scored-glass-750.jpg` demonstrate capabilities but do not provide a matched immediate quality gate.
 
 **Do not add:** 3D reconstruction, volume rendering, stitched capture, extended observation-mode comparison, surface interpretation, or a named training specimen.
 
-**Release gates:** confirm the one Level 1 observation/capture path; capture the full native interface and exact controls; define save/copy; produce the matched focus pair; confirm shutdown/clearance state. Retrofit the existing published optical guide only in a separately authorized task.
+**Release gates:** capture the full native Level 1 interface and exact controls; document the current save/copy view; produce the matched focus pair; confirm the final clearance state. Retrofit the existing published optical guide only in a separately authorized task.
 
-## Horiba Raman Microscope
+## Horiba XploRA Confocal Raman Microscope
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/raman.md`](../../instruments/raman.md).
 
-**Default workflow proposed for decision:** run the approved LabSpec 6 calibration/reference check, position a compatible sample, acquire one routine spectrum using approved stored/default settings, save/copy, stop emission, and restore the enclosure.
+**Canonical workflow proposed for the guide:** run the LabSpec 6 silicon calibration/reference check, position a compatible sample, acquire one routine spectrum using a staff-approved starting configuration, save/copy, use the documented stop controls, and shut down. The exact settings and current laser-safety sequence remain unverified, so this is not yet an approved drafting decision.
 
-**Side 1 critical box:** **Laser enclosure rule** — doors closed and interlocks respected before emission; emission stopped before opening or changing the sample; staff decides any exception.
+**Side 1 critical box:** **Laser enclosure rule** — close the enclosure doors before verifying the laser or collecting; respect the door interlock and key; if the laser is not visible, check the documented door/interlock/key conditions rather than bypassing anything. Do not state a sample-change/emission sequence until staff verifies it on the actual system.
 
-**Primary image required:** a new native-resolution LabSpec 6 main-window screenshot in the exact Level 1 state.
+**Primary image required:** a new native-resolution LabSpec 6 acquisition-window screenshot in the exact post-calibration Level 1 state.
 
 **Primary callouts proposed only after staff verification:**
 
 1. `Stop All`
 2. real-time display / `RTD`
-3. `AutoCalibration`
-4. routine acquisition/start control
+3. routine acquisition/start control
+4. save control, if it is visible in the same approved view
 
-If those labels or roles are not exactly current, replace the proposal with staff-verified controls before drafting.
-
-**Specified hardware inset:** a clear photo of the laser-emission remote/status and the closed-door/interlock state that a trainee must recognize.
+If those labels or roles are not exactly current, replace the proposal with staff-verified controls before drafting. `AutoCalibration` belongs in the calibration quality/reminder area because it is reached through the Maintenance tab and should not be implied to coexist with all acquisition controls in one view.
 
 **Quality panels required:** failed/unacceptable versus passing silicon calibration or other approved reference check, with the exact observable criterion supplied by staff. `assets/media/tutorials/raman/display-flip-poster.jpg` is not sufficient evidence for this decision.
 
 **Do not add:** laser power, grating, objective, slit, hole, integration-time, or accumulation recommendations unless the canonical page defines the approved routine setting; no peak assignment or material identification.
 
-**Release gates:** verify laser-safety sequence; select stored/default Level 1 settings; confirm every control; capture interface and remote/interlock; define calibration pass/fail; confirm save/export and shutdown.
+**Release gates:** verify the laser-safety and sample-change sequence; select the Level 1 starting configuration; confirm every control name and role; capture the acquisition interface and matched calibration pair; verify the silicon reference criterion and define calibration pass/fail; confirm save/export and shutdown. Remote/interlock photos remain useful operating-page media but are not a second Quick Guide map.
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 
@@ -246,7 +236,7 @@ If those labels or roles are not exactly current, replace the proposal with staf
 
 **Canonical source:** [`../../instruments/hardness-tester.md`](../../instruments/hardness-tester.md).
 
-**Default workflow proposed for decision:** select one installed and approved scale/method, focus and position a prepared specimen, make one single-point indent, verify measurement quality, save, unload, and restore the tester.
+**Canonical Level 1 workflow:** perform one single-point Vickers measurement: select a verified installed scale/method, focus and position a prepared specimen, make the indent, verify the measured diagonals/quality state, save, unload, and restore the tester.
 
 **Side 1 critical box:** **Scale, indenter, and turret rule** — the selected scale must match installed hardware and specimen limits; hands remain clear of turret and moving components.
 
@@ -262,96 +252,94 @@ If those labels or roles are not exactly current, replace the proposal with staf
 
 `TEST PATTERN` belongs only if staff explicitly make a pattern part of the default Level 1 workflow.
 
-**Quality panels required:** a staff-approved pair showing a good square/symmetric indent with accepted diagonals and a rejected/problematic indent or the software's red diagonal-difference warning. State the threshold only if it is canonical and current.
+**Quality panels required:** a staff-approved pair showing a good square/symmetric indent with accepted diagonals and the software's documented red diagonal box when the diagonal difference exceeds 5%. Verify that rule on the current machine before publication.
 
 **Do not add:** unsupported scales, arbitrary loads/dwell times, conversion tables, metallographic interpretation, or maintenance/calibration procedures.
 
-**Release gates:** inventory fitted indenter/load hardware and offered scales; choose the Level 1 method; capture all current controls; define specimen limits/preparation; approve the indent quality pair and warning rule; confirm save/export and final state.
+**Release gates:** inventory fitted indenter/load hardware and offered Vickers scales; record the exact Level 1 scale/method; capture all current controls; approve the indent quality pair and current warning behavior; confirm save/export and final state.
 
-## Microtrac Particle Size Analyzer
+## Microtrac Sync Particle Size Analyzer
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/psa.md`](../../instruments/psa.md).
 
-**Default workflow:** connect/synchronize the analyzer, verify the active database, load an approved stored measurement SOP, load loose dry powder in the tray, run setzero and the sample sequence, review immediate validity, export/copy, clean, and shut down.
+**Canonical workflow:** open the Sync Analyzer, verify the active database, load a suitable measurement SOP, clean and loosely load dry powder in the shallow tray, run `Auto-Sequence` (which performs setzero and sample collection), save/export as needed, clean, close FLEX, and log off.
 
 **Side 1 critical box:** **Load dry powder loosely** — use the canonical shallow amount, keep it behind the line, distribute it evenly, do not compress it, and keep contamination out of the tray.
 
-**Primary image candidate:** `assets/img/tutorials/psa/AutoSequence.png`, if it shows the complete routine run state at legible print scale. Use `SyncAnalayzer.png` or `MeasurementSOP.png` only if staff decide connection or SOP selection is the higher-risk control map.
+**Primary image required:** a new, unannotated native-resolution FLEX capture in the routine run state. `assets/img/tutorials/psa/AutoSequence.png`, `MeasurementSOP.png`, and `SyncAnalayzer.png` document relevant states, but they contain baked-in red boxes; `AutoSequence.png` also displays a database path/name and is not an acceptable final source.
 
 **Primary callouts proposed across the one approved view:**
 
-1. `Sync Analyzer`
-2. active database
-3. `Load measurement SOP`
+1. `Sync Analyzer`, if present in the approved state
+2. active database indicator or database control, using the exact visible label
+3. `Measurement SOP` or the exact visible control used to load it
 4. `Auto-Sequence`
 
-If these controls do not coexist in one useful view, the primary map may use one screenshot plus one explicitly approved small software inset. Do not construct a multi-page screenshot tutorial.
+The new routine-state capture should show these locations together, as the current `AutoSequence.png` state does. If the current interface no longer does, put the connection or database step in the SOP/reminder and keep one primary screenshot; do not add a second software walkthrough or change the template.
 
-**Quality panels required:** a new matched tray-loading pair showing clumped/compressed/overfilled material versus the approved shallow, even, uncompressed load. A distribution plot may replace one panel only if staff define a simple immediate repeat/accept decision visible in that plot.
+**Quality panels required:** a new matched tray-loading pair showing compressed or mounded material versus the canonical shallow-tray load: about 1/4 teaspoon, spread along the tray, not compressed, and kept behind the line. Minor unevenness or a small amount past the line is explicitly allowed by the detailed instructions, so do not present visual perfection as a pass criterion. Do not use a distribution plot unless staff first defines a simple repeat/accept rule on the canonical page.
 
 **Bottom reminder:** title/sample ID/notes and final export/copy, using exact verified field names and destination.
 
 **Do not add:** D10/D50/D90 interpretation, second-peak interpretation, arbitrary SOP parameters, database naming guesses, or recommendations for unapproved powders.
 
-**Release gates:** approve database and file/export conventions; verify current control labels; capture tray pair and, if used, result pair; confirm approved powders/sample limits; confirm cleanup and final state.
+**Release gates:** approve database and file/export conventions; capture a sanitized unannotated routine interface and verify current control labels; capture and approve the tray-loading pair; confirm the current standard measurement SOP or retain the canonical ask-staff fallback. The canonical materials limits, cleanup, and final state are already stated and must be copied without expansion.
 
-## Horiba Duetta UV-Vis
+## Horiba Duetta Fluorescence And Absorbance Spectrometer
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/uv-vis.md`](../../instruments/uv-vis.md).
 
-**Default workflow proposed for decision:** routine absorbance/transmission spectrum using an approved blank/reference and sample in the prompted order. Exclude fluorescence unless staff make it part of the beginner workflow.
+**Canonical Level 1 boundary:** routine absorbance and transmission in EZ Spec using a compatible blank/reference and sample in the prompted order. Fluorescence remains staff-guided and is excluded from this primary guide. Staff must still approve the routine wavelength and acquisition settings.
 
 **Side 1 critical box:** **Cuvette and liquid rule** — use compatible clean cuvettes, keep optical faces clean, contain liquid, follow the prompted blank/reference/sample order, and leave the compartment empty and clean.
 
-**Primary image candidate:** a new native-resolution EZ Spec screen based on the states represented by `assets/img/tutorials/uv-vis/Absorbance.png`, `Both.png`, and `Acquire.png`.
+**Primary image required:** a new, sanitized, unannotated native-resolution EZ Spec screen in the approved Level 1 state. The existing `Absorbance.png`, `Both.png`, and `Acquire.png` are composition references only: they contain baked-in annotation and expose a username, user path, sample name, and/or method name.
 
-**Primary callouts proposed:**
+**Primary callouts proposed for the one acquisition-state image:**
 
-1. `New Method`
-2. `Absorbance and Transmission`
-3. `Spectra`
-4. mode `Both`
-5. `Acquire` only if it remains legible; otherwise make `Acquire` the numbered bottom reminder
+1. sample-name field, using the exact current label (shown as `Data Name` in the existing reference)
+2. save-folder field, using the exact current label (shown as `Save data folder to` in the existing reference)
+3. selected-method field, using the exact current label (shown as `Current Method` in the existing reference)
+4. `Acquire`
 
-**Specified hardware inset:** `assets/media/tutorials/uv-vis/load-cuvette-poster.jpg` if it clearly shows cuvette orientation and compartment placement. `open-lid-poster.jpg` is supplementary only.
+Keep `New Method`, `Absorbance and Transmission`, `Spectra`, and mode `Both` in the SOP because they occur during method setup and do not coexist with all acquisition controls in one useful screen. Do not simulate a composite interface.
 
-**Quality panels required:** a staff-approved unclipped, plausible, repeatable spectrum versus a saturated/clipped or artifact-dominated result caused by a canonical correctable condition such as bubbles, fingerprints, wrong blank order, or poor sample range. Use matched captures when possible.
+**Quality panels required:** a matched saturated/clipped spectrum versus the same sample after the canonical corrective action (dilution and recollection of blank/sample), if staff approves that as the single Level 1 decision. Keep bubbles, fingerprints, scratches, settling, and wrong-blank diagnosis in the handling/stop text rather than combining unrelated artifacts in one panel.
 
 **Do not add:** fluorescence, peak assignment, concentration calculations, arbitrary wavelength ranges/integration settings, or cuvette compatibility claims absent from the canonical page.
 
-**Release gates:** select the Level 1 absorbance method and settings; verify the prompt order and controls; confirm save/export; capture matched quality states; confirm cuvette compatibility/handling and shutdown.
+**Release gates:** approve the Level 1 wavelength/acquisition settings; verify the prompt order and every control; capture a sanitized interface and matched quality states; confirm save/export. The canonical cuvette handling and shutdown states are already stated and must be copied without adding unverified compatibility claims.
 
-## Hitachi IM4000 Ion Mill
+## Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
 
 **Status:** **BLOCKED. Do not draft.**
 
 **Canonical source:** [`../../instruments/ion-mill.md`](../../instruments/ion-mill.md).
 
-**Default workflow proposed for decision:** load an approved holder/sample, close and purge, establish the approved vacuum/argon/stage state, select one approved stored recipe, run, finish safely, unload, and restore the system. Sample mounting/preparation may need to remain a separate pre-instrument instruction.
+**Canonical Level 1 workflow:** surface-polish a flat, mechanically polished metallographic sample in an approved polishing holder: perform startup/argon purge, load through the software sample-exchange procedure, select the polishing head and approved ion source/conditions, use rotation at a low milling angle, confirm pressure below 5 x 10<sup>-6</sup> mbar, run and monitor, turn high voltage off before motion, return tilt to 0&deg;, unload, and complete shutdown. Staff must still select the one holder, ion source, exact conditions, and semi-automatic versus recipe path.
 
-**Side 1 critical box:** **High voltage, vacuum, and argon** — use only approved recipes; do not open or unload until high voltage and sample motion are off and the canonical vent/finish state is reached; stop on abnormal pressure or motion.
+**Side 1 critical box:** **High voltage, vacuum, and argon** — use only trained conditions or an approved recipe; do not open or unload until high voltage and sample motion are off and the canonical vent/finish state is reached; stop on abnormal pressure or motion.
 
-**Primary image candidate:** `assets/img/tutorials/ion-mill/stage-control.JPG`, if a current check confirms it is the principal Level 1 control state. Use `purge.JPG` as the specified inset or alternate main image when purge/needle-valve handling is the dominant risk.
+**Primary image candidate:** `assets/img/tutorials/ion-mill/stage-control.JPG`, after a current-machine check. It visibly includes sample motion, stage tilt, `Sample loading/removal`, `Purge (5s)`, semi-automatic needle-valve control, pressure, and system-status areas. Do not use the low-resolution `purge.JPG` as the primary image; it may serve only as a composition reference.
 
 **Primary callouts proposed only after verification:**
 
-1. `Purge (5s)` / purge control
-2. approved semi-automatic needle-valve control
-3. sample loading/removal or stage/head control
-4. `Finish`
-5. `Run all steps` only if the chosen recipe and exact label are approved for trainees
+1. `Purge (5s)`
+2. `Semi-automatic control`
+3. `Sample loading/removal`
+4. pressure/status area, using only the exact visible labels
 
-**Quality panels required:** stop/not-ready versus ready pre-run system state, centered on the verified base-pressure threshold, correct holder/stage state, and high-voltage/sample-motion indicators. Before/after surface images under `assets/img/instruments/ion-mill/` show capabilities but are not an immediate at-instrument acceptance criterion because final evaluation may require another microscope.
+`Finish` appears inside the sample-exchange sequence rather than on the approved main view. `Run all steps` belongs only to a separately captured automated-recipe view if staff chooses that path. Do not list either as a main-image callout unless it is visible in the final source.
 
-**Specified hardware inset:** select one holder/alignment photo from `assets/img/tutorials/ion-mill/` only after the Level 1 holder and mounting geometry are chosen. Do not make the primary guide cover every holder.
+**Quality panels required:** stop/not-ready versus ready pre-run system state centered on the canonical pressure threshold and the staff-approved high-voltage/motion/stage indicators. Do not claim that the current `stage-control.JPG` is ready: its displayed pressure is 8.96 x 10<sup>-6</sup> mbar, above the canonical below-5 x 10<sup>-6</sup> mbar run threshold. Before/after surface images under `assets/img/instruments/ion-mill/` show capabilities but are not an immediate at-instrument acceptance criterion because final evaluation may require another microscope.
 
 **Do not add:** new recipes, recipe parameters, holder variants, slope-cut and flat-polish branches together, advanced alignment, or SEM interpretation of the milled result.
 
-**Release gates:** define the beginner boundary and one holder/recipe; verify purge count/timing and every control; confirm pressure and stop criteria; capture system-state pair; confirm safe finish/unload/final state.
+**Release gates:** select one polishing holder, ion source, approved settings, and semi-automatic versus automated path; verify every current control; capture the approved control view and system-state pair; confirm the exact finish/unload state. The purge count/timing, pressure threshold, high-voltage/motion ordering, and final shutdown state are already canonical and must not be reopened or silently changed.
 
 ## What To Capture When A Blocker Is Resolved
 
