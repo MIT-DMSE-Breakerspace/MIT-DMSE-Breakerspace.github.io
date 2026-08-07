@@ -16,7 +16,7 @@ Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md)
 
 The content contract and relationship to staff training were settled on 2026-08-03 in [`readme.md`](readme.md#quick-guide-content-contract). The canonical instrument page is the source; the Quick Guide and staff guide are sibling derivatives.
 
-* [x] Audit the SOP/visual-map work orders against the canonical page H1s, Level 1 exercises, current staff gaps, and actual source images. False instrument identities were corrected and source-backed facts were separated from proposed drafting decisions on 2026-08-07. See [`instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md).
+* [x] Audit the SOP/visual-map work orders against the canonical page H1s, Level 1 exercises, current staff gaps, and actual source images. False instrument identities were corrected and source-backed facts were separated from proposed drafting decisions on 2026-08-07. The same-day follow-up separated the canonical SOP spine, Level 1 teaching scope, and map controls; corrected overreaching public SOPs; and recorded the confirmed optical, Raman, particle-size, and ion-mill scope decisions. See [`instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md).
 * [ ] Audit the optical and XRD Quick Guides against the canonical SOP. Account for the complete normal-use path from the expected ready state: routine startup, operation, saving/export, cleanup, shutdown, stop conditions, and before-leaving state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the guide states the expected condition and points users there or to staff. FTIR was audited and rebuilt 2026-08-03; use `_includes/quick-guides/ftir.html` as the content model.
 * [ ] Rebalance the three pilots toward at-instrument action. Reduce extended interpretation, retain only the immediate quality gate, and add selected hardware or software control-finding visuals where the paper copy prevents browser/software toggling. The unpublished [FTIR SOP/visual-map prototype](../quick-guides/ftir-sop-map-prototype.md) is the approved drafting model as of 2026-08-07; use the [locked production procedure](../_staff/quick-guides/README.md), not ad hoc propagation.
 * [ ] Print-test every guide on US Letter at 100% in duplex, grayscale, and color. Check legibility, clipping, page count, long-edge flip, and whether it can be followed while the control software remains fullscreen. The compact FTIR prototype currently renders as two explicit pages without clipping or overlap, but still needs the physical proof and lab-assistant content review. Optical and XRD keep their older layout until separately authorized for retrofit.
@@ -25,7 +25,8 @@ The content contract and relationship to staff training were settled on 2026-08-
 * [ ] Print, laminate, label, and install the reviewed guide at each instrument. Record who checks the physical copy after workflow revisions and who replaces damaged or outdated copies.
 * [ ] Resolve the explicit workflow, image, control-name, quality-gate, and end-state blockers in the [per-instrument Quick Guide work orders](../_staff/quick-guides/instrument-specifications.md). Do not let an implementation assistant draft around a blocked item.
 * [ ] Add Quick Guides for remaining instruments in parallel with their staff guides once each canonical SOP and Level 1 workflow are stable. Use the locked template, keep each candidate unpublished, complete the continuous staff-guide checklist for the normal-use path, and run a practice training before routine delivery.
-* [ ] When one routine workflow cannot fit legibly on two sides, keep a primary Quick Guide and create a separate task-specific workflow card rather than shrinking or cramming the guide.
+* [ ] When an additional, genuinely separate task cannot fit the primary guide, create a task-specific workflow card rather than shrinking or cramming. When the approved Level 1 workflow itself spans multiple control surfaces or states, use the reviewed layout-variant process below rather than silently splitting or narrowing the curriculum.
+* [ ] Review and lock instrument-specific multi-view variants before drafting any guide that cannot be represented honestly by the default one-map composition. Instron requires Bluehill plus handset; Raman requires several LabSpec/camera states; optical may require several DSX states after capture. Do not invent insets ad hoc.
 
 ## Nicolet iS5 FTIR Spectrometer
 
@@ -59,6 +60,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Reshoot or standardize the remaining setup photos for tensile (1 kN and 50 kN), compression, and flexure so each test type has a clear, consistent figure. When the corrected 5 kN photo is ready, match it to the same format.
 * [ ] Add a screenshot of the **travel-limit prompt** as it appears when starting a test. The method screen, test screen, and home screen are now published; the limit prompt is the one Bluehill screen still described only in prose.
 * [ ] Capture a clean, unannotated current handset photo for the Quick Guide. The existing annotated student-worker images are composition references only and must not be reused as the final source.
+* [ ] Capture a clean, native-resolution Bluehill test-state view showing the controls actually used in the selected Level 1 method. The Quick Guide must show both Bluehill and the handset; approve a readable two-view layout before annotation.
 * [ ] Capture a matched force-displacement example showing the canonical soft curved toe from slack/grip slip and a repeat after correcting the setup; have staff approve the at-instrument caption.
 * [ ] Consider a short MP4/WebM of the unlock-then-start sequence, since the roughly two-second CAUTION window is hard to convey in text and is a common first-run stumble.
 * [ ] **Confirm the lab's default method names and export conventions.** The page deliberately describes method setup generically (templates, rate, end-of-test condition, operator inputs) because the actual saved method names on the workstation, the default save location, and any course-specific methods were not verified. Confirm these and make the [method](./instron.md#method) and [saving](./instron.md#saving) sections specific to this machine. Keep authentication details in training or at the instrument.
@@ -79,14 +81,14 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add photos or GIFs showing sample height adjustment for the polishing holder.
 * [ ] Add photos or GIFs showing a sample being bonded to a carrier plate in the gluing jig.
 * [ ] Add photos or GIFs showing 30&deg; and 90&deg; alignment under the sample alignment microscope, including what the target mask gap looks like on screen.
-* [ ] Add a screenshot of the automated recipe library with a safe example recipe highlighted.
+* [ ] Add a screenshot of the automated recipe library with a safe example recipe highlighted for the detailed operating page or a later advanced card. Automated recipes are not part of Level 1 and must not enter the primary Quick Guide.
 * [ ] Add one complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add one level 2 slope-cutting exercise using a specific layered or coated sample-library item, including bin number/location once available.
 * [ ] Add before/after SEM image pairs showing successful polishing, insufficient polishing, redeposition, and sample damage.
 
 ## DSX-1000 Digital Optical Microscope
 
-* [ ] Capture a native-resolution Level 1 **2D** acquisition window and a matched poor-focus/focused pair of the same field. The current `best-image-poster.jpg` displays a 3D Acquisition state and is not the Quick Guide source.
+* [ ] Capture native-resolution DSX interface state(s) that show the five confirmed Level 1 functions: **Best Image**, quick 2D map stitching, normal 2D capture, the **Use as map image** choice for high-quality 2D area stitching, and 3D capture. Also capture a matched poor-focus/focused pair. Determine whether one useful state can carry all five callouts or whether a reviewed multi-state variant is needed.
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or videos showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
 * [ ] Add photos or videos showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
@@ -94,12 +96,13 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add example image sets comparing brightfield, oblique, darkfield, brightfield/darkfield mix, polarization, and DIC on the same sample.
 * [ ] Add more annotated example results for stitched imaging and measurement/profile workflows.
 * [ ] Add an MP4/WebM video of 2D acquisition, 3D acquisition, and stitching setup.
+* [ ] Keep high-quality 3D stitching as a mention and LEXT analysis/reporting as a capability preview in Level 1. Do not map LEXT or write its analysis steps into the primary Quick Guide.
 * [ ] Add example measurement outputs for profile, volume, roughness, and STL export.
 * [ ] Add common sample-prep examples for flat samples, tall samples, fragile samples, and liquid-containing samples.
 
 ## Phenom Pure SEM
 
-* [ ] Capture a clean, unannotated LiveSEM control view for the room-temperature Level 1 workflow.
+* [ ] Capture clean, unannotated Pure NavCam and LiveSEM views for the room-temperature Level 1 workflow. The LiveSEM source must show or support verified callouts for focus, brightness/contrast and automatic adjustment, magnification, acquisition, and the grouped top panel with voltage, beam/intensity, resolution, and averaging.
 * [ ] Add a complete Pure level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing Phenom Pure holder selection and stub loading, including a matched over-height versus correct below-holder-edge pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
@@ -109,18 +112,19 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Phenom XL SEM
 
-* [ ] Capture a clean, unannotated LiveSEM control view for the Level 1 imaging workflow.
+* [ ] Capture clean, unannotated XL NavCam and LiveSEM views for the Level 1 imaging workflow. The LiveSEM source must show or support verified callouts for focus, brightness/contrast and automatic adjustment, magnification, acquisition, and the grouped top panel with voltage, beam/intensity, resolution, and averaging.
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
 * [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
-* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away.
-* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export.
+* [ ] Approve or revise the proposed EDS curriculum boundary: a short capability preview during Phenom XL Level 1, followed by a separate Level 2 add-on before independent EDS operation. Do not add EDS controls to the primary SEM Quick Guide while this remains a proposal.
+* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away, for the proposed Level 2 add-on or later EDS task card.
+* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export for the proposed Level 2 add-on or later EDS task card.
 
 ## Microtrac Sync Particle Size Analyzer
 
 * [ ] Recapture the routine FLEX views without baked-in red boxes, private database names, or file paths. Use one unannotated native-resolution source for the Quick Guide control map.
-* [ ] Add labeled photos or annotated stills of the sample trays (shallow vs. deep), the fill line, and evenly distributed vs. compressed loading.
+* [ ] Capture a matched shallow-tray loading pair showing the fill line and evenly distributed versus compressed loading for the Quick Guide. Photograph the deep tray separately only as detailed-page reference; the shallow tray is the settled Level 1 accessory and the deep tray remains staff-guided.
 * [ ] Add an annotated example distribution plot showing D10/D50/D90 and a bimodal example.
 * [ ] Confirm approved standard/training powders for the exercises once the sample library is ready, including cabinet location.
 * [ ] Confirm the workstation access handoff and default database/export conventions. Keep authentication details in training or at the instrument rather than publishing them.
@@ -131,7 +135,7 @@ This page was substantially expanded from a thin original and still needs verifi
 
 ### Verify With Staff (Technical Accuracy)
 
-* [ ] Confirm the exact LabSpec 6 control names used on the page match the interface: "stop all," RTD, AutoCalibration (Maintenance tab), the Acquisition-tab parameter labels (spectro, Range, acquisition time, accumulations, ND filter, slit, hole), and the Map section.
+* [ ] Confirm the exact LabSpec 6 control names used in the Level 1 path match the interface: TopCam focusing, internal camera/laser view, "stop all," RTD, AutoCalibration (Maintenance tab), routine acquisition/start, and save. Verify advanced Acquisition-tab and Map labels separately for the detailed page.
 * [ ] Confirm the silicon reference peak position (page states ~520 cm<sup>-1</sup>) and the recommended starting acquisition time, accumulations, and ND filter/power for a first measurement.
 * [ ] Confirm the confocal hole and slit values to recommend for routine surface work and for z-depth profiling, and add them where the page currently flags them as staff-confirm.
 * [ ] Confirm the startup/interlock description (door interlock, interlock key, internal-camera laser check) matches the actual hardware and the intended laser-safety procedure.
@@ -141,10 +145,11 @@ This page was substantially expanded from a thin original and still needs verifi
 
 * [ ] Startup: the laser emission remote-control power and the powered-on indicator.
 * [ ] Objectives: the 5x (wayfinding), 10x, and 100x, and where the objective is selected in the software.
-* [ ] Focusing: top-camera view, the joystick focus control, and the slide/sample on the stage.
-* [ ] Laser verification: the internal-camera view showing the laser spot, plus the interlock door/key locations to check when no laser appears.
-* [ ] Live setup: the RTD spectrum, and the AutoCalibration routine with a passing result.
+* [ ] Focusing: TopCam view, the joystick focus control, and the silicon slide/sample on the stage.
+* [ ] Laser verification: the internal-camera view showing the laser spot, plus the closed-door/interlock state used in training.
+* [ ] Live setup: the RTD spectrum during small up/down focus adjustments, and the AutoCalibration routine with a passing result.
 * [ ] Acquisition: the collection-parameters screen with the key fields labeled.
+* [ ] Capture all Level 1 states as sanitized, unannotated native-resolution sources, then approve a multi-state Quick Guide layout. Do not imply TopCam, internal camera, RTD, and AutoCalibration coexist in one interface state.
 * [ ] Mapping: a video image with a map area drawn, and an example chemical map (for example, a combination tablet).
 * [ ] Z-profiling: a diagram or example depth profile showing layers resolved at different confocal hole sizes.
 
@@ -162,7 +167,7 @@ This page was substantially expanded from a thin original and still needs verifi
 ## Phenom Scanning Electron Microscopes (Shared SEM Hub)
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add a level 2 EDS exercise using specific stocked samples or standards, including bin number/location once available.
+* [ ] Develop a Level 2 EDS add-on and concise EDS task card if staff approve the proposed boundary; it should cover sample/mount/coating implications, voltage and working distance, point/area/live/map choices, stop-before-moving, peak overlap, and save/export. Specific stocked samples or standards can be added later when available.
 * [ ] Add a level 2 non-conductive-sample exercise using a specific sample-library item suitable for low-vacuum and sputter-coated comparison.
 * [ ] Add annotated SEM and EDS example results showing how image contrast and elemental maps answer different kinds of questions.
 * [ ] Add photos or GIFs showing a gloved hand placing a stub in a prep tray and mounting a sample with stub tweezers.
@@ -172,6 +177,7 @@ This page was substantially expanded from a thin original and still needs verifi
 
 ## Duetta Fluorescence And Absorbance Spectrometer
 
+* [ ] Edit the public exercise list down to one standard Level 1 blank-plus-sample absorbance/transmission workflow. Move blank mismatch, concentration series, and saturation/dilution to extensions unless staff deliberately selects one for the introductory session; keep fluorescence staff-guided.
 * [ ] Recapture the routine EZ Spec views without baked-in arrows/boxes, usernames, personal paths, sample names, or method names. Capture a fully seated cuvette with its optical-face orientation visible.
 * [ ] Confirm the current preferred EZ Spec method settings for routine absorbance training, including wavelength range, increment, integration/acquisition settings, and save/export workflow.
 * [ ] Add screenshots for New Method, Absorbance and Transmission, Spectra, wavelength-range setup, sample naming, save location, blank prompt, and export options.

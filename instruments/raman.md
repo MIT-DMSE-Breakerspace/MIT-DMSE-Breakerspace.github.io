@@ -168,13 +168,14 @@ Calibrating against a silicon sample first confirms the instrument is reading th
 
 1. **Load the silicon calibration sample** on the stage.
 2. **Focus with the top camera** using the 10x or 100x objective. The top camera gives better resolution for a sharp optical focus on the surface. (You can use the 5x to find your way to a feature first, but switch to 10x or 100x to collect.)
-3. **Switch to the internal camera and verify the laser comes on.** You should see the laser spot. If no laser is visible, check that the enclosure door is closed, the door interlock is engaged, and the interlock key is in the correct position, then check again. The laser will not fire unless the interlocks are satisfied.
-4. **Stop the camera** view.
-5. **Start the real-time display (RTD)** to show a quick, continuously refreshing spectrum. Use a short RTD acquisition time (around 1 second) so the display updates quickly, and set the spectro (the center of the spectral window) where you expect the silicon peak.
-6. **Refine focus for Raman collection using the joystick knob.** Make small focus adjustments and watch whether the signal goes up or down; focus to maximize the signal. The best optical focus and the focus that maximizes Raman signal are not always identical, which is why you optimize against the live spectrum.
-7. **Stop the RTD.**
-8. **Run the AutoCalibration routine** (in the Maintenance tab).
-9. **Verify the calibration passes** before continuing. If it does not pass, ask staff rather than proceeding.
+3. **Close the enclosure doors and confirm the interlocks are satisfied.** The laser will not fire unless the enclosure and interlock conditions are correct.
+4. **Switch to the internal camera and verify the laser comes on.** You should see the laser spot. If no laser is visible, recheck the documented door, interlock, and key conditions rather than bypassing anything.
+5. **Stop the camera** view.
+6. **Start the real-time display (RTD)** to show a quick, continuously refreshing spectrum. Use a short RTD acquisition time (around 1 second) so the display updates quickly, and set the spectro (the center of the spectral window) where you expect the silicon peak.
+7. **Refine focus for Raman collection using the joystick knob.** Make small focus adjustments and watch whether the signal goes up or down; focus to maximize the signal. The best optical focus and the focus that maximizes Raman signal are not always identical, which is why you optimize against the live spectrum.
+8. **Stop the RTD.**
+9. **Run the AutoCalibration routine** (in the Maintenance tab).
+10. **Verify the calibration passes** before continuing. If it does not pass, ask staff rather than proceeding.
 
 <p class="guidance-note"><em>Note: system AutoAlignment is handled by Breakerspace staff and is done for each laser before it is used. If your calibration will not pass, or a laser seems misaligned, ask staff rather than adjusting alignment yourself.</em></p>
 
@@ -185,10 +186,11 @@ With calibration confirmed, measure your own sample using the same get-image / v
 1. **Lower the stage** and remove the silicon sample.
 2. **Load your sample** (see [sample prep](#materials)).
 3. **Focus with the top camera.** Use the 5x to locate your feature if helpful, then switch to the 10x or 100x to collect. Select the matching objective in the software.
-4. **Switch to the internal camera and verify the laser** appears on the sample (re-check the interlocks if it does not).
-5. **Use the RTD** to see a live spectrum, and confirm the spectro position covers the wavenumber range where you expect key peaks.
-6. **Optimize the focus for signal** with the joystick knob, making small adjustments to maximize the Raman signal, then stop the RTD.
-7. **Set up and run your sample collection.** Configure the collection parameters below for your goal and start the measurement.
+4. **Close the enclosure doors and confirm the interlocks.**
+5. **Switch to the internal camera and verify the laser** appears on the sample (re-check the interlocks if it does not).
+6. **Use the RTD** to see a live spectrum, and confirm the spectro position covers the wavenumber range where you expect key peaks.
+7. **Optimize the focus for signal** with the joystick knob, making small adjustments to maximize the Raman signal, then stop the RTD.
+8. **Set up and run your sample collection.** Configure the collection parameters below for your goal and start the measurement.
 
 #### Collection Parameters
 
@@ -281,7 +283,7 @@ Data processing beyond these basics is best learned at the instrument; please as
 
 ## Exercises {#exercises}
 
-* **Level 1 - Calibration and a known sample:** Run the autocalibration routine and collect a spectrum from the polystyrene standard. Confirm your peaks match the known polystyrene reference.
+* **Level 1 - System check and routine spectrum:** Load the silicon calibration sample; focus with TopCam; close the enclosure doors and confirm the interlocks; focus with the internal camera and laser; use RTD with small focus adjustments to optimize counts; and run AutoCalibration to verify system function. Then load a compatible sample, repeat the applicable focus and RTD checks, collect a routine spectrum with trained settings, and save the result.
 * **Level 2 - Laser and grating comparison:** Collect a spectrum from one sample using different laser and grating combinations. Describe how each choice changed signal strength, resolution, and fluorescence.
 * **Level 2 - Combination-tablet mapping:** Perform a spatial map on an [aspirin/paracetamol/caffeine tablet](https://en.wikipedia.org/wiki/Aspirin/paracetamol/caffeine) and identify the different compounds present.
 * **Level 3 - Confocal depth profiling:** Use the confocal capability to collect spectra at different depths within a layered material, such as a snack-bag film, and identify the layers.

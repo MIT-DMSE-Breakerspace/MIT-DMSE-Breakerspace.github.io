@@ -95,12 +95,14 @@ Expect this to need instrument knowledge and a judgment call per instrument. It 
 
 ### Source Of Truth, And Where Quick Guides Fit
 
-The canonical public instrument page is the operating authority: its SOP and detailed operating instructions own the lab-approved workflow. The Quick Guide and staff training guide are **sibling derivatives of that page**, not source and derivative of each other.
+The canonical public instrument page is the operating authority: its SOP and detailed operating instructions own the lab-approved procedures. The Quick Guide and staff training guide are **sibling derivatives of that page**, not source and derivative of each other. Keep three layers explicit:
 
-* The **Quick Guide** supplies the routine mechanical workflow that a recently trained user can hold at the instrument. It is a printed, laminated artifact; the web version exists for printing, replacement, accessibility, personal copies, and fallback.
-* The **staff guide** supplies trainer preparation, coverage of the complete normal-use path, the Level 1 sample and question, coaching prompts, participant roles, success criteria, and administrative closeout.
+* The **canonical SOP** is the trained user's short, sample-agnostic state-transition spine. It gets the instrument from the expected starting state through loading/positioning and characterization, then back through saving, unloading, cleanup, and shutdown. It does not enumerate the introductory curriculum.
+* The **Level 1 workflow** is the selected set of operations staff teach. It follows the SOP spine but may demonstrate several characterization paths or briefly preview a capability that trainees are not expected to operate independently.
+* The **Quick Guide** reproduces the SOP spine on Side 1 and maps the controls used in the Level 1 workflow on Side 2. It is a printed, laminated artifact; the web version exists for printing, replacement, accessibility, personal copies, and fallback.
+* The **staff guide** supplies trainer preparation, SOP coverage, the Level 1 sample and question, teaching sequence, coaching prompts, participant roles, success criteria, capability-preview boundaries, and administrative closeout.
 
-The staff guide carries the complete path a normal user encounters when the instrument is in the state the previous user should have left it, plus the Level 1 exercise, but it must not become an alternate technical SOP. Cite the canonical page for each step and use short labels rather than rewriting the technical instruction. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the guide identifies the expected state and directs users to the page or staff if reality differs. Routine operation may group where that remains unambiguous. As of 2026-08-05 this is done with checkable checklist items carrying `#anchor` citations, not a separate table — see [the session-checklist model](#the-session-checklist-model).
+The staff guide carries the complete SOP spine plus the selected Level 1 operations, but it must not become an alternate technical SOP. Cite the canonical page for each step and use short labels rather than rewriting the technical instruction. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the guide identifies the expected state and directs users to the page or staff if reality differs. Routine operation may group where that remains unambiguous. As of 2026-08-05 this is done with checkable checklist items carrying `#anchor` citations, not a separate table — see [the session-checklist model](#the-session-checklist-model).
 
 **Neither artifact gates the other.** Draft and test them together once the canonical SOP and intended Level 1 workflow are stable. Routine delivery is ready only when the canonical page, Quick Guide, staff guide, and exercise agree; the Quick Guide has been print-tested and installed at the instrument; and the training has been practiced by a qualified trainer.
 
@@ -120,13 +122,15 @@ So:
 * **Update [`instrument-training-template.md`](instrument-training-template.md) when prompted to.** Generalize specific decisions only after they are finalized in the guide under renovation, and write the generalized form for the specific purpose of informing future guide development. Experimental structure stays in the live reference guide until practice or review confirms it.
 * **Leave the other guides alone**, even when a change plainly applies to them. Record the needed retrofit in the [guide-pair inventory](#late-august-guide-pair-inventory) or `../instruments/staff-todo.md`, and let a later session do it deliberately.
 
+A deliberate cross-instrument scope audit is the narrow exception. When the lab manager explicitly supplies decisions for several instruments, one pass may record them in the central handoff table, controlled work orders, to-do lists, and corresponding public exercise statements. That is documentation reconciliation, not authorization to generate or retrofit several guide pairs at once; each actual guide still receives its own development and review round.
+
 **Direction of travel: real content first, then extract the template.** Write and test a decision against an actual instrument, where the facts can be verified against a canonical page and a real workflow, then lift the general pattern into the template. Do not design in the template and instantiate downward — a pattern that has never been tested on real content tends not to survive contact with one.
 
 Thinking about how a decision will generalize is useful during design. Recording that generalized version in the template is a separate, deliberate step once the decision is settled; rewriting nine other guides is a different activity and not one to do on speculation.
 
 ### Sample-Agnostic Guides
 
-**Decided 2026-08-05. Neither the Quick Guide nor the staff guide names a specific material, sample-library identifier, or cabinet location.** Both describe the workflow and the properties a suitable sample must have; the trainer chooses the material for each session.
+**Decided 2026-08-05. Neither the Quick Guide nor the staff guide names a default characterization sample, sample-library identifier, or cabinet location.** Both describe the workflow and the properties a suitable sample must have; the trainer chooses that material for each session. A fixed calibration or system-check reference may be named only when the canonical procedure or approved Level 1 workflow genuinely requires it, as with the Raman silicon standard. That is an operating reference, not the trainer-selected sample used to demonstrate the instrument's broader capabilities.
 
 The reasoning:
 
@@ -152,10 +156,12 @@ Sample-library work that a guide no longer waits on is tracked in `../_staff/sit
 The compact model is embodied in [`../quick-guides/ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md). Its purpose is not to split a long linear tutorial across two sides. It gives the participant one complete SOP side and one control-finding/quality-decision side:
 
 * **Side 1:** a title and trained-user notice; the complete startup, routine operation, and shutdown SOP in the left column; and three guidance boxes in the right column for the instrument's critical handling/safety boundary, before-leaving state, and stop/help path.
-* **Side 2:** one annotated primary software or hardware view; numbered keys whose markers sit outside the controls; two compact immediate-quality or readiness states; and minimal acquisition/before-unloading reminders.
+* **Side 2:** one annotated primary software or hardware view by default, mapping the controls used in the approved Level 1 workflow; numbered keys whose markers sit outside the controls; two compact immediate-quality or readiness states; and minimal acquisition/before-unloading reminders.
 * **Heading hierarchy:** one document `<h1>`; `<h2>` for **Standard Operating Procedure (SOP)** and the Side 2 visual-map title; `<h3>` for startup, operation, shutdown, interface/result subsections, and reminder headings. The Side 2 `<h2>` is styled at display size without becoming a second `<h1>`.
 * **Fixed common architecture:** all instruments use the same three Side 1 boxes. Only the first topic changes — for example glove separation, holder clearance, enclosure/interlock, moving crosshead, laser, indenter/scale, powder loading, cuvette handling, or high-voltage/vacuum state. If the safe boundary does not fit, narrow the workflow or commission a task card rather than add boxes or shrink text.
-* **One routine workflow:** accessory and advanced workflows stay on the canonical page or receive a separately commissioned task-specific card. The primary guide is not a compressed rewrite of all detailed operating instructions.
+* **One approved teaching workflow:** accessory and advanced workflows not taught in Level 1 stay on the canonical page or receive a separately commissioned task-specific card. A method is not excluded merely because it is beyond the simplest acquisition when staff intentionally teach it in Level 1. The primary guide is not a compressed rewrite of all detailed operating instructions.
+
+The one-map composition is the default, not a reason to distort a confirmed curriculum. If a Level 1 workflow genuinely requires multiple control surfaces or mutually exclusive interface states, the instrument remains blocked until a specific layout variant is reviewed and locked. Instron and Raman currently require that decision; optical may require it after current interface capture.
 
 The exact reusable markup, locked-versus-replaceable rules, stop conditions, and per-instrument image/callout plans are in [`../_staff/quick-guides/README.md`](../_staff/quick-guides/README.md). Use that work order rather than deriving a layout from the FTIR file. Existing optical and XRD guides remain untouched until their own retrofit tasks are authorized.
 
@@ -197,22 +203,40 @@ A staff guide is a **checklist a trainer runs**, with the reasoning available bu
 
 **One constraint this model makes easy to get wrong:** a checklist in session order tempts you to write steps in the order they *feel* natural, which can contradict how access actually works. See [access and logistics](access-and-logistics.md#trainer-closeout-sequence) — a trainee has no workstation login during their own first session, because the Moira add happens at closeout, so the trainer performs the initial login.
 
+### Workflow-Scope Handoff — 2026-08-07
+
+This table records the decisions and unresolved boundaries established during the SOP and curriculum audit. It is a handoff summary; the controlled image/callout work orders remain in [`../_staff/quick-guides/instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md).
+
+| Instrument | Level 1 teaching scope or decision | Quick Guide implication | Still unresolved |
+| --- | --- | --- | --- |
+| FTIR | Two trainer-selected solids through the routine ATR cycle. | Existing SOP/OMNIC prototype remains the composition reference. | Background acceptance evidence, operational review, and physical proof. |
+| Phenom XL | Core SEM imaging uses NavCam, LiveSEM focus and brightness/contrast, magnification, acquisition, and the top voltage/beam/resolution/averaging panel. A short EDS capability preview followed by a separate Level 2 add-on is the proposed boundary, not yet approved policy. | Primary map is SEM imaging only; capture NavCam and LiveSEM states and include the grouped top panel. Do not map independent EDS operation. | Approve the EDS boundary; loading pair, interface labels, save/export, and end state. |
+| Phenom Pure | Room-temperature core imaging uses the same categories of SEM controls, verified on the Pure interface. Cold-stage work remains Level 2. | Separate Pure NavCam/LiveSEM sources; include the grouped top panel and never reuse XL height rules. | Loading pair, interface labels, save/export, and end state. |
+| XRD | The SOP covers loading, queueing a stored program, data handoff, log book, unloading, and shutdown. | Primary map is the Aeris queue. | Decide whether HighScore/Search Match is Level 1 independent practice, a capability preview, or a later analysis exercise; resolve stored programs and companion-workstation export. |
+| Instron | One 50 kN tensile test remains the Level 1 candidate. Both Bluehill and the handset are taught. | Requires a reviewed two-view layout; do not reduce the map to the handset. | Saved method versus QuickTest, end condition, exact Bluehill controls, export, quality pair, and initial/final state. |
+| Optical | Best Image; quick 2D stitch as map image; normal 2D capture; slower high-quality 2D area stitch with **Use as map image** deselected; 3D capture. Mention high-quality 3D stitching; briefly preview LEXT analysis/reporting without teaching it for retention. | Map the five taught DSX functions. Do not map LEXT. Determine from current captures whether one useful interface state can carry them or a reviewed multi-state variant is needed. | Public exercise and staff-guide scope were aligned on 2026-08-07 but need operational verification and checklist retrofit; exact controls, save view, focus pair, and layout fit remain open. |
+| Raman | Silicon check: TopCam focus; close doors/confirm interlocks; internal camera plus laser focus; RTD focus refinement by optimizing counts; AutoCalibration; then load the actual sample and repeat the applicable path. | Requires a reviewed multi-state map; one screenshot cannot honestly represent this sequence. | Starting settings, exact controls, calibration pass criterion, save/export, shutdown, and layout. |
+| Hardness tester | One single-point Vickers measurement. | Current proposed map and indent-quality pair remain appropriate. | Installed hardware/scale, exact method, current controls, quality behavior, save/export, and end state. |
+| Particle size analyzer | Shallow tray only. The deep tray exists but is not part of routine training and remains staff-guided. | Map the shallow-tray `Auto-Sequence` workflow; use a shallow-tray loading pair. | Database, measurement SOP, sanitized controls, export, and approved loading pair. |
+| UV-Vis | Needs an editorial pass. The provisional core is one blank-plus-sample absorbance/transmission workflow; current mismatch, concentration, and saturation exercises should not all be called Level 1 by default. | Do not finalize the map or quality pair until one introductory exercise is selected. | Level 1 exercise, settings, immediate quality decision, sanitized controls, and save/export. |
+| Ion mill | Semi-automatic operation is the Level 1 path. Automated recipes are excluded. | Map the semi-automatic control state and pre-run pressure/status decision. | Holder, ion source, starting settings, current controls, readiness pair, and exact finish/unload state. |
+
 ### Late-August Guide-Pair Inventory
 
 Use these visible states for handoff planning: **missing**, **drafting**, **needs operational check**, **needs practice run**, and **ready for late-August handoff**. This inventory records repository coverage, not approval to deliver a training.
 
 | Wave | Instrument system | Quick Guide | Staff guide | Immediate readiness issue |
 | --- | --- | --- | --- | --- |
-| First | **SEM/EDS** | Missing | Missing | Decide the guide split while preserving the two Phenoms' different sample-height rules and the XL-only EDS workflow. |
-| First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion-workstation and stored-program questions; use the existing handouts as source material. |
+| First | **SEM/EDS** | Missing | Missing | Capture separate Phenom interfaces and height pairs, include the top control panel, and approve the proposed Level 1 EDS preview/Level 2 independent-operation split. |
+| First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion workstation, stored programs, and HighScore teaching boundary; use the existing handouts as source material. |
 | First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then timed practice run | Supply the empirical background evidence; test whether the two-solid session and attendee closeout fit 50 minutes; print proof for legibility and QR scanning only. |
-| First | **Instron** | Missing | Missing | Build from the detailed operating page and resolve the remaining machine-specific method, export, and end-condition checks. |
-| Second | **Optical microscopy** | Needs retrofit; blocked on routine capture/save view and quality pair | Needs retrofit to the [session-checklist model](#the-session-checklist-model) | Resolve the [optical Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#olympus-dsx100-optical-microscope), restructure the staff guide as one continuous checklist, and review sample-selection text written before optical's own design round. |
-| Second | **Raman** | Missing | Missing | Verify the routine LabSpec 6 controls, laser-safety procedure, and starting settings before planned fall subject use. |
+| First | **Instron** | Missing | Missing | Resolve the method, export, end condition, and quality checks, then approve a two-view Bluehill/handset layout. |
+| Second | **Optical microscopy** | Needs retrofit; blocked on current interface state(s), save view, and quality pair | Scope aligned; needs operational verification and retrofit to the [session-checklist model](#the-session-checklist-model) | Verify the recorded 2D/stitch/3D curriculum at the instrument, then test whether one map view can carry its five taught functions. |
+| Second | **Raman** | Missing | Missing | Verify the confirmed silicon/TopCam/interlock/internal-camera/RTD/AutoCalibration path and approve a multi-state layout. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
-| Second | **Particle size analyzer** | Missing | Missing | Confirm approved powders, database and export conventions, and workstation handoff. |
-| Second | **UV-Vis** | Missing | Missing | Scope the beginner workflow and verify the routine absorbance method; keep advanced fluorescence support separate unless approved. |
-| Second | **Ion mill** | Missing | Missing | Define the beginner training boundary and stop conditions for the existing operating workflow. |
+| Second | **Particle size analyzer** | Missing | Missing | Shallow-tray Level 1 is settled; confirm the database, measurement SOP, controls, loading pair, export, and workstation handoff. |
+| Second | **UV-Vis** | Missing | Missing | Clean up the beginner exercise list and select one routine absorbance/transmission workflow before mapping it; keep fluorescence separate. |
+| Second | **Ion mill** | Missing | Missing | Semi-automatic Level 1 is settled; select the holder, ion source, settings, control state, readiness pair, and final state. |
 
 ### Late-August Execution Plan
 
@@ -248,6 +272,10 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
+* **XRD analysis boundary.** The public Level 1 exercise currently includes HighScore and Search Match, while the primary Quick Guide map is scoped to the Aeris queue. Decide whether analysis is independent Level 1 practice, a brief capability preview, or a later exercise.
+* **SEM/EDS boundary.** The working recommendation is a brief EDS capability preview during Phenom XL Level 1 plus a separate Level 2 add-on before independent operation. Staff approval is still required; do not turn the recommendation into access policy by implication.
+* **Multi-view map variants.** Instron necessarily uses Bluehill and the handset. Raman necessarily spans TopCam, internal camera/laser focus, RTD, and AutoCalibration. Optical may span several DSX states. These remain blocked until the required sources exist and a readable instrument-specific layout variant is reviewed and locked.
+* **UV-Vis Level 1.** The current public page labels several increasingly interpretive exercises Level 1. Select one core blank-plus-sample absorbance/transmission session before finalizing a map or quality gate.
 
 ### Decisions already made, with reasons
 
@@ -259,16 +287,19 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * The shower and eyewash get fifteen seconds, not a featured slot. They exist because MIT adds them to any renovated lab, not because this lab's materials require them; the material restriction is the actual safety control.
 * Quick Guides serve recently trained and trained users at the instrument; they do not replace training or authorize untrained use.
 * Quick Guides and staff guides are sibling derivatives of the canonical instrument page and may be written in parallel. Neither gates the other.
-* **Both artifacts are sample-agnostic. Neither names a specific material, sample-library identifier, or cabinet location.** Decided 2026-08-05; see [sample-agnostic guides](#sample-agnostic-guides) for the reasoning and for what a guide states instead.
-* **One instrument at a time; generalize into the template only when prompted.** A decision made while working on one instrument is not propagated into the other guides in the same pass. Once a specific decision is finalized, the template may record its generalized form for future guide development; see [scope of work](#scope-of-work-one-instrument-at-a-time).
+* **Both artifacts are agnostic about the trainer-selected characterization sample. Neither names a default sample, sample-library identifier, or cabinet location.** A canonically required calibration or system-check reference may be named. Decided 2026-08-05 and clarified 2026-08-07; see [sample-agnostic guides](#sample-agnostic-guides).
+* **One guide pair at a time; generalize into the template only when prompted.** A decision made while building one instrument's guide is not propagated into other live guides in the same pass. An explicitly requested cross-instrument scope audit may reconcile central handoff records and public exercise statements without generating the guide pairs. See [scope of work](#scope-of-work-one-instrument-at-a-time).
 * Quick Guides and staff guides account for the complete normal-use path a user encounters when the instrument is in the expected ready state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the derivative names the expected state and points users to the page or staff if it differs. Routine shutdown must still restore that expected state. In staff guides this is done with checkable items, not a coverage-map table; see [the session-checklist model](#the-session-checklist-model).
-* Quick Guides cover one default routine workflow; Level 1 exercises use that mechanical spine while adding the sample, question, expected result, and teaching prompts.
+* Quick Guide Side 1 reproduces the canonical SOP spine; Side 2 maps the controls used in the approved Level 1 teaching workflow. Level 1 follows the SOP but may include several characterization paths or a clearly labeled capability preview without expanding the SOP.
 * Immediate data-quality checks belong in Quick Guides; extended interpretation and analysis do not.
 * Quick Guides exclude parameter tables when the workflow is selecting a reviewed stored method.
 * Participants use the printed Quick Guide during training, especially for participant-led cleanup and shutdown.
 * Reviewed laminated Quick Guides are kept at the instruments. The web version supports printing, accessibility, personal copies, and fallback rather than routine browser toggling.
 * A one-hour LibCal block contains 50 participant-facing minutes. Breakerspace Lab Assistants schedule setup before the event and finish Moira, Slack, documentation, and equipment closeout afterward. Minute labels in a draft guide are hypotheses to test in a practice run.
 * FTIR Level 1 uses two trainer-selected solids. Liquids are a later, staff-guided Level 2 extension. Decided 2026-08-06 to match typical use and the 50-minute participant window.
+* Optical Level 1 includes Best Image, quick 2D map stitching, normal 2D capture, high-quality 2D area stitching with **Use as map image** deselected, and 3D capture. High-quality 3D stitching is mentioned but not performed; LEXT is previewed only to show later analysis/report capability.
+* Particle-size Level 1 uses the shallow tray only. The deep tray remains a staff-guided exception because it has not been needed in routine work.
+* Ion-mill Level 1 uses semi-automatic operation. Automated recipes remain outside the introductory workflow.
 * A software step verified against lab-produced media of the actual instrument may be used when the canonical page is updated in the same revision. This resolved the OMNIC post-scan naming prompt on 2026-08-06 without creating a permanent sourcing exception.
 * The lab-approved FTIR cleaning workflow continues to use the stocked low-lint wipes marketed for optical, laser, and electronics cleaning on the installed diamond ATR window. The lab manager accepted that choice on 2026-08-06; revisit it if the installed crystal material or stocked wipe changes.
 
@@ -290,7 +321,7 @@ A complete guide should define:
 
 * The learning goals for a 50-minute participant session within a one-hour calendar block.
 * The Level 1 exercise used during training.
-* The criteria a training sample must satisfy for that exercise, and what disqualifies one. Do not name a specific material or cabinet location; see [sample-agnostic guides](#sample-agnostic-guides).
+* The criteria a trainer-selected characterization sample must satisfy for that exercise, and what disqualifies one. Do not name a default material or cabinet location; canonically required calibration/system-check references are the narrow exception. See [sample-agnostic guides](#sample-agnostic-guides).
 * Instrument setup, supplies, and trainer preparation.
 * A suggested agenda for a maximum of three participants.
 * Safe ways for participants to divide the workflow.

@@ -2,7 +2,7 @@
 title: Optical Microscope Trainer Guide
 description: Session checklist and teaching outline for a one-hour Olympus DSX-1000 optical microscope training.
 guide_status: Needs retrofit and operational check
-guide_revision: 2026-08-05
+guide_revision: 2026-08-07
 interactive_checklist: true
 trainer_links:
   - label: Participant Quick Guide
@@ -19,7 +19,7 @@ trainer_links:
 
 This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page]({% link instruments/optical.md %}) and its sibling [two-page Quick Guide]({% link quick-guides/optical.md %}). Do not maintain a separate operating sequence here.
 
-<p class="guidance-note"><strong>This guide predates the current model and is awaiting its own development round.</strong> Its sample-selection text was applied on 2026-08-05 as part of a decision made while working on the FTIR guide, ahead of any operational review of optical microscopy — treat that section as a draft to verify, not as settled content. The coverage map, operations table, and continuous-flow layout migration are still outstanding.</p>
+<p class="guidance-note"><strong>This guide predates the current checklist model and still needs a structural retrofit.</strong> Its Level 1 operations were corrected on 2026-08-07 to record the workflow the lab manager actually teaches. The exact DSX control names, timing, interface map, sample-selection text, and continuous-flow checklist still require an optical-specific operational review before routine handoff.</p>
 
 
 ## Guide Control
@@ -31,12 +31,13 @@ This pilot guide standardizes a one-hour general optical-microscope training. It
 | LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; the administrative completion record is maintained in `_admin/libcal-manual-update-guide.md` |
 | Session length | 60 minutes |
 | Maximum enrollment | 3 participants |
-| Level 1 exercise | Compare observation modes and save a documented 2D image |
+| Level 1 exercise | Select an observation mode; make a quick 2D map stitch, a normal 2D capture, a high-quality 2D area stitch, and a 3D capture |
+| Capability previews only | High-quality 3D stitching is mentioned; LEXT analysis and report preparation are shown briefly, without teaching either workflow for independent use |
 | Training sample | **Trainer-selected.** A stable, well-supported sample with surface texture that reads differently in different observation modes. No specific material is prescribed |
 | Moira group | `dmse-brkrspc-optical` (see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument)) |
 | Guide owner | Lab manager (see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners)) |
 | Status | Pilot draft; operational-owner review required |
-| Last reviewed | 2026-08-05 |
+| Last reviewed | 2026-08-07 |
 
 ## Training Outcome
 
@@ -47,7 +48,9 @@ By the end of the session, participants should be able to:
 * Screen a sample for handling, stage-load, containment, stability, and motion-clearance concerns.
 * Start the microscope, clear the stage, acknowledge motorized motion safely, load a sample, and focus.
 * Use Best Image to compare observation modes and choose a mode that makes the feature of interest easier to interpret.
-* Capture and save a 2D image while recording the objective, zoom, observation mode, scale, sample orientation, and save location.
+* Make a quick 2D stitch for the map image, save a normal 2D capture, make a slower high-quality 2D area stitch with **Use as map image** deselected, and make a 3D capture.
+* Distinguish the operations taught for independent use from the high-quality 3D-stitch and LEXT capability previews.
+* Record the objective, zoom, observation mode, scale, sample orientation, acquisition type, and save location.
 * Remove the sample and complete the full software, head-retraction, power-off, logout, and dust-cover sequence.
 * Find the Quick Guide, detailed operating instructions, common failure modes, reservations, and help pathways.
 
@@ -88,18 +91,18 @@ Choose a sample that satisfies the criteria below. No specific material is presc
 | 3-8 minutes | [Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
 | 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
 | 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
-| 20-42 minutes | Participants focus, navigate, compare modes, capture a 2D image, and save the result. |
-| 42-50 minutes | Review the image, settings, scale, file location, and what the result can and cannot support. |
-| 50-56 minutes | Participant-led unloading and shutdown using the Quick Guide. |
-| 56-60 minutes | Reservations, access closeout, help pathways, and final questions. |
+| 20-44 minutes | Participants focus, compare modes, make the quick 2D map stitch, normal 2D capture, high-quality 2D area stitch, and 3D capture, and save the results. |
+| 44-49 minutes | Mention high-quality 3D stitching and briefly show LEXT analysis/report capability without teaching the workflow. |
+| 49-55 minutes | Review settings, scale, file locations, and what the results can and cannot support. |
+| 55-60 minutes | Participant-led unloading/shutdown, reservations, access closeout, help pathways, and final questions. Test this compression in the required practice run. |
 
 If the session uses glass slides, connect the sharps-disposal point from the safety orientation to this instrument directly — slides go in the sharps container, not the regular trash.
 
-## Level 1 Exercise: Compare Observation Modes
+## Level 1 Exercise: Core DSX Acquisition Modes
 
 ### Question Or Goal
 
-Which observation mode makes the selected surface feature easiest to see and explain, and what settings must be recorded so another user can understand the image?
+Which observation mode best reveals the selected feature, and how do the quick map stitch, normal 2D capture, high-quality 2D area stitch, and 3D capture serve different observation needs?
 
 ### Sample Selection
 
@@ -114,13 +117,16 @@ The former 3.000 filter exercise is a useful course-specific variation, but it s
 1. Inspect the sample and identify possible height, stability, contamination, or motion-clearance concerns.
 2. Start the microscope and DSX software using the Quick Guide.
 3. Lower the stage, load the sample, remove gloves, and bring the selected region into focus.
-4. Capture or preview the region in brightfield.
-5. Use Best Image to compare all suitable modes, then choose one alternate mode that better reveals a specific feature.
-6. Capture a 2D image in the selected mode.
-7. Save the image in the training location with a useful filename.
-8. Record the objective, zoom, mode, scale, sample orientation, and save location.
-9. Explain what is visible and identify one conclusion the image cannot support by itself.
-10. Wear gloves, remove the sample, and complete shutdown using the Quick Guide.
+4. Obtain a usable live image and use **Best Image** to select an observation mode suited to the sample.
+5. Make a quick 2D stitch and use it as the map image.
+6. Capture and save a normal 2D image.
+7. Make a slower high-quality 2D stitch for area capture with **Use as map image** deselected, then save it.
+8. Capture and save a 3D image.
+9. Record the objective, zoom, mode, scale, sample orientation, acquisition types, and save locations.
+10. Mention that high-quality 3D stitching is available, but do not run it during the introductory session.
+11. Briefly open or show LEXT analysis/report capability. State explicitly that this is a preview so participants know the capability exists, not a workflow they are expected to retain or use independently from this training.
+12. Explain what the results show and identify one conclusion they cannot support by themselves.
+13. Wear gloves, remove the sample, and complete shutdown using the Quick Guide.
 
 ### Suggested Roles For Three Participants
 
@@ -132,10 +138,12 @@ Rotate controls during comparison or repeat acquisition when time permits. Every
 
 ### Success Criteria
 
-* [ ] A stable, focused 2D image was collected and saved in the intended location.
-* [ ] The record includes objective, zoom, observation mode, scale, orientation, and filename or location.
+* [ ] A usable quick 2D map stitch, normal 2D image, high-quality 2D area stitch, and 3D capture were produced and saved in the intended location.
+* [ ] The high-quality 2D area stitch was made with **Use as map image** deselected.
+* [ ] The record includes objective, zoom, observation mode, scale, orientation, acquisition type, and filename or location.
 * [ ] Participants can explain why the chosen mode is useful for the selected feature.
 * [ ] Participants know that 3D output depends on focus, reflectivity, lighting, and software assumptions.
+* [ ] Participants can distinguish the operations taught for independent use from the high-quality 3D-stitch and LEXT previews.
 * [ ] Participants can find the Quick Guide, detailed instructions, common failure modes, reservations, and help pathways.
 * [ ] Participants complete the sample-removal and shutdown sequence without leaving the stage occupied.
 
@@ -165,9 +173,10 @@ Complete every item before considering the session closed.
 ## Trainer Notes And Variations
 
 * For participants with project samples, use the standard sample first unless the project sample was approved and is equally safe and predictable.
-* A second acquisition at another magnification is a useful extension when time permits.
+* A second acquisition at another magnification is an optional extension when time permits; it is not a substitute for the confirmed stitch and 3D sequence.
 * The 3.000 filter-pore activity can be used for a course cohort after the measurement definition, saving workflow, and expected values are standardized.
 * Do not allow a visually impressive 3D rendering to substitute for discussion of measurement limits and recorded settings.
+* Do not teach LEXT analysis or report preparation as part of this introductory checklist. The short preview only establishes that those capabilities exist.
 
 ## Guide Maintenance
 

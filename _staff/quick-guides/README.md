@@ -10,11 +10,12 @@ The current model was approved on 2026-08-07 for **unpublished drafting and lab-
 
 ## Authority And Relationship To Training
 
-The canonical instrument page is the operating authority. The Quick Guide and staff training guide are sibling derivatives of that page.
+The canonical instrument page is the operating authority. The Quick Guide and staff training guide are sibling derivatives of that page, but they use three deliberately separate layers of it:
 
-* The Quick Guide is the trainee's and trained user's compact **how-to reference** during the routine workflow.
-* The staff training guide is the trainer's **coverage and coaching checklist**. It ensures the trainer teaches the complete normal-use path, including the SOP, practice operation, quality decision, cleanup, shutdown, and administrative closeout.
-* The Level 1 exercise uses the same routine mechanical spine but adds the trainer-selected sample, question, expected contrast, and teaching prompts.
+* The **canonical SOP** is the short, sample-agnostic state-transition spine for trained users: reach the ready state, load or position a sample, characterize it as appropriate, save, unload, clean, and leave the instrument in its required final state. It must not be expanded to enumerate the Level 1 curriculum.
+* The **Level 1 workflow** is the explicit set of operations staff teach in the introductory session. It follows the SOP spine but may exercise several legitimate characterization paths, include a short capability preview, and add the trainer-selected sample, question, expected contrast, and coaching prompts.
+* The **Quick Guide** puts the canonical SOP on Side 1 and maps the controls the trainee uses during the approved Level 1 workflow on Side 2. It is the trainee's and trained user's compact **how-to reference**, not a second SOP or a miniature manual.
+* The **staff training guide** is the trainer's **coverage and coaching checklist**. It ensures the trainer teaches the SOP spine, the selected Level 1 operations, the immediate quality decision, cleanup, shutdown, and administrative closeout.
 
 During training, the participant should hold and use the printed Quick Guide while the trainer follows the staff guide. That does not make either document the source for the other, and it does not require their wording or section boundaries to match.
 
@@ -27,7 +28,7 @@ Every candidate produced from this model is:
 * Side 1: the canonical SOP in the left column and three guidance boxes in the right column;
 * Side 2: one annotated control map, an immediate quality or readiness decision, and compact reminders;
 * an unpublished review artifact until staff approval and physical proof;
-* sample-agnostic unless the canonical workflow itself requires a particular reference or consumable;
+* sample-agnostic unless the canonical procedure or approved Level 1 system check genuinely requires a particular reference or consumable;
 * usable in grayscale and understandable without relying on background color.
 
 The visual hierarchy is also fixed:
@@ -45,7 +46,7 @@ The Side 2 title is an `<h2>` styled at the same display size as the document ti
 | Page size, two-side composition, columns, spacing, type sizes, colors, footers, review badge, and CSS classes | **Locked. Do not change.** |
 | Heading levels and section order | **Locked. Do not change.** |
 | Three Side 1 guidance boxes | **Locked structure. Replace only the instrument-specific text described below.** |
-| Side 2 control-map image count | One primary annotated image. Do not add an inset. If a physical state is essential, make it the primary map or use the existing two decision panels. |
+| Side 2 control-map image count | One primary annotated image by default. Do not add an inset or second map unless the instrument work order explicitly identifies multiple essential control surfaces or interface states and a separate layout variant has been reviewed and locked first. Until then, the guide remains blocked. |
 | Side 2 decision panels | Two panels using the existing stop/ready treatment. They may show bad/good output, incorrect/correct loading, or stop/continue system state as specified for the instrument. |
 | Instrument title, software/map title, subtitle, URL, QR asset, owner/date, SOP bullets, control labels, captions, and image paths | Replace from the canonical page and the instrument specification. |
 | Inline SVG target rectangles, leaders, and number locations | Reposition mechanically for the approved images. Keep the annotation style unchanged. |
@@ -58,7 +59,8 @@ Do not add sections, explanatory paragraphs, parameter tables, optional workflow
 Before treating an instrument work order as mechanical, audit its source trail.
 
 * Copy the full manufacturer/model identity from the canonical instrument page's H1. A manual, image filename, similar product, or remembered instrument is not an identity source.
-* Distinguish a canonical workflow from a proposed drafting decision. A proposal in `instrument-specifications.md` remains a blocker until staff approves it; it must not become guide prose merely because it sounds reasonable.
+* Identify three things separately: the canonical SOP spine, the approved Level 1 teaching workflow, and the controls that workflow requires on the software map. Do not call a sequence “canonical” merely because it appears in detailed instructions or an exercise.
+* Distinguish established source content from a proposed drafting decision. A proposal in `instrument-specifications.md` remains a blocker until staff approves it; it must not become guide prose merely because it sounds reasonable.
 * Confirm every named control in both the canonical page and the source image. If the page names a function but the image shows only an unverified icon, record the icon/function check as a release gate.
 * Inspect every source image at full resolution. Recapture any image with baked-in annotation, a username, personal or project identifier, file path, unrelated data, obsolete interface state, or text that will not remain legible in print.
 * Confirm that each stop/ready pair asks one observable question. Use only a corrective action already stated on the canonical page; a visually plausible result is not automatically an approved acceptance standard.
@@ -73,20 +75,20 @@ Every instrument uses the same three-box architecture.
 
 No instrument currently needs a fourth general-purpose box. If three boxes cannot hold the safe boundary legibly, stop. The likely answer is a narrower primary workflow or a separate task-specific card, not another box or smaller text.
 
-Advanced or accessory workflows do not belong in the primary guide merely because they are common. Examples include Phenom Pure cold-stage work, Phenom XL EDS, optical 3D capture or stitching, fluorescence on the Duetta, or special ion-mill recipes. Keep them on the canonical page until an independently justified task-specific card is commissioned.
+Advanced or accessory workflows do not belong in the primary guide merely because they are common. Examples include Phenom Pure cold-stage work, independent Phenom XL EDS operation, LEXT analysis/reporting, fluorescence on the Duetta, or automated ion-mill recipes. A method that staff intentionally teach in Level 1 is not excluded merely because it is more advanced than the most basic acquisition; record that curriculum decision explicitly and map only the controls needed to teach it.
 
-The locked template has no inset slot. Do not invent one. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. If that still cannot carry the routine safely and legibly, stop and narrow the workflow or commission a separate task card.
+The locked template has no inset slot. Do not invent one. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. When an approved Level 1 workflow genuinely requires two control surfaces or several mutually exclusive interface states, do not narrow the curriculum to protect the template: keep the work order blocked until a specific multi-view variant is reviewed and locked. Instron and Raman currently require that decision.
 
 ## Mechanical Work Order
 
 For each instrument, follow these steps in order.
 
 1. Read this file, [`sop-visual-map-template.md`](sop-visual-map-template.md), and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md).
-2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Do not use memory or a manufacturer manual to fill gaps.
+2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Do not use memory or a manufacturer manual to fill gaps.
 3. Check the specification's status. If it is **BLOCKED**, do not create a guide. Report the listed missing decisions or assets verbatim and move to the next explicitly assigned instrument.
 4. Copy the template to `quick-guides/<slug>-sop-map-prototype.md`. Keep `published: false`, the prototype permalink, screen warning, and review badges.
 5. Replace only bracketed fields and the explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, and guidance-box text.
-6. Copy the canonical SOP's order and technical meaning exactly. Minor removal of repeated context is allowed only when the same sentence remains unambiguous. If it does not fit, stop and report overflow; do not summarize, shrink type, or omit a step.
+6. Copy the canonical SOP's order and technical meaning exactly onto Side 1. Minor removal of repeated context is allowed only when the same sentence remains unambiguous. If it does not fit, stop and report overflow; do not summarize, shrink type, omit a step, or substitute the more specific Level 1 workflow.
 7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label or verified icon function, or the canonical page and interface disagree, stop and report the mismatch.
 8. Draw each callout as: outlined rectangle around the target, leader line away from the target, numbered circle at the free end, and matching numbered key. The circle or leader may not cover the control, its label, or another callout.
 9. Use a sanitized, unannotated source screenshot at native resolution. Cropping and proportional resizing for legibility are allowed. Do not redact a private screenshot into a final source, redraw the UI, sharpen it with generated content, alter displayed values, or bake annotations into the raster image.
@@ -98,6 +100,7 @@ For each instrument, follow these steps in order.
 Stop without drafting, and record the issue, when any of these applies:
 
 * the default beginner workflow has not been selected;
+* the controls required by the approved Level 1 workflow have not been selected;
 * the canonical SOP and detailed instructions conflict;
 * an exact control name or its current appearance is unverified;
 * a required loading, clearance, interlock, or quality-decision image is missing;
@@ -105,6 +108,7 @@ Stop without drafting, and record the issue, when any of these applies:
 * save/export location or final shutdown state is unknown;
 * the complete SOP does not fit the locked composition;
 * the guide would need more than one primary routine workflow;
+* the approved workflow requires multiple control surfaces or interface states and no instrument-specific layout variant has been reviewed and locked;
 * the requested instrument is marked **BLOCKED** in the specification.
 
 Do not insert `TODO`, guessed prose, generic safety language, or placeholder controls into an instrument candidate. A blocked report is the correct result.

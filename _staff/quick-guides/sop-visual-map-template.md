@@ -1,7 +1,7 @@
 ---
 layout: quick-guide
 title: "[INSTRUMENT] SOP and Visual Map Prototype"
-description: "Unpublished two-sided prototype combining the canonical [INSTRUMENT] SOP with an annotated [SOFTWARE OR HARDWARE] visual map."
+description: "Unpublished two-sided prototype combining the canonical [INSTRUMENT] SOP with an annotated map of the controls used in Level 1 training."
 published: false
 permalink: /quick-guides/[SLUG]-sop-map-prototype/
 instrument_url: /instruments/[SLUG].html
@@ -12,6 +12,8 @@ instrument_url: /instruments/[SLUG].html
   Copy this file; do not edit it in place.
   Replace bracketed fields and the instrument-specific content authorized by
   README.md and instrument-specifications.md. Do not alter structure/classes.
+  This is the default one-map composition. If a work order requires multiple
+  control surfaces or interface states, stop until a separate variant is reviewed.
 -->
 <section class="instrument-quick-guide quick-guide-sop-map" id="quick-guide" aria-labelledby="[SLUG]-sop-map-title">
   <div class="quick-guide-screen-bar">
@@ -30,7 +32,7 @@ instrument_url: /instruments/[SLUG].html
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace - Trained-user reference</p>
         <h1 id="[SLUG]-sop-map-title">[INSTRUMENT]: [ROUTINE WORKFLOW] SOP</h1>
-        <p class="quick-guide-sop-map-sheet-subtitle">The complete normal-use sequence in one place. Use the [VISUAL MAP NAME] on the reverse to locate controls.</p>
+        <p class="quick-guide-sop-map-sheet-subtitle">The canonical normal-use sequence in one place. Use the [VISUAL MAP NAME] on the reverse to locate controls taught in Level 1.</p>
       </div>
       <strong class="quick-guide-sop-map-review-badge">Prototype<br>Review only</strong>
     </header>
@@ -110,7 +112,7 @@ instrument_url: /instruments/[SLUG].html
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace - [INSTRUMENT]</p>
         <h2 id="[SLUG]-map-title">[SOFTWARE OR HARDWARE] visual map</h2>
-        <p class="quick-guide-sop-map-sheet-subtitle">Use this side to find the controls. Follow the SOP on the reverse for the workflow.</p>
+        <p class="quick-guide-sop-map-sheet-subtitle">Use this side to find the controls taught in Level 1. Follow the SOP on the reverse for the canonical workflow.</p>
       </div>
       <strong class="quick-guide-sop-map-review-badge">Prototype<br>Review only</strong>
     </header>

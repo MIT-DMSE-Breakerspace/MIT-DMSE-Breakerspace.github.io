@@ -397,7 +397,7 @@ For useful before/after comparisons:
 
 ## Exercises {#exercises}
 
-* **Level 1 - General training:** Mechanically polish a mounted metal sample, image it in the SEM, ion polish it using the standard polishing holder and a staff-approved short polishing method, then image the same region again. Describe what changed.
+* **Level 1 - Semi-automatic surface polishing:** Prepare a mechanically polished metallographic sample, load it in the approved polishing holder, run a staff-approved short method using semi-automatic control, and unload it safely. Use trainer-provided before/after images to discuss the expected surface change; independent SEM operation is not a prerequisite for ion-mill training.
 * **Level 2 - Slope cutting:** Mount a layered or coated sample on a carrier plate, align it with the 30&deg; slope-cutting holder, run a staff-approved slope-cutting recipe, and image the cross section in the SEM.
 * **Level 2 - Method comparison:** Compare two polishing times or two final-cleaning conditions on similar samples. Use before/after SEM images to decide which method produced the better surface.
 * **Level 3 - Specialist training:** Develop a documented automated recipe for a recurring sample type, including sample prep, holder choice, ion-source sequence, milling times, and before/after image criteria.
