@@ -39,6 +39,9 @@ jobs:
       - name: Install accessibility-test dependencies
         run: npm ci
 
+      - name: Check source instrument SOP contracts
+        run: script/check-sop-contract
+
       - name: Build the Jekyll site
         run: bundle exec jekyll build
 

@@ -79,7 +79,7 @@ Consolidated coverage now includes all eleven instruments:
 
 The SEMs use a shared hub at `instruments/sem.md` plus separate safety-critical operating pages at `instruments/phenom-xl.md` and `instruments/phenom-pure.md`.
 
-The tutorial-to-instrument migration is complete: no instruments remain on legacy tutorial/SOP pages. Every promoted instrument's legacy `tutorials/*.md` page has been retired as a redirect to its canonical `instruments/` page, preserving the old URLs. Remaining instrument work is depth and media (photography, screenshots, staff verification, and deeper operating detail on some pages) rather than structural migration. The detailed page model and migration rules live in `instruments/readme.md`.
+The tutorial-to-instrument migration is complete: no instruments remain on legacy tutorial/SOP pages. Every promoted instrument's legacy `tutorials/*.md` page has been retired as a redirect to its canonical `instruments/` page, preserving the old URLs. Remaining instrument work is depth and media (photography, screenshots, staff verification, and deeper operating detail on some pages) rather than structural migration. The detailed page model, including the explicit two-speed SOP/detailed-instructions boundary, and migration rules live in `instruments/readme.md`.
 
 Old public URLs are preserved: each legacy `tutorials/*.html` page is a redirect to its `instruments/` page, and the former `lab.md` catalog now redirects to `instruments/index.md` rather than acting as a competing catalog.
 
@@ -143,6 +143,7 @@ The current build succeeds. Dart Sass reports existing `@import` deprecation war
 Before finishing a site change:
 
 * Run `git diff --check`.
+* Run `script/check-sop-contract` when an instrument page changes; CI runs it for every pull request.
 * Run `bundle exec jekyll build`.
 * Check internal links and heading fragments when navigation or anchors change.
 * Follow the [Tutorial Media Production Guide](_staff/tutorial-media/README.md) when recording, reviewing, processing, or publishing instructional video and images.
