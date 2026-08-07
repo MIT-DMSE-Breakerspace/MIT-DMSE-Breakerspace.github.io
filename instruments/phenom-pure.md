@@ -64,7 +64,6 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * Start the Phenom User Interface software.
 * Wake the instrument if needed.
 * If the instrument does not connect automatically, open [Settings / Phenom / Status](../assets/img/tutorials/sem/connect.PNG) and connect to the microscope.
-* If using the cold stage, switch on the chiller unit about 30 minutes before imaging so the cooling water reaches operating temperature.
 
 ### Operation {#operation}
 
@@ -75,7 +74,8 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * [Load](#loading) the sample holder into the instrument.
 * Remove gloves before using the computer.
 * Set the image [label and save location](#customize).
-* Use NavCam to navigate, move to SEM view, adjust imaging settings, focus, and acquire images.
+* In NavCam, adjust brightness, contrast, and focus until the image is clear enough to navigate the loaded sample.
+* Characterize the sample as appropriate for your goals (see [detailed operating instructions](#details)).
 * Wear gloves again, unload samples, and leave the holder clean and stored correctly.
 
 ### Instrument Shutdown {#shutdown}
@@ -84,9 +84,6 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * Close the Phenom software. Press F11 if you need to exit fullscreen view.
 * Log off Windows.
 * The microscope will put itself in standby.
-* If you used the cold stage, turn cooling off at the controller, allow the stage to return toward room temperature, then switch off the chiller unit.
-
-{% include sem/common-safety.md %}
 
 ## Phenom Pure Sample Limits {#pure-limits}
 
@@ -95,6 +92,8 @@ The cold stage does not make every wet sample safe or easy to image. Freezing ca
 * Use the holder or stage appropriate for the intended vacuum mode.
 * Do not use the Phenom XL tray-height rule on the Pure.
 * Never load a loose, wet-unfrozen, shedding, or over-height sample.
+
+{% include sem/common-safety.md %}
 
 {% include sem/sample-prep-at-a-glance.md %}
 

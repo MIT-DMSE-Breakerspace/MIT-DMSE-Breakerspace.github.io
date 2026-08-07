@@ -89,7 +89,7 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * Turn the instrument display on.
 * Confirm that high voltages are off and the chamber is in a safe state.
 * Turn the turbomolecular pump standby mode off.
-* If the turbomolecular pump current at 1500 Hz is unusually high or above 1 A, open the forevacuum pump bypass valve for about 10 minutes and ask staff for help if it does not recover.
+* Confirm that the turbomolecular pump current at 1500 Hz is in its normal range and no higher than 1 A. If it is not, stop and ask staff.
 * Open the argon cylinder in the closet to the left of the instrument.
 * Press [Purge (5s)](../assets/img/tutorials/ion-mill/purge.JPG) four times, waiting about five seconds between each click.
 * Confirm that needle-valve control is set to semi-automatic.
@@ -102,9 +102,9 @@ After slope cutting, look for whether the cut crossed the target region. A good 
 * Prepare the sample externally for [polishing](#polishing) or [slope cutting](#slope-cutting).
 * Load the holder using the software sample exchange procedure.
 * Select the head unit and ion source appropriate for the method.
-* Set sample motion, milling angle, accelerating voltage, and milling time according to the trained procedure or approved recipe.
-* Confirm that pressure is below 5 x 10<sup>-6</sup> mbar before turning on an ion source or running a recipe.
-* Start the semi-automatic run or automated recipe.
+* Set sample motion, milling angle, accelerating voltage, and milling time according to the trained procedure.
+* Confirm that pressure is below 5 x 10<sup>-6</sup> mbar before turning on an ion source or starting the run.
+* Start the semi-automatic run.
 * Monitor the run at the instrument.
 * When the run is complete, confirm that high voltage and sample motion are off before [unloading](#unloading).
 * Allow cooled samples to return toward room temperature before unloading.
@@ -374,6 +374,7 @@ For useful before/after comparisons:
 
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
+| Turbomolecular pump current at 1500 Hz is unusually high or above 1 A | Pump has not recovered its normal operating condition | Do not continue startup. Staff may open the forevacuum pump bypass valve for about 10 minutes and confirm recovery before use. |
 | Vacuum does not recover after loading | Door/seal issue, debris, wet sample, or holder not seated | Stop the process, check for obvious loading issues only if safe, and ask staff. |
 | Software warns during sample exchange | Load-lock pumping or stage movement problem | Follow the on-screen prompt; do not force the stage or door. |
 | Ion source will not stabilize | Argon flow, needle valve, pressure, source condition, or incorrect setup | Stop and ask staff; do not keep opening the valve blindly. |

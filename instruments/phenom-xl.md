@@ -76,8 +76,8 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 * [Load](#loading) the sample tray into the instrument.
 * Remove gloves before using the computer.
 * Set the image [label and save location](#customize).
-* Use NavCam to navigate, move to SEM view, adjust imaging settings, focus, and acquire images.
-* For EDS or Live EDS, stop acquisition before moving to another area or returning to SEM observation.
+* In NavCam, adjust brightness, contrast, and focus until the image is clear enough to navigate the loaded sample.
+* Characterize the sample as appropriate for your goals (see [detailed operating instructions](#details)).
 * Wear gloves again, unload samples, and leave the tray clean and stored correctly.
 
 ### Instrument Shutdown {#shutdown}
@@ -87,8 +87,6 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 * Log off Windows.
 * The microscope will put itself in standby.
 
-{% include sem/common-safety.md %}
-
 ## Phenom XL Sample Limits {#xl-limits}
 
 * Maximum sample footprint: 100 mm x 100 mm.
@@ -96,6 +94,8 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 * Use stub tweezers when loading mounted stubs into the tray.
 * For EDS, a working distance around 4-7 mm is usually a useful target after the sample is loaded and in SEM view.
 * Never load a loose, wet, shedding, or over-height sample.
+
+{% include sem/common-safety.md %}
 
 {% include sem/sample-prep-at-a-glance.md %}
 

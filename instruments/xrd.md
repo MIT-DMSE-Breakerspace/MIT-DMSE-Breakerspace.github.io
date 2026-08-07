@@ -94,14 +94,12 @@ The Aeris is a fully enclosed, interlocked instrument: the X-ray shutter cannot 
 * Start the measurement, or click **Add to Queue** to run it after the current sample.
 * Export results to the networked workstation or a USB drive.
 * Fill out your information in the X-ray safety log book.
-* Additional samples can be loaded and queued while the current sample is being measured. Repeat as needed.
 
 ### Instrument Shutdown {#shutdown}
 
 * Confirm all data you need has been exported.
 * Press the power button to switch off the instrument.
 * Turn the HT keyswitch counter-clockwise to switch off the HT generator.
-* If the instrument will be off for a long period, you can also switch off the mains power supply.
 * Remove your sample holders, return them to storage, and leave the sample prep area clean.
 
 ## Compatible Materials And Sample Prep {#materials}

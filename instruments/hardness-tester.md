@@ -91,9 +91,8 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 * Find a clean, flat spot using the camera, moving the stage with the joystick or the software.
 * Focus with the 2.5x objective, then switch to 10x and refocus.
 * Click **IN FOCUS**.
-* Choose your scale with **SCALE SELECT**, the test button at the top left (see [test method selection](#test-method)).
-* Confirm the pattern is set to **SINGLE POINT**, then click **START**; the test runs automatically.
-* To test several points, use **TEST PATTERN** and choose your settings. Return to **SINGLE POINT** when you are done.
+* Choose a safe scale and test method with **SCALE SELECT** (see [test method selection](#test-method)).
+* Perform hardness testing appropriate for your sample (see [detailed operating instructions](#details)).
 
 ### Shutdown {#shutdown}
 
