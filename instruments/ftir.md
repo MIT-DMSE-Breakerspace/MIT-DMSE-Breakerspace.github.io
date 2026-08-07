@@ -112,7 +112,7 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 
 ### Instrument Shutdown {#shutdown}
 
-* Save all data you need.
+* Save all data you need and copy it to your own storage; the workstation is not a backup.
 * Close OMNIC.
 * Log off the workstation.
 * Clean the ATR crystal.

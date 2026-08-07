@@ -107,8 +107,8 @@ The SOP must not become a compressed tutorial, capability list, Level 1 exercise
 The Quick Guide and staff training guide are **sibling derivatives of the canonical instrument page**, not source and derivative of each other:
 
 * The **instrument page** owns the complete SOP, sample limits, detailed common workflows, troubleshooting, analysis guidance, exercises, and manual links.
-* The **Quick Guide** is an at-instrument performance aid for recently trained and trained users following one routine workflow.
-* The **staff training guide** is the trainer's curriculum, SOP-coverage checklist, Level 1 exercise, coaching plan, and administrative closeout.
+* The **Quick Guide** is an at-instrument performance aid with two different jobs: Side 1 reproduces the canonical SOP spine, while Side 2 maps the controls used in the approved Level 1 teaching workflow.
+* The **staff training guide** is the trainer's SOP-coverage checklist, Level 1 curriculum, coaching plan, capability previews, and administrative closeout.
 
 Do not require the Quick Guide to be written before the staff guide can be drafted, or the reverse. Both can be developed in parallel once the canonical SOP and intended Level 1 workflow are stable. Before a training is marked ready for routine delivery, however, both artifacts must be reviewed against the same SOP, the Quick Guide must be available in print at the instrument, and the staff guide must show how the complete normal-use path is covered. See [`../_staff-training/README.md`](../_staff-training/README.md) for the trainer-facing model.
 
@@ -128,8 +128,8 @@ Every Quick Guide must:
 
 * Identify itself as a recently-trained/trained-user reference that does not replace training.
 * Draw technical claims and operating steps from the canonical instrument page rather than introduce an alternate workflow.
-* Represent the complete normal-use path a trained user encounters when the instrument is in the state the previous user should have left it. Routine shutdown must restore that state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the Quick Guide states the expected condition and directs users to the page or staff if reality differs.
-* Cover one default routine workflow, with compact branches only for genuinely routine choices such as sample type, holder, accessory, or observation mode.
+* Reproduce the canonical SOP's complete normal-use state-transition path on Side 1. Routine shutdown must restore the expected state. Conditional recovery, maintenance, and unusual-startup steps may remain on the canonical page when the Quick Guide states the expected condition and directs users to the page or staff if reality differs.
+* Map only the controls used during the explicitly approved Level 1 teaching workflow on Side 2. Level 1 may exercise several legitimate characterization paths without adding those paths to the SOP or implying that the map exhausts the instrument's capabilities.
 * Include the minimum safe sample-compatibility, preparation, PPE, and stop-and-ask guidance needed while standing at the instrument.
 * Use numbered steps, exact control names, and selected photographs or screenshots where users must locate or recognize hardware or software controls.
 * Include an immediate quality gate: enough information to decide whether contact, focus, signal, alignment, force, or another essential condition is plausible before saving or unloading.
@@ -141,31 +141,32 @@ Interpretation beyond the immediate quality gate belongs on the instrument page.
 
 Use the following two-side structure by default:
 
-**Side 1 — Decide, prepare, and start**
+**Side 1 — Complete SOP plus bench guidance**
 
-1. Instrument identity, one-sentence purpose, trained-user statement, canonical URL, owner, and review date.
-2. Before-you-start compatibility, PPE, holder/accessory/method, and condition checks.
-3. Compact routine method or mode selection where needed.
-4. Numbered startup, preparation, and loading steps with essential visual control-finding support.
-5. Stop-and-ask conditions placed beside the relevant decisions or steps.
+1. Instrument identity, routine-workflow title, trained-user statement, canonical URL, owner, and review date.
+2. The complete canonical startup, operation, and shutdown SOP spine in the left column under **Standard Operating Procedure (SOP)**. Do not assume users know the abbreviation and do not substitute the more specific Level 1 exercise.
+3. Three fixed guidance boxes in the right column: the instrument's dominant critical handling/safety rule, **Before you leave**, and **Stop and ask staff** with the canonical-page QR code.
 
-**Side 2 — Measure, verify, save, and leave**
+**Side 2 — Visual control map plus immediate decision**
 
-1. Routine acquisition or measurement steps.
-2. Immediate data-quality check.
-3. Save, export, and personal-copy requirements.
-4. Unloading, cleaning, and complete shutdown.
-5. Before-leaving checklist and help pathway.
+1. One primary software or hardware view by default, with only the controls used in the approved Level 1 workflow outlined and connected by leaders to numbered circles outside the controls.
+2. A matching numbered key using the interface's exact visible control names.
+3. Two compact panels for the immediate stop/correct versus continue decision: data quality, loading, clearance, interlock, or system state as appropriate.
+4. Compact acquisition and before-unloading reminders plus the canonical-page QR code.
 
-If the routine workflow cannot fit legibly on two sides, do not shrink or cram the content. Keep one primary Quick Guide and create a separate task-specific workflow card for the additional routine path, or leave the advanced path on the canonical page.
+Use one document `<h1>` for the instrument. **Standard Operating Procedure (SOP)** and the Side 2 visual-map title are `<h2>` headings; **Instrument startup**, **Operation**, **Instrument shutdown**, and interface/result subsections are `<h3>` headings. The Side 2 `<h2>` may be styled at title size without becoming a second `<h1>`.
 
-Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. Their shared page structure and `quick-guide-*` CSS classes are the implementation starting point.
+If the canonical SOP or approved Level 1 map cannot fit legibly on two sides, do not shrink, cram, or quietly narrow the curriculum. A genuinely separate task may receive its own workflow card. When one Level 1 workflow necessarily spans multiple control surfaces or mutually exclusive interface states, keep the guide blocked until an instrument-specific layout variant has been reviewed and locked; do not improvise an inset.
 
-**`ftir.html` is the reference implementation for content.** Rebuilt 2026-08-03 under the contract above and corrected through later review, it demonstrates numbered workflow sections, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair. Its two-page composition is still a layout candidate pending physical proof; do not automatically apply that composition to another instrument.
+Quick Guides currently exist for `/quick-guides/optical/`, `/quick-guides/ftir/`, and `/quick-guides/xrd/`, backed by the matching includes in `_includes/quick-guides/`. The locked drafting procedure, copyable two-page template, and per-instrument visual work orders are in [`../_staff/quick-guides/`](../_staff/quick-guides/README.md).
+
+**The published `ftir.html` include remains the reference implementation for reviewed content.** Rebuilt 2026-08-03 under the contract above and corrected through later review, it demonstrates numbered workflow sections, a three-branch quality gate whose every branch ends in asking staff, and complete recovery cycles that say where to rejoin the sequence. Read it alongside [`../_staff-training/ftir.md`](../_staff-training/ftir.md) as a matched pair.
+
+**The unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) is the reference implementation for the new compact composition.** The strategy was accepted on 2026-08-07 for controlled drafting and lab-assistant review: complete SOP on Side 1, annotated visual map and immediate quality decision on Side 2. Its layout classes and measurements may now be copied through the locked staff template, but no instrument guide may be published or installed without its own technical review and physical proof. Do not improvise a guide for an instrument marked blocked in the [instrument-specific work orders](../_staff/quick-guides/instrument-specifications.md).
 
 The optical guide predates the contract and still carries interpretation material. The XRD guide also predates it, is dense, and was written before its staff guide existed. Both need the same retrofit FTIR received.
 
-**None of the three has received its physical print proof.** FTIR currently renders as two explicit Letter pages without clipping or overlap; test print-scale legibility, grayscale reproduction, QR scanning, and duplex flip before treating its layout as a model. Keep current measurements and readiness status in [`../_staff-training/README.md`](../_staff-training/README.md#quick-guide-layout-model) rather than duplicating them here.
+**None of the three published guides or the compact FTIR prototype has received its physical print proof.** Test print-scale legibility, grayscale reproduction, QR scanning, and duplex flip before approval. Keep current measurements and readiness status in [`../_staff-training/README.md`](../_staff-training/README.md#quick-guide-layout-model) rather than duplicating them here.
 
 Each page should also include a short educational section near the top, after Quick Actions and before the SOP, aimed at curious undergraduates from any major. Assume students have completed high-school science but may not have taken university-level physics, chemistry, biology, or materials science. This section should answer what the instrument reveals, why scientists use it, what typical results look like, and what the instrument cannot tell you. Keep it satisfying but not textbook-length.
 

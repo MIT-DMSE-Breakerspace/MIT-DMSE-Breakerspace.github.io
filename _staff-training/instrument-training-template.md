@@ -12,11 +12,11 @@ A staff training guide is an **outline and checklist for the trainer**, not a ma
 
 Six things follow from that:
 
-* **The canonical instrument page is the operating authority.** Every normal-use workflow step here cites the section it comes from, and the trainer names that connection out loud so participants learn where to find conditional recovery, maintenance, and unusual-startup instructions when the instrument is not in its expected ready state.
+* **The canonical instrument page is the operating authority.** Keep its short SOP spine separate from the more specific Level 1 teaching workflow. Every normal-use step here cites the section it comes from, and the trainer names that connection out loud so participants learn where to find conditional recovery, maintenance, and unusual-startup instructions when the instrument is not in its expected ready state.
 * **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
-* **This guide and the Quick Guide are siblings**, both derived from the instrument page. The Quick Guide supplies the physical routine-workflow aid participants hold during the session; this guide supplies the Level 1 exercise, trainer prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
+* **This guide and the Quick Guide are siblings**, both derived from the instrument page. Quick Guide Side 1 reproduces the SOP spine; Side 2 maps the controls used in the approved Level 1 workflow. This guide supplies the teaching sequence, capability-preview boundaries, prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
 * **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
-* **Guides are sample-agnostic.** State the criteria a training sample must meet, never a specific material, sample-library identifier, or cabinet location. The trainer chooses the material per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+* **Guides are agnostic about the trainer-selected characterization sample.** State its criteria, never a default material, sample-library identifier, or cabinet location. A canonically required calibration or system-check reference may be named. The trainer chooses the characterization sample per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
 * **Work on one instrument at a time.** Build this guide and its Quick Guide against real, verifiable content for this instrument. Generalize a finalized decision into this template only when prompted; do not apply it to the other instrument guides in the same pass. See [scope of work](README.md#scope-of-work-one-instrument-at-a-time).
 
 ## Guide Control
@@ -30,7 +30,9 @@ Six things follow from that:
 | Session length | 50 participant-facing minutes within a 60-minute calendar block; trainer setup before and administration after |
 | Maximum enrollment | 3 participants |
 | Level 1 exercise | [Exercise name and public-page anchor] |
-| Training sample | **Trainer-selected.** [The properties a suitable sample must have. Do not name a material or cabinet location] |
+| Independently taught operations | [The operations participants should be prepared to repeat after training] |
+| Capability previews only | [Capabilities the trainer briefly shows without teaching for independent use, or None] |
+| Training sample | **Trainer-selected.** [The properties a suitable characterization sample must have. Do not name a default material or cabinet location. List a canonically required calibration/system-check reference separately if applicable] |
 | Moira group | `dmse-brkrspc-[page slug]` |
 | Guide owner | Lab manager unless reassigned; see [guide owners](access-and-logistics.md#guide-owners) |
 | Status | [Draft, pilot, or ready for routine delivery] |
@@ -61,7 +63,7 @@ This session does not currently require a separate skills demonstration. Partici
 
 ### Training Sample
 
-Guides are **sample-agnostic**: state the criteria, not a material. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+Guides are **agnostic about the trainer-selected characterization sample**: state its criteria, not a default material. A required calibration/system-check reference is the narrow exception. See [sample-agnostic guides](README.md#sample-agnostic-guides).
 
 * [ ] Select and retrieve a sample meeting the stated criteria.
 * [ ] Confirm that it is usable and that consumable materials are sufficiently stocked.
@@ -116,7 +118,7 @@ A canonical SOP item with no matching page section is a gap in the instrument pa
 
 ### Sample Selection Criteria
 
-**Guides are sample-agnostic.** State the properties a sample must have to run safely and produce a usable result on this instrument, what disqualifies one, and what the exercise's result must demonstrate. Do not name a material, sample-library identifier, or cabinet location — the trainer chooses the sample so the session can be matched to a subject exercise or research project. See [sample-agnostic guides](README.md#sample-agnostic-guides).
+**Guides are agnostic about the trainer-selected characterization sample.** State the properties it must have to run safely and produce a usable result, what disqualifies one, and what the exercise's result must demonstrate. Do not name a default material, sample-library identifier, or cabinet location — the trainer chooses the sample so the session can be matched to a subject exercise or research project. A canonically required calibration or system-check reference may be named separately. See [sample-agnostic guides](README.md#sample-agnostic-guides).
 
 Always include the trainer's own obligation: **the trainer must know what a bad result looks like on the material they chose.** If they have not run it, they run it before the session. That judgment is what a printed guide cannot supply, and it does not depend on which material is used.
 
@@ -124,18 +126,18 @@ Do not state expected results — band positions, feature sizes, curve shapes �
 
 ### Which Operations This Training Covers
 
-**This is the decision that has to be made before the rest of the guide can be written**, and it is shared with the Quick Guide: the routine workflow the Quick Guide documents is the workflow this training teaches. An instrument can do far more than a beginner needs, and a training that tries to cover everything covers nothing well. Name the small set of core operations a new user must be able to perform independently, and name what is deliberately excluded.
+**This is the decision that has to be made before the rest of the guide can be written.** An instrument can do far more than a beginner needs, and a training that tries to cover everything covers nothing well. Name the small set of operations a new user should be prepared to repeat independently, any capability the trainer will preview without expecting retention, and what is deliberately excluded. Quick Guide Side 2 maps the controls used for the independently taught Level 1 operations; a capability preview does not automatically earn map space.
 
-| Taught in this training | Deliberately excluded |
-| --- | --- |
-| [Core operation a beginner needs] | [Capability left for later, staff-guided work, or a Level 2 exercise] |
-| [Core operation a beginner needs] | [Capability left for later] |
+| Independently taught | Previewed only | Deliberately excluded |
+| --- | --- | --- |
+| [Core operation a beginner needs] | [Brief demonstration with no expectation of independent operation, or None] | [Capability left for later, staff-guided work, or a Level 2 exercise] |
+| [Core operation a beginner needs] | [Preview or None] | [Capability left for later] |
 
 Excluding something is not hiding it — say where it lives instead, such as the detailed operating instructions or a staff conversation. The exclusions matter as much as the inclusions, because they are what keeps the participant-facing work finishable in 50 minutes and what stops different trainers from teaching different things.
 
 ### Participant Workflow
 
-Use the Quick Guide as the mechanical spine of this exercise. Add the Level 1 sample, question, expected result, role rotation, and trainer checkpoints here; do not alter the baseline operating sequence merely to make the exercise more distinctive.
+Use Quick Guide Side 1 as the SOP spine and Side 2 as the control-finding aid during this exercise. Add the Level 1 sample, question, expected result, role rotation, trainer checkpoints, and any explicitly bounded capability preview here; do not alter the canonical operating sequence merely to make the exercise more distinctive.
 
 Each step also cites the section of the public instrument page it comes from. **The trainer should say the connection out loud** — "this is the loading step in the SOP" — so participants learn to navigate the page, not just follow a person. That is what makes them able to work independently afterward.
 
@@ -201,4 +203,4 @@ Participants may divide the workflow. Rotate roles when the instrument and time 
 
 ## Guide Maintenance
 
-When this guide changes, review the public instrument page, Level 1 exercise, sample-library record, LibCal template, and Moira information for corresponding updates.
+When this guide changes, review the public instrument page and SOP, Level 1 exercise, Quick Guide map, sample-library record, LibCal template, and Moira information for corresponding updates.
