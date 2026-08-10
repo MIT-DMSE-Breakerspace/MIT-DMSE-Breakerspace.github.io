@@ -13,7 +13,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
-| 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Authorized; not started | Decide the HighScore boundary, stored programs, and companion-workstation handoff. |
+| 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, and final changer-cover state. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Authorized; not started | Decide method, end condition, result gate, and export convention. |
 
 All five remain blocked for routine delivery until their guide pair, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
@@ -112,6 +112,14 @@ Required review gaps include save/export, final holder/chamber state, and any un
 Draft the supported physical loading, changer-cover, position matching, stored-program queue, identifiers, log-book, data-handoff, unloading, and shutdown sequence. Treat the instrument touchscreen and companion workstation as distinct surfaces.
 
 Do not choose the HighScore/Search Match teaching boundary. Represent the current mismatch as a review gap: independently taught Level 1, capability preview, or later analysis exercise. Also flag stored-program curation, companion-workstation sign-in, and exact export/copy behavior. Never record local credentials.
+
+**Composition result — 2026-08-10:**
+
+* **Checks:** 17 XRD-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
+* **Words:** `wc -w` reports 1,122 prototype-source words (1,554 with both prototype includes). The unpublished render contains **880 runnable-checklist words**, **1,245 total content words**, and **55 instrument-specific trainer-note words**.
+* **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 30 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
+* **Review gaps carried:** HighScore/Search Match teaching boundary; stored-program curation and timing; companion-workstation sign-in; exact export/copy and participant handoff; final removable sample-changer cover position.
+* **Structural lesson:** XRD's normal path crosses an access-free instrument touchscreen, a separate companion workstation with unresolved sign-in, and a paper safety log. The shared closeout therefore must state that Moira is communications-only. The canonical shutdown does not state the removable changer cover's final position after holder removal, so this prototype adds that specific final-state gap instead of inferring it.
 
 ## Instron Prototype
 
