@@ -14,7 +14,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, and final changer-cover state. |
-| 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Authorized; not started | Decide method, end condition, result gate, and export convention. |
+| 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
 All five remain blocked for routine delivery until their guide pair, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
@@ -128,6 +128,14 @@ Do not choose the HighScore/Search Match teaching boundary. Represent the curren
 Draft only the supported 50 kN tensile-test spine: Bluehill startup, appropriate load cell/fixture/method, specimen information and limits, loading/zeroing, handset start, run, data handling, unloading/cleanup, and disabled-frame end state.
 
 Keep saved method versus QuickTest, the exact end condition, result-quality decision, export convention, and any unresolved initial/final hardware state as review gaps. Both Bluehill and handset participation must remain visible; do not simplify the teaching sequence to protect a one-surface pattern.
+
+**Composition result — 2026-08-10:**
+
+* **Checks:** 22 Instron-specific + 6 compact safety + 7 compact closeout = **35 rendered checks**.
+* **Words:** `wc -w` reports 1,439 prototype-source words (1,871 with both prototype includes). The unpublished render contains **1,097 runnable-checklist words**, **1,527 total content words**, and **53 instrument-specific trainer-note words**.
+* **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 35 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
+* **Review gaps carried:** saved method versus QuickTest and exact method name; end condition; approved soft-toe result decision; save/export convention; verified 50 kN fixture and complete initial/final hardware states; Bluehill/handset evidence, two-view layout, and approved installed Quick Guide.
+* **Structural exception:** Instron reaches the 35-check ceiling and exceeds the provisional word ranges. Its supported spine crosses a physical load string, Bluehill, and the handset, and it must distinguish routine stop from emergency stop while ending in disabled mode. Grouping those into the SEM or XRD pattern would hide consequential surface changes and safety checks. Keep this longer review artifact and do not retrofit earlier prototypes during this pass.
 
 ## Second-Wave Queue
 
