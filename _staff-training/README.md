@@ -22,16 +22,16 @@ The portal is **unlisted, not private**. Never add credentials, attendee records
 
 ## Current Status
 
-Last substantive work: 2026-08-07.
+Last substantive work: 2026-08-10.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
-* **Per-instrument guides** — FTIR is retrofitted to the current model. Optical is a pilot that predates it. Two of eleven instruments.
+* **Per-instrument guides** — FTIR is the completeness-first continuous-checklist specimen. Optical is a pilot that predates it. Two of eleven instruments have live guides; the authorized provisional pass develops unpublished prototypes without replacing either one.
 
-**FTIR is the reference implementation for content and for staff-guide structure.** Its Quick Guide and training guide were rebuilt together on 2026-08-03, corrected through four review rounds, made sample-agnostic on 2026-08-05, and restructured the same day as a single continuous session checklist — see [the session-checklist model](#the-session-checklist-model). Read [`ftir.md`](ftir.md) and [`../_includes/quick-guides/ftir.html`](../_includes/quick-guides/ftir.html) as a matched pair before starting another instrument. **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) is now the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model).
+**FTIR remains the content-audit reference, but it is no longer the structure to copy.** Its guide pair was rebuilt for completeness, corrected through four review rounds, and made sample-agnostic before lab-assistant review showed that the 3,343-word trainer page and roughly 73 rendered checks were too long for live delivery. The continuous-checklist idea survives; the density, repeated observations, and long rationale do not. Read [`ftir.md`](ftir.md) to understand the coverage problem, then use the [provisional staff-guide procedure](provisional-draft-procedure.md) and [FTIR work order](provisional-draft-work-orders.md#ftir-compact-prototype) to test the compact replacement. **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) remains the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model).
 
-**The template is intentionally not an automatic mirror of every experiment in a live guide.** Update [`instrument-training-template.md`](instrument-training-template.md) when prompted to, using generalized versions of specific decisions that have been finalized in the guide currently under renovation, for the specific purpose of informing future guide development. Until the FTIR session-checklist shape is confirmed by practice and feedback, read `ftir.md` as the structural reference rather than copying the template's older section layout.
+**The template is intentionally not an automatic mirror of every experiment in a live guide.** It and the current FTIR page now represent two superseded extremes: an older sectioned curriculum template and an over-complete continuous checklist. Do not generalize either during the provisional pass. Update [`instrument-training-template.md`](instrument-training-template.md) only after several compact prototypes and lab-assistant review identify a pattern that actually survives different instruments.
 
 **FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
 
@@ -54,7 +54,9 @@ The active priority is to complete Quick Guides and staff training guides for st
 
 Use the wave order to allocate limited time, but move to another guide when an instrument is blocked by an operational decision. A blocked instrument should not stop useful progress on the rest of its wave. Raman follows optical because planned use in fall lab subjects raises it above its historically lower general-interest priority.
 
-FTIR remains the structural reference implementation, not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
+FTIR is the first compact staff-guide composition experiment, not a universal layout and not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
+
+The lab manager authorized a cross-instrument **provisional staff-guide composition pass** on 2026-08-10. It may create visibly incomplete, `published: false` trainer-run-sheet prototypes for FTIR and the first wave while preserving every operational blocker as a specific review gap. Follow [`provisional-draft-procedure.md`](provisional-draft-procedure.md) and the rolling [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md). The copy-paste Codex CLI assignment is maintained in [`CODEX-CLI-PROMPT.md`](CODEX-CLI-PROMPT.md).
 
 The operating model the template reflects:
 
@@ -124,6 +126,8 @@ So:
 
 A deliberate cross-instrument scope audit is the narrow exception. When the lab manager explicitly supplies decisions for several instruments, one pass may record them in the central handoff table, controlled work orders, to-do lists, and corresponding public exercise statements. That is documentation reconciliation, not authorization to generate or retrofit several guide pairs at once; each actual guide still receives its own development and review round.
 
+The explicitly commissioned provisional composition pass is a second narrow exception. It may create multiple unpublished prototypes so reviewers can compare coverage, density, gaps, and structural exceptions quickly. Each prototype still gets its own work order, source audit, validation, and commit. The pass must not modify live guides or turn an unresolved decision into apparent policy.
+
 **Direction of travel: real content first, then extract the template.** Write and test a decision against an actual instrument, where the facts can be verified against a canonical page and a real workflow, then lift the general pattern into the template. Do not design in the template and instantiate downward — a pattern that has never been tested on real content tends not to survive contact with one.
 
 Thinking about how a decision will generalize is useful during design. Recording that generalized version in the template is a separate, deliberate step once the decision is settled; rewriting nine other guides is a different activity and not one to do on speculation.
@@ -189,19 +193,21 @@ Check that every section heading appears in the PDF text, that reading order is 
 
 ### The Session-Checklist Model
 
-**Adopted 2026-08-05 for FTIR. This is the current staff-guide shape; `ftir.md` is the reference.** The template still describes the older structure. Update it only when prompted after practice and feedback confirm which parts of the FTIR shape are finalized and useful for future guides.
+**Adopted 2026-08-05 for FTIR and corrected after lab-assistant review on 2026-08-10.** One continuous run sheet remains the intended delivery shape, but `ftir.md` is now a completeness audit rather than a copyable template. The compact prototype pass tests how much grouping and deletion the model can sustain before the template is updated.
 
 A staff guide is a **checklist a trainer runs**, with the reasoning available but out of the way. Five decisions define it:
 
-* **One continuous checklist, in session order.** Every checkable item in a single run — before-session prep, welcome, safety orientation, the instrument SOP in teaching order, the exercise, closeout, and success criteria. Not prose interleaved with several short lists. The earlier FTIR guide had 36 checkboxes across four sections with explanation between them, so a trainer mid-session scrolled past rationale to find the next action.
-* **Everything the trainer must do appears on the page.** The shared safety orientation and administrative closeout are pulled in as Jekyll includes — [`_includes/trainer/checklist-safety.md`](../_includes/trainer/checklist-safety.md) and [`checklist-closeout.md`](../_includes/trainer/checklist-closeout.md) — so they stay single-source but appear inline. The closeout include takes the instrument's Moira group as a parameter. Included checkboxes join the page's progress count and its next-unchecked-item button automatically, because the checklist script scopes to any checkbox inside `.trainer-guide-content`.
+* **One continuous checklist, in session order.** Before-session prep, welcome, safety, the instrument workflow, shutdown, and closeout stay in one run. A separate duplicated success checklist is unnecessary when consequential participant performance is already observed at the relevant step.
+* **Everything consequential appears on the page, not everything the trainer might say.** Shared safety and administrative closeout remain Jekyll includes so they stay single-source and appear inline. Group related details under the omission risk they prevent rather than creating a checkbox for every sentence.
 * **No separate SOP coverage-map table.** State the normal-use coverage rule once at the top, then make each routine step a checkable item with its own `#anchor` citation. The old table listed all 22 canonical FTIR bullets immediately before the checklists repeated them, including conditional steps a normal session should not encounter. What the table did carry worth keeping was its observation column; those became italic *Check:* clauses on the items ("*Check: they recognize the clutch slipping and do not force past it*").
-* **Checklist first, rationale second.** A trainer reads the reasoning once or twice and runs the checklist dozens of times. Leading with explanation taxes every future session to serve the first two, and does not survive contact with a tablet at the instrument. The rationale stays on the page below, under a heading experienced trainers skip; [trainer readiness](trainer-readiness.md) stage 2 already directs new trainers to read the whole guide.
-* **Phase markers, not sections.** Modest wayfinding inside the run: a thin rule, a small recommended-time label, and a short phrase. The agenda table is gone — the times live on the markers where the work is. Note that a marker between two task lists splits the underlying `<ul>`, so the CSS manages vertical rhythm to keep it reading as one list.
+* **Run sheet here, durable rationale elsewhere.** Keep at most a short instrument-specific trainer note on the page. Document hierarchy, curriculum history, shared trainer behavior, and technical explanations belong in central references or the canonical instrument page.
+* **Broad phase markers, not a protected minute-by-minute script.** Times are wayfinding hypotheses until practice measures them. Use fewer bands when that makes the trainer's place easier to find.
 
 **Guide Control was split.** The old table mixed trainer-facing operational facts with audit fields (status, last-reviewed, LibCal verification, lamination state), which is why it read as confusing and unclear who it served. Operational facts a trainer needs mid-session sit in a short block near the checklist; tracking fields live in front matter and render in a status table at the bottom.
 
 **One constraint this model makes easy to get wrong:** a checklist in session order tempts you to write steps in the order they *feel* natural, which can contradict how access actually works. See [access and logistics](access-and-logistics.md#trainer-closeout-sequence) — a trainee has no workstation login during their own first session, because the Moira add happens at closeout, so the trainer performs the initial login.
+
+The provisional editorial targets are approximately 15–22 instrument-specific checks, 25–35 complete rendered checks after shared includes, 800–1,000 runnable-checklist words including shared content, and 950–1,200 total rendered words. These are forcing functions, not authority to omit a consequential action. See the [provisional procedure](provisional-draft-procedure.md#editorial-targets-not-content-limits).
 
 ### Workflow-Scope Handoff — 2026-08-07
 
@@ -309,7 +315,10 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
-* `ftir.md` is the Nicolet iS5 FTIR ATR curriculum, **retrofitted 2026-08-03 and the reference implementation** of the current model. Copy its structure for a new instrument.
+* `provisional-draft-procedure.md` controls the authorized rapid, unpublished staff-guide composition pass.
+* `provisional-draft-work-orders.md` is the rolling instrument queue and blocker ledger; add detail only as an instrument enters drafting.
+* `CODEX-CLI-PROMPT.md` is the self-contained handoff prompt for running the pass from the dedicated worktree.
+* `ftir.md` is the Nicolet iS5 FTIR ATR completeness-first curriculum and coverage audit. Do not copy its length or checkbox density.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum. Predates the content contract and needs the same retrofit.
 * New instrument guides should use the public instrument slug, such as `ftir.md`, `optical.md`, or `phenom-xl.md`.
 
@@ -354,3 +363,5 @@ Changes should be written once in the most authoritative location and linked or 
 Develop the Quick Guide and staff guide together once the corresponding public instrument workflow and Level 1 exercise are stable enough to train consistently. Before routine delivery, each pair needs stated sample-selection criteria, a recognizable expected result, and a reviewed laminated Quick Guide at the instrument. **A specific approved sample is not a prerequisite** — see [sample-agnostic guides](#sample-agnostic-guides); the trainer supplies the material and must know what a bad result looks like on it.
 
 The lab manager authorized one exception on 2026-08-10: a cross-instrument **provisional composition pass** may add visibly incomplete, `published: false` Quick Guide drafts using the standardized descriptive frames and review-gap blocks in [`../_staff/quick-guides/README.md`](../_staff/quick-guides/README.md#provisional-placeholder-draft-mode). Those files are layout and evidence inventories, not usable guides; they do not settle curriculum, remove technical gates, authorize publication, or make a staff guide complete. Technical completion, paired staff-guide review, print proof, and installation still proceed one instrument at a time. Track both the provisional pass and eventual rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md).
+
+The same authorization now covers a provisional **staff-guide** pass under [`provisional-draft-procedure.md`](provisional-draft-procedure.md). Staff prototypes are trainer-run-sheet and evidence inventories, not usable delivery guides. They remain separate from live guide filenames, use prototype-only shared includes when testing shared reductions, and carry unresolved choices as review gaps. Promotion still requires operational review, pair reconciliation, and a timed practice session.

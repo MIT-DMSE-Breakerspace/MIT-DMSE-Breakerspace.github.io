@@ -4,7 +4,7 @@ published: false
 
 # [Instrument Name] Staff Training Guide
 
-> **This template intentionally retains an older section layout as of 2026-08-06.** The FTIR guide is the current structural reference: one continuous session checklist, shared safety and closeout inline, rationale below, and no separate coverage-map table. Update this template only when prompted to, using generalized versions of specific decisions finalized in the guide under renovation, for the specific purpose of informing future guide development. Until practice and feedback confirm which parts of FTIR should generalize, copy [`ftir.md`](ftir.md)'s structure rather than the section layout below.
+> **This template intentionally retains an older section layout.** Do not use it or the over-complete current FTIR guide as the structural source for the authorized 2026-08-10 provisional pass. Follow [`provisional-draft-procedure.md`](provisional-draft-procedure.md) and the active instrument work order instead. Update this template only after several compact prototypes and lab-assistant review identify a pattern worth generalizing.
 
 Use this template to build a trainer-facing guide for a standard Breakerspace instrument training. Replace bracketed prompts and remove sections that do not apply.
 
