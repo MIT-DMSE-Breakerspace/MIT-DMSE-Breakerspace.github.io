@@ -12,7 +12,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | --- | --- | --- | --- | --- |
 | 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
-| 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Authorized; not started | Verify save/export and final state; keep Pure loading distinct from XL. |
+| 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Authorized; not started | Decide the HighScore boundary, stored programs, and companion-workstation handoff. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Authorized; not started | Decide method, end condition, result gate, and export convention. |
 
@@ -96,6 +96,14 @@ Required review gaps include the EDS boundary, exact save/export convention, fin
 Draft the supported room-temperature SEM session using the Pure-specific below-holder-edge loading rule, NavCam, LiveSEM focus and brightness/contrast, magnification, acquisition/saving, cleanup, and standby. Cold-stage work remains Level 2. Do not name hair as a required default sample.
 
 Required review gaps include save/export, final holder/chamber state, and any unsupported quality threshold. Do not reuse the XL 5–7 mm rule or create shared SEM wording that erases the loading distinction.
+
+**Composition result — 2026-08-10:**
+
+* **Checks:** 18 Pure-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
+* **Words:** `wc -w` reports 1,133 prototype-source words (1,565 with both prototype includes). The unpublished render contains **984 runnable-checklist words**, **1,261 total content words**, and **45 instrument-specific trainer-note words**.
+* **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
+* **Review gaps carried:** observable Level 1 image-quality decision; save/export and naming convention; final holder/chamber state; approved and installed participant Quick Guide.
+* **Structural lesson:** the imaging-control categories can resemble XL without sharing the physical run sheet. Pure requires one 18 mm-or-smaller stub below the holder edge, software unlock plus manual door motion, and holder return to a drawer or stand. Keeping those actions explicit prevents shared access and interface similarity from erasing the loading distinction.
 
 ## XRD Prototype
 
