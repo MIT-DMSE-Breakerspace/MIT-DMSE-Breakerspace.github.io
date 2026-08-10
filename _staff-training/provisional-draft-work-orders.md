@@ -10,7 +10,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
-| 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Authorized; not started | Compact the completeness-first guide without inventing background or connection criteria. |
+| 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Authorized; not started | Approve the EDS boundary; verify save/export and final state. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Authorized; not started | Verify save/export and final state; keep Pure loading distinct from XL. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Authorized; not started | Decide the HighScore boundary, stored programs, and companion-workstation handoff. |
@@ -64,6 +64,14 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 * comparison of the two spectra remains Level 1, but material identification and database searching do not.
 
 **Do not edit during composition:** the current live FTIR guide, the canonical FTIR page, the published Quick Guide, or the production shared includes. Record canonical corrections separately.
+
+**Composition result — 2026-08-10:**
+
+* **Checks:** 17 FTIR-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
+* **Words:** `wc -w` reports 1,087 in the prototype source and 216 in each compact include (1,519 source words across the three files). The unpublished render contains **932 runnable-checklist words**, **1,206 total content words**, and **44 instrument-specific trainer-note words**.
+* **Validation:** `bundle exec jekyll build` passed; `bundle exec jekyll build --unpublished` also rendered the prototype and all 30 controls. `script/validate-html` was run, but its external W3C service was unreachable in the sandbox and then returned HTTP 429 with network access; HTML validation remains unverified for environmental reasons.
+* **Review gaps carried:** no good-background acceptance criterion; no failed-System-Status appearance criterion; no complete canonical background-redo cycle; compact Quick Guide not reviewed, proofed, approved, or installed.
+* **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
 
 ## Phenom XL Prototype
 
