@@ -11,7 +11,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
 | 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
-| 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Authorized; not started | Approve the EDS boundary; verify save/export and final state. |
+| 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Authorized; not started | Verify save/export and final state; keep Pure loading distinct from XL. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Authorized; not started | Decide the HighScore boundary, stored programs, and companion-workstation handoff. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Authorized; not started | Decide method, end condition, result gate, and export convention. |
@@ -80,6 +80,14 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 Draft the supported core SEM imaging session: XL-specific sample preparation and height/clearance, NavCam navigation, LiveSEM focus and brightness/contrast, magnification, acquisition/saving, cleanup, and standby. Keep the proposed brief EDS preview visibly labeled as a review gap; do not teach or imply independent EDS operation. Do not name hair as a required default sample.
 
 Required review gaps include the EDS boundary, exact save/export convention, final tray/chamber state, and any observable image-quality decision not defined canonically. Do not reuse the Pure loading rule merely because the interfaces are similar.
+
+**Composition result — 2026-08-10:**
+
+* **Checks:** 18 XL-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
+* **Words:** `wc -w` reports 1,184 prototype-source words (1,616 with both 216-word prototype includes). The unpublished render contains **980 runnable-checklist words**, **1,299 total content words**, and **46 instrument-specific trainer-note words**.
+* **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
+* **Review gaps carried:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; final tray/chamber state; approved and installed participant Quick Guide.
+* **Structural lesson:** NavCam, LiveSEM, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. Five specific release gaps push total page prose above the FTIR editorial range while the runnable checklist remains within it; retaining those gaps is preferable to disguising them. The XL height check must stay instrument-specific despite shared SEM access.
 
 ## Phenom Pure Prototype
 
