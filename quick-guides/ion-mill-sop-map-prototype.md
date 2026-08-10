@@ -1,0 +1,239 @@
+---
+layout: quick-guide
+title: Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill SOP and Visual Map Prototype
+description: Unpublished two-sided provisional composition combining the canonical Technoorg-Linda SEMPrep 2 SOP with the intended semi-automatic Level 1 control map.
+published: false
+permalink: /quick-guides/ion-mill-sop-map-prototype/
+instrument_url: /instruments/ion-mill.html
+---
+
+<section class="instrument-quick-guide quick-guide-sop-map" id="quick-guide" aria-labelledby="ion-mill-sop-map-title">
+  <div class="quick-guide-screen-bar">
+    <div>
+      <strong>Provisional composition draft — incomplete</strong>
+      <span>Print on Letter paper at 100%, two-sided, flipping on the long edge.</span>
+    </div>
+    <div class="quick-guide-screen-actions">
+      <a href="{{ page.instrument_url | relative_url }}">Current ion mill page</a>
+      <button type="button" onclick="window.print()">Print provisional draft</button>
+    </div>
+  </div>
+
+  <section class="quick-guide-sheet quick-guide-paged quick-guide-sop-map-sheet" aria-labelledby="ion-mill-sop-map-title">
+    <header class="quick-guide-sop-map-sheet-header">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace - Trained-user reference</p>
+        <h1 id="ion-mill-sop-map-title">Technoorg-Linda SEMPrep 2 ion-mill SOP</h1>
+        <p class="quick-guide-sop-map-sheet-subtitle">The canonical normal-use sequence in one place. Use the semi-automatic control map on the reverse to locate controls taught in Level 1.</p>
+      </div>
+      <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
+    </header>
+
+    <aside class="quick-guide-sop-map-trained-user-note">
+      For users who have completed hands-on ion mill training. This sheet does not replace training or authorize independent use.
+    </aside>
+
+    <div class="quick-guide-sop-map-sop-grid">
+      <div class="quick-guide-sop-map-sop-column quick-guide-sop-map-sop-column-primary">
+        <h2 class="quick-guide-sop-map-sop-column-title">Standard Operating Procedure <span>(SOP)</span></h2>
+
+        <section class="quick-guide-sop-map-sop-section">
+          <h3><span>1</span> Instrument startup</h3>
+          <ul>
+            <li>Turn the instrument display on.</li>
+            <li>Confirm high voltages are off and the chamber is safe.</li>
+            <li>Turn the turbomolecular pump standby mode off.</li>
+            <li>Confirm turbomolecular pump current at 1500 Hz is normal and no higher than 1 A; otherwise stop and ask staff.</li>
+            <li>Open the argon cylinder in the closet to the left of the instrument.</li>
+            <li>Press <strong>Purge (5s)</strong> four times, waiting about five seconds between each click.</li>
+            <li>Confirm that needle-valve control is set to semi-automatic.</li>
+            <li>Open the planned ion source's needle valve to its preset pressure, then let it close automatically.</li>
+            <li>Open the other ion source needle valve only if using that source.</li>
+          </ul>
+        </section>
+
+        <section class="quick-guide-sop-map-sop-section">
+          <h3><span>2</span> Operation</h3>
+          <ul>
+            <li>Wear nitrile gloves when handling samples, holders, carrier plates, masks, and alignment tools.</li>
+            <li>Prepare the sample externally for polishing or slope cutting (canonical page).</li>
+            <li>Load the holder using the software sample exchange procedure.</li>
+            <li>Select the head unit and ion source appropriate for the method.</li>
+            <li>Set sample motion, milling angle, accelerating voltage, and milling time according to trained procedure.</li>
+            <li>Confirm pressure below 5 x 10<sup>-6</sup> mbar before turning on an ion source or starting the run.</li>
+            <li>Start the semi-automatic run.</li>
+            <li>Monitor the run at the instrument.</li>
+            <li>After the run, confirm high voltage and sample motion are off before unloading.</li>
+            <li>Allow cooled samples to approach room temperature before unloading.</li>
+          </ul>
+        </section>
+
+        <section class="quick-guide-sop-map-sop-section">
+          <h3><span>3</span> Instrument shutdown</h3>
+          <ul>
+            <li>Confirm that all high voltages are off.</li>
+            <li>Turn sample motion off.</li>
+            <li>Return the stage tilt to 0&deg;.</li>
+            <li>Open the shutter plate.</li>
+            <li>Turn the camera and illumination off.</li>
+            <li>Confirm that the needle valve is closed.</li>
+            <li>Turn turbomolecular pump standby mode on.</li>
+            <li>Close the argon cylinder.</li>
+            <li>Turn off the monitor.</li>
+            <li>Leave the sample holders, alignment tools, and work area clean.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="quick-guide-sop-map-sop-column quick-guide-sop-map-sop-column-secondary">
+        <aside class="quick-guide-sop-map-critical-rule">
+          <h2>High voltage, vacuum, and argon</h2>
+          <p>Use only trained conditions or a staff-approved recipe. Confirm pressure below 5 x 10<sup>-6</sup> mbar before turning on an ion source or starting a run.</p>
+          <p>Do not open or unload until high voltage and sample motion are off and the software-guided vent/finish state is reached. Stop on abnormal pressure, current, or motion.</p>
+        </aside>
+
+        <aside class="quick-guide-sop-map-before-leaving">
+          <h2>Before you leave</h2>
+          <ul>
+            <li>Sample unloaded; holder and tools clean</li>
+            <li>All high voltages and sample motion off; tilt at 0&deg;</li>
+            <li>Shutter open; camera and illumination off; needle valve closed</li>
+            <li>Turbomolecular pump standby mode on; argon cylinder closed</li>
+            <li>Monitor off; work area clean</li>
+          </ul>
+        </aside>
+
+        <aside class="quick-guide-sop-map-stop-help">
+          <div>
+            <h2>Stop and ask staff</h2>
+            <p>Pump current at 1500 Hz is above 1 A or outside its normal range; vacuum does not recover; sample exchange or stage movement warns or behaves unexpectedly; the ion source will not stabilize; pressure, current, or motion looks wrong; or the sample, holder, method, or cooling need is uncertain.</p>
+          </div>
+          <figure>
+            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--qr"
+                 role="img"
+                 aria-label="Image placeholder: QR code for the canonical Technoorg-Linda SEMPrep 2 ion mill page">
+              <strong>Image placeholder</strong>
+              <span>Capture needed: QR code for the canonical Technoorg-Linda SEMPrep 2 ion mill page</span>
+              <small>Release gate: Generate and verify the ion mill page QR asset at print resolution.</small>
+            </div>
+            <figcaption>Detailed instructions, troubleshooting, and help<br><strong>breakerspace.mit.edu/instruments/ion-mill.html</strong></figcaption>
+          </figure>
+        </aside>
+
+        <div class="quick-guide-sop-map-review-gap">
+          <strong>Review gap</strong>
+          <p>Decision required: Select one Level 1 polishing holder, ion source, and approved semi-automatic starting settings, then confirm the exact finish/unload state.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Content derived from the canonical SEMPrep 2 ion mill SOP - Owner: lab manager</span>
+      <span>Provisional 2026-08-10 - Page 1 of 2</span>
+    </footer>
+  </section>
+
+  <section class="quick-guide-sheet quick-guide-paged quick-guide-sop-map-sheet quick-guide-sop-map-map-sheet" aria-labelledby="ion-mill-map-title">
+    <header class="quick-guide-sop-map-sheet-header quick-guide-sop-map-map-header">
+      <div>
+        <p class="quick-guide-kicker">DMSE Breakerspace - Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill</p>
+        <h2 id="ion-mill-map-title">Semi-automatic control visual map</h2>
+        <p class="quick-guide-sop-map-sheet-subtitle">Use this side to locate the startup, sample-exchange, needle-valve, and readiness controls intended for Level 1. Follow the SOP on the reverse for the canonical workflow.</p>
+      </div>
+      <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
+    </header>
+
+    <div class="quick-guide-sop-map-map-body">
+      <section class="quick-guide-sop-map-map-section">
+        <div class="quick-guide-sop-map-map-heading">
+          <h3>Current semi-automatic stage-control state</h3>
+          <p>The approved map must locate purge, semi-automatic needle-valve control, sample exchange, and pressure/status in one verified view.</p>
+        </div>
+
+        <figure class="quick-guide-sop-map-toolbar-figure">
+          <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--map"
+               role="img"
+               aria-label="Image placeholder: current verified native-resolution SEMPrep 2 stage-control view for the approved semi-automatic Level 1 state">
+            <strong>Image placeholder</strong>
+            <span>Capture needed: Current, verified native-resolution SEMPrep 2 stage-control view for the approved semi-automatic Level 1 state. Label to verify: Purge (5s). Label to verify: Semi-automatic control. Label to verify: Sample loading/removal. Label to verify: pressure/status area, using only exact visible labels.</span>
+            <small>Release gate: Verify the current machine state and every control before approving stage-control.JPG or a replacement; its displayed 8.96 x 10<sup>-6</sup> mbar is not a ready state.</small>
+          </div>
+        </figure>
+
+        <div class="quick-guide-sop-map-review-gap">
+          <strong>Review gap</strong>
+          <p>Decision required: Verify every current control and approve the semi-automatic view. Do not add Finish unless it is visible and required in the selected state; exclude automated-recipe Run all steps from this Level 1 map.</p>
+        </div>
+      </section>
+
+      <section class="quick-guide-sop-map-map-section quick-guide-sop-map-quality-section">
+        <div class="quick-guide-sop-map-map-heading">
+          <h3>Pre-run pressure and system-state decision</h3>
+          <p>Pressure must be below 5 x 10<sup>-6</sup> mbar; staff must still approve the accompanying high-voltage, motion, and stage indicators.</p>
+        </div>
+
+        <div class="quick-guide-sop-map-quality-grid">
+          <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
+            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
+                 role="img"
+                 aria-label="Image placeholder: staff-approved not-ready pre-run system state with pressure at or above five times ten to the minus six millibar and the relevant high-voltage motion and stage indicators visible">
+              <strong>Image placeholder</strong>
+              <span>Capture needed: Staff-approved not-ready pre-run system state with pressure at or above 5 x 10<sup>-6</sup> mbar and the relevant high-voltage, motion, and stage indicators visible.</span>
+              <small>Release gate: Capture and approve the matched system-state pair and the exact visible status labels.</small>
+            </div>
+            <figcaption><strong>Stop:</strong> Do not turn on an ion source or start the run while pressure is at or above 5 x 10<sup>-6</sup> mbar.</figcaption>
+          </figure>
+
+          <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
+            <div class="quick-guide-sop-map-quality-image">
+              <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
+                   role="img"
+                   aria-label="Image placeholder: staff-approved ready pre-run system state with pressure below five times ten to the minus six millibar and the approved high-voltage motion and stage indicators visible">
+                <strong>Image placeholder</strong>
+                <span>Capture needed: Staff-approved ready pre-run system state with pressure below 5 x 10<sup>-6</sup> mbar and the approved high-voltage, motion, and stage indicators visible.</span>
+                <small>Release gate: Capture and approve the matched system-state pair and verify every indicator before this panel becomes an operating decision.</small>
+              </div>
+            </div>
+            <figcaption><strong>Continue only after review:</strong> Pressure is below the canonical threshold, and staff must approve the complete ready indicator set.</figcaption>
+          </figure>
+        </div>
+
+        <div class="quick-guide-sop-map-review-gap">
+          <strong>Review gap</strong>
+          <p>Decision required: Approve the high-voltage, motion, and stage indicators that complete the pre-run readiness question and capture the matched pair. Do not label the existing 8.96 x 10<sup>-6</sup> mbar view ready.</p>
+        </div>
+      </section>
+
+      <aside class="quick-guide-sop-map-map-reminders">
+        <div>
+          <h3>Level 1 boundary</h3>
+          <p>Surface-polish one flat, mechanically polished sample in the staff-selected holder with the staff-selected ion source and approved semi-automatic settings. Automated recipes are excluded.</p>
+        </div>
+        <div>
+          <h3>Before unloading</h3>
+          <p>Turn high voltage off before motion, return tilt to 0&deg;, and use the software-guided sample-exchange procedure. Staff must confirm the exact finish state.</p>
+        </div>
+        <figure>
+          <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--qr"
+               role="img"
+               aria-label="Image placeholder: QR code for the canonical Technoorg-Linda SEMPrep 2 ion mill page">
+            <strong>Image placeholder</strong>
+            <span>Capture needed: QR code for the canonical Technoorg-Linda SEMPrep 2 ion mill page</span>
+            <small>Release gate: Generate and verify the ion mill page QR asset at print resolution.</small>
+          </div>
+          <figcaption>Full instructions<br><strong>breakerspace.mit.edu/instruments/ion-mill.html</strong></figcaption>
+        </figure>
+      </aside>
+
+      <div class="quick-guide-sop-map-review-gap">
+        <strong>Review gap</strong>
+        <p>Decision required: Select the holder, ion source, and starting settings; verify every current control; approve the system-state pair; and confirm finish/unload. This draft remains blocked for technical completion, publication, printing for use, and installation.</p>
+      </div>
+    </div>
+
+    <footer class="quick-guide-footer">
+      <span>Visual map, not a replacement for training or the detailed operating instructions</span>
+      <span>Provisional 2026-08-10 - Page 2 of 2</span>
+    </footer>
+  </section>
+</section>
