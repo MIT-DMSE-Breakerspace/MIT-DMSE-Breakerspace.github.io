@@ -6,7 +6,7 @@ published: false
 
 These are bounded work orders for the two-sided SOP-and-visual-map model. They specify the intended beginner workflow, image plan, callouts, quality decision, guidance-box topic, exclusions, and blockers. They do not authorize publication or technical invention.
 
-Read [`README.md`](README.md) first. A **BLOCKED** status means no instrument candidate should be created until every release gate in that entry is resolved. Existing assets are candidates, not proof that the displayed interface or workflow is current.
+Read [`README.md`](README.md) first. A **BLOCKED** status means the instrument is blocked for technical completion and release until every release gate in that entry is resolved. It normally also blocks drafting. The only exception is an explicitly commissioned [provisional placeholder pass](README.md#provisional-placeholder-draft-mode), which may create a visibly incomplete, unpublished composition draft while preserving every blocker. Existing assets are candidates, not proof that the displayed interface or workflow is current.
 
 ## Source And Proposal Discipline
 
@@ -18,10 +18,11 @@ This file records both facts already established by a canonical instrument page 
 * Use an exact software or hardware control name only when the canonical page states it and the approved source image visibly supports it. If either source is missing, keep the guide blocked.
 * An existing asset may be a composition reference without being a publishable source. Reject or recapture assets with baked-in arrows or boxes, private names, usernames, sample identifiers, file paths, obsolete interface states, or unreadable print text.
 * A result or readiness panel must ask one observable question and use only a corrective action stated on the canonical page. Do not turn a plausible-looking result into an acceptance standard.
+* During an authorized provisional pass, use each entry's image requirement and release-gate wording as the objective description inside the standardized placeholder or review-gap block. Do not convert a proposal into settled copy merely so the page appears complete.
 
 ## Status Summary
 
-| Instrument | Drafting status | Principal reason |
+| Instrument | Release status | Principal reason |
 | --- | --- | --- |
 | Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
 | Thermo Fisher Phenom XL SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
@@ -35,7 +36,7 @@ This file records both facts already established by a canonical instrument page 
 | Horiba Duetta Fluorescence And Absorbance Spectrometer | **BLOCKED** | The Level 1 exercise needs editorial cleanup before settings, captures, quality evidence, and save/export can be finalized. |
 | Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill | **BLOCKED** | Semi-automatic operation is settled; the Level 1 holder/process parameters, approved control state, and readiness evidence remain unresolved. |
 
-The statuses are intentionally conservative. A visually plausible draft made before these decisions would turn unknowns into apparent policy.
+The statuses are intentionally conservative. A release candidate made before these decisions would turn unknowns into apparent policy. The authorized provisional pass avoids that failure only by labeling the entire artifact incomplete and representing each unknown as a conspicuous descriptive frame or review gap.
 
 ## Shared Visual Rules
 
@@ -82,7 +83,7 @@ For every instrument:
 
 ## Thermo Fisher Phenom XL SEM
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/phenom-xl.md`](../../instruments/phenom-xl.md). Do not substitute the SEM hub or Pure page.
 
@@ -114,7 +115,7 @@ Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminde
 
 ## Thermo Fisher Phenom Pure SEM
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/phenom-pure.md`](../../instruments/phenom-pure.md). Do not substitute the SEM hub or XL page.
 
@@ -136,7 +137,7 @@ Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminde
 
 ## Malvern Panalytical Aeris Research XRD
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/xrd.md`](../../instruments/xrd.md).
 
@@ -165,7 +166,7 @@ Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminde
 
 ## Instron 68TM-50 Universal Testing System
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/instron.md`](../../instruments/instron.md).
 
@@ -194,7 +195,7 @@ Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminde
 
 ## Olympus DSX-1000 Digital Optical Microscope
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/optical.md`](../../instruments/optical.md).
 
@@ -232,7 +233,7 @@ Saving remains a Side 1/bottom-reminder requirement unless its exact control can
 
 ## Horiba XploRA Confocal Raman Microscope
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/raman.md`](../../instruments/raman.md).
 
@@ -261,7 +262,7 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/hardness-tester.md`](../../instruments/hardness-tester.md).
 
@@ -291,7 +292,7 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 ## Microtrac Sync Particle Size Analyzer
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/psa.md`](../../instruments/psa.md).
 
@@ -322,7 +323,7 @@ The new routine-state capture should show these locations together, as the curre
 
 ## Horiba Duetta Fluorescence And Absorbance Spectrometer
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/uv-vis.md`](../../instruments/uv-vis.md).
 
@@ -351,7 +352,7 @@ Keep `New Method`, `Absorbance and Transmission`, `Spectra`, and mode `Both` in 
 
 ## Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill
 
-**Status:** **BLOCKED. Do not draft.**
+**Release status:** **BLOCKED. Provisional composition draft authorized; technical completion and publication prohibited.**
 
 **Canonical source:** [`../../instruments/ion-mill.md`](../../instruments/ion-mill.md).
 

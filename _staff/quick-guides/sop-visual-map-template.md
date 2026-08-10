@@ -14,6 +14,19 @@ instrument_url: /instruments/[SLUG].html
   README.md and instrument-specifications.md. Do not alter structure/classes.
   This is the default one-map composition. If a work order requires multiple
   control surfaces or interface states, stop until a separate variant is reviewed.
+
+  PROVISIONAL MODE ONLY, WHEN THE ASSIGNMENT EXPLICITLY AUTHORIZES IT:
+  - Change both review badges and the screen warning to
+    "Provisional composition draft — incomplete" and both footers to Provisional.
+  - Replace a missing/unapproved primary image and its SVG/key with one
+    quick-guide-sop-map-placeholder--map block from README.md.
+  - Replace a missing/unapproved decision image with one
+    quick-guide-sop-map-placeholder--quality block inside its existing figure.
+  - Replace a missing QR image with one compact
+    quick-guide-sop-map-placeholder--qr block and retain the plain-text URL.
+  - Insert a quick-guide-sop-map-review-gap block only where the work order names
+    an unresolved decision needed to understand the proposed composition.
+  - Do not render these substitutions in the locked source template itself.
 -->
 <section class="instrument-quick-guide quick-guide-sop-map" id="quick-guide" aria-labelledby="[SLUG]-sop-map-title">
   <div class="quick-guide-screen-bar">
@@ -94,6 +107,7 @@ instrument_url: /instruments/[SLUG].html
             <p>[CANONICAL STOP CONDITIONS FOR THE ROUTINE WORKFLOW]</p>
           </div>
           <figure>
+            <!-- Provisional substitution slot: replace this image with the --qr placeholder and keep the canonical URL visible. -->
             <img src="{{ '/assets/img/qr/[SLUG]-page.svg' | relative_url }}" alt="QR code linking to the full [INSTRUMENT] page at breakerspace.mit.edu/instruments/[SLUG].html">
             <figcaption>Detailed instructions, troubleshooting, and help<br><strong>breakerspace.mit.edu/instruments/[SLUG].html</strong></figcaption>
           </figure>
@@ -126,6 +140,7 @@ instrument_url: /instruments/[SLUG].html
 
         <figure class="quick-guide-sop-map-toolbar-figure">
           <div class="quick-guide-sop-map-toolbar-crop">
+            <!-- Provisional substitution slot: replace this image, SVG, and key as one unit with the --map placeholder. -->
             <img src="{{ '/[APPROVED PRIMARY IMAGE PATH]' | relative_url }}" alt="[OBJECTIVE DESCRIPTION OF THE UNANNOTATED SOURCE IMAGE]">
             <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 [SOURCE WIDTH] [CROPPED VIEW HEIGHT]" preserveAspectRatio="none" aria-hidden="true">
               <g class="quick-guide-sop-map-image-callout">
@@ -154,12 +169,14 @@ instrument_url: /instruments/[SLUG].html
 
         <div class="quick-guide-sop-map-quality-grid">
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
+            <!-- Provisional substitution slot: replace only this image with the --quality placeholder; retain an honest proposed caption or add a review-gap block. -->
             <img src="{{ '/[APPROVED STOP-STATE IMAGE PATH]' | relative_url }}" alt="[OBJECTIVE STOP-STATE DESCRIPTION]">
             <figcaption><strong>[STOP-STATE LABEL]:</strong> [CANONICAL CORRECTIVE ACTION OR ASK-STAFF DIRECTION].</figcaption>
           </figure>
 
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
             <div class="quick-guide-sop-map-quality-image">
+              <!-- Provisional substitution slot: replace only this image with the --quality placeholder; do not add an SVG until the source is approved. -->
               <img src="{{ '/[APPROVED READY-STATE IMAGE PATH]' | relative_url }}" alt="[OBJECTIVE READY-STATE DESCRIPTION]">
               <!-- Add an SVG overlay here only when the specification names a control in this image. -->
             </div>
@@ -178,6 +195,7 @@ instrument_url: /instruments/[SLUG].html
           <p>[QUALITY, SAVE, OR SYSTEM-STATE REMINDER]</p>
         </div>
         <figure>
+          <!-- Provisional substitution slot: replace this image with the --qr placeholder and keep the canonical URL visible. -->
           <img src="{{ '/assets/img/qr/[SLUG]-page.svg' | relative_url }}" alt="QR code linking to the full [INSTRUMENT] page at breakerspace.mit.edu/instruments/[SLUG].html">
           <figcaption>Full instructions and troubleshooting</figcaption>
         </figure>
