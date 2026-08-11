@@ -64,26 +64,30 @@ For every instrument:
 
 **Side 1 critical box:** **The glove rule** — gloves for sample, crystal, pressure tower/tips, wipes, and solvent; no gloves on keyboard, mouse, or screen.
 
-**Primary image:** `assets/media/tutorials/ftir/preview-omnic-poster.jpg`.
+**Primary image:** replacement capture required. The former `assets/media/tutorials/ftir/preview-omnic-poster.jpg` is a 750x468 video-poster frame and is not approved for the final guide.
 
 **Primary callouts, in this order:**
 
-1. `Collect Background`
-2. `Collect Sample`
+1. `Col Bkg` (the visible control for **Collect Background**)
+2. `Col Smp` (the visible control for **Collect Sample**)
 3. `Save` (the selected spectrum)
 4. `System Status`
 
-**Quality images:** `assets/img/prototypes/ftir-preview-weak.jpg` and `assets/img/prototypes/ftir-preview-usable.jpg`.
+**Quality images:** replacement captures required. The former `assets/img/prototypes/ftir-preview-weak.jpg` and `assets/img/prototypes/ftir-preview-usable.jpg` are 750x468 video-poster frames and are not approved for the final guide.
 
 **Secondary callout:** `Start Collection` on the usable live-preview image.
 
-**Immediate decision:** a weak live signal that calls for contact correction versus a visibly stronger live signal after re-seating or changing the pressure tip. This is contact triage, not a universal spectrum-shape acceptance standard or spectral identification.
+**Immediate decision:** no or weak sample contact that calls for contact correction versus contact established. A change from a near-zero trace to a sample spectrum confirms that ATR is detecting the sample; it is not a universal spectrum-shape or signal-strength acceptance standard and is not spectral identification. If the signal remains weak or negative or unexpected features remain unresolved, stop and ask staff.
 
 **Do not add:** band assignments, atmospheric peak positions, a named sample, method-parameter tables, liquids, or accessory workflows.
 
-**Remaining release gates:** staff review of the background/quality language, native-resolution final screenshots if the prototype strategy is endorsed, and physical duplex proof.
+**Resolved technical decisions (2026-08-11):** **System Status** must show a green check; the routine Level 1 workflow uses **Preview Data Collection** enabled; the live background preview is not a pass/fail test; and the complete contaminated-background recovery cycle is unload, clean and dry, collect a complete new background on the bare and unclamped crystal, then reload and recollect. These decisions are now on the canonical page.
 
-**Audit findings (2026-08-10):** all three approved assets are 750x468 video-poster frames whose labels are illegible at 100% print scale; the numbered key reads `Collect Background`/`Collect Sample` while the toolbar visibly reads `Col Bkg`/`Col Smp`; callout 2's leader crowds callout 1's marker; and the "signal has strengthened" caption functions as a pass criterion the canonical page does not supply. Recapture at native resolution and reconcile the key and caption before treating this file as a content model. See [`audit-2026-08-10.md`](audit-2026-08-10.md).
+**Remaining release gates:** capture sanitized native-resolution current OMNIC views showing the required controls and both contact states; confirm the visible labels and icon functions against those captures; reposition annotations mechanically; resolve the locked header/notice overlap and Side 1 SOP/footer collision; verify two-page paginated color and grayscale output, QR decoding, and label legibility at 100%; complete staff content review; and approve a physical duplex proof. The separate current printed Quick Guide is sufficient for trainer-guide release and remains unchanged.
+
+**Audit disposition (2026-08-11):** the failed raster images and their annotations are removed from the provisional artifact and replaced with explicit capture gates. The control specification now uses the visible `Col Bkg`/`Col Smp` labels, and the contact caption is derived from the canonical page's reviewed contact cue. Restoring every prior canonical bullet while adding the confirmed contaminated-background cycle exposes an additional Side 1 layout exception; content was not weakened to hide it. Native recapture, capture-to-label verification, annotation geometry, pagination, and physical proof remain open. See [`audit-2026-08-10.md`](audit-2026-08-10.md).
+
+**Current provisional render (2026-08-11):** the unpublished include-backed artifact renders as exactly two Letter pages, retains all 24 canonical SOP bullets verbatim and in order, and contains three explicit image placeholders instead of the failed raster sources. HTML-Proofer and direct W3C Nu validation pass for the unpublished FTIR render. The full canonical identity plus provisional badge makes the trained-user notice overlap the SOP title by 31.2 px in print media. Side 1 is also overfull: the final shutdown bullet overlaps the footer by 46.8 px and extends 0.9 px past the sheet. Final native media, label/callout verification, corrected locked pagination, color and grayscale proofing, QR decoding, and the physical duplex proof remain unmet.
 
 ## Thermo Fisher Phenom XL SEM
 

@@ -42,6 +42,9 @@ jobs:
       - name: Check source instrument SOP contracts
         run: script/check-sop-contract
 
+      - name: Check Quick Guide source locations
+        run: script/check-quick-guide-sources
+
       - name: Build the Jekyll site
         run: bundle exec jekyll build
 

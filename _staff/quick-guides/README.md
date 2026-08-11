@@ -27,6 +27,16 @@ The canonical instrument page is the operating authority. The Quick Guide and st
 
 During training, the participant should hold and use the printed Quick Guide while the trainer follows the staff guide. That does not make either document the source for the other, and it does not require their wording or section boundaries to match.
 
+## Source Location Contract
+
+Every published or provisional Quick Guide uses the same include-backed source contract:
+
+* `quick-guides/<name>.md` is a thin page wrapper containing only YAML front matter and `{% include quick-guides/<name>.html %}`;
+* `_includes/quick-guides/<name>.html` contains the complete guide HTML and no YAML front matter;
+* wrapper and include basenames match one-to-one, including the `-sop-map-prototype` suffix for provisional candidates.
+
+Do not embed guide HTML directly in `quick-guides/*.md`, and do not create an orphan wrapper or include. `script/check-quick-guide-sources` enforces this contract across both the published guides and unpublished prototypes. The reusable candidate is likewise split: [`sop-visual-map-template.md`](sop-visual-map-template.md) is the wrapper template and [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) is its HTML content template.
+
 ## The Locked Target Composition
 
 Every candidate produced from this model is:
@@ -51,7 +61,7 @@ The Side 2 title is an `<h2>` styled at the same display size as the document ti
 
 This mode is active only when the lab manager explicitly commissions a provisional or placeholder pass. Its purpose is to expose composition and evidence gaps without turning them into plausible-looking instructions.
 
-* Create `quick-guides/<slug>-sop-map-prototype.md` with `published: false`. Do not alter the existing published Quick Guide, the FTIR reference prototype, a canonical instrument page, or a staff training guide.
+* Create the paired `quick-guides/<slug>-sop-map-prototype.md` wrapper and `_includes/quick-guides/<slug>-sop-map-prototype.html` content source with `published: false` in the wrapper. Do not alter the existing published Quick Guide, the FTIR reference prototype, a canonical instrument page, or a staff training guide.
 * Mark the screen banner and both review badges **Provisional composition draft — incomplete**. Every footer must say **Provisional**, not merely **Prototype**.
 * Copy the complete canonical SOP onto Side 1 under the locked headings. Do not replace it with the Level 1 exercise or broaden it to enumerate taught capabilities.
 * Use established Level 1 scope and map functions from the work order. A proposed or undecided item must remain visibly labeled as a review gap; it must not be written as an instruction or policy.
@@ -129,16 +139,16 @@ The locked template has no inset slot. Do not invent one. When both software con
 
 For each instrument, follow these steps in order.
 
-1. Read this file, [`sop-visual-map-template.md`](sop-visual-map-template.md), and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md).
+1. Read this file, the [`sop-visual-map-template.md`](sop-visual-map-template.md) wrapper, the [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) HTML source, and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md).
 2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Do not use memory or a manufacturer manual to fill gaps.
 3. Check the specification's status and the assignment mode. For a normal release-candidate task, **BLOCKED** means do not create a guide. For an explicitly authorized provisional placeholder pass, create the unpublished composition draft and carry every blocker into a specific placeholder or review-gap block without treating it as resolved.
-4. Copy the template to `quick-guides/<slug>-sop-map-prototype.md`. Keep `published: false`, the prototype permalink, screen warning, and review badges.
-5. Replace only bracketed fields and the explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, guidance-box text, and authorized provisional placeholders.
+4. Copy the wrapper template to `quick-guides/<slug>-sop-map-prototype.md` and the content template to `_includes/quick-guides/<slug>-sop-map-prototype.html`. Keep their basenames identical. Keep `published: false`, the prototype permalink, screen warning, and review badges in the wrapper and content.
+5. Replace wrapper metadata and only the bracketed content fields, explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, guidance-box text, and authorized provisional placeholders in the include.
 6. Copy the canonical SOP's order and technical meaning exactly onto Side 1. Minor removal of repeated context is allowed only when the same sentence remains unambiguous. If it does not fit, do not summarize, shrink type, omit a step, or substitute the more specific Level 1 workflow. A normal candidate stops; a provisional draft remains visibly layout-blocked and records the rendered overflow.
 7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label or verified icon function, or the canonical page and interface disagree, a normal candidate stops. In provisional mode, omit the numbered annotation/key and use the standardized placeholder with the unverified names explicitly labeled **Label to verify**.
 8. Draw each callout as: outlined rectangle around the target, leader line away from the target, numbered circle at the free end, and matching numbered key. The circle or leader may not cover the control, its label, or another callout.
 9. Use a sanitized, unannotated source screenshot at native resolution. Cropping and proportional resizing for legibility are allowed. Do not redact a private screenshot into a final source, redraw the UI, sharpen it with generated content, alter displayed values, or bake annotations into the raster image.
-10. Run the repository checks, build the site, render the candidate as a paginated PDF, inspect both page images, extract the PDF text, and verify the QR at print resolution.
+10. Run `script/check-quick-guide-sources` and the other repository checks, build the site, render the candidate as a paginated PDF, inspect both page images, extract the PDF text, and verify the QR at print resolution.
 11. Leave the candidate unpublished. Report files changed, validation results, and every unresolved question. Use one commit per instrument even during an authorized cross-instrument provisional pass.
 
 ## Release-Candidate Stop Rules
@@ -163,6 +173,7 @@ Do not insert `TODO`, guessed prose, generic safety language, or placeholder con
 
 A mechanical draft is complete only when all of the following pass:
 
+* `script/check-quick-guide-sources`
 * `bundle exec jekyll build`
 * `script/validate-html`
 * a real paginated PDF contains exactly two Letter pages;
@@ -199,7 +210,7 @@ A provisional draft is not a failed release candidate. It is an intentionally in
 
 Use this language when assigning an instrument:
 
-> Build only the unpublished `<instrument>` SOP-and-visual-map Quick Guide candidate. Follow `_staff/quick-guides/README.md`, copy `_staff/quick-guides/sop-visual-map-template.md`, and obey the complete `<instrument>` work order in `_staff/quick-guides/instrument-specifications.md`. Do not change the template structure, CSS, canonical page, published Quick Guide, or staff training guide. Do not invent or infer content. If the work order is blocked or any required claim, control, image, or end state is unverified, stop and report the blocker instead of drafting around it. Render and inspect the two-page PDF, but leave the candidate unpublished and uncommitted for review.
+> Build only the unpublished `<instrument>` SOP-and-visual-map Quick Guide candidate. Follow `_staff/quick-guides/README.md`, copy both `_staff/quick-guides/sop-visual-map-template.md` and `_staff/quick-guides/sop-visual-map-content-template.html` into their required wrapper/include destinations, and obey the complete `<instrument>` work order in `_staff/quick-guides/instrument-specifications.md`. Do not change the template structure, CSS, canonical page, published Quick Guide, or staff training guide. Do not invent or infer content. If the work order is blocked or any required claim, control, image, or end state is unverified, stop and report the blocker instead of drafting around it. Render and inspect the two-page PDF, but leave the candidate unpublished and uncommitted for review.
 
 For an explicitly commissioned cross-instrument provisional pass, use the separate assignment in [Provisional Placeholder Draft Mode](#provisional-placeholder-draft-mode). Do not combine the release-candidate instruction above with placeholder authorization implicitly.
 
