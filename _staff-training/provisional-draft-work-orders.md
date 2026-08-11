@@ -18,6 +18,8 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 
 All five remain blocked for routine delivery until their guide pair, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
+**Recommended review sequence:** review FTIR first to decide whether the compact prototype-only safety and closeout reductions preserve usable coverage; compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
+
 ## FTIR Compact Prototype
 
 **Sources:** [`ftir.md`](ftir.md), [`../instruments/ftir.md`](../instruments/ftir.md), [`../quick-guides/ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md), and the shared trainer references.

@@ -27,15 +27,16 @@ Last substantive work: 2026-08-10.
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
 * **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
-* **Per-instrument guides** — FTIR is the completeness-first continuous-checklist specimen. Optical is a pilot that predates it. Two of eleven instruments have live guides; the authorized provisional pass develops unpublished prototypes without replacing either one.
+* **Per-instrument guides** — FTIR is the completeness-first continuous-checklist specimen. Optical is a pilot that predates it. Two of eleven instruments have live guides; the completed 2026-08-10 provisional pass added five unpublished prototypes without replacing either one.
 
-**FTIR remains the content-audit reference, but it is no longer the structure to copy.** Its guide pair was rebuilt for completeness, corrected through four review rounds, and made sample-agnostic before lab-assistant review showed that the 3,343-word trainer page and roughly 73 rendered checks were too long for live delivery. The continuous-checklist idea survives; the density, repeated observations, and long rationale do not. Read [`ftir.md`](ftir.md) to understand the coverage problem, then use the [provisional staff-guide procedure](provisional-draft-procedure.md) and [FTIR work order](provisional-draft-work-orders.md#ftir-compact-prototype) to test the compact replacement. **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) remains the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model).
+**FTIR remains the content-audit reference, but it is no longer the structure to copy.** Its guide pair was rebuilt for completeness, corrected through four review rounds, and made sample-agnostic before lab-assistant review showed that the 3,343-word trainer page and roughly 73 rendered checks were too long for live delivery. The continuous-checklist idea survives; the density, repeated observations, and long rationale do not. Read [`ftir.md`](ftir.md) to understand the coverage problem, then review the completed compact artifact and measurements through the [FTIR work order](provisional-draft-work-orders.md#ftir-compact-prototype). **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) remains the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model).
 
 **The template is intentionally not an automatic mirror of every experiment in a live guide.** It and the current FTIR page now represent two superseded extremes: an older sectioned curriculum template and an over-complete continuous checklist. Do not generalize either during the provisional pass. Update [`instrument-training-template.md`](instrument-training-template.md) only after several compact prototypes and lab-assistant review identify a pattern that actually survives different instruments.
 
 **FTIR is not finished — it is blocked on evidence, and that evidence will require more writing.** Do not treat its content as frozen. Three things must be established operationally, then written back into the canonical page and, where relevant, the derivatives:
 
 * **What a good background preview looks like.** The page has no acceptance criterion, so the Quick Guide currently says only to confirm the crystal is bare and unclamped.
+* **What normal and failed OMNIC System Status look like.** The page requires the connection check but does not define observable states a trainer can assess.
 * **Atmospheric and contamination band positions.** Described qualitatively on the page with no wavenumbers, so the Quick Guide cannot name them. A draft did, from nothing — see the lessons below.
 * **The background-redo cycle as canonical text.** The Quick Guide spells it out; the page should own it.
 
@@ -43,7 +44,7 @@ Also required: operational-owner approval, a physical Letter duplex print proof,
 
 Per the [sample-agnostic decision](#sample-agnostic-guides), FTIR is no longer blocked on identifying a paper specimen or on measured band positions from reviewed reference spectra. The guide states the contrast the exercise needs and requires the trainer to know a bad result on whatever they chose. Approved samples remain worth adding later and are not a release gate now.
 
-All three remaining page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md). The former Level 1 and OMNIC naming questions were resolved on 2026-08-06: general training now uses two solids, liquids moved to a Level 2 extension, and a software step verified in the lab's recorded media may be used when the canonical page is updated in the same revision.
+All four remaining page gaps are tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md). The former Level 1 and OMNIC naming questions were resolved on 2026-08-06: general training now uses two solids, liquids moved to a Level 2 extension, and a software step verified in the lab's recorded media may be used when the canonical page is updated in the same revision.
 
 ### Active Late-August Work Order
 
@@ -56,7 +57,7 @@ Use the wave order to allocate limited time, but move to another guide when an i
 
 FTIR is the first compact staff-guide composition experiment, not a universal layout and not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
 
-The lab manager authorized a cross-instrument **provisional staff-guide composition pass** on 2026-08-10. It may create visibly incomplete, `published: false` trainer-run-sheet prototypes for FTIR and the first wave while preserving every operational blocker as a specific review gap. Follow [`provisional-draft-procedure.md`](provisional-draft-procedure.md) and the rolling [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md). The copy-paste Codex CLI assignment is maintained in [`CODEX-CLI-PROMPT.md`](CODEX-CLI-PROMPT.md).
+The lab manager authorized a cross-instrument **provisional staff-guide composition pass**, and the pass was completed on 2026-08-10. It produced visibly incomplete, `published: false` trainer-run-sheet prototypes for FTIR, Phenom XL, Phenom Pure, XRD, and Instron while preserving every operational blocker as a specific review gap. The procedure remains in [`provisional-draft-procedure.md`](provisional-draft-procedure.md), results are in [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md), and the original copy-paste assignment is archived in [`CODEX-CLI-PROMPT.md`](CODEX-CLI-PROMPT.md).
 
 The operating model the template reflects:
 
@@ -193,7 +194,7 @@ Check that every section heading appears in the PDF text, that reading order is 
 
 ### The Session-Checklist Model
 
-**Adopted 2026-08-05 for FTIR and corrected after lab-assistant review on 2026-08-10.** One continuous run sheet remains the intended delivery shape, but `ftir.md` is now a completeness audit rather than a copyable template. The compact prototype pass tests how much grouping and deletion the model can sustain before the template is updated.
+**Adopted 2026-08-05 for FTIR and corrected after lab-assistant review on 2026-08-10.** One continuous run sheet remains the intended delivery shape, but `ftir.md` is now a completeness audit rather than a copyable template. The completed 2026-08-10 provisional pass showed that FTIR, both SEMs, and XRD can use the compact chronological model without erasing instrument-specific actions. Instron is the recorded structural exception: its supported workflow genuinely needs the physical load string, Bluehill, and the handset, so its review artifact reaches the checklist ceiling and exceeds the provisional word ranges. Exact measurements and validation results remain in the [rolling work-order ledger](provisional-draft-work-orders.md#status), not duplicated here.
 
 A staff guide is a **checklist a trainer runs**, with the reasoning available but out of the way. Five decisions define it:
 
@@ -209,9 +210,9 @@ A staff guide is a **checklist a trainer runs**, with the reasoning available bu
 
 The provisional editorial targets are approximately 15–22 instrument-specific checks, 25–35 complete rendered checks after shared includes, 800–1,000 runnable-checklist words including shared content, and 950–1,200 total rendered words. These are forcing functions, not authority to omit a consequential action. See the [provisional procedure](provisional-draft-procedure.md#editorial-targets-not-content-limits).
 
-### Workflow-Scope Handoff — 2026-08-07
+### Workflow-Scope Handoff — Updated 2026-08-10
 
-This table records the decisions and unresolved boundaries established during the SOP and curriculum audit. It is a handoff summary; the controlled image/callout work orders remain in [`../_staff/quick-guides/instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md).
+This table records the decisions and unresolved boundaries established during the SOP and curriculum audit and preserved during the provisional staff-guide pass. It is a handoff summary; the controlled image/callout work orders remain in [`../_staff/quick-guides/instrument-specifications.md`](../_staff/quick-guides/instrument-specifications.md), and prototype-specific findings remain in [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md).
 
 | Instrument | Level 1 teaching scope or decision | Quick Guide implication | Still unresolved |
 | --- | --- | --- | --- |
@@ -233,10 +234,10 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 
 | Wave | Instrument system | Quick Guide | Staff guide | Immediate readiness issue |
 | --- | --- | --- | --- | --- |
-| First | **SEM/EDS** | Missing | Missing | Capture separate Phenom interfaces and height pairs, include the top control panel, and approve the proposed Level 1 EDS preview/Level 2 independent-operation split. |
-| First | **XRD** | Needs operational check and retrofit | Missing | Resolve the companion workstation, stored programs, and HighScore teaching boundary; use the existing handouts as source material. |
-| First | **FTIR** | Needs operational check and physical print proof | Needs operational check, then timed practice run | Supply the empirical background evidence; test whether the two-solid session and attendee closeout fit 50 minutes; print proof for legibility and QR scanning only. |
-| First | **Instron** | Missing | Missing | Resolve the method, export, end condition, and quality checks, then approve a two-view Bluehill/handset layout. |
+| First | **SEM/EDS** | Missing | Unpublished Phenom XL and Phenom Pure prototypes complete; live guides missing | Capture separate Phenom interfaces and height pairs, define the result-quality and final-state decisions, and approve the proposed Level 1 EDS preview/Level 2 independent-operation split. |
+| First | **XRD** | Needs operational check and retrofit | Unpublished prototype complete; live guide missing | Resolve the companion workstation, stored programs, HighScore teaching boundary, export handoff, and final removable-cover position; use the existing handouts as source material. |
+| First | **FTIR** | Needs operational check and physical print proof | Live guide needs operational check; unpublished compact prototype needs review and timed practice | Supply the empirical background and failed-connection evidence; test whether the two-solid session and attendee closeout fit 50 minutes; print proof for legibility and QR scanning only. |
+| First | **Instron** | Missing | Unpublished prototype complete; live guide missing | Resolve the method, export, end condition, quality check, complete hardware states, and reviewed two-view Bluehill/handset layout. The prototype is intentionally longer than the default model. |
 | Second | **Optical microscopy** | Needs retrofit; blocked on current interface state(s), save view, and quality pair | Scope aligned; needs operational verification and retrofit to the [session-checklist model](#the-session-checklist-model) | Verify the recorded 2D/stitch/3D curriculum at the instrument, then test whether one map view can carry its five taught functions. |
 | Second | **Raman** | Missing | Missing | Verify the confirmed silicon/TopCam/interlock/internal-camera/RTD/AutoCalibration path and approve a multi-state layout. |
 | Second | **Hardness tester** | Missing | Missing | Confirm the fitted hardware, offered scales, limits, and training samples before presenting a routine workflow as approved. |
@@ -255,6 +256,8 @@ Develop each instrument's Quick Guide and staff guide together from the canonica
 5. After the four first-wave pairs are usable, proceed through the second wave in the stated order.
 
 The compact FTIR SOP/visual-map prototype was accepted on 2026-08-07 as the composition to test and use for locked unpublished drafts. It still requires lab-assistant review and a physical duplex proof before it can replace the published guide. Keep volatile measurements and render observations in generated review output rather than copying them into multiple handoff documents.
+
+The provisional **staff-guide** composition pass was completed on 2026-08-10. All five artifacts remain unpublished review aids, not delivery guides. Review FTIR first to judge the compact shared safety/closeout reduction, compare Phenom XL and Phenom Pure together to protect their physical loading differences, review XRD next for its split touchscreen/workstation/log-book path, and review Instron separately as the deliberate multi-surface structural exception. This sequence organizes document review; it does not change the co-equal first-wave rollout priority.
 
 Two layout lessons from that rebuild, both of which had shipped:
 
@@ -316,8 +319,10 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
 * `provisional-draft-procedure.md` controls the authorized rapid, unpublished staff-guide composition pass.
-* `provisional-draft-work-orders.md` is the rolling instrument queue and blocker ledger; add detail only as an instrument enters drafting.
-* `CODEX-CLI-PROMPT.md` is the self-contained handoff prompt for running the pass from the dedicated worktree.
+* `provisional-draft-work-orders.md` is the completed first-wave composition ledger and continuing blocker record; add detail only when another instrument enters authorized drafting.
+* `CODEX-CLI-PROMPT.md` is the archived, self-contained assignment that produced the 2026-08-10 pass. Its completion banner points back to the ledger; do not rerun it as an active assignment.
+* `ftir-trainer-prototype.md`, `phenom-xl-trainer-prototype.md`, `phenom-pure-trainer-prototype.md`, `xrd-trainer-prototype.md`, and `instron-trainer-prototype.md` are unpublished first-wave review artifacts. They do not replace live staff guides.
+* `../_includes/trainer/checklist-safety-compact-prototype.md` and `../_includes/trainer/checklist-closeout-compact-prototype.md` are prototype-only shared reductions used by those five artifacts. Production shared includes remain unchanged.
 * `ftir.md` is the Nicolet iS5 FTIR ATR completeness-first curriculum and coverage audit. Do not copy its length or checkbox density.
 * `optical.md` is the pilot DSX-1000 optical-microscope curriculum. Predates the content contract and needs the same retrofit.
 * New instrument guides should use the public instrument slug, such as `ftir.md`, `optical.md`, or `phenom-xl.md`.
@@ -364,4 +369,4 @@ Develop the Quick Guide and staff guide together once the corresponding public i
 
 The lab manager authorized one exception on 2026-08-10: a cross-instrument **provisional composition pass** may add visibly incomplete, `published: false` Quick Guide drafts using the standardized descriptive frames and review-gap blocks in [`../_staff/quick-guides/README.md`](../_staff/quick-guides/README.md#provisional-placeholder-draft-mode). Those files are layout and evidence inventories, not usable guides; they do not settle curriculum, remove technical gates, authorize publication, or make a staff guide complete. Technical completion, paired staff-guide review, print proof, and installation still proceed one instrument at a time. Track both the provisional pass and eventual rollout in [`../_staff/site-todo.md`](../_staff/site-todo.md).
 
-The same authorization now covers a provisional **staff-guide** pass under [`provisional-draft-procedure.md`](provisional-draft-procedure.md). Staff prototypes are trainer-run-sheet and evidence inventories, not usable delivery guides. They remain separate from live guide filenames, use prototype-only shared includes when testing shared reductions, and carry unresolved choices as review gaps. Promotion still requires operational review, pair reconciliation, and a timed practice session.
+The same authorization governed the completed provisional **staff-guide** pass under [`provisional-draft-procedure.md`](provisional-draft-procedure.md). Its five staff prototypes are trainer-run-sheet and evidence inventories, not usable delivery guides. They remain separate from live guide filenames, use prototype-only shared includes, and carry unresolved choices as review gaps. Promotion still requires operational review, pair reconciliation, and a timed practice session.

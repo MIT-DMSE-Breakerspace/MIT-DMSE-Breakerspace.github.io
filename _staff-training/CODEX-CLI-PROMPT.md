@@ -4,6 +4,8 @@ published: false
 
 # Codex CLI Prompt — Provisional Staff-Guide Rollout
 
+> **Execution complete — retained for provenance.** This assignment was completed on 2026-08-10 in commits `f7be985`, `1230a36`, `6755aff`, `ed032a0`, and `09b9f10`. Do not paste it as a new assignment. The authoritative results, validation limits, review gaps, and structural lessons are in [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md).
+
 Start Codex CLI from the dedicated worktree:
 
 ```sh
