@@ -10,19 +10,19 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
-| 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
+| 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Reviewed 2026-08-11; ready for release; remains unpublished | None for the trainer guide; the compact Quick Guide redesign remains separate. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
-All five remain blocked for routine delivery until their guide pair, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
+FTIR is ready for release after lab-manager review. The other four prototypes remain blocked for routine delivery until their guide pairs, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
-**Recommended review sequence:** review FTIR first to decide whether the compact prototype-only safety and closeout reductions preserve usable coverage; compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
+**Recommended review sequence:** FTIR review is complete. Compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
 
 **Review revalidation — 2026-08-11:** after the participant-artifact source/handoff correction, normal and unpublished Jekyll builds passed and the rendered checklist totals remained unchanged. The word measurements below were refreshed for the corrected prototype-only closeout include and XRD gap. `script/validate-html` was rerun, but the external W3C service again returned HTTP 429; HTML validation remains environmentally unverified.
 
-## FTIR Compact Prototype
+## FTIR Compact Release Candidate {#ftir-compact-prototype}
 
 **Sources:** [`ftir.md`](ftir.md), [`../instruments/ftir.md`](../instruments/ftir.md), [`../quick-guides/ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md), and the shared trainer references.
 
@@ -56,13 +56,17 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 
 **Explicit performance observations:** glove transition; clean/dry crystal; bare/unclamped background; tip/contact/clutch; preview versus committed collection; quality decision before unloading; individually saved and retrievable data; second cycle and shutdown with reduced prompting.
 
-**Required review gaps:**
+**Resolved during review — 2026-08-11:** Level 1 does not use the complex background-preview shape as an acceptance test. Correct setup means a clean, dry, bare, unclamped crystal; contamination is recognized later from negative or unexpected features in a collected sample spectrum.
 
-* no canonical acceptance criterion for a good background preview;
-* no canonical appearance criterion for a failed System Status connection;
-* incomplete canonical background-redo cycle;
-* the compact Quick Guide remains unpublished and uninstalled;
-* the prototype wording must not imply that Start Collection is required when preview is disabled;
+**Resolved during review — 2026-08-11:** A green **System Status** check means the instrument is ready. Any other state prevents background and sample collection, so the trainer stops and asks staff; no catalog of failed appearances is needed to prevent flawed results.
+
+**Resolved during review — 2026-08-11:** If negative features suggest a contaminated background, release the pressure tower and unload the sample while gloved; clean and dry the crystal and plate; remove gloves; collect a complete new background on the bare, unclamped crystal; then reload and recollect the sample. Stop and ask staff if negative features remain.
+
+**Resolved during review — 2026-08-11:** The available printed FTIR Quick Guide is the participant artifact for this trainer guide. Review, proof, and installation of the separate compact Quick Guide redesign do not block the trainer guide.
+
+**Review requirements satisfied:**
+
+* the trainer confirms **Preview Data Collection** is enabled at startup, and the session assumes that expected state;
 * use “save each needed spectrum individually,” not the unsupported absolute “group-saving does not exist”;
 * do not use “clean background” or “recognizable spectrum” as undefined pass criteria;
 * comparison of the two spectra remains Level 1, but material identification and database searching do not.
@@ -74,8 +78,14 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 * **Checks:** 17 FTIR-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
 * **Words:** `wc -w` reports 1,087 in the prototype source, 216 in the compact safety include, and 228 in the compact closeout include (1,531 source words across the three files). The unpublished render contains **944 runnable-checklist words**, **1,218 total content words**, and **44 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` passed; `bundle exec jekyll build --unpublished` also rendered the prototype and all 30 controls. `script/validate-html` was run, but its external W3C service was unreachable in the sandbox and then returned HTTP 429 with network access; HTML validation remains unverified for environmental reasons.
-* **Review gaps carried:** no good-background acceptance criterion; no failed-System-Status appearance criterion; no complete canonical background-redo cycle; compact Quick Guide not reviewed, proofed, approved, or installed.
+* **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide is ready for release and remains unpublished pending the release step.
 * **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
+
+**Release-candidate revalidation — 2026-08-11:**
+
+* **Checks:** 19 FTIR-specific + 6 compact safety + 7 compact closeout = **32 rendered checks**.
+* **Words:** `wc -w` reports 963 in the trainer-guide source, 203 in the compact safety include, and 214 in the compact closeout include (**1,380 source words** total). The unpublished render contains **1,069 runnable-checklist words**, **1,111 total content words**, and **33 trainer-note words**.
+* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. The ordinary build currently rejects the trainer index links to the other intentionally unpublished prototypes; reconcile those index cards during the eventual release step without publishing the other guides.
 
 ## Phenom XL Prototype
 

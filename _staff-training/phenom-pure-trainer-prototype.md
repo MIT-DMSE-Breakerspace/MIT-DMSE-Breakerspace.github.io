@@ -47,7 +47,7 @@ moira_group: dmse-brkrspc-sem
 
 ## Session checklist
 
-Work in order. Timing bands are hypotheses for a maximum of three participants within 50 participant-facing minutes. The canonical [Phenom Pure operating page]({% link instruments/phenom-pure.md %}) is authority for every technical step.
+Work in order. Plan to start five minutes after the scheduled hour and complete the session in 50 minutes; timing is approximate. Refer to the [Phenom Pure instrument page]({% link instruments/phenom-pure.md %}) or [Phenom Pure manuals]({% link instruments/phenom-pure.md %}#manuals) if needed.
 
 <p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 

@@ -1,12 +1,12 @@
 ---
 layout: trainer
 title: Breakerspace Trainer Portal
-description: Unlisted session guides and shared closeout references for qualified Breakerspace instrument trainers.
+description: Unlisted instrument session guides for qualified Breakerspace trainers.
 permalink: /trainer/
 trainer_portal: true
 trainer_index: true
 interactive_checklist: false
-guide_revision: 2026-08-05
+guide_revision: 2026-08-11
 ---
 
 # Trainer Portal
@@ -15,45 +15,47 @@ Use this unlisted portal to prepare for and deliver a consistent Breakerspace in
 
 <p class="guidance-note"><strong>This portal is not private.</strong> It is omitted from public navigation and search indexing, but the website and source repository are publicly reachable. Never enter trainee names, Kerberos usernames, credentials, access codes, or private roster information here.</p>
 
-## Shared Trainer References
-
-<div class="trainer-card-grid" markdown="1">
-
-<section markdown="1">
-
-### [Lab Safety Orientation]({% link _staff-training/lab-safety-orientation.md %})
-
-Run this short in-person orientation at the beginning of every instrument training.
-
-</section>
-
-<section markdown="1">
-
-### [Training Access And Closeout]({% link _staff-training/access-and-logistics.md %})
-
-Use the current Moira group table, scheduling model, and post-training access sequence.
-
-</section>
-
-<section markdown="1">
-
-### [Trainer Readiness And Qualification]({% link _staff-training/trainer-readiness.md %})
-
-Review qualification, practice-training, escalation, and private roster expectations.
-
-</section>
-
-</div>
-
 ## Instrument Session Guides Available Now
 
 <div class="trainer-card-grid" markdown="1">
 
 <section markdown="1">
 
-### [FTIR Trainer Guide]({% link _staff-training/ftir.md %})
+### [FTIR Trainer Guide — Ready for Release]({% link _staff-training/ftir-trainer-prototype.md %})
 
-Reference implementation. Needs operational evidence, a Letter-duplex print proof, and a practice run before late-August handoff.
+Reviewed release candidate. Remains unpublished until release is explicitly authorized.
+
+</section>
+
+<section markdown="1">
+
+### [Phenom XL Trainer Guide — Provisional Draft]({% link _staff-training/phenom-xl-trainer-prototype.md %})
+
+Core SEM imaging review prototype. The EDS boundary, image-quality decision, save/export path, final state, and participant artifact remain open.
+
+</section>
+
+<section markdown="1">
+
+### [Phenom Pure Trainer Guide — Provisional Draft]({% link _staff-training/phenom-pure-trainer-prototype.md %})
+
+Room-temperature SEM imaging review prototype. Image quality, save/export, final state, and the participant artifact remain open.
+
+</section>
+
+<section markdown="1">
+
+### [XRD Trainer Guide — Provisional Draft]({% link _staff-training/xrd-trainer-prototype.md %})
+
+Aeris measurement review prototype. Analysis scope, stored programs, workstation handoff, export, final state, and the participant artifact remain open.
+
+</section>
+
+<section markdown="1">
+
+### [Instron Trainer Guide — Provisional Draft]({% link _staff-training/instron-trainer-prototype.md %})
+
+50 kN tensile-test review prototype. Method, end condition, result decision, export, hardware states, and the two-view participant artifact remain open.
 
 </section>
 
@@ -61,37 +63,21 @@ Reference implementation. Needs operational evidence, a Letter-duplex print proo
 
 ### [Optical Microscope Trainer Guide]({% link _staff-training/optical.md %})
 
-Existing pilot guide. Needs retrofit and operational review during the second wave.
+Existing pilot guide. Needs retrofit and operational review.
 
 </section>
 
 </div>
 
-Additional first-wave guides for SEM/EDS, XRD, and Instron will appear here as they are created and reviewed.
-
-## Late-August Work Order
-
-The first wave is **SEM/EDS, XRD, FTIR, and Instron** as co-equal priorities. The second wave is **optical microscopy, Raman, hardness tester, particle size analyzer, UV-Vis, then ion mill**. Move around blocked operational questions rather than writing around them.
-
-For each instrument, prioritize the accurate routine sequence, safety boundaries, stop conditions, cleanup, data handling, practice, and trainer handoff. Defer cosmetic polish and nonessential media.
-
-## Choosing A Training Sample
-
-**The guides prescribe workflows, not materials.** Each instrument guide states the properties a sample must have and what the exercise's result needs to show; you choose the material. That is deliberate, so a session can be matched to a subject exercise, a specific research project, or a general walk-in group.
-
-One obligation comes with that flexibility: **know what a bad result looks like on the material you picked.** If you have not run it yourself, run it before the session. Recognizing a poor measurement in real time is the part of training a printed guide cannot do for you.
-
-A participant's own project sample needs staff approval in advance. If someone arrives with an unapproved sample, run the session on your selected material and route theirs to staff afterward.
+The FTIR guide is a reviewed release candidate. The four guides labeled **Provisional Draft** remain review artifacts and are not approved for training delivery.
 
 ## Administrative Shortcuts
 
-* [Open WebMoira](https://groups.mit.edu/webmoira/) and use the exact group name from [Training Access And Closeout]({% link _staff-training/access-and-logistics.md %}).
-* [Open the Breakerspace training calendar](https://breakerspace.libcal.com/calendar?cid=19408).
-* [Open the public training pathway]({% link training.md %}).
-* Email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) when a workflow, sample, or safety question is unresolved.
-
-## Using This On A Shared Tablet
-
-In Safari, use **Share → Add to Home Screen** for one-tap access. Each trainer should use their own MIT authentication for WebMoira or other administrative systems and sign out afterward. Keep the laminated participant Quick Guide at the instrument as the independent-use reference and print fallback.
-
-Instrument-guide checkmarks persist only in the current browser tab. Select **Start or reset session** before each training. Official trainer qualification remains in the private staff roster, not in this portal.
+* **WebMoira access-control lists:** <https://groups.mit.edu/webmoira/>
+* **Breakerspace Slack workspace:** <https://mit-dmse-breakerspace.slack.com>
+* **DMSE Breakerspace Dropbox Team request:** <https://www.dropbox.com/team>
+* **One-time online training and Qualtrics record:** <https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc>
+* **Breakerspace training calendar:** <https://breakerspace.libcal.com/calendar?cid=19408>
+* **Instrument reservations:** <https://breakerspace.libcal.com/space/168610>
+* **Public training pathway:** <https://breakerspace.mit.edu/training.html>
+* **Breakerspace staff email:** [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu)
