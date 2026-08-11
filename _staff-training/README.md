@@ -22,7 +22,7 @@ The portal is **unlisted, not private**. Never add credentials, attendee records
 
 ## Current Status
 
-Last substantive work: 2026-08-10.
+Last substantive work: 2026-08-11.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
@@ -58,6 +58,8 @@ Use the wave order to allocate limited time, but move to another guide when an i
 FTIR is the first compact staff-guide composition experiment, not a universal layout and not the first item in a serial queue. Favor safe, operationally accurate guide pairs and a dependable trainer handoff over cosmetic polish, additional media, or broad interpretation content.
 
 The lab manager authorized a cross-instrument **provisional staff-guide composition pass**, and the pass was completed on 2026-08-10. It produced visibly incomplete, `published: false` trainer-run-sheet prototypes for FTIR, Phenom XL, Phenom Pure, XRD, and Instron while preserving every operational blocker as a specific review gap. The procedure remains in [`provisional-draft-procedure.md`](provisional-draft-procedure.md), results are in [`provisional-draft-work-orders.md`](provisional-draft-work-orders.md), and the original copy-paste assignment is archived in [`CODEX-CLI-PROMPT.md`](CODEX-CLI-PROMPT.md).
+
+A 2026-08-11 source/handoff audit corrected the prototype-only closeout so it no longer implies that every instrument already has an approved Quick Guide. It also added the missing XRD participant-artifact gap and removed runnable claims that the blocked XRD guide was approved. No operational decision or release gate changed.
 
 The operating model the template reflects:
 

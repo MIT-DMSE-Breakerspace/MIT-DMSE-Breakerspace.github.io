@@ -3,7 +3,7 @@ title: XRD Trainer Guide — Provisional Draft
 description: Unpublished trainer-run-sheet composition draft for review.
 published: false
 guide_status: Provisional composition draft — incomplete
-guide_revision: 2026-08-10
+guide_revision: 2026-08-11
 interactive_checklist: true
 instrument_name: Malvern Panalytical Aeris Research XRD
 moira_group: dmse-brkrspc-xrd
@@ -53,18 +53,26 @@ moira_group: dmse-brkrspc-xrd
 >
 > **Release effect:** Holder removal and storage are supported; the complete physical end state is not approved.
 
+> **REVIEW GAP — participant artifact**
+>
+> **Decision or evidence required:** Audit and print-test the current XRD Quick Guide, complete its operational retrofit, and approve the participant artifact before use.
+>
+> **Sources checked:** Current [XRD Quick Guide]({% link quick-guides/xrd.md %}), XRD Quick Guide work order, staff-guide inventory, and XRD work order.
+>
+> **Release effect:** Neither the current printed guide nor the unpublished SOP/map prototype is approved for this provisional training workflow.
+
 ## Session checklist
 
 Work in order. Timing bands are hypotheses for a maximum of three participants within 50 participant-facing minutes. The canonical [XRD operating page]({% link instruments/xrd.md %}) is authority for every technical step.
 
 <p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 
-* [ ] Confirm the Aeris is functioning normally, at least one changer position is free, the enclosure cover is closed, and the current approved printed Quick Guide and canonical page are ready. Do not substitute the unpublished SOP/map prototype.
+* [ ] Confirm the Aeris is functioning normally, at least one changer position is free, and the enclosure cover is closed. Open the canonical page; do not substitute either XRD Quick Guide while participant-artifact review remains open.
 * [ ] Prepare one compatible trainer-selected sample and the correct holder. Confirm the sample is non-hazardous, secured, flat, level, centered, and flush with the holder reference surface; prepare it at the sample-prep table and transfer the holder on the tray.
 
 <p class="trainer-phase"><span>0–8 minutes</span> Welcome and room orientation</p>
 
-* [ ] Welcome participants, ask their measurement goal, and hand them the current approved printed Quick Guide for the supported loading, queue, data, log-book, and shutdown sequence.
+* [ ] Welcome participants, ask their measurement goal, and state that this incomplete run sheet cannot replace the XRD participant artifact still awaiting review.
 
 {% include trainer/checklist-safety-compact-prototype.md %}
 
@@ -92,7 +100,7 @@ Work in order. Timing bands are hypotheses for a maximum of three participants w
 
 <p class="trainer-phase"><span>45–50 minutes</span> Instrument reset and closeout</p>
 
-* [ ] Return holders, tray, preparation tools, supplies, and the current approved printed Quick Guide; record any program, queue, export, interlock, holder, or guide issue.
+* [ ] Return holders, tray, preparation tools, and supplies; record any program, queue, export, interlock, holder, or guide issue.
 
 {% include trainer/checklist-closeout-compact-prototype.md moira=page.moira_group access="comms-only" %}
 

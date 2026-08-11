@@ -13,12 +13,14 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Background acceptance, failed-connection appearance, background-redo cycle, and compact Quick Guide approval/installation remain open. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
-| 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, and final changer-cover state. |
+| 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
 All five remain blocked for routine delivery until their guide pair, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
 **Recommended review sequence:** review FTIR first to decide whether the compact prototype-only safety and closeout reductions preserve usable coverage; compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
+
+**Review revalidation — 2026-08-11:** after the participant-artifact source/handoff correction, normal and unpublished Jekyll builds passed and the rendered checklist totals remained unchanged. The word measurements below were refreshed for the corrected prototype-only closeout include and XRD gap. `script/validate-html` was rerun, but the external W3C service again returned HTTP 429; HTML validation remains environmentally unverified.
 
 ## FTIR Compact Prototype
 
@@ -70,7 +72,7 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 **Composition result — 2026-08-10:**
 
 * **Checks:** 17 FTIR-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
-* **Words:** `wc -w` reports 1,087 in the prototype source and 216 in each compact include (1,519 source words across the three files). The unpublished render contains **932 runnable-checklist words**, **1,206 total content words**, and **44 instrument-specific trainer-note words**.
+* **Words:** `wc -w` reports 1,087 in the prototype source, 216 in the compact safety include, and 228 in the compact closeout include (1,531 source words across the three files). The unpublished render contains **944 runnable-checklist words**, **1,218 total content words**, and **44 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` passed; `bundle exec jekyll build --unpublished` also rendered the prototype and all 30 controls. `script/validate-html` was run, but its external W3C service was unreachable in the sandbox and then returned HTTP 429 with network access; HTML validation remains unverified for environmental reasons.
 * **Review gaps carried:** no good-background acceptance criterion; no failed-System-Status appearance criterion; no complete canonical background-redo cycle; compact Quick Guide not reviewed, proofed, approved, or installed.
 * **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
@@ -86,7 +88,7 @@ Required review gaps include the EDS boundary, exact save/export convention, fin
 **Composition result — 2026-08-10:**
 
 * **Checks:** 18 XL-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
-* **Words:** `wc -w` reports 1,184 prototype-source words (1,616 with both 216-word prototype includes). The unpublished render contains **980 runnable-checklist words**, **1,299 total content words**, and **46 instrument-specific trainer-note words**.
+* **Words:** `wc -w` reports 1,184 prototype-source words (1,628 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **992 runnable-checklist words**, **1,311 total content words**, and **46 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
 * **Review gaps carried:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; final tray/chamber state; approved and installed participant Quick Guide.
 * **Structural lesson:** NavCam, LiveSEM, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. Five specific release gaps push total page prose above the FTIR editorial range while the runnable checklist remains within it; retaining those gaps is preferable to disguising them. The XL height check must stay instrument-specific despite shared SEM access.
@@ -102,7 +104,7 @@ Required review gaps include save/export, final holder/chamber state, and any un
 **Composition result — 2026-08-10:**
 
 * **Checks:** 18 Pure-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
-* **Words:** `wc -w` reports 1,133 prototype-source words (1,565 with both prototype includes). The unpublished render contains **984 runnable-checklist words**, **1,261 total content words**, and **45 instrument-specific trainer-note words**.
+* **Words:** `wc -w` reports 1,133 prototype-source words (1,577 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **996 runnable-checklist words**, **1,273 total content words**, and **45 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
 * **Review gaps carried:** observable Level 1 image-quality decision; save/export and naming convention; final holder/chamber state; approved and installed participant Quick Guide.
 * **Structural lesson:** the imaging-control categories can resemble XL without sharing the physical run sheet. Pure requires one 18 mm-or-smaller stub below the holder edge, software unlock plus manual door motion, and holder return to a drawer or stand. Keeping those actions explicit prevents shared access and interface similarity from erasing the loading distinction.
@@ -118,10 +120,11 @@ Do not choose the HighScore/Search Match teaching boundary. Represent the curren
 **Composition result — 2026-08-10:**
 
 * **Checks:** 17 XRD-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
-* **Words:** `wc -w` reports 1,122 prototype-source words (1,554 with both prototype includes). The unpublished render contains **880 runnable-checklist words**, **1,245 total content words**, and **55 instrument-specific trainer-note words**.
+* **Words:** `wc -w` reports 1,185 prototype-source words (1,629 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **881 runnable-checklist words**, **1,310 total content words**, and **55 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 30 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
-* **Review gaps carried:** HighScore/Search Match teaching boundary; stored-program curation and timing; companion-workstation sign-in; exact export/copy and participant handoff; final removable sample-changer cover position.
+* **Review gaps carried:** HighScore/Search Match teaching boundary; stored-program curation and timing; companion-workstation sign-in; exact export/copy and participant handoff; final removable sample-changer cover position; operational review, retrofit, and print proof for the participant Quick Guide.
 * **Structural lesson:** XRD's normal path crosses an access-free instrument touchscreen, a separate companion workstation with unresolved sign-in, and a paper safety log. The shared closeout therefore must state that Moira is communications-only. The canonical shutdown does not state the removable changer cover's final position after holder removal, so this prototype adds that specific final-state gap instead of inferring it.
+* **Source/handoff audit — 2026-08-11:** the central inventory and controlled Quick Guide work order both mark the XRD participant artifact as blocked, but the trainer prototype called the current printed guide approved in three runnable checks. Those claims were removed, an explicit participant-artifact review gap was added, and the prototype-only shared closeout was corrected so it no longer implies that every instrument already has an approved Quick Guide. No release gate was resolved.
 
 ## Instron Prototype
 
@@ -134,7 +137,7 @@ Keep saved method versus QuickTest, the exact end condition, result-quality deci
 **Composition result — 2026-08-10:**
 
 * **Checks:** 22 Instron-specific + 6 compact safety + 7 compact closeout = **35 rendered checks**.
-* **Words:** `wc -w` reports 1,439 prototype-source words (1,871 with both prototype includes). The unpublished render contains **1,097 runnable-checklist words**, **1,527 total content words**, and **53 instrument-specific trainer-note words**.
+* **Words:** `wc -w` reports 1,439 prototype-source words (1,883 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **1,109 runnable-checklist words**, **1,539 total content words**, and **53 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 35 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
 * **Review gaps carried:** saved method versus QuickTest and exact method name; end condition; approved soft-toe result decision; save/export convention; verified 50 kN fixture and complete initial/final hardware states; Bluehill/handset evidence, two-view layout, and approved installed Quick Guide.
 * **Structural exception:** Instron reaches the 35-check ceiling and exceeds the provisional word ranges. Its supported spine crosses a physical load string, Bluehill, and the handset, and it must distinguish routine stop from emergency stop while ending in disabled mode. Grouping those into the SEM or XRD pattern would hide consequential surface changes and safety checks. Keep this longer review artifact and do not retrofit earlier prototypes during this pass.
