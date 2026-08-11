@@ -8,6 +8,8 @@ These are bounded work orders for the two-sided SOP-and-visual-map model. They s
 
 Read [`README.md`](README.md) first. A **BLOCKED** status means the instrument is blocked for technical completion and release until every release gate in that entry is resolved. It normally also blocks drafting. The only exception is an explicitly commissioned [provisional placeholder pass](README.md#provisional-placeholder-draft-mode), which may create a visibly incomplete, unpublished composition draft while preserving every blocker. Existing assets are candidates, not proof that the displayed interface or workflow is current.
 
+The provisional set produced on 2026-08-10 was audited; see [`audit-2026-08-10.md`](audit-2026-08-10.md) for per-instrument findings, including which drafts stated a proposal in settled voice and which release gates disappeared from the artifact. Note two audit results that affect these work orders directly: the **FTIR reference prototype has its own open blockers** (unprintable source images, two control-key entries that do not match the visible labels, and an acceptance criterion the canonical page does not define), and **Instron, Raman, and optical each still lack the reviewed layout variant** their confirmed curriculum requires.
+
 ## Source And Proposal Discipline
 
 This file records both facts already established by a canonical instrument page and choices that still need staff approval. Keep those categories separate.
@@ -24,7 +26,7 @@ This file records both facts already established by a canonical instrument page 
 
 | Instrument | Release status | Principal reason |
 | --- | --- | --- |
-| Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
+| Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Composition is the drafting model, but the [2026-08-10 audit](audit-2026-08-10.md) opened its own blockers: source images are too low-resolution to print, two control-key entries do not match the visible toolbar labels, and the contact/signal caption implies an acceptance criterion the canonical page does not define. Still needs physical proof and operational review before publication. |
 | Thermo Fisher Phenom XL SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
 | Thermo Fisher Phenom Pure SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
 | Malvern Panalytical Aeris Research XRD | **BLOCKED** | The HighScore teaching boundary, stored-program curation, data handoff, native queue capture, and changer-cover pair are unresolved. |
@@ -80,6 +82,8 @@ For every instrument:
 **Do not add:** band assignments, atmospheric peak positions, a named sample, method-parameter tables, liquids, or accessory workflows.
 
 **Remaining release gates:** staff review of the background/quality language, native-resolution final screenshots if the prototype strategy is endorsed, and physical duplex proof.
+
+**Audit findings (2026-08-10):** all three approved assets are 750x468 video-poster frames whose labels are illegible at 100% print scale; the numbered key reads `Collect Background`/`Collect Sample` while the toolbar visibly reads `Col Bkg`/`Col Smp`; callout 2's leader crowds callout 1's marker; and the "signal has strengthened" caption functions as a pass criterion the canonical page does not supply. Recapture at native resolution and reconcile the key and caption before treating this file as a content model. See [`audit-2026-08-10.md`](audit-2026-08-10.md).
 
 ## Thermo Fisher Phenom XL SEM
 
