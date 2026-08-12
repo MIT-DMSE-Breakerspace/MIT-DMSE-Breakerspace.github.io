@@ -43,9 +43,8 @@ The terms below mean:
 | Aeris XRD | **Ready for selective import** | Copy the queue screen and changer-cover pair | HighScore boundary, program curation, sign-in/handoff policy, exact position control |
 | Instron | **Partially ready for selective import** | Copy the actual-run Bluehill screen and enabled handset only after the two-view layout is approved | Method/end condition, layout, toe-artifact pair, travel-limit prompt, final state |
 | DSX-1000 optical | **Ready for layout review** | Use the listed interface states to approve a compact multi-state layout; then import only the approved subset | Multi-state layout, exact controls, save/final-state review |
+| XploRA Raman | **Ready for layout and quality-question review** | Review the proposed tightly cropped mode strip; then import only the approved subset | Multi-state layout, exact toolbar icons/settings boundary, Maintenance entry, quality question, final state |
 | Innovatest hardness tester | **Partially ready for selective import** | Copy the HV0.3 result screen as the main candidate | Exact Single Point state, bad-indent pair, hardware/scale reconciliation, export/final state |
-
-The `raman/` folder now present beside these sets was not part of this completed image-review sequence and has not been triaged here. Treat it as new work; do not infer selections from this document.
 
 ## Thermo Scientific Nicolet iS5 FTIR Spectrometer
 
@@ -256,6 +255,61 @@ No one screenshot exposes every confirmed Level 1 function legibly. Use this set
 
 Clicking **2D Acquisition** completes the capture and opens it in LEXT; there is no missing intermediate dialog or control-software step to capture. Users must save all captures and analysis through LEXT before leaving for the day; record that in the canonical/staff workflow and the compact reminder, not by turning LEXT into the primary map. The current `oof.PNG`/`in-focus.PNG` pair satisfies the matched focus-image need. Multi-state layout, exact visible controls, save/copy wording, shutdown/final clearance, and staff approval remain open.
 
+## Horiba XploRA Confocal Raman Microscope
+
+**Source folder:** `raman/`
+
+LabSpec does not provide one coherent routine-workflow screen. The captured sequence spreads the Level 1 path across a persistent toolbar, the Top and Internal camera modes, an RTD spectrum state, acquisition/display states, a separate Maintenance area, and modal AutoCalibration dialogs. Treat this as a compact multi-state-layout problem, not as a request to find one perfect full-window screenshot. Because these are 3840 x 2160 captures, use tight proportional crops; a full LabSpec window will not remain legible at Quick Guide print size and may make the captured laser, grating, objective, filter, slit, or hole values look like approved defaults when they are not.
+
+### Use after layout and technical review
+
+| Dropbox source | Proposed repository name | Purpose |
+| --- | --- | --- |
+| `Screenshot (6).png` | `assets/img/quick-guides/raman/labspec-camera-selector.png` | Clean evidence for the **Top** versus **Internal** camera selector; use as a tight crop rather than a full-window map |
+| `Screenshot (28).png` | `assets/img/quick-guides/raman/labspec-top-camera-view.png` | Preferred current TopCam focusing-state candidate |
+| `Screenshot (31).png` | `assets/img/quick-guides/raman/labspec-internal-camera-focus.png` | Best internal-camera/laser-focus candidate; staff must verify that the visible dark spot/crosshair represents the intended normal focus state before use |
+| `Screenshot (19).png` | `assets/img/quick-guides/raman/labspec-rtd-silicon-strong.png` | Best RTD-state candidate with a strong silicon response; also the proposed continue half of a focus-response pair |
+| `Screenshot (27).png` | `assets/img/quick-guides/raman/labspec-autocalibration-finished-pass.png` | Strongest AutoCalibration completion evidence: the modal reports completion and the result list visibly reports **PASS** |
+| `Screenshot (35).png` | `assets/img/quick-guides/raman/labspec-acquired-spectrum.png` | Best acquired-spectrum/current-toolbar candidate; use a tight crop and verify every toolbar icon before annotation |
+
+Do not copy all six merely because they are listed. First review a Raman-specific variant, then import the smallest subset that preserves the camera change, laser-focus/RTD path, routine acquisition control, `Stop All`, and AutoCalibration result. A likely direction is a persistent-toolbar/base crop plus a short strip of tightly cropped camera, RTD, and calibration states. This is a design recommendation, not a locked layout.
+
+### Proposed immediate quality decision
+
+`Screenshot (18).png` and `Screenshot (19).png` appear to be sequential RTD views of the same silicon setup with a weak and strong response. They are the best available candidate pair for the observable question, “Did a small focus adjustment increase the silicon counts?” Use them only after staff confirms that the sample, laser, acquisition settings, and other relevant conditions were unchanged and that focus was the intended difference. Do not turn the stronger trace into an absolute count threshold or call it an AutoCalibration pass.
+
+The capture set contains a clear AutoCalibration success state in `Screenshot (27).png`, but no failed AutoCalibration result. Staff must choose whether Side 2 uses the relative RTD focus-response pair, with a separate textual stop rule for AutoCalibration not reporting **PASS**, or retains the planned calibration-fail/calibration-pass pair and waits for a safe naturally occurring failure capture. Do not fabricate a failed calibration screen.
+
+### Supporting only
+
+* `Screenshot (10).png` through `Screenshot (13).png`: alternate TopCam/sample views; `(28)` is the cleaner preferred state.
+* `Screenshot (17).png`: strong silicon RTD alternative.
+* `Screenshot (20).png`: AutoCalibration scope dialog with **Current laser/grating**, **All lasers/gratings**, **Custom**, and **Exit**. It is useful workflow evidence, but the approved Level 1 choice remains unresolved.
+* `Screenshot (22).png`: AutoCalibration prompt to turn on lasers and position the reference sample.
+* `Screenshot (23).png` through `Screenshot (26).png`: AutoCalibration progress and intermediate PASS evidence; `(27)` is the preferred completed state.
+* `Screenshot (32).png` and `Screenshot (33).png`: example sample spectra; useful capability/result evidence, not an approved interpretation or quality standard.
+* `Screenshot (36).png`: generic HDF5 save-dialog evidence. The visible `quick-guide-test` name and Public Documents path do not create a privacy concern, but the dialog is unnecessary as a primary map if save can remain a toolbar callout and compact reminder.
+* `Screenshot 2026-03-24 161843.png`: older advanced mapping state with a visible **Start video acquisition** tooltip. It may help verify that one icon, but it is not a clean Level 1 source and must not substitute for current-interface verification.
+* `IMG_4393.JPG`: joystick and laser-control hardware reference. The handwritten power reminder and surrounding clutter make it a poor compact-guide source.
+* `IMG_4394.JPG`: useful enclosure/stage/objective/sample-loading reference for canonical or trainer material.
+* `IMG_4395.JPG`: reference-sample storage and laser-warning context, including the silicon standard; useful for staff/canonical documentation rather than the primary software map.
+
+### Exclude from the primary Quick Guide
+
+* `Screenshot (1).png` through `Screenshot (5).png`: blank or configuration/processing states without a useful Level 1 task outcome.
+* `Screenshot (7).png` and `Screenshot (8).png`: filter and illuminator menus. They expose settings that the approved Quick Guide is not yet authorized to prescribe.
+* `Screenshot (9).png`: washed-out TopCam state.
+* `Screenshot (14).png` through `Screenshot (16).png`, `Screenshot (29).png`, and `Screenshot (30).png`: saturated, blank, or otherwise poor internal-camera teaching states; `(31)` is the better candidate.
+* `Screenshot (21).png`: AutoCalibration starting/progress state.
+* `Screenshot (34).png`: transient acquisition state with disabled controls and no useful result.
+* `IMG_4392.JPG`: full workstation/file-browser view. It adds no essential Quick Guide instruction and risks exposing local workstation context.
+
+### Preserved decisions and open work
+
+The captures substantially reduce the media gap, but they do not make Raman mechanical. The **Maintenance** tab label is visible, yet no reviewed screenshot shows the `AutoCalibration` entry point inside that tab. The persistent toolbar appears to contain video, RTD, spectrum-acquisition, save, and `STOP ALL` functions, but every icon/function association must be verified on the current instrument before annotation. The screenshots also record particular settings; none becomes the Level 1 default merely by appearing in a selected image.
+
+Before integration, staff must approve the starting laser/acquisition configuration, routine AutoCalibration scope, exact observable system-check rule, immediate Side 2 quality question, Raman-specific multi-state geometry, save/export wording, sample-change/emission sequence, and final shutdown state. If the RTD pair is approved, no further weak/strong focus capture is needed. If calibration fail/pass remains the chosen quality question, the failed half remains missing.
+
 ## Innovatest Nemesis 5100G2 Hardness Tester
 
 **Source folder:** `innovatest/`
@@ -299,6 +353,6 @@ The Level 1 default is the programmed **Vickers 300 gf** test, reported as **HV0
 
 ## Deliberately Not Re-Triaged Here
 
-The reviewed capture sets above are the only ones covered by this handoff. The presence of files in another folder does not mean they have been inspected, approved, or rejected. In particular, `raman/` requires a separate content-and-image review against the Raman work order before any file is copied into the repository.
+The reviewed capture sets above are the only ones covered by this handoff. The presence of files in another folder does not mean they have been inspected, approved, or rejected.
 
 When a future capture set is reviewed, append a dated section or create a new dated companion work order and link it from [`README.md`](README.md). Do not scatter filename decisions among the training README, site TODO, and unrelated handoff files.
