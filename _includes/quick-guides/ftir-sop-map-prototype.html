@@ -105,7 +105,7 @@
 
     <footer class="quick-guide-footer">
       <span>Content derived from the canonical FTIR SOP - Owner: lab manager</span>
-      <span>Provisional 2026-08-11 - Page 1 of 2</span>
+      <span>Provisional 2026-08-12 - Page 1 of 2</span>
     </footer>
   </section>
 
@@ -123,22 +123,46 @@
       <section class="quick-guide-sop-map-map-section">
         <div class="quick-guide-sop-map-map-heading">
           <h3>Main OMNIC window</h3>
-          <p>The final native-resolution capture must show the current routine toolbar and a green System Status check.</p>
+          <p>The routine controls stay in the top toolbar; System Status must show a green check.</p>
         </div>
 
         <figure class="quick-guide-sop-map-toolbar-figure">
-          <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--map"
-               role="img"
-               aria-label="Image placeholder: native-resolution current OMNIC main window with the routine toolbar, iD7 ATR experiment, and green System Status check visible.">
-            <strong>Image placeholder</strong>
-            <span>Capture needed: native-resolution current OMNIC main window with the routine toolbar, iD7 ATR experiment, and green System Status check visible.</span>
-            <small>Release gate: sanitize the capture; verify the visible Col Bkg, Col Smp, Save, and System Status labels and icon functions; then add uncrowded annotations and recheck at 100% print scale.</small>
+          <div class="quick-guide-sop-map-toolbar-crop">
+            <a href="{{ '/assets/img/quick-guides/ftir/omnic-main-system-status-good.png' | relative_url }}" target="_parent">
+              <img src="{{ '/assets/img/quick-guides/ftir/omnic-main-system-status-good.png' | relative_url }}" width="1920" height="1080" loading="eager" decoding="async" alt="OMNIC main window with Col Bkg, Col Smp, and Save in the top toolbar, the iD7 ATR experiment selected, and green System Status at upper right.">
+            </a>
+            <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 1920 412" preserveAspectRatio="none" aria-hidden="true">
+              <g class="quick-guide-sop-map-image-callout">
+                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="66" y="76" width="46" height="52" rx="3" />
+                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M89 128 L72 190" />
+                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="68" cy="210" r="20" />
+                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="68" y="210">1</text>
+              </g>
+              <g class="quick-guide-sop-map-image-callout">
+                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="117" y="76" width="46" height="52" rx="3" />
+                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M140 128 L156 235" />
+                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="159" cy="256" r="20" />
+                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="159" y="256">2</text>
+              </g>
+              <g class="quick-guide-sop-map-image-callout">
+                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="255" y="76" width="40" height="52" rx="3" />
+                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M275 128 L275 190" />
+                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="275" cy="210" r="20" />
+                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="275" y="210">3</text>
+              </g>
+              <g class="quick-guide-sop-map-image-callout">
+                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1796" y="43" width="121" height="29" rx="3" />
+                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M1856 72 L1800 190" />
+                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="1790" cy="210" r="20" />
+                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="1790" y="210">4</text>
+              </g>
+            </svg>
           </div>
           <figcaption class="quick-guide-sop-map-control-key">
-            <span><strong>Label to verify:</strong> Col Bkg</span>
-            <span><strong>Label to verify:</strong> Col Smp</span>
-            <span><strong>Label to verify:</strong> Save</span>
-            <span><strong>Label to verify:</strong> System Status</span>
+            <span><b>1</b> Col Bkg</span>
+            <span><b>2</b> Col Smp</span>
+            <span><b>3</b> Save selected spectrum</span>
+            <span><b>4</b> System Status</span>
           </figcaption>
         </figure>
       </section>
@@ -151,23 +175,27 @@
 
         <div class="quick-guide-sop-map-quality-grid">
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
-            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
-                 role="img"
-                 aria-label="Image placeholder: native-resolution OMNIC sample preview showing no or weak ATR sample contact.">
-              <strong>Image placeholder</strong>
-              <span>Capture needed: native-resolution OMNIC sample preview showing no or weak ATR sample contact.</span>
-              <small>Release gate: confirm the displayed state with staff and verify print-scale labels.</small>
+            <div class="quick-guide-sop-map-quality-image">
+              <a href="{{ '/assets/img/quick-guides/ftir/omnic-sample-preview-no-contact.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/ftir/omnic-sample-preview-no-contact.png' | relative_url }}" width="1920" height="1080" loading="eager" decoding="async" alt="OMNIC sample preview with a red trace remaining near zero despite noise.">
+              </a>
             </div>
             <figcaption><strong>No or weak contact:</strong> if the trace remains near zero or the signal is weak, re-seat the sample or use the appropriate pressure tip. Ask staff if it stays weak.</figcaption>
           </figure>
 
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
-            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
-                 role="img"
-                 aria-label="Image placeholder: native-resolution OMNIC sample preview showing contact established and the Start Collection control.">
-              <strong>Image placeholder</strong>
-              <span>Capture needed: native-resolution OMNIC sample preview showing contact established and the Start Collection control.</span>
-              <small>Release gate: verify the exact Start Collection label and add its annotation after capture approval.</small>
+            <div class="quick-guide-sop-map-quality-image">
+              <a href="{{ '/assets/img/quick-guides/ftir/omnic-sample-preview-contact-established.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/ftir/omnic-sample-preview-contact-established.png' | relative_url }}" width="1920" height="1080" loading="eager" decoding="async" alt="OMNIC sample preview with a red sample spectrum and the Start Collection control at upper right.">
+              </a>
+              <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">
+                <g class="quick-guide-sop-map-image-callout">
+                  <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1758" y="143" width="150" height="26" rx="3" />
+                  <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M1758 156 L1684 156" />
+                  <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="1634" cy="156" r="42" />
+                  <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="1634" y="156">5</text>
+                </g>
+              </svg>
             </div>
             <figcaption><strong>Contact established:</strong> a change from near zero to a sample spectrum shows ATR is detecting the sample, not that the spectrum has universally passed. When setup is ready, select <strong>Start Collection</strong>; ask staff about unresolved weak, negative, or unexpected features.</figcaption>
           </figure>
@@ -176,12 +204,12 @@
 
       <div class="quick-guide-sop-map-review-gap">
         <strong>Review gap</strong>
-        <p>Release remains blocked on native source captures and label verification, uncrowded callouts, the measured 46.8 px final-SOP-bullet/footer collision, color and grayscale proofing, QR decoding, 100% print-scale legibility, staff content review, and a physical duplex proof.</p>
+        <p>Release remains blocked on the measured 46.8 px final-SOP-bullet/footer collision, final 100% print-scale label review, color and grayscale physical proofing, QR scan confirmation, staff content review, and a physical duplex proof.</p>
       </div>
 
       <aside class="quick-guide-sop-map-map-reminders">
         <div>
-          <h3>Start Collection</h3>
+          <h3><span>5</span> Start Collection</h3>
           <p>With Preview Data Collection enabled, Collect Background or Collect Sample opens a live preview. The scan is not complete until Start Collection runs the full acquisition.</p>
         </div>
         <div>
@@ -197,7 +225,7 @@
 
     <footer class="quick-guide-footer">
       <span>Visual map, not a replacement for training or the detailed operating instructions</span>
-      <span>Provisional 2026-08-11 - Page 2 of 2</span>
+      <span>Provisional 2026-08-12 - Page 2 of 2</span>
     </footer>
   </section>
 </section>
