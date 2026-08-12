@@ -20,6 +20,8 @@ That set was then audited. **Read [`audit-2026-08-10.md`](audit-2026-08-10.md) b
 * The **FTIR reference is not exempt from technical review.** The audit found unprintable source images and two control-key entries that did not match the visible interface labels. Native captures and exact visible labels replaced that failed treatment on 2026-08-12, but the current capture states, callout geometry, and physical output still require staff review before the treatment is copied forward.
 * Several findings need a **staff decision** because they touch locked geometry or unresolved policy. Do not resolve those by shortening an SOP step, shrinking type, narrowing a curriculum, or trimming a canonical instrument identity.
 
+The 2026-08-12 field-capture review is preserved in [`capture-integration-workorder-2026-08-12.md`](capture-integration-workorder-2026-08-12.md). Read it after the relevant instrument specification whenever working on FTIR, Phenom XL, Phenom Pure, XRD, Instron, optical, or hardness media. It records the Dropbox source filename, recommended repository destination, Quick Guide relevance, deliberate exclusions, and remaining non-image blockers so a later session can integrate one instrument without re-triaging the complete capture folders. It does not convert a candidate image into staff approval.
+
 ## Authority And Relationship To Training
 
 The canonical instrument page is the operating authority. The Quick Guide and staff training guide are sibling derivatives of that page, but they use three deliberately separate layers of it:
@@ -143,7 +145,7 @@ The locked template has no inset slot. Do not invent one. When both software con
 
 For each instrument, follow these steps in order.
 
-1. Read this file, the [`sop-visual-map-template.md`](sop-visual-map-template.md) wrapper, the [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) HTML source, and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md).
+1. Read this file, the [`sop-visual-map-template.md`](sop-visual-map-template.md) wrapper, the [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) HTML source, and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md). For FTIR, Phenom XL, Phenom Pure, XRD, Instron, optical, or hardness media, also read [`capture-integration-workorder-2026-08-12.md`](capture-integration-workorder-2026-08-12.md).
 2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Do not use memory or a manufacturer manual to fill gaps.
 3. Check the specification's status and the assignment mode. For a normal release-candidate task, **BLOCKED** means do not create a guide. For an explicitly authorized provisional placeholder pass, create the unpublished composition draft and carry every blocker into a specific placeholder or review-gap block without treating it as resolved.
 4. Copy the wrapper template to `quick-guides/<slug>-sop-map-prototype.md` and the content template to `_includes/quick-guides/<slug>-sop-map-prototype.html`. Keep their basenames identical. Keep `published: false`, the prototype permalink, screen warning, and review badges in the wrapper and content.
