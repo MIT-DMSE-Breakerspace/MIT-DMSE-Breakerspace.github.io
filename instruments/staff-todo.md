@@ -46,6 +46,8 @@ The content contract and relationship to staff training were settled on 2026-08-
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 
+**2026-08-12 handoff:** Level 1 now defaults to the programmed `Vickers 300 gf` test, reported as `HV 0.3`; trainers and users leave its programmed load, dwell, and other test settings unchanged. The external `admin/screenshots/innovatest` capture set includes scale menus, routine controls, an HV 0.3 run/result, report/export views, end-state views, and hardware photos. Selection, review, descriptive naming, copying, and integration remain open, so the media tasks below are not yet complete.
+
 * [ ] Add photos of the power switch, sample on the stage, and the turret with indenters and objectives.
 * [ ] Add annotated Impressions software screenshots: the camera/focus view, the **IN FOCUS** button, the **SCALE SELECT** test button, and the **TEST PATTERN** editor.
 * [ ] Add an example result showing a well-formed Vickers indent with its measured diagonals (crosslines on the corners), and a poor indent with a red diagonal box for comparison.

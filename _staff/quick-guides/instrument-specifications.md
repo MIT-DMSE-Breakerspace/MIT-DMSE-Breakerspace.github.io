@@ -33,7 +33,7 @@ This file records both facts already established by a canonical instrument page 
 | Instron 68TM-50 Universal Testing System | **BLOCKED** | The Level 1 method/end condition, Bluehill and handset captures, multi-view layout, result gate, and export convention are unresolved. |
 | Olympus DSX-1000 Digital Optical Microscope | **BLOCKED** | The confirmed Level 1 capture controls span more functions than the old brief; current interface states and matched focus evidence need capture. |
 | Horiba XploRA Confocal Raman Microscope | **BLOCKED** | The confirmed training path spans TopCam, internal camera, RTD, and AutoCalibration states; exact controls, multi-view layout, settings boundary, and calibration evidence remain unresolved. |
-| Innovatest Nemesis 5100G2 Hardness Tester | **BLOCKED** | Installed scales/indenter configuration and current software views require staff verification. |
+| Innovatest Nemesis 5100G2 Hardness Tester | **BLOCKED** | The Level 1 Vickers 300 gf / HV 0.3 method is settled; captured hardware, software, quality, export, and final-state evidence still require integration and staff review. |
 | Microtrac Sync Particle Size Analyzer | **BLOCKED** | Database/export convention, sanitized interface captures, and tray-loading evidence are unresolved. |
 | Horiba Duetta Fluorescence And Absorbance Spectrometer | **BLOCKED** | The Level 1 exercise needs editorial cleanup before settings, captures, quality evidence, and save/export can be finalized. |
 | Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill | **BLOCKED** | Semi-automatic operation is settled; the Level 1 holder/process parameters, approved control state, and readiness evidence remain unresolved. |
@@ -278,11 +278,11 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 **Canonical SOP spine:** start the instrument and software; confirm the installed indenter/scale and specimen are compatible; load, focus, and position the specimen; characterize as appropriate; save; unload; clean; and restore the tester.
 
-**Level 1 teaching workflow:** perform one single-point Vickers measurement: select a verified installed scale/method, focus and position a prepared specimen, make the indent, verify the measured diagonals/quality state, save, unload, and restore the tester.
+**Level 1 teaching workflow:** perform one single-point Vickers measurement using the programmed `Vickers 300 gf` test, reported as `HV 0.3`: select the test without changing its programmed load, dwell, or other settings; focus and position a prepared specimen; make the indent; verify the measured diagonals/quality state; save; unload; and restore the tester.
 
 **Side 1 critical box:** **Scale, indenter, and turret rule** — the selected scale must match installed hardware and specimen limits; hands remain clear of turret and moving components.
 
-**Primary image required:** a new native-resolution camera/software view in the current routine state.
+**Primary image required:** a selected native-resolution camera/software view in the current routine Vickers 300 gf / HV 0.3 state. The 2026-08-12 capture set contains candidate views but none has yet been copied into or integrated with this guide.
 
 **Primary callouts proposed:**
 
@@ -296,9 +296,13 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 **Quality panels required:** a staff-approved pair showing a good square/symmetric indent with accepted diagonals and the software's documented red diagonal box when the diagonal difference exceeds 5%. Verify that rule on the current machine before publication.
 
-**Do not add:** unsupported scales, arbitrary loads/dwell times, conversion tables, metallographic interpretation, or maintenance/calibration procedures.
+**Do not add:** unsupported scales, instructions to edit the programmed load or dwell settings during routine use, conversion tables, metallographic interpretation, or maintenance/calibration procedures.
 
-**Release gates:** inventory fitted indenter/load hardware and offered Vickers scales; record the exact Level 1 scale/method; capture all current controls; approve the indent quality pair and current warning behavior; confirm save/export and final state.
+**Resolved technical decisions (2026-08-12):** Level 1 starts with the programmed `Vickers 300 gf` test and reports results as `HV 0.3`; there is no reason to start the introductory exercise at a higher load. Users select the programmed test and leave its load, dwell, and other settings unchanged. Alternate tests remain a material-compatibility decision rather than a routine settings-editing exercise.
+
+**Capture follow-up (2026-08-12):** the external `admin/screenshots/innovatest` set contains full-screen Impressions views for the test-selection menus, a Vickers 300 gf / HV 0.3 run, focusing, single-point selection, results, report/export, and shutdown/end-of-day conditions, plus hardware photographs. The files remain outside the repository and still need deliberate selection, privacy/content review, descriptive naming, copying, and guide integration.
+
+**Release gates:** reconcile the fitted indenter/load hardware and offered scales against the captured turret/software state; select and integrate the current controls; approve the indent quality pair and current warning behavior; confirm save/export and final state. The exact Level 1 scale/method is no longer an open gate.
 
 ## Microtrac Sync Particle Size Analyzer
 
