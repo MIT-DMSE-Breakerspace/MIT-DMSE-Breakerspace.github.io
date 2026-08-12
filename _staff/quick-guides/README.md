@@ -8,7 +8,7 @@ This directory turns the reviewed FTIR SOP-and-visual-map prototype into a contr
 
 The locked release-candidate model was approved on 2026-08-07 for **unpublished drafting and lab-assistant review**. It is not approval to publish, print for use, or replace the existing FTIR, optical, or XRD guides. Production approval still requires instrument-specific technical review and a physical duplex print proof.
 
-**Current session handoff — 2026-08-12:** the FTIR reference now uses three selected native 1920×1080 OMNIC captures with HTML/SVG callouts: the main control window with green **System Status**, a near-zero/no-contact preview, and a contact-established preview with **Start Collection**. The unpublished draft still renders as exactly two Letter pages, its targeted HTML-Proofer check passes, and browser review at desktop, tablet, and reflow widths shows the images loading at native resolution without horizontal overflow. Color and grayscale page renders preserve the callouts and state distinction. Keep the draft unpublished: Side 1 still has the measured 46.8 px final-bullet/footer collision, and final staff media/callout review, 100% physical print checks, QR scanning, and duplex proof remain open.
+**Current session handoff — 2026-08-12:** the FTIR reference now uses three selected native 1920×1080 OMNIC captures with HTML/SVG callouts: the main control window with green **System Status**, a near-zero/no-contact preview, and a contact-established preview with **Start Collection**. The unpublished draft still renders as exactly two Letter pages in Chrome, its targeted HTML-Proofer check passes, and browser review at desktop, tablet, and reflow widths shows the images loading at native resolution without horizontal overflow. Color and grayscale page renders preserve the callouts and state distinction. The QR codes decoded successfully from the 100% Chrome physical printout, so the FTIR print-QR gate is satisfied. Keep the draft unpublished: Side 1 still has the measured 46.8 px final-bullet/footer collision. The approved first layout correction is to reduce the display size of the **Standard Operating Procedure (SOP)** heading and the corresponding Side 2 visual-map heading consistently, without shrinking the SOP/body text or omitting content; then remeasure the footer clearance and repeat Chrome's 100% Letter print preview. Safari currently paginates the same artifact as four pages and is not the print-proof path. Final staff media/callout review, the remaining 100% physical print checks, and duplex approval remain open.
 
 The compact one-line title/subtitle treatment and 0.04 in advisory-spacing trial from 2026-08-11 also remains unreviewed. Automated print-media measurement reports a non-overlapping trained-user-note/SOP-title boundary on all eleven prototypes, but nobody has visually reviewed the complete set since the change. Open the rendered set before treating this strategy or the header-layout finding as approved.
 
@@ -58,10 +58,10 @@ Every candidate produced from this model is:
 The visual hierarchy is also fixed:
 
 * one one-line document `<h1>` for the compact instrument name; put the routine-workflow qualifier in the smaller subtitle;
-* `<h2>` for **Standard Operating Procedure (SOP)** and the Side 2 visual-map title;
+* `<h2>` for **Standard Operating Procedure (SOP)** and the Side 2 visual-map title; these two corresponding headings must use the same reduced display size and remain visibly subordinate to the document `<h1>`;
 * `<h3>` for **Instrument startup**, **Operation**, **Instrument shutdown**, interface/result subsections such as **Main OMNIC window**, and compact reminder headings.
 
-The Side 2 title is an `<h2>` styled at the same display size as the document title. Do not add a second `<h1>` merely because it starts a new printed side.
+The Side 2 title is an `<h2>` styled consistently with the Side 1 SOP heading and smaller than the document title. Do not add a second `<h1>` merely because it starts a new printed side.
 
 ## Provisional Placeholder Draft Mode
 
