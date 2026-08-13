@@ -117,9 +117,9 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Phenom XL SEM
 
-* [ ] Capture clean, unannotated XL NavCam and LiveSEM views for the Level 1 imaging workflow. The LiveSEM source must show or support verified callouts for focus, brightness/contrast and automatic adjustment, magnification, acquisition, and the grouped top panel with voltage, beam/intensity, resolution, and averaging.
+* [x] Capture clean, unannotated XL NavCam and LiveSEM views for the Level 1 imaging workflow. Captured and triaged 2026-08-12; the imaging-controls state is integrated with verified callouts for magnification, focus, contrast, and brightness. **Still open:** verify the acquisition and automatic brightness/contrast icon functions at the instrument, and lock a reviewed multi-state layout before the grouped top panel (voltage, beam/intensity, resolution, averaging) can be mapped.
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check.
+* [x] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check. The matched clearance pair is integrated 2026-08-12; both frames were staged outside the chamber. Tray-removal and stub-loading motion media are still not captured.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
 * [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
 * [ ] Approve or revise the proposed EDS curriculum boundary: a short capability preview during Phenom XL Level 1, followed by a separate Level 2 add-on before independent EDS operation. Do not add EDS controls to the primary SEM Quick Guide while this remains a proposal.

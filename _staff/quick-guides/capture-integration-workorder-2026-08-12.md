@@ -38,7 +38,7 @@ The terms below mean:
 | Instrument | Capture triage | Next mechanical action | Important remaining blocker |
 | --- | --- | --- | --- |
 | FTIR | **Integrated** | No more capture selection; retain as the reference implementation | Side 1 layout, staff media/callout review, and physical proof |
-| Phenom XL SEM | **Ready for selective import** | Copy the two LiveSEM states and matched height pair | Reviewed multi-state map, exact control verification, EDS boundary, save/export, final state |
+| Phenom XL SEM | **Integrated (selective)** | Imaging-controls state and matched height pair imported 2026-08-12 | Reviewed multi-state map, exact control verification, EDS boundary, save/export, final state |
 | Phenom Pure SEM | **Ready for selective import** | Copy the two Pure LiveSEM states and matched height pair | Reviewed multi-state map, exact control verification, save/export, final state |
 | Aeris XRD | **Ready for selective import** | Copy the queue screen and changer-cover pair | HighScore boundary, program curation, sign-in/handoff policy, exact position control |
 | Instron | **Partially ready for selective import** | Copy the actual-run Bluehill screen and enabled handset only after the two-view layout is approved | Method/end condition, layout, toe-artifact pair, travel-limit prompt, final state |
@@ -79,12 +79,16 @@ The compact guide intentionally uses the mechanics of good solid-sample contact,
 
 **Source folder:** `PhenomXL/`
 
+**Status:** selectively imported and integrated 2026-08-12. Three assets were copied: `livesem-imaging-controls.png` (2362x492, cropped from `SEM-right-panel.PNG` at native resolution to match the locked 4.80:1 crop window), `sample-height-insufficient-clearance.jpg`, and `sample-height-correct.jpg` (both 1800x765, matched framing, EXIF/GPS stripped). A `phenom-xl-page.svg` QR asset was generated with the same parameters that reproduce the committed FTIR QR byte-for-byte.
+
+`SEM-top-panel.PNG` was deliberately **not** imported. The locked composition allows one primary map image, and the multi-state layout variant has not been reviewed, so the System/Live settings panel remains an explicit review gap in the draft rather than an improvised second view.
+
 ### Use
 
 | Dropbox source | Proposed repository name | Purpose |
 | --- | --- | --- |
 | `SEM-right-panel.PNG` | `assets/img/quick-guides/phenom-xl/livesem-imaging-controls.png` | Best clean routine LiveSEM state for magnification, focus, contrast, brightness, rotation, acquisition/navigation context |
-| `SEM-top-panel.PNG` | `assets/img/quick-guides/phenom-xl/livesem-system-settings.png` | Essential second state for accelerating voltage, beam intensity, detector, vacuum, averaging, and scan size |
+| `SEM-top-panel.PNG` | `assets/img/quick-guides/phenom-xl/livesem-system-settings.png` | Essential second state for accelerating voltage, beam intensity, detector, vacuum, averaging, and scan size. **Not imported 2026-08-12** — deferred until a multi-state layout variant is reviewed and locked |
 | `sample-height-incorrect.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-insufficient-clearance.jpg` | Preferred stop half of the matched XL clearance question |
 | `sample-height-correct.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-correct.jpg` | Preferred continue half; the sample is visibly 5–7 mm below the tray top |
 
@@ -112,6 +116,10 @@ The height pair is safely photographed outside the chamber and asks the correct 
 ### Preserved decisions and open work
 
 The NavCam empty view may stand for the normal clean tray stored inside the XL. No new, more perfectly aligned height pair is required unless staff rejects the current clarity. Still unresolved: the reviewed multi-state map layout; exact visible icon/label verification; EDS training boundary; save/export; and final tray/chamber state approval.
+
+**Screening notes from the 2026-08-12 import.** Three otherwise-usable captures were rejected on privacy/clutter grounds rather than image quality: `customize.PNG` (visible `J:/_COURSES/3.000` course path), `phenom-status.PNG` (internal IP address `192.168.200.101`), and `SEM-bottom-panel.PNG` (a `mineral-ID` sample label and acquisition timestamp in the databar). The MIT asset barcode `MIT-0534630` and bench signage were cropped out of both height photographs. All four candidate iPhone photographs carried GPS coordinates, which were stripped; the two imported files verify as carrying no EXIF keys.
+
+Tighter crops of the height pair were trialled and **rejected**: re-centring each photograph independently broke the matched scale and made the acceptable stub appear closer to the rule than the stop case. The committed pair keeps identical framing so the clearance difference reads correctly.
 
 ## Thermo Fisher Phenom Pure SEM
 

@@ -109,21 +109,23 @@ For every instrument:
 
 **Primary image candidates captured:** use external `PhenomXL/SEM-right-panel.PNG` as the base routine LiveSEM state and `PhenomXL/SEM-top-panel.PNG` for the essential top-panel state; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#thermo-fisher-phenom-xl-sem). No one captured state provides every planned function legibly, so the reviewed multi-state-layout gate remains. `assets/img/tutorials/sem/FocBri.PNG` is only a composition reference because it has baked-in annotation.
 
+**Screenshot coverage as of 2026-08-12:** the imaging-controls map image and the matched height pair are integrated at `assets/img/quick-guides/phenom-xl/`, and the page QR is at `assets/img/qr/phenom-xl-page.svg`. Four callouts are mapped from visible on-screen labels only — Magnification, Focus, Contrast, Brightness — drawn as an HTML/SVG overlay so the source screenshot stays unannotated. The top-panel state was **not** imported, so callout 5 below and the icon-only left-rail functions remain unmapped and are carried as explicit review gaps in the draft.
+
 **Primary callouts proposed, with exact labels/icons still to verify:**
 
-1. focus control, using the exact visible label or verified icon function
-2. brightness/contrast and automatic adjustment, grouped only if they are visibly adjacent
-3. magnification control or readout used during training
-4. acquisition camera control
-5. the top status/control panel as one grouped region: accelerating voltage, beam/intensity, resolution, and averaging
+1. focus control, using the exact visible label or verified icon function — **mapped 2026-08-12** from the visible `Focus` label
+2. brightness/contrast and automatic adjustment, grouped only if they are visibly adjacent — **partially mapped**: the visibly adjacent `Contrast` and `Brightness` sliders are mapped; the automatic-adjustment icon is unmapped pending icon-function verification
+3. magnification control or readout used during training — **mapped 2026-08-12** from the visible `Magnification` label
+4. acquisition camera control — **unmapped**; icon-only, function not verified at the instrument
+5. the top status/control panel as one grouped region: accelerating voltage, beam/intensity, resolution, and averaging — **unmapped**; requires the reviewed multi-state layout
 
 Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminder; do not imply that `NavCam`, `Move to SEM`, and all LiveSEM controls coexist in one screenshot.
 
-**Readiness panel candidates captured:** external `PhenomXL/sample-height-incorrect.JPG` and `PhenomXL/sample-height-correct.JPG` form the preferred matched pair, safely staged outside the chamber. The correct sample is visibly **5–7 mm below the XL tray top**. `sample-over-height.JPG` is a stronger but less closely matched stop-state alternative. Keep focus, charging, drift, washout, outgassing, and beam damage in the SOP/stop-help language rather than combining unrelated diagnoses.
+**Readiness panel candidates captured:** external `PhenomXL/sample-height-incorrect.JPG` and `PhenomXL/sample-height-correct.JPG` form the preferred matched pair, safely staged outside the chamber, and were **integrated 2026-08-12** with identical framing so the clearance difference is scale-comparable. The correct sample is visibly **5–7 mm below the XL tray top**. `sample-over-height.JPG` is a stronger but less closely matched stop-state alternative. Both panels state that the trays were photographed outside the microscope, and the stop card never presents the insufficient-clearance state as loadable. Keep focus, charging, drift, washout, outgassing, and beam damage in the SOP/stop-help language rather than combining unrelated diagnoses.
 
 **Do not add:** independent EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. A brief EDS capability preview belongs in the staff guide only if the proposed boundary is approved.
 
-**Release gates:** approve the EDS training boundary; select, copy, integrate, and staff-approve the triaged XL loading and LiveSEM candidates; review and lock the multi-state layout; verify the top panel and every mapped icon/label; confirm save/export and the final tray/chamber state.
+**Release gates:** approve the EDS training boundary; select, copy, integrate, and staff-approve the triaged XL loading and LiveSEM candidates (**image selection and integration completed 2026-08-12; staff approval still outstanding**); review and lock the multi-state layout; verify the top panel and every mapped icon/label; confirm save/export and the final tray/chamber state.
 
 ## Thermo Fisher Phenom Pure SEM
 
