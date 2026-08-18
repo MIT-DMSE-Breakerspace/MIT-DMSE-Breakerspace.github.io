@@ -28,4 +28,11 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Check internal and external links
-        run: bundle exec htmlproofer ./_site --check-html --check-sri --empty-alt-ignore
+        # Slack returns 403 to anonymous automated clients even though the workspace URL
+        # remains valid for invited users. Keep checking every other published URL.
+        run: >-
+          bundle exec htmlproofer ./_site
+          --check-html
+          --check-sri
+          --empty-alt-ignore
+          --url-ignore https://mit-dmse-breakerspace.slack.com
