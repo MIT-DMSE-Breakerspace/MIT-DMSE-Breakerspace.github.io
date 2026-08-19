@@ -14,6 +14,8 @@ The compact one-line title/subtitle treatment and 0.04 in advisory-spacing trial
 
 **Phenom XL workflow revision — 2026-08-18:** the unpublished XL draft now uses a reviewed instrument-specific multi-view Side 2 assembled from six sanitized current captures. It teaches the recommended lower-left control path, automatic brightness/contrast, autofocus and Focus in Area with the hidden `F` fine-focus state, NavCam navigation, `Move to SEM`, capture, screen organization, and a compact live/capture settings primer. Internal review metadata has moved off both printable sheets into [`phenom-xl-review-2026-08-18.md`](phenom-xl-review-2026-08-18.md), anchored from source comments. Automated proof confirms exactly two Letter pages, no clipping or section/footer overlap, clean local HTML and accessibility checks, and two QR codes that decode from 300 dpi renders; the final color and grayscale page renders were also inspected. Keep the draft unpublished: staff technical review, a current right-click focus-menu capture, the EDS boundary, save/export convention, final tray/chamber state, and a physical color/grayscale duplex proof remain open.
 
+**Phenom XL staff-review handoff — 2026-08-18:** lab-manager review found the revised draft vastly improved and sufficiently correct to serve as the baseline for a later detailed revision pass. The reviewer has several specific revision points but intentionally deferred them to a future session. Start that session from commit `7187b545050d9dc12946e6dc339f218f01eaa64c` or later, reopen the rendered guide, and record the review points in the Phenom XL sidecar ledger before editing. Do not infer or pre-empt the deferred feedback. This is a review baseline, not technical approval; the unpublished and release-gate requirements above remain in force.
+
 On 2026-08-10 the lab manager authorized one cross-instrument **provisional composition pass**. That mode may create unpublished drafts for blocked instruments so reviewers can see the complete SOP side, intended visual-map composition, missing assets, unresolved decisions, and likely layout exceptions together. It does not make a proposed workflow canonical or relax any release gate. Follow [Provisional Placeholder Draft Mode](#provisional-placeholder-draft-mode) whenever that mode is named in the assignment.
 
 That set was then audited. **Read [`audit-2026-08-10.md`](audit-2026-08-10.md) before editing any prototype or drafting a new one.** It records 3 blocker, 7 major, and 8 minor findings against all eleven files with per-finding source lines and required corrections, plus the validation evidence and the checks that could not be completed. Three of its conclusions change how this procedure should be applied:
@@ -148,12 +150,20 @@ Advanced or accessory workflows do not belong in the primary guide merely becaus
 
 The default template has no inset slot. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. When an approved Level 1 workflow genuinely requires two control surfaces or several mutually exclusive interface states, do not narrow the curriculum to protect the template: keep the work order blocked until a specific multi-view variant is reviewed and locked, then scope its CSS to that instrument. Instron and Raman currently require that decision.
 
+## Workflow-Selection Gate
+
+Complete this gate before screenshot selection, cropping, callout work, page composition, or CSS/layout tuning. The software map must derive from the staff-recommended Level 1 operating path, not from whichever screen, control, or capture is most prominent or easiest to fit.
+
+For the intended task, identify the distinct available software paths and control surfaces, then verify which path staff actually teach. Record the recommended sequence and gestures, the screens and interface states that must be shown, the controls to emphasize or avoid, the exception path, and the authorization boundary. Check these choices against the canonical instrument page, instrument specification, capture work order, and explicit staff feedback; capture availability alone is not evidence of instructional priority.
+
+If multiple plausible workflows or control sets remain and the assignment does not choose among them, stop mechanical work and add a stable-ID question to the sidecar review ledger. Do not improvise a choice from interface prominence, a manufacturer manual, or general domain knowledge. A provisional placeholder may expose the unresolved selection, but it may not present an inferred workflow as instruction. The earlier Phenom XL draft's coarse-slider map is the standing example of why this gate is required: the interface offered several ways to control imaging, and building from the most visible controls before confirming the recommended student path produced a formally complete but operationally misleading guide.
+
 ## Mechanical Work Order
 
 For each instrument, follow these steps in order.
 
 1. Read this file, the [`sop-visual-map-template.md`](sop-visual-map-template.md) wrapper, the [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) HTML source, and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md). For FTIR, Phenom XL, Phenom Pure, XRD, Instron, optical, Raman, or hardness media, also read [`capture-integration-workorder-2026-08-12.md`](capture-integration-workorder-2026-08-12.md).
-2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Do not use memory or a manufacturer manual to fill gaps.
+2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Complete the [Workflow-Selection Gate](#workflow-selection-gate) and record the selected staff-recommended path before beginning mechanical work. Do not use memory or a manufacturer manual to fill gaps.
 3. Check the specification's status and the assignment mode. For a normal release-candidate task, **BLOCKED** means do not create a guide. For an explicitly authorized provisional placeholder pass, create the unpublished composition draft and carry every blocker into a specific sidecar-ledger entry, with a source comment where useful, without treating it as resolved.
 4. Copy the wrapper template to `quick-guides/<slug>-sop-map-prototype.md` and the content template to `_includes/quick-guides/<slug>-sop-map-prototype.html`. Keep their basenames identical. Keep `published: false`, the prototype permalink, screen warning, and review badges in the wrapper and content.
 5. Replace wrapper metadata and only the bracketed content fields, explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, guidance-box text, and authorized provisional placeholders in the include.
@@ -170,6 +180,7 @@ Stop without drafting, and record the issue, when any of these applies:
 
 * the default beginner workflow has not been selected;
 * the controls required by the approved Level 1 workflow have not been selected;
+* multiple plausible software workflows or control sets exist and the staff-recommended Level 1 path has not been verified;
 * the canonical SOP and detailed instructions conflict;
 * an exact control name or its current appearance is unverified;
 * a required loading, clearance, interlock, or quality-decision image is missing;
