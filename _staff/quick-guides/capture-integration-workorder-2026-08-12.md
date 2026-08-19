@@ -79,32 +79,31 @@ The compact guide intentionally uses the mechanics of good solid-sample contact,
 
 **Source folder:** `PhenomXL/`
 
-**Status:** selectively imported and integrated 2026-08-12. Three assets were copied: `livesem-imaging-controls.png` (2362x492, cropped from `SEM-right-panel.PNG` at native resolution to match the locked 4.80:1 crop window), `sample-height-insufficient-clearance.jpg`, and `sample-height-correct.jpg` (both 1800x765, matched framing, EXIF/GPS stripped). A `phenom-xl-page.svg` QR asset was generated with the same parameters that reproduce the committed FTIR QR byte-for-byte.
-
-`SEM-top-panel.PNG` was deliberately **not** imported. The locked composition allows one primary map image, and the multi-state layout variant has not been reviewed, so the System/Live settings panel remains an explicit review gap in the draft rather than an improvised second view.
+**Status:** re-triaged and expanded 2026-08-18 under the reviewed Phenom XL multi-view variant. The original three 2026-08-12 assets and QR remain. Six additional sanitized PNGs now support the actual operator workflow: a whole-screen LiveSEM orientation view, the lower-left routine controls, Focus in Area, the blue `F` fine-focus state, the System/Live settings panel, and NavCam navigation. The coarse-slider crop remains in the repository as archive/supporting evidence but is no longer displayed as the recommended student method.
 
 ### Use
 
 | Dropbox source | Proposed repository name | Purpose |
 | --- | --- | --- |
-| `SEM-right-panel.PNG` | `assets/img/quick-guides/phenom-xl/livesem-imaging-controls.png` | Best clean routine LiveSEM state for magnification, focus, contrast, brightness, rotation, acquisition/navigation context |
-| `SEM-top-panel.PNG` | `assets/img/quick-guides/phenom-xl/livesem-system-settings.png` | Essential second state for accelerating voltage, beam intensity, detector, vacuum, averaging, and scan size. **Not imported 2026-08-12** — deferred until a multi-state layout variant is reviewed and locked |
-| `sample-height-incorrect.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-insufficient-clearance.jpg` | Preferred stop half of the matched XL clearance question |
-| `sample-height-correct.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-correct.jpg` | Preferred continue half; the sample is visibly 5–7 mm below the tray top |
+| `SEM.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-livesem-overview.png` | Complete LiveSEM orientation view with edge chevrons, left controls, camera, and persistent right mode rail |
+| `SEM.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-routine-controls.png` | Enlarged lower-left magnification, automatic brightness/contrast, focus, and option-triangle controls |
+| `SEM-select-focus1.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-focus-in-area.png` | Tight focal-area-box crop; excludes the bottom metadata bar |
+| `SEM-select-focus1.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-focus-fine.png` | Tight lower-left blue `F` fine-focus state; excludes the sample label |
+| `SEM-top-panel.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-system-live-settings.png` | Accelerating voltage, beam intensity, Live averaging Medium, and Live scan size 960×540 |
+| `navcam-sample.PNG` | `assets/img/quick-guides/phenom-xl/phenom-xl-navcam-navigation.png` | Complete NavCam state with load/unload, spatial target, and Move to SEM context |
+| `sample-height-incorrect.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-insufficient-clearance.jpg` | Supporting stop half of the matched XL clearance question; removed from Side 2 in the 2026-08-18 variant |
+| `sample-height-correct.JPG` | `assets/img/quick-guides/phenom-xl/sample-height-correct.jpg` | Supporting continue half; removed from Side 2 while the full clearance rule remains on Side 1 |
 
-Use `SEM-right-panel.PNG` as the base software image and `SEM-top-panel.PNG` as the required second interface state. The five planned functions do not coexist legibly in one capture. Do not improvise a two-view design: retain the layout blocker until a specific variant is reviewed, then copy only the views that variant uses.
-
-The height pair is safely photographed outside the chamber and asks the correct question. `sample-over-height.JPG` is a stronger, obviously unsafe example, but `sample-height-incorrect.JPG` is the closer composition match to `sample-height-correct.JPG` and better represents insufficient clearance. Staff may choose the stronger stop image if clarity matters more than matching composition.
+Use the six 2026-08-18 software views together only in the scoped Phenom XL variant. Keep annotations in HTML/CSS so the raster evidence stays unmodified. `SEM-right-panel.PNG` must not return as the primary map: its large sliders are coarse and are not the recommended routine control path.
 
 ### Supporting only
 
-* `navcam-sample.PNG`: useful current NavCam loading/navigation state.
 * `navcam-empty.PNG`: acceptable representation of the clean end state; the clean empty XL tray is normally stored inside the instrument.
-* `SEM.PNG` and `SEM-bottom-panel.PNG`: clean alternate interface states, but the essential controls are less complete than the chosen pair.
-* `SEM-select-focus1.PNG`, `SEM-select-focus-2.PNG`, and `SEM-select-focus-not-Fine.PNG`: detailed focus-mode evidence for canonical or trainer material.
+* `SEM-right-panel.PNG` and its repository crop `livesem-imaging-controls.png`: coarse-slider evidence only; do not teach it as the routine student method.
+* `SEM-select-focus-2.PNG` and `SEM-select-focus-not-Fine.PNG`: additional focus-mode evidence; their bottom data bars contain the private `mineral-ID` label, so only sanitized crops may be used.
 * `sample-over-height.JPG`: stronger stop example if staff chooses it over the matched pair.
 * `sample-height-correct-detail.JPG`: close-up of the correct condition, useful in detailed instructions.
-* `SEM-too-bright.PNG`: usable image-quality teaching example, but the Quick Guide's immediate pair is the physical clearance decision.
+* `SEM-too-bright.PNG`: usable image-quality teaching example, but automatic brightness/contrast and the focus workflow have higher Side 2 priority.
 * `navcam-menus.PNG`, `moving-to-navcam.PNG`, and `phenom-status.PNG`: transition/status evidence rather than the primary map.
 
 ### Exclude from the primary Quick Guide
@@ -115,9 +114,9 @@ The height pair is safely photographed outside the chamber and asks the correct 
 
 ### Preserved decisions and open work
 
-The NavCam empty view may stand for the normal clean tray stored inside the XL. No new, more perfectly aligned height pair is required unless staff rejects the current clarity. Still unresolved: the reviewed multi-state map layout; exact visible icon/label verification; EDS training boundary; save/export; and final tray/chamber state approval.
+The NavCam empty view may stand for the normal clean tray stored inside the XL. No new, more perfectly aligned height pair is required unless staff rejects the current clarity. Still unresolved: a sanitized capture of the right-click focus menu with `Focus in Area` visible; staff verification of each icon/function and the settings primer; EDS training boundary; save/export; final tray/chamber state; and physical print/duplex approval. Track these by stable ID in `phenom-xl-review-2026-08-18.md`, not as rendered cards on the guide.
 
-**Screening notes from the 2026-08-12 import.** Three otherwise-usable captures were rejected on privacy/clutter grounds rather than image quality: `customize.PNG` (visible `J:/_COURSES/3.000` course path), `phenom-status.PNG` (internal IP address `192.168.200.101`), and `SEM-bottom-panel.PNG` (a `mineral-ID` sample label and acquisition timestamp in the databar). The MIT asset barcode `MIT-0534630` and bench signage were cropped out of both height photographs. All four candidate iPhone photographs carried GPS coordinates, which were stripped; the two imported files verify as carrying no EXIF keys.
+**Screening notes from the 2026-08-12 and 2026-08-18 imports.** Three otherwise-usable captures were rejected on privacy/clutter grounds rather than image quality: `customize.PNG` (visible course path), `phenom-status.PNG` (internal IP address), and the untrimmed `SEM-bottom-panel.PNG` (sample label and acquisition timestamp). The selected focus crops exclude the bottom data bar and its private sample label. The MIT asset barcode and bench signage were cropped out of both height photographs. All four candidate iPhone photographs carried GPS coordinates, which were stripped; the two imported files verify as carrying no EXIF keys.
 
 Tighter crops of the height pair were trialled and **rejected**: re-centring each photograph independently broke the matched scale and made the acceptable stub appear closer to the rule than the stop case. The committed pair keeps identical framing so the clearance difference reads correctly.
 

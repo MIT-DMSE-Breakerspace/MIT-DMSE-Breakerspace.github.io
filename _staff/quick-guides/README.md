@@ -12,7 +12,7 @@ The locked release-candidate model was approved on 2026-08-07 for **unpublished 
 
 The compact one-line title/subtitle treatment and 0.04 in advisory-spacing trial from 2026-08-11 also remains unreviewed. Automated print-media measurement reports a non-overlapping trained-user-note/SOP-title boundary on all eleven prototypes, but nobody has visually reviewed the complete set since the change. Open the rendered set before treating this strategy or the header-layout finding as approved.
 
-**Phenom XL capture integration — 2026-08-12:** the XL draft now carries real evidence in place of its useful placeholders — one LiveSEM imaging-controls map image with four HTML/SVG callouts on the visibly labelled Magnification, Focus, Contrast, and Brightness sliders; the matched sample-height pair; and a generated page QR. Automated print measurement gives two Letter sheets at 1054.08 px with a clear note/title boundary (-0.016 px) and no bullet/footer collision, the emitted PDF is `/Count 2` with Letter MediaBox, and the QR decodes from a 300 dpi page render. Browser review at 1440, 1024, and 768 shows no horizontal overflow after the reminders caption was aligned to the FTIR pattern. `check-quick-guide-sources`, `check-sop-contract`, `check-site-quality`, `check-accessibility`, and `validate-html` all pass; because the draft is `published: false` it is absent from `_site`, so it was additionally validated by pointing the repo's own Nu validator and pa11y at an `--unpublished` build (both clean). Still unreviewed: the physical 100% duplex print proof and staff technical sign-off. The XL draft stays blocked — the multi-state top-panel layout, the icon-only acquisition and automatic brightness/contrast functions, the EDS boundary, save/export, and the final tray/chamber state are all unresolved and carried as review gaps on the sheet itself.
+**Phenom XL workflow revision — 2026-08-18:** the unpublished XL draft now uses a reviewed instrument-specific multi-view Side 2 assembled from six sanitized current captures. It teaches the recommended lower-left control path, automatic brightness/contrast, autofocus and Focus in Area with the hidden `F` fine-focus state, NavCam navigation, `Move to SEM`, capture, screen organization, and a compact live/capture settings primer. Internal review metadata has moved off both printable sheets into [`phenom-xl-review-2026-08-18.md`](phenom-xl-review-2026-08-18.md), anchored from source comments. Automated proof confirms exactly two Letter pages, no clipping or section/footer overlap, clean local HTML and accessibility checks, and two QR codes that decode from 300 dpi renders; the final color and grayscale page renders were also inspected. Keep the draft unpublished: staff technical review, a current right-click focus-menu capture, the EDS boundary, save/export convention, final tray/chamber state, and a physical color/grayscale duplex proof remain open.
 
 On 2026-08-10 the lab manager authorized one cross-instrument **provisional composition pass**. That mode may create unpublished drafts for blocked instruments so reviewers can see the complete SOP side, intended visual-map composition, missing assets, unresolved decisions, and likely layout exceptions together. It does not make a proposed workflow canonical or relax any release gate. Follow [Provisional Placeholder Draft Mode](#provisional-placeholder-draft-mode) whenever that mode is named in the assignment.
 
@@ -52,7 +52,7 @@ Every candidate produced from this model is:
 * exactly two US Letter pages for duplex printing, long-edge flip;
 * one complete normal-use workflow, from the expected ready state back to that state;
 * Side 1: the canonical SOP in the left column and three guidance boxes in the right column;
-* Side 2: one annotated control map, an immediate quality or readiness decision, and compact reminders;
+* Side 2: one annotated control map by default, or a reviewed instrument-specific multi-view map when the approved workflow requires several control surfaces or states, plus an immediate quality or readiness decision and compact reminders;
 * an unpublished review artifact until staff approval and physical proof;
 * sample-agnostic unless the canonical procedure or approved Level 1 system check genuinely requires a particular reference or consumable;
 * usable in grayscale and understandable without relying on background color.
@@ -72,10 +72,10 @@ This mode is active only when the lab manager explicitly commissions a provision
 * Create the paired `quick-guides/<slug>-sop-map-prototype.md` wrapper and `_includes/quick-guides/<slug>-sop-map-prototype.html` content source with `published: false` in the wrapper. Do not alter the existing published Quick Guide, the FTIR reference prototype, a canonical instrument page, or a staff training guide.
 * Mark the screen banner and both review badges **Provisional composition draft — incomplete**. Every footer must say **Provisional**, not merely **Prototype**.
 * Copy the complete canonical SOP onto Side 1 under the locked headings. Do not replace it with the Level 1 exercise or broaden it to enumerate taught capabilities.
-* Use established Level 1 scope and map functions from the work order. A proposed or undecided item must remain visibly labeled as a review gap; it must not be written as an instruction or policy.
+* Use established Level 1 scope and map functions from the work order. Record every proposed or undecided item in a staff-side review ledger with a stable ID; it must not be written as an instruction or policy on the guide.
 * Replace every missing, obsolete, private, annotated, unapproved, or insufficient-resolution image with the standardized frame below. The visible description must come from the work order and say exactly what must be captured, which state must be shown, and what release gate remains.
-* Do not draw fake interface controls, callout rectangles, leaders, numbers, graphs, results, or QR patterns inside a placeholder. Do not generate or redraw an instrument interface. A multi-view requirement uses one placeholder that names the required views and the unresolved layout decision; it does not invent an unreviewed multi-view layout.
-* If an exact control label is unverified, list it only as **Label to verify: `<work-order wording>`** inside the placeholder or review-gap block. Do not put it in a numbered control key.
+* Do not draw fake interface controls, callout rectangles, leaders, numbers, graphs, results, or QR patterns inside a placeholder. Do not generate or redraw an instrument interface. Until an instrument-specific multi-view variant is reviewed, use one placeholder that names the required views and the unresolved layout decision.
+* If an exact control label is unverified, list it only as **Label to verify: `<work-order wording>`** in the sidecar ledger and omit it from the numbered control key.
 * A missing QR asset uses the compact QR placeholder and retains the plain-text canonical URL.
 * Preserve every blocker from the work order. A provisional draft can exist while remaining **BLOCKED FOR TECHNICAL COMPLETION AND RELEASE**.
 * The target remains two Letter pages. If the full canonical SOP or honest placeholder scope does not fit, do not shrink type, omit content, or silently redesign the template. Keep the draft, record the rendered page count and overflow, and mark the layout exception for review.
@@ -92,16 +92,21 @@ Use this exact image-placeholder structure, adding the `--map`, `--quality`, or 
 </div>
 ```
 
-Use this structure when a curriculum, control-set, quality decision, end state, or layout choice is unresolved:
+When a curriculum, control-set, quality decision, end state, or layout choice is unresolved, add or update a sidecar file under `_staff/quick-guides/`. Use stable IDs and enough detail that a lab assistant can identify the required decision or capture without reading commit history:
 
-```html
-<div class="quick-guide-sop-map-review-gap">
-  <strong>Review gap</strong>
-  <p>Decision required: [COPY OR CONCISELY RESTATE THE WORK-ORDER RELEASE GATE].</p>
-</div>
+```markdown
+| ID | Status | Source anchor | Release consequence | Note |
+| --- | --- | --- | --- | --- |
+| `slug.topic` | Open | Side 2, section heading | Blocks technical completion | Decision or evidence required. |
 ```
 
-These are review labels, not `TODO` markers. They must be specific enough that a lab assistant can identify the required decision or capture without reading commit history.
+When a precise source anchor helps, place a non-rendering comment at the affected location:
+
+```html
+<!-- review-id: slug.topic -->
+```
+
+Do not put rendered review-gap cards inside `.quick-guide-sheet`. The visible provisional badge communicates review status; the ledger carries the internal detail. A future screen-only review drawer may read the ledger, but it must remain outside the sheets and hidden in print. Existing legacy prototypes need not be migrated unless their assignment includes that work.
 
 ## Fixed Versus Replaceable
 
@@ -110,8 +115,8 @@ These are review labels, not `TODO` markers. They must be specific enough that a
 | Page size, two-side composition, columns, spacing, type sizes, colors, footers, review badge, and CSS classes | **Locked. Do not change.** |
 | Heading levels and section order | **Locked. Do not change.** |
 | Three Side 1 guidance boxes | **Locked structure. Replace only the instrument-specific text described below.** |
-| Side 2 control-map image count | One primary annotated image by default. Do not add an inset or second map unless the instrument work order explicitly identifies multiple essential control surfaces or interface states and a separate layout variant has been reviewed and locked first. In provisional mode, use one descriptive multi-view placeholder rather than inventing the variant. |
-| Side 2 decision panels | Two panels using the existing stop/ready treatment. They may show bad/good output, incorrect/correct loading, or stop/continue system state as specified for the instrument. |
+| Side 2 control-map image count | One primary annotated image by default. A reviewed instrument-specific variant may use several verified views when the approved workflow requires multiple control surfaces or states. Before that review, use one descriptive multi-view placeholder. |
+| Side 2 decision panels | Two panels using the existing stop/ready treatment by default. A reviewed instrument-specific variant may replace them when higher-priority operational controls need the space and the same readiness rule remains legible on Side 1. |
 | Instrument title, software/map title, subtitle, URL, QR asset, owner/date, SOP bullets, control labels, captions, and image paths | Replace from the canonical page and the instrument specification. Provisional mode uses the standardized placeholders when a source or exact label is not approved. |
 | Inline SVG target rectangles, leaders, and number locations | Reposition mechanically for the approved images. Keep the annotation style unchanged. |
 | Canonical instrument pages, staff guides, published Quick Guides, and shared CSS | **Out of scope. Do not edit.** |
@@ -141,7 +146,7 @@ No instrument currently needs a fourth general-purpose box. If three boxes canno
 
 Advanced or accessory workflows do not belong in the primary guide merely because they are common. Examples include Phenom Pure cold-stage work, independent Phenom XL EDS operation, LEXT analysis/reporting, fluorescence on the Duetta, or automated ion-mill recipes. A method that staff intentionally teach in Level 1 is not excluded merely because it is more advanced than the most basic acquisition; record that curriculum decision explicitly and map only the controls needed to teach it.
 
-The locked template has no inset slot. Do not invent one. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. When an approved Level 1 workflow genuinely requires two control surfaces or several mutually exclusive interface states, do not narrow the curriculum to protect the template: keep the work order blocked until a specific multi-view variant is reviewed and locked. Instron and Raman currently require that decision.
+The default template has no inset slot. When both software control-finding and physical readiness matter, use the primary image for the software and the existing stop/ready panels for one matched physical decision. When an approved Level 1 workflow genuinely requires two control surfaces or several mutually exclusive interface states, do not narrow the curriculum to protect the template: keep the work order blocked until a specific multi-view variant is reviewed and locked, then scope its CSS to that instrument. Instron and Raman currently require that decision.
 
 ## Mechanical Work Order
 
@@ -149,15 +154,15 @@ For each instrument, follow these steps in order.
 
 1. Read this file, the [`sop-visual-map-template.md`](sop-visual-map-template.md) wrapper, the [`sop-visual-map-content-template.html`](sop-visual-map-content-template.html) HTML source, and the instrument's complete entry in [`instrument-specifications.md`](instrument-specifications.md). For FTIR, Phenom XL, Phenom Pure, XRD, Instron, optical, Raman, or hardness media, also read [`capture-integration-workorder-2026-08-12.md`](capture-integration-workorder-2026-08-12.md).
 2. Read the canonical instrument page's H1, SOP, routine detailed workflow, Level 1 exercise, save/export directions, quality gate, stop conditions, and shutdown. Record the SOP spine, Level 1 operations, and required map controls separately. Do not use memory or a manufacturer manual to fill gaps.
-3. Check the specification's status and the assignment mode. For a normal release-candidate task, **BLOCKED** means do not create a guide. For an explicitly authorized provisional placeholder pass, create the unpublished composition draft and carry every blocker into a specific placeholder or review-gap block without treating it as resolved.
+3. Check the specification's status and the assignment mode. For a normal release-candidate task, **BLOCKED** means do not create a guide. For an explicitly authorized provisional placeholder pass, create the unpublished composition draft and carry every blocker into a specific sidecar-ledger entry, with a source comment where useful, without treating it as resolved.
 4. Copy the wrapper template to `quick-guides/<slug>-sop-map-prototype.md` and the content template to `_includes/quick-guides/<slug>-sop-map-prototype.html`. Keep their basenames identical. Keep `published: false`, the prototype permalink, screen warning, and review badges in the wrapper and content.
 5. Replace wrapper metadata and only the bracketed content fields, explicitly identified image paths, captions, callout labels, SVG coordinates, SOP bullets, guidance-box text, and authorized provisional placeholders in the include.
 6. Copy the canonical SOP's order and technical meaning exactly onto Side 1. Minor removal of repeated context is allowed only when the same sentence remains unambiguous. If it does not fit, do not summarize, shrink type, omit a step, or substitute the more specific Level 1 workflow. A normal candidate stops; a provisional draft remains visibly layout-blocked and records the rendered overflow.
-7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label or verified icon function, or the canonical page and interface disagree, a normal candidate stops. In provisional mode, omit the numbered annotation/key and use the standardized placeholder with the unverified names explicitly labeled **Label to verify**.
+7. Use the precise control labels recorded in the specification. If a screenshot does not visibly support a label or verified icon function, or the canonical page and interface disagree, a normal candidate stops. In provisional mode, omit the numbered annotation/key, use the standardized placeholder, and put the unverified wording in the sidecar ledger as **Label to verify**.
 8. Draw each callout as: outlined rectangle around the target, leader line away from the target, numbered circle at the free end, and matching numbered key. The circle or leader may not cover the control, its label, or another callout.
 9. Use a sanitized, unannotated source screenshot at native resolution. Cropping and proportional resizing for legibility are allowed. Do not redact a private screenshot into a final source, redraw the UI, sharpen it with generated content, alter displayed values, or bake annotations into the raster image.
 10. Run `script/check-quick-guide-sources` and the other repository checks, build the site, render the candidate as a paginated PDF, inspect both page images, extract the PDF text, and verify the QR at print resolution.
-11. Leave the candidate unpublished. Report files changed, validation results, and every unresolved question. Use one commit per instrument even during an authorized cross-instrument provisional pass.
+11. Leave the candidate unpublished. Report files changed, validation results, and every unresolved question, and reconcile the sidecar ledger before committing. Use one commit per instrument even during an authorized cross-instrument provisional pass.
 
 ## Release-Candidate Stop Rules
 
@@ -175,7 +180,7 @@ Stop without drafting, and record the issue, when any of these applies:
 * the approved workflow requires multiple control surfaces or interface states and no instrument-specific layout variant has been reviewed and locked;
 * the requested instrument is marked **BLOCKED** in the specification.
 
-Do not insert `TODO`, guessed prose, generic safety language, or placeholder controls into a release candidate. A blocked report is the correct result. In explicitly authorized provisional mode, the standardized image frames and review-gap blocks are allowed; they expose the same blockers without resolving or disguising them.
+Do not insert `TODO`, guessed prose, generic safety language, or placeholder controls into a release candidate. A blocked report is the correct result. In explicitly authorized provisional mode, standardized image frames and the staff-side ledger expose the blockers without resolving, disguising, or rendering them on the guide.
 
 ## Validation Gate
 
@@ -207,7 +212,7 @@ For a provisional placeholder pass, completion means something narrower:
 * the candidate remains unpublished and is unmistakably labeled incomplete;
 * the full canonical SOP is present and has been compared line by line;
 * every missing or unapproved image has a specific standardized placeholder;
-* every unresolved decision needed to understand the composition has a specific review-gap block;
+* every unresolved decision needed to understand the composition has a specific sidecar-ledger entry and, when useful, a non-rendering source anchor;
 * no fake control, generated interface, guessed label, guessed acceptance criterion, or proposed policy appears as settled content;
 * the site builds, the candidate renders, and the actual page count and any clipping or overflow are reported;
 * every original work-order release gate remains open for technical completion and publication.
@@ -224,4 +229,4 @@ For an explicitly commissioned cross-instrument provisional pass, use the separa
 
 The 2026-08-10 provisional assignment is exactly this:
 
-> Build unpublished provisional SOP-and-visual-map composition drafts for Phenom XL, Phenom Pure, XRD, Instron, optical, Raman, hardness tester, particle size, UV-Vis, and ion mill. Work one instrument at a time and make one local commit per instrument. Leave the FTIR reference prototype, all existing published Quick Guides, canonical instrument pages, staff training guides, this README, the template, and shared CSS untouched. Copy the complete canonical SOP to Side 1. On Side 2, use an approved current asset only when the work order supports it; otherwise use the standardized descriptive image frame. Use a review-gap block for each unresolved curriculum, control-set, result-state, end-state, or layout decision needed to understand the composition. Do not generate an interface, fabricate a result, guess a control label, add an acceptance criterion, or make a proposal read as policy. Keep every file `published: false` and unmistakably labeled incomplete. Render each candidate, record its actual page count and any clipping or overflow, and do not shrink or omit content to force two pages. Run the full repository checks after the ten instrument commits. Do not push, merge, or change pull-request state.
+> Build unpublished provisional SOP-and-visual-map composition drafts for Phenom XL, Phenom Pure, XRD, Instron, optical, Raman, hardness tester, particle size, UV-Vis, and ion mill. Work one instrument at a time and make one local commit per instrument. Leave the FTIR reference prototype, all existing published Quick Guides, canonical instrument pages, and staff training guides untouched unless the assignment explicitly includes a procedure/template update. Copy the complete canonical SOP to Side 1. On Side 2, use an approved current asset only when the work order supports it; otherwise use the standardized descriptive image frame. Record each unresolved curriculum, control-set, result-state, end-state, or layout decision in a staff-side review ledger with a stable ID and add a non-rendering source comment where useful; do not render review-gap cards inside either sheet. Do not generate an interface, fabricate a result, guess a control label, add an acceptance criterion, or make a proposal read as policy. Keep every file `published: false` and unmistakably labeled incomplete. Render each candidate, record its actual page count and any clipping or overflow, and do not shrink or omit content to force two pages. Run the full repository checks after the ten instrument commits. Do not push, merge, or change pull-request state.

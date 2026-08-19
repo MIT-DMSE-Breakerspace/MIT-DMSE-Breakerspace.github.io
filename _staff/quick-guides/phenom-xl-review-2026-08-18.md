@@ -4,7 +4,7 @@ review_date: 2026-08-18
 target_branch: codex/quick-guide-rollout
 target_commit: ec78694a29ec6539c4b73ba9bf07f55761483d07
 target_guide: quick-guides/phenom-xl-sop-map-prototype.md
-implementation_status: revision_requested
+implementation_status: implemented_pending_staff_review
 ---
 
 # Phenom XL Quick Guide review and implementation brief
@@ -31,14 +31,14 @@ Use this model instead:
 
 ### Phenom XL review ledger
 
-| ID | Status | Release consequence | Note |
-| --- | --- | --- | --- |
-| `phenom-xl.save-export` | Open | Blocks technical completion | Confirm the routine image label, save, export, and copy convention. |
-| `phenom-xl.final-state` | Open | Blocks technical completion | Confirm the final XL tray/chamber state and exact shutdown handoff. |
-| `phenom-xl.control-captures` | Open | Blocks final Side 2 | Capture or select sanitized states that show the recommended lower-left controls and focus-in-area behavior. |
-| `phenom-xl.settings-copy` | Open | Blocks final Side 2 | Staff-review the concise accelerating-voltage, beam-intensity, resolution, and averaging primer. |
-| `phenom-xl.eds-boundary` | Open | Blocks curriculum sign-off, not primary SEM map drafting | Approve or revise the proposed brief Level 1 capability preview plus separate Level 2 independent-operation boundary. Do not teach EDS operation on this guide. |
-| `phenom-xl.print-proof` | Open | Blocks printing/installation | Repeat 100% Letter color, grayscale, duplex, clipping, footer, and QR checks after the layout changes. |
+| ID | Status | Source anchor | Release consequence | Note |
+| --- | --- | --- | --- | --- |
+| `phenom-xl.save-export` | Open | Side 1, after “Stop and ask staff” | Blocks technical completion | Confirm the routine image label, save, export, and copy convention. |
+| `phenom-xl.final-state` | Open | Side 1, after “Stop and ask staff” | Blocks technical completion | Confirm the final XL tray/chamber state and exact shutdown handoff. |
+| `phenom-xl.control-captures` | Partially resolved | Side 2, “Use the lower-left controls” | Blocks final Side 2 | Sanitized lower-left, Focus in Area, and fine-focus states were selected on 2026-08-18. A current capture of the right-click focus menu with `Focus in Area` visible is still missing; keep the operator-verified instruction provisional until staff confirms it against the instrument. |
+| `phenom-xl.settings-copy` | Drafted for staff review | Side 2, “Choose live and capture settings” | Blocks technical completion | Review the concise accelerating-voltage, beam-intensity, resolution, and averaging primer. The source capture confirms that “Medium + 960 × 540” refers to Live averaging and Live scan size, not beam intensity. |
+| `phenom-xl.eds-boundary` | Open | Side 2, “How the screen is organized” | Blocks curriculum sign-off, not primary SEM map drafting | Approve or revise the proposed brief Level 1 capability preview plus separate Level 2 independent-operation boundary. Do not teach EDS operation on this guide. |
+| `phenom-xl.print-proof` | Automated checks passed; physical proof open | Side 2 footer | Blocks printing/installation | 2026-08-18: exactly two Letter pages; no page-edge, section, or footer overlap; color and grayscale renders inspected; both QR codes decode at 300 dpi. Physical color/grayscale duplex proof remains open. |
 
 ## Required correction: remove the coarse-slider map
 
@@ -143,20 +143,20 @@ Call out these controls explicitly:
 
 State the lab's normal live/navigation starting point clearly:
 
-- **Beam intensity: Medium**
-- **Live resolution: 960 × 540**
+- **Live averaging: Medium**
+- **Live scan size: 960 × 540**
 
 For captures, explain that settings should match the sample's charging behavior, magnification, stability, and required resolution. “Higher quality” settings do not necessarily produce the highest-quality image. Longer dwell, higher intensity, larger scans, or more averaging can make a charging or drifting sample look worse.
 
 Keep the primer compact and decision-oriented rather than presenting a large parameter table. The final staff-reviewed version should cover:
 
 - **Accelerating voltage:** what changing voltage does to surface sensitivity, interaction depth, charging, and usable signal; give directional guidance, not an unreviewed universal optimum.
-- **Beam intensity:** begin at Medium for routine live work; increase only when the sample remains stable and the imaging goal benefits, and reduce when charging or beam sensitivity appears.
+- **Beam intensity:** select the task-appropriate Low/Image/Point/Map mode; increase only when the sample remains stable and the imaging goal benefits, and reduce when charging or beam sensitivity appears. Do not imply that `Medium` is a beam-intensity choice in this interface.
 - **Resolution / scan size:** use 960 × 540 for live navigation; increase for a capture only when the additional pixels are useful and the sample remains stable.
 - **Averaging:** more averaging can reduce random noise on a stable field, but costs time and can amplify drift, charging, or beam-damage problems.
 - **Capture check:** after changing beam or capture settings, refocus and run automatic brightness/contrast again before capturing.
 
-The voltage language needs a quick staff technical review before it is written as settled instruction. The Medium + 960 × 540 live/navigation recommendation and the warning that nominally higher-quality settings can produce worse images are approved feedback for this revision.
+The voltage language needs a quick staff technical review before it is written as settled instruction. The Live averaging Medium + Live scan size 960 × 540 navigation recommendation and the warning that nominally higher-quality settings can produce worse images are approved feedback for this revision.
 
 ## Screenshot and crop plan
 
@@ -217,12 +217,20 @@ Do not modify the published Quick Guides, publish the prototype, broaden EDS aut
 - A complete-screen orientation view identifies the interface's major zones and explains that the panels slide in and out.
 - NavCam double-click navigation, load/unload, `Move to SEM`, the camera button, and the persistent right-side mode organization are all findable.
 - EDS modes may be named for orientation but independent EDS operation is not taught or implied.
-- The guide states Medium beam intensity and 960 × 540 for live/navigation.
+- The guide states Live averaging Medium and Live scan size 960 × 540 for navigation; it does not mislabel Medium as a beam-intensity option.
 - The settings primer warns that higher nominal quality can produce worse images on charging, drifting, or beam-sensitive samples.
 - Every mapped control and state is verified against an actual sanitized capture; no synthetic interface is introduced.
 - Critical screenshots remain recognizable in a 100% Letter print and in grayscale.
 - The artifact still produces exactly two Letter pages without clipping, overlap, or footer collision. Do not omit required operational content merely to preserve two pages; adjust the instrument-specific Side 2 layout first.
 - Repeat repository checks, unpublished-page HTML/accessibility checks, QR decoding, color/grayscale render inspection, and physical duplex proof after the final layout is locked.
+
+## Implementation validation — 2026-08-18
+
+- The generated PDF is exactly two US Letter pages (`612 × 792 pt`). Both fixed sheets measured `816 × 1054.078 px`; neither contained an element outside its page boundary, and both preserved an `8.797 px` body-to-footer gap.
+- The final color and grayscale page renders were inspected at 100% Letter composition. All critical captures and the blue/dark mouse-wheel-selection cue remain recognizable.
+- Both page QR codes decoded from 300 dpi renders to `https://breakerspace.mit.edu/instruments/phenom-xl.html`.
+- `script/check-quick-guide-sources`, `script/check-sop-contract`, `script/check-site-quality`, and `script/validate-html` pass. The unpublished Phenom page also has a clean local HTML5 parse and no Pa11y findings.
+- Physical color/grayscale duplex proof remains a staff action; automated evidence does not close that gate.
 
 ## Concise Parley implementation prompt
 

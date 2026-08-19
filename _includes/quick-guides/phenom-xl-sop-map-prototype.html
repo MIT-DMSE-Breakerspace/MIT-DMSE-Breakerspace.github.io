@@ -1,5 +1,5 @@
 
-<section class="instrument-quick-guide quick-guide-sop-map" id="quick-guide" aria-labelledby="phenom-xl-sop-map-title">
+<section class="instrument-quick-guide quick-guide-sop-map quick-guide-sop-map--phenom-xl" id="quick-guide" aria-labelledby="phenom-xl-sop-map-title">
   <div class="quick-guide-screen-bar">
     <div>
       <strong>Provisional composition draft — incomplete</strong>
@@ -95,16 +95,14 @@
           </figure>
         </aside>
 
-        <div class="quick-guide-sop-map-review-gap">
-          <strong>Review gap</strong>
-          <p>Decision required: Confirm the save/export convention and the final XL tray/chamber state before technical completion.</p>
-        </div>
+        <!-- review-id: phenom-xl.save-export -->
+        <!-- review-id: phenom-xl.final-state -->
       </div>
     </div>
 
     <footer class="quick-guide-footer">
       <span>Content derived from the canonical Phenom XL SOP - Owner: lab manager</span>
-      <span>Provisional 2026-08-12 - Page 1 of 2</span>
+      <span>Provisional 2026-08-18 - Page 1 of 2</span>
     </footer>
   </section>
 
@@ -118,115 +116,133 @@
       <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
     </header>
 
-    <div class="quick-guide-sop-map-map-body">
-      <section class="quick-guide-sop-map-map-section">
-        <div class="quick-guide-sop-map-map-heading">
-          <h3>LiveSEM imaging controls</h3>
-          <p>The routine imaging adjustments sit together in the right-hand <strong>Imaging controls</strong> panel.</p>
-        </div>
-
-        <figure class="quick-guide-sop-map-toolbar-figure">
-          <div class="quick-guide-sop-map-toolbar-crop">
-            <a href="{{ '/assets/img/quick-guides/phenom-xl/livesem-imaging-controls.png' | relative_url }}" target="_parent">
-              <img src="{{ '/assets/img/quick-guides/phenom-xl/livesem-imaging-controls.png' | relative_url }}" width="2362" height="492" loading="eager" decoding="async" alt="Phenom XL LiveSEM view with the right-hand Imaging controls panel showing labelled Magnification, Focus, Contrast, and Brightness sliders beside the live electron image.">
+    <div class="quick-guide-sop-map-map-body phenom-xl-map-body">
+      <section class="phenom-xl-map-section phenom-xl-orientation-section">
+        <figure class="phenom-xl-overview-figure">
+          <div class="phenom-xl-image-frame phenom-xl-overview-image">
+            <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-livesem-overview.png' | relative_url }}" target="_parent">
+              <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-livesem-overview.png' | relative_url }}" width="1920" height="1080" loading="eager" decoding="async" alt="Complete Phenom XL LiveSEM screen with the left control rail, blue panel chevrons, live image area, and persistent right-side mode rail visible.">
             </a>
-            <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 2362 492" preserveAspectRatio="none" aria-hidden="true">
-              <g class="quick-guide-sop-map-image-callout">
-                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1462" y="95" width="706" height="42" rx="3" />
-                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2168 116 L2236 116" />
-                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="2262" cy="116" r="26" />
-                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="2262" y="116">1</text>
-              </g>
-              <g class="quick-guide-sop-map-image-callout">
-                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1462" y="207" width="706" height="40" rx="3" />
-                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2168 227 L2236 227" />
-                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="2262" cy="227" r="26" />
-                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="2262" y="227">2</text>
-              </g>
-              <g class="quick-guide-sop-map-image-callout">
-                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1462" y="319" width="706" height="40" rx="3" />
-                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2168 339 L2236 339" />
-                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="2262" cy="339" r="26" />
-                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="2262" y="339">3</text>
-              </g>
-              <g class="quick-guide-sop-map-image-callout">
-                <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="2" vector-effect="non-scaling-stroke" x="1462" y="431" width="706" height="42" rx="3" />
-                <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="1.5" vector-effect="non-scaling-stroke" d="M2168 452 L2236 452" />
-                <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="2262" cy="452" r="26" />
-                <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="2262" y="452">4</text>
-              </g>
-            </svg>
+            <span class="phenom-xl-marker phenom-xl-marker--top" aria-hidden="true">1</span>
+            <span class="phenom-xl-marker phenom-xl-marker--left" aria-hidden="true">2</span>
+            <span class="phenom-xl-marker phenom-xl-marker--controls" aria-hidden="true">3</span>
+            <span class="phenom-xl-marker phenom-xl-marker--right" aria-hidden="true">4</span>
           </div>
-          <figcaption class="quick-guide-sop-map-control-key">
-            <span><b>1</b> Magnification</span>
-            <span><b>2</b> Focus</span>
-            <span><b>3</b> Contrast</span>
-            <span><b>4</b> Brightness</span>
-          </figcaption>
+          <figcaption>Whole-screen orientation; use the larger crops below for operating detail.</figcaption>
         </figure>
 
-        <div class="quick-guide-sop-map-review-gap">
-          <strong>Review gap</strong>
-          <p>Decision required: the top <strong>System</strong> and <strong>Live</strong> settings panel (accelerating voltage, beam intensity, detector, vacuum, averaging, scan size) is a second control surface that does not fit the locked one-image map. Review and lock a Phenom XL multi-state layout before mapping it. The unlabeled left-rail icons, including acquisition and automatic brightness/contrast, also still need icon-function verification at the instrument. Label to verify: acquisition camera control. Label to verify: automatic brightness/contrast adjustment.</p>
-        </div>
-
-        <div class="quick-guide-sop-map-review-gap">
-          <strong>Review gap</strong>
-          <p>Decision required: Approve or revise the proposed EDS training boundary: a short capability preview in general Phenom XL training and a separate Level 2 add-on before independent EDS operation. Do not map EDS controls until that boundary is approved.</p>
-        </div>
-      </section>
-
-      <section class="quick-guide-sop-map-map-section quick-guide-sop-map-quality-section">
-        <div class="quick-guide-sop-map-map-heading">
-          <h3>XL sample-height readiness</h3>
-          <p>Both trays were photographed outside the microscope. Judge clearance there; never load the insufficient-clearance state.</p>
-        </div>
-
-        <div class="quick-guide-sop-map-quality-grid">
-          <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
-            <div class="quick-guide-sop-map-quality-image">
-              <a href="{{ '/assets/img/quick-guides/phenom-xl/sample-height-insufficient-clearance.jpg' | relative_url }}" target="_parent">
-                <img src="{{ '/assets/img/quick-guides/phenom-xl/sample-height-insufficient-clearance.jpg' | relative_url }}" width="1800" height="765" loading="eager" decoding="async" alt="Removed Phenom XL sample tray held outside the microscope with a steel rule across the tray top edge; the mounted stub reaches almost to the rule, leaving very little clearance.">
-              </a>
-            </div>
-            <figcaption><strong>Stop:</strong> Not enough clearance. Do not load a loose, wet, shedding, or over-height sample. Lower or remount the sample, or ask staff.</figcaption>
-          </figure>
-
-          <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
-            <div class="quick-guide-sop-map-quality-image">
-              <a href="{{ '/assets/img/quick-guides/phenom-xl/sample-height-correct.jpg' | relative_url }}" target="_parent">
-                <img src="{{ '/assets/img/quick-guides/phenom-xl/sample-height-correct.jpg' | relative_url }}" width="1800" height="765" loading="eager" decoding="async" alt="Removed Phenom XL sample tray held outside the microscope with a steel rule across the tray top edge; the mounted stub sits clearly below the rule with a visible gap.">
-              </a>
-            </div>
-            <figcaption><strong>Ready to load:</strong> The sample is dry, firmly attached, free of loose particles, and approximately 5-7 mm below the tray top unless staff instruct otherwise.</figcaption>
-          </figure>
+        <div class="phenom-xl-orientation-key">
+          <h3>How the screen is organized</h3>
+          <ol>
+            <li><b>1</b><span><strong>Slideout panels:</strong> blue edge chevrons open and close the top, bottom, and side panels.</span></li>
+            <li><b>2</b><span><strong>Capture:</strong> the camera button on the left saves an SEM image.</span></li>
+            <li><b>3</b><span><strong>Routine controls:</strong> magnification, auto brightness/contrast, and focus are grouped at lower left.</span></li>
+            <!-- review-id: phenom-xl.eds-boundary -->
+            <li><b>4</b><span><strong>Modes:</strong> Imaging, Gallery, Live EDS/EDS, and Stitching stay on the right. This guide locates EDS only; it does not authorize independent EDS use.</span></li>
+          </ol>
         </div>
       </section>
 
-      <aside class="quick-guide-sop-map-map-reminders">
-        <div>
-          <h3>Acquisition reminder</h3>
-          <p>Use NavCam to navigate, move to LiveSEM, start zoomed out, focus, then increase magnification gradually. Refocus after changing magnification.</p>
+      <!-- review-id: phenom-xl.control-captures -->
+      <section class="phenom-xl-map-section phenom-xl-routine-section" aria-labelledby="phenom-xl-routine-title">
+        <div class="phenom-xl-section-heading">
+          <h3 id="phenom-xl-routine-title">Use lower-left controls — not the coarse sliders</h3>
+          <p>Blue (dark in grayscale) = mouse-wheel target.</p>
         </div>
-        <div>
-          <h3>Before unloading</h3>
-          <p>Stop any acquisition, save and copy needed data, then wear gloves to unload and leave the tray clean and stored correctly.</p>
+
+        <div class="phenom-xl-routine-grid">
+          <figure class="phenom-xl-control-figure">
+            <div class="phenom-xl-image-frame">
+              <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-routine-controls.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-routine-controls.png' | relative_url }}" width="250" height="720" loading="eager" decoding="async" alt="Enlarged lower-left LiveSEM controls showing blue-selected magnification, automatic brightness and contrast, fine focus F, focus, and the small lower-right option triangles.">
+              </a>
+            </div>
+            <figcaption><strong>Blue magnification</strong> = wheel target.</figcaption>
+          </figure>
+
+          <figure class="phenom-xl-focus-figure">
+            <div class="phenom-xl-focus-images">
+              <div class="phenom-xl-image-frame phenom-xl-focus-fine-image">
+                <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-focus-fine.png' | relative_url }}" target="_parent">
+                  <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-focus-fine.png' | relative_url }}" width="250" height="500" loading="eager" decoding="async" alt="Enlarged lower-left focus controls with the F and focus icons highlighted blue, indicating fine focus while Focus in Area is active.">
+                </a>
+              </div>
+              <div class="phenom-xl-image-frame phenom-xl-focus-area-image">
+                <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-focus-in-area.png' | relative_url }}" target="_parent">
+                  <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-focus-in-area.png' | relative_url }}" width="1000" height="650" loading="eager" decoding="async" alt="LiveSEM image with the blue Focus in Area box active over a small region of the specimen.">
+                </a>
+              </div>
+            </div>
+            <figcaption><strong>Focus in Area + F:</strong> the box is the live focal area; blue <strong>F</strong> gives the smaller focus step.</figcaption>
+          </figure>
+
+          <div class="phenom-xl-control-instructions">
+            <div class="phenom-xl-click-key">
+              <span><strong>Left-click</strong> runs Auto. A selected Manual mode instead hands that adjustment to the wheel; it is not the recommended routine path.</span>
+              <span><strong>Right-click</strong> a lower-right triangle for additional modes.</span>
+            </div>
+            <ol>
+              <li><strong>Brightness/contrast:</strong> left-click <strong>A</strong> for automatic brightness/contrast. Use automatic adjustment; manual brightness or contrast is not the routine student method.</li>
+              <li><strong>Focus:</strong> left-click the focus control for autofocus. If autofocus misses, right-click its triangle and choose <strong>Focus in Area</strong>.</li>
+              <li>With the focal-area box visible, use the wheel to rack focus in that box. Left-click the focus icon so <strong>F</strong> turns blue for fine steps; this hidden fine-focus state is normally needed for best focus.</li>
+              <li>When the box is sharp, click <strong>outside</strong> it to apply that focal plane to the full SEM image. Return the blue wheel target to magnification.</li>
+            </ol>
+          </div>
         </div>
+      </section>
+
+      <div class="phenom-xl-bottom-grid">
+        <section class="phenom-xl-map-section phenom-xl-navigation-card" aria-labelledby="phenom-xl-navigation-title">
+          <div class="phenom-xl-section-heading">
+            <h3 id="phenom-xl-navigation-title">Navigate, move, and capture</h3>
+          </div>
+          <figure>
+            <div class="phenom-xl-image-frame phenom-xl-navcam-image">
+              <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-navcam-navigation.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-navcam-navigation.png' | relative_url }}" width="1920" height="1080" loading="eager" decoding="async" alt="Complete Phenom XL NavCam screen showing the sample tray, left load and unload controls, and the microscope button on the persistent right mode rail.">
+              </a>
+              <span class="phenom-xl-marker phenom-xl-navcam-marker--load" aria-hidden="true">1</span>
+              <span class="phenom-xl-marker phenom-xl-navcam-marker--target" aria-hidden="true">2</span>
+              <span class="phenom-xl-marker phenom-xl-navcam-marker--sem" aria-hidden="true">3</span>
+            </div>
+            <figcaption><b>1</b> Load/unload &nbsp; <b>2</b> Double-click a NavCam target &nbsp; <b>3</b> Move to SEM</figcaption>
+          </figure>
+          <p>Start the SEM view zoomed out. Increase magnification gradually, refocus as needed, run auto brightness/contrast, then use the left-rail camera button to capture.</p>
+        </section>
+
+        <!-- review-id: phenom-xl.settings-copy -->
+        <section class="phenom-xl-map-section phenom-xl-settings-card" aria-labelledby="phenom-xl-settings-title">
+          <div class="phenom-xl-section-heading">
+            <h3 id="phenom-xl-settings-title">Choose live and capture settings</h3>
+          </div>
+          <figure>
+            <div class="phenom-xl-image-frame">
+              <a href="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-system-live-settings.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/phenom-xl/phenom-xl-system-live-settings.png' | relative_url }}" width="1800" height="1050" loading="eager" decoding="async" alt="Enlarged System and Live settings panel showing accelerating-voltage and beam-intensity choices, Live averaging Medium, and Live scan size 960 by 540 selected.">
+              </a>
+            </div>
+          </figure>
+          <ul>
+            <li><strong>Live/navigation:</strong> use <strong>Averaging Medium</strong> and <strong>Scan Size 960×540</strong>.</li>
+            <li><strong>Voltage and beam intensity:</strong> match the sample and task. Lower voltage emphasizes nearer-surface signal and can help some charging; higher voltage gives deeper/stronger signal but can worsen charging. Choose Low/Image/Point/Map for the task, and reduce intensity if charging, drift, or beam sensitivity appears.</li>
+            <li><strong>Capture:</strong> add pixels or averaging only when useful and stable. “Higher quality” settings can produce a worse image on a charging, drifting, or beam-sensitive sample. Refocus and run auto brightness/contrast after changing settings.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="phenom-xl-workflow-strip">
+        <p><strong>Routine path:</strong> Load → double-click NavCam target → Move to SEM → Live: Medium averaging + 960×540 → wheel magnification → auto B/C → autofocus or Focus in Area + F → capture settings → refocus + auto B/C → camera.</p>
         <figure>
           <img src="{{ '/assets/img/qr/phenom-xl-page.svg' | relative_url }}" alt="QR code linking to the full Phenom XL instrument page at breakerspace.mit.edu/instruments/phenom-xl.html">
-          <figcaption>Full instructions and troubleshooting</figcaption>
+          <figcaption>Full instructions</figcaption>
         </figure>
       </aside>
-
-      <div class="quick-guide-sop-map-review-gap">
-        <strong>Review gap</strong>
-        <p>Decision required: verify the top System/Live settings panel and the unlabeled left-rail icon functions, confirm save/export, and confirm the final tray/chamber state. This draft remains blocked for technical completion, publication, printing for use, and installation.</p>
-      </div>
     </div>
 
+    <!-- review-id: phenom-xl.print-proof -->
     <footer class="quick-guide-footer">
       <span>Visual map, not a replacement for training or the detailed operating instructions</span>
-      <span>Provisional 2026-08-12 - Page 2 of 2</span>
+      <span>Provisional 2026-08-18 - Page 2 of 2</span>
     </footer>
   </section>
 </section>

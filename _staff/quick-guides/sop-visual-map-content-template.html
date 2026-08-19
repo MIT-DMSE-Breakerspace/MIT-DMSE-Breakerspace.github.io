@@ -7,7 +7,8 @@
   Replace bracketed fields and the instrument-specific content authorized by
   README.md and instrument-specifications.md. Do not alter structure/classes.
   This is the default one-map composition. If a work order requires multiple
-  control surfaces or interface states, stop until a separate variant is reviewed.
+  control surfaces or interface states, stop until a separate instrument-specific
+  variant is reviewed; then scope the variant's structure and CSS to that guide.
 
   PROVISIONAL MODE ONLY, WHEN THE ASSIGNMENT EXPLICITLY AUTHORIZES IT:
   - Change both review badges and the screen warning to
@@ -18,8 +19,10 @@
     quick-guide-sop-map-placeholder--quality block inside its existing figure.
   - Replace a missing QR image with one compact
     quick-guide-sop-map-placeholder--qr block and retain the plain-text URL.
-  - Insert a quick-guide-sop-map-review-gap block only where the work order names
-    an unresolved decision needed to understand the proposed composition.
+  - Record unresolved decisions in a staff-side ledger under _staff/quick-guides/
+    with stable IDs, status, source anchor, release consequence, and note.
+  - Add a non-rendering source comment such as <!-- review-id: slug.topic -->
+    where a precise anchor helps. Do not render review-gap cards in either sheet.
   - Do not render these substitutions in the locked source template itself.
 -->
 <section class="instrument-quick-guide quick-guide-sop-map" id="quick-guide" aria-labelledby="[SLUG]-sop-map-title">
@@ -163,7 +166,7 @@
 
         <div class="quick-guide-sop-map-quality-grid">
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
-            <!-- Provisional substitution slot: replace only this image with the --quality placeholder; retain an honest proposed caption or add a review-gap block. -->
+            <!-- Provisional substitution slot: replace only this image with the --quality placeholder; retain an honest proposed caption and record unresolved decisions in the sidecar ledger. -->
             <img src="{{ '/[APPROVED STOP-STATE IMAGE PATH]' | relative_url }}" alt="[OBJECTIVE STOP-STATE DESCRIPTION]">
             <figcaption><strong>[STOP-STATE LABEL]:</strong> [CANONICAL CORRECTIVE ACTION OR ASK-STAFF DIRECTION].</figcaption>
           </figure>
