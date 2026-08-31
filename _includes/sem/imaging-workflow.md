@@ -1,4 +1,4 @@
-{% assign sem_view_label = include.view_label | default: "LiveSEM" %}
+{% assign sem_view_label = include.view_label | default: "SEM" %}
 {% assign sem_navcam_image = include.navcam_image | default: "../assets/img/tutorials/sem/navcam.PNG" %}
 
 #### Project Label And Save Location {#customize}
@@ -30,7 +30,7 @@ Use this moment to:
   <figcaption>NavCam is the optical overview used to select a region before moving to SEM view.</figcaption>
 </figure>
 
-#### {{ sem_view_label }} View {#live-sem}
+#### {{ sem_view_label }} View {#sem-view}
 
 {% if include.move_to_sem_icon_verified %}
 Select the upper-left icon immediately below the eject/open-close icon. It shows two circles with plus signs and an arrow between them; its mouse-over label is **move to SEM**. This enters the {{ sem_view_label }} view. Start zoomed out, find a recognizable feature, focus, then increase magnification gradually.

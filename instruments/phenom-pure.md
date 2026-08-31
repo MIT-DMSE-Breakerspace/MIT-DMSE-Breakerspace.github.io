@@ -161,7 +161,7 @@ Use the cold stage for wet, vacuum-sensitive, or heat-sensitive samples that nee
 
 If the image flickers, bright bands streak across the field of view, or the sample appears to bubble, boil, collapse, or drift rapidly, eject the sample immediately and ask staff for help. These are signs that the sample may be outgassing or changing under the beam.
 
-{% include sem/live-sem-workflow.md %}
+{% include sem/imaging-workflow.md %}
 
 ### Phenom Pure Sample Unloading {#unloading}
 
@@ -194,7 +194,7 @@ If the image flickers, bright bands streak across the field of view, or the samp
 
 ## Exercises {#exercises}
 
-* **Level 1 - General Phenom Pure training:** Prepare and image a small piece of hair. Load it on the Pure holder, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
+* **Level 1 - General Phenom Pure training:** Prepare and image a small piece of hair. Load it on the Pure holder, navigate with NavCam, focus in SEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
 * **Level 2 - Non-conductive sample comparison:** Image an uncoated non-conductive sample in low vacuum, then sputter coat a similar sample and compare resolution, charging, and surface contrast.
 * **Level 2 - Cold-stage observation:** Use a staff-approved small wet or heat-sensitive sample. Document the freezing temperature, imaging behavior, and signs of frost, outgassing, or beam damage.
 * **Level 3 - Specialist training:** Prepare a beam-sensitive sample and compare image quality at different voltage/intensity combinations.

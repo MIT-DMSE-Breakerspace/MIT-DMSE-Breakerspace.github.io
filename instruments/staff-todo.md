@@ -113,7 +113,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a complete Pure level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing Phenom Pure holder selection and stub loading, including a matched over-height versus correct below-holder-edge pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
+* [ ] Add a GIF of moving from NavCam to SEM view, focusing, and acquiring the first image.
 * [ ] Define the observable Level 1 image-quality decision for the room-temperature Pure workflow without inventing a universal resolution or contrast threshold.
 * [ ] Confirm the exact save/export and naming convention and the final holder/chamber standby state. Keep the Pure holder-return rule distinct from the XL tray state.
 * [ ] Add cold-stage photos or GIFs showing cryo gel turning fully white, acceptable vs excessive frost, and black wire/connector placement during loading.

@@ -123,7 +123,7 @@ For EDS, start with 15 kV, Map intensity, and a working distance around 4-7 mm. 
 
 The height rule is instrument-critical. Do not use the Phenom Pure holder-edge rule on the XL, and do not estimate height by eye if a sample is tall or irregular.
 
-{% include sem/live-sem-workflow.md view_label="SEM" navcam_image="../assets/img/tutorials/sem/phenom-xl-navcam-empty.png" navcam_controls_verified=true move_to_sem_icon_verified=true scan_size_label_verified=true %}
+{% include sem/imaging-workflow.md view_label="SEM" navcam_image="../assets/img/tutorials/sem/phenom-xl-navcam-empty.png" navcam_controls_verified=true move_to_sem_icon_verified=true scan_size_label_verified=true %}
 
 ### EDS And Live EDS {#eds}
 
