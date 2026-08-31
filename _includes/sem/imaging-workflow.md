@@ -23,7 +23,7 @@ Use this moment to:
   <figcaption>NavCam is the optical overview used to select a region before moving to SEM view.</figcaption>
 </figure>
 
-#### LiveSEM View {#live-sem}
+#### SEM View {#sem-view}
 
 Click **Move to SEM** to enter the live SEM view. Start zoomed out, find a recognizable feature, focus, then increase magnification gradually.
 
@@ -38,7 +38,7 @@ Useful controls:
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/sem/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/sem/FocBri.PNG" alt="Phenom focus and brightness controls." style="width:70%; margin:0"></a>
-  <figcaption>Focus, brightness, and contrast controls are the main adjustments in LiveSEM view.</figcaption>
+  <figcaption>Focus, brightness, and contrast controls are the main adjustments in SEM view.</figcaption>
 </figure>
 
 ##### Choosing Detector, Voltage, Vacuum, And Intensity

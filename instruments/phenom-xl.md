@@ -122,7 +122,7 @@ For EDS, start with 15 kV, Map intensity, and a working distance around 4-7 mm. 
 
 The height rule is instrument-critical. Do not use the Phenom Pure holder-edge rule on the XL, and do not estimate height by eye if a sample is tall or irregular.
 
-{% include sem/live-sem-workflow.md %}
+{% include sem/imaging-workflow.md %}
 
 ### EDS And Live EDS {#eds}
 
@@ -182,7 +182,7 @@ For EDS data:
 
 ## Exercises {#exercises}
 
-* **Level 1 - General Phenom XL training:** Prepare and image a small piece of hair. Load it on the XL tray, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
+* **Level 1 - General Phenom XL training:** Prepare and image a small piece of hair. Load it on the XL tray, navigate with NavCam, focus in SEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
 * **Level 2 - EDS practice:** Prepare salt and sugar on the same stub. Use morphology first, then EDS on the Phenom XL, to decide which is which.
 * **Level 2 - Non-conductive sample comparison:** Image an uncoated non-conductive sample in low vacuum, then sputter coat a similar sample and compare resolution, charging, and surface contrast.
 * **Level 3 - Specialist training:** Prepare a powder sample sparse enough for particle sizing. Acquire images suitable for measuring particle diameter and compare the result with a poorly dispersed sample.

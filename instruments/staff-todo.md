@@ -96,7 +96,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a complete Pure level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing Phenom Pure holder selection, stub loading, and the correct below-holder-edge height check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
+* [ ] Add a GIF of moving from NavCam to SEM, focusing, and acquiring the first image.
 * [ ] Add cold-stage photos or GIFs showing cryo gel turning fully white, acceptable vs excessive frost, and black wire/connector placement during loading.
 * [ ] Add before/after image examples of cold-stage drift, frost, and sample outgassing.
 
@@ -105,7 +105,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing XL tray removal, stub loading, and the correct 5-7 mm below-tray height check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
+* [ ] Add a GIF of moving from NavCam to SEM, focusing, and acquiring the first image.
 * [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away.
 * [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export.
 

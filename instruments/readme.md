@@ -47,8 +47,8 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. The workstation access handoff and default database/export conventions still need confirming; authentication details should remain in training or at the instrument. |
 | `uv-vis.md` | 4 | Good routine-absorbance EZ Spec workflow; needs confirmed method settings and process screenshots. Fluorescence remains staff-guided. Manual references are whole-PDF only. |
 | `raman.md` | 4 | Strong text and conceptual depth (laser/grating choice, Si calibration, mapping, z-profiling) but **zero embedded media** and several control names/settings flagged for staff verification. |
-| `phenom-xl.md` | 4 | Solid; core LiveSEM imaging workflow lives in `_includes/sem/live-sem-workflow.md`. Instrument-specific loading/imaging GIFs remain on the staff checklist. |
-| `phenom-pure.md` | 4 | Solid; **cold-stage section is the most developed of any page.** Standard NavCam-to-LiveSEM imaging delegated to the shared include; generic loading media remain on the staff checklist. |
+| `phenom-xl.md` | 4 | Solid; core SEM imaging workflow lives in `_includes/sem/imaging-workflow.md`. Instrument-specific loading/imaging GIFs remain on the staff checklist. |
+| `phenom-pure.md` | 4 | Solid; **cold-stage section is the most developed of any page.** Standard NavCam-to-SEM imaging delegated to the shared include; generic loading media remain on the staff checklist. |
 | `sem.md` | 3 (hub) | Intentionally a hub with no operating walkthrough — startup/imaging/shutdown are delegated to the two Phenom pages. Strong science and shared sample-prep content. Do not add operation here. |
 | `hardness-tester.md` | 3 ⚠️ | **Priority.** Competent prose walkthrough (loading, focus, scale, run, patterns) but text-only, software-light, and the only linked manual is a marketing brochure for the wrong model (9100, not 5100G2). |
 
@@ -83,7 +83,7 @@ Two content sources that were sitting unused and are worth checking for other in
 ### Cross-Page Notes
 
 * Every page follows the same editorial pattern: quick reference above, `{#details}` training section below, manual links rather than manual replication. The main levelling axes are (a) page-level manual citations vs. whole-PDF links, (b) embedded media, and (c) a worked start-to-result example.
-* The SEM family shares content through `_includes/sem/` (notably `live-sem-workflow.md`, `data-and-analysis.md`, `common-failure-modes.md`). When judging or editing a Phenom page's detailed workflow, remember part of it lives in those includes, not the page.
+* The SEM family shares content through `_includes/sem/` (notably `imaging-workflow.md`, `data-and-analysis.md`, `common-failure-modes.md`). When judging or editing a Phenom page's detailed workflow, remember part of it lives in those includes, not the page.
 * Locally hosted manuals currently exist for UV-Vis (Duetta/EZ Spec), Raman (LabSpec 6 quick-start, AutoFocus, confocality tech note), and hardness (Impressions 4, Nemesis 5100G2) under `assets/img/tutorials/`. The Instron page links the official manufacturer-hosted 6800 operator guide; other instruments link manufacturer-hosted or Dropbox PDFs. Prefer a stable manufacturer source where one is available, and check any externally hosted manual links during content review because a moved file can invalidate page-level citations.
 * **Screenshots of lab software often contain student names.** Bluehill's recent-method and sample lists, and equivalent file browsers on other instruments, show real user and course files. Check every screenshot before publishing and crop or redact as needed; see the Instron levelling note above for the approach used.
 * Media tasks recur across nearly every page (gloved re-shoots, annotated example results). They are consolidated in [`staff-todo.md`](staff-todo.md), align with Tier 3 improvement work in `../_staff/site-todo.md`, and are not launch blockers; missing *instruction text* on the remaining priority page is the higher-value gap.
@@ -229,7 +229,7 @@ Current SEM includes:
 * `_includes/sem/sample-prep-at-a-glance.md`: shared sample-prep table.
 * `_includes/sem/quick-imaging-settings.md`: shared imaging starting points.
 * `_includes/sem/detailed-training-intro.md`: standard paragraph explaining that the lower section is training-guide content.
-* `_includes/sem/live-sem-workflow.md`: shared Phenom software workflow, including project labels, NavCam, LiveSEM, and image acquisition.
+* `_includes/sem/imaging-workflow.md`: shared Phenom software workflow, including project labels, NavCam, SEM, and image acquisition.
 * `_includes/sem/data-and-analysis.md`: shared basic image data handling.
 * `_includes/sem/common-failure-modes.md`: shared SEM troubleshooting table.
 

@@ -228,7 +228,7 @@ Common strategies:
 
 These exercises are shared SEM examples. The instrument-specific pages identify which exercise is best for training on each SEM.
 
-* **Level 1 - General training:** Prepare and image a small piece of hair. Use the Phenom Pure or XL to load the sample, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
+* **Level 1 - General training:** Prepare and image a small piece of hair. Use the Phenom Pure or XL to load the sample, navigate with NavCam, focus in SEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
 * **Level 2 - EDS practice:** Prepare salt and sugar on the same stub. Use morphology first, then EDS on the Phenom XL, to decide which is which.
 * **Level 2 - Non-conductive sample comparison:** Image an uncoated non-conductive sample in low vacuum, then sputter coat a similar sample and compare resolution, charging, and surface contrast.
 * **Level 2 - Image analysis:** Cut a thin slice of a roasted coffee bean, sputter coat it, and image pore structure. Estimate average cavity size from several images.
