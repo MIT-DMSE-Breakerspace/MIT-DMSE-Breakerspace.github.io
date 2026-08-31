@@ -79,4 +79,6 @@ The Breakerspace can coordinate instrument training for students, instructors, t
 
 ## Upcoming Training Sessions {#upcoming-training-sessions}
 
+{% include early-fall-training-notice.html %}
+
 {% include breakerspace-calendar.html %}
