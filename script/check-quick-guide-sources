@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "pathname"
+
+ROOT = Pathname.new(__dir__).parent
+WRAPPER_DIRECTORY = ROOT.join("quick-guides")
+INCLUDE_DIRECTORY = ROOT.join("_includes", "quick-guides")
+FRONT_MATTER = /\A---\n.*?\n---\n(.*)\z/m
+
+def relative(path)
+  Pathname.new(path).relative_path_from(ROOT).to_s
+end
+
+errors = []
+wrappers = Dir.glob(WRAPPER_DIRECTORY.join("*.md")).sort.map { |path| Pathname.new(path) }
+includes = Dir.glob(INCLUDE_DIRECTORY.join("*.html")).sort.map { |path| Pathname.new(path) }
+
+wrappers.each do |wrapper|
+  basename = wrapper.basename(".md").to_s
+  expected_include = "{% include quick-guides/#{basename}.html %}"
+  match = wrapper.read.match(FRONT_MATTER)
+
+  unless match
+    errors << "#{relative(wrapper)} must contain YAML front matter followed by one Quick Guide include"
+    next
+  end
+
+  body = match[1].strip
+  unless body == expected_include
+    errors << "#{relative(wrapper)} must be a thin wrapper whose only body content is " \
+              "#{expected_include.inspect}"
+  end
+
+  include_path = INCLUDE_DIRECTORY.join("#{basename}.html")
+  errors << "#{relative(wrapper)} is missing #{relative(include_path)}" unless include_path.file?
+end
+
+includes.each do |include_path|
+  basename = include_path.basename(".html").to_s
+  wrapper = WRAPPER_DIRECTORY.join("#{basename}.md")
+  errors << "#{relative(include_path)} is missing #{relative(wrapper)}" unless wrapper.file?
+  if include_path.read.start_with?("---\n")
+    errors << "#{relative(include_path)} must contain HTML content only, without YAML front matter"
+  end
+end
+
+if errors.empty?
+  puts "Quick Guide source checks passed: #{wrappers.length} thin wrappers map one-to-one to " \
+       "#{includes.length} include-backed HTML sources."
+  exit
+end
+
+warn "Quick Guide source checks failed:"
+errors.each { |error| warn "- #{error}" }
+exit 1

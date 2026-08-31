@@ -8,6 +8,10 @@ These are bounded work orders for the two-sided SOP-and-visual-map model. They s
 
 Read [`README.md`](README.md) first. A **BLOCKED** status means the instrument is blocked for technical completion and release until every release gate in that entry is resolved. It normally also blocks drafting. The only exception is an explicitly commissioned [provisional placeholder pass](README.md#provisional-placeholder-draft-mode), which may create a visibly incomplete, unpublished composition draft while preserving every blocker. Existing assets are candidates, not proof that the displayed interface or workflow is current.
 
+The provisional set produced on 2026-08-10 was audited; see [`audit-2026-08-10.md`](audit-2026-08-10.md) for per-instrument findings, including which drafts stated a proposal in settled voice and which release gates disappeared from the artifact. The audit found that the **FTIR reference prototype had its own blockers**: unprintable source images, two control-key entries that did not match the visible labels, and an acceptance criterion the canonical page did not define. Those specific findings were addressed in the 2026-08-11 canonical reconciliation and 2026-08-12 native-capture follow-up, but the FTIR draft still needs layout correction, staff media/callout review, and physical proof. **Instron, Raman, and optical each still lack the reviewed layout variant** their confirmed curriculum requires.
+
+For filename-level selection from the 2026-08-12 field captures, read [`capture-integration-workorder-2026-08-12.md`](capture-integration-workorder-2026-08-12.md). It is the canonical triage record for the reviewed FTIR, Phenom XL, Phenom Pure, XRD, Instron, optical, Raman, and hardness capture folders. Its selections do not supersede this file's technical and release gates.
+
 ## Source And Proposal Discipline
 
 This file records both facts already established by a canonical instrument page and choices that still need staff approval. Keep those categories separate.
@@ -24,14 +28,14 @@ This file records both facts already established by a canonical instrument page 
 
 | Instrument | Release status | Principal reason |
 | --- | --- | --- |
-| Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
-| Thermo Fisher Phenom XL SEM | **BLOCKED** | The loading/height pair, NavCam-source approval, current SEM capture, top-panel control verification, and save/export end state are unresolved. |
-| Thermo Fisher Phenom Pure SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
-| Malvern Panalytical Aeris Research XRD | **BLOCKED** | The HighScore teaching boundary, stored-program curation, data handoff, native queue capture, and changer-cover pair are unresolved. |
-| Instron 68TM-50 Universal Testing System | **BLOCKED** | The Level 1 method/end condition, Bluehill and handset captures, multi-view layout, result gate, and export convention are unresolved. |
-| Olympus DSX-1000 Digital Optical Microscope | **BLOCKED** | The confirmed Level 1 capture controls span more functions than the old brief; current interface states and matched focus evidence need capture. |
-| Horiba XploRA Confocal Raman Microscope | **BLOCKED** | The confirmed training path spans TopCam, internal camera, RTD, and AutoCalibration states; exact controls, multi-view layout, settings boundary, and calibration evidence remain unresolved. |
-| Innovatest Nemesis 5100G2 Hardness Tester | **BLOCKED** | Installed scales/indenter configuration and current software views require staff verification. |
+| Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Composition is the drafting model. Native 1920x1080 OMNIC control and contact captures now replace the failed poster frames, the key uses the visible toolbar labels, and the contact caption follows the canonical criterion. Still needs Side 1 layout correction, physical proof, and operational review before publication. |
+| Thermo Fisher Phenom XL SEM | **BLOCKED** | The reviewed multi-view layout and current interface states are integrated; the EDS boundary is resolved and two newer native source candidates are recorded. Source approval, remaining icon/function checks, save/export, final state, operational review, and physical proof remain unresolved. |
+| Thermo Fisher Phenom Pure SEM | **BLOCKED** | Current Pure LiveSEM states and a loading/height pair are captured and triaged; the multi-state layout, control verification, save/export, and final state remain unresolved. |
+| Malvern Panalytical Aeris Research XRD | **BLOCKED** | Queue and changer-cover candidates are captured and triaged; the HighScore boundary, stored-program curation, sign-in/data handoff, and exact position control remain unresolved. |
+| Instron 68TM-50 Universal Testing System | **BLOCKED** | Actual-run Bluehill and handset candidates are captured; the Level 1 method/end condition, two-view layout, toe-artifact pair, travel-limit prompt, and export/final-state implementation remain unresolved. |
+| Olympus DSX-1000 Digital Optical Microscope | **BLOCKED** | Current interface states and a matched focus pair are captured; the required multi-state layout, exact controls, save/copy treatment, and final-state review remain unresolved. |
+| Horiba XploRA Confocal Raman Microscope | **BLOCKED** | Current captures cover the camera selector, TopCam/internal views, RTD, an acquired spectrum, save, and AutoCalibration completion/PASS; the multi-view layout, exact icons/settings, Maintenance entry, quality question, and final state remain unresolved. |
+| Innovatest Nemesis 5100G2 Hardness Tester | **BLOCKED** | The Level 1 Vickers 300 gf / HV 0.3 method is settled and a primary software candidate is identified; the exact Single Point state, bad-indent pair, hardware reconciliation, export, and final state remain unresolved. |
 | Microtrac Sync Particle Size Analyzer | **BLOCKED** | Database/export convention, sanitized interface captures, and tray-loading evidence are unresolved. |
 | Horiba Duetta Fluorescence And Absorbance Spectrometer | **BLOCKED** | The Level 1 exercise needs editorial cleanup before settings, captures, quality evidence, and save/export can be finalized. |
 | Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill | **BLOCKED** | Semi-automatic operation is settled; the Level 1 holder/process parameters, approved control state, and readiness evidence remain unresolved. |
@@ -62,24 +66,32 @@ For every instrument:
 
 **Side 1 critical box:** **The glove rule** — gloves for sample, crystal, pressure tower/tips, wipes, and solvent; no gloves on keyboard, mouse, or screen.
 
-**Primary image:** `assets/media/tutorials/ftir/preview-omnic-poster.jpg`.
+**Primary image:** `assets/img/quick-guides/ftir/omnic-main-system-status-good.png`, an unannotated 1920x1080 current OMNIC view with the iD7 ATR experiment, routine toolbar, and green **System Status** visible. HTML/SVG callouts preserve the raster source.
 
 **Primary callouts, in this order:**
 
-1. `Collect Background`
-2. `Collect Sample`
+1. `Col Bkg` (the visible control for **Collect Background**)
+2. `Col Smp` (the visible control for **Collect Sample**)
 3. `Save` (the selected spectrum)
 4. `System Status`
 
-**Quality images:** `assets/img/prototypes/ftir-preview-weak.jpg` and `assets/img/prototypes/ftir-preview-usable.jpg`.
+**Quality images:** `assets/img/quick-guides/ftir/omnic-sample-preview-no-contact.png` and `assets/img/quick-guides/ftir/omnic-sample-preview-contact-established.png`, both unannotated 1920x1080 OMNIC sample previews. They retain the full interface context and open at native resolution from the screen guide.
 
 **Secondary callout:** `Start Collection` on the usable live-preview image.
 
-**Immediate decision:** a weak live signal that calls for contact correction versus a visibly stronger live signal after re-seating or changing the pressure tip. This is contact triage, not a universal spectrum-shape acceptance standard or spectral identification.
+**Immediate decision:** no or weak sample contact that calls for contact correction versus contact established. A change from a near-zero trace to a sample spectrum confirms that ATR is detecting the sample; it is not a universal spectrum-shape or signal-strength acceptance standard and is not spectral identification. If the signal remains weak or negative or unexpected features remain unresolved, stop and ask staff.
 
 **Do not add:** band assignments, atmospheric peak positions, a named sample, method-parameter tables, liquids, or accessory workflows.
 
-**Remaining release gates:** staff review of the background/quality language, native-resolution final screenshots if the prototype strategy is endorsed, and physical duplex proof.
+**Resolved technical decisions (2026-08-11):** **System Status** must show a green check; the routine Level 1 workflow uses **Preview Data Collection** enabled; the live background preview is not a pass/fail test; and the complete contaminated-background recovery cycle is unload, clean and dry, collect a complete new background on the bare and unclamped crystal, then reload and recollect. These decisions are now on the canonical page.
+
+**Remaining release gates:** resolve the Side 1 SOP/footer collision by first reducing the **Standard Operating Procedure (SOP)** heading and corresponding Side 2 visual-map heading consistently, without reducing SOP/body type or content; remeasure footer clearance and confirm Chrome remains exactly two Letter pages at 100%; complete final staff review of the capture states and callout geometry; verify color and grayscale physical output and label legibility at 100%; and approve a physical duplex proof. The QR codes decoded successfully from the 100% Chrome physical printout on 2026-08-12, so the FTIR print-QR gate is satisfied. Safari's current four-page pagination is a browser-specific limitation, not the physical-proof path. The separate current printed Quick Guide is sufficient for trainer-guide release and remains unchanged.
+
+**Audit disposition recorded 2026-08-11:** the failed raster images and their annotations were removed from the provisional artifact and replaced with explicit capture gates. The control specification used the visible `Col Bkg`/`Col Smp` labels, and the contact caption was derived from the canonical page's reviewed contact cue. Restoring every prior canonical bullet while adding the confirmed contaminated-background cycle exposed an additional Side 1 layout exception; content was not weakened to hide it. At that handoff, native recapture, capture-to-label verification, annotation geometry, pagination, and physical proof remained open. See [`audit-2026-08-10.md`](audit-2026-08-10.md).
+
+**Native-capture follow-up (2026-08-12):** three selected 1920x1080 captures replace the placeholders: the clean main window with a green `System Status`, the near-zero/no-contact preview, and the clamped/contact-established preview with `Start Collection`. The repository copies are byte-identical to the Dropbox sources and remain unannotated; callouts are HTML/SVG overlays. The visible `Col Bkg`, `Col Smp`, `Save`, `System Status`, and `Start Collection` labels have been reconciled against the captures. Redundant intermediate-contact, setup-dialog, missing-background, error-status, and contaminated-background captures were deliberately excluded from the compact normal-workflow map.
+
+**Current provisional render (2026-08-12):** the unpublished include-backed artifact renders as exactly two Letter pages in Chrome, retains all 24 canonical SOP bullets verbatim and in order, and loads all three native 1920×1080 OMNIC captures. Its targeted HTML-Proofer check passes. Browser checks at 1440, 1024, 768, and 700 px widths show no horizontal overflow and preserve native image dimensions; paginated color and grayscale renders preserve the interface states and callouts. The unreviewed compact display-title trial, **Nicolet iS5 FTIR Spectrometer**, plus the shared 0.04 in advisory spacing leaves a 0.016 px positive trained-user-note/SOP-title gap in automated print measurement without changing SOP content or type size. Side 1 remains overfull: the final shutdown bullet overlaps the footer by 46.828 px and extends 0.906 px past the sheet. The QR codes decoded successfully from the 100% Chrome physical printout; that gate is complete. Final staff media/callout review, corrected locked pagination, remaining color and grayscale physical proofing, and duplex approval remain unmet.
 
 ## Thermo Fisher Phenom XL SEM
 
@@ -95,27 +107,34 @@ For every instrument:
 
 **Side 1 critical box:** **Sample and holder clearance** — use the XL-specific canonical sample-height rule, secure loose particles, and remove gloves before using the computer. Do not reuse the Pure height rule.
 
-**Loading sequence evidence — directly observed 2026-08-20:** the actual XL matched the canonical sequence from software startup/connection through software eject, tray removal, stub loading and clearance recheck, tray reinsertion, the same software control closing the compartment, and arrival in NavCam. The matched loading-height image pair remains required.
+**Reviewed Side 2 variant (2026-08-18):** the [Phenom XL review brief](phenom-xl-review-2026-08-18.md) authorizes an instrument-specific multi-view layout because no one captured state can teach the approved workflow legibly. The coarse `SEM-right-panel.PNG` sliders are supporting evidence only and must not be presented as the recommended student method. The variant gives space first to the lower-left controls, Focus in Area plus hidden `F` fine focus, NavCam/Move to SEM/capture actions, live/capture settings, and full-screen orientation.
+
+**Loading sequence evidence — directly observed 2026-08-20:** the actual XL matched the canonical sequence from software startup/connection through software eject, tray removal, stub loading and clearance recheck, tray reinsertion, the same software control closing the compartment, and arrival in NavCam. The existing matched clearance pair remains supporting evidence; tray-removal and stub-loading motion media are still uncaptured.
 
 **Primary image candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-sem-top-panel.png` is a sanitized, unannotated 3840 x 2160 XL SEM capture with the settings panel open. It visibly shows the exact labels **Acc. Voltage**, **Beam Intensity**, **Detector**, **Vacuum**, **Live**, **Averaging**, **Scan Size**, **Acquisition**, and **ADVANCED...**. The separate **Live** panel heading is not the name of the SEM view. Staff still need to approve this as the primary map source and select the complete Level 1 control set. `assets/img/tutorials/sem/FocBri.PNG` remains a composition reference only because it has baked-in annotation.
 
 **NavCam source candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-navcam-empty.png` is a sanitized, unannotated 3840 x 2160 capture from the XL. It shows the move-to-SEM icon in the upper left immediately below the eject/open-close icon and the three lower-left adjustment icons. Direct observation confirmed that the transition symbol is two circles with plus signs and an arrow between them and that its mouse-over label is **move to SEM**. Direct observation also confirmed the lower-left mouse-over labels **magnification**, **brightness/contrast**, and **focus**. Staff still need to approve the candidate as the final NavCam source.
 
-**Primary callouts proposed, with exact labels/icons still to verify:**
+**Screenshot coverage as of 2026-08-18:** six sanitized, unannotated assets are integrated at `assets/img/quick-guides/phenom-xl/`: `phenom-xl-livesem-overview.png`, `phenom-xl-routine-controls.png`, `phenom-xl-focus-in-area.png`, `phenom-xl-focus-fine.png`, `phenom-xl-system-live-settings.png`, and `phenom-xl-navcam-navigation.png`. They were cropped or proportionally reduced from `SEM.PNG`, `SEM-select-focus1.PNG`, `SEM-top-panel.PNG`, and `navcam-sample.PNG`. Crops exclude the bottom metadata bar and private sample labels. The full overview and NavCam states contain no visible private path, address, or sample name. `assets/img/tutorials/sem/FocBri.PNG` remains composition reference only because it has baked-in annotation.
 
-1. focus control, using the exact visible label or verified icon function
-2. brightness/contrast and automatic adjustment, grouped only if they are visibly adjacent
-3. magnification control or readout used during training
-4. acquisition camera control
-5. the top settings panel as one grouped region: **Acc. Voltage**, **Beam Intensity**, **Scan Size** (image resolution), and **Averaging**; confirm whether **Detector** and **Vacuum** also belong in the Level 1 inspection before locking the group
+**Mapped operator relationships:**
 
-Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; do not imply that NavCam, the **move to SEM** icon, and all SEM controls coexist in one screenshot.
+1. blue lower-left selection is the mouse-wheel target; leave it on magnification for routine work;
+2. left-click automatic brightness/contrast and use it instead of routine manual brightness or contrast;
+3. left-click autofocus; if it misses, right-click the control's lower-right triangle and choose `Focus in Area`;
+4. with the focal-area box visible, use the wheel to focus, select blue `F` for fine steps, then click outside the box to apply that plane to the full image;
+5. use the left camera icon for capture; in NavCam double-click the destination and use the icon whose verified mouse-over label is **move to SEM**;
+6. use Live `Averaging Medium` plus `Scan Size 960×540` for navigation. **Scan Size** is the exact UI label for image resolution. Beam intensity is task/sample dependent; `Medium` is not a beam-intensity choice in this interface.
 
-**Readiness panels required:** a matched loading pair staged on the removed tray, showing an over-height/incorrect state versus a correctly secured sample measured **5–7 mm below the XL tray top**, with the clearance visible. Never load the incorrect state into the microscope. This uses the template's existing two panels for the dominant physical safety decision. Keep focus, charging, drift, washout, outgassing, and beam damage in the SOP/stop-help language rather than combining unrelated diagnoses.
+The 2026-08-20 source candidates also expose **Detector** and **Vacuum** in the grouped settings panel. Staff must decide whether they belong in the Level 1 inspection before locking that group. Do not imply that NavCam, the **move to SEM** icon, and every SEM control coexist in one screenshot.
+
+A current sanitized capture of the right-click focus menu with `Focus in Area` visible is still missing. The user-verified interaction may remain in the provisional draft, anchored to `phenom-xl.control-captures`, but it requires staff confirmation at the instrument before release.
+
+**Readiness photographs:** external `PhenomXL/sample-height-incorrect.JPG` and `PhenomXL/sample-height-correct.JPG` remain integrated supporting assets with identical framing. The 2026-08-18 variant removes them from Side 2 so the higher-priority operational workflow stays legible; the complete XL clearance rule remains in the Side 1 critical box. They remain candidates for the detailed instrument page or a future task card.
 
 **Do not add:** EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. The brief trainer-operated EDS capability preview belongs in the staff guide, not the primary participant Quick Guide.
 
-**Release gates:** capture and approve the matched XL loading/height pair; approve the NavCam and SEM candidates; select the complete Level 1 top-panel control set; verify every remaining mapped icon/label; confirm save/export and the final tray/chamber state.
+**Release gates:** approve whether the 2026-08-20 NavCam and SEM candidates replace or supplement the integrated 2026-08-18 crops; select the complete Level 1 top-panel control set; capture or verify the right-click Focus in Area menu and every remaining mapped icon/function; technically review the voltage/beam/settings primer; confirm save/export and the final tray/chamber state; and complete the 100% Letter color, grayscale, duplex, footer, clipping, and QR proof. The EDS curriculum boundary is resolved and no longer blocks the primary SEM guide.
 
 ## Thermo Fisher Phenom Pure SEM
 
@@ -129,15 +148,15 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 **Side 1 critical box:** **Sample and holder clearance** — for this room-temperature Level 1 workflow, the sample must be dry, secure, free of loose particles, and below the holder edge. Do not reuse the XL's 5–7 mm rule or add cold-stage conditions.
 
-**Primary image and callouts:** capture a separate current Pure LiveSEM view and use the same five-callout/grouped-panel plan as the Phenom XL only after verifying the Pure interface: focus; brightness/contrast plus automatic adjustment if adjacent; magnification; acquisition; and the grouped top panel for voltage, beam/intensity, resolution, and averaging. Do not reuse an XL capture merely because the software looks similar. The existing `navcam.PNG` and `FocBri.PNG` files are composition references, not approved final sources.
+**Primary image candidates captured:** use external `PhenomPure/SEM-right-panel.PNG` as the base routine LiveSEM state and `PhenomPure/SEM-top-panel.PNG` for the essential top-panel state; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#thermo-fisher-phenom-pure-sem). Apply the same proposed functions as the XL only after verifying the Pure interface: focus; brightness/contrast plus automatic adjustment if adjacent; magnification; acquisition; and the grouped top panel for voltage, beam/intensity, resolution, and averaging. Do not reuse an XL capture merely because the software looks similar. A reviewed multi-state layout is still required.
 
-**Readiness panels required:** a matched Pure loading pair staged with the holder outside the chamber, showing an over-height/incorrect state versus a correctly secured sample below the holder edge. Never load the incorrect state into the microscope. Keep focus and other image-quality diagnoses in the SOP/stop-help language.
+**Readiness panel candidates captured:** external `PhenomPure/sample-too-high.JPG` and `PhenomPure/sample-height-correct2.JPG` form the preferred matched pair with the holder outside the chamber. They show a sample protruding above the holder edge versus one correctly below it. Keep focus and other image-quality diagnoses in the SOP/stop-help language.
 
 **Cold-stage extension:** do not place cold-stage connector, sample-holder, temperature, or refill media in the primary Quick Guide. Existing files under `assets/media/tutorials/sem/cold-stage-*` and `assets/img/tutorials/sem/cold_stage_*` are source candidates for a later, separately scoped card.
 
 **Do not add:** EDS, XL height rules, cold-stage setup in the primary guide, coating recipes, or settings tables.
 
-**Release gates:** capture and approve the matched Pure loading/height pair plus current unannotated NavCam and LiveSEM views; verify the top panel and every mapped icon/label; confirm save/export and the final holder/chamber state.
+**Release gates:** select, copy, integrate, and staff-approve the triaged Pure loading and LiveSEM candidates; review and lock the multi-state layout; verify the top panel and every mapped icon/label; confirm save/export and the final holder/chamber state.
 
 ## Malvern Panalytical Aeris Research XRD
 
@@ -151,7 +170,7 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 **Side 1 critical box:** **X-ray enclosure and changer-cover rule** — never defeat an enclosure interlock or open the enclosure during a measurement; separately, replace the removable plastic sample-changer cover and match the physical slot to the software position before starting.
 
-**Primary image required:** a new native-resolution, unannotated queue screen. `assets/media/tutorials/xrd/queue-sample-poster.jpg` is a soft video frame with a hand over the changer control; use it only to plan composition, not as the final map.
+**Primary image candidate captured:** external `AerisXRD/sample-id.png` is the preferred native, unannotated filled queue state; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#malvern-panalytical-aeris-research-xrd). It provides the program, identifier, file-name, and queue controls without private information. Verify the exact numbered changer-position control before annotation.
 
 **Primary callouts, in this order:**
 
@@ -160,13 +179,13 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 3. sample ID and file-name fields, grouped only if visually adjacent
 4. `Add to Queue`
 
-**Readiness panels required:** a matched overhead pair showing the plastic sample-changer cover absent versus restored over a loaded holder. The primary queue map locates the software position control; the SOP/critical box tells the user to match it to the physical slot and complete the identifiers/program checks. `assets/media/tutorials/xrd/add-sample-poster.jpg` shows a hand loading the changer with the cover removed and is not a complete matched source. A diffraction pattern is not the primary immediate quality gate unless staff defines an observable pass/fail rule appropriate for a new user.
+**Readiness panel candidates captured:** external `AerisXRD/cover-off.JPG` and `AerisXRD/cover-on2.JPG` show the removable changer cover absent versus restored over the loaded changer. The primary queue map locates the software position control; the SOP/critical box tells the user to match it to the physical slot and complete the identifiers/program checks. A diffraction pattern is not the primary immediate quality gate unless staff defines an observable pass/fail rule appropriate for a new user.
 
-**Bottom reminder:** export/copy data before leaving. Recapture the exact companion-workstation destination after the sequence is confirmed. `assets/media/tutorials/xrd/export-results-poster.jpg` shows the instrument measurement screen rather than the export destination, and `assets/img/tutorials/xrd/xrd-data-in-folder.png` exposes old sample filenames; neither is an approved final source.
+**Bottom reminder:** export/copy data before leaving. External `AerisXRD/file-transfer-location.png` now documents the companion folder and its older visible filenames were reviewed as non-private, but it is supporting evidence rather than a required Quick Guide image. Confirm the sign-in and export/copy sequence before locking the reminder.
 
 **Do not add:** scan parameters for stored programs, phase identification, peak indexing, crystallite-size interpretation, or instructions to bypass an interlock.
 
-**Release gates:** decide the HighScore/phase-identification training boundary; curate and document the routine stored-program list (until then retain the canonical “choose a stored program; ask staff if none looks right” direction); resolve workstation sign-in and export/copy sequence; verify queue field labels and numbered changer-position control; capture and approve the matched changer-cover pair.
+**Release gates:** decide the HighScore/phase-identification training boundary; curate and document the routine stored-program list (until then retain the canonical “choose a stored program; ask staff if none looks right” direction); resolve workstation sign-in and export/copy sequence; verify queue field labels and numbered changer-position control; select, copy, integrate, and staff-approve the triaged queue and changer-cover candidates.
 
 ## Instron 68TM-50 Universal Testing System
 
@@ -180,7 +199,7 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 **Side 1 critical box:** **Moving crosshead and stored-energy rule** — hands clear during motion/testing, remain within fixture/load-cell/specimen limits, and use emergency stop only as the canonical page directs.
 
-**Control surfaces required:** both Bluehill and the handset are necessary to understand the taught workflow. Do not reduce the map to the handset or add an improvised inset. Capture a clean native Bluehill test-state view and a new unannotated handset photo, then review and lock an Instron-specific two-view layout before drafting. The existing `ANNOTATED_hand_controller_in_set_up.JPG` and `ANNOTATED_hand_controller_when_disabled.JPG` are composition references only, and their baked-in prose/arrows make them unsuitable as final sources.
+**Control-surface candidates captured:** both Bluehill and the handset are necessary to understand the taught workflow. External `instron/Screenshot (29).png` is the preferred actual-run Bluehill state and `instron/handset-enabled.JPG` is the preferred unannotated handset view; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#instron-68tm-50-universal-testing-system). Do not reduce the map to the handset or add an improvised inset. Review and lock an Instron-specific two-view layout before integration. The screenshot shows a QuickTest path but does not settle the saved-method-versus-QuickTest decision.
 
 **Handset callouts proposed, subject to visible-label verification:**
 
@@ -195,7 +214,7 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 **Do not add:** method creation, `Admin`, arbitrary test rates or limits, material-property calculations, tensile/compression/flexure variants not selected for Level 1, or a pumpkin example as the generic quality standard.
 
-**Release gates:** decide saved method versus QuickTest and, if applicable, record the exact stored-method name; verify the 50 kN Level 1 fixture image and initial/final machine state; define the end condition; decide and lock the two-view Bluehill/handset layout; capture the current Bluehill test state, travel-limit prompt, unannotated handset, and matched toe-artifact pair; confirm save/export location and naming. The controller modes and roughly two-second unlock/start sequence are documented on the canonical page but still need a current-machine visual check before annotation.
+**Release gates:** decide saved method versus QuickTest and, if applicable, record the exact stored-method name; verify the 50 kN Level 1 fixture image and initial/final machine state; define the end condition; decide and lock the two-view Bluehill/handset layout; select, copy, integrate, and staff-approve the triaged control candidates; capture the still-missing travel-limit prompt and matched toe-artifact pair; implement the settled **always export raw data** rule without adding broader data-management prescriptions. The controller modes and roughly two-second unlock/start sequence are documented on the canonical page but still need a current-machine visual check before annotation.
 
 ## Olympus DSX-1000 Digital Optical Microscope
 
@@ -217,7 +236,7 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 **Side 1 critical box:** **Protect the objective and sample** — establish clearance before motion or tilt, keep gloved sample handling separate from controls, and stop on collision risk or control errors.
 
-**Primary image plan:** capture the native DSX interface state or tightly related states that expose the confirmed Level 1 controls. The current one-image template may be sufficient if all five functions are present and legible in one useful state; otherwise keep the guide blocked until an optical-specific multi-state variant is reviewed. `assets/media/tutorials/optical/best-image-poster.jpg` remains a composition reference, not an approved final source.
+**Primary image candidates captured:** the external `DSX1000/` set contains clean states for the confirmed controls. The recommended core is `DSX-home.PNG`, `best-image.PNG`, `stitching-selection.PNG`, and `hq-pano-setup.PNG`, with `3d-capture.PNG` retained if an explicit 3D state is required; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#olympus-dsx-1000-digital-optical-microscope). No one image provides every function legibly. Keep the guide blocked until an optical-specific multi-state variant is reviewed; do not import the entire sequence as a screenshot tutorial.
 
 **Map functions required, with exact visible labels/icons still to verify:**
 
@@ -229,11 +248,11 @@ Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; d
 
 Saving remains a Side 1/bottom-reminder requirement unless its exact control can be included without displacing a taught acquisition control. Do not map LEXT; the trainer only previews its capabilities.
 
-**Quality panels required:** the same field in visibly poor focus and in a sharp, usable 2D state. Keep collision risk in the critical/stop box rather than mixing a physical clearance decision into the focus comparison. The current example result assets `assets/img/optimized/optical-bee-color-1200.jpg`, `assets/img/optimized/optical-bee-height-1200.jpg`, and `assets/img/optimized/optical-scored-glass-750.jpg` demonstrate capabilities but do not provide a matched immediate quality gate.
+**Quality panel candidates captured:** external `DSX1000/oof.PNG` and `DSX1000/in-focus.PNG` show the same field in visibly poor focus and in a sharp, usable 2D state. Keep collision risk in the critical/stop box rather than mixing a physical clearance decision into the focus comparison.
 
 **Do not add:** LEXT analysis steps, report-building steps, 3D high-quality stitching as a performed exercise, volume rendering, extended interpretation, or a named training specimen. The normal 2D stitch, high-quality 2D area stitch, and 3D capture are included because they are explicitly taught in Level 1.
 
-**Release gates:** operationally verify the public Level 1 exercise and staff-guide scope updated on 2026-08-07; capture the exact native interface state(s) and verify every mapped control; determine whether the default one-image layout is sufficient or lock an optical-specific variant; document the current save/copy view; produce the matched focus pair; confirm the final clearance state. Retrofit the existing published optical guide only in a separately authorized task.
+**Release gates:** operationally verify the public Level 1 exercise and staff-guide scope updated on 2026-08-07; verify every mapped control against the triaged states; lock an optical-specific multi-state variant; select, copy, integrate, and staff-approve only that variant's sources plus the matched focus pair; confirm the LEXT save-before-leaving reminder and final clearance/shutdown state. Clicking **2D Acquisition** opens the result directly in LEXT, so no missing intermediate control-software dialog is required. The startup motion warning also has no screenshot requirement. Retrofit the existing published optical guide only in a separately authorized task.
 
 ## Horiba XploRA Confocal Raman Microscope
 
@@ -247,7 +266,9 @@ Saving remains a Side 1/bottom-reminder requirement unless its exact control can
 
 **Side 1 critical box:** **Laser enclosure rule** — close the enclosure doors before verifying the laser or collecting; respect the door interlock and key; if the laser is not visible, check the documented door/interlock/key conditions rather than bypassing anything. Do not state a sample-change/emission sequence until staff verifies it on the actual system.
 
-**Multiple interface states required:** TopCam focusing, internal-camera/laser focusing, `RTD`, and `AutoCalibration` are distinct parts of the confirmed teaching sequence and should not be presented as if they coexist in one screen. Capture each required state cleanly, then review and lock a Raman-specific multi-state layout before drafting.
+**Multiple interface states captured:** TopCam focusing, internal-camera/laser focusing, `RTD`, routine acquisition/display, and `AutoCalibration` are distinct parts of the confirmed teaching sequence and do not coexist in one useful screen. The external `raman/` set contains candidates for each state; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#horiba-xplora-confocal-raman-microscope). Review and lock a Raman-specific multi-state layout before copying or drafting. Use tight crops so the 4K interface remains legible and captured settings are not mistaken for approved defaults.
+
+**Primary image candidates captured:** `Screenshot (35).png` is the best acquired-spectrum/current-toolbar base candidate; `(6)` locates the Top/Internal camera selector; `(28)` is the preferred TopCam state; `(31)` is the best internal-camera candidate subject to staff verifying the intended focus/spot state; `(19)` is the preferred strong-silicon RTD state; and `(27)` visibly reports **AutoCalibration finished** and **PASS**. Import only the minimum subset selected by the reviewed layout, not the entire sequence. The Maintenance-tab `AutoCalibration` entry point itself remains uncaptured.
 
 **Acquisition-state callouts proposed only after staff verification:**
 
@@ -258,11 +279,11 @@ Saving remains a Side 1/bottom-reminder requirement unless its exact control can
 
 The multi-state plan must also locate the TopCam focus controls, internal camera/laser focus state, and the Maintenance-tab `AutoCalibration` entry without implying they coexist. If any label or role is not exactly current, replace the proposal with staff-verified controls before drafting.
 
-**Quality panels required:** failed/unacceptable versus passing silicon calibration or other approved reference check, with the exact observable criterion supplied by staff. `assets/media/tutorials/raman/display-flip-poster.jpg` is not sufficient evidence for this decision.
+**Quality-panel decision required:** the capture set has no failed AutoCalibration result, although `Screenshot (27).png` clearly provides a finished/PASS state. `Screenshot (18).png` and `(19).png` are the best prospective matched pair for weak versus strong silicon RTD response if staff confirms that only focus changed and approves relative count optimization as the immediate Side 2 question. Staff must choose between that RTD-focus pair with a separate textual AutoCalibration stop rule, or the originally planned calibration-fail/calibration-pass pair, whose failed half remains missing. Do not invent a count threshold, call an RTD trace a calibration pass, or fabricate a failure. `assets/media/tutorials/raman/display-flip-poster.jpg` is not sufficient evidence for this decision.
 
 **Do not add:** laser power, grating, objective, slit, hole, integration-time, or accumulation recommendations unless the canonical page defines the approved routine setting; no peak assignment or material identification.
 
-**Release gates:** verify the laser-safety, interlock, and sample-change sequence; select the Level 1 starting configuration; confirm every control name and role; decide and lock the multi-state layout; capture TopCam, internal-camera/laser, RTD, acquisition, and AutoCalibration states plus the matched calibration pair; verify the silicon reference criterion and define calibration pass/fail; confirm save/export and shutdown.
+**Release gates:** verify the laser-safety, interlock, and sample-change sequence; select the Level 1 starting configuration and routine AutoCalibration scope; confirm every toolbar icon/control name and role; capture or otherwise verify the Maintenance-tab `AutoCalibration` entry point; decide and lock the multi-state layout; choose and approve the RTD-focus or calibration-result quality question; verify the silicon reference criterion and exact AutoCalibration stop/pass language; select and import only the approved captures; confirm save/export and shutdown.
 
 ## Innovatest Nemesis 5100G2 Hardness Tester
 
@@ -272,11 +293,11 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 **Canonical SOP spine:** start the instrument and software; confirm the installed indenter/scale and specimen are compatible; load, focus, and position the specimen; characterize as appropriate; save; unload; clean; and restore the tester.
 
-**Level 1 teaching workflow:** perform one single-point Vickers measurement: select a verified installed scale/method, focus and position a prepared specimen, make the indent, verify the measured diagonals/quality state, save, unload, and restore the tester.
+**Level 1 teaching workflow:** perform one single-point Vickers measurement using the programmed `Vickers 300 gf` test, reported as `HV 0.3`: select the test without changing its programmed load, dwell, or other settings; focus and position a prepared specimen; make the indent; verify the measured diagonals/quality state; save; unload; and restore the tester.
 
 **Side 1 critical box:** **Scale, indenter, and turret rule** — the selected scale must match installed hardware and specimen limits; hands remain clear of turret and moving components.
 
-**Primary image required:** a new native-resolution camera/software view in the current routine state.
+**Primary image candidate captured:** external `innovatest/Screenshot (23).png` is the preferred native completed `176.0 HV0.3` state; see the [capture-integration work order](capture-integration-workorder-2026-08-12.md#innovatest-nemesis-5100g2-hardness-tester). It visibly supports the main focus, test, start, save, and accepted-indent context, but does not by itself verify the exact **SINGLE POINT** selection path.
 
 **Primary callouts proposed:**
 
@@ -290,9 +311,13 @@ The multi-state plan must also locate the TopCam focus controls, internal camera
 
 **Quality panels required:** a staff-approved pair showing a good square/symmetric indent with accepted diagonals and the software's documented red diagonal box when the diagonal difference exceeds 5%. Verify that rule on the current machine before publication.
 
-**Do not add:** unsupported scales, arbitrary loads/dwell times, conversion tables, metallographic interpretation, or maintenance/calibration procedures.
+**Do not add:** unsupported scales, instructions to edit the programmed load or dwell settings during routine use, conversion tables, metallographic interpretation, or maintenance/calibration procedures.
 
-**Release gates:** inventory fitted indenter/load hardware and offered Vickers scales; record the exact Level 1 scale/method; capture all current controls; approve the indent quality pair and current warning behavior; confirm save/export and final state.
+**Resolved technical decisions (2026-08-12):** Level 1 starts with the programmed `Vickers 300 gf` test and reports results as `HV 0.3`; there is no reason to start the introductory exercise at a higher load. Users select the programmed test and leave its load, dwell, and other settings unchanged. Alternate tests remain a material-compatibility decision rather than a routine settings-editing exercise.
+
+**Capture follow-up (2026-08-12):** the external `admin/screenshots/innovatest` set has been triaged. `Screenshot (23).png` is the primary candidate and can provide the good-indent half of the quality pair. `Screenshot (41).png` exposes the Vickers load list but is in a Vickers 200 gf state; `Screenshot (49).png` exposes Single Point but is in a DIN state. Neither is an approved final HV0.3 selection source. No reviewed image supplies the bad red diagonal-difference half of the matched pair. Relevant hardware/end-state photos are supporting evidence, not required primary map images.
+
+**Release gates:** reconcile the fitted indenter/load hardware and offered scales against the captured turret/software state; select, copy, integrate, and staff-approve the current HV0.3 control candidate; verify or capture the exact Single Point state in the correct method; capture and approve the missing bad-indent half and current warning behavior; confirm save/export and final state. The exact Level 1 scale/method is no longer an open gate, and routine users must not be instructed to edit programmed load, dwell, or other settings.
 
 ## Microtrac Sync Particle Size Analyzer
 

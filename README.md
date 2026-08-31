@@ -145,6 +145,7 @@ Before finishing a site change:
 
 * Run `git diff --check`.
 * Run `script/check-sop-contract` when an instrument page changes; CI runs it for every pull request.
+* Run `script/check-quick-guide-sources` when a Quick Guide changes. Every `quick-guides/*.md` page must remain a thin front-matter wrapper around its one-to-one `_includes/quick-guides/*.html` content source.
 * Run `bundle exec jekyll build`.
 * Check internal links and heading fragments when navigation or anchors change.
 * Follow the [Tutorial Media Production Guide](_staff/tutorial-media/README.md) when recording, reviewing, processing, or publishing instructional video and images.
