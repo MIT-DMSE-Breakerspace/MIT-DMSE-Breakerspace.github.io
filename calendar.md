@@ -9,6 +9,8 @@ Use this calendar to find and register for instrument training, see when a Break
 
 <p class="guidance-note"><strong>Looking for a particular instrument?</strong> Individual instrument reservations are managed separately. An open period on this calendar does not guarantee that an instrument is available; <a href="https://breakerspace.libcal.com/space/168610">check individual instrument availability in LibCal</a>.</p>
 
+{% include early-fall-training-notice.html %}
+
 {% include breakerspace-calendar.html %}
 
 ## Calendar
