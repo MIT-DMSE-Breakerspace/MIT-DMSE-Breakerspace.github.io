@@ -17,7 +17,7 @@ moira_group: dmse-brkrspc-sem
 >
 > **Decision or evidence required:** Define the observable LiveSEM state adequate for Level 1 acquisition without collapsing focus, charging, drift, washout, outgassing, and beam damage into one threshold.
 >
-> **Sources checked:** Canonical [LiveSEM View]({% link instruments/phenom-pure.md %}#live-sem), [Common Failure Modes]({% link instruments/phenom-pure.md %}#failures), and Phenom Pure work order.
+> **Sources checked:** Canonical [SEM View]({% link instruments/phenom-pure.md %}#sem-view), [Common Failure Modes]({% link instruments/phenom-pure.md %}#failures), and Phenom Pure work order.
 >
 > **Release effect:** Control practice is supported; an assessable quality pass is not.
 

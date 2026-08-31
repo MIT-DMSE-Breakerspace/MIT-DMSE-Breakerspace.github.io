@@ -6,7 +6,7 @@ permalink: /trainer/
 trainer_portal: true
 trainer_index: true
 interactive_checklist: false
-guide_revision: 2026-08-11
+guide_revision: 2026-08-31
 ---
 
 # Trainer Portal
@@ -21,41 +21,9 @@ Use this unlisted portal to prepare for and deliver a consistent Breakerspace in
 
 <section markdown="1">
 
-### [FTIR Trainer Guide — Ready for Release]({% link _staff-training/ftir-trainer-prototype.md %})
+### [FTIR Trainer Guide]({% link _staff-training/ftir.md %})
 
-Reviewed release candidate. Remains unpublished until release is explicitly authorized.
-
-</section>
-
-<section markdown="1">
-
-### [Phenom XL Trainer Guide — Provisional Draft]({% link _staff-training/phenom-xl-trainer-prototype.md %})
-
-Core SEM imaging review prototype. The EDS boundary, image-quality decision, save/export path, final state, and participant artifact remain open.
-
-</section>
-
-<section markdown="1">
-
-### [Phenom Pure Trainer Guide — Provisional Draft]({% link _staff-training/phenom-pure-trainer-prototype.md %})
-
-Room-temperature SEM imaging review prototype. Image quality, save/export, final state, and the participant artifact remain open.
-
-</section>
-
-<section markdown="1">
-
-### [XRD Trainer Guide — Provisional Draft]({% link _staff-training/xrd-trainer-prototype.md %})
-
-Aeris measurement review prototype. Analysis scope, stored programs, workstation handoff, export, final state, and the participant artifact remain open.
-
-</section>
-
-<section markdown="1">
-
-### [Instron Trainer Guide — Provisional Draft]({% link _staff-training/instron-trainer-prototype.md %})
-
-50 kN tensile-test review prototype. Method, end condition, result decision, export, hardware states, and the two-view participant artifact remain open.
+Reviewed session checklist for routine Level 1 ATR training.
 
 </section>
 
@@ -69,7 +37,9 @@ Existing pilot guide. Needs retrofit and operational review.
 
 </div>
 
-The FTIR guide is a reviewed release candidate. The four guides labeled **Provisional Draft** remain review artifacts and are not approved for training delivery.
+## Drafts Under Review
+
+Phenom XL, Phenom Pure, XRD, and Instron trainer guides remain unpublished review artifacts. They are intentionally not linked from the production portal and are not approved for training delivery.
 
 ## Administrative Shortcuts
 

@@ -1,9 +1,8 @@
 ---
-title: FTIR Trainer Guide — Ready for Release
-description: Reviewed FTIR trainer run sheet ready for release.
-published: false
-guide_status: Ready for release
-guide_revision: 2026-08-11
+title: FTIR Trainer Guide
+description: Reviewed session checklist and teaching outline for Thermo Scientific Nicolet iS5 FTIR training.
+guide_status: Current
+guide_revision: 2026-08-31
 interactive_checklist: true
 instrument_name: Thermo Scientific Nicolet iS5 FTIR Spectrometer
 moira_group: dmse-brkrspc-ftir

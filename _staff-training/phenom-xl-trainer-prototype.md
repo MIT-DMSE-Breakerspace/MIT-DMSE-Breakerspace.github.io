@@ -17,7 +17,7 @@ moira_group: dmse-brkrspc-sem
 >
 > **Decision or evidence required:** Define the observable SEM image state adequate for Level 1 acquisition without collapsing distinct failure modes into one threshold.
 >
-> **Sources checked:** Canonical [SEM View]({% link instruments/phenom-xl.md %}#live-sem), [Common Failure Modes]({% link instruments/phenom-xl.md %}#failures), and Phenom XL work order.
+> **Sources checked:** Canonical [SEM View]({% link instruments/phenom-xl.md %}#sem-view), [Common Failure Modes]({% link instruments/phenom-xl.md %}#failures), and Phenom XL work order.
 >
 > **Release effect:** Control practice is supported; an assessable quality pass is not.
 

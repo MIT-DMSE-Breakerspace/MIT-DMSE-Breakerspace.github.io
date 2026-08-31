@@ -1,11 +1,11 @@
 ---
 published: false
-review_date: 2026-08-18
+review_date: 2026-08-20
 target_branch: codex/quick-guide-rollout
 target_commit: ec78694a29ec6539c4b73ba9bf07f55761483d07
 implementation_commit: 7187b545050d9dc12946e6dc339f218f01eaa64c
 target_guide: quick-guides/phenom-xl-sop-map-prototype.md
-implementation_status: review_baseline_pending_specific_staff_notes
+implementation_status: august_20_facts_reconciled_pending_staff_approval
 ---
 
 # Phenom XL Quick Guide review and implementation brief
@@ -17,6 +17,10 @@ This brief records lab-manager feedback on the Phenom XL provisional Quick Guide
 Commit `7187b545050d9dc12946e6dc339f218f01eaa64c` implements the major workflow correction described below. Lab-manager review found that revision vastly improved and sufficiently correct to serve as the baseline for a later, detailed review pass. The reviewer has several specific revision points but intentionally deferred them to a future session.
 
 The next agent should reopen the rendered guide, elicit and record those points in this ledger, and only then begin further edits. Do not infer the deferred feedback or treat this handoff as technical approval. The draft remains unpublished, and every unresolved release gate in this document remains open.
+
+### August 20 reconciliation
+
+The lab manager confirmed the normal start state and EDS teaching boundary, directly observed the canonical XL loading sequence, verified the **move to SEM** icon and NavCam **magnification**, **brightness/contrast**, and **focus** labels, and confirmed **Scan Size** as the exact image-resolution label. Two additional sanitized 3840×2160 source candidates are recorded in the instrument work order. These facts refine the reviewed multi-view layout; they do not replace it or authorize publication.
 
 This project also carries a general production lesson from the superseded draft: before building a software map, verify which screens, control surfaces, and workflow staff actually recommend. When several valid operating paths exist, visible or easily captured controls are not automatically the instructional path. The repository-wide requirement is now recorded in the [Quick Guide Workflow-Selection Gate](README.md#workflow-selection-gate).
 
@@ -45,9 +49,9 @@ Use this model instead:
 | `phenom-xl.deferred-staff-notes` | Deferred to future review session | Entire rendered guide | Blocks final staff approval | The 2026-08-18 lab-manager review found the implementation sufficiently correct for detailed review, but several specific revision points were intentionally deferred. Elicit and record those points before the next edit pass; do not infer them. |
 | `phenom-xl.save-export` | Open | Side 1, after “Stop and ask staff” | Blocks technical completion | Confirm the routine image label, save, export, and copy convention. |
 | `phenom-xl.final-state` | Open | Side 1, after “Stop and ask staff” | Blocks technical completion | Confirm the final XL tray/chamber state and exact shutdown handoff. |
-| `phenom-xl.control-captures` | Partially resolved | Side 2, “Use the lower-left controls” | Blocks final Side 2 | Sanitized lower-left, Focus in Area, and fine-focus states were selected on 2026-08-18. A current capture of the right-click focus menu with `Focus in Area` visible is still missing; keep the operator-verified instruction provisional until staff confirms it against the instrument. |
-| `phenom-xl.settings-copy` | Drafted for staff review | Side 2, “Choose live and capture settings” | Blocks technical completion | Review the concise accelerating-voltage, beam-intensity, resolution, and averaging primer. The source capture confirms that “Medium + 960 × 540” refers to Live averaging and Live scan size, not beam intensity. |
-| `phenom-xl.eds-boundary` | Open | Side 2, “How the screen is organized” | Blocks curriculum sign-off, not primary SEM map drafting | Approve or revise the proposed brief Level 1 capability preview plus separate Level 2 independent-operation boundary. Do not teach EDS operation on this guide. |
+| `phenom-xl.control-captures` | Partially resolved | Side 2, “Use the lower-left controls” | Blocks final Side 2 | Sanitized lower-left, Focus in Area, and fine-focus states were selected on 2026-08-18. On 2026-08-20, the NavCam **move to SEM**, **magnification**, **brightness/contrast**, and **focus** labels were directly verified and a newer native NavCam candidate was recorded. A current capture of the right-click focus menu with `Focus in Area` visible is still missing; keep that operator-verified instruction provisional until staff confirms it against the instrument. |
+| `phenom-xl.settings-copy` | Drafted for staff review | Side 2, “Choose live and capture settings” | Blocks technical completion | Review the concise accelerating-voltage, beam-intensity, Scan Size, and averaging primer. The 2026-08-20 native source candidate confirms **Scan Size** as the exact image-resolution label and also exposes **Detector** and **Vacuum** for a staff decision about the Level 1 group. “Medium + 960 × 540” refers to Live averaging and Live Scan Size, not beam intensity. |
+| `phenom-xl.eds-boundary` | Resolved 2026-08-20 | Side 2, “How the screen is organized” | No longer blocks curriculum sign-off | General Phenom XL training includes a brief trainer-operated capability preview and advertises optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. Do not teach EDS operation on the primary SEM guide. |
 | `phenom-xl.print-proof` | Automated checks passed; physical proof open | Side 2 footer | Blocks printing/installation | 2026-08-18: exactly two Letter pages; no page-edge, section, or footer overlap; color and grayscale renders inspected; both QR codes decode at 300 dpi. Physical color/grayscale duplex proof remains open. |
 
 ## Required correction: remove the coarse-slider map

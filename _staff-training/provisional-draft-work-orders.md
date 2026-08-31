@@ -10,23 +10,23 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
-| 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Reviewed 2026-08-11; ready for release; remains unpublished | None for the trainer guide; the compact Quick Guide redesign remains separate. |
+| 1 | FTIR | `_staff-training/ftir.md` | Reviewed 2026-08-11; released to the Trainer Portal 2026-08-31 | None for the trainer guide; the compact Quick Guide redesign remains separate. |
 | 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Lab-manager review in progress; EDS boundary approved 2026-08-20 | Define image quality; verify save/export, final state, interface evidence, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
-FTIR is ready for release after lab-manager review. The other four prototypes remain blocked for routine delivery until their guide pairs, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
+FTIR was released after lab-manager review. The other four prototypes remain blocked for routine delivery until their guide pairs, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
 **Recommended review sequence:** FTIR review is complete. Compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
 
 **Review revalidation — 2026-08-11:** after the participant-artifact source/handoff correction, normal and unpublished Jekyll builds passed and the rendered checklist totals remained unchanged. The word measurements below were refreshed for the corrected prototype-only closeout include and XRD gap. `script/validate-html` was rerun, but the external W3C service again returned HTTP 429; HTML validation remains environmentally unverified.
 
-## FTIR Compact Release Candidate {#ftir-compact-prototype}
+## FTIR Compact Guide {#ftir-compact-prototype}
 
 **Sources:** [`ftir.md`](ftir.md), [`../instruments/ftir.md`](../instruments/ftir.md), [`../quick-guides/ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md), and the shared trainer references.
 
-**Purpose:** preserve the useful operational coverage while testing whether a trainer can actually run the session from a short guide. Leave the current live FTIR guide unchanged for side-by-side review.
+**Purpose:** preserve the useful operational coverage in a short guide that a trainer can run during the session. The reviewed compact artifact replaced the older live guide on 2026-08-31.
 
 **Target composition:**
 
@@ -78,14 +78,14 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 * **Checks:** 17 FTIR-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
 * **Words:** `wc -w` reports 1,087 in the prototype source, 216 in the compact safety include, and 228 in the compact closeout include (1,531 source words across the three files). The unpublished render contains **944 runnable-checklist words**, **1,218 total content words**, and **44 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` passed; `bundle exec jekyll build --unpublished` also rendered the prototype and all 30 controls. `script/validate-html` was run, but its external W3C service was unreachable in the sandbox and then returned HTTP 429 with network access; HTML validation remains unverified for environmental reasons.
-* **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide is ready for release and remains unpublished pending the release step.
+* **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide was released to the Trainer Portal on 2026-08-31.
 * **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
 
 **Release-candidate revalidation — 2026-08-11:**
 
 * **Checks:** 19 FTIR-specific + 6 compact safety + 7 compact closeout = **32 rendered checks**.
 * **Words:** `wc -w` reports 963 in the trainer-guide source, 203 in the compact safety include, and 214 in the compact closeout include (**1,380 source words** total). The unpublished render contains **1,069 runnable-checklist words**, **1,111 total content words**, and **33 trainer-note words**.
-* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. The ordinary build currently rejects the trainer index links to the other intentionally unpublished prototypes; reconcile those index cards during the eventual release step without publishing the other guides.
+* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. On 2026-08-31 the production index was reconciled to link only released guides; the four intentionally unpublished prototypes remain named but unlinked.
 
 ## Phenom XL Prototype
 
@@ -97,9 +97,9 @@ Draft the supported core SEM imaging session: XL-specific sample preparation and
 
 **Operating fact — lab-manager confirmed 2026-08-20:** The normal starting condition is the XL tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and the microscope in standby. This was confirmed as the expected state, not recorded as a direct instrument observation.
 
-**Direct observation — 2026-08-20:** At the XL, the complete normal loading sequence matched the canonical page: start and connect the Phenom software; use the software eject control to open the compartment; remove the tray; load with stub tweezers and verify secure attachment and the XL-specific approximately 5–7 mm-below-tray-top clearance; reinsert the tray; use the same software control to close the compartment; and wait for NavCam. The matched loading photographs remain an open evidence gate.
+**Direct observation — 2026-08-20:** At the XL, the complete normal loading sequence matched the canonical page: start and connect the Phenom software; use the software eject control to open the compartment; remove the tray; load with stub tweezers and verify secure attachment and the XL-specific approximately 5–7 mm-below-tray-top clearance; reinsert the tray; use the same software control to close the compartment; and wait for NavCam. The existing matched clearance photographs remain supporting evidence; tray-removal and stub-loading motion media are still uncaptured.
 
-**Terminology decision and interface evidence — reviewed 2026-08-20:** Visible XL guidance uses **SEM** or **SEM view**, not “LiveSEM.” Direct observation confirmed that the transition control is an icon with the mouse-over label **move to SEM**. The sanitized native-resolution NavCam source candidate shows the icon in the upper left immediately below the eject/open-close icon; its symbol is two circles with plus signs and an arrow between them. Direct observation also confirmed the three lower-left NavCam mouse-over labels: **magnification**, **brightness/contrast**, and **focus**. The internal `#live-sem` anchor remains only for existing-link compatibility.
+**Terminology decision and interface evidence — reviewed 2026-08-20:** Visible XL guidance uses **SEM** or **SEM view**, not “LiveSEM.” Direct observation confirmed that the transition control is an icon with the mouse-over label **move to SEM**. The sanitized native-resolution NavCam source candidate shows the icon in the upper left immediately below the eject/open-close icon; its symbol is two circles with plus signs and an arrow between them. Direct observation also confirmed the three lower-left NavCam mouse-over labels: **magnification**, **brightness/contrast**, and **focus**. The shared public section now uses the `#sem-view` anchor.
 
 **Control-label refinement — reviewed 2026-08-20:** The XL UI labels the image-resolution control **Scan Size**. XL guidance uses that exact label and may clarify it parenthetically as image resolution. A sanitized native-resolution SEM source candidate is now available and visibly supports the label; selection of the complete Level 1 top-panel control set remains under review.
 
