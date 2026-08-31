@@ -29,7 +29,7 @@ This file records both facts already established by a canonical instrument page 
 | Instrument | Release status | Principal reason |
 | --- | --- | --- |
 | Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Composition is the drafting model. Native 1920x1080 OMNIC control and contact captures now replace the failed poster frames, the key uses the visible toolbar labels, and the contact caption follows the canonical criterion. Still needs Side 1 layout correction, physical proof, and operational review before publication. |
-| Thermo Fisher Phenom XL SEM | **BLOCKED** | Current LiveSEM states and a loading/height pair are captured and triaged; the multi-state layout, top-panel control verification, EDS boundary, save/export, and final state remain unresolved. |
+| Thermo Fisher Phenom XL SEM | **BLOCKED** | The reviewed multi-view layout and current interface states are integrated; the EDS boundary is resolved and two newer native source candidates are recorded. Source approval, remaining icon/function checks, save/export, final state, operational review, and physical proof remain unresolved. |
 | Thermo Fisher Phenom Pure SEM | **BLOCKED** | Current Pure LiveSEM states and a loading/height pair are captured and triaged; the multi-state layout, control verification, save/export, and final state remain unresolved. |
 | Malvern Panalytical Aeris Research XRD | **BLOCKED** | Queue and changer-cover candidates are captured and triaged; the HighScore boundary, stored-program curation, sign-in/data handoff, and exact position control remain unresolved. |
 | Instron 68TM-50 Universal Testing System | **BLOCKED** | Actual-run Bluehill and handset candidates are captured; the Level 1 method/end condition, two-view layout, toe-artifact pair, travel-limit prompt, and export/final-state implementation remain unresolved. |
@@ -99,15 +99,21 @@ For every instrument:
 
 **Canonical source:** [`../../instruments/phenom-xl.md`](../../instruments/phenom-xl.md). Do not substitute the SEM hub or Pure page.
 
-**Canonical SOP spine:** prepare and load a dry, secured sample under the XL height rule; confirm the NavCam view is usable for navigation; enter LiveSEM; characterize and save as appropriate; stop any acquisition; unload; clean; and return the microscope to standby.
+**Canonical SOP spine:** start with the tray inside the closed compartment, Phenom software closed, Windows at sign-in, and the microscope in standby; prepare and load a dry, secured sample under the XL height rule; confirm the NavCam view is usable for navigation; enter SEM view; characterize and save as appropriate; stop any acquisition; unload; clean; and return the microscope to standby.
 
-**Level 1 teaching workflow:** navigate with NavCam, obtain a usable LiveSEM image, adjust focus and brightness/contrast, inspect the top-panel voltage/beam/resolution/averaging state, change magnification, and acquire/save images at several magnifications. Hair is the sample currently named in the public exercise, not required Quick Guide content.
+**Level 1 teaching workflow:** navigate with NavCam, obtain a usable SEM image, adjust focus and brightness/contrast, inspect the top-panel voltage/beam/**Scan Size**/averaging state, change magnification, and acquire/save images at several magnifications. **Scan Size** is the exact UI label for image resolution. Hair is the sample currently named in the public exercise, not required Quick Guide content.
 
-**EDS curriculum boundary proposed for approval:** give a short capability preview during general Phenom XL training, analogous to the optical LEXT preview, but require a separate Level 2 EDS add-on before independent EDS operation. The primary SEM Quick Guide does not map EDS controls; a later EDS task card can support the add-on if staff approve this boundary.
+**EDS curriculum boundary — reviewed 2026-08-20:** give a brief trainer-operated capability preview during general Phenom XL training and advertise optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. The primary SEM Quick Guide does not map EDS controls; a later EDS task card may support the optional focused training.
 
 **Side 1 critical box:** **Sample and holder clearance** — use the XL-specific canonical sample-height rule, secure loose particles, and remove gloves before using the computer. Do not reuse the Pure height rule.
 
 **Reviewed Side 2 variant (2026-08-18):** the [Phenom XL review brief](phenom-xl-review-2026-08-18.md) authorizes an instrument-specific multi-view layout because no one captured state can teach the approved workflow legibly. The coarse `SEM-right-panel.PNG` sliders are supporting evidence only and must not be presented as the recommended student method. The variant gives space first to the lower-left controls, Focus in Area plus hidden `F` fine focus, NavCam/Move to SEM/capture actions, live/capture settings, and full-screen orientation.
+
+**Loading sequence evidence — directly observed 2026-08-20:** the actual XL matched the canonical sequence from software startup/connection through software eject, tray removal, stub loading and clearance recheck, tray reinsertion, the same software control closing the compartment, and arrival in NavCam. The existing matched clearance pair remains supporting evidence; tray-removal and stub-loading motion media are still uncaptured.
+
+**Primary image candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-sem-top-panel.png` is a sanitized, unannotated 3840 x 2160 XL SEM capture with the settings panel open. It visibly shows the exact labels **Acc. Voltage**, **Beam Intensity**, **Detector**, **Vacuum**, **Live**, **Averaging**, **Scan Size**, **Acquisition**, and **ADVANCED...**. The separate **Live** panel heading is not the name of the SEM view. Staff still need to approve this as the primary map source and select the complete Level 1 control set. `assets/img/tutorials/sem/FocBri.PNG` remains a composition reference only because it has baked-in annotation.
+
+**NavCam source candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-navcam-empty.png` is a sanitized, unannotated 3840 x 2160 capture from the XL. It shows the move-to-SEM icon in the upper left immediately below the eject/open-close icon and the three lower-left adjustment icons. Direct observation confirmed that the transition symbol is two circles with plus signs and an arrow between them and that its mouse-over label is **move to SEM**. Direct observation also confirmed the lower-left mouse-over labels **magnification**, **brightness/contrast**, and **focus**. Staff still need to approve the candidate as the final NavCam source.
 
 **Screenshot coverage as of 2026-08-18:** six sanitized, unannotated assets are integrated at `assets/img/quick-guides/phenom-xl/`: `phenom-xl-livesem-overview.png`, `phenom-xl-routine-controls.png`, `phenom-xl-focus-in-area.png`, `phenom-xl-focus-fine.png`, `phenom-xl-system-live-settings.png`, and `phenom-xl-navcam-navigation.png`. They were cropped or proportionally reduced from `SEM.PNG`, `SEM-select-focus1.PNG`, `SEM-top-panel.PNG`, and `navcam-sample.PNG`. Crops exclude the bottom metadata bar and private sample labels. The full overview and NavCam states contain no visible private path, address, or sample name. `assets/img/tutorials/sem/FocBri.PNG` remains composition reference only because it has baked-in annotation.
 
@@ -117,16 +123,18 @@ For every instrument:
 2. left-click automatic brightness/contrast and use it instead of routine manual brightness or contrast;
 3. left-click autofocus; if it misses, right-click the control's lower-right triangle and choose `Focus in Area`;
 4. with the focal-area box visible, use the wheel to focus, select blue `F` for fine steps, then click outside the box to apply that plane to the full image;
-5. use the left camera icon for capture; in NavCam double-click the destination and use `Move to SEM`;
-6. use Live `Averaging Medium` plus `Scan Size 960×540` for navigation. Beam intensity is task/sample dependent; `Medium` is not a beam-intensity choice in this interface.
+5. use the left camera icon for capture; in NavCam double-click the destination and use the icon whose verified mouse-over label is **move to SEM**;
+6. use Live `Averaging Medium` plus `Scan Size 960×540` for navigation. **Scan Size** is the exact UI label for image resolution. Beam intensity is task/sample dependent; `Medium` is not a beam-intensity choice in this interface.
+
+The 2026-08-20 source candidates also expose **Detector** and **Vacuum** in the grouped settings panel. Staff must decide whether they belong in the Level 1 inspection before locking that group. Do not imply that NavCam, the **move to SEM** icon, and every SEM control coexist in one screenshot.
 
 A current sanitized capture of the right-click focus menu with `Focus in Area` visible is still missing. The user-verified interaction may remain in the provisional draft, anchored to `phenom-xl.control-captures`, but it requires staff confirmation at the instrument before release.
 
 **Readiness photographs:** external `PhenomXL/sample-height-incorrect.JPG` and `PhenomXL/sample-height-correct.JPG` remain integrated supporting assets with identical framing. The 2026-08-18 variant removes them from Side 2 so the higher-priority operational workflow stays legible; the complete XL clearance rule remains in the Side 1 critical box. They remain candidates for the detailed instrument page or a future task card.
 
-**Do not add:** independent EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. A brief EDS capability preview belongs in the staff guide only if the proposed boundary is approved.
+**Do not add:** EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. The brief trainer-operated EDS capability preview belongs in the staff guide, not the primary participant Quick Guide.
 
-**Release gates:** approve the EDS training boundary; staff-approve the 2026-08-18 capture selection and multi-view layout; capture or verify the right-click Focus in Area menu and every mapped icon/function; technically review the voltage/beam/settings primer; confirm save/export and the final tray/chamber state; and complete the 100% Letter color, grayscale, duplex, footer, clipping, and QR proof.
+**Release gates:** approve whether the 2026-08-20 NavCam and SEM candidates replace or supplement the integrated 2026-08-18 crops; select the complete Level 1 top-panel control set; capture or verify the right-click Focus in Area menu and every remaining mapped icon/function; technically review the voltage/beam/settings primer; confirm save/export and the final tray/chamber state; and complete the 100% Letter color, grayscale, duplex, footer, clipping, and QR proof. The EDS curriculum boundary is resolved and no longer blocks the primary SEM guide.
 
 ## Thermo Fisher Phenom Pure SEM
 

@@ -1,3 +1,6 @@
+{% assign sem_view_label = include.view_label | default: "SEM" %}
+{% assign sem_navcam_image = include.navcam_image | default: "../assets/img/tutorials/sem/navcam.PNG" %}
+
 #### Project Label And Save Location {#customize}
 
 While the sample is loading, open Settings / Customize and set a useful image label and save location. Do this before you start collecting images so your files land in a project folder that will still make sense later.
@@ -15,17 +18,25 @@ Use this moment to:
 
 * Confirm that the expected sample or stub is visible.
 * Check that the sample did not shift during loading.
+{% if include.navcam_controls_verified %}
+* Use the **magnification**, **brightness/contrast**, and **focus** controls as needed for navigation.
+{% else %}
 * Adjust NavCam brightness, contrast, and focus if you will use it for navigation.
+{% endif %}
 * Save a NavCam image if it will help document where later SEM images were taken.
 
 <figure style="margin-left:0; margin-right:0;">
-  <a href="../assets/img/tutorials/sem/navcam.PNG" target="_parent"><img src="../assets/img/tutorials/sem/navcam.PNG" alt="Phenom NavCam view." style="width:80%; margin:0"></a>
+  <a href="{{ sem_navcam_image }}" target="_parent"><img src="{{ sem_navcam_image }}" alt="Phenom NavCam view." style="width:80%; margin:0"></a>
   <figcaption>NavCam is the optical overview used to select a region before moving to SEM view.</figcaption>
 </figure>
 
-#### LiveSEM View {#live-sem}
+#### {{ sem_view_label }} View {#sem-view}
 
+{% if include.move_to_sem_icon_verified %}
+Select the upper-left icon immediately below the eject/open-close icon. It shows two circles with plus signs and an arrow between them; its mouse-over label is **move to SEM**. This enters the {{ sem_view_label }} view. Start zoomed out, find a recognizable feature, focus, then increase magnification gradually.
+{% else %}
 Click **Move to SEM** to enter the live SEM view. Start zoomed out, find a recognizable feature, focus, then increase magnification gradually.
+{% endif %}
 
 Useful controls:
 
@@ -38,7 +49,7 @@ Useful controls:
 
 <figure style="margin-left:0; margin-right:0;">
   <a href="../assets/img/tutorials/sem/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/sem/FocBri.PNG" alt="Phenom focus and brightness controls." style="width:70%; margin:0"></a>
-  <figcaption>Focus, brightness, and contrast controls are the main adjustments in LiveSEM view.</figcaption>
+  <figcaption>Focus, brightness, and contrast controls are the main adjustments in {{ sem_view_label }} view.</figcaption>
 </figure>
 
 ##### Choosing Detector, Voltage, Vacuum, And Intensity
@@ -56,7 +67,11 @@ Useful controls:
 
 #### Image Acquisition And Gallery {#acquisition}
 
+{% if include.scan_size_label_verified %}
+Press the camera icon to acquire an image. Images are saved with the **Scan Size** (image resolution) and **Averaging** selected in the acquisition settings. Start with the default settings, take a test image, then increase Scan Size or Averaging only if the sample is stable.
+{% else %}
 Press the camera icon to acquire an image. Images are saved with the resolution and averaging set in the acquisition settings. Start with the default settings, take a test image, then increase resolution or averaging only if the sample is stable.
+{% endif %}
 
 Higher averaging improves signal-to-noise but takes longer. If the sample is charging, drifting, vibrating, or degrading, longer acquisition can make the final image worse.
 

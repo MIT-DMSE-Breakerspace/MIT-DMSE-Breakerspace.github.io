@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-08-12
+Last reviewed: 2026-08-20
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -34,6 +34,7 @@ The content contract and relationship to staff training were settled on 2026-08-
 ## Nicolet iS5 FTIR Spectrometer
 
 * [x] **Resolve the background-preview and contact-quality criteria.** Lab-manager review on 2026-08-11 confirmed that the live background preview is not a pass/fail test; background readiness comes from a clean, dry, bare, unclamped crystal. The canonical page now says so. It separately defines the sample-preview contact cue as a change from a near-zero trace to a sample spectrum, explicitly not a universal spectrum-shape or signal-strength pass criterion.
+* [x] **Resolve OMNIC System Status recognition.** Staff confirmed 2026-08-11 that a green check means the instrument is ready. Any other status prevents background and sample collection rather than allowing flawed results, so users stop and ask staff; no additional failed-state catalog is needed.
 * [ ] **Add named atmospheric and contamination band positions to the page.** [`#failures`](./ftir.md#failures) and the science section describe water vapor, carbon dioxide, solvent, and residue features qualitatively but give no wavenumbers, so a user cannot recognize them on a spectrum. A draft Quick Guide revision cited approximately 3700 and 2350 cm<sup>-1</sup>; those numbers were not sourced from this page and were removed. Have staff confirm the positions actually seen on this instrument, add them to the page, and only then let the Quick Guide name them.
 * [x] **Make the background-redo cycle explicit in the SOP.** Lab-manager review on 2026-08-11 confirmed the complete unload → clean and dry → bare/unclamped background → reload and recollect cycle and the stop condition when features remain. The canonical SOP, detailed sample workflow, and failure table now carry it.
 * [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
@@ -66,11 +67,12 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a screenshot of the **travel-limit prompt** as it appears when starting a test. The method screen, test screen, and home screen are now published; the limit prompt is the one Bluehill screen still described only in prose.
 * [ ] Capture a clean, unannotated current handset photo for the Quick Guide. The existing annotated student-worker images are composition references only and must not be reused as the final source.
 * [ ] Capture a clean, native-resolution Bluehill test-state view showing the controls actually used in the selected Level 1 method. The Quick Guide must show both Bluehill and the handset; approve a readable two-view layout before annotation.
-* [ ] Capture a matched force-displacement example showing the canonical soft curved toe from slack/grip slip and a repeat after correcting the setup; have staff approve the at-instrument caption.
+* [ ] Capture a matched force-displacement example showing the canonical soft curved toe from slack/grip slip and a repeat after correcting the setup; have staff approve the at-instrument caption and the immediate trainer decision the comparison supports.
 * [ ] Consider a short MP4/WebM of the unlock-then-start sequence, since the roughly two-second CAUTION window is hard to convey in text and is a common first-run stumble.
-* [ ] **Confirm the lab's default method names and export conventions.** The page deliberately describes method setup generically (templates, rate, end-of-test condition, operator inputs) because the actual saved method names on the workstation, the default save location, and any course-specific methods were not verified. Confirm these and make the [method](./instron.md#method) and [saving](./instron.md#saving) sections specific to this machine. Keep authentication details in training or at the instrument.
+* [ ] **Confirm whether Level 1 uses a saved method or QuickTest, then confirm the lab's default method names and export conventions.** The page deliberately describes method setup generically (templates, rate, end-of-test condition, operator inputs) because the actual path, saved method names on the workstation, default save location, and any course-specific methods were not verified. Confirm these and make the [method](./instron.md#method) and [saving](./instron.md#saving) sections specific to this machine. Keep authentication details in training or at the instrument.
 * [ ] Confirm the **end-of-test condition** the lab recommends for a general tensile test to failure. The page cites the 3.000 coffee-bean method's 30% force-drop condition as an illustrative example, taken from `handouts/3.000 Instron Station .pdf`; a recommended default for independent users would be better.
 * [ ] Confirm whether **load-string preload** is genuinely staff-only, as the page now states. The 6800 guide documents the `Preload Grips` method (pp. 107–109) and the page directs users to ask staff rather than loosen lock nuts; confirm this matches lab policy.
+* [ ] Define and verify the complete initial and final hardware states for the 50 kN Level 1 tensile setup: installed load cell and fixtures at the start, what is removed or retained after cleanup, and the disabled-frame before-leaving state. Do not infer this from setup photos or another-capacity fixture.
 * [x] Confirm grip capacities: the lab has distinct 1 kN and 5 kN tensile grips. Keep them separate in captions, worked examples, and training media. Confirmed by staff 2026-07-29.
 * [ ] Add the pumpkin-compression results figure and, if useful, a labeled force-displacement curve from the event. (`assets/img/instron-pumpkin-results.jpg` exists and is used on the lounge and showcase pages but not on the instrument page.)
 * [ ] Confirm approved training samples for the exercises once the sample library is ready.
@@ -111,20 +113,30 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a complete Pure level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing Phenom Pure holder selection and stub loading, including a matched over-height versus correct below-holder-edge pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
+* [ ] Add a GIF of moving from NavCam to SEM view, focusing, and acquiring the first image.
+* [ ] Define the observable Level 1 image-quality decision for the room-temperature Pure workflow without inventing a universal resolution or contrast threshold.
+* [ ] Confirm the exact save/export and naming convention and the final holder/chamber standby state. Keep the Pure holder-return rule distinct from the XL tray state.
 * [ ] Add cold-stage photos or GIFs showing cryo gel turning fully white, acceptable vs excessive frost, and black wire/connector placement during loading.
 * [ ] Add before/after image examples of cold-stage drift, frost, and sample outgassing.
 
 ## Phenom XL SEM
 
-* [x] Capture clean, unannotated XL NavCam and LiveSEM views for the Level 1 imaging workflow. Captured and triaged 2026-08-12; the imaging-controls state is integrated with verified callouts for magnification, focus, contrast, and brightness. **Still open:** verify the acquisition and automatic brightness/contrast icon functions at the instrument, and lock a reviewed multi-state layout before the grouped top panel (voltage, beam/intensity, resolution, averaging) can be mapped.
+* [x] Confirm the expected starting state. Lab-manager confirmed 2026-08-20: tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and microscope in standby. This was not recorded as a direct instrument observation.
+* [x] Verify the complete normal loading sequence at the XL. Directly observed 2026-08-20: it matches the canonical software-start/connect → software eject/open → tray removal → stub loading and XL-specific clearance recheck → tray reinsertion → same software control/close → NavCam sequence. The existing matched clearance pair remains supporting evidence; tray-removal and stub-loading motion media are still uncaptured.
+* [x] Identify a clean, unannotated native-resolution XL NavCam source candidate. Reviewed 2026-08-20: `assets/img/tutorials/sem/phenom-xl-navcam-empty.png` is a sanitized 3840 x 2160 capture that shows the move-to-SEM icon in the upper left below the eject/open-close icon and the three lower-left adjustment icons. Direct observation confirmed the transition icon has two plus-sign circles with an arrow between them and the mouse-over label **move to SEM**; the adjustment labels are **magnification**, **brightness/contrast**, and **focus**. Final source approval remains open.
+* [x] Identify a clean, unannotated native-resolution XL SEM source candidate. Reviewed 2026-08-20: `assets/img/tutorials/sem/phenom-xl-sem-top-panel.png` is a sanitized 3840 x 2160 capture with the settings panel open and exact visible labels including **Acc. Voltage**, **Beam Intensity**, **Detector**, **Vacuum**, **Live**, **Averaging**, **Scan Size**, and **Acquisition**. Final source approval and complete Level 1 group selection remain open.
+* [x] Resolve the resolution-label conflict. Lab-manager confirmed 2026-08-20 that XL guidance should use the exact UI label **Scan Size** and may clarify it as image resolution.
+* [x] Integrate a reviewed multi-view XL map rather than forcing the workflow into one screenshot. The 2026-08-18 layout preserves whole-screen orientation, routine lower-left controls, Focus in Area and fine focus, NavCam navigation, and the grouped settings panel.
+* [ ] Approve whether the 2026-08-20 NavCam and SEM source candidates should replace or supplement the integrated 2026-08-18 crops, select whether **Detector** and **Vacuum** join the grouped Level 1 settings-panel inspection, and verify the remaining mapped icon functions, including acquisition, automatic brightness/contrast, and the right-click **Focus in Area** menu.
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [x] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check. The matched clearance pair is integrated 2026-08-12; both frames were staged outside the chamber. Tray-removal and stub-loading motion media are still not captured.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
-* [ ] Approve or revise the proposed EDS curriculum boundary: a short capability preview during Phenom XL Level 1, followed by a separate Level 2 add-on before independent EDS operation. Do not add EDS controls to the primary SEM Quick Guide while this remains a proposal.
-* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away, for the proposed Level 2 add-on or later EDS task card.
-* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export for the proposed Level 2 add-on or later EDS task card.
+* [ ] Add a GIF of moving from NavCam to SEM view, focusing, and acquiring the first image.
+* [ ] Define the observable Level 1 image-quality decision for the XL imaging workflow without inventing a universal resolution or contrast threshold.
+* [ ] Confirm the exact save/export and naming convention and the final tray/chamber standby state. Do not substitute the Pure holder-return rule.
+* [x] Approve the EDS curriculum boundary. Reviewed 2026-08-20: Phenom XL Level 1 includes a brief trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. Do not add EDS controls to the primary SEM Quick Guide.
+* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away, for the optional Level 2 training or later EDS task card.
+* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export for the optional Level 2 training or later EDS task card.
 
 ## Microtrac Sync Particle Size Analyzer
 
@@ -172,7 +184,7 @@ This page was substantially expanded from a thin original and still needs verifi
 ## Phenom Scanning Electron Microscopes (Shared SEM Hub)
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Develop a Level 2 EDS add-on and concise EDS task card if staff approve the proposed boundary; it should cover sample/mount/coating implications, voltage and working distance, point/area/live/map choices, stop-before-moving, peak overlap, and save/export. Specific stocked samples or standards can be added later when available.
+* [ ] Develop optional Level 2 EDS-focused training and a concise EDS task card if useful; it should cover sample/mount/coating implications, voltage and working distance, point/area/live/map choices, stop-before-moving, peak overlap, and save/export. Specific stocked samples or standards can be added later when available.
 * [ ] Add a level 2 non-conductive-sample exercise using a specific sample-library item suitable for low-vacuum and sputter-coated comparison.
 * [ ] Add annotated SEM and EDS example results showing how image contrast and elemental maps answer different kinds of questions.
 * [ ] Add photos or GIFs showing a gloved hand placing a stub in a prep tray and mounting a sample with stub tweezers.
@@ -198,7 +210,10 @@ This page was substantially expanded from a thin original and still needs verifi
 ## Aeris Research X-Ray Diffractometer
 
 * [ ] **Pare down the stored measurement programs on the instrument.** This is instrument configuration rather than website work, but it directly determines what the operating page and Quick Guide can say. The routine user workflow is selecting a stored program, not entering scan parameters, so the program list is the real interface. Reduce it to a focused set, give each a filename that identifies what it does, and write a short description of what each is useful for. Then list them on the operating page and in the Quick Guide so a user can pick correctly without asking. Until this is done, both documents can only say "choose a stored program from the drop-down list, and ask staff if none looks right."
+* [ ] Decide whether HighScore/Search Match is taught for independent Level 1 practice, shown only as a capability preview, or reserved for a later analysis exercise. The current public exercise and primary Quick Guide map imply different boundaries; do not let a prototype settle the choice implicitly.
 * [ ] Confirm what governs sign-in on the **XRD companion workstation** (the export/HighScore/XRDMP computer to the right of the instrument). The Aeris itself has a custom control touchscreen that boots directly into instrument operation with no access control, and `dmse-brkrspc-xrd` is a communication-only list that grants nothing. But [the export section](./xrd.md#export) tells users to "use the current workstation sign-in ... provided during training," which implies the companion workstation has a sign-in of its own. Resolve whether that is a Kerberos/WIN login, a local account, or nothing, then make the export section specific. Keep authentication details in training or at the instrument rather than publishing them. See [`../_staff-training/access-and-logistics.md`](../_staff-training/access-and-logistics.md#xrds-companion-workstation).
+* [ ] Confirm the exact export/copy and participant handoff sequence between the Aeris touchscreen and companion workstation, including where a participant verifies that the needed files were retained. Do not record credentials or private paths.
+* [ ] Confirm the final position of the removable sample-changer cover after the holder is removed. The canonical shutdown does not currently say whether or where to restore it; update the canonical before-leaving state before a guide makes that action checkable.
 * [ ] Add a labeled overview photo of the instrument showing the mains switch, power button, and HT keyswitch locations.
 * [ ] Reshoot the loading, queue, and export media with appropriate glove use if handling guidance calls for it. For the Quick Guide, capture a native queue screen, an overhead view with loaded slot number and restored plastic changer cover visible, and the confirmed companion-workstation export destination. The current add-sample poster does not show the restored cover, and the current export poster is a measurement screen rather than an export view.
 * [ ] Add a dedicated screenshot of the changer-position selection in the UI (the current step links the general queue video; a still that highlights the position selector would be clearer).
