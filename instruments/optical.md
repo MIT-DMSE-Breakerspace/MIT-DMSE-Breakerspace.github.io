@@ -276,8 +276,7 @@ For useful records:
 
 ## Exercises {#exercises}
 
-* **Level 1 - General training:** Image a simple textured sample in brightfield, use Best Image to compare observation modes, capture a 2D image, and save the file in the correct project folder.
-* **Level 1 - General training:** Capture the same region at two magnifications and record the objective, zoom setting, observation mode, and save location.
-* **Level 2 - 3D capture:** Use a sample with visible surface relief to acquire a 3D image, generate a profile, and report the measured height difference between two points.
-* **Level 2 - Stitching:** Capture a stitched image of a larger sample region and compare the stitched result with a single-frame image.
+* **Level 1 - General training:** Use Best Image to select an observation mode, make a quick 2D stitch for the map image, capture a normal 2D image, make a slower high-quality 2D area stitch with **Use as map image** deselected, and capture a 3D image. Record the objective, zoom setting, observation mode, acquisition type, and save location. The trainer may mention high-quality 3D stitching and briefly show LEXT analysis/report capabilities, but those previews are not taught as independent Level 1 workflows.
+* **Level 2 - 3D measurement and analysis:** Use a sample with visible surface relief to acquire a 3D image, generate a profile, and report the measured height difference between two points.
+* **Level 2 - Advanced stitching:** Capture and evaluate a high-quality 3D stitch or develop a repeatable stitched workflow for a larger sample region.
 * **Level 3 - Specialist training:** Develop a repeatable imaging workflow for a recurring sample type, including sample prep, objective, observation mode, acquisition type, measurement outputs, and export settings.

@@ -62,7 +62,7 @@ There are several standard methods, and they differ mainly in the indenter shape
 
 ### What To Look For In The Results
 
-The main output is a hardness number with its scale, such as `669 HV 40` (a Vickers value at a 40 kgf-equivalent load) or an HRC value for Rockwell. Always record the scale, not just the number, because a bare number is meaningless without it.
+The main output is a hardness number with its scale, such as `176.0 HV 0.3` (a Vickers value from the 300 gf programmed test) or an HRC value for Rockwell. Always record the scale, not just the number, because a bare number is meaningless without it.
 
 For Vickers and Brinell, the instrument also reports the measured indent dimensions (for example, the two diagonals d1 and d2 of a Vickers indent), which is how the hardness is calculated. A well-formed, symmetric indent gives a trustworthy number; a lopsided or ragged indent is a sign the sample was tilted, rough, or moving.
 
@@ -91,7 +91,8 @@ Match the indenter and scale to your sample before testing. Using a scale whose 
 * Find a clean, flat spot using the camera, moving the stage with the joystick or the software.
 * Focus with the 2.5x objective, then switch to 10x and refocus.
 * Click **IN FOCUS**.
-* Choose a safe scale and test method with **SCALE SELECT** (see [test method selection](#test-method)).
+* Choose an approved programmed test with **SCALE SELECT**. For Level 1, choose `Vickers 300 gf`, reported as `HV 0.3`.
+* Leave the programmed load, dwell, and other test settings unchanged. See [test method selection](#test-method) before using another test.
 * Perform hardness testing appropriate for your sample (see [detailed operating instructions](#details)).
 
 ### Instrument Shutdown {#shutdown}
@@ -132,7 +133,7 @@ The Breakerspace machine is a Nemesis 5100G2/A, with a **test-force range of abo
 * **Rockwell:** the regular scales (A, B, C, D, and others) with a 10 kgf preload and a 60, 100, or 150 kgf main load, plus the superficial scales (15N/30N/45N, 15T/30T/45T, and similar) with a 3 kgf preload.
 * **Brinell (HBW):** ball-and-load combinations using 1, 2.5, 5, and 10 mm balls, subject to the 250 kgf force limit.
 
-The dwell time is set in software (default 10 seconds, adjustable up to 999 seconds). For the complete scale and force tables see the Nemesis 5100G2 manual specifications (§10, pp. 37–38).
+Each test carries programmed load and dwell settings. For routine operation, select the approved test and leave its load, dwell, and other test settings as programmed. For the complete scale and force tables and the software's available dwell range, see the Nemesis 5100G2 manual specifications (§10, pp. 37–38) and Impressions 4 manual (§5.4.11.1, p. 38).
 
 ## Detailed Operating Instructions {#details}
 
@@ -154,14 +155,13 @@ See the Nemesis 5100G2 manual (turret and stage, §5.1–5.3; safety, §3) and t
 This is the default test and the one most students run. Vickers presses a diamond pyramid and the software measures the diagonals of the square indent.
 
 1. **Load and locate.** Place the sample on the stage — the flat anvil for flat samples, the V-anvil for cylindrical ones — and center it with the surface parallel to the anvil. Move to a clean, flat, representative spot with the front-panel joystick or the on-screen virtual joystick, keeping indents away from edges and from each other.
-2. **Select the scale.** Press **SCALE SELECT** (the test button at the top left). The button then shows the active scale and load, for example `VICKERS 1 KGF`. Changing the scale resets the other test settings, so choose the scale first. Confirm the scale suits your material (see [test method selection](#test-method)). *(Impressions 4 manual, §5.4.1, p. 17.)*
-3. **Set the dwell time.** Open **TEST SETTINGS → DWELL TIME** and set the **MAINLOAD** dwell, the time the indenter is held at full load. The default is 10 seconds; only the mainload dwell applies to Vickers. *(Impressions 4 manual, §5.4.11.1, p. 38.)*
-4. **Focus.** Start at low magnification and work up. Move the Z-axis with the **HEAD** control (coarse) and the scroll wheel (fine), or run **AUTOFOCUS**. Every manual Z move drops focus and disables **START**; when the surface is sharp, press **IN FOCUS**. *(Impressions 4 manual, IN FOCUS §5.4.22, p. 44; focusing §5.4.27, p. 45.)*
-5. **Confirm single-point mode.** Make sure the pattern is set to **SINGLE POINT** so a single indent is made at the current location. This also clears any pattern left active by a previous user. *(Impressions 4 manual, §5.4.12, p. 40.)*
-6. **Run the test.** Press **START**. The turret rotates in the Vickers indenter, applies the load, holds it for the dwell, withdraws, and rotates the viewing objective back. Keep hands clear while the turret and spindle move. *(Impressions 4 manual, START/STOP §5.4.30, p. 46; Nemesis 5100G2 manual, §5.3, p. 24.)*
-7. **Let the software measure.** After about a second, four crosslines appear on the image and position themselves on the indent diagonals. The hardness value appears with its two diagonals, d1 and d2, for example `669.4 HV 1`. *(Impressions 4 manual, automatic measurement §5.4.8.1, p. 35.)*
-8. **Check and adjust the indent.** A trustworthy indent is square and symmetric. If a diagonal box turns **red**, the two diagonals differ too much (the ISO rule flags a difference over 5%), which usually means the surface was tilted, rough, or moving — re-seat the sample and try another spot. To correct a mis-placed crossline, select it (it turns purple) and drag its marker onto the true corner using the on-screen arrows, the scroll wheel, or the mouse while watching the magnified zoom window, then confirm. *(Impressions 4 manual, results and quality §5.4.9.1, p. 36; crossline adjustment §5.4.17, p. 42; diameter check §5.4.5.6, p. 32.)*
-9. **Save the reading.** Use **SAVE** to store it to the batch list, or turn on **AUTO SAVE** to save each reading automatically. Always keep the scale with the number. *(Impressions 4 manual, SAVE §5.4.16, p. 41; AUTO SAVE §5.4.3.4, p. 22.)*
+2. **Select the programmed test.** Press **SCALE SELECT** (the test button at the top left). For Level 1, choose `Vickers 300 gf`; results from this test are reported as `HV 0.3`. Leave its programmed load, dwell, and other test settings unchanged. Confirm the test suits your material (see [test method selection](#test-method)). *(Impressions 4 manual, §5.4.1, p. 17.)*
+3. **Focus.** Start at low magnification and work up. Move the Z-axis with the **HEAD** control (coarse) and the scroll wheel (fine), or run **AUTOFOCUS**. Every manual Z move drops focus and disables **START**; when the surface is sharp, press **IN FOCUS**. *(Impressions 4 manual, IN FOCUS §5.4.22, p. 44; focusing §5.4.27, p. 45.)*
+4. **Confirm single-point mode.** Make sure the pattern is set to **SINGLE POINT** so a single indent is made at the current location. This also clears any pattern left active by a previous user. *(Impressions 4 manual, §5.4.12, p. 40.)*
+5. **Run the test.** Press **START**. The turret rotates in the Vickers indenter, applies the programmed load for the programmed dwell, withdraws, and rotates the viewing objective back. Keep hands clear while the turret and spindle move. *(Impressions 4 manual, START/STOP §5.4.30, p. 46; Nemesis 5100G2 manual, §5.3, p. 24.)*
+6. **Let the software measure.** After about a second, four crosslines appear on the image and position themselves on the indent diagonals. The hardness value appears with its two diagonals, d1 and d2, for example `176.0 HV 0.3`. *(Impressions 4 manual, automatic measurement §5.4.8.1, p. 35.)*
+7. **Check and adjust the indent.** A trustworthy indent is square and symmetric. If a diagonal box turns **red**, the two diagonals differ too much (the ISO rule flags a difference over 5%), which usually means the surface was tilted, rough, or moving — re-seat the sample and try another spot. To correct a mis-placed crossline, select it (it turns purple) and drag its marker onto the true corner using the on-screen arrows, the scroll wheel, or the mouse while watching the magnified zoom window, then confirm. *(Impressions 4 manual, results and quality §5.4.9.1, p. 36; crossline adjustment §5.4.17, p. 42; diameter check §5.4.5.6, p. 32.)*
+8. **Save the reading.** Use **SAVE** to store it to the batch list, or turn on **AUTO SAVE** to save each reading automatically. Always keep the scale with the number. *(Impressions 4 manual, SAVE §5.4.16, p. 41; AUTO SAVE §5.4.3.4, p. 22.)*
 
 For the exact measurement-adjustment procedure see the Impressions 4 manual (§5.4.8 and §5.4.17). For teaching, **Student Mode** (a system setting, §5.4.5.6, p. 31) hides the calculated hardness and shows only the diagonals so students compute the value by hand.
 
@@ -184,7 +184,7 @@ Rockwell reads the *depth* of penetration directly, so there is no optical measu
 
 1. **Match the scale to the material first.** Different Rockwell scales use different indenters and loads, and a tip too soft for a hard surface can be damaged (see [common failure modes](#failures)). Ask staff if you are unsure.
 2. Press **SCALE SELECT** and choose the Rockwell scale, for example `HRC`. Regular scales use a 10 kgf preload with a 60, 100, or 150 kgf main load; superficial scales (15N, 30N, 45N, and similar) use a 3 kgf preload. *(Nemesis 5100G2 manual, hardness-scale table, §10, p. 37.)*
-3. In **TEST SETTINGS → DWELL TIME**, note that the **PRELOAD**, **MAINLOAD**, and **RECOVERY** dwells all apply to depth scales. *(Impressions 4 manual, §5.4.11.1, p. 38.)*
+3. Leave the programmed preload, main-load, recovery, and dwell settings unchanged. All three dwell phases apply to depth scales; changing them is not part of routine user operation. *(Impressions 4 manual, §5.4.11.1, p. 38.)*
 4. Focus and press **IN FOCUS** to set the working height, then press **START**. The result is a Rockwell number derived from depth — there are no diagonals to measure or adjust.
 5. Turning on **AUTO SAVE** is recommended for Rockwell, since there is no measurement step to pause on. The **FORCE DEPTH** diagram (under **TEST SETTINGS → DIAGRAMS**) plots force against depth if you want to see the indentation curve. *(Impressions 4 manual, AUTO SAVE §5.4.3.4, p. 22; FORCE DEPTH diagram §5.4.11.4, p. 39.)*
 
@@ -192,17 +192,17 @@ Rockwell reads the *depth* of penetration directly, so there is no optical measu
 
 Brinell presses a larger ball and, like Vickers, measures the indent optically — but the ball and indent are larger.
 
-* Press **SCALE SELECT** and choose a Brinell scale and ball, for example a 2.5 mm ball. Available ball-and-load combinations are listed in the Nemesis 5100G2 specifications. *(Nemesis 5100G2 manual, hardness-scale table, §10, p. 37.)*
+* Press **SCALE SELECT** and choose an approved programmed Brinell test, for example one using a 2.5 mm ball. Leave its load, dwell, and other settings unchanged. Available ball-and-load combinations are listed in the Nemesis 5100G2 specifications. *(Nemesis 5100G2 manual, hardness-scale table, §10, p. 37.)*
 * Use a lower-magnification objective (2.5x or 5x) so the larger indent fits in view. *(Impressions 4 manual, edge detection §5.4.4.5, p. 25.)*
 * Focus, press **IN FOCUS**, then **START**. The software measures the indent diameter and reports the value as `HBW`, adjusting the crosslines the same way as for Vickers if needed. *(Impressions 4 manual, optical measurement §5.4.8, p. 35.)*
 
 ### Worked Example: A Single Vickers Reading {#worked-example}
 
-Place a flat, polished steel coupon on the flat anvil and center it. Press **SCALE SELECT** and choose `VICKERS 1 KGF`. Under **TEST SETTINGS → DWELL TIME**, set a 10 second mainload dwell. Focus at 2.5x, switch toward 10x, refocus, and press **IN FOCUS**. Confirm **SINGLE POINT** and press **START**; the indenter loads, holds for 10 seconds, and withdraws. The four crosslines land on the diagonals and the screen reads, for example, `669.4 HV 1`. The diagonal boxes stay black, meaning the two diagonals agree within 5%, so the reading is trustworthy — press **SAVE**. Report it with its scale as `669.4 HV 1`, not as a bare number.
+Place a flat, polished steel coupon on the flat anvil and center it. Press **SCALE SELECT** and choose the programmed `Vickers 300 gf` test, reported as `HV 0.3`. Leave its load, dwell, and other test settings unchanged. Focus at 2.5x, switch toward 10x, refocus, and press **IN FOCUS**. Confirm **SINGLE POINT** and press **START**; the indenter applies the programmed load for the programmed dwell, then withdraws. The four crosslines land on the diagonals and the screen reads, for example, `176.0 HV 0.3`. Confirm that the two diagonals agree and the indent is square and symmetric, then press **SAVE**. Report the result with its scale as `176.0 HV 0.3`, not as a bare number.
 
 ## Data Processing And Analysis {#data}
 
-The software reports each measurement as a hardness value with its scale (for example, `669.4 HV 40`), along with the test details: method, scale, dwell time, indent dimensions (such as the Vickers diagonals d1 and d2), and stage position.
+The software reports each measurement as a hardness value with its scale (for example, `176.0 HV 0.3`), along with the test details: method, scale, dwell time, indent dimensions (such as the Vickers diagonals d1 and d2), and stage position.
 
 * For a pattern, the software also reports statistics across the points: mean, minimum, maximum, standard deviation, and range. Report the mean with its spread rather than a single value when you have run a pattern.
 * Always keep the scale with the number; a hardness value without its scale cannot be interpreted or compared.
@@ -228,7 +228,7 @@ The two manuals that matter for operation are the **Impressions 4 software user 
 
 ## Exercises {#exercises}
 
-* **Level 1 - Single Vickers test:** Prepare a flat metal sample, run a Vickers test, and report the hardness value with its scale and the measured indent diagonals.
+* **Level 1 - Single Vickers test:** Prepare a flat metal sample, select the programmed `Vickers 300 gf` test (`HV 0.3`) without changing its load or dwell settings, run one indent, and report the hardness value with its scale and the measured indent diagonals.
 * **Level 2 - Hardness pattern:** Use the pattern function to test several points in one run, and report the mean and standard deviation. Remember to return to single-point mode afterward.
 * **Level 2 - Method comparison:** Measure the same sample with two methods or scales and use a conversion table to compare, discussing why the raw numbers differ.
 * **Level 3 - Processing effect:** Compare the hardness of a metal before and after cold-working or a heat treatment, and relate the change to what happened to the material.

@@ -89,6 +89,7 @@ Use one source of truth for each kind of work:
 
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
 * `_staff-training/README.md`: trainer-facing guide model, shared trainer references, and the canonical-SOP/Quick-Guide/staff-guide relationship. Start there for any staff-training work.
+* `_staff/quick-guides/README.md`: locked two-page Quick Guide production procedure, reusable canonical-SOP/Level-1-control-map template, and instrument-specific image/callout work orders.
 * `_admin/README.md`: unpublished LibCal and Qualtrics administration, audit, and maintenance records.
 * `instruments/readme.md`: instrument-page architecture, migration status, Quick Guide contract and scope rules, shared includes, and authoring conventions.
 * `instruments/staff-todo.md`: unpublished instrument-specific missing images, workflows, examples, exercises, and technical review items.
@@ -101,7 +102,7 @@ Public pages should state current policy clearly. Do not expose unresolved polic
 The production site should remain accurate and useful without waiting for every planned enrichment project to be complete. The canonical checklist in `_staff/site-todo.md` separates release-critical work, urgent fall preparation, and ongoing improvement:
 
 1. **Release-critical work:** keep safety, onboarding, access, external systems, accessibility, redirects, and core task paths functioning.
-2. **Urgent before the fall term:** establish consistent staff training guides and Level 1 samples for fall offerings; resolve remaining high-traffic instrument details; add the emergency-equipment visual; broaden accessibility testing; and prepare for higher-volume notices, training, and lounge use.
+2. **Urgent before the fall term:** establish consistent staff training guides and Level 1 curricula for fall offerings; resolve remaining high-traffic instrument details; add the emergency-equipment visual; broaden accessibility testing; and prepare for higher-volume notices, training, and lounge use.
 3. **Ongoing fall improvement:** assign student employees supervised work on instrument media, the sample library, Materials Showcases, archived content, accessibility remediation, and recurring quality checks.
 
 The sample library, a populated showcase archive, complete instrument photography, and other enrichment work are not release blockers. Unfinished pages should remain unpublished until they are accurate enough to be useful.
@@ -144,6 +145,7 @@ Before finishing a site change:
 
 * Run `git diff --check`.
 * Run `script/check-sop-contract` when an instrument page changes; CI runs it for every pull request.
+* Run `script/check-quick-guide-sources` when a Quick Guide changes. Every `quick-guides/*.md` page must remain a thin front-matter wrapper around its one-to-one `_includes/quick-guides/*.html` content source.
 * Run `bundle exec jekyll build`.
 * Check internal links and heading fragments when navigation or anchors change.
 * Follow the [Tutorial Media Production Guide](_staff/tutorial-media/README.md) when recording, reviewing, processing, or publishing instructional video and images.

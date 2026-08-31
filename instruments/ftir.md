@@ -93,9 +93,9 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * [Power on the instrument](../assets/img/tutorials/ftir/ftir-switch.JPG), [if needed](../assets/img/tutorials/ftir/ftir-power.JPG).
 * Log on to the instrument workstation using your MIT Kerberos.
 * [Start OMNIC software](../assets/img/tutorials/ftir/ftir-desktop.JPG).
-* Verify instrument connection using [system status](../assets/img/tutorials/ftir/omnic-status.PNG).
+* Verify [System Status](../assets/img/tutorials/ftir/omnic-status.PNG) shows a green check. If it does not, stop and ask staff.
 * Remove the protective cover from the ATR crystal plate.
-* [Clean the ATR crystal](#crystal).
+* [Clean and dry the ATR crystal](#crystal).
 * Collect a background before loading samples.
 
 ### Operation {#operation}
@@ -109,13 +109,14 @@ For ATR spectra, also look for practical problems. A weak spectrum may mean poor
 * Save each spectrum you need. Spectra must be selected and saved individually.
 * Wear gloves again before unloading the sample or cleaning the crystal.
 * Repeat background, sample collection, cleaning, and saving as needed.
+* If negative or unexpected features suggest a contaminated background, wear gloves to unload the sample, clean and dry the crystal and plate, then remove gloves and collect a complete new background with the crystal bare and unclamped. Reload and recollect the sample; stop and ask staff if the features remain.
 
 ### Instrument Shutdown {#shutdown}
 
-* Save all data you need.
+* Save all data you need and copy it to your own storage; the workstation is not a backup.
 * Close OMNIC.
 * Log off the workstation.
-* Clean the ATR crystal.
+* Clean and dry the ATR crystal.
 * Put the cover on the crystal plate and clamp it in place using the pressure tower.
 * Leave the instrument powered on. The manufacturer recommends leaving the instrument powered when not in use.
 * Leave the work area clean and remove all samples, wipes, and waste.
@@ -211,7 +212,7 @@ It is especially important that powders contact the surface of the diamond windo
 
 Experiment setup allows you to change collection parameters to fit the measurement. For faster collections, reduce the number of scans or scan resolution and note how the estimated time changes. To improve the signal-to-noise ratio, increase the number of scans.
 
-There are two ways to collect a spectrum, with preview on or off. If **Preview data collection** is selected, the instrument shows a live spectrum that refreshes during preview mode. Once you are satisfied with the sample setup, run the full scan by clicking start collection in the upper right. Deselect **Preview data collection** if you want to bypass preview and run the full scan immediately. This setting applies to both background and sample collection.
+There are two ways to collect a spectrum, with preview on or off. The routine Level 1 training workflow uses **Preview data collection** enabled; the trainer confirms that expected state before collection. When preview is enabled, the instrument shows a live spectrum that refreshes during preview mode. Once the sample setup is ready, run the full scan by clicking **Start Collection** in the upper right. Outside the training workflow, deselect **Preview data collection** only if you intentionally want to bypass preview and run the full scan immediately. This setting applies to both background and sample collection.
 
 For a [comprehensive explanation](../assets/img/tutorials/ftir/exp-set-help.JPG) of the experiment setup parameters, select help in the lower left.
 
@@ -242,10 +243,11 @@ Before collecting spectra, collect a background spectrum.
 
 > _A background spectrum is a single-beam spectrum obtained without a sample in place. The background spectrum is the result of the output of the source; the response of the beamsplitter, optics, sampling accessory or holder, and detector; and any atmospheric absorptions inside the spectrometer. A single-beam sample spectrum can be ratioed against the background spectrum to remove the effects of the background and produce a transmission spectrum._ ([Definition from the Thermo Scientific OMNIC Help Topics](../assets/img/tutorials/ftir/background-def.PNG))
 
-* iD7 ATR accessory background collection is run with the cleaned diamond crystal exposed to air and no pressure clamp.
+* iD7 ATR accessory background collection is run with the clean, dry diamond crystal exposed to air and no pressure clamp.
 * iD1 transmission accessory background collection is run with no sample in the compartment.
 * EasiDiff diffuse reflectance background collection is run on a sample cup holding pure KBr powder.
 * Set up the instrument for your experiment and click **Collect Background**.
+* When preview is enabled, do not use the shape of the live background preview as a pass/fail test. Confirm the physical setup instead: the crystal is clean, dry, bare, and unclamped. Then click **Start Collection** to run the complete background scan.
 * After the background is collected, you can choose to add it to the spectra window or not. In both cases, that background scan will automatically be used for subsequent sample collections.
 
 <p class="guidance-note"><em>Negative absorbance in an ATR spectrum can indicate the crystal was not clean during background collection.</em></p>
@@ -254,7 +256,9 @@ Before collecting spectra, collect a background spectrum.
 
 Once the background is collected, load the sample according to the instructions above and click **Collect Sample**. Follow the process based on your experiment setup.
 
-If preview is enabled, use the live spectrum as a practical check. If the signal is weak, improve contact between the sample and ATR crystal, adjust the pressure tip, or ask staff whether the sample is appropriate for ATR.
+If preview is enabled, use the live spectrum as a practical contact check. A change from a near-zero trace to a sample spectrum shows that the ATR is detecting the sample, but it is not a universal spectrum-shape or signal-strength pass criterion. Spectra vary by material. If the signal is weak, improve contact between the sample and ATR crystal, adjust the pressure tip, or ask staff whether the sample is appropriate for ATR. When the sample setup is ready, click **Start Collection** to run the full scan.
+
+If negative or unexpected features suggest that the background was contaminated, wear gloves to release the pressure tower and unload the sample. Clean and dry the crystal and plate, remove gloves, then collect a complete new background with the crystal bare and unclamped. Reload the sample and collect it again. If the features remain, stop and ask staff.
 
 After the full scan completes, give the spectrum a descriptive name when OMNIC prompts.
 
@@ -297,8 +301,8 @@ When comparing spectra:
 | Symptom | Likely cause | What to try |
 | --- | --- | --- |
 | ATR signal-to-noise is low | Sample is not in intimate contact with the ATR crystal | Reposition the sample, increase pressure until the clutch slips, use a different pressure tip, or try preview mode while adjusting contact. |
-| Negative features appear in an ATR spectrum | Crystal was not clean during background collection | Clean and dry the ATR crystal, collect a new background, then collect the sample again. |
-| Instrument will not connect | Instrument power, USB connection, or OMNIC communication issue | Confirm power and system status; ask staff before changing cables or USB ports. |
+| Negative features appear in an ATR spectrum | Crystal was not clean during background collection | Unload the sample, clean and dry the crystal and plate, collect a complete new background on the bare, unclamped crystal, then reload and recollect the sample. Ask staff if the features remain. |
+| Instrument will not connect | Instrument power, USB connection, or OMNIC communication issue | Confirm power and that **System Status** shows a green check; ask staff before changing cables or USB ports. |
 | Spectrum changes between repeat measurements | Sample contact, sample heterogeneity, evaporation, or contamination changed | Clean the crystal, recollect background if needed, and repeat on a representative region of the sample. |
 | Peaks look like water, carbon dioxide, solvent, or residue | Atmospheric or cleaning contamination, wet sample, or incomplete drying | Let solvent evaporate when safe, clean again, or ask staff about background and sample handling. |
 | Spectrum was collected but cannot be found later | Spectrum was not individually selected and saved | Save each needed spectrum before closing OMNIC. |

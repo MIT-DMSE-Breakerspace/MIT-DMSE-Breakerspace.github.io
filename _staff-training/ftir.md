@@ -151,7 +151,7 @@ Read this once or twice, then work from the checklist. It explains the decisions
 
 ### What This Training Covers, And What It Excludes
 
-The exclusions are what keep the participant-facing work finishable in 50 minutes, and what stop two trainers from teaching two different things. This scope is shared with the Quick Guide: the routine workflow it documents is the workflow this training teaches.
+The exclusions are what keep the participant-facing work finishable in 50 minutes, and what stop two trainers from teaching two different things. This scope determines the controls and quality decision shown on Quick Guide Side 2; Side 1 remains the canonical SOP spine rather than a transcript of the exercise.
 
 | Taught in this training | Deliberately excluded |
 | --- | --- |
@@ -163,13 +163,13 @@ The exclusions are what keep the participant-facing work finishable in 50 minute
 
 Excluded does not mean hidden. Say where each lives — usually the detailed operating instructions or a staff conversation.
 
-**The Quick Guide matches this scope.** It documents the solid and powder workflow only and explicitly directs users to ask staff about liquids and other accessories, so a newly trained user cannot read it as authorization for a workflow they were not taught.
+**The Quick Guide matches this boundary.** Its map and quality decision support the solid ATR workflow taught here, and it explicitly directs users to ask staff about liquids and other accessories, so a newly trained user cannot read it as authorization for a workflow they were not taught.
 
 ### The Exercise
 
 **The question participants answer:** how do spectra from two different materials compare, and what practical signs show whether each measurement was collected cleanly and with adequate contact?
 
-The Quick Guide is the mechanical spine — participants follow its numbered sections while the trainer adds the sample choice, the reasoning, and the checkpoints. The quality check before unloading is the part that most repays trainer attention: it is where a user learns to judge their own data rather than trust whatever appeared.
+Quick Guide Side 1 is the mechanical SOP spine and Side 2 is the OMNIC control-finding aid — participants use both while the trainer adds the sample choice, reasoning, and checkpoints. The quality check before unloading is the part that most repays trainer attention: it is where a user learns to judge their own data rather than trust whatever appeared.
 
 ### Choosing A Sample
 

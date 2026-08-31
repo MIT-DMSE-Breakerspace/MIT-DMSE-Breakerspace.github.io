@@ -2149,6 +2149,801 @@ body.trainer-portal-page {
   margin-top: 0.03in;
 }
 
+/* Two-sided SOP + visual-map Quick Guide model. The FTIR prototype is the
+   default composition. A reviewed instrument-specific variant may extend
+   these shared measurements when one map cannot teach the approved workflow. */
+.quick-guide-sop-map-sheet {
+  font-size: 10pt;
+}
+
+.quick-guide-sop-map-sheet-header {
+  display: flex;
+  position: static;
+  float: none;
+  width: auto;
+  gap: 0.2in;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 0.1in;
+  border-bottom: 3px solid #ae0721;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sheet-header h1,
+.quick-guide-paged .quick-guide-sop-map-sheet-header h2 {
+  margin: 0 0 0.04in;
+  font-size: 19pt;
+  line-height: 1.08;
+}
+
+.quick-guide-sop-map-sheet-subtitle {
+  max-width: 6.2in;
+  margin: 0;
+  color: #3f4a50;
+  font-size: 9.5pt;
+  line-height: 1.25;
+}
+
+.quick-guide-sop-map-review-badge {
+  flex: 0 0 0.92in;
+  padding: 0.07in 0.08in;
+  border: 2px solid #ae0721;
+  color: #7b1021;
+  font-size: 7.5pt;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quick-guide-sop-map-trained-user-note {
+  margin-top: 0.04in;
+  padding: 0.06in 0.09in;
+  border-left: 4px solid #009de6;
+  background: #f2f8fb;
+  font-size: 8.6pt;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.quick-guide-sop-map-sop-grid {
+  display: grid;
+  position: absolute;
+  top: 1.82in;
+  right: 0.48in;
+  bottom: 0.57in;
+  left: 0.48in;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 0.27in;
+}
+
+.quick-guide-sop-map-sop-column {
+  min-width: 0;
+}
+
+.quick-guide-sop-map-sop-column-primary {
+  font-size: 8.6pt;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sop-column-title {
+  margin: 0 0 0.12in;
+  padding-bottom: 0.055in;
+  border-bottom: 1px solid #8ca1ad;
+  color: #3f4a50;
+  font-size: 14.5pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-sop-column-title span {
+  white-space: nowrap;
+}
+
+.quick-guide-sop-map-sop-column-secondary {
+  padding-left: 0.27in;
+  border-left: 1px solid #aeb9bf;
+}
+
+.quick-guide-sop-map-sop-section {
+  margin-bottom: 0.14in;
+}
+
+.quick-guide-paged .quick-guide-sop-map-sop-section h3 {
+  margin: 0 0 0.045in;
+  font-size: 12.5pt;
+  line-height: 1.12;
+}
+
+.quick-guide-paged .quick-guide-sop-map-critical-rule h2,
+.quick-guide-paged .quick-guide-sop-map-before-leaving h2,
+.quick-guide-paged .quick-guide-sop-map-stop-help h2 {
+  margin: 0 0 0.06in;
+  font-size: 12pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-sop-section h3 span {
+  display: inline-flex;
+  width: 0.23in;
+  height: 0.23in;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.04in;
+  border-radius: 50%;
+  background: #17242a;
+  color: #fff;
+  font-size: 8pt;
+  vertical-align: 0.02in;
+}
+
+.quick-guide-sop-map-sop-section ul,
+.quick-guide-sop-map-before-leaving ul {
+  margin: 0;
+  padding-left: 0.2in;
+}
+
+.quick-guide-sop-map-sop-section li {
+  margin-bottom: 0.035in;
+  line-height: 1.22;
+}
+
+.quick-guide-sop-map-critical-rule,
+.quick-guide-sop-map-before-leaving,
+.quick-guide-sop-map-stop-help {
+  margin-bottom: 0.13in;
+  padding: 0.1in;
+}
+
+.quick-guide-sop-map-critical-rule {
+  border: 2px solid #8b1426;
+}
+
+.quick-guide-sop-map-critical-rule p {
+  margin: 0.025in 0 0;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-before-leaving {
+  border: 1px solid #8ca1ad;
+  background: #f5f8fa;
+}
+
+.quick-guide-sop-map-before-leaving li {
+  margin-bottom: 0.025in;
+  line-height: 1.2;
+}
+
+.quick-guide-sop-map-stop-help {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 0.86in;
+  gap: 0.11in;
+  align-items: start;
+  border: 2px solid #007aa8;
+}
+
+.quick-guide-sop-map-stop-help p {
+  margin: 0;
+  font-size: 8.7pt;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-stop-help figure {
+  margin: 0;
+  text-align: center;
+}
+
+.quick-guide-sop-map-stop-help img {
+  display: block;
+  width: 0.68in;
+  height: 0.68in;
+  margin: 0 auto;
+}
+
+.quick-guide-sop-map-stop-help figcaption {
+  margin-top: 0.035in;
+  font-size: 5.8pt;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+}
+
+.quick-guide-sop-map-map-body {
+  position: absolute;
+  top: 1.4in;
+  right: 0.48in;
+  bottom: 0.57in;
+  left: 0.48in;
+}
+
+.quick-guide-sop-map-map-section {
+  margin-bottom: 0.16in;
+}
+
+.quick-guide-sop-map-map-heading {
+  display: flex;
+  gap: 0.15in;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.05in;
+}
+
+.quick-guide-paged .quick-guide-sop-map-map-heading h3,
+.quick-guide-paged .quick-guide-sop-map-map-reminders h3 {
+  margin: 0;
+  font-size: 12.5pt;
+  line-height: 1.15;
+}
+
+.quick-guide-sop-map-map-heading p {
+  max-width: 5.35in;
+  margin: 0;
+  color: #455159;
+  font-size: 8.2pt;
+  line-height: 1.22;
+  text-align: right;
+}
+
+.quick-guide-sop-map-toolbar-figure {
+  margin: 0;
+}
+
+.quick-guide-sop-map-toolbar-crop {
+  position: relative;
+  height: 1.55in;
+  overflow: hidden;
+  border: 1px solid #8ca1ad;
+  background: #eef1f3;
+}
+
+.quick-guide-sop-map-toolbar-crop img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Provisional composition frames expose missing evidence without simulating it. */
+.quick-guide-sop-map-placeholder {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.04in;
+  padding: 0.09in 0.12in;
+  border: 2px dashed #5f6b72;
+  background: #f4f5f6;
+  color: #263238;
+  text-align: center;
+}
+
+.quick-guide-sop-map-placeholder strong {
+  font-size: 8pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.quick-guide-sop-map-placeholder span {
+  font-size: 7.6pt;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.quick-guide-sop-map-placeholder small {
+  color: #455159;
+  font-size: 6.8pt;
+  line-height: 1.18;
+}
+
+.quick-guide-sop-map-placeholder--map {
+  min-height: 1.55in;
+}
+
+.quick-guide-sop-map-placeholder--quality {
+  min-height: 0.9in;
+  border-width: 1.5px;
+}
+
+.quick-guide-sop-map-placeholder--qr {
+  width: 0.64in;
+  height: 0.64in;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 0.035in;
+}
+
+.quick-guide-sop-map-placeholder--qr strong {
+  font-size: 5.7pt;
+  line-height: 1.05;
+}
+
+.quick-guide-sop-map-placeholder--qr span,
+.quick-guide-sop-map-placeholder--qr small {
+  display: none;
+}
+
+.quick-guide-sop-map-review-gap {
+  margin: 0.07in 0;
+  padding: 0.07in 0.09in;
+  border: 2px solid #ae0721;
+  background: #fff;
+  color: #263238;
+  font-size: 7.6pt;
+  line-height: 1.22;
+}
+
+.quick-guide-sop-map-review-gap strong {
+  color: #ae0721;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.quick-guide-sop-map-review-gap p {
+  margin: 0.025in 0 0;
+}
+
+.quick-guide-sop-map-callout-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quick-guide-sop-map-control-key {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.06in;
+  margin-top: 0.06in;
+  font-size: 7.8pt;
+  line-height: 1.2;
+}
+
+.quick-guide-sop-map-control-key span {
+  display: flex;
+  gap: 0.045in;
+  align-items: center;
+}
+
+.quick-guide-sop-map-control-key b,
+.quick-guide-sop-map-map-reminders h3 span {
+  display: inline-flex;
+  flex: 0 0 0.2in;
+  width: 0.2in;
+  height: 0.2in;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ae0721;
+  color: #fff;
+  font-size: 7.5pt;
+}
+
+.quick-guide-sop-map-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.18in;
+}
+
+.quick-guide-sop-map-quality-card {
+  margin: 0;
+  border: 1px solid #8ca1ad;
+  background: #fff;
+}
+
+.quick-guide-sop-map-quality-card > img,
+.quick-guide-sop-map-quality-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quick-guide-sop-map-quality-image {
+  position: relative;
+}
+
+.quick-guide-sop-map-quality-card figcaption {
+  min-height: 0.67in;
+  padding: 0.07in 0.09in;
+  font-size: 8pt;
+  line-height: 1.24;
+}
+
+.quick-guide-sop-map-quality-stop {
+  border-top: 4px solid #ae0721;
+}
+
+.quick-guide-sop-map-quality-ready {
+  border-top: 4px solid #087f5b;
+}
+
+.quick-guide-sop-map-map-reminders {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 0.82in;
+  gap: 0.14in;
+  align-items: center;
+  margin-top: 0.13in;
+  padding: 0.1in 0.12in;
+  border: 2px solid #007aa8;
+  background: #f2f8fb;
+}
+
+.quick-guide-sop-map-map-reminders > div + div {
+  padding-left: 0.14in;
+  border-left: 1px solid #8ca1ad;
+}
+
+.quick-guide-sop-map-map-reminders p {
+  margin: 0.04in 0 0;
+  font-size: 8pt;
+  line-height: 1.22;
+}
+
+.quick-guide-sop-map-map-reminders figure {
+  margin: 0;
+  text-align: center;
+}
+
+.quick-guide-sop-map-map-reminders img {
+  display: block;
+  width: 0.64in;
+  height: 0.64in;
+  margin: 0 auto;
+}
+
+.quick-guide-sop-map-map-reminders figcaption {
+  margin-top: 0.03in;
+  font-size: 6.2pt;
+  line-height: 1.15;
+}
+
+/* Phenom XL: reviewed multi-view Side 2 variant. Review metadata stays in the
+   staff-side ledger and source comments, never inside either printable sheet. */
+.phenom-xl-map-body {
+  display: grid;
+  grid-template-rows: 2.17in 2.58in 3.53in 0.45in;
+  gap: 0.075in;
+}
+
+.phenom-xl-map-body figure,
+.phenom-xl-map-body p,
+.phenom-xl-map-body ol,
+.phenom-xl-map-body ul {
+  margin-top: 0;
+}
+
+.phenom-xl-map-section {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+}
+
+.phenom-xl-image-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8ca1ad;
+  background: #15191b;
+}
+
+.phenom-xl-image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.phenom-xl-orientation-section {
+  display: grid;
+  grid-template-columns: 3.55in minmax(0, 1fr);
+  gap: 0.16in;
+  align-items: start;
+}
+
+.phenom-xl-overview-figure {
+  margin: 0;
+}
+
+.phenom-xl-overview-figure figcaption,
+.phenom-xl-control-figure figcaption,
+.phenom-xl-focus-figure figcaption,
+.phenom-xl-navigation-card figcaption {
+  margin-top: 0.025in;
+  color: #455159;
+  font-size: 6.4pt;
+  line-height: 1.16;
+}
+
+.phenom-xl-marker {
+  display: inline-flex;
+  position: absolute;
+  width: 0.19in;
+  height: 0.19in;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  background: #ae0721;
+  color: #fff;
+  font-size: 6.8pt;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.phenom-xl-marker--top {
+  top: 0.015in;
+  left: calc(50% - 0.095in);
+}
+
+.phenom-xl-marker--left {
+  top: 47%;
+  left: 0.015in;
+}
+
+.phenom-xl-marker--controls {
+  bottom: 0.02in;
+  left: 0.015in;
+}
+
+.phenom-xl-marker--right {
+  top: 24%;
+  right: 0.015in;
+}
+
+.quick-guide-paged .phenom-xl-orientation-key h3,
+.quick-guide-paged .phenom-xl-section-heading h3 {
+  margin: 0;
+  font-size: 11.2pt;
+  line-height: 1.12;
+}
+
+.phenom-xl-orientation-key ol {
+  margin: 0.07in 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phenom-xl-orientation-key li {
+  display: grid;
+  grid-template-columns: 0.22in minmax(0, 1fr);
+  gap: 0.055in;
+  align-items: start;
+  margin-bottom: 0.055in;
+  font-size: 7.1pt;
+  line-height: 1.18;
+}
+
+.phenom-xl-orientation-key li b,
+.phenom-xl-navigation-card figcaption b {
+  display: inline-flex;
+  width: 0.19in;
+  height: 0.19in;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ae0721;
+  color: #fff;
+  font-size: 6.7pt;
+}
+
+.phenom-xl-section-heading {
+  display: flex;
+  gap: 0.12in;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.045in;
+  padding-bottom: 0.025in;
+  border-bottom: 1px solid #8ca1ad;
+}
+
+.phenom-xl-section-heading p {
+  margin: 0;
+  color: #455159;
+  font-size: 7pt;
+  line-height: 1.15;
+  text-align: right;
+}
+
+.phenom-xl-routine-grid {
+  display: grid;
+  grid-template-columns: 0.65in 2.25in minmax(0, 1fr);
+  gap: 0.12in;
+  align-items: start;
+}
+
+.phenom-xl-control-figure,
+.phenom-xl-focus-figure,
+.phenom-xl-navigation-card figure,
+.phenom-xl-settings-card figure {
+  margin: 0;
+}
+
+.phenom-xl-control-figure figcaption,
+.phenom-xl-focus-figure figcaption {
+  color: #263238;
+}
+
+.phenom-xl-focus-images {
+  display: grid;
+  grid-template-columns: 0.47in minmax(0, 1fr);
+  gap: 0.07in;
+  align-items: start;
+}
+
+.phenom-xl-focus-area-image {
+  margin-top: 0.03in;
+}
+
+.phenom-xl-control-instructions {
+  min-width: 0;
+}
+
+.phenom-xl-click-key {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.07in;
+  margin-bottom: 0.045in;
+}
+
+.phenom-xl-click-key span {
+  padding: 0.045in 0.055in;
+  border-left: 3px solid #009de6;
+  background: #f2f8fb;
+  font-size: 6.55pt;
+  line-height: 1.16;
+}
+
+.phenom-xl-control-instructions ol {
+  margin: 0;
+  padding-left: 0.17in;
+}
+
+.phenom-xl-control-instructions li {
+  margin-bottom: 0.035in;
+  font-size: 7pt;
+  line-height: 1.17;
+}
+
+.phenom-xl-bottom-grid {
+  display: grid;
+  grid-template-columns: 3.15in minmax(0, 1fr);
+  gap: 0.16in;
+  min-height: 0;
+}
+
+.phenom-xl-navigation-card,
+.phenom-xl-settings-card {
+  padding-top: 0.045in;
+  border-top: 2px solid #007aa8;
+}
+
+.phenom-xl-navcam-image {
+  background: #111;
+}
+
+.phenom-xl-navcam-marker--load {
+  top: 0.06in;
+  left: 0.015in;
+}
+
+.phenom-xl-navcam-marker--target {
+  top: calc(50% - 0.095in);
+  left: calc(50% - 0.095in);
+}
+
+.phenom-xl-navcam-marker--sem {
+  top: 0.04in;
+  right: 0.015in;
+}
+
+.phenom-xl-navigation-card figcaption {
+  color: #263238;
+  white-space: nowrap;
+}
+
+.phenom-xl-navigation-card > p {
+  margin: 0.045in 0 0;
+  font-size: 7.15pt;
+  line-height: 1.18;
+}
+
+.phenom-xl-settings-card figure {
+  max-width: 3.55in;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.phenom-xl-settings-card ul {
+  margin: 0.035in 0 0;
+  padding-left: 0.17in;
+}
+
+.phenom-xl-settings-card li {
+  margin-bottom: 0.025in;
+  font-size: 6.65pt;
+  line-height: 1.13;
+}
+
+.phenom-xl-settings-card li:last-child {
+  margin-bottom: 0;
+}
+
+.phenom-xl-workflow-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 0.42in;
+  gap: 0.08in;
+  align-items: center;
+  padding: 0.035in 0.06in;
+  border: 1.5px solid #007aa8;
+  background: #f2f8fb;
+}
+
+.phenom-xl-workflow-strip p {
+  margin: 0;
+  font-size: 6.5pt;
+  line-height: 1.15;
+}
+
+.phenom-xl-workflow-strip figure {
+  margin: 0;
+  text-align: center;
+}
+
+.phenom-xl-workflow-strip img {
+  display: block;
+  width: 0.34in;
+  height: 0.34in;
+  margin: 0 auto;
+}
+
+.phenom-xl-workflow-strip figcaption {
+  margin-top: 0.01in;
+  font-size: 5.2pt;
+  line-height: 1;
+}
+
+@media screen and (max-width: 720px) {
+  .quick-guide-sop-map-sop-grid,
+  .quick-guide-sop-map-map-body,
+  .phenom-xl-map-body {
+    position: static;
+  }
+
+  .quick-guide-sop-map-sop-grid,
+  .quick-guide-sop-map-quality-grid,
+  .quick-guide-sop-map-map-reminders,
+  .phenom-xl-map-body,
+  .phenom-xl-orientation-section,
+  .phenom-xl-routine-grid,
+  .phenom-xl-bottom-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .phenom-xl-focus-images {
+    grid-template-columns: 4rem minmax(0, 1fr);
+  }
+
+  .phenom-xl-click-key {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-guide-sop-map-sop-column-secondary,
+  .quick-guide-sop-map-map-reminders > div + div {
+    padding-top: 0.75rem;
+    padding-left: 0;
+    border-top: 1px solid #aeb9bf;
+    border-left: 0;
+  }
+
+  .quick-guide-sop-map-toolbar-crop {
+    height: auto;
+    overflow: visible;
+  }
+
+  .quick-guide-sop-map-map-heading {
+    display: block;
+  }
+
+  .quick-guide-sop-map-map-heading p {
+    margin-top: 0.25rem;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .quick-guide-paged {
     width: auto;
