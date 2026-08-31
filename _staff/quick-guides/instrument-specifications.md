@@ -25,7 +25,7 @@ This file records both facts already established by a canonical instrument page 
 | Instrument | Release status | Principal reason |
 | --- | --- | --- |
 | Thermo Scientific Nicolet iS5 FTIR Spectrometer | **REFERENCE PROTOTYPE** | Content is suitable for lab-assistant review; still needs physical proof and operational review before publication. |
-| Thermo Fisher Phenom XL SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
+| Thermo Fisher Phenom XL SEM | **BLOCKED** | The loading/height pair, NavCam-source approval, current SEM capture, top-panel control verification, and save/export end state are unresolved. |
 | Thermo Fisher Phenom Pure SEM | **BLOCKED** | The loading/height pair, current LiveSEM/NavCam captures, top-panel control verification, and save/export end state are unresolved. |
 | Malvern Panalytical Aeris Research XRD | **BLOCKED** | The HighScore teaching boundary, stored-program curation, data handoff, native queue capture, and changer-cover pair are unresolved. |
 | Instron 68TM-50 Universal Testing System | **BLOCKED** | The Level 1 method/end condition, Bluehill and handset captures, multi-view layout, result gate, and export convention are unresolved. |
@@ -87,15 +87,19 @@ For every instrument:
 
 **Canonical source:** [`../../instruments/phenom-xl.md`](../../instruments/phenom-xl.md). Do not substitute the SEM hub or Pure page.
 
-**Canonical SOP spine:** prepare and load a dry, secured sample under the XL height rule; confirm the NavCam view is usable for navigation; enter LiveSEM; characterize and save as appropriate; stop any acquisition; unload; clean; and return the microscope to standby.
+**Canonical SOP spine:** start with the tray inside the closed compartment, Phenom software closed, Windows at sign-in, and the microscope in standby; prepare and load a dry, secured sample under the XL height rule; confirm the NavCam view is usable for navigation; enter SEM view; characterize and save as appropriate; stop any acquisition; unload; clean; and return the microscope to standby.
 
-**Level 1 teaching workflow:** navigate with NavCam, obtain a usable LiveSEM image, adjust focus and brightness/contrast, inspect the top-panel voltage/beam/resolution/averaging state, change magnification, and acquire/save images at several magnifications. Hair is the sample currently named in the public exercise, not required Quick Guide content.
+**Level 1 teaching workflow:** navigate with NavCam, obtain a usable SEM image, adjust focus and brightness/contrast, inspect the top-panel voltage/beam/**Scan Size**/averaging state, change magnification, and acquire/save images at several magnifications. **Scan Size** is the exact UI label for image resolution. Hair is the sample currently named in the public exercise, not required Quick Guide content.
 
-**EDS curriculum boundary proposed for approval:** give a short capability preview during general Phenom XL training, analogous to the optical LEXT preview, but require a separate Level 2 EDS add-on before independent EDS operation. The primary SEM Quick Guide does not map EDS controls; a later EDS task card can support the add-on if staff approve this boundary.
+**EDS curriculum boundary — reviewed 2026-08-20:** give a brief trainer-operated capability preview during general Phenom XL training and advertise optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. The primary SEM Quick Guide does not map EDS controls; a later EDS task card may support the optional focused training.
 
 **Side 1 critical box:** **Sample and holder clearance** — use the XL-specific canonical sample-height rule, secure loose particles, and remove gloves before using the computer. Do not reuse the Pure height rule.
 
-**Primary image required:** a new native-resolution LiveSEM screenshot in the current routine state. `assets/img/tutorials/sem/FocBri.PNG` is a composition reference, but it has baked-in annotation and does not visibly provide every proposed control name. `assets/img/tutorials/sem/navcam.PNG` documents the navigation state but cannot serve as the same control map.
+**Loading sequence evidence — directly observed 2026-08-20:** the actual XL matched the canonical sequence from software startup/connection through software eject, tray removal, stub loading and clearance recheck, tray reinsertion, the same software control closing the compartment, and arrival in NavCam. The matched loading-height image pair remains required.
+
+**Primary image candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-sem-top-panel.png` is a sanitized, unannotated 3840 x 2160 XL SEM capture with the settings panel open. It visibly shows the exact labels **Acc. Voltage**, **Beam Intensity**, **Detector**, **Vacuum**, **Live**, **Averaging**, **Scan Size**, **Acquisition**, and **ADVANCED...**. The separate **Live** panel heading is not the name of the SEM view. Staff still need to approve this as the primary map source and select the complete Level 1 control set. `assets/img/tutorials/sem/FocBri.PNG` remains a composition reference only because it has baked-in annotation.
+
+**NavCam source candidate — identified 2026-08-20:** `assets/img/tutorials/sem/phenom-xl-navcam-empty.png` is a sanitized, unannotated 3840 x 2160 capture from the XL. It shows the move-to-SEM icon in the upper left immediately below the eject/open-close icon and the three lower-left adjustment icons. Direct observation confirmed that the transition symbol is two circles with plus signs and an arrow between them and that its mouse-over label is **move to SEM**. Direct observation also confirmed the lower-left mouse-over labels **magnification**, **brightness/contrast**, and **focus**. Staff still need to approve the candidate as the final NavCam source.
 
 **Primary callouts proposed, with exact labels/icons still to verify:**
 
@@ -103,15 +107,15 @@ For every instrument:
 2. brightness/contrast and automatic adjustment, grouped only if they are visibly adjacent
 3. magnification control or readout used during training
 4. acquisition camera control
-5. the top status/control panel as one grouped region: accelerating voltage, beam/intensity, resolution, and averaging
+5. the top settings panel as one grouped region: **Acc. Voltage**, **Beam Intensity**, **Scan Size** (image resolution), and **Averaging**; confirm whether **Detector** and **Vacuum** also belong in the Level 1 inspection before locking the group
 
-Place the canonical NavCam-to-LiveSEM transition in the SOP or a compact reminder; do not imply that `NavCam`, `Move to SEM`, and all LiveSEM controls coexist in one screenshot.
+Place the canonical NavCam-to-SEM transition in the SOP or a compact reminder; do not imply that NavCam, the **move to SEM** icon, and all SEM controls coexist in one screenshot.
 
 **Readiness panels required:** a matched loading pair staged on the removed tray, showing an over-height/incorrect state versus a correctly secured sample measured **5–7 mm below the XL tray top**, with the clearance visible. Never load the incorrect state into the microscope. This uses the template's existing two panels for the dominant physical safety decision. Keep focus, charging, drift, washout, outgassing, and beam damage in the SOP/stop-help language rather than combining unrelated diagnoses.
 
-**Do not add:** independent EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. A brief EDS capability preview belongs in the staff guide only if the proposed boundary is approved.
+**Do not add:** EDS operation, accelerating-voltage or detector-setting tables, coating recipes, extended image interpretation, or Pure/cold-stage instructions. The brief trainer-operated EDS capability preview belongs in the staff guide, not the primary participant Quick Guide.
 
-**Release gates:** approve the EDS training boundary; capture and approve the matched XL loading/height pair plus current unannotated NavCam and LiveSEM views; verify the top panel and every mapped icon/label; confirm save/export and the final tray/chamber state.
+**Release gates:** capture and approve the matched XL loading/height pair; approve the NavCam and SEM candidates; select the complete Level 1 top-panel control set; verify every remaining mapped icon/label; confirm save/export and the final tray/chamber state.
 
 ## Thermo Fisher Phenom Pure SEM
 

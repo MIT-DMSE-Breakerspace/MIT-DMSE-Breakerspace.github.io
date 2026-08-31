@@ -3,7 +3,7 @@ title: Phenom XL Trainer Guide — Provisional Draft
 description: Unpublished trainer-run-sheet composition draft for review.
 published: false
 guide_status: Provisional composition draft — incomplete
-guide_revision: 2026-08-10
+guide_revision: 2026-08-20
 interactive_checklist: true
 instrument_name: Thermo Fisher Phenom XL SEM
 moira_group: dmse-brkrspc-sem
@@ -13,19 +13,11 @@ moira_group: dmse-brkrspc-sem
 
 > **Provisional composition draft — incomplete.** Not approved for training delivery. Review gaps below are release blockers, not instructions for the trainer to improvise around.
 
-> **REVIEW GAP — Level 1 boundary**
->
-> **Decision or evidence required:** Approve or revise the proposed brief EDS preview plus Level 2 add-on for independent operation.
->
-> **Sources checked:** Canonical [EDS]({% link instruments/phenom-xl.md %}#eds), [Exercises]({% link instruments/phenom-xl.md %}#exercises), and Phenom XL work order.
->
-> **Release effect:** EDS is excluded; only supported SEM imaging is runnable.
-
 > **REVIEW GAP — image quality decision**
 >
-> **Decision or evidence required:** Define the observable LiveSEM state adequate for Level 1 acquisition without collapsing distinct failure modes into one threshold.
+> **Decision or evidence required:** Define the observable SEM image state adequate for Level 1 acquisition without collapsing distinct failure modes into one threshold.
 >
-> **Sources checked:** Canonical [LiveSEM View]({% link instruments/phenom-xl.md %}#live-sem), [Common Failure Modes]({% link instruments/phenom-xl.md %}#failures), and Phenom XL work order.
+> **Sources checked:** Canonical [SEM View]({% link instruments/phenom-xl.md %}#live-sem), [Common Failure Modes]({% link instruments/phenom-xl.md %}#failures), and Phenom XL work order.
 >
 > **Release effect:** Control practice is supported; an assessable quality pass is not.
 
@@ -59,7 +51,7 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 
 <p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 
-* [ ] Confirm the XL is connected and functioning normally, its tray and loading area are clean, and the microscope can reach its canonical ready state. Open the canonical page; do not place or describe the unpublished Quick Guide prototype as an approved instrument aid.
+* [ ] Confirm the normal XL starting condition: tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and microscope in standby. Confirm the tray and loading area are clean and open the canonical page; do not place or describe the unpublished Quick Guide prototype as an approved instrument aid.
 * [ ] Prepare gloves, stub tweezers, approved mounts, and trainer-selected samples. Confirm each sample is non-hazardous, dry, firmly attached, free of loose particles, compatible with the XL, and suitable for showing navigation and imaging at several magnifications. Run unfamiliar samples before the session.
 
 <p class="trainer-phase"><span>0–8 minutes</span> Welcome and room orientation</p>
@@ -70,7 +62,7 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 
 <p class="trainer-phase"><span>8–18 minutes</span> Scope, startup, and loading</p>
 
-* [ ] Set the supported boundary: XL core SEM imaging with NavCam and LiveSEM. EDS remains blocked above. Review sample limits and stop for loose, wet, shedding, over-height, uncertain, or incompatible material; unexpected motion; connection failure; persistent imaging problems; or unfamiliar errors.
+* [ ] Set the supported boundary: XL core imaging with NavCam and SEM view includes a brief trainer-operated EDS capability preview. Advertise optional Level 2 EDS-focused training, but do not describe it as a prerequisite for independent EDS use. Review sample limits and stop for loose, wet, shedding, over-height, uncertain, or incompatible material; unexpected motion; connection failure; persistent imaging problems; or unfamiliar errors.
 * [ ] **Trainer logs in while participants watch** because their shared SEM Moira access begins after closeout. Start the Phenom User Interface, wake the microscope if needed, and use **Settings / Phenom / Status** to connect if it does not connect automatically.
 * [ ] At the external sample-prep table, participant wears gloves, mounts the sample securely, removes loose particles away from the microscope and electronics, and measures the tallest point approximately **5–7 mm below the top edge of the XL tray** unless staff instruct otherwise. Never substitute the Pure holder-edge rule.
 * [ ] Participant uses stub tweezers for mounted stubs, opens the compartment with the software eject control, removes the tray, seats each sample firmly, rechecks attachment and height, inserts the tray, closes with the software control, and waits for NavCam.
@@ -78,11 +70,12 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 
 <p class="trainer-phase"><span>18–40 minutes</span> Navigation, imaging, and data</p>
 
-* [ ] In NavCam, participant confirms the expected sample is visible and did not shift, then adjusts brightness, contrast, and focus until the view supports navigation. Save a NavCam image only when useful for documenting later image locations.
-* [ ] Participant selects a region and uses **Move to SEM**, starts zoomed out on a recognizable feature, and enters LiveSEM without implying that NavCam and LiveSEM controls share one screen.
-* [ ] Participant practices LiveSEM focus and brightness/contrast, uses automatic adjustment only as a starting point, and inspects the top-panel voltage, beam/intensity, resolution, and averaging state without changing to an invented default. *Check: the participant can locate each function; image acceptance remains blocked above.*
+* [ ] In NavCam, participant confirms the expected sample is visible and did not shift, then uses the icon controls with mouse-over labels **magnification**, **brightness/contrast**, and **focus** until the view supports navigation. Save a NavCam image only when useful for documenting later image locations.
+* [ ] Participant selects a region and uses the upper-left icon immediately below the eject/open-close icon—the two circles with plus signs and an arrow between them, with mouse-over label **move to SEM**—then starts zoomed out on a recognizable feature in SEM view. Do not imply that NavCam and SEM controls share one screen.
+* [ ] Participant practices SEM focus and brightness/contrast, uses automatic adjustment only as a starting point, and inspects the top-panel voltage, beam intensity, **Scan Size** (image resolution), and averaging state without changing to an invented default. *Check: the participant can locate each function; image acceptance remains blocked above.*
 * [ ] Participant increases magnification gradually and refocuses as needed after changes. Stop and use the canonical failure guidance for persistent charging, drift, washout, outgassing, beam damage, or poor focus rather than forcing an acquisition.
-* [ ] Participant uses the camera control to acquire images at several magnifications with the current resolution and averaging settings, then finds the images in Gallery. Keep original files when adding measurements, notes, or an annotated copy.
+* [ ] Participant uses the camera control to acquire images at several magnifications with the current **Scan Size** and **Averaging** settings, then finds the images in Gallery. Keep original files when adding measurements, notes, or an annotated copy.
+* [ ] Trainer gives the brief EDS capability preview, keeps EDS operation trainer-controlled, stops the EDS acquisition before returning to normal SEM observation, and points participants to the optional Level 2 EDS-focused training.
 * [ ] Participant stops any running image or EDS acquisition, confirms needed files are saved in the active folder, and copies needed data off the workstation before unloading; do not invent the unresolved export convention.
 
 <p class="trainer-phase"><span>40–46 minutes</span> Participant-led unloading and shutdown</p>
@@ -99,4 +92,4 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 
 ## Trainer notes
 
-Rotate loading, NavCam, LiveSEM, acquisition, and unload roles while keeping the complete sequence visible. Hair is not a required sample. Keep the Pure loading rule out of this session even though both instruments share a Moira group. Do not demonstrate EDS until its boundary is approved.
+Rotate loading, NavCam, SEM, acquisition, and unload roles while keeping the complete sequence visible. Hair is not a required sample. Keep the Pure loading rule out of this session even though both instruments share a Moira group. The trainer, not a participant, operates EDS during the Level 1 preview.

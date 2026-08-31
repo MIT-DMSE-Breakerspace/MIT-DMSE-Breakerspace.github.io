@@ -24,7 +24,7 @@ instrument_url: /instruments/phenom-xl.html
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace - Trained-user reference</p>
         <h1 id="phenom-xl-sop-map-title">Thermo Fisher Phenom XL SEM: Routine imaging SOP</h1>
-        <p class="quick-guide-sop-map-sheet-subtitle">The canonical normal-use sequence in one place. Use the LiveSEM visual map on the reverse to locate controls taught in Level 1.</p>
+        <p class="quick-guide-sop-map-sheet-subtitle">The canonical normal-use sequence in one place. Use the SEM visual map on the reverse to locate controls taught in Level 1.</p>
       </div>
       <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
     </header>
@@ -40,6 +40,7 @@ instrument_url: /instruments/phenom-xl.html
         <section class="quick-guide-sop-map-sop-section">
           <h3><span>1</span> Instrument startup</h3>
           <ul>
+            <li>Confirm the normal starting condition: tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and microscope in standby.</li>
             <li>Log on to the instrument workstation using your MIT Kerberos.</li>
             <li>Start the Phenom User Interface software.</li>
             <li>Wake the instrument if needed.</li>
@@ -57,7 +58,7 @@ instrument_url: /instruments/phenom-xl.html
             <li>Load the sample tray into the instrument.</li>
             <li>Remove gloves before using the computer.</li>
             <li>Set the image label and save location.</li>
-            <li>In NavCam, adjust brightness, contrast, and focus until the image is clear enough to navigate the loaded sample.</li>
+            <li>In NavCam, use the <strong>magnification</strong>, <strong>brightness/contrast</strong>, and <strong>focus</strong> controls until the image is clear enough to navigate the loaded sample.</li>
             <li>Characterize the sample as appropriate for your goals (see detailed operating instructions).</li>
             <li>Wear gloves again, unload samples, and leave the tray clean and stored correctly.</li>
           </ul>
@@ -118,7 +119,7 @@ instrument_url: /instruments/phenom-xl.html
 
     <footer class="quick-guide-footer">
       <span>Content derived from the canonical Phenom XL SOP - Owner: lab manager</span>
-      <span>Provisional 2026-08-10 - Page 1 of 2</span>
+      <span>Provisional 2026-08-20 - Page 1 of 2</span>
     </footer>
   </section>
 
@@ -126,7 +127,7 @@ instrument_url: /instruments/phenom-xl.html
     <header class="quick-guide-sop-map-sheet-header quick-guide-sop-map-map-header">
       <div>
         <p class="quick-guide-kicker">DMSE Breakerspace - Thermo Fisher Phenom XL SEM</p>
-        <h2 id="phenom-xl-map-title">LiveSEM visual map</h2>
+        <h2 id="phenom-xl-map-title">SEM visual map</h2>
         <p class="quick-guide-sop-map-sheet-subtitle">Use this side to find the controls taught in Level 1. Follow the SOP on the reverse for the canonical workflow.</p>
       </div>
       <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
@@ -135,24 +136,20 @@ instrument_url: /instruments/phenom-xl.html
     <div class="quick-guide-sop-map-map-body">
       <section class="quick-guide-sop-map-map-section">
         <div class="quick-guide-sop-map-map-heading">
-          <h3>Current Phenom XL LiveSEM view</h3>
-          <p>The approved map must show the routine imaging controls in one current, sanitized LiveSEM state.</p>
+          <h3>Current Phenom XL SEM view</h3>
+          <p>The approved map must show the routine imaging controls in one current, sanitized SEM state.</p>
         </div>
 
         <figure class="quick-guide-sop-map-toolbar-figure">
           <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--map"
                role="img"
-               aria-label="Image placeholder: sanitized native-resolution Phenom XL LiveSEM view showing the Level 1 focus, brightness and contrast, magnification, acquisition, and grouped top-panel control regions">
+               aria-label="Image placeholder: sanitized native-resolution Phenom XL SEM view showing the Level 1 focus, brightness and contrast, magnification, acquisition, and grouped top-panel control regions">
             <strong>Image placeholder</strong>
-            <span>Capture needed: Sanitized native-resolution Phenom XL LiveSEM view showing the Level 1 focus, brightness and contrast, magnification, acquisition, and grouped top-panel control regions. Label to verify: focus control. Label to verify: brightness/contrast and automatic adjustment. Label to verify: magnification control or readout. Label to verify: acquisition camera control. Label to verify: top status/control panel for accelerating voltage, beam/intensity, resolution, and averaging.</span>
-            <small>Release gate: Capture and approve current unannotated XL LiveSEM and NavCam evidence; verify every mapped icon, label, and grouped top-panel function on the XL interface before adding callouts.</small>
+            <span>Source candidate available: Sanitized native-resolution Phenom XL SEM view showing the lower-left control icons, acquisition camera icon, and open settings panel. Label to verify: SEM focus control. Label to verify: SEM brightness/contrast and automatic adjustment. Label to verify: SEM magnification control or readout. Label to verify: acquisition camera control. Verified label: Scan Size (image resolution). Group scope to decide: whether Detector and Vacuum join Acc. Voltage, Beam Intensity, Scan Size, and Averaging.</span>
+            <small>Release gate: Approve the identified NavCam and SEM candidates; select the complete Level 1 settings-panel group; verify every remaining mapped icon and mouse-over label before adding callouts.</small>
           </div>
         </figure>
 
-        <div class="quick-guide-sop-map-review-gap">
-          <strong>Review gap</strong>
-          <p>Decision required: Approve or revise the proposed EDS training boundary: a short capability preview in general Phenom XL training and a separate Level 2 add-on before independent EDS operation. Do not map EDS controls until that boundary is approved.</p>
-        </div>
       </section>
 
       <section class="quick-guide-sop-map-map-section quick-guide-sop-map-quality-section">
@@ -191,7 +188,7 @@ instrument_url: /instruments/phenom-xl.html
       <aside class="quick-guide-sop-map-map-reminders">
         <div>
           <h3>Acquisition reminder</h3>
-          <p>Use NavCam to navigate, move to LiveSEM, start zoomed out, focus, increase magnification gradually, and acquire images only after the current controls are verified.</p>
+          <p>Use NavCam to navigate, select the icon whose mouse-over label is <strong>move to SEM</strong>, start zoomed out, focus, increase magnification gradually, and acquire images only after the current controls are verified.</p>
         </div>
         <div>
           <h3>Before unloading</h3>
@@ -217,7 +214,7 @@ instrument_url: /instruments/phenom-xl.html
 
     <footer class="quick-guide-footer">
       <span>Visual map, not a replacement for training or the detailed operating instructions</span>
-      <span>Provisional 2026-08-10 - Page 2 of 2</span>
+      <span>Provisional 2026-08-20 - Page 2 of 2</span>
     </footer>
   </section>
 </section>

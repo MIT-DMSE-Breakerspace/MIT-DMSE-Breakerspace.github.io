@@ -62,6 +62,7 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 
 ### Instrument Startup {#startup}
 
+* Confirm the normal starting condition: the XL tray is inside the closed sample compartment, the Phenom software is closed, Windows is at the sign-in screen, and the microscope is in standby.
 * Log on to the instrument workstation using your MIT Kerberos.
 * Start the Phenom User Interface software.
 * Wake the instrument if needed.
@@ -76,7 +77,7 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 * [Load](#loading) the sample tray into the instrument.
 * Remove gloves before using the computer.
 * Set the image [label and save location](#customize).
-* In NavCam, adjust brightness, contrast, and focus until the image is clear enough to navigate the loaded sample.
+* In NavCam, use the **magnification**, **brightness/contrast**, and **focus** controls until the image is clear enough to navigate the loaded sample.
 * Characterize the sample as appropriate for your goals (see [detailed operating instructions](#details)).
 * Wear gloves again, unload samples, and leave the tray clean and stored correctly.
 
@@ -101,7 +102,7 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 
 For EDS samples, prefer conductive mounting and avoid coating materials that interfere with the elements of interest. Gold coating is excellent for imaging but can complicate EDS; carbon coating is often better for inorganic EDS.
 
-{% include sem/quick-imaging-settings.md %}
+{% include sem/quick-imaging-settings.md scan_size_label_verified=true %}
 
 For EDS, start with 15 kV, Map intensity, and a working distance around 4-7 mm. Stop EDS before moving to another area.
 
@@ -117,12 +118,12 @@ For EDS, start with 15 kV, Map intensity, and a working distance around 4-7 mm. 
 4. Confirm that every sample is firmly attached and no loose particles are present.
 5. Set the tallest point of the tallest sample approximately 5-7 mm below the top edge of the sample tray unless staff instruct otherwise.
 6. Insert the sample tray into the loading bay.
-7. Close the compartment using the software eject button.
+7. Close the compartment using the same software eject button.
 8. Wait for the stage to move to the optical NavCam position.
 
 The height rule is instrument-critical. Do not use the Phenom Pure holder-edge rule on the XL, and do not estimate height by eye if a sample is tall or irregular.
 
-{% include sem/live-sem-workflow.md %}
+{% include sem/live-sem-workflow.md view_label="SEM" navcam_image="../assets/img/tutorials/sem/phenom-xl-navcam-empty.png" navcam_controls_verified=true move_to_sem_icon_verified=true scan_size_label_verified=true %}
 
 ### EDS And Live EDS {#eds}
 
@@ -182,7 +183,7 @@ For EDS data:
 
 ## Exercises {#exercises}
 
-* **Level 1 - General Phenom XL training:** Prepare and image a small piece of hair. Load it on the XL tray, navigate with NavCam, focus in LiveSEM, acquire images at several magnifications, and compare a cut end with a torn or broken end.
-* **Level 2 - EDS practice:** Prepare salt and sugar on the same stub. Use morphology first, then EDS on the Phenom XL, to decide which is which.
+* **Level 1 - General Phenom XL training:** Prepare and image a small piece of hair. Load it on the XL tray, navigate with NavCam, focus in SEM view, acquire images at several magnifications, and compare a cut end with a torn or broken end. The trainer gives a brief, trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training.
+* **Optional Level 2 - EDS practice:** Prepare salt and sugar on the same stub. Use morphology first, then EDS on the Phenom XL, to decide which is which. This focused training is available for users who want additional instruction; it is not a prerequisite for independent EDS use.
 * **Level 2 - Non-conductive sample comparison:** Image an uncoated non-conductive sample in low vacuum, then sputter coat a similar sample and compare resolution, charging, and surface contrast.
 * **Level 3 - Specialist training:** Prepare a powder sample sparse enough for particle sizing. Acquire images suitable for measuring particle diameter and compare the result with a poorly dispersed sample.

@@ -22,7 +22,7 @@ The portal is **unlisted, not private**. Never add credentials, attendee records
 
 ## Current Status
 
-Last substantive work: 2026-08-11.
+Last substantive work: 2026-08-20.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
@@ -214,7 +214,7 @@ This table records the decisions and unresolved boundaries established during th
 | Instrument | Level 1 teaching scope or decision | Quick Guide implication | Still unresolved |
 | --- | --- | --- | --- |
 | FTIR | Two trainer-selected solids through the routine ATR cycle. The background preview is not an acceptance test; contamination is recognized from negative or unexpected features in the collected sample spectrum. A green **System Status** check means ready; any other state stops collection. | The available printed FTIR Quick Guide supports the session; its compact redesign remains a separate project. | Trainer guide ready for release; canonical-page enhancements remain separate. |
-| Phenom XL | Core SEM imaging uses NavCam, LiveSEM focus and brightness/contrast, magnification, acquisition, and the top voltage/beam/resolution/averaging panel. A short EDS capability preview followed by a separate Level 2 add-on is the proposed boundary, not yet approved policy. | Primary map is SEM imaging only; capture NavCam and LiveSEM states and include the grouped top panel. Do not map independent EDS operation. | Approve the EDS boundary; loading pair, interface labels, save/export, and end state. |
+| Phenom XL | Core SEM imaging uses NavCam, SEM-view focus and brightness/contrast, magnification, acquisition, and the top voltage/beam/**Scan Size**/averaging panel. Reviewed 2026-08-20: Level 1 includes a brief trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training; Level 2 is not a prerequisite for independent EDS use. The confirmed normal start is tray inside the closed compartment, software closed, Windows at sign-in, and microscope in standby; direct observation confirmed the canonical loading sequence, **move to SEM** icon, and NavCam **magnification**, **brightness/contrast**, and **focus** controls. | Primary map is SEM imaging only; use separate NavCam and SEM states and include the grouped top panel. Do not map EDS operation. | Loading-height image pair, remaining SEM controls, image-quality decision, save/export, and end state. |
 | Phenom Pure | Room-temperature core imaging uses the same categories of SEM controls, verified on the Pure interface. Cold-stage work remains Level 2. | Separate Pure NavCam/LiveSEM sources; include the grouped top panel and never reuse XL height rules. | Loading pair, interface labels, save/export, and end state. |
 | XRD | The SOP covers loading, queueing a stored program, data handoff, log book, unloading, and shutdown. | Primary map is the Aeris queue. | Decide whether HighScore/Search Match is Level 1 independent practice, a capability preview, or a later analysis exercise; resolve stored programs and companion-workstation export. |
 | Instron | One 50 kN tensile test remains the Level 1 candidate. Both Bluehill and the handset are taught. | Requires a reviewed two-view layout; do not reduce the map to the handset. | Saved method versus QuickTest, end condition, exact Bluehill controls, export, quality pair, and initial/final state. |
@@ -231,7 +231,7 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 
 | Wave | Instrument system | Quick Guide | Staff guide | Immediate readiness issue |
 | --- | --- | --- | --- | --- |
-| First | **SEM/EDS** | Missing | Unpublished Phenom XL and Phenom Pure prototypes complete; live guides missing | Capture separate Phenom interfaces and height pairs, define the result-quality and final-state decisions, and approve the proposed Level 1 EDS preview/Level 2 independent-operation split. |
+| First | **SEM/EDS** | Missing | Unpublished Phenom XL and Phenom Pure prototypes complete; XL review in progress | Capture separate Phenom interfaces and height pairs, then define the result-quality, save/export, and final-state decisions. The XL EDS curriculum boundary was approved 2026-08-20. |
 | First | **XRD** | Needs operational check and retrofit | Unpublished prototype complete; live guide missing | Resolve the companion workstation, stored programs, HighScore teaching boundary, export handoff, and final removable-cover position; use the existing handouts as source material. |
 | First | **FTIR** | Current printed guide supports training; compact redesign remains separate | Compact trainer guide ready for release; remains unpublished pending the release step | Release when authorized; use later practice sessions to refine pacing if needed. |
 | First | **Instron** | Missing | Unpublished prototype complete; live guide missing | Resolve the method, export, end condition, quality check, complete hardware states, and reviewed two-view Bluehill/handset layout. The prototype is intentionally longer than the default model. |
@@ -279,7 +279,6 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 * **XRD's companion workstation.** The instrument touchscreen has no sign-in, but export, HighScore, and XRDMP run on a separate workstation whose sign-in is undetermined. An XRD guide's closeout has to say something about it. Tracked in [`../instruments/staff-todo.md`](../instruments/staff-todo.md).
 * **XRD stored programs are uncurated.** Routine use means selecting a stored program, so until the list is pared down with meaningful filenames, no document can tell a user which to pick. Also in `staff-todo.md`.
 * **XRD analysis boundary.** The public Level 1 exercise currently includes HighScore and Search Match, while the primary Quick Guide map is scoped to the Aeris queue. Decide whether analysis is independent Level 1 practice, a brief capability preview, or a later exercise.
-* **SEM/EDS boundary.** The working recommendation is a brief EDS capability preview during Phenom XL Level 1 plus a separate Level 2 add-on before independent operation. Staff approval is still required; do not turn the recommendation into access policy by implication.
 * **Multi-view map variants.** Instron necessarily uses Bluehill and the handset. Raman necessarily spans TopCam, internal camera/laser focus, RTD, and AutoCalibration. Optical may span several DSX states. These remain blocked until the required sources exist and a readable instrument-specific layout variant is reviewed and locked.
 * **UV-Vis Level 1.** The current public page labels several increasingly interpretive exercises Level 1. Select one core blank-plus-sample absorbance/transmission session before finalizing a map or quality gate.
 
@@ -306,6 +305,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 * Optical Level 1 includes Best Image, quick 2D map stitching, normal 2D capture, high-quality 2D area stitching with **Use as map image** deselected, and 3D capture. High-quality 3D stitching is mentioned but not performed; LEXT is previewed only to show later analysis/report capability.
 * Particle-size Level 1 uses the shallow tray only. The deep tray remains a staff-guided exception because it has not been needed in routine work.
 * Ion-mill Level 1 uses semi-automatic operation. Automated recipes remain outside the introductory workflow.
+* Phenom XL Level 1 includes a brief trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use, and the primary participant Quick Guide does not map EDS controls. Decided 2026-08-20.
 * A software step verified against lab-produced media of the actual instrument may be used when the canonical page is updated in the same revision. This resolved the OMNIC post-scan naming prompt on 2026-08-06 without creating a permanent sourcing exception.
 * The lab-approved FTIR cleaning workflow continues to use the stocked low-lint wipes marketed for optical, laser, and electronics cleaning on the installed diamond ATR window. The lab manager accepted that choice on 2026-08-06; revisit it if the installed crystal material or stocked wipe changes.
 

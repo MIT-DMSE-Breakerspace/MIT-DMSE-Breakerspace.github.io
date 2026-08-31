@@ -4,7 +4,7 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-08-10
+Last reviewed: 2026-08-20
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
@@ -117,16 +117,21 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 
 ## Phenom XL SEM
 
-* [ ] Capture clean, unannotated XL NavCam and LiveSEM views for the Level 1 imaging workflow. The LiveSEM source must show or support verified callouts for focus, brightness/contrast and automatic adjustment, magnification, acquisition, and the grouped top panel with voltage, beam/intensity, resolution, and averaging.
+* [x] Confirm the expected starting state. Lab-manager confirmed 2026-08-20: tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and microscope in standby. This was not recorded as a direct instrument observation.
+* [x] Verify the complete normal loading sequence at the XL. Directly observed 2026-08-20: it matches the canonical software-start/connect → software eject/open → tray removal → stub loading and XL-specific clearance recheck → tray reinsertion → same software control/close → NavCam sequence. The matched loading-height image pair remains to be captured.
+* [x] Identify a clean, unannotated native-resolution XL NavCam source candidate. Reviewed 2026-08-20: `assets/img/tutorials/sem/phenom-xl-navcam-empty.png` is a sanitized 3840 x 2160 capture that shows the move-to-SEM icon in the upper left below the eject/open-close icon and the three lower-left adjustment icons. Direct observation confirmed the transition icon has two plus-sign circles with an arrow between them and the mouse-over label **move to SEM**; the adjustment labels are **magnification**, **brightness/contrast**, and **focus**. Final source approval remains open.
+* [x] Identify a clean, unannotated native-resolution XL SEM source candidate. Reviewed 2026-08-20: `assets/img/tutorials/sem/phenom-xl-sem-top-panel.png` is a sanitized 3840 x 2160 capture with the settings panel open and exact visible labels including **Acc. Voltage**, **Beam Intensity**, **Detector**, **Vacuum**, **Live**, **Averaging**, **Scan Size**, and **Acquisition**. Final source approval and complete Level 1 group selection remain open.
+* [x] Resolve the resolution-label conflict. Lab-manager confirmed 2026-08-20 that XL guidance should use the exact UI label **Scan Size** and may clarify it as image resolution.
+* [ ] Approve the NavCam and SEM source candidates, select whether **Detector** and **Vacuum** join the grouped Level 1 settings-panel inspection, and verify the remaining SEM mouse-over labels for focus, brightness/contrast and automatic adjustment, magnification, and acquisition.
 * [ ] Add a complete XL level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or GIFs showing XL tray removal and stub loading, including a matched over-height versus correct 5-7 mm below-tray pair for the Quick Guide readiness check.
 * [ ] Add a GIF of setting the image label and save location in the Phenom software.
-* [ ] Add a GIF of moving from NavCam to LiveSEM, focusing, and acquiring the first image.
+* [ ] Add a GIF of moving from NavCam to SEM view, focusing, and acquiring the first image.
 * [ ] Define the observable Level 1 image-quality decision for the XL imaging workflow without inventing a universal resolution or contrast threshold.
 * [ ] Confirm the exact save/export and naming convention and the final tray/chamber standby state. Do not substitute the Pure holder-return rule.
-* [ ] Approve or revise the proposed EDS curriculum boundary: a short capability preview during Phenom XL Level 1, followed by a separate Level 2 add-on before independent EDS operation. Do not add EDS controls to the primary SEM Quick Guide while this remains a proposal.
-* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away, for the proposed Level 2 add-on or later EDS task card.
-* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export for the proposed Level 2 add-on or later EDS task card.
+* [x] Approve the EDS curriculum boundary. Reviewed 2026-08-20: Phenom XL Level 1 includes a brief trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. Do not add EDS controls to the primary SEM Quick Guide.
+* [ ] Add a GIF of starting and stopping Live EDS, emphasizing the stop button before navigating away, for the optional Level 2 training or later EDS task card.
+* [ ] Add screenshots of a complete EDS report/export workflow and example CSV/raw-data export for the optional Level 2 training or later EDS task card.
 
 ## Microtrac Sync Particle Size Analyzer
 
@@ -174,7 +179,7 @@ This page was substantially expanded from a thin original and still needs verifi
 ## Phenom Scanning Electron Microscopes (Shared SEM Hub)
 
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
-* [ ] Develop a Level 2 EDS add-on and concise EDS task card if staff approve the proposed boundary; it should cover sample/mount/coating implications, voltage and working distance, point/area/live/map choices, stop-before-moving, peak overlap, and save/export. Specific stocked samples or standards can be added later when available.
+* [ ] Develop optional Level 2 EDS-focused training and a concise EDS task card if useful; it should cover sample/mount/coating implications, voltage and working distance, point/area/live/map choices, stop-before-moving, peak overlap, and save/export. Specific stocked samples or standards can be added later when available.
 * [ ] Add a level 2 non-conductive-sample exercise using a specific sample-library item suitable for low-vacuum and sputter-coated comparison.
 * [ ] Add annotated SEM and EDS example results showing how image contrast and elemental maps answer different kinds of questions.
 * [ ] Add photos or GIFs showing a gloved hand placing a stub in a prep tray and mounting a sample with stub tweezers.

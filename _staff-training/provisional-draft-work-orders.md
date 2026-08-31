@@ -11,7 +11,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
 | 1 | FTIR | `_staff-training/ftir-trainer-prototype.md` | Reviewed 2026-08-11; ready for release; remains unpublished | None for the trainer guide; the compact Quick Guide redesign remains separate. |
-| 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Approve EDS and image-quality boundaries; verify save/export, final state, and participant Quick Guide. |
+| 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Lab-manager review in progress; EDS boundary approved 2026-08-20 | Define image quality; verify save/export, final state, interface evidence, and participant Quick Guide. |
 | 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable | Define image quality; verify save/export, final state, and participant Quick Guide. |
 | 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
@@ -91,17 +91,27 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 
 **Sources:** [`../instruments/phenom-xl.md`](../instruments/phenom-xl.md) and the complete [Phenom XL Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#thermo-fisher-phenom-xl-sem).
 
-Draft the supported core SEM imaging session: XL-specific sample preparation and height/clearance, NavCam navigation, LiveSEM focus and brightness/contrast, magnification, acquisition/saving, cleanup, and standby. Keep the proposed brief EDS preview visibly labeled as a review gap; do not teach or imply independent EDS operation. Do not name hair as a required default sample.
+Draft the supported core SEM imaging session: XL-specific sample preparation and height/clearance, NavCam navigation, SEM focus and brightness/contrast, magnification, acquisition/saving, cleanup, and standby. Do not name hair as a required default sample.
 
-Required review gaps include the EDS boundary, exact save/export convention, final tray/chamber state, and any observable image-quality decision not defined canonically. Do not reuse the Pure loading rule merely because the interfaces are similar.
+**Curriculum decision — reviewed 2026-08-20:** Level 1 includes a brief trainer-operated EDS capability preview and advertises optional Level 2 EDS-focused training. Level 2 is not a prerequisite for independent EDS use. The primary participant Quick Guide remains scoped to SEM imaging and does not map EDS controls.
+
+**Operating fact — lab-manager confirmed 2026-08-20:** The normal starting condition is the XL tray inside the closed sample compartment, Phenom software closed, Windows at the sign-in screen, and the microscope in standby. This was confirmed as the expected state, not recorded as a direct instrument observation.
+
+**Direct observation — 2026-08-20:** At the XL, the complete normal loading sequence matched the canonical page: start and connect the Phenom software; use the software eject control to open the compartment; remove the tray; load with stub tweezers and verify secure attachment and the XL-specific approximately 5–7 mm-below-tray-top clearance; reinsert the tray; use the same software control to close the compartment; and wait for NavCam. The matched loading photographs remain an open evidence gate.
+
+**Terminology decision and interface evidence — reviewed 2026-08-20:** Visible XL guidance uses **SEM** or **SEM view**, not “LiveSEM.” Direct observation confirmed that the transition control is an icon with the mouse-over label **move to SEM**. The sanitized native-resolution NavCam source candidate shows the icon in the upper left immediately below the eject/open-close icon; its symbol is two circles with plus signs and an arrow between them. Direct observation also confirmed the three lower-left NavCam mouse-over labels: **magnification**, **brightness/contrast**, and **focus**. The internal `#live-sem` anchor remains only for existing-link compatibility.
+
+**Control-label refinement — reviewed 2026-08-20:** The XL UI labels the image-resolution control **Scan Size**. XL guidance uses that exact label and may clarify it parenthetically as image resolution. A sanitized native-resolution SEM source candidate is now available and visibly supports the label; selection of the complete Level 1 top-panel control set remains under review.
+
+Remaining review gaps include the exact save/export convention, final tray/chamber state, interface evidence, and any observable image-quality decision not defined canonically. Do not reuse the Pure loading rule merely because the interfaces are similar.
 
 **Composition result — 2026-08-10:**
 
 * **Checks:** 18 XL-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
 * **Words:** `wc -w` reports 1,184 prototype-source words (1,628 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **992 runnable-checklist words**, **1,311 total content words**, and **46 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
-* **Review gaps carried:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; final tray/chamber state; approved and installed participant Quick Guide.
-* **Structural lesson:** NavCam, LiveSEM, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. Five specific release gaps push total page prose above the FTIR editorial range while the runnable checklist remains within it; retaining those gaps is preferable to disguising them. The XL height check must stay instrument-specific despite shared SEM access.
+* **Review gaps carried at composition:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; final tray/chamber state; approved and installed participant Quick Guide. The EDS boundary was resolved during lab-manager review on 2026-08-20; the other gaps remain open.
+* **Structural lesson:** NavCam, SEM view, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. Five specific release gaps push total page prose above the FTIR editorial range while the runnable checklist remains within it; retaining those gaps is preferable to disguising them. The XL height check must stay instrument-specific despite shared SEM access.
 
 ## Phenom Pure Prototype
 
