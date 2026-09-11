@@ -25,7 +25,7 @@ trainer_links:
 >
 > **Decision or evidence required:** Run the recorded Level 1 sequence at the instrument and verify its order, exact DSX control names, observable trainer checks, and fit within the participant workflow: **Best Image**, quick 2D map stitch, normal 2D capture, high-quality 2D area stitch with **Use as map image** deselected, and 3D capture.
 >
-> **Sources checked:** [public acquisition guidance]({% link instruments/optical.md %}#acquisition), the [workflow-scope handoff](README.md#workflow-scope-handoff--updated-2026-08-10), and the [optical Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#olympus-dsx-1000-digital-optical-microscope).
+> **Sources checked:** [public acquisition guidance]({% link instruments/optical.md %}#acquisition), the workflow-scope handoff in `_staff-training/README.md`, and the optical work order in `_staff/quick-guides/instrument-specifications.md`.
 >
 > **Release effect:** The Level 1 curriculum, control-map labels, timing bands, and participant-performance checks remain provisional until this run succeeds.
 
@@ -33,7 +33,7 @@ trainer_links:
 >
 > **Decision or evidence required:** Verify the current LEXT save controls, the recommended save location, and the exact point at which each 2D, stitched, and 3D result is confirmed saved and retrievable. Clicking **2D Acquisition** opens the result in LEXT; do not invent an intermediate DSX dialog.
 >
-> **Sources checked:** [public saving guidance]({% link instruments/optical.md %}#data) and the [capture-integration handoff](../_staff/quick-guides/capture-integration-workorder-2026-08-12.md#olympus-dsx-1000-digital-optical-microscope).
+> **Sources checked:** [public saving guidance]({% link instruments/optical.md %}#data) and the optical handoff in `_staff/quick-guides/capture-integration-workorder-2026-08-12.md`.
 >
 > **Release effect:** Saving checks below identify the required outcome but cannot name a final control or destination until verified.
 
@@ -41,7 +41,7 @@ trainer_links:
 >
 > **Decision or evidence required:** Observe shutdown on the current instrument and confirm the expected head, objective, stage, and sample-area clearance after DSX retracts the head and before the dust cover is installed.
 >
-> **Sources checked:** [canonical shutdown sequence]({% link instruments/optical.md %}#shutdown) and the [Quick Guide release gates](../_staff/quick-guides/instrument-specifications.md#olympus-dsx-1000-digital-optical-microscope).
+> **Sources checked:** [canonical shutdown sequence]({% link instruments/optical.md %}#shutdown) and the optical release gates in `_staff/quick-guides/instrument-specifications.md`.
 >
 > **Release effect:** The checklist preserves the canonical shutdown sequence, but the final observable clearance check remains provisional.
 
@@ -49,7 +49,7 @@ trainer_links:
 >
 > **Decision or evidence required:** Approve the optical-specific multi-state control map, integrate and label only the selected DSX captures and matched focus pair, add and verify the QR asset, and complete a physical Letter duplex proof.
 >
-> **Sources checked:** [current provisional Quick Guide]({% link quick-guides/optical.md %}) and the [capture-integration handoff](../_staff/quick-guides/capture-integration-workorder-2026-08-12.md#olympus-dsx-1000-digital-optical-microscope).
+> **Sources checked:** [current provisional Quick Guide]({% link quick-guides/optical.md %}) and the optical handoff in `_staff/quick-guides/capture-integration-workorder-2026-08-12.md`.
 >
 > **Release effect:** Use the provisional Quick Guide only as a review artifact during the practice run; it is not approved for routine training, printing for use, or installation.
 
