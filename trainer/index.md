@@ -31,15 +31,45 @@ Reviewed session checklist for routine Level 1 ATR training.
 
 ### [Optical Microscope Trainer Guide]({% link _staff-training/optical.md %})
 
-Existing pilot guide. Needs retrofit and operational review.
+Reviewed session checklist for the established DSX-1000 training workflow.
+
+</section>
+
+<section markdown="1">
+
+### [Phenom XL Trainer Guide]({% link _staff-training/phenom-xl-trainer-prototype.md %})
+
+**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
+
+</section>
+
+<section markdown="1">
+
+### [Phenom Pure Trainer Guide]({% link _staff-training/phenom-pure-trainer-prototype.md %})
+
+**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
+
+</section>
+
+<section markdown="1">
+
+### [XRD Trainer Guide]({% link _staff-training/xrd-trainer-prototype.md %})
+
+**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
+
+</section>
+
+<section markdown="1">
+
+### [Instron Trainer Guide]({% link _staff-training/instron-trainer-prototype.md %})
+
+**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
 
 </section>
 
 </div>
 
-## Drafts Under Review
-
-Phenom XL, Phenom Pure, XRD, and Instron trainer guides remain unpublished review artifacts. They are intentionally not linked from the production portal and are not approved for training delivery.
+Phenom XL, Phenom Pure, XRD, and Instron are published so staff can review them from the portal. Their **Draft advisory** state and visible review-gap blocks distinguish publication for review from approval for training delivery.
 
 ## Administrative Shortcuts
 

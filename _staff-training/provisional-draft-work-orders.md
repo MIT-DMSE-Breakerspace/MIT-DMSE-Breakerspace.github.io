@@ -85,7 +85,7 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 
 * **Checks:** 19 FTIR-specific + 6 compact safety + 7 compact closeout = **32 rendered checks**.
 * **Words:** `wc -w` reports 963 in the trainer-guide source, 203 in the compact safety include, and 214 in the compact closeout include (**1,380 source words** total). The unpublished render contains **1,069 runnable-checklist words**, **1,111 total content words**, and **33 trainer-note words**.
-* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. On 2026-08-31 the production index was reconciled to link only released guides; the four intentionally unpublished prototypes remain named but unlinked.
+* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. On 2026-09-11 the four incomplete prototypes were published and linked from the portal with a **Draft advisory** state; their visible release gaps remain unresolved.
 
 ## Phenom XL Prototype
 

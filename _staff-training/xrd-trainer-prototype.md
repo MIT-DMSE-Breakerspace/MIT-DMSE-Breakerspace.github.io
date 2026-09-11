@@ -1,8 +1,8 @@
 ---
 title: XRD Trainer Guide — Provisional Draft
-description: Unpublished trainer-run-sheet composition draft for review.
-published: false
-guide_status: Provisional composition draft — incomplete
+description: Published trainer-run-sheet draft advisory for staff review.
+permalink: /trainer/xrd/
+guide_status: Draft advisory
 guide_revision: 2026-08-11
 interactive_checklist: true
 instrument_name: Malvern Panalytical Aeris Research XRD
