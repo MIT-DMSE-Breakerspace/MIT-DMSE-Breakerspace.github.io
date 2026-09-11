@@ -73,7 +73,7 @@ EDS is most convincing when it is interpreted with the SEM image, sample history
 * Wear nitrile gloves when handling samples, stubs, sample holders, stages, and sample-prep tools.
 * [Prepare samples](#prep) externally at the sample prep table.
 * Confirm that the sample is dry, firmly attached, free of loose particles, and below the XL height limit.
-* Set the tallest point of the sample approximately 5-7 mm below the top edge of the XL sample tray unless staff instruct otherwise.
+* Use the height-setting dial to set the tallest point of the sample approximately 5-7 mm below the top edge of the XL sample tray: turn the dial 5-7 notches in the direction that lowers the sample unless staff instruct otherwise.
 * [Load](#loading) the sample tray into the instrument.
 * Remove gloves before using the computer.
 * Set the image [label and save location](#customize).
@@ -116,7 +116,7 @@ For EDS, start with 15 kV, Map intensity, and a working distance around 4-7 mm. 
 2. Remove the sample tray.
 3. Using stub tweezers, push each stub pin into an open hole in the tray.
 4. Confirm that every sample is firmly attached and no loose particles are present.
-5. Set the tallest point of the tallest sample approximately 5-7 mm below the top edge of the sample tray unless staff instruct otherwise.
+5. Use the height-setting dial to set the tallest point of the tallest sample approximately 5-7 mm below the top edge of the sample tray: turn the dial 5-7 notches in the direction that lowers the sample unless staff instruct otherwise.
 6. Insert the sample tray into the loading bay.
 7. Close the compartment using the same software eject button.
 8. Wait for the stage to move to the optical NavCam position.

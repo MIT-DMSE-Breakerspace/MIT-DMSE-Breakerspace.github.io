@@ -3,7 +3,7 @@ title: Phenom Pure Trainer Guide — Provisional Draft
 description: Published trainer-run-sheet draft advisory for staff review.
 permalink: /trainer/phenom-pure/
 guide_status: Draft advisory
-guide_revision: 2026-08-10
+guide_revision: 2026-09-11
 interactive_checklist: true
 instrument_name: Thermo Fisher Phenom Pure SEM
 moira_group: dmse-brkrspc-sem
@@ -11,23 +11,7 @@ moira_group: dmse-brkrspc-sem
 
 # Phenom Pure Trainer Guide — Provisional Draft
 
-> **Provisional composition draft — incomplete.** Not approved for training delivery. Review gaps below are release blockers, not instructions for the trainer to improvise around.
-
-> **REVIEW GAP — image quality decision**
->
-> **Decision or evidence required:** Define the observable LiveSEM state adequate for Level 1 acquisition without collapsing focus, charging, drift, washout, outgassing, and beam damage into one threshold.
->
-> **Sources checked:** Canonical [SEM View]({% link instruments/phenom-pure.md %}#sem-view), [Common Failure Modes]({% link instruments/phenom-pure.md %}#failures), and Phenom Pure work order.
->
-> **Release effect:** Control practice is supported; an assessable quality pass is not.
-
-> **REVIEW GAP — save/export**
->
-> **Decision or evidence required:** Verify the project-label, save-folder, copy/export, and file-naming convention.
->
-> **Sources checked:** Canonical [Project Label And Save Location]({% link instruments/phenom-pure.md %}#customize), [Data Processing And Analysis]({% link instruments/phenom-pure.md %}#data), and Phenom Pure work order.
->
-> **Release effect:** Saving and copying remain required; exact destinations and names are unapproved.
+> **Provisional composition draft — incomplete.** Not approved for training delivery. The review gap below is a release blocker, not an instruction for the trainer to improvise around.
 
 > **REVIEW GAP — final holder/chamber state**
 >
@@ -37,45 +21,40 @@ moira_group: dmse-brkrspc-sem
 >
 > **Release effect:** Canonical unloading is represented; final hardware state remains blocked.
 
-> **REVIEW GAP — participant artifact**
->
-> **Decision or evidence required:** Review, proof, approve, and install a printed Phenom Pure Quick Guide.
->
-> **Sources checked:** Canonical [Quick Actions]({% link instruments/phenom-pure.md %}#quick-actions), unpublished Phenom Pure Quick Guide prototype, and Phenom Pure work order.
->
-> **Release effect:** The unpublished prototype cannot be used or described as installed.
-
 ## Session checklist
 
 Work in order. Plan to start five minutes after the scheduled hour and complete the session in 50 minutes; timing is approximate. Refer to the [Phenom Pure instrument page]({% link instruments/phenom-pure.md %}) or [Phenom Pure manuals]({% link instruments/phenom-pure.md %}#manuals) if needed.
 
 <p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 
-* [ ] Confirm the Pure is connected and functioning normally, its room-temperature holder and loading area are clean, and the microscope can reach its canonical ready state. Open the canonical page; do not place or describe the unpublished Quick Guide prototype as an approved instrument aid.
-* [ ] Prepare gloves, approved mounts, and one trainer-selected room-temperature sample on an **18 mm or smaller stub**. Confirm it is non-hazardous, dry, firmly attached, free of loose particles, compatible with the Pure, and suitable for navigation and imaging at several magnifications. Run unfamiliar samples beforehand.
+* [ ] Confirm the room-temperature holder and loading area are clean and the microscope is in its expected starting state. Log in to the workstation, start the Phenom User Interface, and confirm the Pure connects and functions normally. Open the canonical operating page and prepare the printed Quick Guide.
+* [ ] At the sample-preparation table, have gloves, stub tweezers, carbon stickers, **18 mm or smaller stubs** or other approved mounts, and a known-good trainer-selected room-temperature demonstration sample ready. Confirm the sample is non-hazardous, dry, compatible with the Pure, and suitable for navigation and imaging at several magnifications.
 
 <p class="trainer-phase"><span>0–8 minutes</span> Welcome and room orientation</p>
 
-* [ ] Welcome participants, ask what they hope to image, and state that this incomplete run sheet cannot replace the missing approved printed Quick Guide.
+* [ ] Welcome participants, ask whether there is anything specific they are hoping to image, and give each person a Quick Guide to use during the workflow. Do not require participants to arrive with a sample or choose one before they understand the instrument's capabilities; use the prepared demonstration sample for the training workflow.
 
 {% include trainer/checklist-safety-compact-prototype.md %}
 
 <p class="trainer-phase"><span>8–18 minutes</span> Scope, startup, and loading</p>
 
-* [ ] Set the supported boundary: room-temperature Pure imaging with NavCam and LiveSEM. Cold-stage observation remains Level 2; the Pure has no EDS. Stop for loose, wet-unfrozen, shedding, over-height, uncertain, or incompatible material; unclear holder choice; unexpected motion; connection or holder errors; persistent imaging problems; or unfamiliar errors.
-* [ ] **Trainer logs in while participants watch** because their shared SEM Moira access begins after closeout. Start the Phenom User Interface, wake the microscope if needed, and use **Settings / Phenom / Status** to connect if it does not connect automatically.
-* [ ] At the external sample-prep table, participant wears gloves, secures the single sample, removes loose particles away from the microscope and electronics, and confirms its highest point is **below the top edge of the Pure holder**. Never apply the XL tray-height rule.
-* [ ] Participant chooses the labeled room-temperature holder appropriate for the intended vacuum mode, uses the software eject button to unlock the compartment, opens the door manually, inserts the holder, closes the door firmly, and waits for NavCam. Ask staff if holder choice is unclear.
-* [ ] Participant removes gloves before the computer and sets a useful image label and active save folder in **Settings / Customize**; use only the current approved local convention pending the save/export decision above.
+* [ ] Explain what this training covers: prepare and load a room-temperature sample; navigate with NavCam; image with BSD and SED; and test and refine magnification, focus, brightness/contrast, accelerating voltage, beam intensity, detector selection, vacuum mode, Scan Size, and averaging to obtain a clean, useful SEM image. Introduce the Pure's temperature-controlled stage and what it can support, but do not demonstrate it during this session; cold-stage operation requires additional training and more time. The Pure does not have EDS.
+* [ ] Show the [SOP]({% link instruments/phenom-pure.md %}#sop), [detailed instructions]({% link instruments/phenom-pure.md %}#details), and [common failure modes]({% link instruments/phenom-pure.md %}#failures) on the Pure operating page. State the stop conditions: a loose, wet-unfrozen, shedding, over-height, uncertain, or incompatible sample; unclear holder or stage choice; unexpected sample or stage motion; connection or holder errors; persistent charging, drift, washout, outgassing, beam damage, or poor focus; or an unfamiliar error.
+* [ ] Tell participants you logged in before the session because their shared SEM Moira access begins after closeout. Show the connected instrument status and explain that trained users should use **Settings / Phenom / Status** to connect if the microscope does not connect automatically.
+* [ ] Orient participants to the sample-preparation table, glove supply, stub-tweezer drawer, carbon stickers, stubs, and other approved mounting supplies. At the table, a participant puts on gloves, prepares and secures the single sample to its mount, and removes loose particles away from the microscopes and electronics.
+* [ ] Participant carries the prepared mount to the Pure and selects the labeled room-temperature holder appropriate for the intended vacuum mode. Ask staff if holder choice is unclear. Using stub tweezers, participant places the mount in the holder and confirms its highest point is **below the top edge of the holder**; never apply the XL tray-height rule. Participant then uses the software eject button to unlock the compartment, opens the door manually, inserts the holder, closes the door firmly, and waits for NavCam.
+* [ ] Participant removes gloves before using the computer, sets a useful image label in **Settings / Customize**, and selects the `Breakerspace Files` shared drive as the recommended active save location. Another external storage location controlled by the participant may be used when appropriate; do not save needed data to the workstation's local hard drive.
 
 <p class="trainer-phase"><span>18–40 minutes</span> Navigation, imaging, and data</p>
 
-* [ ] In NavCam, participant confirms the expected sample is visible and did not shift, then adjusts brightness, contrast, and focus until the view supports navigation. Save a NavCam image only when useful for documenting later image locations.
-* [ ] Participant selects a region and uses **Move to SEM**, starts zoomed out on a recognizable feature, and enters LiveSEM without implying that NavCam and LiveSEM controls share one screen.
-* [ ] Participant practices LiveSEM focus and brightness/contrast, uses automatic adjustment only as a starting point, and inspects the Pure top-panel voltage, beam/intensity, resolution, and averaging state without changing to an invented default. *Check: the participant locates each function; image acceptance remains blocked above.*
-* [ ] Participant increases magnification gradually and refocuses as needed after changes. Stop and use canonical failure guidance for persistent charging, drift, washout, outgassing, beam damage, or poor focus rather than forcing an acquisition.
-* [ ] Participant uses the camera control to acquire images at several magnifications with the current resolution and averaging settings, then finds them in Gallery. Keep original files when adding measurements, notes, or an annotated copy.
-* [ ] Participant stops any running image acquisition, confirms needed files are saved in the active folder, and copies needed data off the workstation before unloading; do not invent the unresolved export convention.
+* [ ] In NavCam, participant confirms the expected sample is visible and did not shift, then adjusts brightness, contrast, and focus until the view supports navigation. Saving a NavCam image is optional and useful only if the participant wants the optical overview for their documentation; it is not required for the later SEM workflow.
+* [ ] Participant uses **Move to SEM**. SEM view opens at the center of the holder. Participant then uses the NavCam overview to navigate to a region of interest before beginning the brightness, contrast, and focus routine.
+* [ ] Participant practices focus techniques: right-click and drag horizontally for quick manual focus, use autofocus only when the center has enough contrast, increase magnification gradually, and refocus after changes to magnification or imaging settings.
+* [ ] Participant compares BSD and SED, confirms the vacuum mode appropriate to the holder and sample, and tries multiple combinations of accelerating voltage, beam intensity, and brightness/contrast to see what best reveals the feature of interest. Use automatic brightness/contrast only as a starting point, then refine it manually. Start with lower accelerating voltage and beam intensity and increase them only as needed, because beam-sensitive samples can be damaged by higher settings. Discuss how each setting changes contrast, surface detail, signal, resolution, charging, and beam-damage risk.
+* [ ] For general live navigation, participant sets **Live Scan Size** to **960 × 540** and **Averaging** to **Medium**. Explain that these are the recommended navigation defaults and should be changed only when the sample or imaging task benefits from a different balance of speed, noise, and detail.
+* [ ] Participant uses the camera control to acquire images at several magnifications with acquisition Scan Size and Averaging appropriate to the sample and purpose. Evaluate each test image for useful focus and detail, appropriate brightness and contrast, charging, drift, washout, outgassing, vibration, or beam damage; change one relevant setting at a time and reacquire until the image is clean and useful or stop and use the common failure guidance.
+* [ ] Participant finds the acquired images in Gallery and keeps original files when adding measurements, notes, or an annotated copy.
+* [ ] Participant stops any running image acquisition and confirms every needed file is saved and retrievable from the `Breakerspace Files` shared drive or another external storage location controlled by the participant before unloading. The workstation's local hard drive is not a backup.
 
 <p class="trainer-phase"><span>40–46 minutes</span> Participant-led unloading and shutdown</p>
 
@@ -91,4 +70,4 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 
 ## Trainer notes
 
-Rotate loading, NavCam, LiveSEM, acquisition, and unload roles while keeping the complete sequence visible. Hair is not a required sample. Shared SEM access does not authorize users to transfer the Pure loading rule to the XL. Keep cold-stage work outside this Level 1 run sheet.
+Rotate loading, NavCam, SEM, acquisition, and unload roles while keeping the complete sequence visible. Hair is not a required sample. Shared SEM access does not authorize users to transfer the Pure loading rule to the XL. Keep cold-stage work outside this Level 1 run sheet.

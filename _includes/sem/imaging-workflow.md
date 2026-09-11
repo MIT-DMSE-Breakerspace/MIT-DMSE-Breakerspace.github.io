@@ -65,6 +65,10 @@ Useful controls:
 | Image intensity | General imaging | Good default for most SEM images. |
 | Point intensity | Lower magnification spot work | Useful when signal is low and fine resolution is less critical. |
 
+Try more than one appropriate combination to see what best reveals the feature of interest. For beam-sensitive samples, begin with lower accelerating voltage and beam intensity and increase them only as needed; higher settings can damage or change the sample.
+
+For general live navigation, use a **Scan Size of 960 × 540** with **Medium Averaging**. Change those live-view settings only when the sample or imaging task benefits from a different balance of speed, noise, and detail.
+
 #### Image Acquisition And Gallery {#acquisition}
 
 {% if include.scan_size_label_verified %}
