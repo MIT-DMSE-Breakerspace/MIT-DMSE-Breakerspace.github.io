@@ -5,7 +5,7 @@ require "nokogiri"
 require "pathname"
 
 ROOT = Pathname.new(__dir__).parent
-SITE = ROOT.join("_site")
+SITE = Pathname.new(ENV.fetch("SITE_DIR", ROOT.join("_site").to_s))
 
 INSTRUMENT_PAGES = %w[
   ftir

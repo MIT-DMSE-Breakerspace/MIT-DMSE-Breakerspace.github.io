@@ -1512,7 +1512,7 @@ body.trainer-portal-page {
   padding: 0.8rem 0.9rem;
   border: 1px solid #b9c5cc;
   border-radius: 5px;
-  background: #f5f8fa;
+  background: #fff36d;
 }
 
 .quick-guide-screen-bar strong,
@@ -2187,11 +2187,34 @@ body.trainer-portal-page {
   flex: 0 0 0.92in;
   padding: 0.07in 0.08in;
   border: 2px solid #ae0721;
+  background: #fff36d;
   color: #7b1021;
   font-size: 7.5pt;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
+}
+
+.quick-guide-review-index-warning {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border: 3px solid #8a6500;
+  border-radius: 5px;
+  background: #fff36d;
+  color: #332600;
+}
+
+.quick-guide-review-index-warning strong {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.quick-guide-review-index-warning p {
+  margin: 0.45rem 0 0;
+}
+
+.quick-guide-review-index-list li {
+  margin-bottom: 0.5rem;
 }
 
 .quick-guide-sop-map-trained-user-note {
