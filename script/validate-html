@@ -4,6 +4,40 @@
 require "w3c_validators"
 require "pathname"
 
+VALIDATOR_INTERVAL_SECONDS = Float(ENV.fetch("W3C_VALIDATOR_INTERVAL_SECONDS", "10"))
+VALIDATOR_MAX_429_RETRIES = Integer(ENV.fetch("W3C_VALIDATOR_MAX_429_RETRIES", "4"))
+VALIDATOR_MAX_BACKOFF_SECONDS = Float(ENV.fetch("W3C_VALIDATOR_MAX_BACKOFF_SECONDS", "60"))
+
+@last_validator_request_at = nil
+
+def wait_for_validator_slot
+  now = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+  if @last_validator_request_at
+    remaining = VALIDATOR_INTERVAL_SECONDS - (now - @last_validator_request_at)
+    sleep remaining if remaining.positive?
+  end
+  @last_validator_request_at = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+end
+
+def rate_limited_request
+  retries = 0
+
+  begin
+    wait_for_validator_slot
+    yield
+  rescue W3CValidators::ValidatorUnavailable => error
+    raise unless error.message.match?(/\b429\b|too many requests/i)
+    raise if retries >= VALIDATOR_MAX_429_RETRIES
+
+    retries += 1
+    delay = [VALIDATOR_INTERVAL_SECONDS * (2**retries), VALIDATOR_MAX_BACKOFF_SECONDS].min
+    warn "W3C validator rate-limited the request; retrying in #{delay.round(1)} seconds " \
+         "(#{retries}/#{VALIDATOR_MAX_429_RETRIES})..."
+    sleep delay
+    retry
+  end
+end
+
 def validator(file)
   extension = File.extname(file)
   if extension == ".html"
@@ -17,7 +51,7 @@ def validate(file)
   puts "Checking #{file}..."
 
   path = File.expand_path "../_site/#{file}", __dir__
-  results = validator(file).validate_file(path)
+  results = rate_limited_request { validator(file).validate_file(path) }
 
   return puts "Valid!" if results.errors.empty?
 

@@ -1,9 +1,11 @@
 ---
 title: Optical Microscope Trainer Guide
-description: Session checklist and teaching outline for a one-hour Olympus DSX-1000 optical microscope training.
-guide_status: Needs retrofit and operational check
-guide_revision: 2026-08-07
+description: Structurally retrofitted session checklist for review of Olympus DSX-1000 optical microscope training.
+guide_status: Needs operational check
+guide_revision: 2026-09-11
 interactive_checklist: true
+instrument_name: Olympus DSX-1000 Digital Optical Microscope
+moira_group: dmse-brkrspc-optical
 trainer_links:
   - label: Participant Quick Guide
     url: /quick-guides/optical/
@@ -17,167 +19,89 @@ trainer_links:
 
 # DSX-1000 Optical Microscope Staff Training Guide
 
-This pilot guide standardizes a one-hour general optical-microscope training. It draws its operating content from the [canonical instrument page]({% link instruments/optical.md %}) and its sibling [two-page Quick Guide]({% link quick-guides/optical.md %}). Do not maintain a separate operating sequence here.
+> **Structural retrofit — operational review required.** This run sheet is ready for an instrument-side practice review, not routine training delivery. Complete the review gaps below, reconcile the participant Quick Guide, and run a timed practice session before changing its status.
 
-<p class="guidance-note"><strong>This guide predates the current checklist model and still needs a structural retrofit.</strong> Its Level 1 operations were corrected on 2026-08-07 to record the workflow the lab manager actually teaches. The exact DSX control names, timing, interface map, sample-selection text, and continuous-flow checklist still require an optical-specific operational review before routine handoff.</p>
+> **REVIEW GAP — Level 1 workflow and controls**
+>
+> **Decision or evidence required:** Run the recorded Level 1 sequence at the instrument and verify its order, exact DSX control names, observable trainer checks, and fit within the participant workflow: **Best Image**, quick 2D map stitch, normal 2D capture, high-quality 2D area stitch with **Use as map image** deselected, and 3D capture.
+>
+> **Sources checked:** [public acquisition guidance]({% link instruments/optical.md %}#acquisition), the [workflow-scope handoff](README.md#workflow-scope-handoff--updated-2026-08-10), and the [optical Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#olympus-dsx-1000-digital-optical-microscope).
+>
+> **Release effect:** The Level 1 curriculum, control-map labels, timing bands, and participant-performance checks remain provisional until this run succeeds.
 
+> **REVIEW GAP — save and copy workflow**
+>
+> **Decision or evidence required:** Verify the current LEXT save controls, the recommended save location, and the exact point at which each 2D, stitched, and 3D result is confirmed saved and retrievable. Clicking **2D Acquisition** opens the result in LEXT; do not invent an intermediate DSX dialog.
+>
+> **Sources checked:** [public saving guidance]({% link instruments/optical.md %}#data) and the [capture-integration handoff](../_staff/quick-guides/capture-integration-workorder-2026-08-12.md#olympus-dsx-1000-digital-optical-microscope).
+>
+> **Release effect:** Saving checks below identify the required outcome but cannot name a final control or destination until verified.
 
-## Guide Control
+> **REVIEW GAP — final clearance state**
+>
+> **Decision or evidence required:** Observe shutdown on the current instrument and confirm the expected head, objective, stage, and sample-area clearance after DSX retracts the head and before the dust cover is installed.
+>
+> **Sources checked:** [canonical shutdown sequence]({% link instruments/optical.md %}#shutdown) and the [Quick Guide release gates](../_staff/quick-guides/instrument-specifications.md#olympus-dsx-1000-digital-optical-microscope).
+>
+> **Release effect:** The checklist preserves the canonical shutdown sequence, but the final observable clearance check remains provisional.
 
-| Field | Value |
-| --- | --- |
-| Instrument | Olympus DSX-1000 digital optical microscope |
-| Public instrument page and Quick Guide | [Optical microscope operating page]({% link instruments/optical.md %}) · [Quick Guide]({% link quick-guides/optical.md %}) |
-| LibCal training | Template: **DSX-1000 Digital Optical Microscope Training**. Max 3, MIT LibAuth, opens 2 weeks prior. Revised and verified 2026-08-04; the administrative completion record is maintained in `_admin/libcal-manual-update-guide.md` |
-| Session length | 60 minutes |
-| Maximum enrollment | 3 participants |
-| Level 1 exercise | Select an observation mode; make a quick 2D map stitch, a normal 2D capture, a high-quality 2D area stitch, and a 3D capture |
-| Capability previews only | High-quality 3D stitching is mentioned; LEXT analysis and report preparation are shown briefly, without teaching either workflow for independent use |
-| Training sample | **Trainer-selected.** A stable, well-supported sample with surface texture that reads differently in different observation modes. No specific material is prescribed |
-| Moira group | `dmse-brkrspc-optical` (see [access and logistics]({% link _staff-training/access-and-logistics.md %}#moira-groups-by-instrument)) |
-| Guide owner | Lab manager (see [guide owners]({% link _staff-training/access-and-logistics.md %}#guide-owners)) |
-| Status | Pilot draft; operational-owner review required |
-| Last reviewed | 2026-08-07 |
+> **REVIEW GAP — participant Quick Guide**
+>
+> **Decision or evidence required:** Approve the optical-specific multi-state control map, integrate and label only the selected DSX captures and matched focus pair, add and verify the QR asset, and complete a physical Letter duplex proof.
+>
+> **Sources checked:** [current provisional Quick Guide]({% link quick-guides/optical.md %}) and the [capture-integration handoff](../_staff/quick-guides/capture-integration-workorder-2026-08-12.md#olympus-dsx-1000-digital-optical-microscope).
+>
+> **Release effect:** Use the provisional Quick Guide only as a review artifact during the practice run; it is not approved for routine training, printing for use, or installation.
 
-## Training Outcome
+## Session checklist
 
-By the end of the session, participants should be able to:
+Work in order. Plan for 50 participant-facing minutes within the one-hour calendar block; timing is a hypothesis to test during the required practice run. Use the [optical microscope operating page]({% link instruments/optical.md %}) as the technical authority.
 
-* Locate the exit route, campus phone, fire alarm pull, sharps container, and sink-area emergency equipment, and know to dial 100 from a campus phone or 617-253-1212 otherwise.
-* Explain what optical microscopy can show and when a different instrument is needed.
-* Screen a sample for handling, stage-load, containment, stability, and motion-clearance concerns.
-* Start the microscope, clear the stage, acknowledge motorized motion safely, load a sample, and focus.
-* Use Best Image to compare observation modes and choose a mode that makes the feature of interest easier to interpret.
-* Make a quick 2D stitch for the map image, save a normal 2D capture, make a slower high-quality 2D area stitch with **Use as map image** deselected, and make a 3D capture.
-* Distinguish the operations taught for independent use from the high-quality 3D-stitch and LEXT capability previews.
-* Record the objective, zoom, observation mode, scale, sample orientation, acquisition type, and save location.
-* Remove the sample and complete the full software, head-retraction, power-off, logout, and dust-cover sequence.
-* Find the Quick Guide, detailed operating instructions, common failure modes, reservations, and help pathways.
+<p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 
-The session does not currently include a separate individual skills demonstration. Participants may rotate through the workflow, but the trainer must make every step visible and involve each participant in a meaningful sample-handling, instrument-control, acquisition, or interpretation task.
+* [ ] Confirm the microscope is functioning normally and in its expected starting state: stage empty, motion path clear, and an appropriate objective installed. If the state differs or any control behaves unexpectedly, stop and use the [operating instructions]({% link instruments/optical.md %}#details) or ask staff. Log in to the workstation, open the operating page, and prepare a clearly marked review copy of the provisional Quick Guide.
+* [ ] Prepare nitrile gloves and any sample-preparation tools needed. Select a clean, dry, stable, non-hazardous sample under the 5 kg stage limit with generous head/objective clearance, a repeatable orientation, and surface texture that changes visibly across observation modes. Image it beforehand unless you already know its usable focus and mode-comparison results.
 
-## Before The Session
+<p class="trainer-phase"><span>0–8 minutes</span> Welcome and room orientation</p>
 
-### Instrument And Space
+* [ ] Welcome participants, ask what they hope to observe, explain that the Quick Guide is under review, and give each person a review copy to use during the workflow.
 
-* [ ] Confirm that the microscope is functioning normally and in its expected starting state.
-* [ ] Confirm that the stage is empty, the installed objective is appropriate, and the full motion path is clear.
-* [ ] Open the [public operating page]({% link instruments/optical.md %}) and [Quick Guide]({% link quick-guides/optical.md %}) on the workstation.
-* [ ] Confirm that DSX starts normally and that the training save location is available.
-* [ ] Prepare nitrile gloves and any sample-preparation tools the selected sample needs.
-* [ ] Confirm that three participants can see the stage, console, and display without obstructing movement.
+{% include trainer/checklist-safety-compact-prototype.md %}
 
-### Training Sample
+<p class="trainer-phase"><span>8–18 minutes</span> Scope, sample screening, and startup</p>
 
-Choose a sample that satisfies the criteria below. No specific material is prescribed, so the session can be matched to a subject exercise or research project.
+* [ ] Explain the proposed Level 1 scope being tested: compare observation modes with **Best Image**; make a quick 2D map stitch, normal 2D capture, high-quality 2D area stitch, and 3D capture; then save the results. Mention high-quality 3D stitching and briefly show LEXT analysis/report capability, but do not teach either as an independent workflow. Review [what the instrument can and cannot show]({% link instruments/optical.md %}#science).
+* [ ] Have participants screen the sample using the [compatibility rules]({% link instruments/optical.md %}#materials). They should stop for collision risk; an unstable, unusually tall or heavy, sharp, fragile, wet, loose, powdery, odorous, unknown, or uncontained sample; uncertain objective configuration; unexpected stage, head, tilt, focus, or software behavior; or an unresolved control error.
+* [ ] Tell participants you logged in before the session because their own Kerberos access starts after closeout. With the stage clear, have a participant follow the review Quick Guide while the trainer switches on the microscope, starts DSX, logs on to DSX as Guest, and acknowledges motorized movement. Lower the stage, confirm or change the objective, and move the head into tilt position using the [startup sequence]({% link instruments/optical.md %}#startup). *Check: everyone identifies the clearance decision that must precede software motion, objective changes, tilt, stitching, and 3D acquisition.*
 
-* [ ] Select and retrieve the sample.
-* [ ] Confirm that it is clean, dry, stable, non-hazardous, and short enough to provide generous objective and head clearance.
-* [ ] Confirm it has **surface texture that reads differently in different observation modes** — that contrast is the exercise.
-* [ ] **Confirm you have imaged it yourself**, so you know the expected brightfield result and at least one alternate mode that reveals a different feature. If you have not, image it before the session.
-* [ ] Confirm it has a stable orientation or recognizable region, so different participants can obtain comparable results.
+<p class="trainer-phase"><span>18–40 minutes</span> Participant imaging workflow</p>
 
-### Participants
+* [ ] With gloves on, a participant confirms the sample is stable and clear of fixed stage components, places it on the stage, then removes gloves before touching controls. Use the manual focusing knob for rough focus, the joystick to position the region, and the zoom-head controls for fine focus. *Check: the sample remains stable through stage movement and focus is reached without approaching a collision.*
+* [ ] Participant uses **Best Image** to compare observation modes and selects the mode that best reveals the chosen feature. *Check: they can explain what became easier to see and why the most attractive image is not automatically the most useful one.*
+* [ ] Participant makes a quick 2D stitch and uses it as the map image. Before motion, they recheck that the sample is stable and the complete stage path is clear.
+* [ ] Participant makes a normal 2D capture, follows it into LEXT, and confirms it is saved and retrievable in the intended location. Record the sample, objective, zoom, observation mode, scale, orientation, acquisition type, and filename or location.
+* [ ] Participant makes a slower high-quality 2D area stitch with **Use as map image** deselected, then confirms the result is saved and retrievable. *Check: they can distinguish the quick navigation map from the higher-quality area capture.*
+* [ ] Participant sets and makes a 3D capture, then confirms it is saved and retrievable. Discuss how focus range, reflectivity, lighting, sample stability, and software assumptions affect the result; stop if clearance or safe focus limits are uncertain.
+* [ ] Confirm the quick map stitch, normal 2D image, high-quality 2D area stitch, and 3D capture can all be retrieved. Have participants compare what each result supports and name one conclusion the images cannot establish by themselves.
+* [ ] Briefly mention high-quality 3D stitching and show that LEXT can support later measurement, analysis, and reports. State that this is a capability preview: participants are not being taught or assessed on those workflows and LEXT controls do not belong on the primary Level 1 map.
+* [ ] Ask participants to locate the SOP, observation-mode guidance, acquisition explanation, common failure modes, reservations, and help routes on the operating page. If time remains, repeat one acquisition at another magnification rather than adding an unreviewed workflow.
 
-* [ ] Review the LibCal registration list; the standard maximum is three participants.
-* [ ] Remind first-time Breakerspace users to complete the one-time Qualtrics online training record.
-* [ ] Note project goals or accommodations shared in advance without adding private participant information to this repository.
+<p class="trainer-phase"><span>40–46 minutes</span> Participant-led shutdown</p>
 
-## Suggested 60-Minute Agenda
+* [ ] Participant verifies every needed capture and raw data file is saved and copied before unloading. *Check: each result is retrievable from the intended destination; the workstation itself is not treated as the only copy.*
+* [ ] Wearing gloves again, participant removes the sample and confirms the stage is empty. Using the Quick Guide, they close DSX, select **yes** to exit and retract the head, wait for the software to close fully, switch off the microscope, and watch the trainer log out of Windows. Explain that users log out of their own accounts on later visits.
+* [ ] Participant confirms the stage, sample area, and workstation are clean, checks the reviewed final head/objective/stage clearance state, and replaces the dust cover. Stop and ask staff if retraction is incomplete or the expected final state is not reached.
 
-| Time | Activity |
-| --- | --- |
-| 0-3 minutes | Welcome, participant goals, the public operating page, and the Quick Guide. |
-| 3-8 minutes | [Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}): exit route, eyewash and shower, sharps, campus phone, alarm pull, food boundary, gloves. Run this every session. |
-| 8-14 minutes | What optical microscopy shows, compatible samples, motorized motion, clearance, and stop conditions. |
-| 14-20 minutes | Trainer-led startup, glove transitions, objective check, stage clearance, and safe sample loading. |
-| 20-44 minutes | Participants focus, compare modes, make the quick 2D map stitch, normal 2D capture, high-quality 2D area stitch, and 3D capture, and save the results. |
-| 44-49 minutes | Mention high-quality 3D stitching and briefly show LEXT analysis/report capability without teaching the workflow. |
-| 49-55 minutes | Review settings, scale, file locations, and what the results can and cannot support. |
-| 55-60 minutes | Participant-led unloading/shutdown, reservations, access closeout, help pathways, and final questions. Test this compression in the required practice run. |
+<p class="trainer-phase"><span>46–50 minutes</span> Instrument reset and closeout</p>
 
-If the session uses glass slides, connect the sharps-disposal point from the safety orientation to this instrument directly — slides go in the sharps container, not the regular trash.
+* [ ] Return the sample, tools, supplies, and provisional Quick Guide review copies to their proper locations. Record replenishment, damage, timing, unclear checklist language, control-label differences, or Quick Guide issues after the session.
 
-## Level 1 Exercise: Core DSX Acquisition Modes
+{% include trainer/checklist-closeout-compact-prototype.md moira=page.moira_group access="access-and-comms" %}
 
-### Question Or Goal
+## Trainer notes
 
-Which observation mode best reveals the selected feature, and how do the quick map stitch, normal 2D capture, high-quality 2D area stitch, and 3D capture serve different observation needs?
+For three participants, rotate sample/safety, instrument-control, and data/quality roles while keeping the complete sequence visible to everyone. Use the standard trainer-selected sample first unless a project sample was approved and is equally safe and predictable. If time compresses, shorten the capability discussion—not saving, unloading, shutdown, or closeout. Glass slides go in the sharps container, never regular trash.
 
-### Sample Selection
+## Guide maintenance
 
-**The workflow is fixed; the material is the trainer's choice.** Requirements: clean, dry, stable, non-hazardous, short enough for generous objective and head clearance, and carrying surface texture that reads differently across observation modes. The trainer must have imaged the sample before the session, so a focus, lighting, or clearance problem is recognizable in real time.
-
-If a later round of development adopts specific approved samples, record them in Guide Control and here; keep the workflow text and the Quick Guide sample-agnostic.
-
-The former 3.000 filter exercise is a useful course-specific variation, but it should not become the default general exercise until all pore measurements use the same quantity and units. A three-point radius and a point-to-point diameter must not be averaged as if they were equivalent.
-
-### Participant Workflow
-
-1. Inspect the sample and identify possible height, stability, contamination, or motion-clearance concerns.
-2. Start the microscope and DSX software using the Quick Guide.
-3. Lower the stage, load the sample, remove gloves, and bring the selected region into focus.
-4. Obtain a usable live image and use **Best Image** to select an observation mode suited to the sample.
-5. Make a quick 2D stitch and use it as the map image.
-6. Capture and save a normal 2D image.
-7. Make a slower high-quality 2D stitch for area capture with **Use as map image** deselected, then save it.
-8. Capture and save a 3D image.
-9. Record the objective, zoom, mode, scale, sample orientation, acquisition types, and save locations.
-10. Mention that high-quality 3D stitching is available, but do not run it during the introductory session.
-11. Briefly open or show LEXT analysis/report capability. State explicitly that this is a preview so participants know the capability exists, not a workflow they are expected to retain or use independently from this training.
-12. Explain what the results show and identify one conclusion they cannot support by themselves.
-13. Wear gloves, remove the sample, and complete shutdown using the Quick Guide.
-
-### Suggested Roles For Three Participants
-
-* **Sample and safety lead:** screens the sample, confirms clearance, handles loading, and removes the sample.
-* **Instrument lead:** starts DSX, focuses, navigates, compares modes, and captures the image.
-* **Data and quality lead:** records settings, verifies the scale and save location, and leads interpretation.
-
-Rotate controls during comparison or repeat acquisition when time permits. Every participant should identify at least one motorized-motion stop condition.
-
-### Success Criteria
-
-* [ ] A usable quick 2D map stitch, normal 2D image, high-quality 2D area stitch, and 3D capture were produced and saved in the intended location.
-* [ ] The high-quality 2D area stitch was made with **Use as map image** deselected.
-* [ ] The record includes objective, zoom, observation mode, scale, orientation, acquisition type, and filename or location.
-* [ ] Participants can explain why the chosen mode is useful for the selected feature.
-* [ ] Participants know that 3D output depends on focus, reflectivity, lighting, and software assumptions.
-* [ ] Participants can distinguish the operations taught for independent use from the high-quality 3D-stitch and LEXT previews.
-* [ ] Participants can find the Quick Guide, detailed instructions, common failure modes, reservations, and help pathways.
-* [ ] Participants complete the sample-removal and shutdown sequence without leaving the stage occupied.
-
-### Stop And Ask For Help
-
-* A sample might collide with the objective, microscope head, stage, or fixture.
-* A sample is unstable, unusually tall or heavy, sharp, fragile, wet, loose, powdery, odorous, unknown, or contains uncontained liquid.
-* The stage, head, tilt, objective, focus, or software behaves unexpectedly.
-* The objective configuration or safe motion path is uncertain.
-* A control error persists after following the documented common failure mode.
-
-## Post-Training Checklist
-
-Complete every item before considering the session closed.
-
-* [ ] Confirm that the sample has been removed, the stage is empty, the head retracted normally, the microscope is off, Windows is logged out, and the dust cover is on.
-* [ ] Confirm that participants know where their image was saved and how to access it.
-* [ ] Ask participants to locate the Quick Guide, detailed operating instructions, common failure modes, and reservation link.
-* [ ] Add each attendee to [`dmse-brkrspc-optical`](https://groups.mit.edu/webmoira/list/dmse-brkrspc-optical). Do not record attendee Kerberos usernames in this file.
-* [ ] Send every attendee an invitation to the Breakerspace Slack workspace.
-* [ ] Remind participants that physical tap access is processed separately after their one-time Qualtrics record is complete.
-* [ ] For first-time users, confirm that they created an MIT Dropbox for Business account and requested DMSE Breakerspace Team membership, or help them with the self-service steps.
-* [ ] Point participants to reservations, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
-* [ ] Return the training sample and supplies to their locations and record damage or replenishment needs in the appropriate operational system.
-* [ ] Record any instrument, guide, exercise, or sample-library issue discovered during the session.
-
-## Trainer Notes And Variations
-
-* For participants with project samples, use the standard sample first unless the project sample was approved and is equally safe and predictable.
-* A second acquisition at another magnification is an optional extension when time permits; it is not a substitute for the confirmed stitch and 3D sequence.
-* The 3.000 filter-pore activity can be used for a course cohort after the measurement definition, saving workflow, and expected values are standardized.
-* Do not allow a visually impressive 3D rendering to substitute for discussion of measurement limits and recorded settings.
-* Do not teach LEXT analysis or report preparation as part of this introductory checklist. The short preview only establishes that those capabilities exist.
-
-## Guide Maintenance
-
-When this guide changes, review the public Quick Guide and operating page, the LibCal description, and the Moira information together. This guide names no specific material, so it does not need re-checking when the sample library changes. Practice the guide with a qualified Breakerspace Lab Assistant or other designated trainer before marking it ready for routine delivery.
+When this guide changes, review the public operating page and SOP, Level 1 exercise, provisional Quick Guide map, LibCal description, and Moira information together. After the four review gaps are resolved, run a timed practice with a qualified trainer before marking the guide ready for routine delivery.
