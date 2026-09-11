@@ -173,9 +173,9 @@ Available objectives include:
 * Long working distance: 3x, 10x, 20x, 40x.
 * Extra long working distance: 1x, 3x, 10x.
 
-The 3x long-working-distance objective cannot be used in polarized observation mode.
+The 3x long-working-distance objective cannot be used in polarized observation mode. The manufacturer calls the removable two-position objective holder the **lens attachment**; it carries objective lenses in the **Front** and **Back** positions.
 
-Instructions for replacing the objective unit are on page 11 of the [Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0).
+Instructions for removing and installing the lens attachment are on page 11 of the [Quick Reference Guide](https://www.dropbox.com/scl/fi/npmn40ndidrc329ev1eze/DSX1000_QRG_EN_AX9342_03.pdf?rlkey=qwg423vnbo5o3811uyjbzhmlh&dl=0).
 
 The microscope also has an internal optical zoom system that boosts magnification from 14x to 140x. Total magnification is the external objective magnification multiplied by the internal zoom factor, for an overall range of about 14x to 5600x depending on the configuration.
 

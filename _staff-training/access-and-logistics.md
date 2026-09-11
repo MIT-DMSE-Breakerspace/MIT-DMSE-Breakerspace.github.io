@@ -114,18 +114,18 @@ Every standard instrument training ends with the same closeout. Instrument guide
 
 Before attendees leave:
 
-1. **Explain the Moira handoff.** Tell attendees that you will add them to the instrument's group after the session and what that membership does. For a domain-managed instrument, the add enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, it grants nothing — cover the actual sign-in arrangement instead. The XRD touchscreen needs no sign-in, but its companion export/analysis workstation may.
+1. **Confirm attendance and explain the Moira handoff.** Make sure you have an accurate accounting of everyone who attended and each attendee's Kerberos username. Explain what membership in the instrument's group does. For a domain-managed instrument, it enables login with the trainee's own Kerberos account. For the XRD, hardness tester, and ion mill, it grants nothing — cover the actual sign-in arrangement instead. The XRD touchscreen needs no sign-in, but its companion export/analysis workstation may. You may open WebMoira on the trainer's laptop and have participants enter their own usernames in the correct group while you verify the entries; otherwise, add them immediately after the session. Do not record attendee names or Kerberos usernames in this repository.
 2. **Tap access.** Remind attendees that physical tap access is separate and is processed by the lab manager after their one-time Qualtrics record is complete. The trainer does not grant tap access.
 3. **Dropbox.** Dropbox is trainee-managed. First-time users create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Confirm they know the self-service path; walk through it when time allows or include it in follow-up. Staff cannot add someone before the account exists.
 4. **Where to get help.** Point attendees to the reservation calendar, the public operating page and its Quick Guide, `#breakerspace-help`, and dmse-breakerspace@mit.edu.
 
 After attendees leave:
 
-5. **Moira.** Add each attendee to the instrument's group from the table above, whether or not that group grants a workstation login. Do not record attendee Kerberos usernames in this repository.
+5. **Moira.** Confirm that every attendee appears in the instrument's group from the table above, whether or not that group grants a workstation login, and add anyone not already present.
 6. **Slack.** Send each attendee an invitation to the Breakerspace Slack workspace at their `@mit.edu` address, and include `#breakerspace-help` in the follow-up.
 7. **Report problems found.** Record any instrument, guide, exercise, or sample-library issue the session surfaced.
 
-**Timing consequence for the session itself:** because the Moira add happens after attendees leave, a first-time trainee has no workstation login *during* their own training. On an access-controlled instrument the **trainer performs the initial login while participants watch** — a guide must not ask a trainee to log on with their own Kerberos at the start of a first session, because it will fail. Say why out loud during the session: it explains what the later add does, and what to do if their login is not working on the next visit.
+**Timing consequence for the session itself:** a first-time trainee is not yet a group member when the session begins, so they cannot use their own workstation login at startup. On an access-controlled instrument the **trainer performs the initial login while participants watch** — a guide must not ask a trainee to log on with their own Kerberos at the start of a first session, because it will fail. Say why out loud during the session: it explains what the membership enables and what to do if their login is not working on the next visit.
 
 There is currently no skills demonstration, no training expiration, and no recurring retraining requirement.
 

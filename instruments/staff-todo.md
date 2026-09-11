@@ -99,7 +99,7 @@ The detailed operating instructions were levelled on 2026-07-29 (see the readine
 * [ ] Add a complete level 1 training example using a specific sample-library item, including bin number/location once the cabinet is organized.
 * [ ] Add photos or videos showing the correct startup sequence: power switch, Guest login, stage/head movement acknowledgement, lowering the stage, and tilt position.
 * [ ] Add photos or videos showing objective exchange and how to choose between long-working-distance and extra-long-working-distance objectives.
-* [ ] Add a screenshot or video showing the recommended save-location workflow.
+* [x] Document the recommended save destination without adding a dedicated control capture. Completed 2026-09-11: LEXT uses ordinary Windows save controls, and the trainer guide directs participants away from the local workstation drive to `Breakerspace Files` or another participant-selected external destination and requires each result to be retrievable.
 * [ ] Add example image sets comparing brightfield, oblique, darkfield, brightfield/darkfield mix, polarization, and DIC on the same sample.
 * [ ] Add more annotated example results for stitched imaging and measurement/profile workflows.
 * [ ] Add an MP4/WebM video of 2D acquisition, 3D acquisition, and stitching setup.

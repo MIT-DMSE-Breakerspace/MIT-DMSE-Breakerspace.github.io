@@ -166,7 +166,7 @@ The former FTIR, optical, and XRD Quick Guide compositions were replaced on 2026
 
 The eleven-file prototype set was audited on 2026-08-10. The findings, required corrections, and validation evidence are in [`../_staff/quick-guides/audit-2026-08-10.md`](../_staff/quick-guides/audit-2026-08-10.md); consult it before editing any prototype. Publication through the review index makes the incomplete work available for staff feedback but does not clear unresolved technical, image, QR, print-proof, or installation gates.
 
-The optical guide predates the contract and still carries interpretation material. The XRD guide also predates it, is dense, and was written before its staff guide existed. Both need the same retrofit FTIR received.
+The optical trainer guide received its continuous-checklist retrofit and operational review on 2026-09-11; its Quick Guide still needs the corresponding contract retrofit, capture integration, and proof. The XRD guide predates the contract, is dense, and was written before its staff guide existed; it still needs the same retrofit FTIR received.
 
 **None of the three published guides or the compact FTIR prototype has received its physical print proof.** Test print-scale legibility, grayscale reproduction, QR scanning, and duplex flip before approval. Keep current measurements and readiness status in [`../_staff-training/README.md`](../_staff-training/README.md#quick-guide-layout-model) rather than duplicating them here.
 
