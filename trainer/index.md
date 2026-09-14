@@ -6,7 +6,7 @@ permalink: /trainer/
 trainer_portal: true
 trainer_index: true
 interactive_checklist: false
-guide_revision: 2026-08-31
+guide_revision: 2026-09-14
 ---
 
 # Trainer Portal
@@ -37,17 +37,9 @@ Reviewed session checklist for the established DSX-1000 training workflow.
 
 <section markdown="1">
 
-### [Phenom XL Trainer Guide]({% link _staff-training/phenom-xl-trainer-prototype.md %})
+### [Phenom SEM Trainer Guide]({% link _staff-training/phenom-sem-trainer-prototype.md %})
 
-**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
-
-</section>
-
-<section markdown="1">
-
-### [Phenom Pure Trainer Guide]({% link _staff-training/phenom-pure-trainer-prototype.md %})
-
-**Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
+**Draft advisory.** Combined Pure/XL review guide that can be run on either available instrument; not approved for training delivery.
 
 </section>
 
@@ -69,7 +61,7 @@ Reviewed session checklist for the established DSX-1000 training workflow.
 
 </div>
 
-Phenom XL, Phenom Pure, XRD, and Instron are published so staff can review them from the portal. Their **Draft advisory** state and visible review-gap blocks distinguish publication for review from approval for training delivery.
+Phenom SEM, XRD, and Instron are published so staff can review them from the portal. Their **Draft advisory** state distinguishes publication for review from approval for training delivery; XRD and Instron retain instrument-specific unresolved items.
 
 ## Administrative Shortcuts
 

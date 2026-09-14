@@ -11,14 +11,13 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
 | 1 | FTIR | `_staff-training/ftir.md` | Reviewed 2026-08-11; released to the Trainer Portal 2026-08-31 | None for the trainer guide; the compact Quick Guide redesign remains separate. |
-| 2 | Phenom XL | `_staff-training/phenom-xl-trainer-prototype.md` | Provisionally reviewed through **Navigation, imaging, and data** on 2026-09-11 | Resume at unloading/shutdown and confirm final tray/chamber state; Quick Guide evidence, review, and proof remain separate. |
-| 3 | Phenom Pure | `_staff-training/phenom-pure-trainer-prototype.md` | Provisionally reviewed through **Navigation, imaging, and data** on 2026-09-11 | Resume at unloading/shutdown and confirm final holder/chamber state; Quick Guide evidence, review, and proof remain separate. |
-| 4 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
-| 5 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
+| 2 | Phenom SEM | `_staff-training/phenom-sem-trainer-prototype.md` | Separate Pure and XL drafts replaced by one wholesale availability-flexible rewrite on 2026-09-14 | Review from the beginning and run a practice session; separate Quick Guide evidence, review, and proof remain. |
+| 3 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
+| 4 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
-FTIR was released after lab-manager review. The other four prototypes remain blocked for routine delivery until their guide pairs, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
+FTIR was released after lab-manager review. The combined SEM, XRD, and Instron prototypes remain blocked for routine delivery until their guide pairs, operational checks, and practice gates are complete. Composition order is a starting queue, not a command to wait on a blocked instrument.
 
-**Recommended review sequence:** FTIR review is complete. Compare Phenom XL and Phenom Pure together so shared SEM categories do not erase their different physical loading actions; review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
+**Recommended review sequence:** FTIR review is complete. Review the combined Phenom SEM rewrite first, checking that its short Pure/XL branches remain unmistakable when only one instrument is available. Review XRD next because its session crosses the instrument touchscreen, companion workstation, and paper log; then review Instron separately as the deliberate multi-surface structural exception. This is a document-review sequence, not a change to the co-equal first-wave rollout priority.
 
 **Review revalidation — 2026-08-11:** after the participant-artifact source/handoff correction, normal and unpublished Jekyll builds passed and the rendered checklist totals remained unchanged. The word measurements below were refreshed for the corrected prototype-only closeout include and XRD gap. `script/validate-html` was rerun, but the external W3C service again returned HTTP 429; HTML validation remains environmentally unverified.
 
@@ -31,9 +30,9 @@ FTIR was released after lab-manager review. The other four prototypes remain blo
 **Target composition:**
 
 * 17 FTIR-specific checks;
-* six checks in `checklist-safety-compact-prototype.md` while preserving every current safety point;
+* three omission-risk checks in `checklist-safety-compact-prototype.md` while preserving every current safety point;
 * seven separately checkable actions in `checklist-closeout-compact-prototype.md`, with explanatory prose cut substantially;
-* approximately 30 rendered checks total;
+* approximately 27–29 rendered checks total as the shared safety grouping evolves;
 * broad phases: before session; welcome/safety; scope/startup/background; two sample cycles and comparison; shutdown; closeout;
 * no more than about 100 words of instrument-specific trainer notes.
 
@@ -81,13 +80,36 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 * **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide was released to the Trainer Portal on 2026-08-31.
 * **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
 
-**Release-candidate revalidation — 2026-08-11:**
+**Shared-safety revalidation — 2026-09-14:**
 
-* **Checks:** 19 FTIR-specific + 6 compact safety + 7 compact closeout = **32 rendered checks**.
-* **Words:** `wc -w` reports 963 in the trainer-guide source, 203 in the compact safety include, and 214 in the compact closeout include (**1,380 source words** total). The unpublished render contains **1,069 runnable-checklist words**, **1,111 total content words**, and **33 trainer-note words**.
-* **Validation:** `bundle exec jekyll build --unpublished` passed and both the trainer index and FTIR candidate returned HTTP 200 from the port 4174 preview. On 2026-09-11 the four incomplete prototypes were published and linked from the portal with a **Draft advisory** state; their visible release gaps remain unresolved.
+* **Checks:** 19 FTIR-specific + 3 compact safety + 7 compact closeout = **29 rendered checks**.
+* **Words:** `wc -w` reports 960 in the FTIR source, 168 in the compact safety include, and 277 in the parameterized compact closeout include (**1,405 source words** total). The render contains **957 runnable-checklist words**, **1,125 total content words**, and **33 trainer-note words**.
+* **Validation:** the normal Jekyll build and repository checks pass. The shared-safety change also leaves XRD at 27 rendered checks and Instron at 32; dated composition records below retain their original six-check measurements.
 
-## Phenom XL Prototype
+## Phenom SEM Combined Prototype
+
+**Sources:** both canonical operating pages—[`../instruments/phenom-pure.md`](../instruments/phenom-pure.md) and [`../instruments/phenom-xl.md`](../instruments/phenom-xl.md)—their Quick Guide work orders, the two superseded trainer drafts, and experienced-student feedback reviewed on 2026-09-14.
+
+**Wholesale rewrite — 2026-09-14:** `_staff-training/phenom-sem-trainer-prototype.md` replaces the two delivery drafts. The old `/trainer/phenom-pure/` and `/trainer/phenom-xl/` URLs redirect to `/trainer/sem/`; the separate canonical operating pages and Quick Guides remain separate.
+
+**Operational context:** the XL was reported unavailable with an error during this rewrite. That temporary outage is not presented as permanent policy; the pre-session readiness gate selects whichever SEM is working and stops the session if neither is ready.
+
+The guide may be completed on Pure, XL, or both. Availability selects the hands-on branch; lack of access to the other instrument does not block the session. Shared preparation, sample screening, NavCam, SEM imaging, data, shutdown, and administrative closeout appear once. Loading and unloading use labeled nested Pure/XL branches under common checkboxes, so the unused path neither disappears nor leaves an incomplete checkbox. The brief comparison names the distinct mount, height rule, and extra capability before either branch begins.
+
+A participant-provided sample is acceptable after trainer screening. A known-good lab sample remains ready as a fallback. This preserves relevance without requiring a participant to invent a sample before orientation or requiring the trainer to diagnose every unfamiliar material from memory.
+
+The safety include now has three omission-risk groups: emergency route/response, treatment/containment, and safe work/escalation. It preserves the locations, emergency numbers, fifteen-minute flushing rule, sharps and food boundary, glove separation, help routes, and reporting rule from the former six checks.
+
+**Review state:** wholesale composition complete but not yet reviewed line by line. The prior 2026-09-11 decisions remain represented: pre-session connection; sample-prep-table orientation; SEM terminology; instrument-specific height sequencing; NavCam-to-SEM navigation; BSD/SED and image-refinement practice; **960 × 540 / Medium** navigation settings; external retrievable storage; Pure temperature-stage mention; XL trainer-led EDS preview when available; and the canonical Pure and XL unloading actions.
+
+**Composition result — 2026-09-14:**
+
+* **Checks:** 22 guide-specific + 3 compact safety + 7 compact closeout = **32 rendered checks**.
+* **Words:** `wc -w` reports 1,120 in the combined guide source, 168 in the compact safety include, and 277 in the parameterized compact closeout include (**1,565 source words** total). The render contains **989 runnable-checklist words**, **1,236 total content words**, and **43 trainer-note words**.
+* **Editorial result:** the live checklist is inside the 800–1,000-word target. Total content is 36 words above the provisional range; the concise two-instrument comparison remains because it prevents the physical branches from being confused.
+* **Validation:** `git diff --check`, the SOP contract, Quick Guide source, site-quality checks, and the normal Jekyll build pass. The old Pure and XL trainer URLs render as redirects to the combined guide.
+
+### Superseded Phenom XL Composition Record
 
 **Sources:** [`../instruments/phenom-xl.md`](../instruments/phenom-xl.md) and the complete [Phenom XL Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#thermo-fisher-phenom-xl-sem).
 
@@ -103,33 +125,33 @@ Draft the supported core SEM imaging session: XL-specific sample preparation and
 
 **Control-label refinement — reviewed 2026-08-20:** The XL UI labels the image-resolution control **Scan Size**. XL guidance uses that exact label and may clarify it parenthetically as image resolution. A sanitized native-resolution SEM source candidate is now available and visibly supports the label; selection of the complete Level 1 top-panel control set remains under review.
 
-The 2026-09-11 trainer-guide review resolved the runnable image-refinement and storage guidance. The final tray/chamber state remains the open trainer-guide gap. Interface evidence, mapped-control review, and physical proof remain separate Quick Guide work; do not reuse the Pure loading rule merely because the interfaces are similar.
+The 2026-09-11 trainer-guide review resolved the runnable image-refinement and storage guidance. Interface evidence, mapped-control review, and physical proof remain separate Quick Guide work; do not reuse the Pure loading rule merely because the interfaces are similar.
 
 **Composition result — 2026-08-10:**
 
 * **Checks:** 18 XL-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
 * **Words:** `wc -w` reports 1,184 prototype-source words (1,628 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **992 runnable-checklist words**, **1,311 total content words**, and **46 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
-* **Review gaps carried at composition:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; final tray/chamber state; approved and installed participant Quick Guide. The EDS boundary was resolved on 2026-08-20. The trainer-guide image-refinement and storage guidance were resolved on 2026-09-11; final tray/chamber state remains open, while Quick Guide review and installation remain separate work.
-* **Structural lesson:** NavCam, SEM view, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. Five specific release gaps push total page prose above the FTIR editorial range while the runnable checklist remains within it; retaining those gaps is preferable to disguising them. The XL height check must stay instrument-specific despite shared SEM access.
-* **Provisional review checkpoint — 2026-09-11:** reviewed with Phenom Pure through the final **Navigation, imaging, and data** check. The runnable checklist now covers pre-session connection, known-good demonstration samples, sample-prep orientation, tray-before-height sequencing with the 5–7-notch dial action, high-vacuum BSD/SED imaging, trainer-led EDS demonstration, systematic imaging refinement, **960 × 540 / Medium** live-navigation defaults, and retrievable external storage. Resume at participant-led unloading and shutdown; the final tray/chamber state remains open. Quick Guide technical review and physical proof remain separate.
+* **Historical composition questions:** EDS teaching boundary; observable Level 1 image-quality decision; save/export and naming convention; and participant Quick Guide readiness. The EDS boundary was resolved on 2026-08-20, and the image-refinement and storage guidance on 2026-09-11; Quick Guide review remains separate work.
+* **Structural lesson:** NavCam, SEM view, and the grouped top-panel inspection fit one chronological trainer checklist even though they are distinct interface states. The XL height check must stay instrument-specific despite shared SEM access.
+* **Historical review checkpoint — 2026-09-11:** the separate XL draft was reviewed with Pure through the final **Navigation, imaging, and data** check. It covered pre-session connection, sample-prep orientation, tray-before-height sequencing with the 5–7-notch dial action, high-vacuum BSD/SED imaging, trainer-led EDS, systematic image refinement, **960 × 540 / Medium** navigation defaults, and external storage. The 2026-09-14 combined rewrite supersedes this resume point and resets editorial review to the beginning.
 
-## Phenom Pure Prototype
+### Superseded Phenom Pure Composition Record
 
 **Sources:** [`../instruments/phenom-pure.md`](../instruments/phenom-pure.md) and the complete [Phenom Pure Quick Guide work order](../_staff/quick-guides/instrument-specifications.md#thermo-fisher-phenom-pure-sem).
 
 Draft the supported room-temperature SEM session using the Pure-specific below-holder-edge loading rule, NavCam, SEM focus and brightness/contrast, magnification, acquisition/saving, cleanup, and standby. Cold-stage work remains additional training. Do not name hair as a required default sample.
 
-The 2026-09-11 trainer-guide review resolved the runnable image-refinement and storage guidance. The final holder/chamber state remains the open trainer-guide gap. Do not reuse the XL 5–7 mm rule or create shared SEM wording that erases the loading distinction.
+The 2026-09-11 trainer-guide review resolved the runnable image-refinement and storage guidance. Do not reuse the XL 5–7 mm rule or create shared SEM wording that erases the loading distinction.
 
 **Composition result — 2026-08-10:**
 
 * **Checks:** 18 Pure-specific + 6 compact safety + 7 compact closeout = **31 rendered checks**.
 * **Words:** `wc -w` reports 1,133 prototype-source words (1,577 with the 216-word safety and 228-word closeout prototype includes). The unpublished render contains **996 runnable-checklist words**, **1,273 total content words**, and **45 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` and `bundle exec jekyll build --unpublished` passed; the unpublished render contains all 31 controls. `script/validate-html` was run with network access and stopped at the external W3C service's HTTP 429 response; HTML validation remains environmentally unverified.
-* **Review gaps carried at composition:** observable Level 1 image-quality decision; save/export and naming convention; final holder/chamber state; approved and installed participant Quick Guide. The trainer-guide image-refinement and storage guidance were resolved on 2026-09-11; final holder/chamber state remains open, while Quick Guide review and installation remain separate work.
+* **Historical composition questions:** observable Level 1 image-quality decision; save/export and naming convention; and participant Quick Guide readiness. The trainer-guide image-refinement and storage guidance were resolved on 2026-09-11; Quick Guide review remains separate work.
 * **Structural lesson:** the imaging-control categories can resemble XL without sharing the physical run sheet. Pure requires one 18 mm-or-smaller stub below the holder edge, software unlock plus manual door motion, and holder return to a drawer or stand. Keeping those actions explicit prevents shared access and interface similarity from erasing the loading distinction.
-* **Provisional review checkpoint — 2026-09-11:** reviewed with Phenom XL through the final **Navigation, imaging, and data** check. The runnable checklist now covers pre-session connection, known-good demonstration samples, sample-prep orientation, holder-before-height sequencing, room-temperature BSD/SED imaging, mention without demonstration of the temperature-controlled stage, systematic imaging refinement, **960 × 540 / Medium** live-navigation defaults, and retrievable external storage. Resume at participant-led unloading and shutdown; the final holder/chamber state remains open. Quick Guide technical review and physical proof remain separate.
+* **Historical review checkpoint — 2026-09-11:** the separate Pure draft was reviewed with XL through the final **Navigation, imaging, and data** check. It covered pre-session connection, sample-prep orientation, holder-before-height sequencing, room-temperature BSD/SED imaging, the temperature-stage mention, systematic image refinement, **960 × 540 / Medium** navigation defaults, and external storage. The 2026-09-14 combined rewrite supersedes this resume point and resets editorial review to the beginning.
 
 ## XRD Prototype
 

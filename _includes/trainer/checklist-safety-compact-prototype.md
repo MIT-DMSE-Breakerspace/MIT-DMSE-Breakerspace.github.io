@@ -1,11 +1,8 @@
 {%- comment -%}
 Prototype-only compact safety-orientation checklist. The canonical explanation
-is in _staff-training/lab-safety-orientation.md. This include preserves every
-point in the production checklist while testing a six-check live run sheet.
+is in _staff-training/lab-safety-orientation.md. Three checks group the complete
+orientation by the decision each cluster supports during a live session.
 {%- endcomment -%}
-* [ ] Point out the exit route, the fire extinguisher left of the sink, and the alarm pulls in the corridor. Say not to fight a fire.
-* [ ] Point out the sink-area first-aid cabinet, spill kit, shower, and eyewash; keep them clear. Eyes or skin means **fifteen minutes** of flushing.
-* [ ] Point out the sample-prep sharps container—**glass slides go there**, not in regular trash—and keep food and drink in the lounge.
-* [ ] Point out the campus phone by the lab doors. For campus emergencies, call **100** from the campus phone or **617-253-1212** from a mobile rather than 911.
-* [ ] Demonstrate: gloves on for sample handling and loading; **off before keyboard, mouse, or touchscreen**; clean gloves on before returning.
-* [ ] Remind participants to stop and ask for help whenever something does not make sense or the instrument behaves unexpectedly. Point them to staff in the lab, `#breakerspace-help`, and the staff email; report damage, spills, injuries, and near misses even if resolved.
+* [ ] **Emergency response:** show the exit route, corridor alarm pulls, extinguisher left of the sink, and campus phone by the lab doors. Do not fight a fire. Call **100** from that phone or **617-253-1212** from a mobile, not 911.
+* [ ] **Treatment and containment:** show the sink-area first-aid cabinet, spill kit, shower, eyewash, and sample-prep sharps container. Keep emergency equipment clear; flush eyes or skin for **fifteen minutes**. **Glass slides go in sharps**, not trash; food and drink stay in the lounge.
+* [ ] **Safe work and escalation:** gloves on for sample handling/loading; **off before the keyboard, mouse, or touchscreen**; clean gloves on to return. Stop and ask if anything is unclear or unexpected. Point to lab staff, `#breakerspace-help`, and staff email. Report damage, spills, injuries, and near misses even if resolved.
