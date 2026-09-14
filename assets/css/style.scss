@@ -2620,7 +2620,7 @@ body.trainer-portal-page {
    on-instrument review. */
 .optical-map-body {
   display: grid;
-  grid-template-rows: 4.45in 2.25in 1.02in auto;
+  grid-template-rows: 4.45in 2.25in 1.4in 0.53in;
   gap: 0.08in;
 }
 
@@ -2773,7 +2773,15 @@ body.trainer-portal-page {
 }
 
 .optical-map-body > .quick-guide-sop-map-review-gap {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0.04in 0.08in;
+  font-size: 7pt;
+  line-height: 1.15;
+}
+
+.optical-map-body > .quick-guide-sop-map-review-gap p {
+  margin-top: 0.015in;
 }
 
 /* Phenom XL: reviewed multi-view Side 2 variant. Review metadata stays in the
