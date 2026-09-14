@@ -97,13 +97,7 @@
             <p>Collision risk; unstable, sharp, fragile, wet, loose, powdery, odorous, unknown, unusually heavy, or unclear sample; control or connection error; sample shifting during motion; or focus that cannot be reached safely.</p>
           </div>
           <figure>
-            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--qr"
-                 role="img"
-                 aria-label="Image placeholder: QR code for the canonical DSX-1000 instrument page">
-              <strong>Image placeholder</strong>
-              <span>Capture needed: QR code for the canonical DSX-1000 instrument page</span>
-              <small>Release gate: Generate and verify the optical microscope page QR asset at print resolution.</small>
-            </div>
+            <img src="{{ '/assets/img/qr/optical-page.svg' | relative_url }}" alt="QR code linking to the full optical microscope instrument page at breakerspace.mit.edu/instruments/optical.html">
             <figcaption>Detailed instructions, troubleshooting, and help<br><strong>breakerspace.mit.edu/instruments/optical.html</strong></figcaption>
           </figure>
         </aside>
@@ -128,59 +122,127 @@
         <h2 id="optical-map-title">DSX acquisition visual map</h2>
         <p class="quick-guide-sop-map-sheet-subtitle">Use this side to find the five acquisition functions taught in Level 1. Follow the SOP on the reverse for the canonical workflow.</p>
       </div>
-      <strong class="quick-guide-sop-map-review-badge">Provisional composition draft — incomplete</strong>
+      <strong class="quick-guide-sop-map-review-badge">Draft revision — verify at instrument</strong>
     </header>
 
-    <div class="quick-guide-sop-map-map-body">
-      <section class="quick-guide-sop-map-map-section">
+    <div class="quick-guide-sop-map-map-body optical-map-body">
+      <section class="quick-guide-sop-map-map-section optical-acquisition-section">
         <div class="quick-guide-sop-map-map-heading">
-          <h3>Required DSX interface state or states</h3>
-          <p>One current state may be enough; otherwise a reviewed multi-state layout is required.</p>
+          <h3>Find the five Level 1 acquisition functions</h3>
+          <p>Follow 1–2 down the left, 3 in the center, then 4–5 down the right.</p>
         </div>
 
-        <figure class="quick-guide-sop-map-toolbar-figure">
-          <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--map"
-               role="img"
-               aria-label="Image placeholder: native-resolution DSX interface state or tightly related states showing the five confirmed Level 1 acquisition functions, with the layout still to be approved if more than one state is needed">
-            <strong>Image placeholder</strong>
-            <span>Capture needed: Native-resolution DSX interface state or tightly related states showing the five confirmed Level 1 functions. Label to verify: Best Image. Label to verify: quick 2D stitch/map-image function. Label to verify: normal 2D capture. Label to verify: Use as map image selection for higher-quality area stitching. Label to verify: 3D capture.</span>
-            <small>Release gate: Capture and verify every current control; determine whether one useful state carries all five functions or approve an optical-specific multi-state layout before annotation.</small>
-          </div>
-        </figure>
+        <div class="optical-acquisition-grid">
+          <figure class="optical-state-card optical-step-1">
+            <a class="optical-image-frame" href="{{ '/assets/img/quick-guides/optical/dsx-best-image.png' | relative_url }}" target="_parent">
+              <span class="optical-annotated-image">
+                <img src="{{ '/assets/img/quick-guides/optical/dsx-best-image.png' | relative_url }}" width="1000" height="735" loading="eager" decoding="async" alt="DSX Best Image comparison screen with observation-mode previews and the Apply button marked as Level 1 step 1.">
+                <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 1000 735" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="quick-guide-sop-map-image-callout">
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="736" y="695" width="126" height="40" rx="4" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M798 682 L798 695" />
+                    <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="798" cy="650" r="32" />
+                    <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="798" y="650">1</text>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <figcaption><b>1</b><span><strong>Best Image:</strong> compare observation modes, select the useful view, then apply it.</span></figcaption>
+          </figure>
 
-        <div class="quick-guide-sop-map-review-gap">
-          <strong>Review gap</strong>
-          <p>Decision required: Operationally verify the confirmed Level 1 scope and decide whether the default one-image layout is sufficient or an optical-specific multi-state variant must be reviewed and locked. Do not map the LEXT capability preview.</p>
+          <figure class="optical-state-card optical-step-2">
+            <a class="optical-image-frame" href="{{ '/assets/img/quick-guides/optical/dsx-stitching-menu.png' | relative_url }}" target="_parent">
+              <span class="optical-annotated-image">
+                <img src="{{ '/assets/img/quick-guides/optical/dsx-stitching-menu.png' | relative_url }}" width="1100" height="417" loading="eager" decoding="async" alt="Open DSX Stitching menu showing Live panorama and High quality panorama choices.">
+                <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 1100 417" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="quick-guide-sop-map-image-callout">
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="693" y="187" width="352" height="63" rx="4" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M668 218 L693 218" />
+                    <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="630" cy="218" r="38" />
+                    <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="630" y="218">2</text>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <figcaption><b>2</b><span><strong>Quick map:</strong> open <strong>Stitching</strong> and choose <strong>Live panorama</strong>.</span></figcaption>
+          </figure>
+
+          <figure class="optical-state-card optical-step-3">
+            <a class="optical-image-frame" href="{{ '/assets/img/quick-guides/optical/dsx-main-controls.png' | relative_url }}" target="_parent">
+              <span class="optical-annotated-image">
+                <img src="{{ '/assets/img/quick-guides/optical/dsx-main-controls.png' | relative_url }}" width="900" height="1157" loading="eager" decoding="async" alt="Enlarged DSX control rail with the 2D selector and 2D Acquisition button marked as Level 1 step 3.">
+                <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 900 1157" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="quick-guide-sop-map-image-callout">
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="124" y="968" width="50" height="21" rx="3" />
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="113" y="1038" width="375" height="75" rx="4" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M496 995 L503 995 L503 964 L174 964 L174 968 M496 1025 L503 1025 L503 1075 L488 1075" />
+                    <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="540" cy="1010" r="44" />
+                    <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="540" y="1010">3</text>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <figcaption><b>3</b><span><strong>Normal 2D:</strong> select <strong>2D</strong>, verify focus, then click <strong>2D Acquisition</strong>.</span></figcaption>
+          </figure>
+
+          <figure class="optical-state-card optical-step-4">
+            <a class="optical-image-frame" href="{{ '/assets/img/quick-guides/optical/dsx-high-quality-panorama-setup.png' | relative_url }}" target="_parent">
+              <span class="optical-annotated-image">
+                <img src="{{ '/assets/img/quick-guides/optical/dsx-high-quality-panorama-setup.png' | relative_url }}" width="850" height="697" loading="eager" decoding="async" alt="High quality panorama setup dialog with the Use it as map image option visibly cleared.">
+                <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 850 697" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="quick-guide-sop-map-image-callout">
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="451" y="149" width="139" height="18" rx="3" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M601 158 L590 158" />
+                    <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="635" cy="158" r="34" />
+                    <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="635" y="158">4</text>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <figcaption><b>4</b><span><strong>Area stitch:</strong> choose <strong>High quality panorama</strong>; leave <strong>Use it as map image</strong> clear.</span></figcaption>
+          </figure>
+
+          <figure class="optical-state-card optical-step-5">
+            <a class="optical-image-frame" href="{{ '/assets/img/quick-guides/optical/dsx-3d-acquisition.png' | relative_url }}" target="_parent">
+              <span class="optical-annotated-image">
+                <img src="{{ '/assets/img/quick-guides/optical/dsx-3d-acquisition.png' | relative_url }}" width="900" height="576" loading="eager" decoding="async" alt="DSX 3D Settings and Acquisition controls with 3D selected and an acquisition in progress.">
+                <svg class="quick-guide-sop-map-callout-overlay" pointer-events="none" viewBox="0 0 900 576" preserveAspectRatio="none" aria-hidden="true">
+                  <g class="quick-guide-sop-map-image-callout">
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="241" y="363" width="55" height="28" rx="3" />
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="775" y="214" width="88" height="35" rx="4" />
+                    <rect class="quick-guide-sop-map-target-outline" fill="#ffffff" fill-opacity="0.08" stroke="#ae0721" stroke-width="3" vector-effect="non-scaling-stroke" x="775" y="419" width="88" height="35" rx="4" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M296 377 L344 377" />
+                    <path class="quick-guide-sop-map-leader" fill="none" stroke="#ae0721" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" vector-effect="non-scaling-stroke" d="M416 377 L730 377 L730 231 L775 231 M730 377 L730 436 L775 436" />
+                    <circle class="quick-guide-sop-map-callout-number" fill="#ae0721" stroke="#ffffff" stroke-width="2" vector-effect="non-scaling-stroke" cx="380" cy="377" r="36" />
+                    <text fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" dominant-baseline="middle" text-anchor="middle" x="380" y="377">5</text>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <figcaption><b>5</b><span><strong>3D height range:</strong> focus <strong>Start</strong> on the sample's lowest surface (farthest from the objective, closest to the stage); focus <strong>End</strong> on its highest surface (closest to the objective), then acquire. This view shows a run in progress.</span></figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="quick-guide-sop-map-map-section quick-guide-sop-map-quality-section">
         <div class="quick-guide-sop-map-map-heading">
           <h3>Immediate focus decision</h3>
-          <p>Compare the same field before capture; do not substitute unrelated capability images.</p>
+          <p>Compare the same field before capture.</p>
         </div>
 
         <div class="quick-guide-sop-map-quality-grid">
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-stop">
-            <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
-                 role="img"
-                 aria-label="Image placeholder: one DSX field in visibly poor focus before 2D capture">
-              <strong>Image placeholder</strong>
-              <span>Capture needed: One DSX field in visibly poor focus before 2D capture.</span>
-              <small>Release gate: Produce and staff-approve a matched poor-focus and sharp-focus pair from the same field.</small>
-            </div>
+            <a href="{{ '/assets/img/quick-guides/optical/focus-poor.png' | relative_url }}" target="_parent">
+              <img src="{{ '/assets/img/quick-guides/optical/focus-poor.png' | relative_url }}" width="900" height="900" loading="eager" decoding="async" alt="Woven specimen in visibly poor focus in the DSX live view.">
+            </a>
             <figcaption><strong>Stop:</strong> Fine-tune focus before capture; stop and ask staff if focus cannot be reached safely.</figcaption>
           </figure>
 
           <figure class="quick-guide-sop-map-quality-card quick-guide-sop-map-quality-ready">
             <div class="quick-guide-sop-map-quality-image">
-              <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--quality"
-                   role="img"
-                   aria-label="Image placeholder: the same DSX field in a sharp usable 2D focus state">
-                <strong>Image placeholder</strong>
-                <span>Capture needed: The same DSX field in a sharp, usable 2D focus state.</span>
-                <small>Release gate: Produce and staff-approve a matched poor-focus and sharp-focus pair from the same field.</small>
-              </div>
+              <a href="{{ '/assets/img/quick-guides/optical/focus-usable.png' | relative_url }}" target="_parent">
+                <img src="{{ '/assets/img/quick-guides/optical/focus-usable.png' | relative_url }}" width="900" height="900" loading="eager" decoding="async" alt="The same woven specimen field in sharp, usable focus in the DSX live view.">
+              </a>
             </div>
             <figcaption><strong>Ready to capture:</strong> The selected field is sharply focused and the sample is stable.</figcaption>
           </figure>
@@ -189,34 +251,28 @@
 
       <aside class="quick-guide-sop-map-map-reminders">
         <div>
-          <h3>Level 1 acquisitions</h3>
-          <p>Best Image; quick 2D map stitch; normal 2D capture; higher-quality 2D area stitch with <strong>Use as map image</strong> deselected; and 3D capture.</p>
+          <h3>Before stitched or 3D motion</h3>
+          <p>Check objective, head, sample, fixture, and stage clearance. Stop if anything could collide or shift.</p>
         </div>
         <div>
           <h3>Before unloading</h3>
           <p>Verify files are saved where intended, save and copy needed data, then wear gloves before removing the sample.</p>
         </div>
         <figure>
-          <div class="quick-guide-sop-map-placeholder quick-guide-sop-map-placeholder--qr"
-               role="img"
-               aria-label="Image placeholder: QR code for the canonical DSX-1000 instrument page">
-            <strong>Image placeholder</strong>
-            <span>Capture needed: QR code for the canonical DSX-1000 instrument page</span>
-            <small>Release gate: Generate and verify the optical microscope page QR asset at print resolution.</small>
-          </div>
+          <img src="{{ '/assets/img/qr/optical-page.svg' | relative_url }}" alt="QR code linking to the full optical microscope instrument page at breakerspace.mit.edu/instruments/optical.html">
           <figcaption>Full instructions<br><strong>breakerspace.mit.edu/instruments/optical.html</strong></figcaption>
         </figure>
       </aside>
 
       <div class="quick-guide-sop-map-review-gap">
-        <strong>Review gap</strong>
-        <p>Decision required: Verify the public Level 1 exercise at the instrument, approve the interface layout and every mapped control, document save/copy, approve the focus pair, and confirm final clearance. This draft remains blocked for technical completion, publication, printing for use, and installation.</p>
+        <strong>Draft status</strong>
+        <p>Screenshot evidence is now placed. Before release, verify every mapped control and the Level 1 sequence at the instrument; approve the crop layout and focus pair; document save/copy; and confirm final clearance.</p>
       </div>
     </div>
 
     <footer class="quick-guide-footer">
       <span>Visual map, not a replacement for training or the detailed operating instructions</span>
-      <span>Provisional 2026-08-10 - Page 2 of 2</span>
+      <span>Draft revision 2026-09-14 - Page 2 of 2</span>
     </footer>
   </section>
 </section>
