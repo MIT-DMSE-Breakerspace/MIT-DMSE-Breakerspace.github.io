@@ -1,6 +1,6 @@
 # MIT DMSE Breakerspace Website
 
-Last updated: 2026-07-24
+Last updated: 2026-09-17
 
 This repository is the canonical source for the MIT DMSE Breakerspace production website at `breakerspace.mit.edu`.
 
@@ -19,6 +19,12 @@ https://github.com/MIT-DMSE-Breakerspace/breakerspace-preview
 The production custom domain is declared in `CNAME` and configured in the repository's GitHub Pages settings.
 
 This README is the top-level orientation for the site: its direction, content status, planning files, and local build instructions. It replaced an earlier `CODEx_HANDOFF.md` of the same content.
+
+## Continuing The September Website Revisions
+
+Start with the [2026-09-17 site revision handoff](_staff/site-revision-handoff-2026-09-17.md) for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
+
+Compact mobile navigation, prominent online-training and session actions, shorter training preparation/access guidance, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. **Further instrument-page renovations are paused pending owner feedback.** Continue with small, reversible changes and ordinary user feedback; organized usability trials are not required.
 
 ## Current Site Direction
 
@@ -39,6 +45,8 @@ The current top-level navigation is defined in `_data/navigation.yml`:
 11. Teach With Us
 12. About
 
+Phones and tablets use a compact, labeled Menu; wide screens retain the sidebar. The destinations remain the same across layouts.
+
 The homepage should remain concise. It routes users by intent and provides the lab location, arrival route, hours, and access distinction. Detailed policies and workflows belong on their task-specific pages.
 
 ## Operational Content Status
@@ -48,8 +56,8 @@ The homepage should remain concise. It routes users by intent and provides the l
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
 | Calendar | Implemented at `calendar.md`, with an embedded schedule for training registration, Lab Assistant on duty hours, and reserved activities or availability notices. |
 | Location and arrival | Implemented on the homepage: Building 8, Room 8-102A, entered through the Breakerspace Lounge. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
-| Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages, grouped by capability. |
-| Training | Implemented at `training.md`, including the one-time Qualtrics record, one-hour in-person sessions, access follow-up, advanced support, and an embedded view of the Breakerspace calendar. The revised Qualtrics flow and validations were tested before production release. |
+| Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages. The September 17 finder update groups them by plain-language purpose, leads with familiar names, explains useful outcomes, and explicitly lists Phenom XL elemental analysis (EDS). |
+| Training | Implemented at `training.md`, with separate prominent one-time online-record and in-person-session actions, short Before/After Your Session guidance, support links, and the calendar. The early-fall notice is removed because sessions are posted. The September copy/navigation work did not change the Qualtrics survey or access policy; the survey's prior validation remains recorded in `_admin/`. |
 | Reservations | Implemented at `reservations.md`, including direct calendars, a three-day advance booking window, the one-hour initial norm, reservation ownership, the 10-minute late rule, cancellations, handoffs, guests, problem routing, and staff-mediated whole-lab reservations for teaching and organized activities. |
 | Safety and lab use | Implemented at `safety.md`, including emergency response, PPE, food and drink, samples, guests, working alone, cleanup, damage, and incident reporting. The physical-space wording and high-consequence operational guidance were reviewed before production release. |
 | Help and support | Implemented at `resources.md`, covering instrument problems, access, workstation permissions, files, Dropbox, Slack, project support, and contact paths. |
@@ -87,6 +95,7 @@ Old public URLs are preserved: each legacy `tutorials/*.html` page is a redirect
 
 Use one source of truth for each kind of work:
 
+* `_staff/site-revision-handoff-2026-09-17.md`: starting point for the September usability revision stream; links to the archived original review and records the instrument-renovation pause.
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
 * `_staff-training/README.md`: trainer-facing guide model, shared trainer references, and the canonical-SOP/Quick-Guide/staff-guide relationship. Start there for any staff-training work.
 * `_staff/quick-guides/README.md`: locked two-page Quick Guide production procedure, reusable canonical-SOP/Level-1-control-map template, and instrument-specific image/callout work orders.

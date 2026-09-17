@@ -2,6 +2,8 @@
 
 This folder is for integrated instrument pages. These pages are intended to become the main user-facing destination for each lab instrument, combining the instrument overview, educational context, short operational reference, training/tutorial material, reservation links, manuals, and exercises. Instrument-specific improvement work is tracked in the unpublished [`staff-todo.md`](staff-todo.md).
 
+**September 17 revision handoff:** the [FTIR reading-order pilot](ftir.md) is published, but further individual instrument-page renovations are **paused pending owner feedback**. The [site revision handoff](../_staff/site-revision-handoff-2026-09-17.md) records the rationale, completed changes, counts, and next steps. Do not treat the pilot as approval to replace the standard order or apply it to other instruments.
+
 The older `tutorials/` pages can remain in place during the transition. The working model is:
 
 * `instruments/sem.md`: a shared SEM hub for choosing between SEM instruments and reviewing common SEM concepts.
@@ -24,6 +26,8 @@ The canonical catalog is `instruments/index.md`. Consolidated pages now cover al
 * Horiba XploRA confocal Raman microscope.
 * Instron 68TM-50 universal testing system.
 * Innovatest Nemesis 5100G2 hardness tester.
+
+The catalog's September 17 update uses the title **Find an Instrument**, plain-language purpose groups, familiar instrument names before model names, and short descriptions of outcomes and example samples. Phenom XL elemental analysis (EDS) is explicitly listed under material identification as well as the SEMs' imaging entry. Preserve its existing instrument destinations and seven explicit heading IDs. The stacked list and readable model text are intentional; no filtering system or new layout is needed for this update.
 
 The tutorial-to-instrument migration is complete: no instruments remain on legacy tutorial/SOP destinations. Each promoted instrument's legacy `tutorials/*.md` page is now a redirect to its `instruments/` page, preserving the old URL.
 
@@ -176,7 +180,7 @@ Avoid mixing instrument-specific steps when confusion could cause damage. For ex
 
 ## Standard Page Order
 
-**FTIR pilot (2026-09-17):** `ftir.md` is testing an order organized around reading tasks: a short introduction and navigation, sample requirements, the unchanged SOP, task-specific operating help, results, troubleshooting, exploration and practice, then manuals. Its educational material follows the operating reference, with interpretation beside analysis. Review this pilot before extending the order or replacing the educational-section length guidance for other instruments.
+**FTIR pilot (2026-09-17):** `ftir.md` is testing an order organized around reading tasks: a short introduction and navigation, sample requirements, the unchanged SOP, task-specific operating help, results, troubleshooting, exploration and practice, then manuals. Its educational material follows the operating reference, with interpretation beside analysis. All 34 former anchors and the instructional media were retained. The pilot is published and verified; **further instrument-page renovations are paused while the owner gathers feedback**. Wait for the owner to resume this work before extending the order or replacing the educational-section length guidance for other instruments. The existing SOP and Quick Guide source contracts remain in force.
 
 Use this order unless an instrument family needs a hub/split structure:
 

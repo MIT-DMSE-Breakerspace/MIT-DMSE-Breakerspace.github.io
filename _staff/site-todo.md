@@ -1,6 +1,6 @@
 # Breakerspace Website To-Do
 
-Last reviewed: 2026-08-05
+Last updated: 2026-09-17 for the website usability stream; other work retains its dated review records below.
 
 This is the canonical unlisted list for cross-site launch work, policy decisions, and ongoing maintenance. It is organized by operational deadline rather than by page.
 
@@ -14,6 +14,27 @@ The redesigned site is already a substantial operational improvement. Production
 
 Public instrument pages should state current operating information clearly. Instrument-specific planning belongs in [the staff instrument to-do list](../instruments/staff-todo.md), while cross-site planning belongs here.
 
+## September 2026 Site Usability
+
+Start with the [September 17 revision handoff](site-revision-handoff-2026-09-17.md); the [original site review](site-review-2026-09-17.md) is the dated baseline, not the current completion list. Keep the existing task-based structure and favor incremental changes. The owner has no resources for organized usability trials; use proportionate checks and ordinary user feedback.
+
+* [x] Make the one-time online training record prominent and distinct from booking an in-person session ([PR #32](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/32)).
+* [x] Replace expanded phone/tablet navigation with a compact, accessible Menu while retaining the destinations and desktop sidebar ([PR #33](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/33)). Broader content/media accessibility work remains open below.
+* [x] Shorten Get Trained to actionable preparation and access expectations, and remove repeated support explanations ([PR #34](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/34)). The owner considers the resulting length appropriate.
+* [x] Remove the early-fall notice from Training and Calendar after sessions were posted ([PR #35](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/35)); see the Fall Operations record below.
+* [x] Publish the FTIR reading-order pilot with operating steps, media, and prior anchors preserved ([PR #36](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/36)). **Further individual instrument-page renovations are paused pending owner feedback.** Do not replace the shared template or expand the pilot until that work is resumed.
+* [x] Clarify the instrument finder with useful outcomes, familiar names, plain-language groups, and an explicit SEM elemental-analysis entry ([PR #37](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/37)).
+* [ ] Reorder Reserve Time around individual instrument booking; shorten or move the whole-lab/lounge material and link to one authoritative request procedure. Recommended next non-instrument copy task.
+* [ ] Simplify Get Help's access and files guidance to user actions and useful expectations; remove internal server/reboot administration while retaining shared-folder privacy guidance.
+* [ ] Consolidate Teach With Us Quick Actions and planning details, especially repeated whole-lab requests; preserve the opening partnership summary and instructor route.
+* [ ] Revisit the homepage opening, location/hours prominence, and task emphasis after the compact navigation change. The original phone-layout measurements predate that change.
+* [ ] Recheck earlier presentation candidates when the relevant pages are in scope: intermediate-width reflow, body-text readability, focus-state layout shift, fragile floated figures, and a useful homepage example/inspiration block. Verify what remains after existing fixes rather than treating the old July list as a fresh redesign mandate.
+* [ ] Decide how links indicate provisional Quick Guide status before users click. Readiness remains governed by the existing guide inventories and release gates; the page-renovation pause does not approve or cancel separate guide work.
+* [ ] Remove author-facing work-in-progress explanation from the public pumpkin showcase and the Instron annotated-curve promise when those pages are next in scope. Preserve scientific limitations and keep unfinished work in staff checklists. Instron presentation edits remain subject to the renovation pause.
+* [ ] Confirm and state actual charges/consumable arrangements, lab-access processing expectations and escalation timing, and accessible arrival/accommodation guidance. These were gaps in the review, not facts the editor may infer.
+* [ ] Clarify the policy for supervised course participants handling or controlling instruments before independent-use training, reconciling Teaching and Safety with the operational owner.
+* [ ] Add a small number of complete teaching examples (objective, duration, group size, preparation, staffing, and output) and reviewed sample/results examples. Use existing sample-library and media queues instead of creating a parallel collection.
+
 ## Current Post-Launch Priority Order
 
 The external-review security and privacy bundle was closed on July 27, 2026:
@@ -26,15 +47,9 @@ External follow-up: the live Carbonio applications still load Plotly and h5wasm 
 
 The first performance pass was completed July 27, 2026: the FTIR and optical GIFs were replaced with on-demand MP4/WebM video, responsive AVIF/WebP/JPEG image sets, intrinsic dimensions, and separate lightweight Quick Guide URLs.
 
-The remaining cross-site work continues in this order:
+The July priority list is superseded by the September usability queue above and the more recent operational records below. Automated build, links/HTML, accessibility, content/asset, SOP/Quick Guide contract, and secret-scanning checks already run in CI; maintain them rather than starting that work again. Core external-workflow accessibility decisions are recorded under Training, Access, And External Systems; broader media and first-party accessibility work remains open.
 
-1. **Workflow accessibility:** complete keyboard, VoiceOver, reflow, reduced-motion, and third-party workflow testing.
-2. **Responsive design:** fix the intermediate-width overflow, increase body-text readability, remove focus-state layout shift, and replace fragile floated figures.
-3. **Automated quality controls:** add production-equivalent build, link, accessibility, asset-budget, metadata, and sensitive-content checks.
-4. **Instrument-page structure:** correct heading hierarchy, retrofit the existing Quick Guides to the 2026-08-03 content contract, then extend the pattern alongside staff training guides.
-5. **Discovery and belonging:** add a vivid homepage inspiration block and improve question- or sample-first instrument selection after the operational work above.
-
-The detailed tiered and instrument-specific checklists below remain authoritative. This execution order does not override urgent safety corrections or fall-readiness dependencies.
+Keep safety corrections and training readiness ahead of optional editorial work. For this usability stream, the next non-instrument candidates are Reservations, Help, Teaching, and homepage priorities. The FTIR template rollout is paused. The detailed tiered and instrument-specific checklists retain their operational authority; the September work did not re-review or close unrelated guide, physical-accessibility, or media tasks.
 
 ## 1. Must Do Before Launch
 

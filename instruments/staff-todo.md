@@ -4,13 +4,21 @@ published: false
 
 # Instrument Page To-Do List
 
-Last reviewed: 2026-08-20
+Last updated: 2026-09-17 for the FTIR/finder usability work; technical and guide items retain their dated reviews below.
 
 This is the canonical staff checklist for instrument-specific page improvements. It consolidates the to-do items formerly shown on the public instrument pages and is excluded from the public Jekyll build.
 
 The repository may still be publicly readable. Do not store credentials, access codes, private student information, or sensitive security details here.
 
 Follow the [Tutorial Media Production Guide](../_staff/tutorial-media/README.md) for all new tutorial photography, screen recording, video capture, processing, and publication work.
+
+## September Website Revision Status
+
+**Further individual instrument-page renovations are paused pending owner feedback.** The FTIR pilot is published; do not propagate its order or rewrite another instrument page as part of this revision stream until the owner resumes it. Existing separately authorized guide work and necessary safety corrections are not canceled. Start with the [site revision handoff](../_staff/site-revision-handoff-2026-09-17.md); the [original review](../_staff/site-review-2026-09-17.md) is preserved as a dated baseline.
+
+* [x] Publish the FTIR reading-order pilot: short opening/actions, sample requirements, unchanged SOP, task-specific operating help, results, troubleshooting, exploration/practice, and manuals. All prior anchors and instructional media remain. See [PR #36](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/36).
+* [x] Improve Find an Instrument with familiar names, useful outcomes/examples, plain-language groups, and explicit Phenom XL elemental analysis; preserve destinations and heading anchors. See [PR #37](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/37).
+* [ ] After owner feedback and resumption, decide whether to adopt or adjust FTIR's reading order, then update `readme.md` before any wider rollout. The suggested 150–250 words before the SOP is an editorial starting point, with safety exceptions, not an adopted cap.
 
 ## Cross-Instrument Quick Guide Rollout
 
@@ -33,10 +41,12 @@ The content contract and relationship to staff training were settled on 2026-08-
 
 ## Nicolet iS5 FTIR Spectrometer
 
+The September 17 pilot changes presentation and retrieval, not the technical review status of the outstanding items below. Troubleshooting now uses symptom sections rather than a table, and the complex-mixture interpretation material is grouped with analysis. Reference spectra, new media, and staff verification remain separate work.
+
 * [x] **Resolve the background-preview and contact-quality criteria.** Lab-manager review on 2026-08-11 confirmed that the live background preview is not a pass/fail test; background readiness comes from a clean, dry, bare, unclamped crystal. The canonical page now says so. It separately defines the sample-preview contact cue as a change from a near-zero trace to a sample spectrum, explicitly not a universal spectrum-shape or signal-strength pass criterion.
 * [x] **Resolve OMNIC System Status recognition.** Staff confirmed 2026-08-11 that a green check means the instrument is ready. Any other status prevents background and sample collection rather than allowing flawed results, so users stop and ask staff; no additional failed-state catalog is needed.
 * [ ] **Add named atmospheric and contamination band positions to the page.** [`#failures`](./ftir.md#failures) and the science section describe water vapor, carbon dioxide, solvent, and residue features qualitatively but give no wavenumbers, so a user cannot recognize them on a spectrum. A draft Quick Guide revision cited approximately 3700 and 2350 cm<sup>-1</sup>; those numbers were not sourced from this page and were removed. Have staff confirm the positions actually seen on this instrument, add them to the page, and only then let the Quick Guide name them.
-* [x] **Make the background-redo cycle explicit in the SOP.** Lab-manager review on 2026-08-11 confirmed the complete unload → clean and dry → bare/unclamped background → reload and recollect cycle and the stop condition when features remain. The canonical SOP, detailed sample workflow, and failure table now carry it.
+* [x] **Make the background-redo cycle explicit in the SOP.** Lab-manager review on 2026-08-11 confirmed the complete unload → clean and dry → bare/unclamped background → reload and recollect cycle and the stop condition when features remain. The canonical SOP, detailed sample workflow, and troubleshooting section carry it.
 * [ ] Replace hand/sample-loading photos or videos with versions showing appropriate glove use.
 * [ ] Replace or reshoot the solid sample, powder sample, liquid sample, crystal cleaning, volatiles cover, and pressure-tip videos with gloved versions; publish future motion instruction as controlled MP4/WebM rather than GIF.
 * [ ] Add one or two annotated example spectra showing major peaks and how to compare an unknown with a known reference.
