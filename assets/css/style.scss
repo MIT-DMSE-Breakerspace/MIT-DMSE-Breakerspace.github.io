@@ -357,11 +357,15 @@ main .youtube-facade__trigger:focus-visible {
   color: #007aa8;
 }
 
-.reservation-primary {
+.reservation-primary,
+.training-primary,
+.training-session-action {
   margin: 1.25rem 0 1.75rem;
 }
 
-.reservation-primary a {
+.reservation-primary a,
+.training-primary a,
+.training-session-action a {
   display: inline-block;
   padding: 0.7rem 0.9rem;
   border: 2px solid #007aa8;
@@ -373,13 +377,24 @@ main .youtube-facade__trigger:focus-visible {
 }
 
 .reservation-primary a:hover,
-.reservation-primary a:focus-visible {
+.reservation-primary a:focus-visible,
+.training-primary a:hover,
+.training-primary a:focus-visible,
+.training-session-action a:hover,
+.training-session-action a:focus-visible {
   background: #fff;
   color: #007aa8;
 }
 
-.reservation-primary a:focus-visible {
+.reservation-primary a:focus-visible,
+.training-primary a:focus-visible,
+.training-session-action a:focus-visible {
   outline-color: #17242a;
+}
+
+.training-session-action a {
+  background: #fff;
+  color: var(--color-link);
 }
 
 .table-scroll {
@@ -3685,7 +3700,9 @@ body.trainer-portal-page {
     justify-content: space-between;
   }
 
-  .reservation-primary a {
+  .reservation-primary a,
+  .training-primary a,
+  .training-session-action a {
     display: block;
     text-align: center;
   }

@@ -5,20 +5,20 @@ title: Get Trained
 
 # Get Trained
 
-Training is organized by instrument. You do not need to know the exact tool before you begin: start with the material or question you want to investigate, then use the instrument pages or ask the Breakerspace team for help choosing. Complete the relevant training before reserving or using an instrument independently.
+Complete the online training and record **once**, before your first in-person instrument training.
 
-Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, staff, and other community members interested in training should contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) directly to discuss their needs.
+<p class="training-primary"><a href="https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc">Start online training &amp; record</a></p>
 
-## Quick Actions
+## In-Person Instrument Training {#quick-actions}
 
-<div class="quick-actions-list" markdown="1">
+Train on each instrument before reserving or using it independently. Standard sessions are one hour.
 
-* [View upcoming training sessions](#upcoming-training-sessions)
+<p class="training-session-action"><a href="#upcoming-training-sessions">Find a training session</a></p>
+
 * [Explore the instrument pages]({{ "/instruments/" | relative_url }}) or ask Breakerspace staff which measurement fits your question.
-* Before your first in-person instrument training, [complete the one-time online training and training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc).
 * If the training you need is not scheduled, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with the instrument and several times that work for you.
 
-</div>
+Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, staff, and other community members interested in training should contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) directly to discuss their needs.
 
 ## Your Training Pathway
 
