@@ -4,8 +4,7 @@ layout: trainer-shell
 
 <article class="trainer-guide" data-trainer-guide data-guide-revision="{{ page.guide_revision | default: site.time | date: '%Y-%m-%d' }}">
   <div class="trainer-portal-bar">
-    <a href="{{ '/trainer/' | relative_url }}">Trainer Portal</a>
-    <span>Unlisted trainer resource</span>
+    <a href="{{ '/lab-assistant/' | relative_url }}">Lab Assistant Resources</a>
   </div>
 
   {% if page.guide_status %}
@@ -39,7 +38,7 @@ layout: trainer-shell
   </div>
 
   {% unless page.trainer_index %}
-  <p class="trainer-portal-footer"><a href="{{ '/trainer/' | relative_url }}">Return to the Trainer Portal</a> · Report a guide problem to <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a>.</p>
+  <p class="trainer-portal-footer"><a href="{{ '/lab-assistant/' | relative_url }}">Return to Lab Assistant Resources</a> · Report a guide problem to <a href="mailto:dmse-breakerspace@mit.edu">dmse-breakerspace@mit.edu</a>.</p>
   {% endunless %}
 </article>
 

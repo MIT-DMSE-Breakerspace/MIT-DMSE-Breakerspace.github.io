@@ -4,7 +4,7 @@ published: false
 
 # Breakerspace Staff Training Guides
 
-This directory contains trainer-facing guides for helping Breakerspace Lab Assistants and other qualified trainers deliver consistent instrument training. Selected delivery documents are rendered in the unlisted Trainer Portal; planning files and templates remain unpublished.
+This directory contains trainer-facing guides for helping Breakerspace Lab Assistants and other qualified trainers deliver consistent instrument training. Selected delivery documents are linked from Lab Assistant Resources; planning files and templates remain unpublished.
 
 The repository may still be publicly readable. Do not store credentials, physical-security details, private student information, access codes, or other sensitive information here.
 
@@ -12,13 +12,13 @@ Cross-site launch and maintenance work is tracked in [`../_staff/site-todo.md`](
 
 LibCal and Qualtrics administration, audits, and editing runbooks belong in [`../_admin/`](../_admin/), not alongside trainer delivery materials.
 
-### Trainer Portal Deployment
+### Lab Assistant Resources Deployment
 
-Jekyll publishes selected files in this directory as the unlisted Trainer Portal at `/trainer/`. The portal index is `../trainer/index.md`; `_layouts/trainer-shell.html` provides a standalone page shell without the public site header, navigation, or footer; and `_layouts/trainer.html`, `assets/css/style.scss`, and `assets/js/trainer-checklist.js` provide the guide presentation and session checklist behavior. `_config.yml` marks the collection `noindex` and supplies the trainer layout by default.
+Jekyll publishes selected files in this directory under `/trainer/` and links them from the Lab Assistant Resources landing page at `/lab-assistant/`. The landing page source is `../lab-assistant/index.md`; `../trainer/index.md` preserves the former `/trainer/` landing URL as a redirect. `_layouts/trainer-shell.html` provides a standalone page shell without the public site header, navigation, or footer; and `_layouts/trainer.html`, `assets/css/style.scss`, and `assets/js/trainer-checklist.js` provide the guide presentation and session checklist behavior. `_config.yml` marks the collection `noindex` and supplies the trainer layout by default.
 
 Add normal front matter to a delivery document to publish it. Use `published: false` for planning files, templates, and this README. Instrument guides with Markdown task lists may set `interactive_checklist: true`; checkmarks then persist only in the current browser tab and are never a qualification record. Use Jekyll `{% raw %}{% link ... %}{% endraw %}` tags for links inside rendered collection documents so paths remain correct under `/trainer/`.
 
-The portal is **unlisted, not private**. Never add credentials, attendee records, private roster information, account details, or physical-security information. Official trainer qualification stays in the approved private staff system. `_admin/` is explicitly excluded from the Jekyll build and must remain outside the portal.
+The resources are **unlisted, not private**. Never add credentials, attendee records, private roster information, account details, or physical-security information. Official trainer qualification stays in the approved private staff system. `_admin/` is explicitly excluded from the Jekyll build and must remain outside the published resources.
 
 ## Current Status
 
@@ -33,7 +33,7 @@ The public training pathway is implemented in [`../training.md`](../training.md)
 
 **The template is intentionally not an automatic mirror of every experiment in a live guide.** It retains the older sectioned curriculum structure; the over-complete FTIR checklist is historical, not the current page. Update [`instrument-training-template.md`](instrument-training-template.md) only after several compact prototypes and lab-assistant review identify a pattern that actually survives different instruments.
 
-**The compact FTIR trainer guide was released to the Trainer Portal on 2026-08-31 after lab-manager review on 2026-08-11.** Background-preview acceptance, System Status recognition, the complete background-recovery cycle, and the participant artifact were resolved in context. The available printed FTIR Quick Guide supports the session; review and physical proof of the separate compact Quick Guide redesign do not block this trainer guide.
+**The compact FTIR trainer guide was released to Lab Assistant Resources on 2026-08-31 after lab-manager review on 2026-08-11.** Background-preview acceptance, System Status recognition, the complete background-recovery cycle, and the participant artifact were resolved in context. The available printed FTIR Quick Guide supports the session; review and physical proof of the separate compact Quick Guide redesign do not block this trainer guide.
 
 Atmospheric and contamination band positions remain a possible canonical-page enhancement. The verified background-recovery sequence is already present on the canonical page. A future practice session may still improve pacing and wording after release.
 
@@ -238,7 +238,7 @@ Use these visible states for handoff planning: **missing**, **drafting**, **need
 | --- | --- | --- | --- | --- |
 | First | **SEM/EDS** | Separate Pure and XL provisional compositions published for staff review | One combined availability-flexible Phenom SEM draft advisory | Review the wholesale rewrite from the beginning and run a practice session; Quick Guide controls, proof, and installation remain separate work. |
 | First | **XRD** | Needs operational check and retrofit | Prototype published as a draft advisory; approved guide still missing | Resolve the companion workstation, stored programs, HighScore teaching boundary, export handoff, and final removable-cover position; use the existing handouts as source material. |
-| First | **FTIR** | Current printed guide supports training; compact redesign remains separate | Compact trainer guide released to the Trainer Portal on 2026-08-31 | Use later practice sessions to refine pacing if needed. |
+| First | **FTIR** | Current printed guide supports training; compact redesign remains separate | Compact trainer guide released to Lab Assistant Resources on 2026-08-31 | Use later practice sessions to refine pacing if needed. |
 | First | **Instron** | Missing | Prototype published as a draft advisory; approved guide still missing | Resolve the method, export, end condition, quality check, complete hardware states, and reviewed two-view Bluehill/handset layout. The prototype is intentionally longer than the default model. |
 | Second | **Optical microscopy** | Provisional SOP/visual-map composition; triaged interface states and matched focus pair await layout integration and approval | Current; structurally retrofitted and operationally reviewed 2026-09-11 | Complete and approve the Quick Guide layout, capture integration, QR asset, and physical proof. |
 | Second | **Raman** | Missing | Missing | Verify the confirmed silicon/TopCam/interlock/internal-camera/RTD/AutoCalibration path and approve a multi-state layout. |
@@ -326,7 +326,7 @@ Do not relitigate these without new information; the reasoning is in `../_admin/
 * `provisional-draft-procedure.md` controls the authorized rapid, unpublished staff-guide composition pass.
 * `provisional-draft-work-orders.md` is the completed first-wave composition ledger and continuing blocker record; add detail only when another instrument enters authorized drafting.
 * `CODEX-CLI-PROMPT.md` is the archived, self-contained assignment that produced the 2026-08-10 pass. Its completion banner points back to the ledger; do not rerun it as an active assignment.
-* `ftir.md` is the reviewed FTIR guide released to the Trainer Portal on 2026-08-31. `phenom-sem-trainer-prototype.md` is the combined Pure/XL draft; the old separate prototype files preserve their public URLs as redirects. The combined SEM, XRD, and Instron guides are incomplete **Draft advisory** review artifacts; publication does not approve them for training delivery.
+* `ftir.md` is the reviewed FTIR guide released to Lab Assistant Resources on 2026-08-31. `phenom-sem-trainer-prototype.md` is the combined Pure/XL draft; the old separate prototype files preserve their public URLs as redirects. The combined SEM, XRD, and Instron guides are incomplete **Draft advisory** review artifacts; publication does not approve them for training delivery.
 * `../_includes/trainer/checklist-safety-compact-prototype.md` and `../_includes/trainer/checklist-closeout-compact-prototype.md` are shared reductions used by FTIR and the three draft advisories. The safety include groups the same facts into emergency response, treatment/containment, and safe-work/escalation checks. Production shared includes remain unchanged.
 * `ftir.md` is the Nicolet iS5 FTIR ATR completeness-first curriculum and coverage audit. Do not copy its length or checkbox density.
 * `optical.md` is the current DSX-1000 optical-microscope curriculum. It codifies the established training workflow and was structurally retrofitted and operationally reviewed on 2026-09-11. Remaining Quick Guide work is tracked separately and does not appear as a trainer-guide review gap.

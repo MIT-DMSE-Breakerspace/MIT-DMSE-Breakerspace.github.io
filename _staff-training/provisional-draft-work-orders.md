@@ -10,7 +10,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
-| 1 | FTIR | `_staff-training/ftir.md` | Reviewed 2026-08-11; released to the Trainer Portal 2026-08-31 | None for the trainer guide; the compact Quick Guide redesign remains separate. |
+| 1 | FTIR | `_staff-training/ftir.md` | Reviewed 2026-08-11; released to Lab Assistant Resources 2026-08-31 | None for the trainer guide; the compact Quick Guide redesign remains separate. |
 | 2 | Phenom SEM | `_staff-training/phenom-sem-trainer-prototype.md` | Combined Pure/XL draft revised 2026-09-16 with clearer teaching cues and corrected brightness/contrast guidance | Review the revised wording and run a practice session; separate Quick Guide evidence, review, and proof remain. |
 | 3 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 4 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
@@ -77,7 +77,7 @@ Delete as live checkboxes: viewing/crowding setup, unobstructed room-safety equi
 * **Checks:** 17 FTIR-specific + 6 compact safety + 7 compact closeout = **30 rendered checks**.
 * **Words:** `wc -w` reports 1,087 in the prototype source, 216 in the compact safety include, and 228 in the compact closeout include (1,531 source words across the three files). The unpublished render contains **944 runnable-checklist words**, **1,218 total content words**, and **44 instrument-specific trainer-note words**.
 * **Validation:** `bundle exec jekyll build` passed; `bundle exec jekyll build --unpublished` also rendered the prototype and all 30 controls. `script/validate-html` was run, but its external W3C service was unreachable in the sandbox and then returned HTTP 429 with network access; HTML validation remains unverified for environmental reasons.
-* **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide was released to the Trainer Portal on 2026-08-31.
+* **Review status:** all trainer-guide release gaps carried from composition were resolved during lab-manager review on 2026-08-11. The guide was released to Lab Assistant Resources on 2026-08-31.
 * **Structural lesson:** the continuous run sheet can reach the 30-check target by grouping around omission risks. Six safety checks and seven administrative actions preserve the shared coverage without using production includes. The exact review-gap blocks add visible release burden but still keep the rendered page near the editorial word range; do not retrofit this reduction into live guides during this pass.
 
 **Shared-safety revalidation — 2026-09-14:**

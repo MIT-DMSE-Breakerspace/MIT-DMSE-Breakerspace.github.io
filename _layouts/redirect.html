@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
     <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+{% if page.trainer_portal %}
+    <meta name="robots" content="noindex, nofollow, noarchive">
+{% endif %}
     <title>{{ page.title }} | {{ site.title }}</title>
   </head>
   <body>

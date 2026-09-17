@@ -92,7 +92,7 @@ INSTRUMENT_PAGES.each do |slug|
 end
 
 TRAINER_PAGES.each do |slug|
-  path = slug == "index" ? SITE.join("trainer", "index.html") : SITE.join("trainer", slug, "index.html")
+  path = slug == "index" ? SITE.join("lab-assistant", "index.html") : SITE.join("trainer", slug, "index.html")
   unless path.file?
     errors << "Missing built trainer page: #{relative(path)}"
     next
@@ -109,6 +109,17 @@ TRAINER_PAGES.each do |slug|
   errors << "#{relative(path)} must not include the public site navigation" if document.at_css("nav.site-nav")
   if document.at_css("body > .wrapper > header, body > .wrapper > footer")
     errors << "#{relative(path)} must use the standalone trainer shell"
+  end
+end
+
+legacy_trainer_index = SITE.join("trainer", "index.html")
+unless legacy_trainer_index.file?
+  errors << "Missing /trainer/ compatibility redirect: #{relative(legacy_trainer_index)}"
+else
+  redirect = Nokogiri::HTML(legacy_trainer_index.read)
+  canonical = redirect.at_css('link[rel="canonical"]')
+  unless canonical && canonical["href"].to_s.end_with?("/lab-assistant/")
+    errors << "#{relative(legacy_trainer_index)} must redirect to /lab-assistant/"
   end
 end
 

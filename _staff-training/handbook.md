@@ -18,8 +18,6 @@ trainer_links:
 
 Breakerspace Lab Assistants provide drop-in help, deliver the instrument trainings for which they are qualified, support scheduled lab activities, and help keep the lab ready for safe use. This page states the shared expectations for the role and links to the detailed procedures.
 
-The Trainer Portal is unlisted, not private. Do not put credentials, attendee records, private roster information, or individual qualification records on these pages.
-
 ## Weekly Expectations
 
 * Ideally offer at least **one instrument training per week**.
