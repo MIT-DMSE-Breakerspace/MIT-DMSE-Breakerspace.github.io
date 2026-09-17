@@ -1,36 +1,37 @@
 ---
 layout: default
-title: Breakerspace Instruments
+title: Find an Instrument
 ---
 
-# Instruments
+# Find an Instrument {#instruments}
 
-The Breakerspace instrument pages are consolidated operating guides. Each one combines the instrument overview, reservation links, quick reference, detailed training guide, manuals, and exercises in one place.
+Choose an instrument based on what you want to learn about your sample. If you're unsure, [ask staff for help choosing a method](mailto:dmse-breakerspace@mit.edu).
 
-## Imaging And Microscopy
+## Look At Surfaces And Small Features {#imaging-and-microscopy}
 
-* **[Olympus DSX-1000 Digital Optical Microscope:](./optical.html)** Full-color optical imaging, 2D/3D capture, stitching, and basic measurement workflows.
-* **[Thermo Fisher Phenom SEMs:](./sem.html)** Choose between the [Phenom XL](./phenom-xl.html) and [Phenom Pure](./phenom-pure.html), review shared SEM concepts, and find the correct operating page.
+* **[Optical microscope](./optical.html)** — Look at surface detail in color, measure features, and explore surface shape. A useful first look at many samples. (Olympus DSX-1000)
+* **[Scanning electron microscopes (SEM)](./sem.html)** — See fine surface features that optical microscopy cannot resolve, such as small particles, fibers, pores, and fracture textures. (Thermo Fisher <a href="./phenom-xl.html">Phenom XL</a> and <a href="./phenom-pure.html">Phenom Pure</a>)
 
-## Chemical And Structural Identification
+## Identify Or Compare Materials {#chemical-and-structural-identification}
 
-* **[Horiba XploRA Confocal Raman Microscope:](./raman.html)** Molecular identification and mapping of solids, powders, and liquids by confocal Raman spectroscopy.
-* **[Malvern Panalytical Aeris Research XRD:](./xrd.html)** Phase identification and crystal-structure analysis of powder and solid samples by X-ray diffraction.
-* **[Thermo Scientific Nicolet iS5 FTIR Spectrometer:](./ftir.html)** Molecular material identification and comparison using ATR infrared spectroscopy.
+* **[FTIR spectrometer](./ftir.html)** — Compare plastics, fibers, adhesives, and residues using infrared spectra to help identify the material. (Thermo Scientific Nicolet iS5)
+* **[Raman microscope](./raman.html)** — Investigate material identity at selected small spots, or map differences across a sample. Useful for many polymers, minerals, and other compounds. (Horiba XploRA)
+* **[X-ray diffraction (XRD)](./xrd.html)** — Identify which crystalline materials are present in a powder or solid sample. (Malvern Panalytical Aeris Research)
+* **[SEM elemental analysis (EDS)](./phenom-xl.html)** — Investigate which elements are present in a particle, coating, or selected region, and map where they occur. (Phenom XL only)
 
-## Optical And Fluorescence Spectroscopy
+## Measure Light Absorption And Emission {#optical-and-fluorescence-spectroscopy}
 
-* **[Horiba Duetta Fluorescence and Absorbance Spectrometer:](./uv-vis.html)** Measuring absorbance, transmission, and staff-guided fluorescence workflows in cuvette samples.
+* **[Absorbance and fluorescence spectrometer](./uv-vis.html)** — Measure which wavelengths a liquid absorbs or transmits. Fluorescence measurements are available with staff guidance. (Horiba Duetta)
 
-## Mechanical And Physical Properties
+## Test Strength And Hardness {#mechanical-and-physical-properties}
 
-* **[Innovatest Nemesis 5100G2 Hardness Tester:](./hardness-tester.html)** Vickers, Rockwell, and Brinell hardness testing with an automated turret and patterned XY stage.
-* **[Instron 68TM-50 Universal Testing System:](./instron.html)** Tensile, compression, and flexure mechanical testing to measure strength, stiffness, and failure behavior.
+* **[Hardness tester](./hardness-tester.html)** — Measure resistance to indentation and compare hardness between materials or locations on a sample. (Innovatest Nemesis 5100G2)
+* **[Instron mechanical tester](./instron.html)** — Pull, compress, or bend samples to measure strength, stiffness, and how they fail. (Instron 68TM-50)
 
-## Particle And Size Analysis
+## Measure Particle Sizes {#particle-and-size-analysis}
 
-* **[Microtrac Sync Particle Size Analyzer:](./psa.html)** Particle size distribution of dry powders (roughly 0.24-2,000 µm) by laser diffraction.
+* **[Particle size analyzer](./psa.html)** — Measure the distribution of particle sizes in a dry powder. The analyzed powder is not recovered afterward. (Microtrac Sync)
 
-## Sample Preparation
+## Prepare Samples For Microscopy {#sample-preparation}
 
-* **[Technoorg-Linda SEMPrep 2 Broad Beam Ion Mill:](./ion-mill.html)** Preparing samples for SEM imaging with surface polishing, final cleaning, and slope cutting.
+* **[Ion mill](./ion-mill.html)** — Prepare surfaces and cross sections for electron microscopy through fine polishing, cleaning, and cutting. (Technoorg-Linda SEMPrep 2)
