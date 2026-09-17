@@ -26,6 +26,7 @@ TRAINER_PAGES = %w[
   index
   access-and-logistics
   ftir
+  handbook
   lab-safety-orientation
   optical
   scheduling

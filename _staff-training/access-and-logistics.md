@@ -163,5 +163,5 @@ A guide's `Status` row referring to "operational-owner review" means the second 
 ## Open Items Tracked Elsewhere
 
 * Approved Level 1 training samples, identifiers, cabinet locations, and replenishment plans: repository file `_staff/site-todo.md`, Tier 2.
-* Trainer readiness and who may deliver training: not yet written.
+* Trainer readiness and who may deliver training: [trainer readiness and qualification]({% link _staff-training/trainer-readiness.md %}).
 * Instrument-page media and verification work: repository file `instruments/staff-todo.md`.

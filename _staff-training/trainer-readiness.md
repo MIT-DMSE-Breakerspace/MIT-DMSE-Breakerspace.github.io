@@ -2,7 +2,7 @@
 title: Trainer Readiness And Qualification
 description: Qualification, practice-training, and escalation expectations for Breakerspace instrument trainers.
 guide_status: Current shared reference
-guide_revision: 2026-08-05
+guide_revision: 2026-09-17
 trainer_links:
   - label: Training access and closeout
     url: /trainer/access-and-logistics/
@@ -14,7 +14,7 @@ trainer_links:
 
 # Trainer Readiness
 
-Last reviewed: 2026-07-31
+Last reviewed: 2026-09-17
 
 Breakerspace instrument training is delivered mostly by Breakerspace Lab Assistants. This file defines who may deliver a training, how someone becomes qualified on an instrument, and what a trainer does when a session does not go as planned.
 
@@ -55,9 +55,10 @@ Slack admin rights allow a staff member to send workspace invitations, and Dropb
 
 * [ ] Create an [MIT Dropbox for Business account](https://ist.mit.edu/dropbox/business) if one does not already exist. Team membership cannot be granted before the account exists — the same constraint that applies to trainees.
 * [ ] Confirm scheduled shifts in LibCal.
-* [ ] Schedule at least one training session per week during a shift.
+* [ ] Ideally offer at least one instrument training per week and staff at least three additional Lab Assistant on duty hours per week.
 * [ ] Read the [training access and closeout sequence]({% link _staff-training/access-and-logistics.md %}) and the guide for each instrument they will train on.
-* [ ] Submit weekly hours through the MIT payroll system **and** email the total submitted to the lab manager and DMSE HR for approval. Submitting without the email leaves the approval incomplete.
+* [ ] Submit weekly hours through the MIT payroll system. A separate payroll email is not required.
+* [ ] Do not average more than 10 paid hours per week without clearing the additional time with the lab manager.
 
 ## Becoming Qualified On An Instrument
 

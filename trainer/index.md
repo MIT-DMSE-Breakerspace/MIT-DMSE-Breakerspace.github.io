@@ -6,7 +6,7 @@ permalink: /trainer/
 trainer_portal: true
 trainer_index: true
 interactive_checklist: false
-guide_revision: 2026-09-14
+guide_revision: 2026-09-17
 ---
 
 # Trainer Portal
@@ -63,9 +63,18 @@ Reviewed session checklist for the established DSX-1000 training workflow.
 
 Phenom SEM, XRD, and Instron are published so staff can review them from the portal. Their **Draft advisory** state distinguishes publication for review from approval for training delivery; XRD and Instron retain instrument-specific unresolved items.
 
+## Lab Assistant Resources
+
+* **[Lab Assistant handbook]({% link _staff-training/handbook.md %}):** Role priorities, weekly and shift expectations, absence and coverage, user support, escalation, and onboarding self-check.
+* **[New staff onboarding and trainer readiness]({% link _staff-training/trainer-readiness.md %}):** Account and access setup, new-assistant responsibilities, per-instrument qualification, readiness records, and what to do when a session does not go as planned.
+* **[Training access and closeout]({% link _staff-training/access-and-logistics.md %}):** Moira groups, user access handoff, Slack and Dropbox follow-up, scheduling, and guide ownership.
+* **[Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}):** The shared room-safety orientation used in every instrument training.
+* **[Calendar event scheduling]({% link _staff-training/scheduling.md %}):** When to choose No Location, reserve one instrument, or block the whole lab.
+
+<p class="guidance-note"><strong>Is something missing from your onboarding?</strong> If an expected account, physical access, safety orientation, supervised practice, or instrument qualification step was missed, stop and ask the lab manager to complete it. Do not assume that access to an account or instrument makes you qualified to train others.</p>
+
 ## Administrative Shortcuts
 
-* **[Calendar event scheduling]({% link _staff-training/scheduling.md %}):** Choose No Location, an individual instrument reservation, or a whole-lab block without creating unintended conflicts.
 * **WebMoira access-control lists:** <https://groups.mit.edu/webmoira/>
 * **Breakerspace Slack workspace:** <https://mit-dmse-breakerspace.slack.com>
 * **DMSE Breakerspace Dropbox Team request:** <https://www.dropbox.com/team>
