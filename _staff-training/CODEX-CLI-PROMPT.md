@@ -27,7 +27,8 @@ Before editing, read completely:
 - _staff/quick-guides/README.md
 - the relevant instrument entry in _staff/quick-guides/instrument-specifications.md
 - the complete canonical instruments/<slug>.md page
-- _staff-training/access-and-logistics.md
+- _staff-training/run-a-training.md
+- _admin/training-access-and-logistics.md
 - _staff-training/lab-safety-orientation.md
 - _includes/trainer/checklist-safety.md
 - _includes/trainer/checklist-closeout.md

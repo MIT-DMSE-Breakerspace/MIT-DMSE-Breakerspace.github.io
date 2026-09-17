@@ -65,19 +65,19 @@ Phenom SEM, XRD, and Instron are published so staff can review them from the por
 
 ## Lab Assistant Resources
 
-* **[Lab Assistant handbook]({% link _staff-training/handbook.md %}):** Role priorities, weekly and shift expectations, absence and coverage, user support, escalation, and onboarding self-check.
-* **[New staff onboarding and trainer readiness]({% link _staff-training/trainer-readiness.md %}):** Account and access setup, new-assistant responsibilities, per-instrument qualification, readiness records, and what to do when a session does not go as planned.
-* **[Training access and closeout]({% link _staff-training/access-and-logistics.md %}):** Moira groups, user access handoff, Slack and Dropbox follow-up, scheduling, and guide ownership.
-* **[Lab safety orientation]({% link _staff-training/lab-safety-orientation.md %}):** The shared room-safety orientation used in every instrument training.
-* **[Calendar event scheduling]({% link _staff-training/scheduling.md %}):** When to choose No Location, reserve one instrument, or block the whole lab.
+Start with the page for the task you are doing:
+
+* **[What are my expectations during shifts?]({% link _staff-training/handbook.md %})** Weekly and shift expectations, helping users, absence and coverage, and escalation.
+* **[What is my onboarding process, and is it complete?]({% link _staff-training/trainer-readiness.md %})** Staff setup and per-instrument trainer qualification checklist.
+* **[How do I create a calendar event?]({% link _staff-training/scheduling.md %})** When to choose No Location, reserve one instrument, or block the whole lab.
+* **[How do I set up and run a training?]({% link _staff-training/run-a-training.md %})** Scheduling, preparation, delivery, trainee access, and closeout.
 
 <p class="guidance-note"><strong>Is something missing from your onboarding?</strong> If an expected account, physical access, safety orientation, supervised practice, or instrument qualification step was missed, stop and ask the lab manager to complete it. Do not assume that access to an account or instrument makes you qualified to train others.</p>
 
-## Administrative Shortcuts
+## Working Links
 
-* **WebMoira access-control lists:** <https://groups.mit.edu/webmoira/>
+* **WebMoira:** <https://groups.mit.edu/webmoira/>
 * **Breakerspace Slack workspace:** <https://mit-dmse-breakerspace.slack.com>
-* **DMSE Breakerspace Dropbox Team request:** <https://www.dropbox.com/team>
 * **One-time online training and Qualtrics record:** <https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc>
 * **Breakerspace training calendar:** <https://breakerspace.libcal.com/calendar?cid=19408>
 * **Instrument reservations:** <https://breakerspace.libcal.com/space/168610>

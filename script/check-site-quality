@@ -24,7 +24,7 @@ INSTRUMENT_PAGES = %w[
 
 TRAINER_PAGES = %w[
   index
-  access-and-logistics
+  run-a-training
   ftir
   handbook
   lab-safety-orientation

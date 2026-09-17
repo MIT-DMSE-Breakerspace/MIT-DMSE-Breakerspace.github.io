@@ -52,7 +52,7 @@ guide_status: Provisional composition draft — incomplete
 guide_revision: 2026-08-10
 interactive_checklist: true
 instrument_name: [Canonical H1 identity]
-moira_group: [Verified group from access-and-logistics.md]
+moira_group: [Verified group from ../_admin/training-access-and-logistics.md]
 ---
 ```
 

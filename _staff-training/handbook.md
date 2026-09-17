@@ -6,8 +6,8 @@ guide_revision: 2026-09-17
 trainer_links:
   - label: Onboarding and trainer readiness
     url: /trainer/trainer-readiness/
-  - label: Training access and closeout
-    url: /trainer/access-and-logistics/
+  - label: Run an instrument training
+    url: /trainer/run-a-training/
   - label: Calendar scheduling
     url: /trainer/scheduling/
   - label: Lab safety orientation
@@ -45,7 +45,7 @@ Offer drop-in help on a first-come, first-served basis. Help within your trainin
 
 Scheduled subjects and whole-lab activities may reserve space farther in advance than individual users. That calendar priority does not create priority over ordinary users outside the reserved period. Once users are working in the lab under normal reservations and access rules, apply the same policy to everyone: coursework does not displace an existing reservation or an independent project.
 
-Only deliver an instrument training after completing the per-instrument process in [Onboarding And Trainer Readiness]({% link _staff-training/trainer-readiness.md %}). End every training with the [access and closeout sequence]({% link _staff-training/access-and-logistics.md %}#trainer-closeout-sequence).
+Only deliver an instrument training after completing the per-instrument process in [Lab Assistant Onboarding]({% link _staff-training/trainer-readiness.md %}). Follow [Run An Instrument Training]({% link _staff-training/run-a-training.md %}) from scheduling through closeout.
 
 ## Absence And Coverage
 
@@ -66,6 +66,6 @@ For an emergency or immediate danger, follow the [Breakerspace safety response](
 
 ## Check Your Onboarding
 
-Review [Onboarding And Trainer Readiness]({% link _staff-training/trainer-readiness.md %}) when joining the staff or taking on a new instrument. Account access and trainer qualification are separate: having LibCal, Slack, Dropbox, repository, workstation, or physical access does not by itself qualify someone to train others.
+Review [Lab Assistant Onboarding]({% link _staff-training/trainer-readiness.md %}) when joining the staff or taking on a new instrument. Account access and trainer qualification are separate: having LibCal, Slack, Dropbox, repository, workstation, or physical access does not by itself qualify someone to train others.
 
 If an expected account, physical access, safety orientation, supervised practice, or qualification step was missed, stop and ask the lab manager to complete the process. Individual progress and qualification records belong in the private staff system, not on this site.

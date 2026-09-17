@@ -15,7 +15,7 @@ Six things follow from that:
 * **The canonical instrument page is the operating authority.** Keep its short SOP spine separate from the more specific Level 1 teaching workflow. Every normal-use step here cites the section it comes from, and the trainer names that connection out loud so participants learn where to find conditional recovery, maintenance, and unusual-startup instructions when the instrument is not in its expected ready state.
 * **Do not restate operating steps.** A step here is a pointer plus whatever the trainer needs to say about it, never a duplicate procedure that can drift out of date. This guide maps and verifies the SOP; it must not become an alternate technical SOP.
 * **This guide and the Quick Guide are siblings**, both derived from the instrument page. Quick Guide Side 1 reproduces the SOP spine; Side 2 maps the controls used in the approved Level 1 workflow. This guide supplies the teaching sequence, capability-preview boundaries, prompts, pacing, success criteria, and closeout. Develop them in parallel; neither gates the other.
-* **Take the shared sections as given.** [Access and logistics](access-and-logistics.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them.
+* **Take the shared sections as given.** [Run a training](run-a-training.md), the [lab safety orientation](lab-safety-orientation.md), and [trainer readiness](trainer-readiness.md) apply to every training. Reference them; do not restate them. Program administration is maintained in the [manager reference](../_admin/training-access-and-logistics.md).
 * **Guides are agnostic about the trainer-selected characterization sample.** State its criteria, never a default material, sample-library identifier, or cabinet location. A canonically required calibration or system-check reference may be named. The trainer chooses the characterization sample per session; sample-library readiness never blocks a guide. See [sample-agnostic guides](README.md#sample-agnostic-guides).
 * **Work on one instrument at a time.** Build this guide and its Quick Guide against real, verifiable content for this instrument. Generalize a finalized decision into this template only when prompted; do not apply it to the other instrument guides in the same pass. See [scope of work](README.md#scope-of-work-one-instrument-at-a-time).
 
@@ -34,7 +34,7 @@ Six things follow from that:
 | Capability previews only | [Capabilities the trainer briefly shows without teaching for independent use, or None] |
 | Training sample | **Trainer-selected.** [The properties a suitable characterization sample must have. Do not name a default material or cabinet location. List a canonically required calibration/system-check reference separately if applicable] |
 | Moira group | `dmse-brkrspc-[page slug]` |
-| Guide owner | Lab manager unless reassigned; see [guide owners](access-and-logistics.md#guide-owners) |
+| Guide owner | Lab manager unless reassigned; see [guide owners](../_admin/training-access-and-logistics.md#guide-owners) |
 | Status | [Draft, pilot, or ready for routine delivery] |
 | Last reviewed | [YYYY-MM-DD] |
 
@@ -185,7 +185,7 @@ Participants may divide the workflow. Rotate roles when the instrument and time 
 * [ ] Confirm that participants know where their files were saved and how to access them.
 * [ ] Ask participants to locate the SOP, detailed operating guidance, and common failure modes on the public instrument page.
 * [ ] Confirm that the printed Quick Guide is returned to its place at the instrument, is legible and undamaged, and carries the same review state as the web version.
-* [ ] Tell attendees that you will add them to the instrument's MIT Moira group after the session and what that membership does for this instrument. Confirm the group in [access and logistics](access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group.
+* [ ] Tell attendees that you will add them to the instrument's MIT Moira group after the session. Confirm the group in the [manager reference](../_admin/training-access-and-logistics.md#moira-groups-by-instrument); the SEM family shares one group.
 * [ ] Remind participants that physical tap access is processed separately by the lab manager after the one-time Qualtrics record is complete.
 * [ ] For first-time users, confirm that they know how to create an MIT Dropbox for Business account and request membership in the DMSE Breakerspace Team. Walk through the self-service steps when time allows, or include them in the follow-up.
 * [ ] Point participants to reservations, the public operating reference, `#breakerspace-help`, and the staff email.

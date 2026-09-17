@@ -26,7 +26,7 @@ Last substantive work: 2026-09-16.
 
 The public training pathway is implemented in [`../training.md`](../training.md). The directory now has two layers:
 
-* **Shared layer** — facts and processes every guide depends on: `access-and-logistics.md`, `trainer-readiness.md`, `lab-safety-orientation.md`. These were extracted so a new guide inherits them instead of restating them. Treat them as settled unless the underlying operation changes.
+* **Shared layer** — concise trainer processes in `run-a-training.md`, `trainer-readiness.md`, and `lab-safety-orientation.md`, with program rationale and maintenance detail in `../_admin/training-access-and-logistics.md` and `../_admin/trainer-readiness-management.md`.
 * **Per-instrument guides** — FTIR is the reviewed continuous-checklist specimen. Optical was structurally retrofitted and operationally reviewed on 2026-09-11. The portal publishes those two current guides plus three incomplete prototypes labeled **Draft advisory** for staff review, including one combined Phenom SEM guide.
 
 **The current [`ftir.md`](ftir.md) is the reviewed compact guide.** The superseded 3,343-word trainer page and roughly 73 rendered checks were too long for live delivery. The current guide retains a continuous checklist with selected participant observations; use it as an example of concise teaching cues, not a universal instrument template. Historical measurements and review decisions are in the [FTIR work order](provisional-draft-work-orders.md#ftir-compact-prototype). **The separate unpublished [`ftir-sop-map-prototype.md`](../quick-guides/ftir-sop-map-prototype.md) remains the locked Quick Guide composition reference for draft production**, subject to the review and proof gates in [Quick Guide layout model](#quick-guide-layout-model). Its *composition* is the model; the [2026-08-10 audit](../_staff/quick-guides/audit-2026-08-10.md) documents why its superseded image, control-key, and quality-caption content must not be copied forward.
@@ -79,7 +79,7 @@ Every guide has the same three-part shape:
 
 1. **Shared opening** — welcome and goals, then the [lab safety orientation](lab-safety-orientation.md), identical in every session.
 2. **The instrument's core operations**, walked through in SOP order.
-3. **Shared administrative closeout** — the sequence in [`access-and-logistics.md`](access-and-logistics.md), identical in every session.
+3. **Shared administrative closeout** — the sequence in [`run-a-training.md`](run-a-training.md), identical in every session.
 
 Only the middle changes between instruments. The opening and closeout are shared precisely so a trainer cannot accidentally omit them and so they only need maintaining in one place.
 
@@ -209,7 +209,7 @@ A staff guide is a **checklist a trainer runs**, with the reasoning available bu
 
 **Guide Control was split.** The old table mixed trainer-facing operational facts with audit fields (status, last-reviewed, LibCal verification, lamination state), which is why it read as confusing and unclear who it served. Operational facts a trainer needs mid-session sit in a short block near the checklist; tracking fields live in front matter and render in a status table at the bottom.
 
-**One constraint this model makes easy to get wrong:** a checklist in session order tempts you to write steps in the order they *feel* natural, which can contradict how access actually works. See [access and logistics](access-and-logistics.md#trainer-closeout-sequence) — a trainee has no workstation login during their own first session, because the Moira add happens at closeout, so the trainer performs the initial login.
+**One constraint this model makes easy to get wrong:** a checklist in session order tempts you to write steps in the order they *feel* natural, which can contradict how access actually works. See the [manager training-access reference](../_admin/training-access-and-logistics.md#trainer-closeout-sequence) — a trainee has no workstation login during their own first session, because the Moira add happens at closeout, so the trainer performs the initial login.
 
 The provisional editorial targets are approximately 15–22 instrument-specific checks, 25–35 complete rendered checks after shared includes, 800–1,000 runnable-checklist words including shared content, and 950–1,200 total rendered words. These are forcing functions, not authority to omit a consequential action. See the [provisional procedure](provisional-draft-procedure.md#editorial-targets-not-content-limits).
 
@@ -291,7 +291,7 @@ Four review rounds on the FTIR pair produced corrections worth not repeating. Ev
 
 ### Decisions already made, with reasons
 
-Do not relitigate these without new information; the reasoning is in `access-and-logistics.md`, `trainer-readiness.md`, and the commit history.
+Do not relitigate these without new information; the reasoning is in `../_admin/training-access-and-logistics.md`, `../_admin/trainer-readiness-management.md`, and the commit history.
 
 * Moira group names follow `dmse-brkrspc-` plus the page slug, with no abbreviations. Near-consistency is worse than obvious difference, because it invites a guess that is wrong just often enough to cause a silent access failure.
 * `instruments/instron.md` keeps its brand slug. Renaming `-utm` to `-instron` gives alignment plus the term students actually use, and avoids putting an ambiguous abbreviation in a public URL.
@@ -319,7 +319,7 @@ Do not relitigate these without new information; the reasoning is in `access-and
 
 ## Files In This Directory
 
-* `access-and-logistics.md` is the shared reference for Moira groups by instrument, the trainer closeout sequence, scheduling, and guide owners. Guides link to it instead of restating these facts.
+* `run-a-training.md` is the concise Lab Assistant workflow. Moira mappings, access architecture, scheduling rationale, and guide ownership are maintained in `../_admin/training-access-and-logistics.md` for the lab manager and maintenance agents.
 * `lab-safety-orientation.md` is the five-minute in-person orientation to the physical lab, run at the start of every session.
 * `trainer-readiness.md` defines who may deliver a training, how a staff member becomes qualified on an instrument, and what to do when a session does not go as planned.
 * `instrument-training-template.md` is the starting point for each instrument-specific staff guide.
@@ -348,7 +348,7 @@ A complete guide should define:
 * An auditable checklist of the complete normal-use path from the expected ready state, including routine operation, saving, cleanup, shutdown, and stop conditions; conditional or abnormal-state instructions may remain on the canonical page.
 * How participants will use the physical Quick Guide during the hands-on workflow.
 * Shutdown, cleanup, data-saving, and post-training access tasks.
-* The exact MIT Moira group the trainer must update after the session, taken from [`access-and-logistics.md`](access-and-logistics.md).
+* The exact MIT Moira group the trainer must update after the session, taken from the [manager training-access reference](../_admin/training-access-and-logistics.md#moira-groups-by-instrument).
 
 Group names follow one rule: `dmse-brkrspc-` plus the public page slug. Every instrument has a group and the trainer adds attendees to it after every session. Two irregularities: both SEMs share `dmse-brkrspc-sem`, and the XRD, hardness tester, and ion mill are not domain-managed, so their groups are for targeted communication only and grant no access.
 
