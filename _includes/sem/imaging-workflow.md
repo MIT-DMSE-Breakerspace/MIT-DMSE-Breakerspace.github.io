@@ -42,7 +42,7 @@ Useful controls:
 
 * Mouse wheel changes the selected control, usually magnification, focus, brightness, or contrast.
 * Right-click and drag horizontally on the live image to adjust focus quickly.
-* Use auto brightness/contrast as a starting point, then adjust manually if the image looks washed out or too dark.
+* Use automatic brightness/contrast for routine imaging; it normally gives very good results and rarely benefits from manual adjustment.
 * Use autofocus only when there is enough contrast near the center of the image.
 * At higher magnification, refocus after changing magnification, voltage, detector, vacuum mode, or working distance.
 * Press F11 to leave fullscreen mode if you need access to the Windows taskbar.
@@ -51,6 +51,8 @@ Useful controls:
   <a href="../assets/img/tutorials/sem/FocBri.PNG" target="_parent"><img src="../assets/img/tutorials/sem/FocBri.PNG" alt="Phenom focus and brightness controls." style="width:70%; margin:0"></a>
   <figcaption>Focus, brightness, and contrast controls are the main adjustments in {{ sem_view_label }} view.</figcaption>
 </figure>
+
+Brightness and contrast determine how the collected data is displayed, not its quality. Accelerating voltage and beam intensity affect the signal being collected. Manual brightness/contrast adjustment is not part of routine introductory training; see [common failure modes](#failures) for the occasional particle-on-carbon-sticker exception.
 
 ##### Choosing Detector, Voltage, Vacuum, And Intensity
 
@@ -65,7 +67,7 @@ Useful controls:
 | Image intensity | General imaging | Good default for most SEM images. |
 | Point intensity | Lower magnification spot work | Useful when signal is low and fine resolution is less critical. |
 
-Try more than one appropriate combination to see what best reveals the feature of interest. For beam-sensitive samples, begin with lower accelerating voltage and beam intensity and increase them only as needed; higher settings can damage or change the sample.
+Compare BSD and SED on the same feature, then vary accelerating voltage and beam intensity one at a time to see what best reveals it. Refocus and run automatic brightness/contrast after changes. For beam-sensitive samples, begin with lower accelerating voltage and beam intensity and increase them only as needed; higher settings can damage or change the sample.
 
 For general live navigation, use a **Scan Size of 960 × 540** with **Medium Averaging**. Change those live-view settings only when the sample or imaging task benefits from a different balance of speed, noise, and detail.
 

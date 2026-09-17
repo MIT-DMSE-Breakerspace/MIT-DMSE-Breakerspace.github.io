@@ -65,6 +65,7 @@ Phenom SEM, XRD, and Instron are published so staff can review them from the por
 
 ## Administrative Shortcuts
 
+* **[Calendar event scheduling]({% link _staff-training/scheduling.md %}):** Choose No Location, an individual instrument reservation, or a whole-lab block without creating unintended conflicts.
 * **WebMoira access-control lists:** <https://groups.mit.edu/webmoira/>
 * **Breakerspace Slack workspace:** <https://mit-dmse-breakerspace.slack.com>
 * **DMSE Breakerspace Dropbox Team request:** <https://www.dropbox.com/team>

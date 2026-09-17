@@ -133,6 +133,8 @@ There is currently no skills demonstration, no training expiration, and no recur
 
 Standard calendar blocks are **60 minutes** with **50 participant-facing minutes** and a **maximum of three participants**. Breakerspace Lab Assistants should schedule themselves with time before the event for setup and after it for Moira, Slack, documentation, and equipment closeout. The three-participant limit is confirmed: every LibCal instrument-training template sets maximum in-person registrations to 3.
 
+Use the [calendar event scheduling guide]({% link _staff-training/scheduling.md %}) when creating assistant hours, instrument trainings, or reserved-activity notices. It defines when to select **No Location**, when to make a separate individual instrument-seat reservation, and when a whole-lab space block is intentional.
+
 ### Fall Schedule Timing
 
 Recurring fall training sessions are posted only after Breakerspace Lab Assistants return to campus, settle their academic schedules, and confirm the hours they will work in the lab. An empty or sparse public calendar during the first week is normal and is not evidence of a staffing or readiness failure. Do not create a speculative August schedule that will need to be rebuilt after student schedules change.

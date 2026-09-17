@@ -28,6 +28,7 @@ TRAINER_PAGES = %w[
   ftir
   lab-safety-orientation
   optical
+  scheduling
   trainer-readiness
 ].freeze
 

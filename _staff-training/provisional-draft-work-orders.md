@@ -11,7 +11,7 @@ This rolling ledger bounds the 2026-08-10 provisional staff-guide pass. Read [`p
 | Order | Instrument | Prototype | Composition status | Principal review gap |
 | --- | --- | --- | --- | --- |
 | 1 | FTIR | `_staff-training/ftir.md` | Reviewed 2026-08-11; released to the Trainer Portal 2026-08-31 | None for the trainer guide; the compact Quick Guide redesign remains separate. |
-| 2 | Phenom SEM | `_staff-training/phenom-sem-trainer-prototype.md` | Separate Pure and XL drafts replaced by one wholesale availability-flexible rewrite on 2026-09-14 | Review from the beginning and run a practice session; separate Quick Guide evidence, review, and proof remain. |
+| 2 | Phenom SEM | `_staff-training/phenom-sem-trainer-prototype.md` | Combined Pure/XL draft revised 2026-09-16 with clearer teaching cues and corrected brightness/contrast guidance | Review the revised wording and run a practice session; separate Quick Guide evidence, review, and proof remain. |
 | 3 | XRD | `_staff-training/xrd-trainer-prototype.md` | Prototype drafted; source/handoff audit corrected participant-artifact claims; build passed; external HTML validation unavailable | Decide HighScore and stored programs; verify workstation access, export, final changer-cover state, and participant Quick Guide. |
 | 4 | Instron | `_staff-training/instron-trainer-prototype.md` | Prototype drafted; build passed; external HTML validation unavailable; structural exception | Decide method, end condition, result gate, export, hardware states, and two-view participant artifact. |
 
@@ -100,14 +100,22 @@ A participant-provided sample is acceptable after trainer screening. A known-goo
 
 The safety include now has three omission-risk groups: emergency route/response, treatment/containment, and safe work/escalation. It preserves the locations, emergency numbers, fifteen-minute flushing rule, sharps and food boundary, glove separation, help routes, and reporting rule from the former six checks.
 
-**Review state:** wholesale composition complete but not yet reviewed line by line. The prior 2026-09-11 decisions remain represented: pre-session connection; sample-prep-table orientation; SEM terminology; instrument-specific height sequencing; NavCam-to-SEM navigation; BSD/SED and image-refinement practice; **960 × 540 / Medium** navigation settings; external retrievable storage; Pure temperature-stage mention; XL trainer-led EDS preview when available; and the canonical Pure and XL unloading actions.
+**Review state:** the combined draft received an editorial revision on 2026-09-16 and remains a **Draft advisory** pending review of the revised wording and a practice run. It retains pre-session connection, sample-prep orientation, separate height rules and loading sequences, NavCam-to-SEM navigation, BSD/SED and beam-setting comparisons, **960 × 540 / Medium** navigation settings, external storage, the Pure temperature-stage mention, the XL trainer-led EDS preview when available, and both canonical unloading paths. The brightness/contrast correction below supersedes the September 11 instruction to refine automatic brightness/contrast manually.
 
-**Composition result — 2026-09-14:**
+**Historical composition result — 2026-09-14:**
 
 * **Checks:** 22 guide-specific + 3 compact safety + 7 compact closeout = **32 rendered checks**.
 * **Words:** `wc -w` reports 1,120 in the combined guide source, 168 in the compact safety include, and 277 in the parameterized compact closeout include (**1,565 source words** total). The render contains **989 runnable-checklist words**, **1,236 total content words**, and **43 trainer-note words**.
 * **Editorial result:** the live checklist is inside the 800–1,000-word target. Total content is 36 words above the provisional range; the concise two-instrument comparison remains because it prevents the physical branches from being confused.
 * **Validation:** `git diff --check`, the SOP contract, Quick Guide source, site-quality checks, and the normal Jekyll build pass. The old Pure and XL trainer URLs render as redirects to the combined guide.
+
+**Editorial revision — 2026-09-16:**
+
+* **Teaching cues:** participants perform the hands-on workflow with trainer coaching; demonstrations are explicit. Sample preparation now names the imaging comparisons the sample must support. The imaging checks distinguish navigation, display, focus, detector comparison, beam-setting comparison, acquisition, and retrieval. Loading retains both the XL dial action and its physical clearance check.
+* **Lab-manager correction:** brightness/contrast determines how collected data is displayed, not its quality; accelerating voltage and beam intensity affect the collected signal. Automatic brightness/contrast normally works very well and is the routine training method. The occasional particle-on-carbon-sticker exception belongs in canonical troubleshooting, not the introductory checklist. Both shared SEM operating includes were reconciled with this correction.
+* **Editorial standard for this revision:** retain the actor, action, and relevant observation or decision. Cut repeated context; allow length where it prevents ambiguity. The combined hardware branches and draft status remain in place.
+* **Measurements:** 24 guide-specific + 3 safety + 7 closeout = **34 rendered checks**. The rendered checkbox items contain **1,249 words**, including their hardware branches and shared includes; the complete `.trainer-guide-content` contains **1,537 words**, counted by whitespace splitting. The guide source contains **1,437 words**. The draft exceeds the provisional word targets; review the added teaching cues and physical checks during practice rather than treating the target as a content limit.
+* **Validation:** `git diff --check`, SOP contract, Quick Guide source, Jekyll build, and site-quality checks pass. All internal links and fragments in the rendered SEM guide resolve. Browser review confirms the revised participant prompts and **0 of 34 items complete** checklist display. No instrument practice or routine-delivery approval is recorded by these checks.
 
 ### Superseded Phenom XL Composition Record
 

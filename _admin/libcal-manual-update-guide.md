@@ -1,6 +1,6 @@
 # LibCal Manual Event Template Update Guide
 
-Last reviewed: 2026-08-04
+Last reviewed: 2026-09-17
 
 **Status: completed 2026-08-04; retained as the as-built runbook and maintenance reference.**
 
@@ -183,6 +183,8 @@ Use this description:
 
 The event title should remain **Lab Assistant on duty** unless a short, user-relevant qualifier is necessary. Do not put an assistant's name in the public title.
 
+**Event-instance location:** the template editor does not set the bookable location. When creating an event or recurring series from this template, select **No Location** under Event Location and retain the physical room in the description. Selecting `Breakerspace Laboratory (Room 8-102A)` creates a lab-wide resource block and is not appropriate for Lab Assistant hours.
+
 ## Reserved Activity Templates
 
 Use three scope-specific templates for confirmed teaching sessions, organized group activities, maintenance, and other work that affects ordinary use. Keep `Reserved activity or availability notice` as the shared category, but use the straightforward baked-in event titles below. A creator may add a short useful qualifier, but an untouched title must still communicate the affected space clearly.
@@ -291,6 +293,8 @@ For each instrument-training template, create or inspect an event and verify:
 * The public event works in the normal calendar view and remains understandable without category color.
 
 For **Lab Assistant on duty**, verify that the description distinguishes support availability from lab opening hours. The template editor should keep registration disabled, but the accepted LibCal inheritance behavior above may enable it on a created event.
+
+When creating an **instrument-training event**, select **No Location** rather than the whole instrument lab, then make a separate staff reservation for the individual instrument seat used in the training. Verify that only that instrument is unavailable during the session. The current event-location picker does not drill down to the seat level.
 
 For the three **reserved activity** templates, verify that the baked-in title, room number, and scope agree. A lab-only or combined event must block all eleven instrument calendars for the same setup-through-cleanup interval. A lounge-only event must reserve Room 8-102 without applying a lab-wide instrument block.
 
