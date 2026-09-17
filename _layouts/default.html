@@ -15,20 +15,22 @@
   <body{% if page.data_tool_workspace %} class="data-tool-workspace"{% endif %}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
-      <header>
+      <header class="site-header">
 
-        <a href="{{ "/" | relative_url }}">
+        <a class="site-logo" href="{{ "/" | relative_url }}">
         <img src="{{ "/assets/img/logo_text.svg" | relative_url }}" width="448" height="83" decoding="async" alt="DMSE Breakerspace home" />
         </a>
-        <br>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <br class="site-header-spacer">
+        <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
        
-        <nav class="site-nav" aria-label="Primary">
+        <nav class="site-nav" id="site-navigation" aria-label="Primary">
           {% for item in site.data.navigation %}
           <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
           {% endfor %}
         </nav>
-        <br>
+        <br class="site-header-spacer">
 
       </header>
       <div class="content-shell">
@@ -47,6 +49,7 @@
         </p>
       </footer>
     </div>
+    <script src="{{ "/assets/js/site-navigation.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/accessibility.js" | relative_url }}"></script>
   </body>
