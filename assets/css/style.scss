@@ -130,6 +130,10 @@ main .youtube-facade__trigger:focus-visible {
   border: 0;
 }
 
+.site-menu-toggle {
+  display: none;
+}
+
 .site-nav a {
   display: block;
   margin-bottom: 0.12rem;
@@ -3618,6 +3622,71 @@ body.trainer-portal-page {
   body.has-print-quick-guide a {
     color: #000;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1209px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .site-header-spacer,
+  .site-description {
+    display: none;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 250px;
+  }
+
+  .site-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .site-menu-toggle:not([hidden]) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #007aa8;
+    border-radius: 4px;
+    background: #fff;
+    color: var(--color-link);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .site-menu-toggle:hover,
+  .site-menu-toggle[aria-expanded="true"] {
+    background: #f5f8fa;
+  }
+
+  .site-header .site-nav {
+    grid-column: 1 / -1;
+  }
+
+  .site-header .site-nav[hidden] {
+    display: none;
+  }
+
+  .site-header .site-nav a {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 0.55rem;
   }
 }
 
