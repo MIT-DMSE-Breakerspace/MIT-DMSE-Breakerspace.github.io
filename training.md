@@ -49,6 +49,4 @@ If tap access, workstation login, Slack, or Dropbox access is missing, see [Acce
 
 ## Upcoming Training Sessions {#upcoming-training-sessions}
 
-{% include early-fall-training-notice.html %}
-
 {% include breakerspace-calendar.html %}
