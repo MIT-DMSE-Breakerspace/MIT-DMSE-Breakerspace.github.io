@@ -176,6 +176,8 @@ Avoid mixing instrument-specific steps when confusion could cause damage. For ex
 
 ## Standard Page Order
 
+**FTIR pilot (2026-09-17):** `ftir.md` is testing an order organized around reading tasks: a short introduction and navigation, sample requirements, the unchanged SOP, task-specific operating help, results, troubleshooting, exploration and practice, then manuals. Its educational material follows the operating reference, with interpretation beside analysis. Review this pilot before extending the order or replacing the educational-section length guidance for other instruments.
+
 Use this order unless an instrument family needs a hub/split structure:
 
 1. Title and instrument name.
