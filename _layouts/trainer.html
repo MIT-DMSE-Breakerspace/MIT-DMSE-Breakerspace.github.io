@@ -3,9 +3,11 @@ layout: trainer-shell
 ---
 
 <article class="trainer-guide" data-trainer-guide data-guide-revision="{{ page.guide_revision | default: site.time | date: '%Y-%m-%d' }}">
+  {% unless page.trainer_index %}
   <div class="trainer-portal-bar">
     <a href="{{ '/lab-assistant/' | relative_url }}">Lab Assistant Resources</a>
   </div>
+  {% endunless %}
 
   {% if page.guide_status %}
   <p class="trainer-guide-status"><span>Current state</span> {{ page.guide_status }}</p>

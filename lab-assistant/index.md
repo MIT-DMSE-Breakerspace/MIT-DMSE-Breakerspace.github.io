@@ -13,8 +13,6 @@ guide_revision: 2026-09-17
 
 Use these resources for Breakerspace Lab Assistant shifts, onboarding, scheduling, and instrument training.
 
-<p class="guidance-note"><strong>These resources are not private.</strong> Do not add trainee records, usernames, credentials, access codes, or private roster information.</p>
-
 ## Lab Assistant Tasks
 
 * **[What are my expectations during shifts?]({% link _staff-training/handbook.md %})** Weekly and shift expectations, helping users, absence and coverage, and escalation.
@@ -81,3 +79,5 @@ Phenom SEM, XRD, and Instron are **Draft advisory** guides for staff review and 
 * **Instrument reservations:** <https://breakerspace.libcal.com/space/168610>
 * **Public training pathway:** <https://breakerspace.mit.edu/training.html>
 * **Breakerspace staff email:** [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu)
+
+<p class="guidance-note"><strong>These resources are not private.</strong> Do not add trainee records, usernames, credentials, access codes, or private roster information.</p>
