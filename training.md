@@ -9,73 +9,43 @@ Complete the online training and record **once**, before your first in-person in
 
 <p class="training-primary"><a href="https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc">Start online training &amp; record</a></p>
 
+<!-- Preserve links to the former training sections. -->
+<div id="standard-instrument-training"></div>
+<div id="4-learn-at-the-instrument"></div>
+
 ## In-Person Instrument Training {#quick-actions}
 
-Train on each instrument before reserving or using it independently. Standard sessions are one hour.
+Train on each instrument before reserving or using it independently. Standard sessions last one hour, with up to three participants.
 
-<p class="training-session-action"><a href="#upcoming-training-sessions">Find a training session</a></p>
+<p class="training-session-action" id="2-register-for-training"><a href="#upcoming-training-sessions">Find a training session</a></p>
 
-* [Explore the instrument pages]({{ "/instruments/" | relative_url }}) or ask Breakerspace staff which measurement fits your question.
-* If the training you need is not scheduled, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with the instrument and several times that work for you.
+* <span id="1-start-with-a-question"></span>[Explore the instrument pages]({{ "/instruments/" | relative_url }}) or ask Breakerspace staff which measurement fits your question.
+* If no listed session works for you, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) with the instrument and several times that work for you.
 
 Public calendar sessions currently prioritize MIT undergraduates. MIT faculty, staff, and other community members interested in training should contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) directly to discuss their needs.
 
-## Your Training Pathway
+Please cancel your registration if your plans change so another student can take your place. There is no penalty for missing a session or registering again.
 
-### 1. Start With A Question
+<div id="your-training-pathway"></div>
 
-Choose an instrument based on what you need to observe or measure. The [instrument pages]({{ "/instruments/" | relative_url }}) explain what each tool can show, which samples are compatible, and where to find training and reservation links.
+## Before Your Session {#prepare-for-training}
 
-If your project involves an unusual sample or an advanced measurement, ask staff before choosing a session. A short conversation can prevent unnecessary training or help identify a better method.
+* Complete the [one-time online training and record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc) before your first session. It covers lab safety, tap-access information, and Dropbox setup.
+* Review your [instrument's page]({{ "/instruments/" | relative_url }}) for what it measures, sample requirements, workflow, safety, cleanup, and saving data.
+* Training normally uses a staff-selected sample. For project-specific training, staff may ask you to bring an approved sample. Discuss [unusual, hazardous, or uncertain samples]({{ "/safety.html#samples-and-materials" | relative_url }}) with staff before bringing them into the lab.
 
-### 2. Register For Training
+<div id="5-confirm-your-access"></div>
 
-Choose an available session from the [calendar below](#upcoming-training-sessions). Standard sessions are one hour and have a maximum enrollment of three people. If the instrument you need is not listed, or none of the available times work, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) and the team will help arrange an option.
+## After Your Session
 
-If your plans change, please cancel your registration when you can so another student can use the place. There is no penalty for missing a session or registering again; the team understands that student schedules change.
+Your trainer enables access to the instrument workstation and sends your Slack invitation. The lab manager processes physical tap access separately after you complete the online record.
 
-### 3. Prepare Before The Session {#prepare-for-training}
+If tap access, workstation login, Slack, or Dropbox access is missing, see [Access and account help]({{ "/resources.html#access-and-account-problems" | relative_url }}).
 
-Before your first in-person instrument training, complete the [one-time Breakerspace online training and training record](https://mit.co1.qualtrics.com/jfe/form/SV_084N36wCErKsgjc). It includes a review of [Safety And Lab Use]({{ "/safety.html" | relative_url }}) and collects the information needed for physical tap access.
+## Project And Course Support {#types-of-training-and-support}
 
-If you have completed an in-person training but do not have tap access, confirm that you submitted this online record. If you submitted it and access is still missing, follow the steps under [Access And Account Problems]({{ "/resources.html#access-and-account-problems" | relative_url }}).
-
-The online record also walks you through Breakerspace Dropbox access. If needed, create an MIT Dropbox for Business account, then request membership in the DMSE Breakerspace Team. Staff cannot approve membership until the account exists.
-
-Before training, open the relevant instrument page and review:
-
-* What the instrument measures and what its output means.
-* Compatible materials, sample-size limits, and preparation needs.
-* The standard workflow and any unfamiliar vocabulary.
-* General safety, cleanup, and data-saving expectations.
-
-Training normally uses a sample selected for the instrument workflow. If you requested training for a specific project, staff may ask you to bring your own approved sample. Do not bring an unusual, hazardous, wet, loose, reactive, biological, vacuum-sensitive, magnetic, odorous, sharp, fragile, unusually large, or unknown sample without discussing it with Breakerspace staff first.
-
-### 4. Learn At The Instrument
-
-Complete the in-person training tasks at the instrument with guidance and oversight from Breakerspace staff or another designated trainer.
-
-### 5. Confirm Your Access
-
-After an in-person instrument training, the trainer should add you directly to the appropriate MIT Moira group for that instrument workstation. Physical tap access is processed separately by the lab manager after your one-time Qualtrics online training record is complete.
-
-For Dropbox access, create an MIT Dropbox for Business account and request membership in the DMSE Breakerspace Team during the online onboarding process. Breakerspace staff approve the request after it is submitted. During training closeout, the trainer should send you an invitation to the Breakerspace Slack workspace.
-
-If you completed training but cannot enter the lab, log in to an instrument workstation, obtain the expected Slack invitation, or access the Dropbox Team after requesting membership, see [Access And Account Problems]({{ "/resources.html#access-and-account-problems" | relative_url }}) or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
-
-## Types Of Training And Support
-
-### Standard Instrument Training
-
-The normal starting point for users who want to operate an instrument independently. Register through the [upcoming training calendar](#upcoming-training-sessions) or contact the Breakerspace team when no suitable session is listed.
-
-### Advanced And Project Support
-
-Already-trained users can work with Breakerspace staff when a project requires a more demanding sample, method, accessory, or analysis workflow. Start by asking staff in the lab, then use Slack or email when no one is available.
-
-### Course And Teaching-Team Training
-
-The Breakerspace can coordinate instrument training for students, instructors, teaching assistants, and teaching fellows as part of a broader subject collaboration. More substantial engagements should be planned before the semester begins whenever possible. See [Teach With The Breakerspace]({{ "/teaching.html" | relative_url }}) for collaboration models and staffing guidance.
+* <span id="advanced-and-project-support"></span>**Already trained?** Ask staff for help with advanced measurements or analysis; see [Project and method support]({{ "/resources.html#project-and-method-support" | relative_url }}).
+* <span id="course-and-teaching-team-training"></span>**Organizing course training?** See [Teach with the Breakerspace]({{ "/teaching.html" | relative_url }}) and contact the team before the semester when possible.
 
 ## Upcoming Training Sessions {#upcoming-training-sessions}
 
