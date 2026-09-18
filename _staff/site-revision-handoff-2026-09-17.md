@@ -72,7 +72,7 @@ Progress replies sometimes used simple whitespace counts at intermediate stages:
 
 ## Best Next Work
 
-Start with feedback from the owner's live review of the September 18 layout, keeping the instrument-renovation pause in effect. Reserve Time's focused editorial revision is tracked in [PR #45](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/45); see its record below.
+Start with feedback from the owner's live review of the September 18 layout, keeping the instrument-renovation pause in effect. Reserve Time's focused editorial revision is tracked in [PR #45](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/45), with the booking-scope follow-up in [PR #46](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/46); see its record below.
 
 The next non-instrument copy candidates are Get Help's access/files explanations and Teach With Us planning and repeated whole-lab guidance. Keep `reservations.html#whole-lab-reservations` as the group-request destination when consolidating Teaching. The homepage opening and location/hours work is already published. Preserve the instructor partnership summary and useful scientific limits. Treat the original review's word targets as editing aids, not limits on safety or reference content.
 
@@ -96,11 +96,11 @@ Validation passed: Jekyll build (existing Sass deprecation warnings), Reservatio
 
 ### Owner Follow-up — Booking Scope
 
-The owner clarified that Reserve Time should assume trained users already know lab policy and sample requirements. The follow-up removes Before You Book, Booking Problems, the opening training reminder, and the opening lab/lounge jump link. The page now proceeds from the booking links to LibCal instructions, reservation rules, and lab/lounge requests. Keep general sample, safety, access, and instrument-help guidance on its existing task pages rather than repeating it in this workflow.
+The owner clarified that Reserve Time should assume trained users already know lab policy and sample requirements. The follow-up in [PR #46](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/46) removes Before You Book, Booking Problems, the opening training reminder, and the opening lab/lounge jump link. The page now proceeds from the booking links to LibCal instructions, reservation rules, and lab/lounge requests. Keep general sample, safety, access, and instrument-help guidance on its existing task pages rather than repeating it in this workflow.
 
 The one-hour starting norm, including time for setup and cleanup and the staff route for longer uninterrupted sessions, moves into Reservation Rules. Booking requirements and the lab/lounge request procedure are unchanged. The booking, rules, and group-request fragments remain; anchors belonging to the two deleted sections are removed, with no public-page references found in the repository. This is an editorial scope decision, not a change to training or lab policy.
 
-Jekyll build, Reservations-only HTML/internal-link checks, and `git diff --check` passed. Local graphical checks are in progress; the follow-up has not yet been released.
+Jekyll build, Reservations-only HTML/internal-link checks, and `git diff --check` passed. A subagent inspected headless Chromium screenshots at 320×740, 390×844, and 1440×1000: booking actions appear immediately, all sections wrap without horizontal overflow, and direct loads of `#whole-lab-reservations` reach the visible heading. External booking, other pages, and assistive technology behavior were not tested. The temporary preview server was stopped. Consult PR #46 and its deployment checks for release status.
 
 ## Files And Validation
 
@@ -125,4 +125,4 @@ To reverse an individual published change, make a reviewed revert of its merge c
 
 ## Suggested Starting Prompt
 
-> Continue the Breakerspace website usability work. Read `_staff/site-revision-handoff-2026-09-17.md` (updated September 18) and the September usability section of `_staff/site-todo.md`; consult the linked original review only as needed. The homepage and shared-layout changes, including the consistent-width correction, are live through PR #42. Start with my live-page feedback; Reserve Time's review and release are tracked in PR #45. Get Help is the next copy candidate. Further instrument-page renovations remain paused pending feedback. Use subagents for graphical reviews and return concise findings without page renderings in the main task. Use incremental changes and ordinary feedback; organized user trials are not required.
+> Continue the Breakerspace website usability work. Read `_staff/site-revision-handoff-2026-09-17.md` (updated September 18) and the September usability section of `_staff/site-todo.md`; consult the linked original review only as needed. The homepage and shared-layout changes, including the consistent-width correction, are live through PR #42. Start with my live-page feedback; Reserve Time's review and release are tracked in PRs #45 and #46. Get Help is the next copy candidate. Further instrument-page renovations remain paused pending feedback. Use subagents for graphical reviews and return concise findings without page renderings in the main task. Use incremental changes and ordinary feedback; organized user trials are not required.
