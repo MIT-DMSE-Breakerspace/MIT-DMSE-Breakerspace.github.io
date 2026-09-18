@@ -88,11 +88,19 @@ Validation passed: Jekyll build (existing Sass deprecation warnings), Calendar-o
 
 ## Reserve Time Editorial Review — September 18
 
-The `reservations.md` revision is tracked in [PR #45](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/45). It leads with individual booking, short preparation guidance, and the LibCal steps. Short lists replace the rules and help tables, which required sideways scrolling at 320px on the live page. The shortened lab/lounge request procedure follows the individual workflow and is reachable from an opening jump link; `#whole-lab-reservations` remains its destination. Staff review/calendar administration and repeated guest/credential reminders are removed; Safety remains the source for shared lab policy. Existing fragment IDs and link destinations are preserved.
+The first `reservations.md` revision is tracked in [PR #45](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/45). It leads with individual booking, short preparation guidance, and the LibCal steps. Short lists replace the rules and help tables, which required sideways scrolling at 320px on the live page. The shortened lab/lounge request procedure follows the individual workflow and is reachable from an opening jump link; `#whole-lab-reservations` remains its destination. Staff review/calendar administration and repeated guest/credential reminders are removed; Safety remains the source for shared lab policy. Existing fragment IDs and link destinations are preserved.
 
 The edit retains instrument training, sample screening, the one-hour starting norm, three-day booking window and midnight opening, 15-minute blocks, own-account booking, presence/late-arrival/handoff/cancellation rules, and problem escalation. Group requests retain their required details, whole-lab lead time, written confirmation, and lab-versus-lounge effects on instrument availability. No policy question remains from this edit. Teaching's duplicate request instructions remain queued for that page's review. When reviewing Safety, update its Reserve Time link description, which still lists guest rules now kept on Safety.
 
 Validation passed: Jekyll build (existing Sass deprecation warnings), Reservations-only HTML/internal-link and Pa11y checks, preserved fragments/destinations, and `git diff --check`. Subagents inspected the live baseline and local revision at 320×740, 390×844, and 1440×1000. The final local check used headless browser screenshots after the interactive browser became unavailable; it covered the first-screen actions, preparation/booking, rules/help, and lab/lounge request. Text and actions wrap without horizontal overflow, and the opening group-request link reaches its section at all three sizes. Authenticated LibCal booking, screen-reader use, and other pages were not tested. The temporary preview server was stopped. Consult the pull request and its deployment checks for release status.
+
+### Owner Follow-up — Booking Scope
+
+The owner clarified that Reserve Time should assume trained users already know lab policy and sample requirements. The follow-up removes Before You Book, Booking Problems, the opening training reminder, and the opening lab/lounge jump link. The page now proceeds from the booking links to LibCal instructions, reservation rules, and lab/lounge requests. Keep general sample, safety, access, and instrument-help guidance on its existing task pages rather than repeating it in this workflow.
+
+The one-hour starting norm, including time for setup and cleanup and the staff route for longer uninterrupted sessions, moves into Reservation Rules. Booking requirements and the lab/lounge request procedure are unchanged. The booking, rules, and group-request fragments remain; anchors belonging to the two deleted sections are removed, with no public-page references found in the repository. This is an editorial scope decision, not a change to training or lab policy.
+
+Jekyll build, Reservations-only HTML/internal-link checks, and `git diff --check` passed. Local graphical checks are in progress; the follow-up has not yet been released.
 
 ## Files And Validation
 
