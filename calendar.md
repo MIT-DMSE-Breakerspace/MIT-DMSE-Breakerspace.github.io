@@ -5,22 +5,20 @@ title: Breakerspace Calendar
 
 # Calendar & Lab Availability
 
-Use this calendar to find and register for instrument training, see when a Breakerspace Lab Assistant will be on duty for drop-in project support, and check for scheduled activities that reserve the instrument lab, lounge, or both.
+Open a training event to check prerequisites, see available places, and register.
 
-<p class="guidance-note"><strong>Looking for a particular instrument?</strong> Individual instrument reservations are managed separately. An open period on this calendar does not guarantee that an instrument is available; <a href="https://breakerspace.libcal.com/space/168610">check individual instrument availability in LibCal</a>.</p>
-
-{% include breakerspace-calendar.html %}
+<p class="guidance-note"><strong>Instrument reservations:</strong> <a href="https://breakerspace.libcal.com/space/168610">Check availability and book an individual instrument in LibCal</a>.</p>
 
 ## Calendar
 
-Calendar entries use these text labels so their meaning does not depend on color:
-
-* **Training:** Open the event to review the instrument, prerequisites, available places, and registration details.
-* **Lab Assistant on duty:** A Breakerspace Lab Assistant will be present for drop-in project questions and ad-hoc support. These hours are not a substitute for required instrument training or reservations.
-* **Reserved activity:** The event title states whether the instrument lab, lounge, or both are reserved. `Lab reserved for activity` and `Lab and lounge reserved for activity` entries block individual instrument reservations across the lab for the listed period. `Lounge reserved for activity` entries affect Room 8-102 only. To request either space for teaching or an organized activity, follow the [whole-lab reservation instructions]({{ "/reservations.html#whole-lab-reservations" | relative_url }}).
+{% include breakerspace-calendar.html %}
 
 ## Understanding Lab Availability
 
-The Breakerspace instrument lab and lounge are normally open {{ site.data.lab.hours }}. **Lab Assistant on duty** entries identify times when drop-in support is available; they are not the lab's opening hours.
+The instrument lab and lounge are normally open {{ site.data.lab.hours }}.
 
-During a lab-only or combined lab-and-lounge reservation, individual instrument reservations are unavailable across the lab for the complete listed period, including setup and cleanup. A lounge-only reservation does not block instrument calendars, but Room 8-102 is unavailable. Even when no general lab reservation appears, use the individual instrument calendar before planning independent work.
+* **Lab Assistant on duty:** Drop-in project help is available during the listed hours.
+* **Lab reserved for activity** or **Lab and lounge reserved for activity:** All instruments are unavailable for individual reservations for the full listed period, including setup and cleanup.
+* **Lounge reserved for activity:** Room 8-102 is unavailable; instrument reservations are unaffected.
+
+[Request the lab or lounge for a class or organized activity]({{ "/reservations.html#whole-lab-reservations" | relative_url }}).
