@@ -78,6 +78,14 @@ After that, simplify Get Help's access/files explanations and consolidate Teach 
 
 The cross-site queue records unresolved decisions: charges/consumables, access-processing expectations, accessible arrival/accommodations, and what supervised course participants may do before independent-use training. Obtain actual policy from the operational owner before writing those answers. It also tracks draft Quick Guide labels, public editorial to-do text, and reusable course/sample examples. Do not treat an absence found in the review as proof of a policy or a completed remediation.
 
+## Calendar Editorial Review — September 18
+
+Prepared in `calendar.md` on `codex/calendar-editorial-review`; not yet published. The opening now gives the training-registration action and a short, separate instrument-booking link. The Calendar heading precedes the embed so `#calendar` reaches the schedule. One availability guide replaces the repeated explanations and training/reservation reminder, retaining shared opening hours, drop-in support, the full lab-reservation interval including setup/cleanup, and the lounge-only distinction. Existing fragments, destinations, the shared calendar include, and other public pages are unchanged. No policy question remains from this edit.
+
+The live Calendar review at 390×844 and 1440×1000 found that LibCal loads at both sizes, but the phone's seven-column week view clips event titles and the full-calendar fallback sits below the 600px embed. Track that existing shared-embed issue in the usability checklist; it is outside this page-copy edit.
+
+Validation passed: Jekyll build (existing Sass deprecation warnings), Calendar-only HTML/internal-link and Pa11y checks, preserved fragments/destinations, shared hours, and `git diff --check`. A subagent inspected the local first screen and lower availability guide at the same phone/desktop sizes: readable actions and text, no horizontal page overflow, and the mobile calendar starting roughly 120px earlier. LibCal loaded in both local views; the existing phone clipping remained. No event registration or booking was attempted. The temporary preview server was stopped.
+
 ## Files And Validation
 
 | Area | Main sources |
