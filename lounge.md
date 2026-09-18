@@ -24,7 +24,7 @@ The Breakerspace Lounge is the shared seating and food-and-drink area immediatel
 
 ## Hours And Access
 
-The Breakerspace Lounge is open **8 AM to midnight, seven days/week**.
+The Breakerspace Lounge is open **{{ site.data.lab.hours }}**.
 
 Lounge access is available to all MIT undergraduates. Complete the [Breakerspace Lounge access form](https://forms.gle/1pd59bjGXiPnehDL9) and agree to the lounge policies. Tap access is usually granted within two business days.
 

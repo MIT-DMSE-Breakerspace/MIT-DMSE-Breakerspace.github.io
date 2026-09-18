@@ -160,43 +160,56 @@ main .youtube-facade__trigger:focus-visible {
   text-decoration: none;
 }
 
-.intent-list {
-  margin: 1.25rem 0 1.5rem;
+.homepage-intro,
+.homepage-visit {
+  display: none;
+}
+
+.homepage-actions {
   border-top: 3px solid #ae0721;
 }
 
-.intent-item {
+.homepage-actions ul {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr);
-  gap: 1.5rem;
-  padding: 1.25rem 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.homepage-actions li {
+  min-width: 0;
+  margin: 0;
   border-bottom: 1px solid #d8dde2;
 }
 
-.intent-prompt h3 {
-  margin: 0.2rem 0 0;
-  font-size: 1.05rem;
-  line-height: 1.35;
-}
-
-.intent-kicker {
-  color: #6a7178;
-  font-size: 0.78rem;
+.homepage-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  min-height: 56px;
+  height: 100%;
+  padding: 0.75rem 0.2rem;
   font-weight: 700;
-  letter-spacing: 0;
+  line-height: 1.4;
 }
 
-.intent-detail p {
-  margin: 0 0 0.45rem;
-  color: #3f454a;
+.homepage-actions a:hover,
+.homepage-actions a:focus-visible {
+  background: #f5f8fa;
 }
 
-.intent-link {
-  font-weight: 700;
+.lab-visit-details {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .homepage-feature {
-  margin: 2.25rem 0 2.5rem;
+  margin: 1.5rem 0;
   padding: 1.15rem;
   border-top: 4px solid #009de6;
   border-bottom: 1px solid #d8dde2;
@@ -3741,6 +3754,20 @@ body.trainer-portal-page {
 }
 
 @media screen and (max-width: 1209px) {
+  .homepage-intro,
+  .homepage-visit {
+    display: block;
+  }
+
+  .homepage-intro {
+    margin-bottom: 0.5rem;
+  }
+
+  .homepage-visit {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
   .site-header {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -3805,7 +3832,7 @@ body.trainer-portal-page {
   }
 }
 
-@media screen and (min-width: 1210px) and (max-height: 620px) {
+@media screen and (min-width: 1210px) and (max-height: 850px) {
   header,
   footer {
     position: static;
@@ -3851,11 +3878,6 @@ body.trainer-portal-page {
     grid-template-columns: 1fr;
   }
 
-  .intent-item {
-    grid-template-columns: 1fr;
-    gap: 0.65rem;
-  }
-
   .homepage-feature-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -3867,11 +3889,11 @@ body.trainer-portal-page {
   }
 
   .homepage-feature-copy {
-    grid-row: 1;
+    grid-row: 2;
   }
 
   .homepage-feature-media {
-    grid-row: 2;
+    grid-row: 1;
   }
 
   .teaching-summary-list > div {
