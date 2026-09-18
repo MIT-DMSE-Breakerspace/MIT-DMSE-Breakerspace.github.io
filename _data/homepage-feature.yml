@@ -1,19 +1,19 @@
 enabled: true
-sample_id: BS-000003
-eyebrow: From the sample library
-question: What makes a diamond sharpening stone abrasive?
-summary: To the eye, the surface looks uniformly rough. Under reflected-light microscopy, it resolves into sharp, angular diamond grains electroplated into a nickel matrix. Moving between these views connects an everyday tool to the material structure that gives it its function.
-instrument:
-  label: Explore optical microscopy
-  url: /instruments/optical.html
-images:
-  sample:
-    responsive_id: homepage-diamond-sample
-    label: Everyday view
-    caption: The unused coarse sharpening stone.
-    alt: Rectangular diamond sharpening stone resting diagonally on a worn wooden cutting board.
-  micrograph:
+title: A closer look
+samples:
+  - sample_id: BS-000003
     responsive_id: homepage-diamond-micrograph
-    label: Microscope view
-    caption: Diamond grains in a nickel matrix.
-    alt: Reflected-light microscope view showing many angular, faceted diamond grains embedded in a pale metallic matrix.
+    question: What makes a sharpening stone abrasive?
+    caption: Diamond grains in a metal matrix.
+    alt: Angular diamond grains embedded in a metal matrix, seen with an optical microscope.
+  - sample_id: BS-000002
+    responsive_id: homepage-diatom
+    question: What’s hiding in pool-filter powder?
+    caption: Fossil diatoms, seen with an electron microscope.
+    alt: Electron microscope view of a single diatom from pool filtration material.
+    contain_image: true
+  - sample_id: BS-000004
+    responsive_id: homepage-yarn
+    question: What does yarn look like up close?
+    caption: Acrylic fibers under an optical microscope.
+    alt: Fine acrylic yarn fibers viewed with oblique illumination in an optical microscope.

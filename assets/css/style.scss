@@ -160,7 +160,20 @@ main .youtube-facade__trigger:focus-visible {
   text-decoration: none;
 }
 
-.homepage-intro,
+.homepage-intro {
+  margin: 0 0 1.5rem;
+}
+
+.homepage-intro h1 {
+  margin: 0 0 0.55rem;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.homepage-intro p {
+  margin: 0;
+}
+
 .homepage-visit {
   display: none;
 }
@@ -209,95 +222,90 @@ main .youtube-facade__trigger:focus-visible {
 }
 
 .homepage-feature {
-  margin: 1.5rem 0;
-  padding: 1.15rem;
-  border-top: 4px solid #009de6;
-  border-bottom: 1px solid #d8dde2;
-  background: #f5f8fa;
+  margin: 2rem 0;
+}
+
+.homepage-feature-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-feature-heading h2 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+.homepage-feature-heading > a {
+  font-size: 0.875rem;
 }
 
 .homepage-feature-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-  align-items: center;
 }
 
-.homepage-feature-copy {
-  grid-column: 2;
-  grid-row: 1;
+.homepage-sample {
+  min-width: 0;
 }
 
-.homepage-feature-eyebrow {
-  margin: 0 0 0.35rem;
-  color: #8b1426;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.homepage-sample-link {
+  display: block;
+  text-decoration: none;
 }
 
-.homepage-feature h2 {
-  margin: 0 0 0.65rem;
-  color: #17242a;
-  font-size: 1.35rem;
-  line-height: 1.25;
+.homepage-sample h3 {
+  margin: 0.75rem 0 0.45rem;
+  color: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
 }
 
-.homepage-feature-copy > p:not(.homepage-feature-eyebrow) {
+.homepage-sample-link:hover h3,
+.homepage-sample-link:focus-visible h3 {
+  text-decoration-thickness: 0.14em;
+}
+
+.homepage-sample p {
   margin: 0;
-  color: #3f454a;
+  color: var(--color-text);
+  font-size: 0.875rem;
   line-height: 1.55;
 }
 
-.homepage-feature-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 1rem;
-  margin-top: 0.9rem;
-}
-
-.homepage-feature-actions a {
-  font-weight: 700;
-}
-
-.homepage-feature-media {
-  display: grid;
-  grid-column: 1;
-  grid-row: 1;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.6rem;
-}
-
-.homepage-feature-media figure {
-  min-width: 0;
-  margin: 0;
-}
-
-.homepage-feature-media .responsive-picture {
+.homepage-sample .responsive-picture {
   display: block;
   overflow: hidden;
   aspect-ratio: 1;
-  border: 1px solid #ccd3d7;
-  background: #eef2f3;
+  border-top: 3px solid #009de6;
 }
 
-.homepage-feature-media img {
+.homepage-sample img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.homepage-feature-media figcaption {
-  margin-top: 0.4rem;
-  color: #526067;
-  font-size: 0.72rem;
-  line-height: 1.35;
+.homepage-sample-contain .responsive-picture {
+  background: #303030;
 }
 
-.homepage-feature-media figcaption strong {
-  display: block;
-  color: #303a3f;
+.homepage-sample-contain img {
+  object-fit: contain;
+}
+
+.homepage-recruitment {
+  padding-top: 1rem;
+  border-top: 1px solid #d8dde2;
 }
 
 .teaching-summary {
@@ -3753,14 +3761,48 @@ body.trainer-portal-page {
   }
 }
 
+@media screen and (min-width: 1210px) {
+  .homepage-page > .wrapper {
+    display: grid;
+    width: min(1320px, 100%);
+    grid-template-columns: 270px minmax(0, 1fr);
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: "header content" "footer content";
+    column-gap: clamp(3rem, 6vw, 90px);
+    align-items: start;
+  }
+
+  .homepage-page .site-header {
+    grid-area: header;
+    position: static;
+    float: none;
+    width: auto;
+  }
+
+  .homepage-page .content-shell {
+    grid-area: content;
+    float: none;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .homepage-page .wrapper > footer {
+    grid-area: footer;
+    position: static;
+    float: none;
+    width: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid #d8dde2;
+  }
+}
+
 @media screen and (max-width: 1209px) {
-  .homepage-intro,
   .homepage-visit {
     display: block;
   }
 
   .homepage-intro {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .homepage-visit {
@@ -3880,20 +3922,25 @@ body.trainer-portal-page {
 
   .homepage-feature-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .homepage-feature-heading > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    min-height: 44px;
+  }
+
+  .homepage-sample-link {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
     gap: 1rem;
+    align-items: start;
   }
 
-  .homepage-feature-copy,
-  .homepage-feature-media {
-    grid-column: 1;
-  }
-
-  .homepage-feature-copy {
-    grid-row: 2;
-  }
-
-  .homepage-feature-media {
-    grid-row: 1;
+  .homepage-sample h3 {
+    margin-top: 0;
   }
 
   .teaching-summary-list > div {

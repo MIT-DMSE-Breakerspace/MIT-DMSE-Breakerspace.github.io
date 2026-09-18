@@ -131,7 +131,25 @@ homepage-diamond-micrograph:
   jpeg_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.jpg 400w, /assets/img/optimized/homepage-diamond-micrograph-800.jpg 800w
   webp_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.webp 400w, /assets/img/optimized/homepage-diamond-micrograph-800.webp 800w
   avif_srcset: /assets/img/optimized/homepage-diamond-micrograph-400.avif 400w, /assets/img/optimized/homepage-diamond-micrograph-800.avif 800w
-  sizes: "(max-width: 720px) 44vw, 155px"
+  sizes: "(max-width: 720px) 112px, (max-width: 1209px) calc((100vw - 160px) / 3), (max-width: 1450px) calc((94vw - 430px) / 3), 305px"
+
+homepage-diatom:
+  width: 1800
+  height: 1075
+  fallback: /assets/img/optimized/homepage-diatom-800.jpg
+  jpeg_srcset: /assets/img/optimized/homepage-diatom-400.jpg 400w, /assets/img/optimized/homepage-diatom-800.jpg 800w
+  webp_srcset: /assets/img/optimized/homepage-diatom-400.webp 400w, /assets/img/optimized/homepage-diatom-800.webp 800w
+  avif_srcset: /assets/img/optimized/homepage-diatom-400.avif 400w, /assets/img/optimized/homepage-diatom-800.avif 800w
+  sizes: "(max-width: 720px) 112px, (max-width: 1209px) calc((100vw - 160px) / 3), (max-width: 1450px) calc((94vw - 430px) / 3), 305px"
+
+homepage-yarn:
+  width: 1800
+  height: 1800
+  fallback: /assets/img/optimized/homepage-yarn-800.jpg
+  jpeg_srcset: /assets/img/optimized/homepage-yarn-400.jpg 400w, /assets/img/optimized/homepage-yarn-800.jpg 800w
+  webp_srcset: /assets/img/optimized/homepage-yarn-400.webp 400w, /assets/img/optimized/homepage-yarn-800.webp 800w
+  avif_srcset: /assets/img/optimized/homepage-yarn-400.avif 400w, /assets/img/optimized/homepage-yarn-800.avif 800w
+  sizes: "(max-width: 720px) 112px, (max-width: 1209px) calc((100vw - 160px) / 3), (max-width: 1450px) calc((94vw - 430px) / 3), 305px"
 
 instron-bluehill-home:
   width: 1080

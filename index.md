@@ -1,11 +1,13 @@
 ---
 layout: default
 title: DMSE Breakerspace
+homepage: true
 ---
 
-<h1 id="dmse-breakerspace" class="visually-hidden">DMSE Breakerspace</h1>
-
-<p class="homepage-intro">A materials exploration lab and lounge for MIT undergraduates.</p>
+<div class="homepage-intro">
+  <h1 id="dmse-breakerspace">Explore the materials around you.</h1>
+  <p>Look closer, identify materials, and test how they behave.</p>
+</div>
 <p class="homepage-visit"><a href="#hours-and-access">Room {{ site.data.lab.room }}</a> · {{ site.data.lab.hours }}</p>
 
 <nav class="homepage-actions" id="start-here" aria-label="Get started">
@@ -21,4 +23,4 @@ title: DMSE Breakerspace
 
 {% include homepage-feature.html %}
 
-[Interested in becoming a Breakerspace Lab Assistant?]({{ "/about.html#meet-the-team" | relative_url }})
+<p class="homepage-recruitment"><a href="{{ "/about.html#meet-the-team" | relative_url }}">Interested in becoming a Breakerspace Lab Assistant?</a></p>
