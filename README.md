@@ -45,7 +45,7 @@ The current top-level navigation is defined in `_data/navigation.yml`:
 11. Teach With Us
 12. About
 
-Public pages share a centered desktop frame up to 1320px wide, with consistent sidebar and content alignment. Ordinary prose is capped at 72ch; calendars, tables, media, and task grids can use the full content width. The footer follows navigation in the desktop sidebar. `assets/js/site-layout.js` keeps that whole block sticky only when its measured height fits the window, including after font loading, resizing, and text enlargement. Shorter windows scroll normally. Without JavaScript, the same desktop frame remains usable without sticky behavior.
+Public pages share a centered desktop frame up to 1320px wide, with consistent sidebar and content alignment. Ordinary prose, tables, calendars, and other content follow the same content column, up to 960px wide. Avoid automatic width caps on individual paragraphs and lists: the narrower text alongside wider tables and calendars made the pages feel disconnected. Any future reading-width adjustment should be designed for a whole page or coherent section. The footer follows navigation in the desktop sidebar. `assets/js/site-layout.js` keeps that whole block sticky only when its measured height fits the window, including after font loading, resizing, and text enlargement. Shorter windows scroll normally. Without JavaScript, the same desktop frame remains usable without sticky behavior.
 
 Phones and tablets use a compact, labeled Menu and place the footer after main content in both visual and keyboard order. The single footer moves back to that position for printing, too. The destinations remain the same across layouts. Standalone trainer and printable Quick Guide layouts retain their separate shells.
 

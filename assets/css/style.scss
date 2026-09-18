@@ -3751,14 +3751,6 @@ body.trainer-portal-page {
   }
 }
 
-@media screen {
-  /* Keep prose readable while media, tables, and task grids use the full frame. */
-  .public-site main :where(p:not([class]):not(:has(img, picture, video, iframe, svg)), ul:not([class]), ol:not([class]), dl:not([class]), blockquote, .guidance-note, .teaching-summary-lede):not(nav *) {
-    box-sizing: border-box;
-    max-width: 72ch;
-  }
-}
-
 @media screen and (min-width: 1210px) {
   .public-site > .wrapper {
     display: grid;
