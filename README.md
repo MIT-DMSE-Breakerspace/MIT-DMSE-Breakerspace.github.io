@@ -47,7 +47,7 @@ The current top-level navigation is defined in `_data/navigation.yml`:
 
 Phones and tablets use a compact, labeled Menu; wide screens retain the sidebar. The destinations remain the same across layouts.
 
-The homepage uses six compact links matching the main navigation, followed by a sample-library feature and a short recruitment link. Phones and tablets also show a brief introduction and room/hours summary. The shared footer provides location, arrival, and hours on public pages; `_data/lab.yml` supplies those details and the hours on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
+The homepage opens with a brief invitation and six compact links matching the main navigation, followed by three curated sample-library previews and a short recruitment link. Edit the preview selection and copy in `_data/homepage-feature.yml`; the linked sample records remain managed by the publication importer. The desktop homepage has a wider image area and its footer follows the sidebar navigation. Phones and tablets also show a room/hours summary. The shared footer provides location, arrival, and hours on public pages; `_data/lab.yml` supplies those details and the hours on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
 
 ## Operational Content Status
 
