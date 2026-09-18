@@ -5,19 +5,9 @@ title: Reserve Instrument Time
 
 # Reserve Instrument Time
 
-Book independent instrument time after completing the instrument's [in-person training]({{ "/training.html" | relative_url }}).
-
 <p class="reservation-primary"><a href="https://breakerspace.libcal.com/space/168610">Book instrument time in LibCal <span aria-hidden="true">&rarr;</span></a></p>
 
 [Screen-reader and keyboard-friendly booking](https://breakerspace.libcal.com/r/accessible?lid=19797&gid=41631).
-
-For a class or organized activity, [request the lab or lounge](#whole-lab-reservations).
-
-## Before You Book
-
-* Check the [instrument page]({{ "/instruments/" | relative_url }}) for sample limits, preparation, and the operating guide.
-* Use [non-hazardous samples]({{ "/safety.html" | relative_url }}). Ask staff before booking if a sample is unusual, difficult to prepare, outside your training, or uncertain in safety or instrument compatibility.
-* Aim for **one hour or less**, including setup, sample loading, measurement, [saving data]({{ "/resources.html#files-and-data" | relative_url }}), cleanup, and shutdown. Ask staff before booking a longer uninterrupted session if your method requires it.
 
 ## How To Book In LibCal
 
@@ -28,16 +18,11 @@ For a class or organized activity, [request the lab or lounge](#whole-lab-reserv
 
 ## Reservation Rules {#reservation-rules}
 
+* **Aim for one hour or less**, including setup and cleanup. Ask staff before booking a longer uninterrupted session if your method requires it.
 * **Stay in the lab** throughout your reserved session.
 * **Arrive on time.** If the instrument is unoccupied 10 minutes after your reservation starts, you lose priority and it becomes first come, first served. You may use it only if it remains available.
 * **Finish on time.** Complete data export, cleanup, and shutdown or handoff before the next reservation begins.
 * **Cancel unused time** as soon as possible using the management link in your LibCal confirmation. If you cannot find it, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
-
-## Booking Problems {#problems-at-the-time-of-your-booking}
-
-* **Tap access or workstation login:** follow [Access And Account Problems]({{ "/resources.html#access-and-account-problems" | relative_url }}).
-* **Instrument unavailable, damaged, or behaving unexpectedly:** stop and find a staff member, ask in `#breakerspace-help` on [Slack](https://mit-dmse-breakerspace.slack.com), or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
-* **Settings, results, or a staff consultation:** see [Project And Method Support]({{ "/resources.html#project-and-method-support" | relative_url }}).
 
 ## Reserve The Lab Or Lounge {#whole-lab-reservations}
 
