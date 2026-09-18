@@ -80,7 +80,7 @@ The cross-site queue records unresolved decisions: charges/consumables, access-p
 
 ## Calendar Editorial Review — September 18
 
-Prepared in `calendar.md` on `codex/calendar-editorial-review`; not yet published. The opening now gives the training-registration action and a short, separate instrument-booking link. The Calendar heading precedes the embed so `#calendar` reaches the schedule. One availability guide replaces the repeated explanations and training/reservation reminder, retaining shared opening hours, drop-in support, the full lab-reservation interval including setup/cleanup, and the lounge-only distinction. Existing fragments, destinations, the shared calendar include, and other public pages are unchanged. No policy question remains from this edit.
+The `calendar.md` revision is tracked in [PR #44](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/44). The opening now gives the training-registration action and a short, separate instrument-booking link. The Calendar heading precedes the embed so `#calendar` reaches the schedule. One availability guide replaces the repeated explanations and training/reservation reminder, retaining shared opening hours, drop-in support, the full lab-reservation interval including setup/cleanup, and the lounge-only distinction. Existing fragments, destinations, the shared calendar include, and other public pages are unchanged. No policy question remains from this edit.
 
 The live Calendar review at 390×844 and 1440×1000 found that LibCal loads at both sizes, but the phone's seven-column week view clips event titles and the full-calendar fallback sits below the 600px embed. Track that existing shared-embed issue in the usability checklist; it is outside this page-copy edit.
 
