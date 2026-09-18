@@ -6,11 +6,11 @@ permalink: /data-tools/
 
 # Data Exploration Tools
 
-Use these browser-based workspaces to look closely at characterization data, try common processing steps, and learn how those choices affect what you see. Each tool opens on the MIT-hosted Carbonio server in a new browser tab.
+Use these tools to open and process characterization data. Each tool opens on the MIT-hosted Carbonio server in a new browser tab.
 
 <div class="data-tool-device-note">
   <strong>Laptop or desktop computer recommended</strong>
-  <p>These interactive workspaces are designed for a larger screen and work best with a keyboard and mouse or trackpad. You will need to select data files stored on your device. Each tool loads a reference library; the Raman and XRD libraries are especially large, so allow extra time on a slower connection.</p>
+  <p>These interactive workspaces are designed for a larger screen and work best with a keyboard and mouse or trackpad. You will need to select data files stored on your device.</p>
 </div>
 
 ## Choose a tool
@@ -52,16 +52,6 @@ Use these browser-based workspaces to look closely at characterization data, try
     <a class="data-tool-primary-link" href="https://carbonio.mit.edu/tools/xrd-plotter/" target="_blank" rel="noopener">Open the XRD tool on Carbonio (new tab) <span aria-hidden="true">&nearr;</span></a>
   </article>
 </div>
-
-## How to use these tools
-
-1. Start with an example or a familiar dataset whose important features you already understand.
-2. Make one processing change at a time.
-3. Compare the processed result with the original rather than replacing it.
-4. Record the settings and sequence you used.
-5. Treat automated fitting or reference matching as evidence to evaluate, not a final identification.
-
-<p class="guidance-note"><strong>Interpret carefully:</strong> These tools are intended for teaching, exploration, and preliminary review. They do not replace validated research workflows, complete reference databases, advanced quantitative-analysis software, or expert review.</p>
 
 ## Hosting and maintenance
 

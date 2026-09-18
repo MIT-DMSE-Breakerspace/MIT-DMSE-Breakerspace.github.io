@@ -1114,17 +1114,23 @@ body.trainer-portal-page {
 
 .data-tool-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   gap: 1rem;
   margin: 0.75rem 0 2rem;
 }
 
 .data-tool-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 1rem;
   border: 1px solid #d8dde2;
   border-top: 4px solid #009de6;
   background: #fff;
+}
+
+.data-tool-card .data-tool-primary-link {
+  margin-top: auto;
 }
 
 .data-tool-card-future {
