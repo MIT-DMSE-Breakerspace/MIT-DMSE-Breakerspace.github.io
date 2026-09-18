@@ -22,9 +22,9 @@ This README is the top-level orientation for the site: its direction, content st
 
 ## Continuing The September Website Revisions
 
-Start with the [2026-09-17 site revision handoff](_staff/site-revision-handoff-2026-09-17.md) for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
+Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through September 18, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
 
-Compact mobile navigation, prominent online-training and session actions, shorter training preparation/access guidance, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. **Further instrument-page renovations are paused pending owner feedback.** Continue with small, reversible changes and ordinary user feedback; organized usability trials are not required.
+Compact mobile navigation, prominent online-training and session actions, shorter training preparation/access guidance, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. The shorter homepage, sample previews, wider shared layout, responsive footer, and consistent content-width correction are also published through PR #42. The owner will review the live pages; a complete page-by-page layout review is still open. **Further instrument-page renovations are paused pending owner feedback.** Continue with small, reversible changes and ordinary user feedback; organized usability trials are not required.
 
 ## Current Site Direction
 
@@ -57,7 +57,7 @@ The homepage opens with a brief invitation and six compact links matching the ma
 | --- | --- |
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
 | Calendar | Implemented at `calendar.md`, with an embedded schedule for training registration, Lab Assistant on duty hours, and reserved activities or availability notices. |
-| Location and arrival | Implemented on the homepage: Building 8, Room 8-102A, entered through the Breakerspace Lounge. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
+| Location and arrival | Shared footer: Building 8, Room 8-102A, entered through the Breakerspace Lounge, with room/hours also summarized on the mobile homepage. `_data/lab.yml` is the shared source. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
 | Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages. The September 17 finder update groups them by plain-language purpose, leads with familiar names, explains useful outcomes, and explicitly lists Phenom XL elemental analysis (EDS). |
 | Training | Implemented at `training.md`, with separate prominent one-time online-record and in-person-session actions, short Before/After Your Session guidance, support links, and the calendar. The early-fall notice is removed because sessions are posted. The September copy/navigation work did not change the Qualtrics survey or access policy; the survey's prior validation remains recorded in `_admin/`. |
 | Reservations | Implemented at `reservations.md`, including direct calendars, a three-day advance booking window, the one-hour initial norm, reservation ownership, the 10-minute late rule, cancellations, handoffs, guests, problem routing, and staff-mediated whole-lab reservations for teaching and organized activities. |
