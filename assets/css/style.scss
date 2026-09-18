@@ -383,14 +383,12 @@ main .youtube-facade__trigger:focus-visible {
 }
 
 .reservation-primary,
-.training-primary,
-.training-session-action {
+.training-primary {
   margin: 1.25rem 0 1.75rem;
 }
 
 .reservation-primary a,
-.training-primary a,
-.training-session-action a {
+.training-primary a {
   display: inline-block;
   padding: 0.7rem 0.9rem;
   border: 2px solid #007aa8;
@@ -404,22 +402,71 @@ main .youtube-facade__trigger:focus-visible {
 .reservation-primary a:hover,
 .reservation-primary a:focus-visible,
 .training-primary a:hover,
-.training-primary a:focus-visible,
-.training-session-action a:hover,
-.training-session-action a:focus-visible {
+.training-primary a:focus-visible {
   background: #fff;
   color: #007aa8;
 }
 
 .reservation-primary a:focus-visible,
-.training-primary a:focus-visible,
-.training-session-action a:focus-visible {
+.training-primary a:focus-visible {
   outline-color: #17242a;
 }
 
-.training-session-action a {
-  background: #fff;
-  color: var(--color-link);
+.training-sessions {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 3px solid #009de6;
+  border-bottom: 1px solid #d8dde2;
+}
+
+.training-sessions-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.training-sessions h3 {
+  margin: 0;
+}
+
+.training-sessions-note {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.training-sessions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.training-sessions-list li {
+  padding: 0.4rem 0;
+  line-height: 1.4;
+}
+
+.training-sessions-list li + li {
+  border-top: 1px solid #e7ebee;
+}
+
+.training-sessions-list a {
+  font-weight: 700;
+}
+
+.training-session-date {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.training-sessions-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.75rem 0 0;
 }
 
 .table-scroll {
@@ -3960,8 +4007,7 @@ body.trainer-portal-page {
   }
 
   .reservation-primary a,
-  .training-primary a,
-  .training-session-action a {
+  .training-primary a {
     display: block;
     text-align: center;
   }

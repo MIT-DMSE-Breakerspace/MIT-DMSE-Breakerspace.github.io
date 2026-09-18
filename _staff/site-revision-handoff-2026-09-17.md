@@ -10,7 +10,7 @@ The task-based site structure is sound. The priority is helping MIT undergraduat
 
 **Further individual instrument-page renovations are paused while the owner gathers feedback.** FTIR is the only published pilot of the new reading order. Do not propagate it, revise another instrument's presentation, or replace the shared template's existing order and educational-length guidance until the owner resumes that work. This pause concerns the page-renovation stream; it does not cancel separately authorized training-guide work or necessary safety corrections.
 
-The owner considers the shortened Get Trained page appropriate in length for its job. Avoid reopening it for further compression without a concrete problem. The early-fall notice was removed because the calendar has sessions, with more on the way; do not restore it as a generic placeholder.
+The owner approved a further Get Trained revision on September 18 to focus on registration: a short training-process overview, the one-time online-record action, and a compact live list of upcoming sessions. Preparation, access-setup, and project/course support sections were removed by request; do not restore them as generic onboarding guidance. Access setup is conveyed during training, and instrument-page review is not expected preparation. The early-fall notice was removed because the calendar has sessions, with more on the way; do not restore it as a generic placeholder.
 
 There are no resources for organized usability trials. Use automated checks, proportionate phone/desktop inspection, and feedback from normal lab interactions. The original review's proposed recruited-user testing and 20/60/20 effort split were recommendations, not adopted requirements. Routine fixes do not need a new testing program.
 
@@ -78,6 +78,14 @@ The next non-instrument copy candidates are Get Help's access/files explanations
 
 The cross-site queue records unresolved decisions: charges/consumables, access-processing expectations, accessible arrival/accommodations, and what supervised course participants may do before independent-use training. Obtain actual policy from the operational owner before writing those answers. It also tracks draft Quick Guide labels, public editorial to-do text, and reusable course/sample examples. Do not treat an absence found in the review as proof of a policy or a completed remediation.
 
+## Training Registration Review — September 18
+
+The owner approved the local preview for publication. `training.md` now opens with the arc from one-time online training through hands-on instrument training to independent use. The no-session/registration-help contact note follows the session-length and participant-limit explanation. The instrument-exploration bullet and Before Your Session, After Your Session, and Project And Course Support sections are removed. Those removed fragments had no remaining repository references; the registration and upcoming-session fragments remain.
+
+`_includes/training-sessions.html` and `assets/js/training-sessions.js` replace the training page's large calendar with five upcoming events from the owner-supplied LibCal widget URL, filtered to Instrument Training (calendar `19408`, category `69558`). The public endpoint permits cross-origin requests. The script renders only event links and date text using the site's typography; it does not import vendor styles or arbitrary HTML. Static links to all training sessions and the full Calendar page remain usable without JavaScript or if the feed fails. The full calendar on `calendar.md` is retained.
+
+Local validation passed: Jekyll build, HTML/internal links, JavaScript syntax, Training-page Pa11y, desktop and 320/390px phone inspection, and temporary fixtures for empty, failed, and no-JavaScript states. The live feed loaded five sessions; the list wrapped without horizontal overflow. No event registration was submitted. The owner reviewed the concise final page and authorized push, pull request, merge, and deployment. Consult the associated pull request and GitHub Pages run for release status.
+
 ## Calendar Editorial Review — September 18
 
 The `calendar.md` revision is tracked in [PR #44](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/44). The opening now gives the training-registration action and a short, separate instrument-booking link. The Calendar heading precedes the embed so `#calendar` reaches the schedule. One availability guide replaces the repeated explanations and training/reservation reminder, retaining shared opening hours, drop-in support, the full lab-reservation interval including setup/cleanup, and the lounge-only distinction. Existing fragments, destinations, the shared calendar include, and other public pages are unchanged. No policy question remains from this edit.
@@ -108,7 +116,7 @@ Jekyll build, Reservations-only HTML/internal-link checks, and `git diff --check
 | --- | --- |
 | Shared layout/navigation/footer | `_layouts/default.html`, `assets/js/site-layout.js`, `assets/js/site-navigation.js`, `assets/css/style.scss`; destinations remain in `_data/navigation.yml` |
 | Homepage and visit details | `index.md`, `_data/homepage-feature.yml`, `_includes/homepage-feature.html`, `_data/responsive-images.yml`, `_data/lab.yml` |
-| Training/calendar | `training.md`, `calendar.md`, `_includes/breakerspace-calendar.html` |
+| Training/calendar | `training.md`, `calendar.md`, `_includes/training-sessions.html`, `assets/js/training-sessions.js`, `_includes/breakerspace-calendar.html` |
 | FTIR pilot | `instruments/ftir.md`, pilot styles in `assets/css/style.scss`, exception in `instruments/readme.md` |
 | Instrument finder | `instruments/index.md` |
 | Planning and history | This handoff, the archived review, `_staff/site-todo.md`, `instruments/staff-todo.md` |
