@@ -1246,16 +1246,6 @@ body.trainer-portal-page {
   border: 0;
 }
 
-@media screen and (min-width: 1210px) {
-  body.data-tool-workspace .wrapper {
-    width: min(1500px, calc(100vw - 5rem));
-  }
-
-  body.data-tool-workspace .content-shell {
-    width: calc(100% - 320px);
-  }
-}
-
 @media screen and (max-width: 720px) {
   .data-tool-grid,
   .data-tool-summary {
@@ -3761,32 +3751,57 @@ body.trainer-portal-page {
   }
 }
 
+@media screen {
+  /* Keep prose readable while media, tables, and task grids use the full frame. */
+  .public-site main :where(p:not([class]):not(:has(img, picture, video, iframe, svg)), ul:not([class]), ol:not([class]), dl:not([class]), blockquote, .guidance-note, .teaching-summary-lede):not(nav *) {
+    box-sizing: border-box;
+    max-width: 72ch;
+  }
+}
+
 @media screen and (min-width: 1210px) {
-  .homepage-page > .wrapper {
+  .public-site > .wrapper {
     display: grid;
     width: min(1320px, 100%);
     grid-template-columns: 270px minmax(0, 1fr);
     grid-template-rows: min-content 1fr;
-    grid-template-areas: "header content" "footer content";
+    grid-template-areas: "sidebar content" "footer content";
     column-gap: clamp(3rem, 6vw, 90px);
     align-items: start;
   }
 
-  .homepage-page .site-header {
-    grid-area: header;
+  .public-site > .wrapper.has-sidebar-footer {
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar content";
+  }
+
+  .site-sidebar {
+    display: flow-root;
+    grid-area: sidebar;
+    --sidebar-top: 50px;
+  }
+
+  /* Enabled only when the measured sidebar fits, including at larger text sizes. */
+  .site-sidebar.is-sticky {
+    position: sticky;
+    top: var(--sidebar-top);
+  }
+
+  .public-site .site-header {
     position: static;
     float: none;
     width: auto;
   }
 
-  .homepage-page .content-shell {
+  .public-site .content-shell {
     grid-area: content;
     float: none;
+    min-width: 0;
     width: auto;
     padding-bottom: 0;
   }
 
-  .homepage-page .wrapper > footer {
+  .public-site .site-footer {
     grid-area: footer;
     position: static;
     float: none;
@@ -3871,13 +3886,6 @@ body.trainer-portal-page {
     box-sizing: border-box;
     min-height: 44px;
     padding: 0.55rem;
-  }
-}
-
-@media screen and (min-width: 1210px) and (max-height: 850px) {
-  header,
-  footer {
-    position: static;
   }
 }
 

@@ -45,9 +45,11 @@ The current top-level navigation is defined in `_data/navigation.yml`:
 11. Teach With Us
 12. About
 
-Phones and tablets use a compact, labeled Menu; wide screens retain the sidebar. The destinations remain the same across layouts.
+Public pages share a centered desktop frame up to 1320px wide, with consistent sidebar and content alignment. Ordinary prose is capped at 72ch; calendars, tables, media, and task grids can use the full content width. The footer follows navigation in the desktop sidebar. `assets/js/site-layout.js` keeps that whole block sticky only when its measured height fits the window, including after font loading, resizing, and text enlargement. Shorter windows scroll normally. Without JavaScript, the same desktop frame remains usable without sticky behavior.
 
-The homepage opens with a brief invitation and six compact links matching the main navigation, followed by three curated sample-library previews and a short recruitment link. Edit the preview selection and copy in `_data/homepage-feature.yml`; the linked sample records remain managed by the publication importer. The desktop homepage has a wider image area and its footer follows the sidebar navigation. Phones and tablets also show a room/hours summary. The shared footer provides location, arrival, and hours on public pages; `_data/lab.yml` supplies those details and the hours on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
+Phones and tablets use a compact, labeled Menu and place the footer after main content in both visual and keyboard order. The single footer moves back to that position for printing, too. The destinations remain the same across layouts. Standalone trainer and printable Quick Guide layouts retain their separate shells.
+
+The homepage opens with a brief invitation and six compact links matching the main navigation, followed by three curated sample-library previews and a short recruitment link. Edit the preview selection and copy in `_data/homepage-feature.yml`; the linked sample records remain managed by the publication importer. Phones and tablets also show a room/hours summary. The shared footer provides location, arrival, and hours on public pages; `_data/lab.yml` supplies those details and the hours on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
 
 ## Operational Content Status
 

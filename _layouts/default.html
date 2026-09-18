@@ -12,27 +12,29 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body{% if page.homepage %} class="homepage-page"{% elsif page.data_tool_workspace %} class="data-tool-workspace"{% endif %}>
+  <body class="public-site{% if page.homepage %} homepage-page{% endif %}">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
-      <header class="site-header">
+      <div class="site-sidebar">
+        <header class="site-header">
 
-        <a class="site-logo" href="{{ "/" | relative_url }}">
-        <img src="{{ "/assets/img/logo_text.svg" | relative_url }}" width="448" height="83" decoding="async" alt="DMSE Breakerspace home" />
-        </a>
-        <br class="site-header-spacer">
-        <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
+          <a class="site-logo" href="{{ "/" | relative_url }}">
+            <img src="{{ "/assets/img/logo_text.svg" | relative_url }}" width="448" height="83" decoding="async" alt="DMSE Breakerspace home" />
+          </a>
+          <br class="site-header-spacer">
+          <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
 
-        <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
-       
-        <nav class="site-nav" id="site-navigation" aria-label="Primary">
-          {% for item in site.data.navigation %}
-          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
-          {% endfor %}
-        </nav>
-        <br class="site-header-spacer">
+          <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
 
-      </header>
+          <nav class="site-nav" id="site-navigation" aria-label="Primary">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+            {% endfor %}
+          </nav>
+          <br class="site-header-spacer">
+
+        </header>
+      </div>
       <div class="content-shell">
       <main id="main-content" tabindex="-1">
 
@@ -40,7 +42,7 @@
 
       </main>
       </div>
-      <footer>
+      <footer class="site-footer">
         <p class="lab-visit-details"{% if page.url == "/" %} id="hours-and-access"{% endif %}>
           <strong>Building {{ site.data.lab.building }} · Room {{ site.data.lab.room }}</strong><br>
           {{ site.data.lab.arrival }}<br>
@@ -55,6 +57,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/site-navigation.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/site-layout.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/accessibility.js" | relative_url }}"></script>
   </body>
