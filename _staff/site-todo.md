@@ -1,6 +1,6 @@
 # Breakerspace Website To-Do
 
-Last updated: 2026-09-17 for the website usability stream; other work retains its dated review records below.
+Last updated: 2026-09-18 for the website usability stream; other work retains its dated review records below.
 
 This is the canonical unlisted list for cross-site launch work, policy decisions, and ongoing maintenance. It is organized by operational deadline rather than by page.
 
@@ -27,7 +27,7 @@ Start with the [September 17 revision handoff](site-revision-handoff-2026-09-17.
 * [ ] Reorder Reserve Time around individual instrument booking; shorten or move the whole-lab/lounge material and link to one authoritative request procedure. Recommended next non-instrument copy task.
 * [ ] Simplify Get Help's access and files guidance to user actions and useful expectations; remove internal server/reboot administration while retaining shared-folder privacy guidance.
 * [ ] Consolidate Teach With Us Quick Actions and planning details, especially repeated whole-lab requests; preserve the opening partnership summary and instructor route.
-* [ ] Revisit the homepage opening, location/hours prominence, and task emphasis after the compact navigation change. The original phone-layout measurements predate that change.
+* [x] Revisit the homepage opening, location/hours prominence, and task emphasis after the compact navigation change (September 18). Replace the repeated title/intro and verbose task rows with six compact links matching navigation labels; retain a short mobile introduction, bring the sample feature and images forward, and place the recruitment invitation after it. Move arrival details and hours into the shared footer, with a compact mobile homepage summary. `_data/lab.yml` is the shared source for these details and for Calendar/Lounge hours; current hours remain 8 AM–midnight daily. Preserve the existing homepage anchors and keep training/safety policy on its task pages.
 * [ ] Recheck earlier presentation candidates when the relevant pages are in scope: intermediate-width reflow, body-text readability, focus-state layout shift, fragile floated figures, and a useful homepage example/inspiration block. Verify what remains after existing fixes rather than treating the old July list as a fresh redesign mandate.
 * [ ] Decide how links indicate provisional Quick Guide status before users click. Readiness remains governed by the existing guide inventories and release gates; the page-renovation pause does not approve or cancel separate guide work.
 * [ ] Remove author-facing work-in-progress explanation from the public pumpkin showcase and the Instron annotated-curve promise when those pages are next in scope. Preserve scientific limitations and keep unfinished work in staff checklists. Instron presentation edits remain subject to the renovation pause.

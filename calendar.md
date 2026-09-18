@@ -21,6 +21,6 @@ Calendar entries use these text labels so their meaning does not depend on color
 
 ## Understanding Lab Availability
 
-The Breakerspace instrument lab and lounge are normally open from 8 AM to midnight, seven days/week. **Lab Assistant on duty** entries identify times when drop-in support is available; they are not the lab's opening hours.
+The Breakerspace instrument lab and lounge are normally open {{ site.data.lab.hours }}. **Lab Assistant on duty** entries identify times when drop-in support is available; they are not the lab's opening hours.
 
 During a lab-only or combined lab-and-lounge reservation, individual instrument reservations are unavailable across the lab for the complete listed period, including setup and cleanup. A lounge-only reservation does not block instrument calendars, but Room 8-102 is unavailable. Even when no general lab reservation appears, use the individual instrument calendar before planning independent work.

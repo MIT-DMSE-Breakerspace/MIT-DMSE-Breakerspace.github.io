@@ -41,6 +41,11 @@
       </main>
       </div>
       <footer>
+        <p class="lab-visit-details"{% if page.url == "/" %} id="hours-and-access"{% endif %}>
+          <strong>Building {{ site.data.lab.building }} · Room {{ site.data.lab.room }}</strong><br>
+          {{ site.data.lab.arrival }}<br>
+          {{ site.data.lab.hours }}
+        </p>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
