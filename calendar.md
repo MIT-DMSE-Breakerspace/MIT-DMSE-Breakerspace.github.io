@@ -15,7 +15,7 @@ Open a training event to check prerequisites, see available places, and register
 
 ## Understanding Lab Availability
 
-The instrument lab and lounge are normally open {{ site.data.lab.hours }}.
+The instrument lab and lounge are accessible **{{ site.data.lab.hours_description }}** to users with approved access.
 
 * **Lab Assistant on duty:** Drop-in project help is available during the listed hours.
 * **Lab reserved for activity** or **Lab and lounge reserved for activity:** All instruments are unavailable for individual reservations for the full listed period, including setup and cleanup.

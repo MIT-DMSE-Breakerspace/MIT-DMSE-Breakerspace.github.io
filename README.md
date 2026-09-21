@@ -1,6 +1,6 @@
 # MIT DMSE Breakerspace Website
 
-Last updated: 2026-09-18
+Last updated: 2026-09-21
 
 This repository is the canonical source for the MIT DMSE Breakerspace production website at `breakerspace.mit.edu`.
 
@@ -22,7 +22,7 @@ This README is the top-level orientation for the site: its direction, content st
 
 ## Continuing The September Website Revisions
 
-Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through September 18, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
+Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through September 21, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
 
 Compact mobile navigation, prominent online-training and session actions, shorter training preparation/access guidance, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. The shorter homepage, sample previews, wider shared layout, responsive footer, and consistent content-width correction are also published through PR #42. The owner will review the live pages; a complete page-by-page layout review is still open. **Further instrument-page renovations are paused pending owner feedback.** Continue with small, reversible changes and ordinary user feedback; organized usability trials are not required.
 
@@ -49,7 +49,7 @@ Public pages share a centered desktop frame up to 1320px wide, with consistent s
 
 Phones and tablets use a compact, labeled Menu and place the footer after main content in both visual and keyboard order. The single footer moves back to that position for printing, too. The destinations remain the same across layouts. Standalone trainer and printable Quick Guide layouts retain their separate shells.
 
-The homepage opens with a brief invitation and six compact links matching the main navigation, followed by three curated sample-library previews and a short recruitment link. Edit the preview selection and copy in `_data/homepage-feature.yml`; the linked sample records remain managed by the publication importer. Phones and tablets also show a room/hours summary. The shared footer provides location, arrival, and hours on public pages; `_data/lab.yml` supplies those details and the hours on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
+The homepage opens with a brief invitation and six compact links matching the main navigation, followed by three curated sample-library previews and a short recruitment link. Edit the preview selection and copy in `_data/homepage-feature.yml`; the linked sample records remain managed by the publication importer. Phones and tablets also show a location and access summary. The shared footer provides location, arrival, and the lounge and lab access statement: **24/7/365**. `_data/lab.yml` supplies the shared visit details, the compact access statement, and its full wording on Calendar and Lounge. Detailed policies and workflows belong on their task-specific pages.
 
 ## Operational Content Status
 
@@ -57,7 +57,7 @@ The homepage opens with a brief invitation and six compact links matching the ma
 | --- | --- |
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
 | Calendar | Implemented at `calendar.md`, with an embedded schedule for training registration, Lab Assistant on duty hours, and reserved activities or availability notices. |
-| Location and arrival | Shared footer: Building 8, Room 8-102A, entered through the Breakerspace Lounge, with room/hours also summarized on the mobile homepage. `_data/lab.yml` is the shared source. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
+| Location and arrival | Shared footer: Building 8, Room 8-102A, entered through the Breakerspace Lounge, with location and 24/7/365 access also summarized on the mobile homepage. `_data/lab.yml` is the shared source. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
 | Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages. The September 17 finder update groups them by plain-language purpose, leads with familiar names, explains useful outcomes, and explicitly lists Phenom XL elemental analysis (EDS). |
 | Training | Implemented at `training.md`, with a short process overview, prominent one-time online-record action, and five upcoming Instrument Training sessions loaded live from LibCal. Links open the full training schedule and Calendar page. Preparation, access, and project/course guidance were removed from this registration page following owner review; access setup is explained during training. The Qualtrics survey and access policy are unchanged; prior survey validation remains recorded in `_admin/`. |
 | Reservations | Implemented at `reservations.md`, including direct calendars, a three-day advance booking window, the one-hour initial norm, reservation ownership, the 10-minute late rule, cancellations, handoffs, guests, problem routing, and staff-mediated whole-lab reservations for teaching and organized activities. |
@@ -101,7 +101,7 @@ Use one source of truth for each kind of work:
 * `_staff/site-todo.md`: the three-tier launch plan, cross-site policy decisions, accessibility follow-up, and ongoing operational maintenance.
 * `_staff-training/README.md`: trainer-facing guide model, shared trainer references, and the canonical-SOP/Quick-Guide/staff-guide relationship. Start there for any staff-training work.
 * `_staff/quick-guides/README.md`: locked two-page Quick Guide production procedure, reusable canonical-SOP/Level-1-control-map template, and instrument-specific image/callout work orders.
-* `_admin/README.md`: unpublished LibCal and Qualtrics administration, audit, and maintenance records.
+* `_admin/README.md`: unpublished LibCal and Qualtrics administration, audit, and maintenance records, including the [24/7/365 LibCal hours checklist](_admin/libcal-247365-hours-checklist.md).
 * `instruments/readme.md`: instrument-page architecture, migration status, Quick Guide contract and scope rules, shared includes, and authoring conventions.
 * `instruments/staff-todo.md`: unpublished instrument-specific missing images, workflows, examples, exercises, and technical review items.
 * `showcases/README.md`: Materials Showcase purpose, source model, editorial workflow, cadence, automation boundaries, and authoring contract.
