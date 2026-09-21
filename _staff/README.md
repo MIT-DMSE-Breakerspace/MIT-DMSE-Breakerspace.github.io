@@ -24,4 +24,6 @@ The redesigned site is live, every instrument has a consolidated operating page,
 
 For website usability, the September mobile-navigation, Training, FTIR pilot, and instrument-finder changes are published. **Further individual instrument-page renovations are paused while the owner gathers feedback.** Use small, reversible edits and normal lab feedback; do not require organized user trials. The [September usability queue](site-todo.md#september-2026-site-usability) identifies remaining work without reopening the completed changes.
 
+The September 21 Safety revision and sticky mobile logo/Menu update are published through PR #53 / `9443316`. The [handoff](site-revision-handoff-2026-09-17.md) records release checks, session cleanup, the separate uncommitted documentation audit, and the remaining Pages-compiler maintenance item. Continue with owner feedback; Teach With Us remains the next non-instrument copy candidate. Use analysis, a local draft, manual owner review, and explicit publication approval for subsequent editorial work.
+
 Public pages should state the current rule or workflow. Keep unresolved decisions here rather than publishing visible policy speculation.
