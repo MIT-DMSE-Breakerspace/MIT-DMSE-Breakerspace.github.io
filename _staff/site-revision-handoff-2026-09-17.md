@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-09-21 for the 24/7/365 access decision. The filename is retained for existing links; the September release records below remain historical.
+Last updated: 2026-09-21 for the 24/7/365 access decision and Safety editorial review. The filename is retained for existing links; earlier release records retain their dated status.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -133,6 +133,20 @@ On reviewing the preview, the owner requested removal of the entire Quick Links 
 The edit preserves all 13 existing content fragments, Kerberos login and MIT-email guidance, Dropbox enrollment and approval steps, shared-folder privacy, safe instrument-problem response and reporting, and advance discussion of unusual samples. Lab tap-access processing time remains unspecified; the existing policy question is still open.
 
 The initial preview passed Jekyll build (existing Sass deprecation warnings), Help-only HTML/internal-link checks, Pa11y, preserved-fragment comparison, and `git diff --check`. Subagents inspected the complete local page at 390×844 and 1440×1000 using isolated headless browsers after the interactive browser tool failed. Contact options appeared in the first phone viewport, and folder sequences wrapped without horizontal scrolling. No clipping or page-wide overflow was found, and topic/contact anchors worked. These graphical and accessibility checks preceded the Quick Links removal. Other widths, screen-reader use, and external account workflows were not tested. The owner approved the final local revision and authorized publication on September 18. Consult the pull request from `codex/help-support-editorial` and its GitHub Pages deployment for release status.
+
+## Safety And Lab Use Editorial Review — September 21
+
+The owner reviewed the local revisions of `safety.md`, requested removal of Related Pages, and authorized committing and publishing the final copy on September 21. The change is on `codex/safety-lab-use-editorial`, isolated from the existing September documentation-audit edits. The pull request and its merge commit's Pages deployment record the release result. The mobile sticky-header work is a separate follow-up.
+
+After reviewing the first draft, the owner requested clearer grouping and removal of overlapping preparation guidance. The revised draft stays on one page: a compact emergency call/location notice, an early contents list, then **Emergencies and incidents**, **Working safely**, and **Lab-use rules**. Spills and injury reporting sit with incident response; food and sample restrictions precede PPE. The Before You Work checklist is removed, sample-screening guidance has one home, and data-saving and repeated booking reminders are removed. Training and Reserve Time link descriptions match their destinations.
+
+All 14 original content fragment IDs remain. `#emergency-or-immediate-danger` reaches the opening call/location notice; the retired `#before-you-work` fragment reaches Working Safely; `#rules-at-a-glance` reaches the early contents list. Instrument safety and waste handling retain their previous fragments under the new grouping. Related Pages and its four general links are removed at the owner's request; `#related-pages` remains as a compatibility target. Contextual links remain, and all four general destinations are still in shared navigation. Shared layout, stylesheets, navigation, footer, and other public pages are unchanged. A separate policy page has not been added.
+
+Verified exit and equipment locations, campus-phone evacuation guidance, fire response, training, sample screening, PPE/footwear, guest supervision, session attendance, working-alone approvals, waste/spill limits, and reporting routes/deadlines remain explicit. Booking and handoff rules remain on Reserve Time. The existing policy question about supervised course participation remains open; the draft retains the observation-only guest rule.
+
+Rendered main-content counts using the handoff's tokenizer: live comparison **1,895 words**, first draft **1,270**, reorganized draft **1,210**, final copy **1,173** (722 fewer than live, about 38%). The earlier local generated baseline contains 1,910 words, including 15 words already removed by the 24/7/365 access release; the final copy also omits those phrases.
+
+The reorganized draft passed Jekyll build (existing Sass import deprecations), Safety-only HTML/internal links, Pa11y, original-fragment/destination comparison, and `git diff --check`. Subagents inspected the complete page at 390×844 and 1440×1000, plus the first phone viewport and full-page reflow at 320×844. The call link and room are visible in the first viewport at all three sizes. All three group links appear in the first 390px/desktop viewport; at 320px, Lab-use rules begins just below the fold. No horizontal overflow, clipping, or unwanted gaps were found. All three group links worked with keyboard activation and visible focus; emergency, preparation, sample, and problem legacy fragments reach the intended content. Build, Safety-only HTML/internal links, and whitespace checks passed again after Related Pages was removed. Native-phone calling, screen-reader use, and external submissions were not tested.
 
 ## Files And Validation
 
