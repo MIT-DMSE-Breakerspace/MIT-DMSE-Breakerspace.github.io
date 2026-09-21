@@ -469,6 +469,37 @@ main .youtube-facade__trigger:focus-visible {
   margin: 0.75rem 0 0;
 }
 
+.calendar-events-note {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.calendar-events-list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  border-top: 3px solid #009de6;
+}
+
+.calendar-events-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d8dde2;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.calendar-events-list a {
+  display: block;
+  padding: 0.25rem 0;
+  font-weight: 700;
+}
+
+.calendar-event-date {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+}
+
 .table-scroll {
   max-width: 100%;
   margin: 0 0 20px;
