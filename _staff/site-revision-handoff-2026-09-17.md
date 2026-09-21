@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-09-18. The filename is retained for existing links; this handoff includes the September 18 releases and current review status.
+Last updated: 2026-09-21 for the 24/7/365 access decision. The filename is retained for existing links; the September release records below remain historical.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -15,6 +15,20 @@ The owner approved a further Get Trained revision on September 18 to focus on re
 There are no resources for organized usability trials. Use automated checks, proportionate phone/desktop inspection, and feedback from normal lab interactions. The original review's proposed recruited-user testing and 20/60/20 effort split were recommendations, not adopted requirements. Routine fixes do not need a new testing program.
 
 The owner will review the live pages following the September 18 homepage and shared-layout releases. The prior all-page review was interrupted; do not treat the limited spot-check below as its completion. Use subagents for graphical page reviews and have them return concise findings and coverage, keeping screenshots and large page-rendering payloads out of the main task.
+
+## 24/7/365 Access — September 21
+
+The owner confirmed that the lounge and instrument lab permit access **24 hours a day, 365 days a year**. This supersedes the former **8 AM–midnight** schedule and instructions below to preserve that schedule. Dated release and validation records describe the policy at the time of those releases.
+
+The repository update uses `_data/lab.yml` for the compact `24/7/365` statement and its full wording. The shared footer and mobile homepage identify access, Calendar distinguishes access from staff support and reservations, and Lounge explains access activation without repeated open-hours qualifications. Lounge retains `#hours-and-access`; Safety removes the unnecessary hours link label and after-hours-exception language. Training, reservations, working-alone rules, eligibility, and access-processing expectations are unchanged.
+
+The calendar embed now includes midnight–8 AM by changing its minimum visible time to `00:00:00`; the maximum remains `24:00:00`, and `08:00:00` remains only the initial scroll position.
+
+Public inspection after the owner's LibCal update confirmed 24 Hours in the weekly display and monthly dates through December 2026, plus overnight slots for all eleven instruments on the inspected September 22–24 dates. Two event/reservation discrepancies remain: the September 23 assistant shift coincides with a whole-lab block, and inspected Optical/SEM training sessions leave their instruments bookable. The [LibCal verification record](../_admin/libcal-247365-hours-checklist.md) preserves exact dates, links, corrective actions, and the limits of public verification. No LibCal settings or bookings were changed during that inspection.
+
+Validation passed: frozen-bundle Jekyll build, HTMLProofer across 72 files, the site-quality check, whitespace checks, and WCAG2AA checks on the homepage, Calendar, and Lounge. Generated HTML contains the new shared footer on 34 pages, preserves the homepage and Lounge access anchors, and has no old daily-hours or after-hours-exception wording. Phone inspection at 320×740 and desktop homepage inspection at 1440×1000 found readable access information without horizontal overflow or footer overlap. The embed parameters were verified in generated HTML; cross-origin interactive overnight rows were not fully inspected.
+
+The owner explicitly authorized completion and publication on September 21. [PR #50](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/50) contains this release and its checks. GitHub Pages publishes the repository root from `main`; the pull request and the merge commit's deployment history record the publication result.
 
 ## Published Changes
 

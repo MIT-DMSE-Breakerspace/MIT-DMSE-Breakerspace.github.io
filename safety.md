@@ -68,7 +68,7 @@ Gloves protect both the user and the equipment only when they are used cleanly. 
 
 Food and drinks are permitted in the Breakerspace lounge but not in the lab. Keep food, beverages, cups, bottles, and eating utensils on the lounge side of the space, away from instruments, samples, sample-preparation surfaces, and lab waste.
 
-See [Use The Breakerspace Lounge]({{ "/lounge.html" | relative_url }}) for current lounge access, hours, and shared-space information.
+See [Use The Breakerspace Lounge]({{ "/lounge.html" | relative_url }}) for lounge access and shared-space information.
 
 ## Samples And Materials
 
@@ -104,7 +104,7 @@ Routine use by trained Breakerspace users currently has no additional working-al
 
 Breakerspace work is designed around non-hazardous materials and trained use of enclosed or guarded instruments. Do not attempt an unfamiliar setup, modified procedure, unusually heavy tooling change, or other higher-risk activity alone merely because the lab is open. Ask staff to review the work and arrange another person when the risk or your ability to control the equipment is uncertain.
 
-For the Instron, keep hands and feet clear, use the intended guards and controls, and handle grips and fixtures deliberately. Ask for help moving heavy tooling rather than relying on an after-hours exception or trying to manage it alone.
+For the Instron, keep hands and feet clear, use the intended guards and controls, and handle grips and fixtures deliberately. Ask for help moving heavy tooling.
 
 ## Cleanup And Waste
 

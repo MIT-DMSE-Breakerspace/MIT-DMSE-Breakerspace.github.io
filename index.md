@@ -8,7 +8,7 @@ homepage: true
   <h1 id="dmse-breakerspace">Explore the materials around you.</h1>
   <p>Look closer, identify materials, and test how they behave.</p>
 </div>
-<p class="homepage-visit"><a href="#hours-and-access">Room {{ site.data.lab.room }}</a> · {{ site.data.lab.hours }}</p>
+<p class="homepage-visit"><a href="#hours-and-access">Room {{ site.data.lab.room }}</a> · {{ site.data.lab.hours }} access</p>
 
 <nav class="homepage-actions" id="start-here" aria-label="Get started">
   <ul>
