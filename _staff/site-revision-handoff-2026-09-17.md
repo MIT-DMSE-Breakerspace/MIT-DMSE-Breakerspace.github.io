@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-09-21 for the 24/7/365 access decision and Safety editorial review. The filename is retained for existing links; earlier release records retain their dated status.
+Last updated: 2026-09-21 for the 24/7/365 access decision, Safety publication, and approved mobile navigation revision. The filename is retained for existing links; earlier release records retain their dated status.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -136,7 +136,7 @@ The initial preview passed Jekyll build (existing Sass deprecation warnings), He
 
 ## Safety And Lab Use Editorial Review — September 21
 
-The owner reviewed the local revisions of `safety.md`, requested removal of Related Pages, and authorized committing and publishing the final copy on September 21. The change is on `codex/safety-lab-use-editorial`, isolated from the existing September documentation-audit edits. The pull request and its merge commit's Pages deployment record the release result. The mobile sticky-header work is a separate follow-up.
+The owner reviewed the local revisions of `safety.md`, requested removal of Related Pages, and authorized committing and publishing the final copy on September 21. [PR #51](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/51) merged as `0d47672`; PR/main CI and GitHub Pages deployment passed. The live page was verified with the new grouping, callable emergency number, retained fragments, no visible Related Pages section, and the current 24/7/365 footer. The change was isolated from the existing September documentation-audit edits. The mobile sticky-header work is a separate follow-up below.
 
 After reviewing the first draft, the owner requested clearer grouping and removal of overlapping preparation guidance. The revised draft stays on one page: a compact emergency call/location notice, an early contents list, then **Emergencies and incidents**, **Working safely**, and **Lab-use rules**. Spills and injury reporting sit with incident response; food and sample restrictions precede PPE. The Before You Work checklist is removed, sample-screening guidance has one home, and data-saving and repeated booking reminders are removed. Training and Reserve Time link descriptions match their destinations.
 
@@ -147,6 +147,16 @@ Verified exit and equipment locations, campus-phone evacuation guidance, fire re
 Rendered main-content counts using the handoff's tokenizer: live comparison **1,895 words**, first draft **1,270**, reorganized draft **1,210**, final copy **1,173** (722 fewer than live, about 38%). The earlier local generated baseline contains 1,910 words, including 15 words already removed by the 24/7/365 access release; the final copy also omits those phrases.
 
 The reorganized draft passed Jekyll build (existing Sass import deprecations), Safety-only HTML/internal links, Pa11y, original-fragment/destination comparison, and `git diff --check`. Subagents inspected the complete page at 390×844 and 1440×1000, plus the first phone viewport and full-page reflow at 320×844. The call link and room are visible in the first viewport at all three sizes. All three group links appear in the first 390px/desktop viewport; at 320px, Lab-use rules begins just below the fold. No horizontal overflow, clipping, or unwanted gaps were found. All three group links worked with keyboard activation and visible focus; emergency, preparation, sample, and problem legacy fragments reach the intended content. Build, Safety-only HTML/internal links, and whitespace checks passed again after Related Pages was removed. Native-phone calling, screen-reader use, and external submissions were not tested.
+
+## Mobile Navigation Revision — September 21
+
+After authorizing Safety publication, the owner requested the mobile logo/Menu and section-heading visibility follow-up, reviewed the local preview, and authorized committing and deploying it on September 21. The change is on `codex/mobile-sticky-navigation`, based on Safety's published merge and isolated from the existing September documentation-audit edits. The branch's pull request and its merge commit's Pages deployment record the release result.
+
+At phone/tablet widths up to 1209px, the compact logo/Menu row stays visible while scrolling. The expanded menu overlays content only when requested and scrolls within the available viewport. Measured header height supplies section-link clearance and keyboard-focus correction; Escape, link selection, outside clicks, and focus departure close the menu. A very short viewport or enlarged header falls back to the normal scrolling layout when the bar would occupy more than one-third of the view. The extra content-top divider is removed in the sticky layout. Destinations, page copy, desktop sidebar behavior, and footer order are preserved.
+
+Validation passed: Jekyll build (existing Sass deprecations), HTMLProofer across 72 files, site-quality and whitespace checks, JavaScript syntax, and Pa11y on the homepage, Training, Safety, and FTIR at 390×844 plus Safety's expanded menu at 844×390. Browser assertions cover all 12 menu links, focus visibility, menu closing, direct fragments, focus/footer transitions across 1209/1210px, short-viewport fallback/recovery, print, and visible navigation without JavaScript. A responsive focus issue was found and fixed: the Menu button now uses its explicit hidden state so focus can transfer to desktop navigation before the button disappears.
+
+Graphical subagents inspected Safety at 320×844, 390×844, 844×390, 1024×768, 1024×400, and 1440×1000, plus the homepage arrival and FTIR SOP. The compact bar is about 61–63px tall at normal text size, headings land below it, all menu links remain reachable, and no horizontal overflow was found. A simulated 200% text-enlargement check passed. These checks used headless Chromium; native touch/browser behavior, actual device text settings, and screen readers remain untested. The owner approved the resulting preview for publication.
 
 ## Files And Validation
 
