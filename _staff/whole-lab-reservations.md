@@ -48,6 +48,8 @@ The event titles are intentionally safe defaults. Add a short qualifier only whe
 
 ## LibCal Configuration To Verify
 
+Lounge and lab access is now 24/7/365. When updating LibCal hours, follow the [hours checklist](../_admin/libcal-247365-hours-checklist.md) and preserve the reservation scopes and instrument-blocking behavior documented here.
+
 Confirmed behavior: reserving Room 8-102A blocks new reservations for all eleven instrument seats assigned to the lab. On 2026-08-04, a 3:00–4:00 PM lab reservation was verified in the signed-out accessible view: all eleven calendars stopped offering times at 3:00 PM and resumed at 4:00 PM.
 
 The remaining collision behavior must be tested before relying on the room hierarchy without manual conflict review:

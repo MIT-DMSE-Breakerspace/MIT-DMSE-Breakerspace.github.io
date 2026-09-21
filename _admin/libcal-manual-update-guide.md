@@ -1,6 +1,6 @@
 # LibCal Manual Event Template Update Guide
 
-Last reviewed: 2026-09-17
+Last reviewed: 2026-09-21
 
 **Status: completed 2026-08-04; retained as the as-built runbook and maintenance reference.**
 
@@ -12,6 +12,8 @@ This guide records the procedure used to revise the eight existing instrument-tr
 
 The [archival template audit](libcal-event-templates.md) records what existed before this revision, why it changed, and the verified live outcome. Its pre-revision copy is evidence, not content to paste into LibCal.
 
+**September 21 maintenance note:** lounge and lab access is now 24/7/365. The support wording below has been clarified in this repository; this does not record a new live LibCal edit. Use the [hours checklist](libcal-247365-hours-checklist.md) for the separate published-hours and space-booking settings.
+
 ## Confirmed Decisions
 
 These decisions were applied in the completed revision and remain the maintenance baseline:
@@ -22,7 +24,7 @@ These decisions were applied in the completed revision and remain the maintenanc
 * Standard enrollment remains three in-person participants, with no guests and a one-person waitlist.
 * Maintain instrument-training templates for the **Innovatest Nemesis 5100G2 hardness tester** and **Technoorg-Linda SEMPrep 2 broad beam ion mill**, created on 2026-08-04.
 * Use **Breakerspace Lab Assistant** for the hourly student role. Use **trainer** only when describing the training function, which may also be performed by the lab manager or another qualified instructor.
-* Use **Lab Assistant on duty** for the former `Staffed Open Hours` function. These entries identify support availability, not the lab's opening hours.
+* Use **Lab Assistant on duty** for the former `Staffed Open Hours` function. These entries show when drop-in staff support is available.
 * Use the three scope-specific reserved-activity templates for the instrument lab, lounge, or both. Lab-only and combined reservations block instrument availability; lounge-only reservations do not.
 * LibCal should not summarize an instrument's operations, training exercise, access mechanics, or Quick Guide. Link to the canonical instrument page and the public training pathway instead.
 
@@ -176,7 +178,7 @@ Use this description:
 
 ```html
 <p>A Breakerspace Lab Assistant will be in the instrument lab for drop-in project questions and ad-hoc support. <strong>No registration is required.</strong></p>
-<p>These hours are not a substitute for required instrument training or instrument reservations. Individual instrument availability is shown separately in LibCal.</p>
+<p>Drop-in support does not replace required instrument training or instrument reservations. Individual instrument availability is shown separately in LibCal.</p>
 <p><strong>Breakerspace calendar and related actions:</strong><br />
 <a href="https://breakerspace.mit.edu/calendar.html">https://breakerspace.mit.edu/calendar.html</a></p>
 ```
@@ -292,7 +294,7 @@ For each instrument-training template, create or inspect an event and verify:
 * The event has no fragile featured image.
 * The public event works in the normal calendar view and remains understandable without category color.
 
-For **Lab Assistant on duty**, verify that the description distinguishes support availability from lab opening hours. The template editor should keep registration disabled, but the accepted LibCal inheritance behavior above may enable it on a created event.
+For **Lab Assistant on duty**, verify that the description identifies when drop-in staff support is available. The template editor should keep registration disabled, but the accepted LibCal inheritance behavior above may enable it on a created event.
 
 When creating an **instrument-training event**, select **No Location** rather than the whole instrument lab, then make a separate staff reservation for the individual instrument seat used in the training. Verify that only that instrument is unavailable during the session. The current event-location picker does not drill down to the seat level.
 

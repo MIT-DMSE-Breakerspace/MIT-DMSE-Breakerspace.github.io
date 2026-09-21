@@ -14,6 +14,7 @@ Use [`../_staff-training/`](../_staff-training/) for the materials a trainer nee
 
 * `libcal-event-templates.md` preserves the pre-revision LibCal template audit and the verified 2026-08-04 outcome.
 * `libcal-manual-update-guide.md` records the field-by-field LibCal update procedure and completion evidence.
+* [The 24/7/365 access verification](libcal-247365-hours-checklist.md) records the September 21 public LibCal audit, remaining event/reservation discrepancies, and the settings and future dates the owner should keep coordinated.
 * `qualtrics-launch-review.md` records the completed production and accessibility closeout.
 * `qualtrics-manual-edit-guide.md` is the page-by-page Qualtrics copy deck and editing checklist.
 * `qualtrics-survey-audit.md` preserves the source survey map, rationale, and revision plan.
