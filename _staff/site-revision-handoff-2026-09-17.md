@@ -28,7 +28,7 @@ Public inspection after the owner's LibCal update confirmed 24 Hours in the week
 
 Validation passed: frozen-bundle Jekyll build, HTMLProofer across 72 files, the site-quality check, whitespace checks, and WCAG2AA checks on the homepage, Calendar, and Lounge. Generated HTML contains the new shared footer on 34 pages, preserves the homepage and Lounge access anchors, and has no old daily-hours or after-hours-exception wording. Phone inspection at 320×740 and desktop homepage inspection at 1440×1000 found readable access information without horizontal overflow or footer overlap. The embed parameters were verified in generated HTML; cross-origin interactive overnight rows were not fully inspected.
 
-The owner explicitly authorized completion and publication on September 21. This release follows the repository's reviewed-pull-request workflow to `main`; GitHub Pages publishes that branch. The release pull request and deployment history record the publication result.
+The owner explicitly authorized completion and publication on September 21. [PR #50](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/50) contains this release and its checks. GitHub Pages publishes the repository root from `main`; the pull request and the merge commit's deployment history record the publication result.
 
 ## Published Changes
 

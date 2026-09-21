@@ -18,7 +18,7 @@ Public instrument pages should state current operating information clearly. Inst
 
 The owner confirmed that lounge and instrument-lab access is available 24 hours a day, 365 days a year. This supersedes the former 8 AM–midnight schedule. Approved access, instrument training, reservations, and working-alone requirements still apply; staff support follows the calendar.
 
-* [x] Update the shared access statements, Calendar, Lounge, Safety, and maintenance guidance. Preserve the existing `hours-and-access` fragments and include midnight–8 AM in the calendar embed's visible range.
+* [x] Update the shared access statements, Calendar, Lounge, Safety, and maintenance guidance ([PR #50](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/50)). Preserve the existing `hours-and-access` fragments and include midnight–8 AM in the calendar embed's visible range.
 * [x] Inspect the owner's LibCal update publicly: published hours show 24 Hours through December 2026, and all eleven instruments offer overnight slots on the inspected September 22–24 dates. See the [LibCal verification record](../_admin/libcal-247365-hours-checklist.md) for coverage and limits.
 * [ ] Owner: correct the September 23 assistant shift's whole-lab location and the inspected Optical/SEM training reservations, then recheck instrument availability. See [outstanding booking coordination](../_admin/libcal-247365-hours-checklist.md#outstanding-booking-coordination).
 * [ ] Owner: verify weekend/holiday booking availability as those dates enter the three-day window and confirm published-hours coverage into 2027. The public inspection could not expose those booking dates or 2027 hours.
