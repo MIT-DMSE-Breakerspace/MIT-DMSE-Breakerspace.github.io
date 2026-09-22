@@ -1,6 +1,6 @@
 # MIT DMSE Breakerspace Website
 
-Last updated: 2026-09-21
+Last updated: 2026-09-22
 
 This repository is the canonical source for the MIT DMSE Breakerspace production website at `breakerspace.mit.edu`.
 
@@ -22,7 +22,7 @@ This README is the top-level orientation for the site: its direction, content st
 
 ## Continuing The September Website Revisions
 
-Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through September 21, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
+Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through September 22, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
 
 Compact mobile navigation, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. September 18 added the shorter homepage, sample previews, shared layout/footer and width correction, concise Calendar and Reserve Time pages, responsive Data Tools cards, registration-focused Training with five live upcoming sessions, and contact-first Help & Support. All releases through PR #49 are merged and deployed. Training's earlier preparation/access sections were superseded by the registration focus in PR #48.
 
@@ -30,7 +30,7 @@ The owner will review the live pages; a complete page-by-page layout review is s
 
 The September 21 Safety editorial revision and sticky mobile logo/Menu row are also published ([PR #51](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/51), [#52](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/52), and [#53](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/53)). The handoff records the verified release, preserved safety requirements, and remaining Pages-compiler compatibility follow-up. Further editorial work should proceed from analysis to a local draft, owner review, and then authorized publication.
 
-The mobile Calendar revision is published and verified ([PR #56](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/56), merge `66e4de1`). Phones show ten upcoming events with wrapping titles and dates/times; wider screens keep the full calendar. Both live views and desktop week navigation passed inspection. The handoff records the widget configuration, fallback behavior, and successful CI/Pages deployment.
+The September 22 mobile Calendar follow-up is owner-reviewed and authorized for publication. Phones use LibCal’s mini-calendar with month navigation and date selection, initially showing five upcoming events across all categories. Its 550px frame uses widget `h=450`; shorter event lists can still leave space. Wider screens keep the existing full calendar. This supersedes the September 21 mobile list ([PR #56](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/56), merge `66e4de1`). The handoff records configuration, phone review, checks, and release status.
 
 ## Current Site Direction
 
@@ -62,7 +62,7 @@ The homepage opens with a brief invitation and six compact links matching the ma
 | Area | Current status |
 | --- | --- |
 | Start Here | Implemented as an intent-based homepage with routes for training, instrument selection, reservations, teaching, help, and lounge access. |
-| Calendar | Published at `calendar.md`, with training-registration and instrument-booking actions and concise lab/support/lounge availability guidance. At widths up to 720px, ten upcoming LibCal events replace the desktop schedule; the full-calendar link appears above either view. Only the appropriate widget loads initially, and empty/failed-feed and no-JavaScript fallbacks remain available. Both live views were verified after PR #56. Training keeps its separate session list. |
+| Calendar | Published at `calendar.md`, with training-registration and instrument-booking actions and concise lab/support/lounge availability guidance. The owner-approved September 22 revision uses LibCal’s mini-calendar at widths up to 720px, with month navigation, date selection, and five initial upcoming events. Wider screens retain the existing schedule. Only the appropriate iframe loads initially; full-calendar, email, and no-JavaScript alternatives remain available. Publication verification is pending. Training keeps its separate session list. |
 | Location and arrival | Shared footer: Building 8, Room 8-102A, entered through the Breakerspace Lounge, with location and 24/7/365 access also summarized on the mobile homepage. `_data/lab.yml` is the shared source. The public arrival and emergency-route details were verified before production release and should be rechecked after physical-space changes. |
 | Instrument catalog | Implemented at `instruments/index.md`. All eleven instruments have consolidated operating pages. The September 17 finder update groups them by plain-language purpose, leads with familiar names, explains useful outcomes, and explicitly lists Phenom XL elemental analysis (EDS). |
 | Training | Implemented at `training.md`, with a short process overview, prominent one-time online-record action, and five upcoming Instrument Training sessions loaded live from LibCal. Links open the full training schedule and Calendar page. Preparation, access, and project/course guidance were removed from this registration page following owner review; access setup is explained during training. The Qualtrics survey and access policy are unchanged; prior survey validation remains recorded in `_admin/`. |
