@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-09-22 after publication of the owner-approved Lounge editorial revision, with public behavior verified through PR #60 / `8d49478`. The mobile mini-calendar, September 18 audit, and Safety/mobile-navigation release records remain below. The filename is retained for existing links; earlier release records retain their dated status.
+Last updated: 2026-09-22 with owner approval to commit and deploy the Teaching revision and matching Safety correction. Release verification is pending; the latest verified public behavior remains the Lounge release through PR #60 / `8d49478`. The filename is retained for existing links; earlier release records retain their dated status.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -17,6 +17,20 @@ The owner approved a further Get Trained revision on September 18 to focus on re
 There are no resources for organized usability trials. Use automated checks, proportionate phone/desktop inspection, and feedback from normal lab interactions. The original review's proposed recruited-user testing and 20/60/20 effort split were recommendations, not adopted requirements. Routine fixes do not need a new testing program.
 
 The owner will review the live pages following the September 18 homepage and shared-layout releases. The prior all-page review was interrupted; do not treat the limited spot-check below as its completion. Use subagents for graphical page reviews and have them return concise findings and coverage, keeping screenshots and large page-rendering payloads out of the main task.
+
+## Teaching Editorial Review — September 22
+
+The owner reviewed a comparison with other university teaching-support pages and authorized a local draft focused on removing repetition and Quick Actions, with a clear reading order that does not require secondary navigation. The audience is primarily instructors on desktop, with mobile usability retained. After reviewing the preview, the owner approved the result and explicitly authorized committing and deploying it on September 22. The implementation branch is `codex/teaching-editorial-review`.
+
+`teaching.md` retains the partnership summary and primary email action, followed by teaching formats, planning, and course examples. Quick Actions, the opening jump links, the floated lab photo, repeated introductions, and repeated request details are removed. Guided modules now explicitly include rotations through multiple instruments. The teaching photo sits with the 3.010 example. Planning states that instrument training and lab access are available to every teaching-team member, including faculty and graduate students. Whole-lab request details use `reservations.html#whole-lab-reservations`; the one-week minimum and written confirmation remain visible. All original Teaching fragment IDs remain, including compatibility targets for Quick Actions and the former rotation section.
+
+The owner confirmed that teaching activities currently have no charges and consumables are covered by lab operating expenses. The owner also resolved the supervised-use question: guests, novices, and trainees may operate instruments under Breakerspace staff, course staff, or another person designated by Breakerspace staff; every supervisor must be trained on that instrument. Other trained users may host observers but may not supervise instrument use. Independent use still requires instrument training. The owner explicitly authorized the narrow matching correction in Safety's Training And Accounts and Guests paragraphs. Credential sharing remains prohibited. These decisions supersede the open policy question in the earlier dated Safety records; the revised public wording is still a draft.
+
+Jekyll build (existing Sass deprecation warnings), Teaching/Safety HTMLProofer and internal-link checks, preservation of both pages' original fragments, WCAG2AA Pa11y on both pages, and `git diff --check` passed. Rendered Teaching content using the tokenizer documented below went from **1,531 to 808 words** (723 fewer, about 47%); no word-count target was imposed.
+
+A graphical subagent inspected the full Teaching draft at 1440×1000, 390×844, and 320×740, and Safety's Guests section at desktop and 390px. Isolated headless Chromium was used after the interactive browser became unavailable. No clipping or horizontal overflow was found; the teaching photo appears with its XRD example, and both compatibility anchors land correctly below the mobile header. The contact action is visible on the first desktop screen but remains below the initial phone viewport (about y=885 at 390px and y=987 at 320px). Native-device, touch, and screen-reader testing were not performed. Screenshots stayed in the subagent's context.
+
+The approved local preview remains at `http://127.0.0.1:4174/teaching.html` until release verification. There are no outstanding policy questions for this revision. Detailed duration, preparation, and student-output examples remain optional follow-up; no such facts were invented. Publication and live verification are in progress; shared layout, navigation, footer, and other public pages are unchanged.
 
 ## Lounge Editorial Review — September 22
 
@@ -109,9 +123,9 @@ Progress replies sometimes used simple whitespace counts at intermediate stages:
 
 Start with feedback from the owner's live review of the September 18 changes, keeping the instrument-renovation pause in effect. Calendar, Reserve Time (including its booking-scope follow-up), Data Tools, Training, and Get Help are all published through PR #49; see the release table and page records.
 
-Get Help, Safety, and the mobile Calendar are published. The next non-instrument copy candidate is Teach With Us planning and repeated whole-lab guidance. Keep `reservations.html#whole-lab-reservations` as the group-request destination when consolidating Teaching. The homepage opening and location/access work is already published. Preserve the instructor partnership summary and useful scientific limits. Treat the original review's word targets as editing aids, not limits on safety or reference content.
+Get Help, Safety, and the mobile Calendar are published. The owner approved the Teach With Us revision described above for publication; complete release verification before starting another page. Keep `reservations.html#whole-lab-reservations` as the group-request destination. The homepage opening and location/access work is already published. Preserve the instructor partnership summary and useful scientific limits. Treat the original review's word targets as editing aids, not limits on safety or reference content.
 
-The cross-site queue records unresolved decisions: charges/consumables, access-processing expectations, accessible arrival/accommodations, and what supervised course participants may do before independent-use training. Obtain actual policy from the operational owner before writing those answers. It also tracks draft Quick Guide labels, public editorial to-do text, and reusable course/sample examples. Do not treat an absence found in the review as proof of a policy or a completed remediation.
+The owner resolved teaching charges/consumables and supervised instrument use in the September 22 Teaching draft record above. The cross-site queue still tracks access-processing expectations, accessible arrival/accommodations, draft Quick Guide labels, public editorial to-do text, and reusable course/sample examples. Obtain actual policy from the operational owner before writing unresolved answers. Do not treat an absence found in the review as proof of a policy or a completed remediation.
 
 ## Training Registration Review — September 18
 

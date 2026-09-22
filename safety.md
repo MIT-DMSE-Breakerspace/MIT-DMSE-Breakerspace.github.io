@@ -121,15 +121,15 @@ Breakerspace work should not generate hazardous waste. Stop and contact staff if
 
 ### Training And Accounts
 
-Use only instruments for which you have completed the required [training]({{ "/training.html" | relative_url }}).
+Complete the required [training]({{ "/training.html" | relative_url }}) before using an instrument independently.
 
-Log in with your own account. Do not share credentials or let an untrained person use an instrument through your login.
+Log in with your own account. Do not share credentials.
 
 ### Guests
 
-Trained users may bring guests and must stay in the lab with them. **Guests may observe but may not operate or control instruments.** Hosts must ensure guests follow lab rules and do not interfere with other users or equipment.
+Trained users may bring guests and must stay in the lab with them. Hosts must ensure guests follow lab rules and do not interfere with other users or equipment.
 
-Guests who want hands-on access must complete instrument training.
+Guests, novices, and trainees may operate an instrument under the direct supervision of Breakerspace staff, course staff, or another person designated by Breakerspace staff. **Every supervisor must be trained on the instrument.** Other trained users may host observers but may not supervise instrument use.
 
 ### Shared Space And Cleanup
 
