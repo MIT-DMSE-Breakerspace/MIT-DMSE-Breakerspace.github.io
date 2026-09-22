@@ -5,52 +5,38 @@ title: "Use The Breakerspace Lounge"
 
 # Use The Breakerspace Lounge
 
-The Breakerspace Lounge is the shared seating and food-and-drink area immediately outside the instrument lab. MIT undergraduates can request access to work, meet, take a break, and use the lounge's current coffee equipment.
+Work, meet, take a break, or make coffee in the Breakerspace Lounge, just outside the instrument lab.
 
-<figure class="page-figure">
-  <img src="./assets/img/lounge-coffee-competition.jpg" alt="Students seated at tables with laptops and gathered near the coffee counter during a 3.000 Coffee Matters brewing competition." width="2400" height="1800">
-  <figcaption>Students gather in the lounge for a coffee brewing competition in 3.000 Coffee Matters.</figcaption>
-</figure>
-
-## Quick Actions
-
-<div class="quick-actions-list" markdown="1">
-
-* [Request Breakerspace Lounge access](https://forms.gle/1pd59bjGXiPnehDL9)
-* [Check lounge access and eligibility](#hours-and-access)
-* [Review the shared-space rules before bringing food or drink](#using-the-shared-space). Keep all food and drink out of the instrument lab.
-
-</div>
+<div id="quick-actions"></div>
 
 ## Access {#hours-and-access}
 
-Once your tap access is active, you can use the lounge **{{ site.data.lab.hours_description }}**.
+All MIT undergraduates can [**request lounge access**](https://forms.gle/1pd59bjGXiPnehDL9). Complete the form and agree to the lounge policies.
 
-Lounge access is available to all MIT undergraduates. Complete the [Breakerspace Lounge access form](https://forms.gle/1pd59bjGXiPnehDL9) and agree to the lounge policies. Tap access is usually granted within two business days.
+Tap access is usually granted within two business days. Once your tap access is active, you can use the lounge **{{ site.data.lab.hours_description }}**.
 
-Lounge access does not authorize instrument operation. Complete the relevant [Breakerspace training]({{ "/training.html" | relative_url }}) before reserving or using an instrument independently.
+<div id="questions-or-access-problems"></div>
+
+For access problems, email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
 
 ## Using The Shared Space
 
 ### Food And Drink
 
-Food and drinks are permitted in the lounge but not in the instrument lab. Keep food, beverages, cups, bottles, and eating utensils on the lounge side of the space. Finish or leave them in the lounge before entering the lab.
+Food and drink are welcome in the lounge. Keep them, cups, bottles, and eating utensils out of the instrument lab.
 
 ### Shared-Space Expectations
 
 * Clear your table, dispose of waste, and wipe up spills before leaving.
-* Leave shared furniture and equipment ready for the next person.
+* Leave furniture and equipment ready for the next person.
 * Keep the path from the lab doors through the lounge to the corridor unobstructed.
-* Use the space considerately when other students, teaching groups, or lab users are working nearby.
-
-<figure class="page-figure">
-  <img src="./assets/img/lounge.JPG" alt="Breakerspace lounge with shared tables and chairs, a coffee counter, and doors into the instrument lab." width="2400" height="1800" loading="lazy">
-  <figcaption>The everyday lounge layout includes shared tables, the coffee counter, and doors into the instrument lab.</figcaption>
-</figure>
+* Be considerate of others working nearby.
 
 ## Coffee Equipment And Roasting
 
-The lounge currently includes a La Marzocco Linea PB espresso machine, Nuova Simonelli Mythos grinder, and PuqPress automatic tamper. Once you have lounge access, you may use the espresso equipment. Bring your own mug, follow the posted instructions, and leave the equipment and counter clean for the next user. Ask Breakerspace staff before using equipment that is unfamiliar to you.
+Once you have lounge access, you may use the espresso equipment. Bring your own mug, follow the posted instructions, and leave the equipment and counter clean. Ask staff before using unfamiliar equipment.
+
+The lounge has a La Marzocco Linea PB espresso machine, Nuova Simonelli Mythos grinder, and PuqPress automatic tamper.
 
 The Breakerspace also uses an Aillio Bullet R1 V2 roaster for coffee activities and instruction. Contact [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu) to ask about current roasting activities and how to participate.
 
@@ -69,7 +55,12 @@ The Breakerspace also uses an Aillio Bullet R1 V2 roaster for coffee activities 
 
 The lounge can support teaching and collaborative work alongside the instrument lab. [3.000 Coffee Matters]({{ "/3000.html" | relative_url }}) is one example: students move between coffee preparation, sensory observation, materials characterization, and data interpretation.
 
-The lounge has also hosted occasional staff-organized community events. During Infinite Halloween, participants carve small pumpkins in the lounge before staff-guided compression testing on the [Instron]({{ "/tutorials/instron.html" | relative_url }}). These special activities are planned separately from normal lounge access and do not authorize users to bring produce or other unusual samples into the instrument lab.
+<figure class="page-figure">
+  <img src="./assets/img/lounge-coffee-competition.jpg" alt="Students seated at tables with laptops and gathered near the coffee counter during a 3.000 Coffee Matters brewing competition." width="2400" height="1800" loading="lazy">
+  <figcaption>Students gather in the lounge for a coffee brewing competition in 3.000 Coffee Matters.</figcaption>
+</figure>
+
+The lounge has also hosted occasional staff-organized community events. During Infinite Halloween, participants carve small pumpkins in the lounge before staff-guided compression testing on the [Instron]({{ "/tutorials/instron.html" | relative_url }}).
 
 <div class="media-pair">
   <figure class="page-figure">
@@ -81,7 +72,3 @@ The lounge has also hosted occasional staff-organized community events. During I
     <figcaption>The event connects a lounge activity with staff-guided mechanical testing in the lab.</figcaption>
   </figure>
 </div>
-
-## Questions Or Access Problems
-
-If your lounge access has not been granted after the usual processing period, or you have a question about using the space, see [Help & Support]({{ "/resources.html" | relative_url }}) or email [dmse-breakerspace@mit.edu](mailto:dmse-breakerspace@mit.edu).
