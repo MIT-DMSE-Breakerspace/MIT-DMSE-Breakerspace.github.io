@@ -128,35 +128,41 @@ Do not loosen a lock nut by force. The load string is normally left **preloaded*
 
 Each test type uses a different fixture arrangement. The annotated setups below are current reference photos.
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/FIXED_1kN_set_up.jpg" alt="Instron tensile setup using mini wedge grips for low-force testing, rated to a maximum load of 1 kN." width="3024" height="4032" loading="lazy">
+Select an image to open its full-size version in a new tab.
+
+<div class="instron-image-grid">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/FIXED_1kN_set_up.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Instron tensile setup using mini wedge grips for low-force testing, rated to a maximum load of 1 kN."><img src="../assets/img/tutorials/instron/FIXED_1kN_set_up.jpg" alt="Instron tensile setup using mini wedge grips for low-force testing, rated to a maximum load of 1 kN." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Tensile testing with mini wedge grips (max load 1 kN).</figcaption>
 </figure>
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG" alt="Instron tensile setup using the 50 kN wedge grips, with the spanner wrench used to tighten the grip rings." width="3024" height="4032" loading="lazy">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG" target="_blank" rel="noopener" aria-label="Open full-size image: Instron tensile setup using the 50 kN wedge grips, with the spanner wrench used to tighten the grip rings."><img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_50_kN_wrench_set_up.JPG" alt="Instron tensile setup using the 50 kN wedge grips, with the spanner wrench used to tighten the grip rings." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Tensile testing with wedge grips (max load 50 kN).</figcaption>
 </figure>
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG" alt="Annotated anatomy of the 50 kN wedge grip, labeling its main parts." width="3024" height="4032" loading="lazy">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG" target="_blank" rel="noopener" aria-label="Open full-size image: Annotated anatomy of the 50 kN wedge grip, labeling its main parts."><img src="../assets/img/tutorials/instron/ANNOTATED_50_kN_wrench_grip.JPG" alt="Annotated anatomy of the 50 kN wedge grip, labeling its main parts." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Anatomy of the 50 kN wedge grip.</figcaption>
 </figure>
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG" alt="Annotated screw action grip, with arrows indicating the black end caps that rotate to open and close the jaw faces." width="3024" height="4032" loading="lazy">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG" target="_blank" rel="noopener" aria-label="Open full-size image: Annotated screw action grip, with arrows indicating the black end caps that rotate to open and close the jaw faces."><img src="../assets/img/tutorials/instron/ANNOTATED_screw_action_grips.JPG" alt="Annotated screw action grip, with arrows indicating the black end caps that rotate to open and close the jaw faces." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Screw action grips: rotate the black end caps to open and close the jaw faces onto your sample.</figcaption>
 </figure>
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG" alt="Instron compression setup with platens mounted on the 50 kN head." width="3024" height="4032" loading="lazy">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG" target="_blank" rel="noopener" aria-label="Open full-size image: Instron compression setup with platens mounted on the 50 kN head."><img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_compression_set_up.JPG" alt="Instron compression setup with platens mounted on the 50 kN head." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Compression testing with the 50 kN head.</figcaption>
 </figure>
 
-<figure class="page-figure" style="max-width:32rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG" alt="Instron flexure setup with the bending fixture mounted on the 5 kN head." width="3024" height="4032" loading="lazy">
+<figure class="page-figure">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG" target="_blank" rel="noopener" aria-label="Open full-size image: Instron flexure setup with the bending fixture mounted on the 5 kN head."><img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG" alt="Instron flexure setup with the bending fixture mounted on the 5 kN head." width="3024" height="4032" loading="lazy"></a>
   <figcaption>Flexure testing with the 5 kN head. Arrange use of this load cell with staff in advance; it is not available for general access.</figcaption>
 </figure>
+</div>
+
+
 
 ### Load A Sample Into The Grips {#loading}
 
@@ -186,9 +192,9 @@ Marking well matters, because a mark the camera loses mid-test costs you the str
 * Make sure the sample is clean and grease-free, let the ink dry, and check that the dots are round and opaque before testing. Test soon after marking. *(Video extensometer operator guide, pp. 52–53.)*
 * If the dots smudge, bleed, or wick into the surface, or the sample changes color or stretches so far that the marks leave the field of view, the extensometer can lose them. The troubleshooting list on p. 53 maps each symptom to its cause.
 
-<figure class="page-figure" style="max-width:28rem;">
-  <img src="../assets/img/tutorials/instron/ANNOTATED_extensometer_software.png" alt="Annotated video extensometer software screen, numbered 1 and 2 for the buttons to click and 3 for the region to select around the marked dots." width="1078" height="1882" loading="lazy">
-  <figcaption>Video extensometer software: click 1, then 2, then select region 3 around your dots.</figcaption>
+<figure class="page-figure instron-image-reference">
+  <a class="instron-image-link" href="../assets/img/tutorials/instron/ANNOTATED_extensometer_software.png" target="_blank" rel="noopener" aria-label="Open full-size image: Annotated video extensometer software screen, numbered 1 and 2 for the buttons to click and 3 for the region to select around the marked dots."><img src="../assets/img/tutorials/instron/ANNOTATED_extensometer_software.png" alt="Annotated video extensometer software screen, numbered 1 and 2 for the buttons to click and 3 for the region to select around the marked dots." width="1078" height="1882" loading="lazy"></a>
+  <figcaption>Video extensometer software: click 1, then 2, then select region 3 around your dots. Select the image to open it full size in a new tab.</figcaption>
 </figure>
 
 Setting the extensometer up inside a method is a staff-supported task the first time. In Bluehill it appears as a strain measurement on **Strain 1**, is chosen as the primary strain source under **Test Control**, and should have auto-balance enabled before the test. *(Video extensometer operator guide, using Bluehill Universal, p. 78.)*
@@ -197,10 +203,30 @@ Setting the extensometer up inside a method is a staff-supported task the first 
 
 Bluehill Universal opens on a home screen with three routes. **Test** starts or continues a sample. **Method** creates or edits the test recipe. **Admin** configures the system and is staff-only.
 
-<figure class="page-figure" style="max-width:22rem;">
-  {% include responsive-image.html id="instron-bluehill-home" alt="Bluehill Universal home screen showing the Test, Method, and Admin tiles, with live displacement and force readouts across the top." %}
+Select a screen image to open its full-size version in a new tab.
+
+<div class="instron-image-grid">
+<figure class="page-figure" id="bluehill-home-screen">
+  <a class="instron-image-link" href="../assets/img/optimized/instron-bluehill-home-1080.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Bluehill Universal home screen showing the Test, Method, and Admin tiles, with live displacement and force readouts across the top.">
+    {% include responsive-image.html id="instron-bluehill-home" alt="Bluehill Universal home screen showing the Test, Method, and Admin tiles, with live displacement and force readouts across the top." sizes="(max-width: 480px) calc(100vw - 48px), (max-width: 1000px) 45vw, 300px" %}
+  </a>
   <figcaption>The Bluehill home screen. Live displacement and force are always shown across the top, and the status bar runs along the bottom.</figcaption>
 </figure>
+
+<figure class="page-figure" id="bluehill-method-screen">
+  <a class="instron-image-link" href="../assets/img/optimized/instron-bluehill-method-1080.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Bluehill Universal Method screen showing method templates including Tension, Compression, and Flexure, alongside a filtered list of standard Metals test methods.">
+    {% include responsive-image.html id="instron-bluehill-method" alt="Bluehill Universal Method screen showing method templates including Tension, Compression, and Flexure, alongside a filtered list of standard Metals test methods." sizes="(max-width: 480px) calc(100vw - 48px), (max-width: 1000px) 45vw, 300px" %}
+  </a>
+  <figcaption>The Method screen. Templates on the left set the test type; the panel to the right lists application-specific methods, filtered here to metals standards.</figcaption>
+</figure>
+
+<figure class="page-figure" id="bluehill-test-screen">
+  <a class="instron-image-link" href="../assets/img/optimized/instron-bluehill-test-1080.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Bluehill Universal Test screen header showing the Create a new method and Run a QuickTest tiles and the Browse methods control, with the recent-methods list redacted.">
+    {% include responsive-image.html id="instron-bluehill-test" alt="Bluehill Universal Test screen header showing the Create a new method and Run a QuickTest tiles and the Browse methods control, with the recent-methods list redacted." sizes="(max-width: 480px) calc(100vw - 48px), (max-width: 1000px) 45vw, 300px" %}
+  </a>
+  <figcaption>The Test screen. Start from a recent method, <strong>Browse methods</strong>, or <strong>Run a QuickTest</strong>. The recent-methods list is redacted here because it shows real user files.</figcaption>
+</figure>
+</div>
 
 Before anything else, learn the four **operating modes**, because they explain most "the machine won't start" confusion. The mode shows both as a colored border in Bluehill and as a lit LED on the [indicator panel](../assets/img/tutorials/instron/ANNOTATED_emergency_indicator.JPG):
 
@@ -221,10 +247,7 @@ A **method** is the recipe for the test: what the crosshead does, what gets meas
 
 From the home screen, click **Method** to create or edit one. New methods start from a template, and the template you choose sets the basic test type:
 
-<figure class="page-figure">
-  {% include responsive-image.html id="instron-bluehill-method" alt="Bluehill Universal Method screen showing method templates including Tension, Compression, and Flexure, alongside a filtered list of standard Metals test methods." %}
-  <figcaption>The Method screen. Templates on the left set the test type; the panel to the right lists application-specific methods, filtered here to metals standards.</figcaption>
-</figure>
+See the [Method screen reference](#bluehill-method-screen); select the image for a full-size view.
 
 * **Tension method** pulls the sample to failure; **Compression method** squeezes it; **Flexure method** bends it on 3- or 4-point supports. Match the template to the fixtures you actually installed.
 * The **Application type** dropdown filters the list to standards-based methods — for example the ASTM metals methods shown above. If your test should follow a published standard, starting from that standard's method is better than reproducing its parameters by hand.
@@ -259,10 +282,7 @@ Bluehill prompts you to confirm travel limits as part of starting a test. Treat 
 
 With the load string assembled, the sample loaded, the method selected, and limits set, the run itself is short.
 
-<figure class="page-figure">
-  {% include responsive-image.html id="instron-bluehill-test" alt="Bluehill Universal Test screen header showing the Create a new method and Run a QuickTest tiles and the Browse methods control, with the recent-methods list redacted." %}
-  <figcaption>The Test screen. Start from a recent method, <strong>Browse methods</strong>, or <strong>Run a QuickTest</strong>. The recent-methods list is redacted here because it shows real user files.</figcaption>
-</figure>
+See the [Test screen reference](#bluehill-test-screen); select the image for a full-size view.
 
 1. **Start the sample.** From the home screen click **Test**, then choose your method — from the recent list, via **Browse methods**, or **Run a QuickTest**. Bluehill creates a sample and moves to the Test workspace.
 2. **Confirm the load cell.** If using the 5 kN cell, confirm that its use was arranged with staff in advance and the method is monotonic with no holds. Check that the connected cell (5 kN or 50 kN) is the one you intend, and that the live force readout responds sensibly when you touch the load string.

@@ -751,6 +751,62 @@ main table a:focus-visible {
   margin: 0;
 }
 
+/* Compact Instron references; preserve the full annotated image in every tile. */
+.instron-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.instron-image-grid .page-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.instron-image-link {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  padding: 0.5rem;
+  border: 1px solid #d0dce2;
+  border-radius: 4px;
+  background: #f5f8fa;
+  cursor: zoom-in;
+}
+
+.instron-image-link picture {
+  display: contents;
+}
+
+.instron-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.instron-image-reference {
+  max-width: 18rem;
+}
+
+.instron-image-reference .instron-image-link {
+  height: 22rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .instron-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instron-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .instrument-page-actions {
   display: flex;
   flex-wrap: wrap;
