@@ -4,6 +4,10 @@ This folder is for integrated instrument pages. These pages are intended to beco
 
 **September 17 revision handoff:** the [FTIR reading-order pilot](ftir.md) is published, but further individual instrument-page renovations are **paused pending owner feedback**. The [site revision handoff](../_staff/site-revision-handoff-2026-09-17.md) records the rationale, completed changes, counts, and next steps. Do not treat the pilot as approval to replace the standard order or apply it to other instruments.
 
+**November 16 scoped exception:** the owner explicitly authorized a local SOP-first draft of `instron.md` following the FTIR model. The draft preserves the SOP, existing fragments, operational detail, and media; its tooling inventory remains at the bottom. This resumes presentation work for Instron only, pending owner review, and does not authorize publication or changes to other instrument pages. See the handoff's November 16 Instron record.
+
+**November 16 education follow-up:** the owner subsequently included `ftir.md` in a local revision to keep the educational explanation coherent. Both selected pages now place **What This Instrument Shows You** after operational help and troubleshooting, with the original four subsections together: The Basic Idea; What Scientists Use It For; What To Look For In The Results; and What This Instrument Cannot Tell You. Opening task navigation links directly to that section. Practical data processing stays with operating help, and practice activities follow the educational section. This supersedes the pilot's split of interpretation/limitations into Results for these two drafts; it does not authorize a site-wide conversion or publication.
+
 The older `tutorials/` pages can remain in place during the transition. The working model is:
 
 * `instruments/sem.md`: a shared SEM hub for choosing between SEM instruments and reviewing common SEM concepts.
