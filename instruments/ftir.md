@@ -24,7 +24,7 @@ FTIR (Fourier-transform infrared) spectroscopy measures infrared absorption to h
     <li><a href="#details">Step-by-step help</a></li>
     <li><a href="#failures">Troubleshooting</a></li>
     <li><a href="#data">Results</a></li>
-    <li><a href="#science">Capabilities &amp; examples</a></li>
+    <li><a href="#science">What this instrument shows you</a></li>
     <li><a href="#manuals">Manuals</a></li>
   </ul>
 </nav>
@@ -242,34 +242,7 @@ The iD7 ATR accessory stays on the instrument for routine work. The iD1 transmis
   <figcaption>Swapping pressure tips.</figcaption>
 </figure>
 
-## Understand Your Results {#data}
-
-### Read A Spectrum {#what-to-look-for-in-the-results}
-
-Start with the main peaks. Ask where strong absorptions appear, whether they are broad or sharp, and whether expected regions are present or missing. A broad feature can suggest O-H or N-H stretching; strong peaks near the carbonyl region can point toward molecules with C=O bonds; clusters of peaks in the fingerprint region can help distinguish similar materials.
-
-Then compare, rather than relying on one peak alone. FTIR is most useful when you compare a sample spectrum with a known reference, a database hit, a control sample, or before/after spectra from the same project. A good match usually means several major features line up, not just one peak.
-
-Think about how complicated the sample is before interpreting the spectrum. FTIR can be very useful for pure samples, suspected contamination on a mostly known material, or mixtures with a limited number of likely components. In those cases, you may be able to ask focused questions such as "does this look like polyethylene?", "is this residue oily?", or "did this surface pick up a silicone-like contaminant?" The answer is usually based on matching a pattern of peaks to a reasonable comparison, not on reading a chemical name from the spectrum.
-
-For chemically complex bulk mixtures, the interpretation changes. Coffee is a good example: brewed coffee, roasted beans, or coffee residues contain many different reactive compounds mixed in unknown ratios. The FTIR spectrum of the bulk material is a combined molecular fingerprint from everything the infrared beam samples. That fingerprint can still be useful for comparison, such as comparing green and roasted coffee, different extraction methods, or before/after treatment, but it usually cannot be deconvoluted into a reliable list of individual compounds or concentrations.
-
-<figure style="margin-left:0; margin-right:0;">
-  <a href="{{ '/assets/img/optimized/ftir-spectrum-1944.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="ftir-spectrum" alt="FTIR absorbance spectrum of a fake spiderweb decoration." %}</a>
-  <figcaption>Example FTIR spectrum from a fake spiderweb decoration. The strong bands near 1712, 1240, 1094, 872, and 722 cm<sup>-1</sup> are consistent with a polyester such as PET. This is the kind of relatively simple polymer sample where FTIR can support a likely material identification.</figcaption>
-</figure>
-
-If a spectrum is weak or has unexpected features, check [Troubleshooting](#failures) before interpreting it.
-
-### Limits On Identification {#what-this-instrument-cannot-tell-you}
-
-* FTIR usually identifies molecular features or material classes, not a complete formulation by itself.
-* It cannot turn a complex bulk mixture into a list of every chemical component. When many compounds contribute overlapping peaks, the combined spectrum may be useful for comparison but not for assigning each peak to one ingredient.
-* It is much stronger for pure samples, known materials with possible contamination, or simple mixtures than for unknown mixtures with dozens, hundreds, or thousands of components in unknown ratios.
-* It cannot reliably identify materials that do not absorb infrared light strongly.
-* It is often less direct for metals, ceramics, salts, and inorganic materials than for polymers, organics, and molecular solids.
-* A database match is evidence, not proof. Similar materials can have similar spectra, and mixtures can be difficult to interpret.
-* ATR mostly samples the material in contact with the crystal. A coating, residue, or surface layer can dominate the spectrum even if the bulk material underneath is different.
+## Data Processing And Analysis {#data}
 
 ### Compare And Process Spectra
 
@@ -278,6 +251,8 @@ If a spectrum is weak or has unexpected features, check [Troubleshooting](#failu
 * Keep a record of background conditions, sample preparation, and cleaning.
 
 Use the [Data Exploration Tools]({{ '/data-tools/' | relative_url }}) for a browser-based introduction to viewing and processing FTIR spectra. The [Wiley KnowItAll software and libraries available through MIT Libraries](https://libguides.mit.edu/knowitall) support database searching and spectral comparison. Useful processing steps include baseline correction and labeling major peaks.
+
+For the scientific context, see [What This Instrument Shows You](#science), including [reading spectra](#what-to-look-for-in-the-results) and [identification limits](#what-this-instrument-cannot-tell-you).
 
 ## Troubleshooting {#failures}
 
@@ -305,19 +280,13 @@ Atmospheric or cleaning contamination, a wet sample, or incomplete drying may ad
 
 The spectrum may not have been individually selected and saved. [Save each spectrum you need](#saving) before closing OMNIC.
 
-## Explore FTIR {#science}
+## What This Instrument Shows You {#science}
 
-### Questions You Can Explore {#what-scientists-use-it-for}
+Learn how FTIR works, how scientists use it, what a spectrum can show, and where identification reaches its limits.
 
-* Does a plastic, coating, adhesive, fiber, or residue have the expected chemical signature?
-* Does an unknown powder resemble a reference polymer, sugar, oil, or other material?
-* What broad molecular differences appear in approved biological materials, gels, scaffolds, or treated surfaces?
-* What binders, coatings, or additives might be present in paper, pigments, or textiles?
-* After microscopy reveals a film or residue, what kind of molecular material might it be?
+For hands-on examples, try the [practice activities](#exercises).
 
-See [an example spectrum](#what-to-look-for-in-the-results) and the [limits on identification](#what-this-instrument-cannot-tell-you) when planning a comparison.
-
-### How It Works {#the-basic-idea}
+### The Basic Idea {#the-basic-idea}
 
 FTIR spectroscopy uses infrared light to probe molecular vibrations. Molecules are not still objects: their bonds stretch, bend, twist, and rock. When infrared light has the right energy to drive one of those motions, the sample absorbs some of that light. The FTIR records absorption across many infrared wavelengths and displays the result as a spectrum.
 
@@ -325,7 +294,44 @@ Different chemical bonds absorb infrared light in different regions. For example
 
 The attenuated total reflectance (ATR) accessory makes the measurement easier by pressing the sample against a diamond crystal. Infrared light reflects inside the crystal, and a very shallow evanescent field interacts with the sample touching the crystal surface. Good contact matters: if the sample does not touch the ATR window well, the spectrum may be weak or misleading.
 
-### Practice Activities {#exercises}
+### What Scientists Use It For {#what-scientists-use-it-for}
+
+* A chemist might compare an unknown powder with reference spectra to ask whether it is closer to a polymer, sugar, salt, oil, or other material class.
+* A materials scientist might check whether a plastic, coating, adhesive, fiber, film, or residue has the expected chemical signature.
+* A biologist or bioengineer might compare approved dried biological materials, gels, scaffolds, or treated surfaces to look for broad molecular differences.
+* A conservator, artist, designer, or archaeologist might identify binders, coatings, paper additives, textile fibers, or surface contamination.
+* A student might use FTIR after microscopy: first see that a residue, film, or fiber is present, then ask what kind of molecular material it may be.
+
+### What To Look For In The Results {#what-to-look-for-in-the-results}
+
+Start with the main peaks. Ask where strong absorptions appear, whether they are broad or sharp, and whether expected regions are present or missing. A broad feature can suggest O-H or N-H stretching; strong peaks near the carbonyl region can point toward molecules with C=O bonds; clusters of peaks in the fingerprint region can help distinguish similar materials.
+
+Then compare, rather than relying on one peak alone. FTIR is most useful when you compare a sample spectrum with a known reference, a database hit, a control sample, or before/after spectra from the same project. A good match usually means several major features line up, not just one peak.
+
+Think about how complicated the sample is before interpreting the spectrum. FTIR can be very useful for pure samples, suspected contamination on a mostly known material, or mixtures with a limited number of likely components. In those cases, you may be able to ask focused questions such as "does this look like polyethylene?", "is this residue oily?", or "did this surface pick up a silicone-like contaminant?" The answer is usually based on matching a pattern of peaks to a reasonable comparison, not on reading a chemical name from the spectrum.
+
+For chemically complex bulk mixtures, the interpretation changes. Coffee is a good example: brewed coffee, roasted beans, or coffee residues contain many different reactive compounds mixed in unknown ratios. The FTIR spectrum of the bulk material is a combined molecular fingerprint from everything the infrared beam samples. That fingerprint can still be useful for comparison, such as comparing green and roasted coffee, different extraction methods, or before/after treatment, but it usually cannot be deconvoluted into a reliable list of individual compounds or concentrations.
+
+<figure style="margin-left:0; margin-right:0;">
+  <a href="{{ '/assets/img/optimized/ftir-spectrum-1944.jpg' | relative_url }}" target="_parent">{% include responsive-image.html id="ftir-spectrum" alt="FTIR absorbance spectrum of a fake spiderweb decoration." %}</a>
+  <figcaption>Example FTIR spectrum from a fake spiderweb decoration. The strong bands near 1712, 1240, 1094, 872, and 722 cm<sup>-1</sup> are consistent with a polyester such as PET. This is the kind of relatively simple polymer sample where FTIR can support a likely material identification.</figcaption>
+</figure>
+
+For ATR spectra, also look for practical problems. A weak spectrum may mean poor crystal contact. Negative absorbance features can mean the crystal was dirty during background collection. Water vapor, carbon dioxide, contamination, and leftover solvent can all add features that do not belong to the sample.
+
+If a spectrum is weak or has unexpected features, check [Troubleshooting](#failures) before interpreting it.
+
+### What This Instrument Cannot Tell You {#what-this-instrument-cannot-tell-you}
+
+* FTIR usually identifies molecular features or material classes, not a complete formulation by itself.
+* It cannot turn a complex bulk mixture into a list of every chemical component. When many compounds contribute overlapping peaks, the combined spectrum may be useful for comparison but not for assigning each peak to one ingredient.
+* It is much stronger for pure samples, known materials with possible contamination, or simple mixtures than for unknown mixtures with dozens, hundreds, or thousands of components in unknown ratios.
+* It cannot reliably identify materials that do not absorb infrared light strongly.
+* It is often less direct for metals, ceramics, salts, and inorganic materials than for polymers, organics, and molecular solids.
+* A database match is evidence, not proof. Similar materials can have similar spectra, and mixtures can be difficult to interpret.
+* ATR mostly samples the material in contact with the crystal. A coating, residue, or surface layer can dominate the spectrum even if the bulk material underneath is different.
+
+## Practice Activities {#exercises}
 
 * **Level 1 - General training:** Collect ATR spectra from two approved, non-hazardous solids chosen to give visibly different spectra. Save each spectrum, compare their overall patterns, and note which handling step affected signal strength most.
 * **Level 1 - Cleaning check:** Collect a background on a clean crystal, collect a sample, clean the crystal, then collect a second background. Compare whether any negative features or residue-related peaks appear.

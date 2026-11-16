@@ -3,7 +3,7 @@ title: Instron Trainer Guide — Provisional Draft
 description: Published trainer-run-sheet draft advisory for staff review.
 permalink: /trainer/instron/
 guide_status: Draft advisory
-guide_revision: 2026-08-10
+guide_revision: 2026-11-16
 interactive_checklist: true
 instrument_name: Instron 68TM-50 Universal Testing System
 moira_group: dmse-brkrspc-instron
@@ -68,6 +68,7 @@ Work in order. Plan to start five minutes after the scheduled hour and complete 
 <p class="trainer-phase"><span>Before the session</span> Readiness gates</p>
 
 * [ ] Confirm the frame is **DISABLED**, the crosshead is stationary, the load is relieved, and the current 50 kN load cell/load-string/fixture state has been checked by staff. Open the canonical page; do not place or describe the unpublished Quick Guide prototype as approved.
+* [ ] Explain that the 5 kN load cell is not available for general access; any use must be arranged with staff in advance. Its damage limits it to monotonic testing without holds, creep, or stress-relaxation tests.
 * [ ] Prepare safety glasses and one compatible trainer-selected tensile specimen whose expected load is within every frame, cell, adapter, and grip limit. Know how the specimen behaves in the approved method; exclude wet, fouling, or dangerously shattering material.
 
 <p class="trainer-phase"><span>0–8 minutes</span> Welcome and room orientation</p>

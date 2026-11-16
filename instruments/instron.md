@@ -2,79 +2,45 @@
 layout: default
 title: Instron 68TM-50 Universal Testing System
 ---
-# Instron 68TM-50 Universal Testing System
+# Instron Universal Testing System {#instron-68tm-50-universal-testing-system}
 
-## Overview
+<p class="instrument-model">Instron 68TM-50</p>
 
-<img src="../assets/img/utm.JPG" alt="Instron 68TM-50 universal testing system." style="width:45%; float:right; margin-left:10px; margin-bottom:1.4em;">
+<div class="instrument-summary" id="overview" markdown="1">
+<picture class="instrument-summary-image">
+  <img src="../assets/img/utm.JPG" alt="Instron 68TM-50 universal testing system." width="2400" height="1600" loading="eager">
+</picture>
 
-The Instron 68TM-50 is a universal testing machine (UTM): it pulls, pushes, or bends a sample while precisely measuring the force applied and how far the sample moves. From that it produces a force-displacement curve, the basic data behind mechanical properties such as strength, stiffness, and how much a material stretches before it breaks.
-
-The Breakerspace system is equipped with 50 kN and 5 kN load cells and fixtures for tensile (pulling), compression (pushing), and flexure (bending) testing. A video extensometer is available for measuring strain optically.
-
-This page is the operating page for the Instron. It combines the quick reference for trained users, detailed training notes, reservation link, manuals, and exercises.
-
-<div style="clear:both;"></div>
-
-## Quick Actions {#quick-actions}
-
-<div class="quick-actions-grid">
-<section markdown="1">
-### Get started
-
-* [New to the Instron? Register for training](https://breakerspace.libcal.com/calendar?cid=19408&t=w&d=0000-00-00&cal=19408&ct=69558&inc=0)
-* [Reserve time on the Instron](https://breakerspace.libcal.com/seat/174792)
-* [Operating the Instron now? Follow the standard operating protocol](#sop)
-* [Learn the complete operating workflow](#details)
-</section>
-<section markdown="1">
-### Learn and reference
-
-* [Learn what mechanical testing can show you](#science)
-* [Choose a mechanical test type](#test-type)
-* [View available tooling and configurations](#tooling)
-* [Set up a test method in Bluehill](#method)
-* [Follow a worked tensile example](#worked-example)
-* [Analyze and process your data](#data)
-* [View manufacturer manuals](#manuals)
-* [Try the practice exercises](#exercises)
-</section>
+Pull, compress, or bend a sample to measure force and displacement. The Breakerspace system has 50 kN and 5 kN load cells, tensile grips, compression platens, a flexure fixture, and a video extensometer for optical strain measurement. **The 5 kN load cell is not available for general access; arrange its use with staff in advance.**
 </div>
 
-## What This Instrument Shows You {#science}
+<nav class="instrument-task-nav" id="quick-actions" aria-label="Instron page navigation">
+  <div class="instrument-task-actions" id="get-started">
+    <a class="instrument-use-action" href="#sop">Operating instructions</a>
+    <a href="https://breakerspace.libcal.com/seat/174792">Reserve time</a>
+    <a href="https://breakerspace.libcal.com/calendar?cid=19408&amp;t=w&amp;d=0000-00-00&amp;cal=19408&amp;ct=69558&amp;inc=0">Get trained</a>
+  </div>
+  <ul class="instrument-section-links" id="learn-and-reference">
+    <li><a href="#materials">Samples &amp; limits</a></li>
+    <li><a href="#details">Step-by-step help</a></li>
+    <li><a href="#failures">Troubleshooting</a></li>
+    <li><a href="#data">Results</a></li>
+    <li><a href="#science">What this instrument shows you</a></li>
+    <li><a href="#manuals">Manuals</a></li>
+    <li><a href="#tooling">Available tooling</a></li>
+  </ul>
+</nav>
 
-### The Basic Idea
+## Before You Start {#materials}
 
-Every material pushes back when you deform it, up to a point. A universal testing machine measures exactly how hard it pushes back and how far it moves before it yields or breaks. The machine grips a sample and moves one end at a controlled rate while a load cell records the force. The result is a force-displacement curve: the story of how the material responded from the first gentle load all the way to failure.
+* All materials must be non-hazardous and safe to handle in the Breakerspace.
+* Avoid samples that may shatter dangerously, such as glass.
+* Avoid wet samples or anything that would foul the machine.
+* Some samples need cutting to fit the grips. The Breakerspace has scissors, razor blades, and a sectioning saw available.
+* The 5 kN load cell is **not available for general access**; arrange its use with staff in advance. It is for **monotonic testing only**. Do not use it for holds, creep, or stress-relaxation tests (see [configuration notes](#configuration-notes)).
+* Check whether an [ASTM standard](https://www.astm.org/) exists for your test; standard sample geometries give more comparable, reliable results.
 
-With the sample's dimensions, that curve can be converted to a stress-strain curve, which is independent of the sample's size and reveals intrinsic properties. The slope of the early part tells you how stiff the material is (its modulus), the highest point relates to its strength, and how far it stretches before breaking tells you whether it is brittle (snaps early) or ductile (stretches a lot first).
-
-The same machine does this in three modes. Tensile testing pulls a sample apart, compression testing squeezes it, and flexure testing bends it across supports. Each answers a different question about how a material behaves under real-world loads.
-
-### What Scientists Use It For
-
-* A materials scientist can measure the strength and stiffness of a new material or compare candidates for a part.
-* A mechanical or civil engineer can verify that a component, weld, joint, or adhesive can carry its intended load with a safety margin.
-* A product designer can test whether a 3D-printed bracket, a packaging clip, or a plastic housing will survive normal use.
-* A biomedical researcher can measure the mechanical properties of scaffolds, gels, or soft materials that must match living tissue.
-* A student can settle a hands-on question: which 3D-print infill is actually strongest, how much weight fishing line really holds, or how a glue joint compares to the material around it.
-* At a supervised outreach event, the Breakerspace has even crushed carved pumpkins to make force, cracking, and collapse visible (see [staff-guided event example](#pumpkin)).
-
-### What To Look For In The Results
-
-Start with the overall shape of the curve. A steep initial rise means a stiff material; a gentle one means a compliant, stretchy material. The height of the curve shows how much force the sample carried, and where it drops shows where the sample failed.
-
-Look at how the sample fails. A curve that rises then suddenly drops to zero suggests brittle fracture (a clean snap); one that rises, levels off, and stretches a long way before dropping suggests ductile behavior. The failure point on the curve should match what you saw happen to the sample.
-
-Finally, sanity-check against the setup. A curve with a soft, curved "toe" at the start often means slack or slipping grips rather than real material behavior, and repeated breaks right at the grip face usually point to a gripping problem rather than the true strength (see [common failure modes](#failures)).
-
-### What This Instrument Cannot Tell You
-
-* It measures mechanical response, not chemistry or structure. It tells you how strong or stiff something is, not what it is made of.
-* Results depend heavily on sample geometry and gripping. A poorly prepared or misaligned sample gives a misleading curve, so preparation matters as much as the test.
-* A single test is not the whole story. Materials vary, so meaningful conclusions usually need several samples, not one.
-* It applies controlled, usually slow loading. It does not directly report impact resistance, fatigue over many cycles, or long-term creep unless a test is specifically designed for those.
-* It has force and size limits. Samples must fit the fixtures and stay within the load-cell range; oversized or extremely strong samples may not be testable here.
+<p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
 
 ## Standard Operating Protocol {#sop}
 
@@ -89,7 +55,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 ### Operation {#operation}
 
 * Set up the mechanical test appropriate for your sample (see [detailed operating instructions](#details) for each test type).
-* Confirm the correct load cell connector (5 kN or 50 kN) is inserted and plugged in.
+* Confirm the correct load cell connector (5 kN or 50 kN) is inserted and plugged in. Arrange any 5 kN load-cell use with staff in advance; it is not available for general access.
 * Select or create the appropriate test method in Bluehill (see [setting up a test method](#method)).
 * Enter the required specimen information and set travel limits so the crosshead and fixtures cannot collide with anything (see [set travel and transducer limits](#limits)).
 * Position and load the sample, zero displacement, and balance the force reading.
@@ -106,39 +72,41 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 * Close the Bluehill Universal software and log off the computer.
 * Confirm the Instron is in disabled mode.
 
-## Compatible Materials And Sample Prep {#materials}
+## Step-by-Step Help {#details}
 
-* All materials must be non-hazardous and safe to handle in the Breakerspace.
-* Avoid samples that may shatter dangerously, such as glass.
-* Avoid wet samples or anything that would foul the machine.
-* Some samples need cutting to fit the grips. The Breakerspace has scissors, razor blades, and a sectioning saw available.
-* Check whether an [ASTM standard](https://www.astm.org/) exists for your test; standard sample geometries give more comparable, reliable results.
+<nav class="instrument-detail-nav" aria-label="Instron operating tasks">
+  <ul class="instrument-section-links">
+    <li><a href="#test-type">Choose a test</a></li>
+    <li><a href="#load-cell">Select a load cell</a></li>
+    <li><a href="#fixtures">Attach fixtures</a></li>
+    <li><a href="#loading">Load a sample</a></li>
+    <li><a href="#extensometer">Measure strain</a></li>
+    <li><a href="#bluehill">Bluehill controls</a></li>
+    <li><a href="#method">Set up a method</a></li>
+    <li><a href="#limits">Set limits</a></li>
+    <li><a href="#running">Run a test</a></li>
+    <li><a href="#saving">Save results</a></li>
+    <li><a href="#worked-example">Worked example</a></li>
+  </ul>
+</nav>
 
-<p class="guidance-note"><em>If you have any questions about whether a material is appropriate to characterize in the Breakerspace, please ask before bringing it to the lab.</em></p>
+Build the **load string** first: the load cell, adapters, grips or fixtures, and sample. Then select a method and run the test in **Bluehill Universal**. Names in **bold** identify controls in the software or on the frame and handset. Page references point into the [manufacturer manuals](#manuals).
 
-## Test Type Selection {#test-type}
+### Choose A Test Type {#test-type}
 
 | Test | What it measures | Typical setup |
 | --- | --- | --- |
 | Tensile (small/weak samples) | Strength and stretch under pulling | Mini wedge grips, max load 1 kN |
-| Tensile (intermediate loads) | Strength and stretch under pulling | 5 kN tensile grips on the 5 kN load cell, max load 5 kN |
+| Tensile (intermediate loads) | Strength and stretch under pulling | 5 kN tensile grips on the 5 kN load cell, max load 5 kN; arrange load-cell use with staff in advance |
 | Tensile (standard) | Strength and stretch under pulling | Wedge grips, up to 50 kN |
 | Compression | Response under squeezing | Compression platens on the 50 kN head |
-| Flexure | Bending strength and stiffness | Flexure fixture on the 5 kN head |
+| Flexure | Bending strength and stiffness | Flexure fixture on the 5 kN head; arrange load-cell use with staff in advance |
 
-Match the load cell to the sample: use the 5 kN cell for smaller, weaker samples in monotonic tests only (see [configuration notes](#configuration-notes)) and the 50 kN cell for stronger ones. If you are not sure which test or fixture fits your sample, ask staff.
+Match the load cell to the sample: the 50 kN cell is available for general access. Use of the 5 kN cell for smaller, weaker samples must be arranged with staff in advance and is limited to monotonic tests (see [configuration notes](#configuration-notes)). If you are not sure which test or fixture fits your sample, ask staff.
 
-## Detailed Operating Instructions {#details}
+### Select And Connect A Load Cell {#load-cell}
 
-The sections above are a quick reference for trained users. The sections below are a training guide for new users, with the practical details and diagrams that are easiest to follow at the instrument.
-
-A complete test has two halves. First you build the **load string** — the load cell, adapters, grips or fixtures, and your sample — which is the hardware half covered under [load cell](#load-cell) through [video extensometer](#extensometer). Then you set up and run the test in **Bluehill Universal**, covered under [Bluehill orientation](#bluehill) through [saving and exporting](#saving). Names in **bold** are the on-screen buttons and screens in Bluehill, or the labeled controls on the frame and handset.
-
-Page references point into Instron's [6800 operator guide](#manuals) and the fixture guides linked there.
-
-### Load Cell {#load-cell}
-
-* Choose the load cell for your sample: 50 kN for stronger samples, or 5 kN for smaller, weaker ones.
+* Choose the load cell for your sample: 50 kN for general access, or 5 kN for smaller, weaker samples **only by advance arrangement with staff**.
 * Use the 5 kN cell for **monotonic testing only**; do not use it for holds or creep tests (see [configuration notes](#configuration-notes)).
 * The 50 kN cell stays attached to the machine.
 * To install the 5 kN cell, insert its thin end into the bottom of the 50 kN cell, push a clevis pin through both, and attach the safety clip. Rotate the metal ring clockwise until tight.
@@ -148,7 +116,7 @@ Two rules matter more than the mechanics. The load cell connected to the designa
 
 If the frame has been off, let the load cell warm up for about 20 minutes before you rely on the readings. *(6800 operator guide, p. 113, step 9.)*
 
-### Attaching Fixtures {#fixtures}
+### Attach Fixtures {#fixtures}
 
 Most parts attach the same way: align the internal holes, insert a clevis pin, add a safety clip, and rotate the metal ring to secure. Use a [spanner wrench](../assets/img/tutorials/instron/spanner_wrench.jpeg) to tighten the metal rings if needed.
 
@@ -156,7 +124,7 @@ Before installing grips, confirm the frame is in **DISABLED** mode (the white in
 
 Do not loosen a lock nut by force. The load string is normally left **preloaded**, which removes backlash that would otherwise distort results at high loads, and preloaded lock nuts are deliberately too tight to turn by hand. Unloading and re-preloading the load string uses a dedicated `Preload Grips` method and is a staff task — ask rather than improvising with a wrench. *(6800 operator guide, preload, pp. 107–108; unload, p. 109.)*
 
-### Setup Diagrams {#setup-diagrams}
+### Identify The Fixture Setup {#setup-diagrams}
 
 Each test type uses a different fixture arrangement. The annotated setups below are current reference photos.
 
@@ -187,10 +155,10 @@ Each test type uses a different fixture arrangement. The annotated setups below 
 
 <figure class="page-figure" style="max-width:32rem;">
   <img src="../assets/img/tutorials/instron/ANNOTATED_instron_sop_flexure_set_up.JPG" alt="Instron flexure setup with the bending fixture mounted on the 5 kN head." width="3024" height="4032" loading="lazy">
-  <figcaption>Flexure testing with the 5 kN head.</figcaption>
+  <figcaption>Flexure testing with the 5 kN head. Arrange use of this load cell with staff in advance; it is not available for general access.</figcaption>
 </figure>
 
-### Loading A Sample Into The Grips {#loading}
+### Load A Sample Into The Grips {#loading}
 
 How you seat the sample affects the result as much as any software setting. Most beginner curves that look wrong are gripping problems, not material behavior.
 
@@ -202,7 +170,7 @@ How you seat the sample affects the result as much as any software setting. Most
 
 Do not release the grips while the sample is still under load. If the sample did not break, jog the crosshead to relieve the force first. *(6800 operator guide, p. 114, step 20; wedge grips reference manual, removing a specimen, pp. 37–38.)*
 
-### Video Extensometer {#extensometer}
+### Set Up The Video Extensometer {#extensometer}
 
 The video extensometer measures strain optically by tracking marks on the sample. It is the accurate way to get strain, because crosshead displacement includes machine and grip compliance as well as the sample's own stretch.
 
@@ -225,7 +193,7 @@ Marking well matters, because a mark the camera loses mid-test costs you the str
 
 Setting the extensometer up inside a method is a staff-supported task the first time. In Bluehill it appears as a strain measurement on **Strain 1**, is chosen as the primary strain source under **Test Control**, and should have auto-balance enabled before the test. *(Video extensometer operator guide, using Bluehill Universal, p. 78.)*
 
-### Bluehill Orientation And Operating Modes {#bluehill}
+### Use Bluehill And The Hand Controller {#bluehill}
 
 Bluehill Universal opens on a home screen with three routes. **Test** starts or continues a sample. **Method** creates or edits the test recipe. **Admin** configures the system and is staff-only.
 
@@ -247,7 +215,7 @@ The path to running a test is therefore **DISABLED → SET UP → CAUTION → TE
 
 Two other mode behaviors are worth knowing. Holding **stop** for two seconds disables the frame deliberately. And holding **unlock** while pressing a **jog** button jogs at high speed, which is useful when bringing the crosshead into position but bypasses the reduced-speed protection — keep the test area clear. *(6800 operator guide, jog at high speed, pp. 68–69.)*
 
-### Setting Up A Test Method {#method}
+### Set Up A Test Method {#method}
 
 A **method** is the recipe for the test: what the crosshead does, what gets measured, what the operator is asked to type in, and what the software calculates. A **sample** is one run of that method over a group of specimens. Methods are reused, so most sessions start by picking an existing one rather than building from scratch.
 
@@ -287,7 +255,7 @@ Do not use the limit stops as a routine end-of-test condition. They are a safety
 
 Bluehill prompts you to confirm travel limits as part of starting a test. Treat that prompt as a real check that the stops are physically set where you intend, not a dialog to click through.
 
-### Running The Test {#running}
+### Run The Test {#running}
 
 With the load string assembled, the sample loaded, the method selected, and limits set, the run itself is short.
 
@@ -297,7 +265,7 @@ With the load string assembled, the sample loaded, the method selected, and limi
 </figure>
 
 1. **Start the sample.** From the home screen click **Test**, then choose your method — from the recent list, via **Browse methods**, or **Run a QuickTest**. Bluehill creates a sample and moves to the Test workspace.
-2. **Confirm the load cell.** Check that the connected cell (5 kN or 50 kN) is the one you intend, and that the live force readout responds sensibly when you touch the load string.
+2. **Confirm the load cell.** If using the 5 kN cell, confirm that its use was arranged with staff in advance and the method is monotonic with no holds. Check that the connected cell (5 kN or 50 kN) is the one you intend, and that the live force readout responds sensibly when you touch the load string.
 3. **Enter sample dimensions.** Fill in the operator inputs for this specimen. Measure each specimen individually rather than reusing one set of numbers.
 4. **Set travel limits when prompted**, as described under [limits](#limits).
 5. **Position the crosshead and zero displacement.** Jog until the sample is just taken up — for a compression test, roughly a centimeter above the sample — then press **zero displacement** on the handset. The button illumination changes from white to green. This makes the current position the origin for the measurement. *(6800 operator guide, set the zero displacement point, p. 123.)*
@@ -312,7 +280,7 @@ With the load string assembled, the sample loaded, the method selected, and limi
 
 Wear safety glasses for mechanical testing, and use a shield or screen when testing anything brittle that could throw fragments. See [Safety and Lab Use](../safety.html) for the lab-wide rules.
 
-### Saving And Exporting Results {#saving}
+### Save And Export Results {#saving}
 
 * A sample is only written to disk when you **finish the sample** or press **Save** on the Test tab. Do not close Bluehill on an unsaved sample. *(6800 operator guide, p. 119.)*
 * Export both the **raw data** (force, displacement, time, and strain if you used the extensometer) and any **calculated results** or report. Raw data lets you re-plot and re-analyze later; a report alone does not.
@@ -322,9 +290,9 @@ Wear safety glasses for mechanical testing, and use a shield or screen when test
 
 ### Worked Example: A Tensile Test From Start To Result {#worked-example}
 
-This walkthrough ties the sections above together for the most common test on this machine: pulling a small polymer or 3D-printed coupon to failure.
+This walkthrough ties the sections above together for a tensile test: pulling a small polymer or 3D-printed coupon to failure. **This example uses the 5 kN load cell, so arrange it with staff in advance.** The cell is not available for general access and may be used only for monotonic tests without holds.
 
-1. **Plan the load.** A coupon 10 mm wide and 3 mm thick, in a material of roughly 40 MPa tensile strength, needs about 40 MPa × 30 mm² ≈ 1.2 kN to break. That is comfortably inside the 5 kN cell and only about 2% of the 50 kN cell's range, so choose the **5 kN load cell** for better resolution. *(6800 operator guide, load-cell selection worked calculation, p. 80.)*
+1. **Plan the load.** A coupon 10 mm wide and 3 mm thick, in a material of roughly 40 MPa tensile strength, needs about 40 MPa × 30 mm² ≈ 1.2 kN to break. That is comfortably inside the 5 kN cell and only about 2% of the 50 kN cell's range, so the **5 kN load cell** provides better resolution for this staff-arranged test. *(6800 operator guide, load-cell selection worked calculation, p. 80.)*
 2. **Build the load string.** Install the 5 kN cell below the 50 kN cell with a clevis pin and safety clip, and **plug its connector in**. Install the distinct **5 kN tensile grips** above and below; do not use the 1 kN mini wedge grips for this example. Confirm the frame reads **DISABLED** while you work.
 3. **Mark the sample, if measuring strain.** Using the jig, apply two 3 mm white dots at a known gauge length. Let the ink dry and check the dots are round and opaque.
 4. **Load the coupon.** Open the jaw faces, insert the coupon so it engages the full face length and at least 75% of it, center it in line with the load path, and hand-tighten the lower then upper control nut. Keep fingers clear of the jaw gap.
@@ -337,10 +305,7 @@ This walkthrough ties the sections above together for the most common test on th
 11. **Finish and export.** Remove both pieces, press **unlock** then **return**, and repeat for the remaining specimens — at least three, because single results are not meaningful. Select **Finish sample**, export the raw data and results, and copy them to your own storage.
 12. **Sanity-check before you trust it.** A soft, curved toe at the start of the curve usually means slack or slipping grips rather than real compliance, so re-seat and re-run if you see one. Breaks repeatedly at the jaw face point to a gripping problem, not the material's true strength. Compare your peak stress against a published value for the material: agreement within a modest margin suggests the setup was sound, while a result several times off usually means a dimension or unit-entry error, grip slip, misalignment, or a calculation problem. Using a higher-capacity load cell mainly reduces resolution at low force; it should not multiply a correctly calibrated force reading. See [common failure modes](#failures).
 
-An annotated example curve marking the stiff region, peak, and failure point is on the staff media checklist and will be added here once a reviewed example is available.
-
-
-## Data Processing And Analysis {#data}
+## Understand Your Results {#data}
 
 * By default the software outputs a force-versus-displacement graph.
 * When you create a method, you can enter your sample dimensions and have the software automatically calculate properties such as modulus, strength, and strain, converting force-displacement into stress-strain.
@@ -361,40 +326,98 @@ Compare the shape against what you physically saw happen. If the curve says the 
 
 A curve that starts with a soft, curved "toe" before stiffening is usually reporting slack or grip slip rather than material compliance. Some analyses apply a toe correction by extrapolating the straight region back to zero force; it is better to fix the gripping and re-run.
 
-## Common Failure Modes {#failures}
+For the scientific context, typical curve shapes, and measurement limits, see [What This Instrument Shows You](#science).
 
-| Symptom | Likely cause | What to try |
-| --- | --- | --- |
-| Video extensometer does not work | It is not actually on | Confirm the red light is lit; press the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button again if not. |
-| Extensometer loses the dots mid-test | Marks too small, low contrast, smudged, or stretched out of view | Use 2-4 mm dots in a contrasting color (white usually reads best), let the ink dry, and check they are round and opaque before testing. See [video extensometer](#extensometer). |
-| Load cell connector will not seat | Side clips not pushed in | Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) while inserting; it can take several tries. |
-| Low-force readings are noisy or lack the expected resolution | The higher-capacity 50 kN cell is active instead of the 5 kN cell | Confirm the intended load cell is connected to the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG) and verify the active transducer in Bluehill before testing. |
-| Test will not start even though the frame is enabled | The two-second ready-to-test window expired | Press **unlock** then **start** in quick succession. See [operating modes](#bluehill). |
-| Software will not start a test, or the hand controller is unresponsive; disabled light is blinking | Emergency stop is engaged | Hold the red emergency button and turn it clockwise about 15 degrees until it pops up, then press **unlock**. |
-| Software will not start a test; disabled light is lit but not blinking | Machine is in disabled mode | Press [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller to enter setup mode. |
-| Test stops early with no failure, or the crosshead will not move | A travel limit or software transducer limit tripped | Jog the crosshead in the direction that removes the condition. See [set travel and transducer limits](#limits). |
-| Force-displacement curve looks wrong | Loose attachments | With the frame **DISABLED**, the crosshead stationary, and the load fully relieved, check each attachment by hand; nothing should move. Never touch or adjust the load string while the frame is enabled or loaded. |
-| Curve starts with a soft, curved toe | Slack in the setup or grips slipping before they bite | Take up the slack before zeroing displacement, seat the sample deeper in the jaw faces, and re-run. See [loading a sample](#loading). |
-| Sample keeps breaking right at the grip face | Grip pressure, grip type, or serrations biting too hard | Loosen the grips slightly, try a different grip type, or ask staff about finer serrations or masking tape to soften the bite. |
-| Readings drift or will not settle at zero | Load cell not warmed up, or force not balanced | Allow about 20 minutes of warm-up after the frame is switched on, then balance the force reading with no load applied. |
+## Troubleshooting {#failures}
 
-## Manufacturer Manuals {#manuals}
+### Video extensometer does not work
 
-The manual that matters most for operation is the **6800 Dual Column Table Model operator guide**, which covers the frame, handset, operating modes, load string, limits, and the full test procedure. It is published by Instron, and the page references throughout this page point into it.
+It is not actually on. Confirm the red light is lit; press the [on](../assets/img/tutorials/instron/ANNOTATED_video_extensometer.JPG) button again if not.
 
-* [6800 Dual Column Table Model operator guide](https://www.instron.com/wp-content/uploads/2024/07/6800-dual-column-table-model-operator-guide-7.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
+### Extensometer loses the dots mid-test
 
-Fixture and accessory guides, for grip-specific and fixture-specific detail:
+Marks too small, low contrast, smudged, or stretched out of view. Use 2-4 mm dots in a contrasting color (white usually reads best), let the ink dry, and check they are round and opaque before testing. See [video extensometer](#extensometer).
 
-* [5 kN, 10 kN, and 50 kN wedge grips reference manual](https://www.dropbox.com/scl/fi/3iaxhdxfo8pwxtj8t7m2i/5kn-10knand50kn-wedge-grips-reference-manual.pdf?rlkey=rjm1t839hzfv8yzly7mihjh2n&st=m76u4b4n&dl=0) — installing and removing a specimen (ch. 4, pp. 35–38), including specimen placement (Figure 10, p. 37) and the 35 kN / 55 kN load cautions (p. 35). Jaw faces and grip anatomy are in ch. 1–2 (pp. 11–21).
-* [Video extensometer operator guide](https://www.dropbox.com/scl/fi/rgb05cbfo30mf80uwskek/video-extensometer-ave2-2663-901-and-sve2-2663-902-operator-guide.pdf?rlkey=qfhgbcfwtsl57fdbellgg206w&st=h7hcnio8&dl=0) — marking specimens, ink-dot sizing, and mark-color choice (ch. 4, pp. 51–54); Bluehill Universal setup (ch. 6, pp. 59–65); running tests (ch. 9, pp. 77–79).
-* [Miniature grips for low-force testing operator guide](https://www.dropbox.com/scl/fi/zprr8ua5ma26lzqb31czo/2711-006-miniature-grips-for-low-force-testing-operators-guide.pdf?rlkey=a26sizgotrx3beaa1iujvgp0r&st=njxjs6bs&dl=0) — for the mini wedge grips. Note the capacity limit: the 016 grip is rated to 1 kN.
-* [Screw action grips reference manual](https://www.dropbox.com/scl/fi/nf5pnttlapjawi8cm94ms/2710-11x-screw-action-grips-reference-manual.pdf?rlkey=7q1aeazj97xoshgy7n29297ed&st=ozgbhy08&dl=0) — installing and removing jaw faces (ch. 3).
-* [5 kN flexure fixture reference manual](https://www.dropbox.com/scl/fi/59aeqcu8o9b7isv7gu93a/5kn-flexure-fixture-reference-manual.pdf?rlkey=f4wtjfybmg86kruq1hcp32nms&st=1u3dpdjr&dl=0) — installing the fixture, aligning the anvils, and setting the anvil spans (ch. 3, pp. 19–23).
+### Load cell connector will not seat
 
-Bluehill Universal's own **Help and Reference**, opened with the **?** icon in the software, is the authoritative source for method authoring, calculations, and report layouts, and is more current than any printed summary.
+Side clips not pushed in. Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) while inserting; it can take several tries.
 
-## Exercises {#exercises}
+### Low-force readings are noisy or lack the expected resolution
+
+The higher-capacity 50 kN cell is active instead of the 5 kN cell. Confirm the intended load cell is connected to the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG) and verify the active transducer in Bluehill before testing. Do not switch to the 5 kN cell without advance arrangement with staff; it is not available for general access.
+
+### Test will not start even though the frame is enabled
+
+The two-second ready-to-test window expired. Press **unlock** then **start** in quick succession. See [operating modes](#bluehill).
+
+### Software will not start a test, or the hand controller is unresponsive; disabled light is blinking
+
+Emergency stop is engaged. Hold the red emergency button and turn it clockwise about 15 degrees until it pops up, then press **unlock**.
+
+### Software will not start a test; disabled light is lit but not blinking
+
+Machine is in disabled mode. Press [unlock](../assets/img/tutorials/instron/ANNOTATED_hand_controller_when_disabled.JPG) on the hand controller to enter setup mode.
+
+### Test stops early with no failure, or the crosshead will not move
+
+A travel limit or software transducer limit tripped. Jog the crosshead in the direction that removes the condition. See [set travel and transducer limits](#limits).
+
+### Force-displacement curve looks wrong
+
+Loose attachments. With the frame **DISABLED**, the crosshead stationary, and the load fully relieved, check each attachment by hand; nothing should move. Never touch or adjust the load string while the frame is enabled or loaded.
+
+### Curve starts with a soft, curved toe
+
+Slack in the setup or grips slipping before they bite. Take up the slack before zeroing displacement, seat the sample deeper in the jaw faces, and re-run. See [loading a sample](#loading).
+
+### Sample keeps breaking right at the grip face
+
+Grip pressure, grip type, or serrations biting too hard. Loosen the grips slightly, try a different grip type, or ask staff about finer serrations or masking tape to soften the bite.
+
+### Readings drift or will not settle at zero
+
+Load cell not warmed up, or force not balanced. Allow about 20 minutes of warm-up after the frame is switched on, then balance the force reading with no load applied.
+
+## What This Instrument Shows You {#science}
+
+Learn how mechanical testing works, what scientists use it for, how to read the response of a material, and what the measurements cannot establish.
+
+For hands-on examples, try the [practice activities](#exercises).
+
+### The Basic Idea {#the-basic-idea}
+
+Every material pushes back when you deform it, up to a point. A universal testing machine measures exactly how hard it pushes back and how far it moves before it yields or breaks. The machine grips a sample and moves one end at a controlled rate while a load cell records the force. The result is a force-displacement curve: the story of how the material responded from the first gentle load all the way to failure.
+
+With the sample's dimensions, that curve can be converted to a stress-strain curve, which is independent of the sample's size and reveals intrinsic properties. The slope of the early part tells you how stiff the material is (its modulus), the highest point relates to its strength, and how far it stretches before breaking tells you whether it is brittle (snaps early) or ductile (stretches a lot first).
+
+The same machine does this in three modes. Tensile testing pulls a sample apart, compression testing squeezes it, and flexure testing bends it across supports. Each answers a different question about how a material behaves under real-world loads.
+
+### What Scientists Use It For {#what-scientists-use-it-for}
+
+* A materials scientist can measure the strength and stiffness of a new material or compare candidates for a part.
+* A mechanical or civil engineer can verify that a component, weld, joint, or adhesive can carry its intended load with a safety margin.
+* A product designer can test whether a 3D-printed bracket, a packaging clip, or a plastic housing will survive normal use.
+* A biomedical researcher can measure the mechanical properties of scaffolds, gels, or soft materials that must match living tissue.
+* A student can settle a hands-on question: which 3D-print infill is actually strongest, how much weight fishing line really holds, or how a glue joint compares to the material around it.
+* At a supervised outreach event, the Breakerspace has even crushed carved pumpkins to make force, cracking, and collapse visible (see [staff-guided event example](#pumpkin)).
+
+### What To Look For In The Results {#what-to-look-for-in-the-results}
+
+Start with the overall shape of the curve. A steep initial rise means a stiff material; a gentle one means a compliant, stretchy material. The height of the curve shows how much force the sample carried, and where it drops shows where the sample failed.
+
+Look at how the sample fails. A curve that rises then suddenly drops to zero suggests brittle fracture (a clean snap); one that rises, levels off, and stretches a long way before dropping suggests ductile behavior. The failure point on the curve should match what you saw happen to the sample.
+
+Finally, sanity-check against the setup. A curve with a soft, curved "toe" at the start often means slack or slipping grips rather than real material behavior, and repeated breaks right at the grip face usually point to a gripping problem rather than the true strength (see [common failure modes](#failures)).
+
+### What This Instrument Cannot Tell You {#what-this-instrument-cannot-tell-you}
+
+* It measures mechanical response, not chemistry or structure. It tells you how strong or stiff something is, not what it is made of.
+* Results depend heavily on sample geometry and gripping. A poorly prepared or misaligned sample gives a misleading curve, so preparation matters as much as the test.
+* A single test is not the whole story. Materials vary, so meaningful conclusions usually need several samples, not one.
+* It applies controlled, usually slow loading. It does not directly report impact resistance, fatigue over many cycles, or long-term creep unless a test is specifically designed for those.
+* It has force and size limits. Samples must fit the fixtures and stay within the load-cell range; oversized or extremely strong samples may not be testable here.
+
+## Practice Activities {#exercises}
 
 * **Level 1 - Run a tensile test:** Set up a 50 kN tensile test, load a sample, and run it. Confirm that the sample's force-displacement curve appears, and identify where the sample failed on the curve.
 * **Level 2 - Measure strain with the video extensometer:** Mark a sample, set up the video extensometer, and use it to measure strain during a test.
@@ -422,6 +445,22 @@ This is a supervised event demonstration, not a standard independent-user workfl
   </figure>
 </div>
 
+## Manufacturer Manuals {#manuals}
+
+The manual that matters most for operation is the **6800 Dual Column Table Model operator guide**, which covers the frame, handset, operating modes, load string, limits, and the full test procedure. It is published by Instron, and the page references throughout this page point into it.
+
+* [6800 Dual Column Table Model operator guide](https://www.instron.com/wp-content/uploads/2024/07/6800-dual-column-table-model-operator-guide-7.pdf) — the primary reference. Risk reduction and safe use (ch. 2, pp. 25–33); function of controls, including the handset, indicator panel, and operating modes (ch. 4, pp. 53–78); assembling the load string, load-cell selection and installation, grips, and preload (ch. 5, pp. 79–109); testing specimens, zero displacement, limit stops, stopping a test, and shutdown (ch. 6, pp. 111–129); maintenance and load-cell troubleshooting (ch. 7, pp. 131–139).
+
+Fixture and accessory guides, for grip-specific and fixture-specific detail:
+
+* [5 kN, 10 kN, and 50 kN wedge grips reference manual](https://www.dropbox.com/scl/fi/3iaxhdxfo8pwxtj8t7m2i/5kn-10knand50kn-wedge-grips-reference-manual.pdf?rlkey=rjm1t839hzfv8yzly7mihjh2n&st=m76u4b4n&dl=0) — installing and removing a specimen (ch. 4, pp. 35–38), including specimen placement (Figure 10, p. 37) and the 35 kN / 55 kN load cautions (p. 35). Jaw faces and grip anatomy are in ch. 1–2 (pp. 11–21).
+* [Video extensometer operator guide](https://www.dropbox.com/scl/fi/rgb05cbfo30mf80uwskek/video-extensometer-ave2-2663-901-and-sve2-2663-902-operator-guide.pdf?rlkey=qfhgbcfwtsl57fdbellgg206w&st=h7hcnio8&dl=0) — marking specimens, ink-dot sizing, and mark-color choice (ch. 4, pp. 51–54); Bluehill Universal setup (ch. 6, pp. 59–65); running tests (ch. 9, pp. 77–79).
+* [Miniature grips for low-force testing operator guide](https://www.dropbox.com/scl/fi/zprr8ua5ma26lzqb31czo/2711-006-miniature-grips-for-low-force-testing-operators-guide.pdf?rlkey=a26sizgotrx3beaa1iujvgp0r&st=njxjs6bs&dl=0) — for the mini wedge grips. Note the capacity limit: the 016 grip is rated to 1 kN.
+* [Screw action grips reference manual](https://www.dropbox.com/scl/fi/nf5pnttlapjawi8cm94ms/2710-11x-screw-action-grips-reference-manual.pdf?rlkey=7q1aeazj97xoshgy7n29297ed&st=ozgbhy08&dl=0) — installing and removing jaw faces (ch. 3).
+* [5 kN flexure fixture reference manual](https://www.dropbox.com/scl/fi/59aeqcu8o9b7isv7gu93a/5kn-flexure-fixture-reference-manual.pdf?rlkey=f4wtjfybmg86kruq1hcp32nms&st=1u3dpdjr&dl=0) — installing the fixture, aligning the anvils, and setting the anvil spans (ch. 3, pp. 19–23).
+
+Bluehill Universal's own **Help and Reference**, opened with the **?** icon in the software, is the authoritative source for method authoring, calculations, and report layouts, and is more current than any printed summary.
+
 ## Available Tooling And Measurement Equipment {#tooling}
 
 | Name / part number | Configuration / description |
@@ -434,11 +473,11 @@ This is a supervised event demonstration, not a standard independent-user workfl
 | Cable-snubbing grips (<span style="white-space:nowrap;">W-5075M</span>) | 36 kN capacity; cable diameters 0.8–6.35 mm. [Instron wire and cable grips](https://www.instron.com/en/products/testing-accessories/grips/wire-cable/) |
 | Wire-snubbing grips (<span style="white-space:nowrap;">W-5074M</span>) | 2.2 kN capacity; wire diameters 0.125–1.52 mm. [Instron wire and cable grips](https://www.instron.com/en/products/testing-accessories/grips/wire-cable/) |
 | Main load cell (<span style="white-space:nowrap;">68TM-50LB</span>) | 50 kN tension/compression load cell; stays attached to the frame. [Instron 6800 systems](https://www.instron.com/en/products/testing-systems/universal-testing-systems/6800-series/) |
-| 5 kN load cell with piggyback adapter (<span style="white-space:nowrap;">2580-5KN</span>) | 5 kN tension/compression load cell with attached <span style="white-space:nowrap;">2501-208</span> adapter for mounting beneath the main cell; **monotonic testing only** (see configuration notes below). [Instron 2580 load cells](https://www.instron.com/en/products/testing-accessories/load-cells/static/2580-series-static/); [Instron adapters](https://www.instron.com/en/products/testing-accessories/couplings-and-adapters/) |
+| 5 kN load cell with piggyback adapter (<span style="white-space:nowrap;">2580-5KN</span>) | 5 kN tension/compression load cell with attached <span style="white-space:nowrap;">2501-208</span> adapter for mounting beneath the main cell; **not available for general access—arrange use with staff in advance; monotonic testing only** (see configuration notes below). [Instron 2580 load cells](https://www.instron.com/en/products/testing-accessories/load-cells/static/2580-series-static/); [Instron adapters](https://www.instron.com/en/products/testing-accessories/couplings-and-adapters/) |
 | AVE2 video extensometer (<span style="white-space:nowrap;">2663-901</span>) | Optical strain measurement; table-model mount <span style="white-space:nowrap;">2663-901B3</span>, 16 mm lens <span style="white-space:nowrap;">2663-901E1</span>, and illumination kit <span style="white-space:nowrap;">2663-901J1</span>. [Instron AVE2 extensometer](https://www.instron.com/en/products/testing-accessories/extensometers/ave-2-advanced-video-extensometer/) |
 
 ### Configuration Notes {#configuration-notes}
 
-**The 5 kN load cell is restricted to monotonic testing.** It has been damaged and no longer meets specification for holds. Do not use it for creep, stress-relaxation, or other tests with load or displacement holds.
+**The 5 kN load cell is not available for general access. Arrange its use with staff in advance.** It is restricted to monotonic testing: it has been damaged and no longer meets specification for holds. Do not use it for creep, stress-relaxation, or other tests with load or displacement holds.
 
 Tooling capacities above are component ratings. The allowable test load is limited by the lowest-rated component in the assembled load string, including the frame, load cell, adapters, and grips or fixtures.
