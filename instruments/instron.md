@@ -32,6 +32,7 @@ This page is the operating page for the Instron. It combines the quick reference
 
 * [Learn what mechanical testing can show you](#science)
 * [Choose a mechanical test type](#test-type)
+* [View available tooling and configurations](#tooling)
 * [Set up a test method in Bluehill](#method)
 * [Follow a worked tensile example](#worked-example)
 * [Analyze and process your data](#data)
@@ -125,7 +126,7 @@ Mechanical testing involves stored energy, heavy fixtures, moving crossheads, an
 | Compression | Response under squeezing | Compression platens on the 50 kN head |
 | Flexure | Bending strength and stiffness | Flexure fixture on the 5 kN head |
 
-Match the load cell to the sample: use the 5 kN cell for smaller, weaker samples and the 50 kN cell for stronger ones. If you are not sure which test or fixture fits your sample, ask staff.
+Match the load cell to the sample: use the 5 kN cell for smaller, weaker samples in monotonic tests only (see [configuration notes](#configuration-notes)) and the 50 kN cell for stronger ones. If you are not sure which test or fixture fits your sample, ask staff.
 
 ## Detailed Operating Instructions {#details}
 
@@ -138,6 +139,7 @@ Page references point into Instron's [6800 operator guide](#manuals) and the fix
 ### Load Cell {#load-cell}
 
 * Choose the load cell for your sample: 50 kN for stronger samples, or 5 kN for smaller, weaker ones.
+* Use the 5 kN cell for **monotonic testing only**; do not use it for holds or creep tests (see [configuration notes](#configuration-notes)).
 * The 50 kN cell stays attached to the machine.
 * To install the 5 kN cell, insert its thin end into the bottom of the 50 kN cell, push a clevis pin through both, and attach the safety clip. Rotate the metal ring clockwise until tight.
 * When using the 5 kN cell, plug its connector into the [correct port](../assets/img/tutorials/instron/ANNOTATED_connection_port_instron.JPG). Push in the [side clips](../assets/img/tutorials/instron/ANNOTATED_load_cell_connector.JPG) as you insert it; this connector can take several tries.
@@ -419,3 +421,24 @@ This is a supervised event demonstration, not a standard independent-user workfl
     <figcaption>During the test, visible cracking and collapse can be connected to the force-displacement response.</figcaption>
   </figure>
 </div>
+
+## Available Tooling And Measurement Equipment {#tooling}
+
+| Name / part number | Configuration / description |
+| --- | --- |
+| Miniature wedge grips (<span style="white-space:nowrap;">2716-016</span>) | 1 kN capacity for low-force tensile testing. [Instron wedge grips](https://www.instron.com/en/products/testing-accessories/grips/mechanical-wedge-action-grips/) |
+| Mechanical wedge-action grips (<span style="white-space:nowrap;">2716-020</span>) | 50 kN capacity; flat serrated jaw faces <span style="white-space:nowrap;">2703-151</span> (25 × 57 mm, nominal 0–6.4 mm specimen thickness) and specimen-centering device <span style="white-space:nowrap;">2716-011</span>. [Instron wedge grips](https://www.instron.com/en/products/testing-accessories/grips/mechanical-wedge-action-grips/) |
+| Mechanical screw side-action grips (<span style="white-space:nowrap;">2710-115</span>) | 5 kN capacity; serrated jaw faces <span style="white-space:nowrap;">2702-315</span> (25 × 25 mm). [Instron screw side-action grips](https://www.instron.com/en/products/testing-accessories/grips/screw-side-action-grips/) |
+| Three-point bend fixture (<span style="white-space:nowrap;">2810-400</span>) | 5 kN capacity; 10 mm upper anvil and <span style="white-space:nowrap;">2810-400A1</span> lower support anvils, also 10 mm diameter. [Instron flexure fixtures](https://www.instron.com/en/products/testing-accessories/flexure-fixtures/) |
+| Compression platens (<span style="white-space:nowrap;">2501-163</span>) | Two 150 mm diameter platens, each rated to 100 kN; this frame is limited to 50 kN. [Instron compression platens](https://www.instron.com/en/products/testing-accessories/compression-platens-anvils-spherical-seating/) |
+| Cable-snubbing grips (<span style="white-space:nowrap;">W-5075M</span>) | 36 kN capacity; cable diameters 0.8–6.35 mm. [Instron wire and cable grips](https://www.instron.com/en/products/testing-accessories/grips/wire-cable/) |
+| Wire-snubbing grips (<span style="white-space:nowrap;">W-5074M</span>) | 2.2 kN capacity; wire diameters 0.125–1.52 mm. [Instron wire and cable grips](https://www.instron.com/en/products/testing-accessories/grips/wire-cable/) |
+| Main load cell (<span style="white-space:nowrap;">68TM-50LB</span>) | 50 kN tension/compression load cell; stays attached to the frame. [Instron 6800 systems](https://www.instron.com/en/products/testing-systems/universal-testing-systems/6800-series/) |
+| 5 kN load cell with piggyback adapter (<span style="white-space:nowrap;">2580-5KN</span>) | 5 kN tension/compression load cell with attached <span style="white-space:nowrap;">2501-208</span> adapter for mounting beneath the main cell; **monotonic testing only** (see configuration notes below). [Instron 2580 load cells](https://www.instron.com/en/products/testing-accessories/load-cells/static/2580-series-static/); [Instron adapters](https://www.instron.com/en/products/testing-accessories/couplings-and-adapters/) |
+| AVE2 video extensometer (<span style="white-space:nowrap;">2663-901</span>) | Optical strain measurement; table-model mount <span style="white-space:nowrap;">2663-901B3</span>, 16 mm lens <span style="white-space:nowrap;">2663-901E1</span>, and illumination kit <span style="white-space:nowrap;">2663-901J1</span>. [Instron AVE2 extensometer](https://www.instron.com/en/products/testing-accessories/extensometers/ave-2-advanced-video-extensometer/) |
+
+### Configuration Notes {#configuration-notes}
+
+**The 5 kN load cell is restricted to monotonic testing.** It has been damaged and no longer meets specification for holds. Do not use it for creep, stress-relaxation, or other tests with load or displacement holds.
+
+Tooling capacities above are component ratings. The allowable test load is limited by the lowest-rated component in the assembled load string, including the frame, load cell, adapters, and grips or fixtures.
