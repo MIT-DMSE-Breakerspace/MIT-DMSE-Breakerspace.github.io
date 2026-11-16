@@ -8,6 +8,8 @@ This folder is for integrated instrument pages. These pages are intended to beco
 
 **November 16 education follow-up:** the owner subsequently included `ftir.md` in a local revision to keep the educational explanation coherent. Both selected pages now place **What This Instrument Shows You** after operational help and troubleshooting, with the original four subsections together: The Basic Idea; What Scientists Use It For; What To Look For In The Results; and What This Instrument Cannot Tell You. Opening task navigation links directly to that section. Practical data processing stays with operating help, and practice activities follow the educational section. This supersedes the pilot's split of interpretation/limitations into Results for these two drafts; it does not authorize a site-wide conversion or publication.
 
+**November 16 publication:** the owner subsequently approved publication of both pages and the compact Instron image galleries. [PR #64](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/64), merge `bab9a9a`, is deployed and live-verified. This supersedes the local-draft/publication status above for Instron and FTIR only. Preserve their cohesive educational sections and current operating instructions; other instrument-page renovations remain paused pending owner feedback. See the handoff for validation and release details.
+
 The older `tutorials/` pages can remain in place during the transition. The working model is:
 
 * `instruments/sem.md`: a shared SEM hub for choosing between SEM instruments and reviewing common SEM concepts.
