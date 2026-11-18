@@ -164,7 +164,9 @@ This page was substantially expanded from a thin original and still needs verifi
 
 * [ ] Confirm the exact LabSpec 6 control names used in the Level 1 path match the interface: TopCam focusing, internal camera/laser view, "stop all," RTD, AutoCalibration (Maintenance tab), routine acquisition/start, and save. Verify advanced Acquisition-tab and Map labels separately for the detailed page.
 * [ ] Confirm the silicon reference peak position (page states ~520 cm<sup>-1</sup>) and the recommended starting acquisition time, accumulations, and ND filter/power for a first measurement.
-* [ ] Confirm the confocal hole and slit values to recommend for routine surface work and for z-depth profiling, and add them where the page currently flags them as staff-confirm.
+* [x] Confirm confocal hole (100, 300, 500 µm) and slit (50, 100, 200 µm) inventory and publish the owner-requested guidance for initial signal finding and later depth/spectral selection (November 18, 2026 checkpoint). Quantitative depth measurements still require staff planning.
+* [ ] Continue the owner's Raman page review on November 19, 2026; approximately 50% was complete when the November 18 publication checkpoint was authorized. Last explicit feedback was the 10x general-use / 100x small-particle recommendation in the standard-workflow introduction. Confirm the restart point with the owner.
+* [ ] Synchronize the provisional Raman Quick Guide SOP with the November 18 canonical-page changes, including White light level, brightfield/darkfield choice, and camera/laser/RTD transitions. Its existing provisional warning and unresolved multi-state layout/technical review still apply; it is not cleared for routine use or printing.
 * [ ] Confirm the startup/interlock description (door interlock, interlock key, internal-camera laser check) matches the actual hardware and the intended laser-safety procedure.
 * [ ] Confirm that AutoAlignment is staff-only and that the staff-only note reflects lab policy.
 
@@ -231,3 +233,9 @@ This page was substantially expanded from a thin original and still needs verifi
 * [ ] Add an attention-catching example diffraction pattern to the "What this instrument shows you" section (for example, a sharp crystalline pattern next to a broad amorphous one) to illustrate the educational text.
 * [ ] Cross-link the XRD handout once its cheat-sheet content is finalized and the handout returns to the public build.
 * [ ] Add approved training powders and reference samples for the exercises once the sample library is ready.
+
+## Raman Alignment Notice Review — Due December 18, 2026
+
+- [ ] Revisit the November 18, 2026 notice in `raman.md` by December 18, 2026, or immediately after alignment service. The owner reports imperfect laser/detector alignment and the laser intensity maximum slightly above and left of the crosshair. Until corrected, users target the actual brightest spot in the internal camera and refine focus against Raman peaks.
+- [ ] After service, verify camera crosshair/laser targeting and Raman collection for each laser with staff, then revise or remove the dated notice and any temporary directional guidance in the standard workflow. Preserve the general instruction to verify the actual spot and re-optimize focus after wavelength changes.
+- [ ] If service is still pending, confirm the observed offset and update the notice and next review date. This is a repository-only reminder; no scheduled automation was requested.

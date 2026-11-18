@@ -18,6 +18,8 @@ The older `tutorials/` pages can remain in place during the transition. The work
 
 For instruments that do not need to be split into multiple related tools, one page such as `instruments/ftir.md` may be enough.
 
+**November 18 Raman publication checkpoint:** the owner authorized an operation-first Raman page with dedicated weak-signal, 785 nm focus, fluorescence/saturation and spectral-resolution guides. Its four-part educational section now follows operating help and troubleshooting. The confirmed hole/slit inventory and dated alignment notice are included. Review the alignment notice by **December 18, 2026**, or immediately after service; this is a repository reminder only. The owner authorized committing and publishing this checkpoint on November 18 with the page review about **50% complete**, to continue November 19. See the [Raman handoff](../_staff/site-revision-handoff-2026-09-17.md#raman-publication-checkpoint--november-18). This exception does not resume other instrument renovations.
+
 ## Consolidation Status
 
 The canonical catalog is `instruments/index.md`. Consolidated pages now cover all eleven instruments:
@@ -41,7 +43,7 @@ The sample library and Materials Showcase are planned supporting systems. Level 
 
 ## Detailed Operating Instruction Readiness
 
-This section is a durable status snapshot of the **Detailed Operating Instructions** section (`{#details}`) on each instrument page, so a new working session can pick up the levelling work without re-reading every page. Last full assessment: **2026-07-20**, with `instron.md` reassessed **2026-07-29**. Re-run the assessment (read each page's detailed section against the rubric below) whenever a page's detailed section is substantially edited, and update the table and date.
+This section is a durable status snapshot of the **Detailed Operating Instructions** section (`{#details}`) on each instrument page, so a new working session can pick up the levelling work without re-reading every page. Last full assessment: **2026-07-20**, with `instron.md` reassessed **2026-07-29** and `raman.md` reassessed **2026-11-18**. Re-run the assessment (read each page's detailed section against the rubric below) whenever a page's detailed section is substantially edited, and update the table and date.
 
 **The bar we are levelling to.** Every detailed section should be a useful training guide for the *common* tasks on that instrument — startup context, sample loading, the routine measurement/acquisition workflow, and saving/exporting results — with practical context and media where available. It should **reference specific manual sections or pages for deep dives rather than reproduce the manufacturer manual.** Page-level manual citations (for example "sample-prep guide p. 1.4") are the target; a bare list of whole-PDF links is the weaker fallback. A short worked example (a real run from start to result) is the mark of the strongest pages.
 
@@ -56,7 +58,7 @@ This section is a durable status snapshot of the **Detailed Operating Instructio
 | `optical.md` | 4 | Thorough with page-cited manuals (QRG p.11, app manual pp.52/63/106/112/132) and on-demand video; startup/loading remains concise and several acquisition videos remain on the staff checklist. |
 | `psa.md` | 4 | Video-rich workflow (cleaning, loading, software, collection). Manual references are whole-PDF only. The workstation access handoff and default database/export conventions still need confirming; authentication details should remain in training or at the instrument. |
 | `uv-vis.md` | 4 | Good routine-absorbance EZ Spec workflow; needs confirmed method settings and process screenshots. Fluorescence remains staff-guided. Manual references are whole-PDF only. |
-| `raman.md` | 4 | Strong text and conceptual depth (laser/grating choice, Si calibration, mapping, z-profiling) but **zero embedded media** and several control names/settings flagged for staff verification. |
+| `raman.md` | 4 | Reassessed 2026-11-18: full calibration/measurement workflow plus dedicated weak-signal, wavelength-dependent focus, fluorescence/saturation and spectral-resolution guides; confirmed hole/slit settings, mapping and Z-profiling. Still lacks instructional media and a worked sample example; some manuals remain whole-document references. Alignment notice review due 2026-12-18 or after service. |
 | `phenom-xl.md` | 4 | Solid; core SEM imaging workflow lives in `_includes/sem/imaging-workflow.md`. Instrument-specific loading/imaging GIFs remain on the staff checklist. |
 | `phenom-pure.md` | 4 | Solid; **cold-stage section is the most developed of any page.** Standard NavCam-to-SEM imaging delegated to the shared include; generic loading media remain on the staff checklist. |
 | `sem.md` | 3 (hub) | Intentionally a hub with no operating walkthrough — startup/imaging/shutdown are delegated to the two Phenom pages. Strong science and shared sample-prep content. Do not add operation here. |
