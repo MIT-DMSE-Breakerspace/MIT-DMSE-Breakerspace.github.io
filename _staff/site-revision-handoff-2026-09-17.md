@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-11-16 after publication and verification of the owner-approved Instron/FTIR revision through PR #64 / `bab9a9a`. The filename is retained for existing links; earlier draft and release records retain their dated status.
+Last updated: 2026-11-18 for the owner-authorized Raman publication checkpoint and November 19 review continuation. The filename is retained for existing links; earlier draft and release records retain their dated status.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -10,13 +10,31 @@ The task-based site structure is sound. The priority is helping MIT undergraduat
 
 For page-by-page editorial work, the owner wants analysis and suggestions, then a locally hosted draft for manual review, followed by publication only after approval. Shorten copy without losing meaning or operational facts, and prioritize useful actions and readable organization on phones. Approval of the completed Safety and navigation releases does not approve the next page's draft.
 
-**Further individual instrument-page renovations are paused while the owner gathers feedback.** The explicitly authorized November 16 Instron/FTIR revision below is published. Do not propagate it to other pages or replace the shared template's existing order and educational-length guidance until the owner resumes that work. This pause concerns the page-renovation stream; it does not cancel separately authorized training-guide work or necessary safety corrections.
+**Further individual instrument-page renovations are paused while the owner gathers feedback.** The explicitly authorized November 16 Instron/FTIR revision below is published; the November 18 Raman checkpoint below is separately authorized for publication. Do not propagate it to other pages or replace the shared template's existing order and educational-length guidance until the owner resumes that work. This pause concerns the page-renovation stream; it does not cancel separately authorized training-guide work or necessary safety corrections.
 
 The owner approved a further Get Trained revision on September 18 to focus on registration: a short training-process overview, the one-time online-record action, and a compact live list of upcoming sessions. Preparation, access-setup, and project/course support sections were removed by request; do not restore them as generic onboarding guidance. Access setup is conveyed during training, and instrument-page review is not expected preparation. The early-fall notice was removed because the calendar has sessions, with more on the way; do not restore it as a generic placeholder.
 
 There are no resources for organized usability trials. Use automated checks, proportionate phone/desktop inspection, and feedback from normal lab interactions. The original review's proposed recruited-user testing and 20/60/20 effort split were recommendations, not adopted requirements. Routine fixes do not need a new testing program.
 
 The owner will review the live pages following the September 18 homepage and shared-layout releases. The prior all-page review was interrupted; do not treat the limited spot-check below as its completion. Use subagents for graphical page reviews and have them return concise findings and coverage, keeping screenshots and large page-rendering payloads out of the main task.
+
+## Raman Publication Checkpoint — November 18
+
+**Publication authorized; owner review about 50% complete.** On November 18 the owner explicitly requested committing all uncommitted work, pushing a pull request, merging when checks pass, and publishing today's Raman changes as a backed-up checkpoint. The remaining editorial review is planned for **November 19, 2026**. Publication approval does not mean the full page has been reviewed.
+
+Continue with the owner on the [live Raman page](https://breakerspace.mit.edu/instruments/raman.html). The last explicit feedback concerned **A note on objectives**, near the start of [Standard Workflow](https://breakerspace.mit.edu/instruments/raman.html#standard-workflow): 10x for general use; 100x for specific small particles with care for its very short working distance and sample collisions. The owner has not specified an exact restart line; confirm where they want to resume rather than treating the remaining page as approved in detail. Start from current `main` on a new task branch after this checkpoint is merged.
+
+The checkpoint keeps the existing page style and all former fragment targets. Samples and operation now precede the educational section, which remains a cohesive four-part section below operating help and troubleshooting. Dedicated guides cover weak/missing signals, wavelength-dependent Raman focus (especially 785 nm), fluorescence and detector saturation, and subsequent spectral-resolution improvements. The confirmed hole/slit settings and comparison procedure remain in detailed instructions. Laser/grating tables share three aligned columns, with nonbreaking wavelength units and a combined resolution/signal-strength column.
+
+Owner-reviewed operating corrections include external-camera focus followed by closed-door/internal-camera laser-spot focus and RTD optimization; brightfield or darkfield according to the sample; adjustment of **White light level** as focus improves rather than maximum brightness; and **stop all** before starting another function whenever camera video, RTD or acquisition is running. Camera-gain speculation was deliberately omitted. Initial minimum spot size remains distinct from final Raman-peak optimization.
+
+The public alignment notice is dated **November 18, 2026** and directs users to the actual laser intensity maximum slightly above-left of the crosshair. It contains no service timeline or review deadline. The repository-only [alignment review checklist](../instruments/staff-todo.md#raman-alignment-notice-review--due-december-18-2026) is due **December 18, 2026**, or sooner after service. No scheduled reminder was requested. The provisional Raman Quick Guide still requires synchronization with the revised canonical SOP and remains blocked for routine use; this checkpoint does not approve it.
+
+Publication PR: [#67](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/67), initial content commit `a337b70`. The implementation branch is `codex/raman-hole-slit-guidance`. The local review server uses `http://127.0.0.1:4173/instruments/raman.html` and serves generated `_site` files; rebuild with `bundle exec jekyll build` after edits. If the server is unavailable, start the normal Jekyll preview. The public page is the durable review destination after deployment.
+
+Prior local checks passed: Jekyll build, SOP contract, HTMLProofer/internal links, site quality, all 32 original anchors, desktop Pa11y, and headless Chromium layout checks. The matching selection-table columns and single-line wavelength labels were verified at 320, 390 and 1280 px without document overflow. Final local release checks also passed: `bundle exec script/cibuild`, the full 13-page accessibility suite, targeted Raman Pa11y at 1280×900 and 390×844, original-anchor preservation, and exclusion of `AGENTS.md` from generated output. Native-device and screen-reader testing were not performed. See PR #67 and its linked Actions runs for the final merge and deployment status.
+
+The newly tracked root `AGENTS.md` contains the existing non-secret repository workflow guidance and is excluded from generated site output. Further instrument renovations remain paused except for explicitly requested Raman follow-up.
 
 ## Instron SOP-First Draft — November 16
 

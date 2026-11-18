@@ -595,6 +595,29 @@ main table a:focus-visible {
   grid-column: 1 / -1;
 }
 
+/* Align Raman laser and grating comparisons while keeping wavelength units together. */
+.raman-selection-tables table {
+  table-layout: fixed;
+}
+
+.raman-selection-tables th {
+  box-sizing: border-box;
+}
+
+.raman-selection-tables th:first-child {
+  width: 24%;
+}
+
+.raman-selection-tables th:nth-child(2) {
+  width: 28%;
+}
+
+@media (max-width: 600px) {
+  .raman-selection-tables th:first-child {
+    width: 5.5rem;
+  }
+}
+
 .instrument-hero {
   float: right;
   width: 45%;
