@@ -618,6 +618,67 @@ main table a:focus-visible {
   }
 }
 
+/* Raman control references keep each annotated image intact. */
+.raman-main-controls,
+.raman-acquisition-figure {
+  max-width: 900px;
+}
+
+.raman-image-link {
+  display: block;
+}
+
+.raman-panel-reference {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #009de6;
+  background: #f5f8fa;
+}
+
+.raman-panel-reference p {
+  margin-bottom: 0.4rem;
+}
+
+.raman-panel-reference p:last-child {
+  margin-bottom: 0;
+}
+
+.raman-panel-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.raman-panel-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #ccd7dd;
+  border-radius: 4px;
+  background: #f5f8fa;
+}
+
+.raman-panel-map {
+  position: relative;
+}
+
+.raman-panel-region {
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.raman-panel-region:target,
+.raman-panel-region:focus-visible {
+  outline: 3px solid #005f7f;
+  outline-offset: -3px;
+}
+
 .instrument-hero {
   float: right;
   width: 45%;
