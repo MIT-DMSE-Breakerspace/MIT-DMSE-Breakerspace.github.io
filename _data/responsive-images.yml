@@ -177,3 +177,21 @@ instron-bluehill-test:
   webp_srcset: /assets/img/optimized/instron-bluehill-test-540.webp 540w, /assets/img/optimized/instron-bluehill-test-1080.webp 1080w
   avif_srcset: /assets/img/optimized/instron-bluehill-test-540.avif 540w, /assets/img/optimized/instron-bluehill-test-1080.avif 1080w
   sizes: "(max-width: 720px) 100vw, 620px"
+
+raman-main-controls:
+  width: 1800
+  height: 1100
+  fallback: /assets/img/optimized/raman-main-controls-1800.jpg
+  jpeg_srcset: /assets/img/optimized/raman-main-controls-640.jpg 640w, /assets/img/optimized/raman-main-controls-1280.jpg 1280w, /assets/img/optimized/raman-main-controls-1800.jpg 1800w
+  webp_srcset: /assets/img/optimized/raman-main-controls-640.webp 640w, /assets/img/optimized/raman-main-controls-1280.webp 1280w, /assets/img/optimized/raman-main-controls-1800.webp 1800w
+  avif_srcset: /assets/img/optimized/raman-main-controls-640.avif 640w, /assets/img/optimized/raman-main-controls-1280.avif 1280w, /assets/img/optimized/raman-main-controls-1800.avif 1800w
+  sizes: "(max-width: 1000px) calc(100vw - 48px), (max-width: 1209px) calc(100vw - 80px), (max-width: 1370px) calc(100vw - 477px), 900px"
+
+raman-acquisition-controls:
+  width: 1110
+  height: 3406
+  fallback: /assets/img/optimized/raman-acquisition-controls-1110.jpg
+  jpeg_srcset: /assets/img/optimized/raman-acquisition-controls-640.jpg 640w, /assets/img/optimized/raman-acquisition-controls-1110.jpg 1110w
+  webp_srcset: /assets/img/optimized/raman-acquisition-controls-640.webp 640w, /assets/img/optimized/raman-acquisition-controls-1110.webp 1110w
+  avif_srcset: /assets/img/optimized/raman-acquisition-controls-640.avif 640w, /assets/img/optimized/raman-acquisition-controls-1110.avif 1110w
+  sizes: "(max-width: 1000px) calc(100vw - 48px), (max-width: 1209px) calc(100vw - 80px), (max-width: 1370px) calc(100vw - 477px), 900px"

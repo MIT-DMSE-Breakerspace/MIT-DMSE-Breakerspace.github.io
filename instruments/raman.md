@@ -36,6 +36,7 @@ This page is the operating page for the Raman microscope. It combines the quick 
 * [Improve spectral resolution](#spectral-resolution)
 * [Choose a laser and grating](#laser-grating)
 * [Choose the confocal hole and slit](#choosing-the-confocal-hole-and-slit)
+* [Locate the LabSpec 6 main controls](#main-controls)
 * [Map measurements across an area](#mapping)
 * [Measure depth in a clear sample with confocal z-depth profiling](#z-profiling)
 * [Analyze and process your data](#data)
@@ -120,22 +121,29 @@ Start with the [standard workflow](#standard-workflow) to calibrate and collect.
 
 This is the recommended sequence for a normal session: calibrate the instrument against a silicon standard, then load and measure your own sample. The pattern of "get a camera image, verify the laser, look at a live spectrum, optimize focus for signal" repeats for both the calibration sample and your real sample.
 
-A key habit throughout: **before starting another function, use the "stop all" control to stop anything that is currently running.** This includes camera video, the real-time display (RTD), or an acquisition. Start the next function only after the current one has stopped.
+<figure class="page-figure raman-main-controls" id="main-controls">
+  <a class="raman-image-link" href="{{ '/assets/img/tutorials/raman/raman-main-controls.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the full-resolution LabSpec 6 main-controls image in a new tab">
+    {% include responsive-image.html id="raman-main-controls" alt="LabSpec 6 toolbar and bottom status bar with labeled spectrum and video controls, saving, laser and grating selections, power, objective and AutoCalibration." %}
+  </a>
+  <figcaption><strong>LabSpec 6 main controls.</strong> Control locations; displayed values are examples. <a href="{{ '/assets/img/tutorials/raman/raman-main-controls.png' | relative_url }}" target="_blank" rel="noopener">Open full-resolution image (new tab)</a>.</figcaption>
+</figure>
+
+A key habit throughout: **before starting another function, use the ["stop all" control](#main-controls) to stop anything that is currently running.** This includes camera video, the real-time display (RTD), or an acquisition. Start the next function only after the current one has stopped.
 
 **A note on objectives.** The system has 5x, 10x, and 100x objectives. Use the **5x for wayfinding only** — it is handy for locating a feature on the sample, but it is not high enough magnification to collect a Raman signal. Use the **10x for general Raman measurements**. Reserve the **100x for identifying specific small particles or similarly small features**. The 100x has a very short working distance: take extra care when positioning and focusing to avoid colliding with the sample. Check clearance before switching objectives or moving the stage, and approach focus carefully. Whichever objective you use, select the matching objective in the software (Acquisition > Instrument Setup), because the software needs to know which one is in place.
 
-**Camera viewing.** Choose **brightfield or darkfield** according to the sample and which view makes its features easiest to see. Adjust **White light level** for a clear image, and readjust as you approach focus; the maximum setting usually washes out the view. When checking the laser spot in the internal camera, keep the image clear enough to distinguish its brightest region. Apparent brightness in the camera is not a measure of laser power at the sample; use the ND filter setting to adjust laser power.
+**Camera viewing.** Choose **<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#video' target="_blank" rel="noopener" aria-label="brightfield or darkfield — annotated Acquisition panel (opens in a new tab)">brightfield or darkfield</a>** according to the sample and which view makes its features easiest to see. Adjust **White light level** for a clear image, and readjust as you approach focus; the maximum setting usually washes out the view. When checking the laser spot in the internal camera, keep the image clear enough to distinguish its brightest region. Apparent brightness in the camera is not a measure of laser power at the sample; use the ND filter setting to adjust laser power.
 
 #### Part 1: Calibrate With The Silicon Standard
 
 Calibrating against a silicon sample first confirms the instrument is reading the correct Raman shift before you trust any data from your own sample. Silicon has a strong, well-known peak (near 520 cm<sup>-1</sup>), which makes it the standard reference.
 
 1. **Load the silicon calibration sample** on the stage.
-2. **Focus with the external (top) camera** using the 10x objective for routine calibration. The top camera gives better resolution for a sharp optical focus on the surface. You can use the 5x to find your way first, then switch to the objective you will use for collection.
+2. **Focus with the <a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#video' target="_blank" rel="noopener" aria-label="external (top) camera — annotated Acquisition panel (opens in a new tab)">external (top) camera</a>** using the 10x objective for routine calibration. The top camera gives better resolution for a sharp optical focus on the surface. You can use the 5x to find your way first, then switch to the objective you will use for collection.
 3. **Close the enclosure doors and confirm the interlocks are satisfied.** The laser will not fire unless the enclosure and interlock conditions are correct.
 4. **Stop the external camera view, switch to the internal camera, and turn on the laser.** Locate the brightest part of the actual spot, slightly above and left of the crosshair under the [current alignment condition](#alignment-notice). Target that spot rather than the crosshair, and refine focus to make it as small and clear as possible. This is an initial focus check; optimize against Raman peaks in RTD afterward. If no laser is visible, recheck the documented door, interlock, and key conditions rather than bypassing anything.
 5. **Stop the camera** view.
-6. **Start the real-time display (RTD)** to show a quick, continuously refreshing spectrum. Use a short RTD acquisition time (around 1 second) so the display updates quickly, and set the spectro (the center of the spectral window) where you expect the silicon peak.
+6. **Start the [real-time display (RTD)](#main-controls)** to show a quick, continuously refreshing spectrum. Use a short RTD acquisition time (around 1 second) so the display updates quickly, and set the spectro (the center of the spectral window) where you expect the silicon peak.
 7. **Refine focus for Raman collection using the joystick knob.** Make small focus adjustments and watch whether the signal goes up or down; focus to maximize the signal. The best camera focus and Raman focus can differ, especially at 785 nm; use the [fine-focus search](#raman-focus) after every laser change.
 8. **Stop the RTD.**
 9. **Run the AutoCalibration routine** (in the Maintenance tab).
@@ -158,14 +166,22 @@ With calibration confirmed, measure your own sample using the same get-image / v
 
 #### Collection Parameters
 
+<div class="raman-panel-reference" markdown="1">
+
+**<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}' target="_blank" rel="noopener" aria-label="View the annotated Acquisition panel (opens in a new tab)">View the annotated Acquisition panel</a>** (opens in a new tab)
+
+See the complete panel, with section links for camera, timing, spectrum, mapping, and hole/slit controls.
+
+</div>
+
 RTD is only for checking and optimizing the setup; it does not average spectra. When you are ready to record real data, use the full spectrum acquisition, which averages multiple accumulations over your chosen range. The parameters that matter most:
 
-* **Spectro / spectral range:** the spectro value sets the center of a single detector window; hovering over the box shows the window's width. For a wider spectrum than one window covers, enable the extended **Range** option and enter start and stop values, and the instrument will step the grating through as many positions as needed to cover it.
-* **Acquisition (exposure) time:** how long the detector collects for each spectrum. Longer times give more signal and better signal-to-noise, but take longer. Two practical checks: the signal-to-noise should be good enough to see your peaks clearly, and the maximum intensity should stay below about 65,000 counts (above that the detector saturates).
-* **Accumulations:** how many spectra are averaged together. More accumulations improve signal-to-noise and let the software reject cosmic-ray spikes, at the cost of time.
+* **Spectro / spectral range:** the spectro value sets the center of a single detector window; hovering over the box shows the window's width. For a wider spectrum than one window covers, enable the extended **<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#acquisition-parameters' target="_blank" rel="noopener" aria-label="Range — annotated Acquisition panel (opens in a new tab)">Range</a>** option and enter start and stop values, and the instrument will step the grating through as many positions as needed to cover it.
+* **<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#spectrum' target="_blank" rel="noopener" aria-label="Acquisition (exposure) time — annotated Acquisition panel (opens in a new tab)">Acquisition (exposure) time</a>:** how long the detector collects for each spectrum. Longer times give more signal and better signal-to-noise, but take longer. Two practical checks: the signal-to-noise should be good enough to see your peaks clearly, and the maximum intensity should stay below about 65,000 counts (above that the detector saturates).
+* **<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#spectrum' target="_blank" rel="noopener" aria-label="Accumulations — annotated Acquisition panel (opens in a new tab)">Accumulations</a>:** how many spectra are averaged together. More accumulations improve signal-to-noise and let the software reject cosmic-ray spikes, at the cost of time.
 * **Number of spectra / positions:** because a Raman spectrum comes from a tiny spot, measuring several spots is often worthwhile for a non-uniform sample.
 * **Confocal hole and slit:** the hole controls depth selection; the slit controls spectral resolution. Smaller openings can reduce useful Raman counts. Start with generous collection settings to find a spectrum, then adjust one control at a time (see [choosing the confocal hole and slit](#choosing-the-confocal-hole-and-slit)).
-* **ND filter (laser power):** reduces the laser power reaching the sample. Lower the power for delicate, dark, or temperature-sensitive samples; watch the live spectrum to confirm the sample is not being burned (a spectrum that keeps changing during exposure is a warning sign).
+* **[ND filter (laser power)](#main-controls):** reduces the laser power reaching the sample. Lower the power for delicate, dark, or temperature-sensitive samples; watch the live spectrum to confirm the sample is not being burned (a spectrum that keeps changing during exposure is a warning sign).
 
 Start conservative on exposure time and laser power for an unfamiliar or delicate sample, check the result, then increase if you need more signal. If you are unsure what settings suit your sample, ask staff.
 
@@ -263,7 +279,7 @@ The hole diameter is an internal aperture dimension, not the thickness of the sa
 
 #### Compare settings fairly
 
-Use Acquisition → Instrument Setup to select Hole and Slit. If the controls remain enabled during RTD, change one setting at a time and wait for the mechanism to settle and at least one complete new exposure. If the controls are disabled or the update is not applied, stop RTD, change the setting and restart.
+Use <a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#instrument-setup' target="_blank" rel="noopener" aria-label="Acquisition → Instrument Setup — annotated Acquisition panel (opens in a new tab)">Acquisition → Instrument Setup</a> to select Hole and Slit. If the controls remain enabled during RTD, change one setting at a time and wait for the mechanism to settle and at least one complete new exposure. If the controls are disabled or the update is not applied, stop RTD, change the setting and restart.
 
 Keep the measurement position, focus, laser power, exposure time and grating unchanged during each initial comparison. Use fixed display scaling or numerical counts so automatic rescaling does not hide intensity changes. Recheck Raman focus afterward, particularly with a smaller hole.
 
@@ -273,7 +289,7 @@ Opening the hole or slit changes collection, not laser power at the sample. This
 
 ### AutoFocus {#autofocus}
 
-LabSpec 6 includes an AutoFocus function that steps the focus through a range, watches the signal, and settles at the position that maximizes it. It can help on samples where manual focusing is difficult or unreliable, such as highly polished or featureless surfaces, and it can hold focus across a rough surface during a map.
+LabSpec 6 includes an <a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#acquisition-parameters' target="_blank" rel="noopener" aria-label="AutoFocus function — annotated Acquisition panel (opens in a new tab)">AutoFocus function</a> that steps the focus through a range, watches the signal, and settles at the position that maximizes it. It can help on samples where manual focusing is difficult or unreliable, such as highly polished or featureless surfaces, and it can hold focus across a rough surface during a map.
 
 AutoFocus is slow, however, because it collects signal at many focus positions. **We do not recommend it as a default focusing method.** For a normal measurement, focus manually with the joystick against the live RTD spectrum (see the [standard workflow](#standard-workflow)). Reach for AutoFocus only when manual focus is not possible or not reliable.
 
@@ -284,7 +300,7 @@ Instead of a single spectrum from one spot, the XploRA can collect a grid of spe
 To set up a map:
 
 1. Acquire a video image of the region you want to map so you can see the area. (For an area larger than one field of view, the video Montage function can stitch several frames together.)
-2. In the **Map** section of the Acquisition tab, choose the variables to scan: X and Y for a surface area, Z for depth (see below), or combinations.
+2. In the **<a href='{{ "/instruments/raman-acquisition-controls.html" | relative_url }}#map' target="_blank" rel="noopener" aria-label="Map — annotated Acquisition panel (opens in a new tab)">Map</a>** section of the Acquisition tab, choose the variables to scan: X and Y for a surface area, Z for depth (see below), or combinations.
 3. Set the **step size** between points. Smaller steps give finer detail but many more points.
 4. Choose the map area and shape with the map tools (rectangle, circle, line, or a set of chosen points).
 5. Set acquisition parameters as for a single spectrum, but keep in mind that a map collects one spectrum per point and can involve hundreds or thousands of points. Favor a single spectral window and shorter per-point acquisition times to keep the total time reasonable.
@@ -310,7 +326,7 @@ Confocal Z-profiling uses the confocal hole to collect spectra at different dept
 
 ## Data Processing And Analysis {#data}
 
-Spectra are collected and saved in LabSpec 6. Remember that each spectrum must be selected and saved individually before you close the software.
+Spectra are collected and saved in LabSpec 6 (see the [Save data control](#main-controls)). Remember that each spectrum must be selected and saved individually before you close the software.
 
 Typical processing steps include:
 
