@@ -1,6 +1,6 @@
 # MIT DMSE Breakerspace Website
 
-Last updated: 2026-11-18
+Last updated: 2026-11-19
 
 This repository is the canonical source for the MIT DMSE Breakerspace production website at `breakerspace.mit.edu`.
 
@@ -22,7 +22,7 @@ This README is the top-level orientation for the site: its direction, content st
 
 ## Continuing The September Website Revisions
 
-Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through November 18, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
+Start with the [September site revision handoff](_staff/site-revision-handoff-2026-09-17.md), updated through November 19, for completed releases, owner decisions, comparable word counts, and next steps. The [original overall site review](_staff/site-review-2026-09-17.md) preserves the initial analysis and recommendations. Both are repository planning documents excluded from the public website.
 
 Compact mobile navigation, removal of the early-fall notice, the FTIR reading-order pilot, and clearer instrument-finder descriptions are published. September 18 added the shorter homepage, sample previews, shared layout/footer and width correction, concise Calendar and Reserve Time pages, responsive Data Tools cards, registration-focused Training with five live upcoming sessions, and contact-first Help & Support. All releases through PR #49 are merged and deployed. Training's earlier preparation/access sections were superseded by the registration focus in PR #48.
 
@@ -30,7 +30,7 @@ The owner will review the live pages; a complete page-by-page layout review is s
 
 The owner-authorized November 16 Instron/FTIR follow-up is published and verified ([PR #64](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/64), merge `bab9a9a`). Both pages prioritize operation while keeping the four-part educational explanation together below the operating help. Instron adds the confirmed tooling inventory, staff-arranged/monotonic-only restrictions for the 5 kN load cell, and compact instructional image galleries with full-size links. Future changes should follow ordinary live-page feedback; the broader instrument-renovation pause remains. The handoff records the release and checks.
 
-The owner authorized publication of the November 18 Raman checkpoint after reviewing about **50%** of the revised page. It prioritizes operation and adds weak-signal, 785 nm focus, fluorescence/saturation and spectral-resolution guidance, plus confirmed hole/slit settings and a dated alignment notice. Continue the owner's review on **November 19** from the [Raman handoff](_staff/site-revision-handoff-2026-09-17.md#raman-publication-checkpoint--november-18); the last feedback concerned objective choice near the start of the standard workflow. This is a scoped Raman exception to the broader instrument-renovation pause.
+The November 18 Raman checkpoint and control figures are published. On **November 19**, the owner reviewed the beginner-focused revision for the November 20 3.010 exercise and authorized commit, PR, merge and publication. The approved revision groups the workflow, settings reference, troubleshooting, and mapping/depth guidance while preserving existing fragments and the educational section. See the [November 19 Raman handoff](_staff/site-revision-handoff-2026-09-17.md#raman-beginner-review-and-consolidation--november-19) for release status and validation. This is a scoped Raman exception to the broader instrument-renovation pause.
 
 The September 21 Safety editorial revision and sticky mobile logo/Menu row are also published ([PR #51](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/51), [#52](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/52), and [#53](https://github.com/MIT-DMSE-Breakerspace/MIT-DMSE-Breakerspace.github.io/pull/53)). The handoff records the verified release, preserved safety requirements, and remaining Pages-compiler compatibility follow-up. Further editorial work should proceed from analysis to a local draft, owner review, and then authorized publication.
 
