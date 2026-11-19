@@ -1,6 +1,6 @@
 # Site Revision Handoff — 2026-09-17
 
-Last updated: 2026-11-18 for the owner-authorized Raman publication checkpoint and November 19 review continuation. The filename is retained for existing links; earlier draft and release records retain their dated status.
+Last updated: 2026-11-19 for the owner-approved Raman beginner revision and release. The filename is retained for existing links; earlier draft and release records retain their dated status.
 
 Read this first when continuing the website usability and content work in a new session. The complete [original site review](site-review-2026-09-17.md) preserves the initial findings, word counts, examples, and external writing guidance. The ongoing cross-site queue remains [site-todo.md](site-todo.md#september-2026-site-usability); instrument-specific work remains in [instruments/staff-todo.md](../instruments/staff-todo.md).
 
@@ -17,6 +17,27 @@ The owner approved a further Get Trained revision on September 18 to focus on re
 There are no resources for organized usability trials. Use automated checks, proportionate phone/desktop inspection, and feedback from normal lab interactions. The original review's proposed recruited-user testing and 20/60/20 effort split were recommendations, not adopted requirements. Routine fixes do not need a new testing program.
 
 The owner will review the live pages following the September 18 homepage and shared-layout releases. The prior all-page review was interrupted; do not treat the limited spot-check below as its completion. Use subagents for graphical page reviews and have them return concise findings and coverage, keeping screenshots and large page-rendering payloads out of the main task.
+
+## Raman Beginner Review And Consolidation — November 19
+
+**Owner approved; publication authorized on November 19.** The owner reviewed the consolidated Raman revision for the November 20 3.010 exercise, including the subsequent ND transmission and collection-time corrections, then explicitly requested commit, push, PR, merge, live validation and updated handoff records. Release validation is in progress. The release branch is `codex/raman-beginner-review-2026-11-19`, based on `main` at `2501327` (the merged November 18 controls release). Preview at `http://127.0.0.1:4174/instruments/raman.html#standard-workflow`; run `bundle exec jekyll serve --host 127.0.0.1 --port 4174` from this branch's worktree if needed.
+
+Owner-confirmed corrections incorporated before consolidation:
+
+* Silicon is reflective enough to show misleading reflections of dust on/in the objective. Use 10x to focus on the edge of the existing Sharpie mark, then jog sideways to unmarked silicon without changing focus height. The earlier 5x suggestion was removed from calibration.
+* Seeing the laser spot with the enclosure closed and internal camera active is the practical confirmation of emission and satisfied interlocks. There is no separate readiness check to recommend. Direct camera switching does not require "stop all"; transitions between video, RTD and spectrum collection do.
+* In Acquisition → XYZ stage, zero Z with the lightning-bolt button (optionally X/Y too), then type small Z changes for controlled Raman focusing and a returnable starting height.
+* ND percentage means transmission through the filter: 10% transmits 10% of incoming light; 100% is maximum transmission.
+
+The revision keeps the short SOP and an explicit beginner walkthrough. The complete focus method is anchored at `#raman-focus` within calibration; AutoFocus is a short optional workflow subsection. Laser/grating tables, hole/slit guidance, resolution improvement, comparison technique, ND power, range and collection time are grouped under collection settings. A symptom table leads into shortened weak-signal and fluorescence/saturation procedures. Mapping and depth profiling follow; the four-part educational explanation is preserved verbatim. Saving is explicit in the measurement workflow. All 43 existing main-content IDs and external reference destinations are retained.
+
+The final approved revision has **4,716 rendered main-content words**, down from **6,709 (29.7%)** before consolidation. The initial consolidation checkpoint was 4,453 words; subsequent owner review added explicit calibration power and collection-time guidance. Counts include headings, table text and link labels, excluding navigation and footer. This is a measured result, not a reduction quota for future work. Detailed-instruction readiness remains **4/5**: a worked sample example, further workflow media and more precise manual references remain open.
+
+**Subsequent owner review:** silicon calibration now starts at **1% ND transmission**, with gradual increases if more counts are needed for AutoCalibration and decreases near saturation. This starting percentage is specific to silicon, not a default for unknown samples. The owner reports that the current workstation accepts only whole-second RTD times, making **1 second the current minimum**; saturation at that minimum must be controlled with ND transmission. One second is the starting value, not a fixed duration: if counts remain low at 100% transmission and the sample is stable and well below saturation, increase RTD time in whole-second increments. For sensitive samples, longer collection can also be used at a lower appropriate power. Calibration, the settings reference and troubleshooting agree on this. The observation is scoped to RTD on the current workstation; it does not establish a minimum for recorded-spectrum acquisition or every LabSpec version.
+
+Further improvements should follow ordinary feedback from the 3.010 exercise and other instrument use. The provisional Quick Guide still needs synchronization and its separate technical/layout review; it is not cleared for routine use. The alignment notice remains dated November 18, with repository review due December 18 or after service.
+
+Local release validation passed: `bundle exec script/cibuild` (SOP and Quick Guide contracts, Jekyll build, HTMLProofer across all 73 generated pages, site quality, and gem build), the full 13-page accessibility suite, preservation of all 43 prior main-content IDs, and unchanged external reference destinations. Targeted Pa11y found no issues at 1280×900 and 390×900. Headless Chromium checks at 1280, 390 and 320 px found no document overflow; selected workflow/settings targets land below the mobile header. Tables fit the 390 px content column; the hole/slit table uses the site's existing horizontal scroll container when needed at 320 px. Phone and desktop screenshots were inspected. Native-device and screen-reader testing were not performed.
 
 ## Raman Publication Checkpoint — November 18
 
