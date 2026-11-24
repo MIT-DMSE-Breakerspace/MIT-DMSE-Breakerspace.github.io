@@ -6,7 +6,7 @@ permalink: /lab-assistant/
 trainer_portal: true
 trainer_index: true
 interactive_checklist: false
-guide_revision: 2026-09-17
+guide_revision: 2026-11-24
 ---
 
 # Lab Assistant Resources
@@ -63,6 +63,14 @@ Reviewed session checklist for the established DSX-1000 training workflow.
 ### [Instron Trainer Guide]({% link _staff-training/instron-trainer-prototype.md %})
 
 **Draft advisory.** Incomplete review guide with explicit release gaps; not approved for training delivery.
+
+</section>
+
+<section markdown="1">
+
+### [Raman training with Codex]({% link _staff-training/agentic-trainer-raman-guide.md %})
+
+**Pilot draft for staff review.** Follow a student-led Raman measurement and rehearse the handovers to Codex.
 
 </section>
 
