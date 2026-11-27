@@ -272,7 +272,7 @@ For useful records:
 
 ## Links {#links}
 
-* [Manufacturer overview](https://www.olympus-ims.com/en/microscope/dsx/?nis=8)
+* [Manufacturer overview](https://evidentscientific.com/en/products/obsolete/dsx1000)
 
 ## Exercises {#exercises}
 
